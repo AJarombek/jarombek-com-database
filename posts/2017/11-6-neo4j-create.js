@@ -470,12 +470,12 @@ content = [
     }
 ];
 
-db.posts.remove({name: "nov-6-2018-neo4j-create"});
+db.posts.remove({name: "nov-6-2017-neo4j-create"});
 
 db.posts.insertOne({
-    name: "nov-6-2018-neo4j-create",
+    name: "nov-6-2017-neo4j-create",
     title: "Creating a Simple Geographical Map with Neo4j and Cypher",
-    date: new Date('2017-11-06'),
+    date: new Date('2017-11-06T12:00:00'),
     type: "Discovery",
     tags: [
         {
