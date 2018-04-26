@@ -5,3 +5,4 @@
 load('./posts/2017/11-6-neo4j-create.js');
 load('./posts/2017/11-8-js-scope-hoisting.js');
 load('./posts/2017/11-9-js-closure-modules.js');
+load('./posts/2017/11-10-es6-modules-babel.js');

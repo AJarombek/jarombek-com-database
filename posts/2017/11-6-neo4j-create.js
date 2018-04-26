@@ -446,7 +446,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "src":"./assets/jarombek.png"
+                    "src":"./assets/js.png"
                 },
                 "value":null,
                 "children":[
