@@ -11,3 +11,7 @@ load('./posts/2017/11-12-neo4j-challenges.js');
 load('./posts/2017/11-13-js-global-object.js');
 load('./posts/2017/11-14-sorting-lists.js');
 load('./posts/2017/11-15-js-strict-mode.js');
+load('./posts/2017/11-20-js-arrow-function.js');
+load('./posts/2017/11-21-js-promises.js');
+load('./posts/2017/11-25-generators.js');
+load('./posts/2017/11-26-js-async-function.js');
