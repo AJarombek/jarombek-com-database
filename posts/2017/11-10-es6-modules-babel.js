@@ -493,7 +493,9 @@ db.posts.insertOne({
             color: "nodejs"
         },
         {
-            name: "Babel"
+            name: "Babel",
+            picture: "./assets/babel.png",
+            color: "babel"
         },
         {
             name: "Transpiler"

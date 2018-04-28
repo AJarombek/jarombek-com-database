@@ -1,7 +1,7 @@
 /**
  * Script for the MongoDB Shell.
  * @author Andrew Jarombek
- * @since 4/26/2018
+ * @since 4/28/2018
  */
 
 connection = new Mongo();
@@ -9,12 +9,12 @@ db = connection.getDB("jarombekcom");
 
 content = [];
 
-db.posts.remove({name: "nov-11-2017-es6-modules-babel"});
+db.posts.remove({name: "dec-11-2017-es6-modules-babel"});
 
 db.posts.insertOne({
-    name: "nov-11-2017-js-this",
+    name: "dec-11-2017-js-this",
     title: "Understanding \"this\" in JavaScript",
-    date: new Date('2017-11-11T12:00:00'),
+    date: new Date('2017-12-11T12:00:00'),
     type: "Discovery",
     tags: [
         {
