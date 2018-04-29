@@ -619,6 +619,11 @@ db.posts.insertOne({
             name: "JavaScript",
             picture: "./assets/js.png",
             color: "javascript"
+        },
+        {
+            name: "HTML",
+            picture: "./assets/html.png",
+            color: "html"
         }
     ],
     content,

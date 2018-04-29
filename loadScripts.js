@@ -15,6 +15,7 @@ load('./posts/2017/11-20-js-arrow-function.js');
 load('./posts/2017/11-21-js-promises.js');
 load('./posts/2017/11-25-generators.js');
 load('./posts/2017/11-26-js-async-function.js');
+
 load('./posts/2017/12-7-native-getter-setter.js');
 load('./posts/2017/12-12-regex-captures.js');
 load('./posts/2017/12-15-mongodb-pt1.js');
@@ -22,7 +23,12 @@ load('./posts/2017/12-16-mongodb-pt2.js');
 load('./posts/2017/12-23-mongodb-pt3.js');
 load('./posts/2017/12-27-mongodb-pt4.js');
 load('./posts/2017/12-30-nodejs-mongodb-api-prototype.js');
+
 load('./posts/2018/1-3-string-swift.js');
 load('./posts/2018/1-6-angular-5-first-impressions.js');
 load('./posts/2018/1-14-shadow-dom.js');
 load('./posts/2018/1-15-java8-strategy-pattern.js');
+load('./posts/2018/1-16-java-default-method.js');
+load('./posts/2018/1-19-swift4-objc.js');
+load('./posts/2018/1-24-rabbitmq.js');
+load('./posts/2018/1-27-angular-5-routing.js');
