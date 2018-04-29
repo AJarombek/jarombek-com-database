@@ -38,3 +38,8 @@ load('./posts/2018/2-8-java8-functional.js');
 load('./posts/2018/2-12-oracle-start.js');
 
 load('./posts/2018/3-2-oracle-queries.js');
+load('./posts/2018/3-8-typescript.js');
+load('./posts/2018/3-9-travisci.js');
+load('./posts/2018/3-10-sass.js');
+load('./posts/2018/3-11-jwt.js');
+load('./posts/2018/3-17-mean-stack-prototype.js');
