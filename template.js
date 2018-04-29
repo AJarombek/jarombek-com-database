@@ -9,12 +9,12 @@ db = connection.getDB("jarombekcom");
 
 content = [];
 
-db.posts.remove({name: "dec-11-2017-es6-modules-babel"});
+db.posts.remove({name: "jan-6-2018-angular-5-first-impressions"});
 
 db.posts.insertOne({
-    name: "dec-11-2017-js-this",
-    title: "Understanding \"this\" in JavaScript",
-    date: new Date('2017-12-11T12:00:00'),
+    name: "jan-6-2018-angular-5-first-impressions",
+    title: "Angular 5 First Impressions",
+    date: new Date('2018-01-06T12:00:00'),
     type: "Discovery",
     tags: [
         {

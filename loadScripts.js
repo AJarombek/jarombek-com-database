@@ -22,3 +22,7 @@ load('./posts/2017/12-16-mongodb-pt2.js');
 load('./posts/2017/12-23-mongodb-pt3.js');
 load('./posts/2017/12-27-mongodb-pt4.js');
 load('./posts/2017/12-30-nodejs-mongodb-api-prototype.js');
+load('./posts/2018/1-3-string-swift.js');
+load('./posts/2018/1-6-angular-5-first-impressions.js');
+load('./posts/2018/1-14-shadow-dom.js');
+load('./posts/2018/1-15-java8-strategy-pattern.js');
