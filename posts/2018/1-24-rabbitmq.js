@@ -436,7 +436,7 @@ db.posts.remove({name: "jan-24-2018-rabbitmq"});
 
 db.posts.insertOne({
     name: "jan-24-2018-rabbitmq",
-    title: "Angular 5 First Impressions",
+    title: "First Look at RabbitMQ",
     date: new Date('2018-01-24T12:00:00'),
     type: "Discovery",
     tags: [

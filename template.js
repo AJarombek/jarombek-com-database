@@ -1,7 +1,7 @@
 /**
  * Script for the MongoDB Shell.
  * @author Andrew Jarombek
- * @since 4/28/2018
+ * @since 4/29/2018
  */
 
 connection = new Mongo();
@@ -9,12 +9,12 @@ db = connection.getDB("jarombekcom");
 
 content = [];
 
-db.posts.remove({name: "jan-6-2018-angular-5-first-impressions"});
+db.posts.remove({name: "mar-6-2018-angular-5-first-impressions"});
 
 db.posts.insertOne({
-    name: "jan-6-2018-angular-5-first-impressions",
+    name: "mar-6-2018-angular-5-first-impressions",
     title: "Angular 5 First Impressions",
-    date: new Date('2018-01-06T12:00:00'),
+    date: new Date('2018-03-06T12:00:00'),
     type: "Discovery",
     tags: [
         {
