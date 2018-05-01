@@ -45,3 +45,5 @@ load('./posts/2018/3-11-jwt.js');
 load('./posts/2018/3-17-mean-stack-prototype.js');
 load('./posts/2018/3-18-oracle-adv-pt1.js');
 load('./posts/2018/3-19-oracle-adv-pt2.js');
+
+load('./posts/2018/4-30-react-dynamic-jsx-elements.js');
