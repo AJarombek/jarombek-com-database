@@ -22,7 +22,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/\n2018/02-Feb/2-12-Oracle-Start/View"
+                    "href":"https://jarombek.com/blog/feb-12-2018-oracle-start"
                 },
                 "value":null,
                 "children":[
@@ -104,7 +104,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clauses.  If I wanted to find it a column is between two different values, I can use the ",
+                "value":" clauses.  If I wanted to find whether a column is between two different values, I can use the ",
                 "children":null
             },
             {
@@ -118,7 +118,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause.  This mill make my intentions more clear and reduce my queries ",
+                "value":" clause.  This will make my intentions more clear and reduce my use of ",
                 "children":null
             },
             {
@@ -161,7 +161,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clauses can also look for soft varchar matches, where only a portion of a string has to match a columns value.  In this case you can use the ",
+                "value":" clauses can also look for soft varchar matches, where only a portion of a string has to match a columns value.  Soft matches use the ",
                 "children":null
             },
             {
@@ -237,7 +237,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "class": "jarombek-blog-image",
+                    "class":"jarombek-blog-image",
                     "src":"./assets/Database-ER.png"
                 },
                 "value":null,
@@ -255,7 +255,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In the following query I perfromed an inner join across this many to many relationship to get a book, the language that it is about, and the date that language was created.  Inner joins only return rows when the columns in the ",
+                "value":" In the following query I perform an inner join across this many to many relationship to get a book, the language that it is about, and the inception date of the language.  Inner joins only return rows when the columns in the ",
                 "children":null
             },
             {
@@ -444,7 +444,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The next query is going to look at hierarchical data.  This data forms parent child relationships in a tree structure.  Now the current three tables we have in the database don't have any hierarchical data. Let's change that by creating a new table called ",
+                "value":" The next query is going to look at hierarchical data.  This data forms parent child relationships in a tree structure.  The three tables in the database don't have any hierarchical data. Let's change that by creating a new table called ",
                 "children":null
             },
             {
@@ -535,7 +535,7 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"CONNECT BYPRIOR",
+                "value":"CONNECT BY PRIOR",
                 "children":null
             },
             {
@@ -848,7 +848,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause which will return a row with the subtotal for the grouping",
+                "value":" clause to return a row with the subtotal for the grouping",
                 "children":null
             },
             {
@@ -1002,7 +1002,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2018/03-Mar/\n3-2-Oracle-Queries/Source"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2018/03-Mar/3-2-Oracle-Queries"
                 },
                 "value":null,
                 "children":[

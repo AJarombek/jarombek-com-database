@@ -32,6 +32,7 @@ load('./posts/2018/1-16-java-default-method.js');
 load('./posts/2018/1-19-swift4-objc.js');
 load('./posts/2018/1-24-rabbitmq.js');
 load('./posts/2018/1-27-angular-5-routing.js');
+load('./posts/2018/1-30-java8-optionals.js');
 
 load('./posts/2018/2-7-java8-completable-future.js');
 load('./posts/2018/2-8-java8-functional.js');

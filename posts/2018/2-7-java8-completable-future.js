@@ -283,7 +283,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" that will be asynchronously executed.  I will put the ",
+                "value":" that will be asynchronously executed.  I put the ",
                 "children":null
             },
             {
@@ -311,7 +311,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Once the value is resolved I will print out its value using the ",
+                "value":".  Once the value is resolved I will print it out using the ",
                 "children":null
             },
             {
@@ -421,14 +421,14 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/\nDiscoveries/2018/02-Feb/2-7-Java-Completable-Future/Source"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2018/02-Feb/2-7-Java-Completable-Future"
                 },
                 "value":null,
                 "children":[
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"GitHub",
+                        "value":" GitHub",
                         "children":null
                     }
                 ]

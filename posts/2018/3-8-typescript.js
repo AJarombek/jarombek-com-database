@@ -22,7 +22,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2018/01-Jan/\n1-6-Angular-5-First-Impression/View"
+                    "href":"https://jarombek.com/blog/jan-6-2018-angular-5-first-impressions"
                 },
                 "value":null,
                 "children":[
@@ -37,7 +37,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" discovery post, I was quite critical of TypeScript.  I questioned whether it truly was a pure superset of JavaScript and didn’t like how it made the MEAN stack no longer just JavaScript.  Now I had to change languages again when moving between layers! ",
+                "value":" discovery post, I was quite critical of TypeScript.  I questioned whether it truly was a pure superset of JavaScript and didn’t like how it made the MEAN stack no longer just JavaScript.  With TypeScript I had to change languages again when moving between layers! ",
                 "children":null
             }
         ]
@@ -50,7 +50,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I did finish my talk about TypeScript in that post saying how I would continue to work with it and see if I warmed up to the language.  So is TypeScript going to replace my JavaScript now that I have built a full Angular 5 app with it?  Not quite, but it is a really cool language that brings a lot to the JavaScript ecosystem! ",
+                "value":" I did finish my discussion about TypeScript in that post saying how I would continue to work with it and see if I warmed up to the language.  So is TypeScript going to replace my JavaScript now that I have built a full Angular 5 app with it?  Not quite, but it is a really cool language that brings a lot to the JavaScript ecosystem! ",
                 "children":null
             }
         ]
@@ -179,7 +179,7 @@ content = [
         "attributes":{
             "language":"TypeScript"
         },
-        "value":"class User {\n\n    // Access modifiers (public, private, protected in TS) on constructor variables\n    // automatically make them instance variables\n    constructor(private username: string, private first: string, private last: string) { }\n\n        public getUsername() {\n\n        // Access the automatically created instance variable\n        return this.username;\n    }\n}\n\nconst newUser: User = new User(\"andy\", \"Andrew\", \"Jarombek\");\nconsole.info(newUser.getUsername()); // andy\n",
+        "value":"class User {\n\n    // Access modifiers (public, private, protected in TS) on constructor variables\n    // automatically make them instance variables\n    constructor(private username: string, private first: string, private last: string) { }\n\n    public getUsername() {\n\n        // Access the automatically created instance variable\n        return this.username;\n    }\n}\n\nconst newUser: User = new User(\"andy\", \"Andrew\", \"Jarombek\");\nconsole.info(newUser.getUsername()); // andy\n",
         "children":null
     },
     {
@@ -198,7 +198,7 @@ content = [
     {
         "el":"codesnippet",
         "attributes":{
-            "language":"TypeScript"
+            "language":"JavaScript"
         },
         "value":"class User {\n\n    constructor(username, first, last) {\n        this.username = username;\n        this.first = first;\n        this.last = last;\n    }\n\n    getUsername() {\n        return this.username;\n    }\n}\n\nconst user = new User('andy', 'Andrew', 'Jarombek');\nconsole.info(user.getUsername()); // andy\n",
         "children":null
@@ -331,7 +331,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can see that the ",
+                "value":" The ",
                 "children":null
             },
             {
@@ -345,7 +345,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function defined in the interface is also optional for classes to implement (as defined with the ",
+                "value":" function defined in the interface is optional for classes to implement (as defined with the ",
                 "children":null
             },
             {
@@ -385,7 +385,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" These were a few of the features of TypeScript that really stood out to me.  I really misses optional static typing amongst other features when switching back to JavaScript.  While I don’t think TypeScript will replace my use of JavaScript, I do hope JavaScript implements some of these features in the future (in fact, there is a ",
+                "value":" These were a few of the features of TypeScript that really stood out to me.  I really missed optional static typing amongst other features when switching back to JavaScript.  While I don’t think TypeScript will replace my use of JavaScript, I do hope JavaScript implements some of these features in the future (in fact, there is a ",
                 "children":null
             },
             {

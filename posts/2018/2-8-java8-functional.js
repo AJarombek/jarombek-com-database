@@ -63,7 +63,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" My experience with functional programming is extremely limited.  The only true functional programming that I did was with ",
+                "value":" My experience with functional programming is extremely limited.  The only true functional programming that I wrote was with ",
                 "children":null
             },
             {
@@ -134,7 +134,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Functional style programming in Java is not quite this strict.  I don't think anyone will complain if your program outputs some information to a log file for debugging.  However, reducing the variables your functions mutate and removing exceptions can be seen as a beneficial practice.  Predictable functions are nice to work with and will help future developers who work on your code! ",
+                "value":" Functional style programming in Java is not quite this strict.  I don't think anyone will complain if your program outputs some information to a log file for debugging.  However, reducing the number of variables your function mutates and removing exceptions can be seen as beneficial.  Predictable functions are nice to work with and will help future developers who work on your code! ",
                 "children":null
             }
         ]
@@ -147,7 +147,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Removing errors in your code can be very simple now with Java 8's ",
+                "value":" Elimination null errors in your code is very simple now with Java 8's ",
                 "children":null
             },
             {
@@ -161,7 +161,28 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" class!  I looked into optionals in detail in a prior discovery post, but you could easily express an invalid condition in functions with optionals. For example, the book I read discusses a divide by zero scenario: ",
+                "value":" class!  I looked into optionals in detail in a prior ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/jan-30-2018-java8-optionals"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"discovery post",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":", but you could easily express an invalid condition in functions with optionals. For example, the book I read discusses a divide by zero scenario: ",
                 "children":null
             }
         ]

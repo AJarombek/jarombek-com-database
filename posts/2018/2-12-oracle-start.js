@@ -50,7 +50,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This discovery is going to follow me through the setup of my database.  I will skip the actually Oracle installation and configuration (which was a challenge itself!) and skip straight to the moment I started typing SQL. ",
+                "value":" This discovery is going to follow me through the setup of my database.  I will skip the actual Oracle installation and configuration (which was a challenge itself!) and move straight to the moment I started typing SQL. ",
                 "children":null
             }
         ]
@@ -110,7 +110,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":") and connected to my database instance.  The first task I wanted to accomplish was create a user for my database schema.  In Oracle a user is an account for a schema of the same name",
+                "value":") and connected to my database instance.  The first task I wanted to accomplish was creating a user for my database schema.  In Oracle a user is an account for a schema of the same name",
                 "children":null
             },
             {
@@ -149,7 +149,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" that I would place all my tables in.  A tablespace in Oracle consists of physical storage units for the database's data",
+                "value":" for all my tables.  A tablespace in Oracle consists of physical storage units for the database's data",
                 "children":null
             },
             {
@@ -161,7 +161,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  It is a way to group the database at a storage level. ",
+                "value":".  It is a way to group the database at the storage level. ",
                 "children":null
             }
         ]
@@ -182,7 +182,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Next I create my user ",
+                "value":" Next I created my user ",
                 "children":null
             },
             {
@@ -196,7 +196,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and give it all privileges. I also set its default tablespace to the one I just created.  You may be wondering what is up with the strange username?  The ",
+                "value":" and gave it all privileges. I also set its default tablespace to the one I just created.  You may be wondering what is up with the strange username?  The ",
                 "children":null
             },
             {
@@ -251,7 +251,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "class": "jarombek-blog-image",
+                    "class":"jarombek-blog-image",
                     "src":"./assets/common-user.png"
                 },
                 "value":null,
@@ -376,7 +376,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The database is going to store books that I have read.  These books also have a many-to-many relationship to programming languages (since a book can be about many languages and a language can have many books describing it).  The first table I added was for languages. ",
+                "value":" The database is going to store books that I have read.  These books have a many-to-many relationship to programming languages (since a book can be about many languages and a language can have many books describing it).  The first table I added was ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"languages",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
                 "children":null
             }
         ]
@@ -648,6 +662,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
+                    "class":"jarombek-blog-image",
                     "src":"./assets/bulk-insert.png"
                 },
                 "value":null,
@@ -671,7 +686,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2018/02-Feb/\n2-12-Oracle-Start/Source"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2018/02-Feb/2-12-Oracle-Start"
                 },
                 "value":null,
                 "children":[
