@@ -166,7 +166,8 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "src":"diamond-uml.png"
+                    "class": "jarombek-blog-image",
+                    "src":"./assets/diamond-uml.png"
                 },
                 "value":null,
                 "children":[
@@ -336,7 +337,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "src":"error-message.png"
+                    "src":"./assets/error-message.png"
                 },
                 "value":null,
                 "children":[

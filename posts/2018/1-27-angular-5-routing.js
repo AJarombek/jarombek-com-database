@@ -436,7 +436,8 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "src":"prelazy.png"
+                    "class": "jarombek-blog-image",
+                    "src":"./assets/posts/1-27-17-prelazy.png"
                 },
                 "value":null,
                 "children":[
@@ -516,7 +517,8 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "src":"postlazy.png"
+                    "class": "jarombek-blog-image",
+                    "src":"./assets/posts/1-27-17-postlazy.png"
                 },
                 "value":null,
                 "children":[

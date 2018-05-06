@@ -251,7 +251,8 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "src":"common-user.png"
+                    "class": "jarombek-blog-image",
+                    "src":"./assets/common-user.png"
                 },
                 "value":null,
                 "children":[
@@ -647,7 +648,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "src":"bulk-insert.png"
+                    "src":"./assets/bulk-insert.png"
                 },
                 "value":null,
                 "children":[

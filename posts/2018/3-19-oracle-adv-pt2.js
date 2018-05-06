@@ -22,7 +22,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2018/\n03-Mar/3-18-Oracle-Adv-I/View"
+                    "href":"https://jarombek.com/blog/mar-18-2018-oracle-adv-pt1"
                 },
                 "value":null,
                 "children":[
@@ -106,7 +106,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause allows you to access columns in a row like a multidimensional array.  The calculations you can perform on this array are similar to those seen in a spreadsheet application such as Excel",
+                "value":" clause allows you to access columns in a multidimensional array.  The calculations you can perform on this array are similar to those seen in a spreadsheet application such as Excel",
                 "children":null
             },
             {
@@ -132,7 +132,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause in Oracle was that users would often copy and paste SQL query results into a spreadsheet and then manipulate the data from there.  Not you can perform these manipulations in native SQL. ",
+                "value":" clause in Oracle was that users would often copy and paste SQL query results into a spreadsheet and then manipulate the data from there.  Now you can perform these manipulations in native SQL. ",
                 "children":null
             }
         ]
@@ -145,7 +145,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The following query is a basic example using the ",
+                "value":" The following query is a basic example of the ",
                 "children":null
             },
             {
@@ -159,7 +159,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause.  I have often figured these lines written statistics are not quite accurate representations of time spent writing code in each language.  For example, Java is very verbose and I could say I wrote 200 lines of code when all I did was create a simple POJO. Meanwhile, Python has very concise syntax and I often make complex programs in less than 100 lines of code.  I use the ",
+                "value":" clause.  I figured that my lines written statistics were not quite an accurate representation of time I spent writing code in each language.  For example, Java is very verbose and 200 lines of code could have been for creating a simple POJO.  That would only take a minute to make! Meanwhile, Python has very concise syntax and I often make complex programs in less than 100 lines of code.  I used the ",
                 "children":null
             },
             {
@@ -173,7 +173,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause to adjust the lines written numbers for both Java and Python based on their verbosity. ",
+                "value":" clause to adjust the lines written for both Java and Python based on their verbosity. ",
                 "children":null
             }
         ]
@@ -381,7 +381,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" defines what type will be located in each cell and the name of the array",
+                "value":" defines what type will be located in each cell along with the name of the array",
                 "children":null
             },
             {
@@ -502,7 +502,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function.  The following queries get the monthly line totals for each language.  Although they all return the same result, you can follow the comments to see how each optimizes the previous query. ",
+                "value":" function.  The following queries get the monthly line totals for each language.  Although the queries all return the same result, you can follow the comments to see how each optimizes the previous query. ",
                 "children":null
             }
         ]
@@ -602,7 +602,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now that is awesome!  This is exactly the layout for this data that I would want in an Excel spreadsheet and it was generated in pure SQL!  I can improve this query result by displaying the total number of lines for each language with the ",
+                "value":" Now that is awesome!  This is the exact layout I would want for this data in an Excel spreadsheet and it was generated in pure SQL!  I can improve this query result by displaying the total number of lines for each language with the ",
                 "children":null
             },
             {
@@ -722,7 +722,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2018/03-Mar/\n3-19-Oracle-Adv-II/Source"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2018/03-Mar/3-19-Oracle-Adv-II"
                 },
                 "value":null,
                 "children":[

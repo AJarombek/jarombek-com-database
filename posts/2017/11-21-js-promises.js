@@ -108,7 +108,8 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "src":"results.png"
+                    "class": "jarombek-blog-image",
+                    "src":"./assets/posts/11-21-17-results.png"
                 },
                 "value":null,
                 "children":[

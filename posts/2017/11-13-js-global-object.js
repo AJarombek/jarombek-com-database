@@ -291,7 +291,8 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "src":"prompt.png"
+                    "class": "jarombek-blog-image",
+                    "src":"./assets/posts/11-13-17-prompt.png"
                 },
                 "value":null,
                 "children":[

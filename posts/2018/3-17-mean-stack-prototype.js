@@ -35,7 +35,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Blogs/2017/\n12-30-NodeJS-MongoDB-API-Prototype"
+                    "href":"https://jarombek.com/blog/dec-30-2017-nodejs-mongodb-api-prototype"
                 },
                 "value":null,
                 "children":[
@@ -84,7 +84,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This blog post is my journey through creating a prototype with Angular.  I will look at the prototype at a higher level and deep dive into code that makes the website function.  All along the way I will give my thoughts about Angular and all the other technologies that I learned along the way.  I will conclude with my current thoughts on Angular and what I feel React.js needs to bring to the table to defeat it! ",
+                "value":" This blog post is my journey through creating a prototype with Angular.  I will look at the prototype at a higher level and deep dive into code that makes the website function.  All along the way I will give my thoughts about Angular and all the other technologies that I learned in the process.  I will conclude with my current thoughts on Angular and what I feel React.js needs to bring to the table to defeat it! ",
                 "children":null
             }
         ]
@@ -138,7 +138,8 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "src":"meowcat.png"
+                    "class":"jarombek-blog-image",
+                    "src":"./assets/meowcat.png"
                 },
                 "value":null,
                 "children":[
@@ -170,7 +171,8 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "src":"MEAN-Stack.png"
+                    "class":"jarombek-blog-image",
+                    "src":"./assets/MEAN-Stack.png"
                 },
                 "value":null,
                 "children":[
@@ -219,7 +221,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/tree/master/Discoveries/2017/12-Dec/\n12-15-MongoDB-Pt1"
+                    "href":"https://jarombek.com/blog/dec-15-2017-mongodb-pt1"
                 },
                 "value":null,
                 "children":[
@@ -232,15 +234,9 @@ content = [
                 ]
             },
             {
-                "el":"#text",
-                "attributes":null,
-                "value":" ",
-                "children":null
-            },
-            {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/tree/\nmaster/Discoveries/2017/12-Dec/12-16-MongoDB-Pt2"
+                    "href":"https://jarombek.com/blog/dec-16-2017-mongodb-pt2"
                 },
                 "value":null,
                 "children":[
@@ -253,15 +249,9 @@ content = [
                 ]
             },
             {
-                "el":"#text",
-                "attributes":null,
-                "value":" ",
-                "children":null
-            },
-            {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/\njarombek-com-submittions/tree/master/Discoveries/2017/12-Dec/12-23-MongoDB-Pt3"
+                    "href":"https://jarombek.com/blog/dec-23-2017-mongodb-pt3"
                 },
                 "value":null,
                 "children":[
@@ -276,7 +266,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/tree/master/Discoveries/2017/12-Dec/\n12-27-MongoDB-Pt4"
+                    "href":"https://jarombek.com/blog/dec-27-2017-mongodb-pt4"
                 },
                 "value":null,
                 "children":[
@@ -338,7 +328,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" While these statements are performed on the MongoDB database directly, most of my interactions were done through Mongoose.  Mongoose is a Node.js module that allows you to model objects from MongoDB as well as performing queries, inserts, updates and more.  It is a really powerful tool that I used in my Node.js and MongoDB prototype.  For that prototype I was using version 4 of Mongoose.  I was really excited to see that in early January Mongoose 5 was released, which took big steps by using Promises by default and support for async functions",
+                "value":" While these statements are performed on the MongoDB database directly, most of my interactions were done through Mongoose.  Mongoose is a Node.js module that allows you to model objects from MongoDB as well as perform queries, inserts, updates and more.  It is a really powerful tool that I used in my Node.js and MongoDB prototype.  For that prototype I was using version 4 of Mongoose.  I was really excited to see that in early January Mongoose 5 was released, which took big steps by using Promises by default and supporting async functions",
                 "children":null
             },
             {
@@ -650,7 +640,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/tree/master/Discoveries/2017/11-Nov/\n11-26-JS-Async-Function/View"
+                    "href":"https://jarombek.com/blog/nov-26-2017-js-async-function"
                 },
                 "value":null,
                 "children":[
@@ -1299,7 +1289,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" While Webpack is mostly used in the front-end, there is nothing from stopping you from using it with Node.js.  You can change the environment that Webpack runs in with the ",
+                "value":" While Webpack is mostly used in the front-end, there is nothing from stopping you from using it with Node.js.  You can change the environment that Webpack runs on with the ",
                 "children":null
             },
             {
@@ -1454,7 +1444,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2017/\n11-Nov/11-10-ES6-Modules-Babel/View/modules-babel.html"
+                    "href":"https://jarombek.com/blog/nov-10-2017-es6-modules-babel"
                 },
                 "value":null,
                 "children":[
@@ -1482,7 +1472,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Back to the Webpack config for the ",
+                "value":" Let's look at the Webpack config for ",
                 "children":null
             },
             {
@@ -1686,7 +1676,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I looked at one of my tests in my TravisCI discovery, but lets look quickly at two other test suites here.  I used the supertest npm module for testing HTTP requests along with the mocha test framework. Supertest was a really nice API that made testing my endpoints easy!  Here is the testing suite for my main app endpoint: ",
+                "value":" I analyzed one of my tests in my TravisCI discovery, but lets look quickly at two other test suites here.  I used the supertest npm module for testing HTTP requests along with the mocha test framework. Supertest was a really nice API that made testing my endpoints easy!  Here is the testing suite for my main app endpoint: ",
                 "children":null
             }
         ]
@@ -1836,7 +1826,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In that test case I make sure an endpoint that requires a JWT for use returns a 401 error when no token is present on the request header. ",
+                "value":".  In that test case I make sure an endpoint that requires a JWT returns a 401 error when no token is present on the request header. ",
                 "children":null
             }
         ]
@@ -1896,13 +1886,13 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The frontend of the MEAN stack uses Angular.  Angular is a full fledged frontend framework, meaning that you must follow the code structure defined by the framework.  While this may give less flexibility to the developer it can also make sure the code stays structured even in the most complex of applications.  The version of the Angular framework is 5 at the time of this writing, and that is what I used in my prototype.  While you can write Angular applications in JavaScript or any language that transpiles to JavaScript, the team at Angular suggests that you use TypeScript. TypeScript is a language developed by Microsoft that gives the option to apply strict typing on top of JavaScript.  I wrote a discovery post on ",
+                "value":" The frontend of the MEAN stack uses Angular.  Angular is a full fledged frontend framework, meaning that you must follow the code structure defined by the framework.  While this may give less flexibility to the developer it can also make sure the code stays structured even in the most complex applications.  The version of the Angular framework is 5 at the time of this writing, and that is what I used in my prototype.  While you can write Angular applications in JavaScript or any language that transpiles to JavaScript, the team at Angular suggests that you use TypeScript. TypeScript is a language developed by Microsoft that gives the option to apply strict typing on top of JavaScript.  I wrote a discovery post on ",
                 "children":null
             },
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2018/03-Mar/\n3-8-TypeScript/View/typescript.html"
+                    "href":"https://jarombek.com/blog/mar-8-2018-typescript"
                 },
                 "value":null,
                 "children":[
@@ -1936,7 +1926,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2018/01-Jan/\n1-6-Angular-5-First-Impression/View/angular-first-imp.html"
+                    "href":"https://jarombek.com/blog/jan-6-2018-angular-5-first-impressions"
                 },
                 "value":null,
                 "children":[
@@ -1951,7 +1941,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" of the Angular framework.  In that post I was a bit critical of the framework.  While I think Angular is far from perfect, it was definitely a joy to learn and work with.  It does have its issues which I will cover in this blog.  Another note is that this blog isn't going to teach beginners how to use Angular.  I expect that you have some knowledge about the framework and how it works.  I will go through all the major components of my application as well as other cool services, directives, etc.  Let’s get started by looking at the app component.  This component is the entry point for the application and holds all the routes through the single page application (SPA). ",
+                "value":" of the Angular framework.  In that post I was a bit critical of the framework.  While I think Angular is far from perfect, it was definitely a joy to learn and work with.  It does have its issues which I will cover in this blog.  Another note is that this blog isn't going to teach beginners how to use Angular.  I expect that you have some knowledge about the framework and how it works.  I will go through all the major components of my application as well as other cool services, directives, etc.  Let’s get started by exploring the app component.  This component is the entry point for the application and holds all the routes through the single page application (SPA). ",
                 "children":null
             }
         ]
@@ -2025,7 +2015,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2018/01-Jan/\n1-27-Angular-5-Routing/View/angular-routing.html"
+                    "href":"https://jarombek.com/blog/jan-27-2018-angular-5-routing"
                 },
                 "value":null,
                 "children":[
@@ -2067,7 +2057,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is missing in these routes?  The AppComponent is actually the root component and it is bootstrapped into the module",
+                "value":" is missing in these routes.  The AppComponent is actually the root component and it is bootstrapped into the module",
                 "children":null
             },
             {
@@ -2176,7 +2166,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/\nblob/master/Discoveries/2018/01-Jan/1-27-Angular-5-Routing/View/angular-routing.html"
+                    "href":"https://jarombek.com/blog/jan-27-2018-angular-5-routing"
                 },
                 "value":null,
                 "children":[
@@ -2219,13 +2209,13 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The navigation bar uses both Bootstrap and Sass for the styling.  In fact, all of the website uses a combination of Bootstrap and Sass for the UI.  While I really have loved Sass and how it modularizes my stylesheets and makes them easier to read and work with.  I made a discovery post about ",
+                "value":" The navigation bar uses both Bootstrap and Sass for the styling.  In fact, all of the website uses a combination of Bootstrap and Sass for the UI.  I really loved Sass and how it modularized my stylesheets and made them easier to read and work with.  I made a discovery post about ",
                 "children":null
             },
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2018/\n03-Mar/3-10-Sass/View/sass.html"
+                    "href":"https://jarombek.com/blog/mar-10-2018-sass"
                 },
                 "value":null,
                 "children":[
@@ -2240,7 +2230,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" if you want to learn more about how I used it in this prototype.  Bootstrap on the other hand I have mixed feelings about.  While it does have really cool components like the navbar I used for this website, it also comes with many frustrations.  For one the current state of Bootstrap has been a bit of a mess.  Different versions come with completely different non-backwards compatible naming conventions.  While this is confusing, to make matters worse the documentation online is not even up to date with the current release.  This made developing with Bootstrap really frustrating. ",
+                "value":" if you want to learn more about how I used it in this prototype.  Bootstrap on the other hand I have mixed feelings about.  While it does have really cool components like the navbar I used for this website, it also comes with many frustrations.  For one the current state of Bootstrap is a bit of a mess.  Different versions come with completely different non-backwards compatible naming conventions.  While this is confusing, to make matters worse the documentation online is not even up to date with the current release.  This made developing with Bootstrap really frustrating. ",
                 "children":null
             }
         ]
@@ -2253,7 +2243,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If this was the only issue I had with Bootstrap I would suggest to wait for it to get into a more stable state before jumping onboard.  However, I also found that many of the components weren’t as customizable as I would have liked.  This makes bootstrap seem like more of a fun pet project tool than something worth using in production.  I will discuss this lack of customizability in more detail when discussing the cat picture module. ",
+                "value":" If this was the only issue I had with Bootstrap I would suggest to wait for it to get into a more stable state before jumping on board.  However, I also found that many of the components were not as customizable as I would have liked.  This makes bootstrap seem like more of a fun pet project tool than something worth using in production.  I will discuss this lack of customization in more detail when discussing the cat picture module. ",
                 "children":null
             }
         ]
@@ -2287,7 +2277,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" code also subscribes to certain services that emit and receive messages to and from child components.  This allows for message passing between components. I will go into detail about these services one I look at the child components that subscribe to them. ",
+                "value":" code also subscribes to certain services that emit and receive messages to and from child components.  This allows for message passing between components. I will go into detail about these services once I look at the child components that subscribe to them. ",
                 "children":null
             }
         ]
@@ -2340,9 +2330,16 @@ content = [
         "value":null,
         "children":[
             {
+                "el":"#text",
+                "attributes":null,
+                "value":"     ",
+                "children":null
+            },
+            {
                 "el":"img",
                 "attributes":{
-                    "src":"main-component.png"
+                    "class":"jarombek-blog-image",
+                    "src":"./assets/main-component.png"
                 },
                 "value":null,
                 "children":[
@@ -2828,7 +2825,8 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "src":"login-component.png"
+                    "class":"jarombek-blog-image",
+                    "src":"./assets/login-component.png"
                 },
                 "value":null,
                 "children":[
@@ -3018,7 +3016,8 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "src":"signup-component.png"
+                    "class":"jarombek-blog-image",
+                    "src":"./assets/signup-component.png"
                 },
                 "value":null,
                 "children":[
@@ -3495,19 +3494,6 @@ content = [
         ]
     },
     {
-        "el":"h5",
-        "attributes":null,
-        "value":null,
-        "children":[
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":"Conclusions",
-                "children":null
-            }
-        ]
-    },
-    {
         "el":"p",
         "attributes":null,
         "value":null,
@@ -3516,6 +3502,19 @@ content = [
                 "el":"#text",
                 "attributes":null,
                 "value":" It also would be really cool to deploy it to AWS or another cloud service.  Then I could get experience pushing an Angular app all the way to production! ",
+                "children":null
+            }
+        ]
+    },
+    {
+        "el":"h5",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":"Conclusions",
                 "children":null
             }
         ]

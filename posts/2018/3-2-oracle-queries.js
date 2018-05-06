@@ -237,7 +237,8 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "src":"Database-ER.png"
+                    "class": "jarombek-blog-image",
+                    "src":"./assets/Database-ER.png"
                 },
                 "value":null,
                 "children":[

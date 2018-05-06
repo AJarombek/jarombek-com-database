@@ -22,7 +22,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2018/03-Mar/\n3-2-Oracle-Queries/View"
+                    "href":"https://jarombek.com/blog/feb-12-2018-oracle-start"
                 },
                 "value":null,
                 "children":[
@@ -43,7 +43,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2018/\n02-Feb/2-12-Oracle-Start/View"
+                    "href":"https://jarombek.com/blog/mar-2-2018-oracle-queries"
                 },
                 "value":null,
                 "children":[
@@ -84,7 +84,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The first analytic function calculation I performed was a ranking of programming languages and the time spent reading about them.  There are two main functions that you can use for ranking, ",
+                "value":" The first analytic function query is a ranking of programming languages and the time spent reading about them.  There are two main functions that you can use for ranking, ",
                 "children":null
             },
             {
@@ -142,7 +142,7 @@ content = [
         "attributes":{
             "class":"code-span"
         },
-        "value":"NAME         SUM(B.TIME_READING) RANK      DENSE_RANK\n------------ ------------------- --------- ---------------\nJava         134                 1         1\nPL/SQL       26                  2         2\nSQL          26                  2         2\nJavaScript\n",
+        "value":"NAME         SUM(B.TIME_READING) RANK      DENSE_RANK\n------------ ------------------- --------- ---------------\nJava         134                 1         1\nPL/SQL       26                  2         2\nSQL          26                  2         2\nJavaScript                       4         3\n",
         "children":null
     },
     {
@@ -153,7 +153,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Another interesting piece to this query is the ",
+                "value":" Another interesting piece of this query is the ",
                 "children":null
             },
             {
@@ -300,7 +300,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can do other types of rankings such as percentile rankings.  From this we can see that the total lines for Java in 2015 was in the top 30% performances across all years. ",
+                "value":" You can do other types of rankings such as percentile rankings.  From this we can see that Java in 2015 was in the top 30% of performances across all years. ",
                 "children":null
             }
         ]
@@ -398,7 +398,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" to a subset of rows from a result set",
+                "value":" to a subset of rows in a result set",
                 "children":null
             },
             {
@@ -410,7 +410,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". This subset is known as the window.  Here is an example of query using a window function that shows the cumulative sum of code lines written: ",
+                "value":". This subset is known as the window.  Here is an example of a query using a window function that shows the cumulative sum of code lines written: ",
                 "children":null
             }
         ]
@@ -453,7 +453,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is the really interesting one here.  It starts by saying compute the sum of all the rows in the window with the statement ",
+                "value":" is the really interesting one here.  It starts by saying \"compute the sum of all the rows in the window with the statement ",
                 "children":null
             },
             {
@@ -467,7 +467,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Now I have to define what rows are in the window.  I ",
+                "value":"\".  Now I have to define what rows are in the window.  I ",
                 "children":null
             },
             {
@@ -551,7 +551,7 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"LAST_VALUE",
+                "value":"LAST_VALUE()",
                 "children":null
             },
             {

@@ -225,7 +225,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Every element in the website that needed that specific font would simply include the mixin!  I also used mixing to perform more complex operations like transformations.  Another powerful feature of mixins is the ability to pass it arguments.  These arguments can even have default values!  Here is a mixin that I created to apply a transition to a property: ",
+                "value":" Every element in the website that needed that specific font would simply include the mixin!  I also used mixins to perform more complex operations like transformations.  Another powerful feature of mixins is the ability to pass it arguments.  These arguments can even have default values!  Here is a mixin that I created to apply a transition to a property: ",
                 "children":null
             }
         ]

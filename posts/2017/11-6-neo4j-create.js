@@ -446,7 +446,8 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "src":"./assets/js.png"
+                    "class": "jarombek-blog-image",
+                    "src":"./assets/posts/11-6-17-FairfieldGraphImage.png"
                 },
                 "value":null,
                 "children":[

@@ -255,7 +255,8 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "src":"mongodb.png"
+                    "class": "jarombek-blog-image",
+                    "src":"./assets/posts/12-30-17-mongodb.png"
                 },
                 "value":null,
                 "children":[
@@ -293,7 +294,8 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "src":"restapi.png"
+                    "class": "jarombek-blog-image",
+                    "src":"./assets/posts/12-30-17-restapi.png"
                 },
                 "value":null,
                 "children":[
@@ -818,7 +820,8 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "src":"xmlresponse.png"
+                    "class": "jarombek-blog-image",
+                    "src":"./assets/posts/12-30-17-xmlresponse.png"
                 },
                 "value":null,
                 "children":[
@@ -1044,7 +1047,8 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "src":"xmlresponsetext.png"
+                    "class": "jarombek-blog-image",
+                    "src":"./assets/posts/12-30-17-xmlresponsetext.png"
                 },
                 "value":null,
                 "children":[

@@ -62,7 +62,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In my application, these claims will determine whether the user is signed in.  The parties that these claims are transferred between are the Node.js/Express web server and my Angular 5 client. ",
+                "value":".  In my application, these claims determined whether the user is signed in.  The parties that these claims are transferred between are the Node.js/Express web server and my Angular 5 client. ",
                 "children":null
             }
         ]
@@ -75,7 +75,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" A JWT is a Base64 encoded JSON object and algorithm used for signing.  It contains a header, payload, and signature",
+                "value":" A JWT is a Base64 encoded JSON object along with an algorithm used for signing.  It contains a header, payload, and signature",
                 "children":null
             },
             {
@@ -106,7 +106,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In the above JWT the first line is the header, the second line is the payload, and third line the signature.  The header carries claims about the JWT itself.  In my use case, there was only one claim used - the algorithms used to sign the JWT.  In my use case the algorithm is RS256, which is RSA along with SHA256.  More on this later. ",
+                "value":" In the above JWT the first line is the header, the second line is the payload, and third line the signature.  The header carries claims about the JWT itself.  In my use case, there was only one claim used - the algorithm used to sign the JWT.  In my use case the algorithm was RS256, which is RSA along with SHA256.  More on this later. ",
                 "children":null
             }
         ]
@@ -127,7 +127,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The payload contains user data about the JWT.  This is the data that we wanted to transfer in the first place.  In my implementation the JWT payload had three claims.  The first is the ",
+                "value":" The payload contains user data about the JWT.  This is the data that I wanted to transfer in the first place.  In my implementation the JWT payload had three claims.  The first is the ",
                 "children":null
             },
             {
@@ -141,7 +141,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" claim, which identifies the subject that the claim is about.  In my application, the subject would be the user that is logged in.  The second claim is the ",
+                "value":" claim, which identifies the subject that the claim is about.  In my application, the subject was the user that is logged in.  The second claim is the ",
                 "children":null
             },
             {
@@ -203,7 +203,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The signature, also called JSON Web Signature, is the really cool portion of JWT’s that make them so powerful.  The signature is how you determine the authenticity of the JWT",
+                "value":" The signature, also known as the JSON Web Signature, is the really cool portion of JWT’s that make them so powerful.  The signature is how you determine the authenticity of a JWT",
                 "children":null
             },
             {
@@ -396,7 +396,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Finally on all outgoing HTTP requests we also have to attach the JWT to the request body.  This is so that the JWT can be verified by the Node.js/Express server. I set up this functionality with an ",
+                "value":" Finally on all outgoing HTTP requests I attached the JWT to the request body.  This is so that the JWT can be verified by the Node.js/Express server. I set up this functionality with an ",
                 "children":null
             },
             {
@@ -444,7 +444,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I’m sure this will not be the last time I explore JWT.  I also am really interested in how exactly the authentication algorithms work!  Hugh shoutout to Angular University",
+                "value":" I’m sure this will not be the last time I explore JWT.  I also am really interested in how exactly the authentication algorithms work!  Huge shout out to Angular University",
                 "children":null
             },
             {

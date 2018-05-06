@@ -16,7 +16,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Recently I have spent a lot of time working in React.js for my upcoming website (which by the time you are reading this is completed!).  One of the challenges I faced was dynamically deciding at runtime which JSX element to render.  It turns out there is a pretty nice solution to this problem with one major catch. ",
+                "value":" Recently I've spent a lot of time working with React.js for my upcoming website (which by the time you are reading this is completed!).  One of the challenges I faced was dynamically deciding at runtime which JSX element to render.  It turns out there is a pretty nice solution to this problem. ",
                 "children":null
             }
         ]
@@ -29,7 +29,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" First however, if you have been following by posts you will know that this is the first time I have posted about React.js.  Therefore lets quickly review/initiate ourselves with the React library. ",
+                "value":" First off, if you have been following by posts you will know that this is the first time I have posted about React.js.  Therefore lets quickly review/initiate ourselves with the React library. ",
                 "children":null
             }
         ]
@@ -42,7 +42,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" React.js is a frontend library written in JavaScript for creating and maintaining views.  Unlike the Angular framework which I had been looking before React does not control any aspect of your project besides for the views.  This makes it quite lightweight and gives the developer a lot of flexibility and freedom. ",
+                "value":" React.js is a frontend library written in JavaScript for creating and maintaining views.  Unlike the Angular framework which I was using before, React does not control any aspect of your project besides for the views.  This makes it quite lightweight and gives the developer a lot of flexibility and freedom. ",
                 "children":null
             }
         ]
@@ -55,7 +55,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Let’s quickly run through some of the major selling points of React.  React creates a virtual layer on top of the DOM called the Virtual DOM.  React uses the virtual DOM to interact with the real DOM API, allowing the developer to not have to interact with the DOM itself",
+                "value":" Let’s quickly run through some of the major selling points of React.  React creates a virtual layer on top of the DOM called the Virtual DOM.  React uses the virtual DOM to interact with the real DOM API, allowing the developer to avoid interacting with the DOM itself",
                 "children":null
             },
             {
@@ -67,7 +67,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  React also has an extremely effective diffing algorithm which makes updates to the DOM quick and effective by only changing necessary pieces of the DOM on state changes",
+                "value":".  React also has an extremely effective diffing algorithm which makes updates to the DOM quick by only changing necessary pieces of the DOM on state changes",
                 "children":null
             },
             {
@@ -92,7 +92,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" React is also isomorphic (code that can be run on multiple platforms), meaning that it does not necessarily have to render its views on the DOM",
+                "value":" React is also isomorphic (can be run on multiple platforms), meaning that it does not necessarily have to render its views on the DOM",
                 "children":null
             },
             {
@@ -104,7 +104,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  It can also do so rending HTML on the server (server-side rendering) or on mobile apps!  I haven’t explored React Native for mobile apps yet but it sounds extremely cool!  My website takes advantage of server-side rendering, which I will cover in detail in a future discovery. ",
+                "value":".  It can also render HTML on the server (server-side rendering) or on mobile apps!  I haven’t explored React Native for mobile apps yet but it sounds extremely cool!  My website takes advantage of server-side rendering, which I will cover in detail in a future discovery. ",
                 "children":null
             }
         ]
@@ -117,7 +117,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Also importantly React tries to take advantage of JavaScripts functional aspects.  Much of my React code is functional, and working with React helps me to think functionally making my code more testable and maintainable.  I went into detail on ",
+                "value":" Also importantly React tries to take advantage of JavaScripts functional aspects.  Much of my React code is functional, and working with React helps me to think functionally - making my code more testable and maintainable.  I went into detail on ",
                 "children":null
             },
             {
@@ -174,7 +174,7 @@ content = [
         "attributes":{
             "language":"JavaScript"
         },
-        "value":"import React from \"react\";\n\nconst Link = ({ name, link }) =>\nReact.createElement(\"a\", {href: link}, name);\n\nexport default Link;\n",
+        "value":"import React from \"react\";\n\nconst Link = ({ name, link }) =>\n    React.createElement(\"a\", {href: link}, name);\n\nexport default Link;\n",
         "children":null
     },
     {
@@ -316,7 +316,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" on some JSON that I received from my server.  For example, if the JSON had a property ",
+                "value":" Now lets get to the issue I faced when building my website.  I wanted to dynamically choose the JSX element type at runtime based on some JSON that I received from my server.  For example, if the JSON had a property ",
                 "children":null
             },
             {
@@ -358,7 +358,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In doing this, I could store a JSON representation of some HTML and have my React code create and render it on the fly. ",
+                "value":".  With this implemented, I could store a JSON representation of some HTML and have my React code create and render it on the fly. ",
                 "children":null
             }
         ]
@@ -371,7 +371,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The code used by my website is a bit more involved but I’m going to go through the basic process.  First I import react and the ",
+                "value":" The code used by my website is a bit more involved than what I will show you but I’m going to cover the basic process.  First I import react and the ",
                 "children":null
             },
             {
@@ -385,7 +385,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" component I created.  I also get a JavaScript object representation of some HTML I want to display: ",
+                "value":" component I created. I also get a JavaScript object representation of some HTML I want to display: ",
                 "children":null
             }
         ]
@@ -510,7 +510,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" which represents the JSX element.  Remember that a JSX element is simply syntactic sugar for a React element which will be sent to the virtual DOM. ",
+                "value":" on the third line which represents the JSX element.  Remember that a JSX element is simply syntactic sugar for a React element (which itself is a JavaScript object) that will be sent to the virtual DOM. ",
                 "children":null
             }
         ]
@@ -537,7 +537,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" as a string.  This is why the below code works for ",
+                "value":" as a string.  This is why the code above works for ",
                 "children":null
             },
             {
@@ -565,7 +565,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" element names.  If you tried assigning the variable ",
+                "value":" element names.  If you tried assigning the string “Link” to the variable ",
                 "children":null
             },
             {
@@ -579,7 +579,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" the string “Link” it would not render.  The reason is because ",
+                "value":" it would not render.  The reason is because ",
                 "children":null
             },
             {
@@ -653,7 +653,8 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "src":"dynamic-jsx.png"
+                    "class":"jarombek-blog-image",
+                    "src":"./assets/dynamic-jsx.png"
                 },
                 "value":null,
                 "children":[
@@ -689,7 +690,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2018/04-Apr/4-29-React-Dynamic-JSX-Tag"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2018/04-Apr/4-30-React-Dynamic-JSX-Tag"
                 },
                 "value":null,
                 "children":[

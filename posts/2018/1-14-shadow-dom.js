@@ -178,7 +178,8 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "src":"webresult.png"
+                    "class": "jarombek-blog-image",
+                    "src":"./assets/posts/1-14-18-webresult.png"
                 },
                 "value":null,
                 "children":[
@@ -242,7 +243,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "src":"html.png",
+                    "src":"./assets/posts/1-14-18-html.png",
                     "align":"middle"
                 },
                 "value":null,
