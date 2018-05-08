@@ -55,7 +55,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In the past I have used with ",
+                "value":" In the past I have used the ",
                 "children":null
             },
             {
@@ -291,7 +291,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "class": "jarombek-blog-image",
+                    "class":"jarombek-blog-image",
                     "src":"./assets/posts/11-13-17-prompt.png"
                 },
                 "value":null,
@@ -375,7 +375,7 @@ content = [
         "attributes":{
             "language":"JavaScript"
         },
-        "value":"var newWindow = window.open();\nnewWindow.document.write(\"",
+        "value":"var newWindow = window.open();\nnewWindow.document.write(\"<p>Hello</p>\");\n",
         "children":null
     },
     {
@@ -769,7 +769,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2017/\n11-Nov/11-13-JS-Global-Object/Source"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2017/11-Nov/11-13-JS-Global-Object"
                 },
                 "value":null,
                 "children":[

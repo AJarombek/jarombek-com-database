@@ -155,7 +155,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function, this is now how simple our asynchronous code can be!  Even better, it is laid out in a synchronous manner, no promises or dreaded callbacks to deal with!  All of the ",
+                "value":" function, this is how simple our asynchronous code can be!  Even better, it is laid out in a synchronous manner, no promises or dreaded callbacks to deal with!  All of the ",
                 "children":null
             },
             {
@@ -289,7 +289,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now let's get to the code.  Our first stop is the meowHttp module which creates a promise for our google search",
+                "value":" Now let's get to the code.  The first piece is the meowHttp module which creates a promise for our google search",
                 "children":null
             },
             {
@@ -468,7 +468,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "class": "jarombek-blog-image",
+                    "class":"jarombek-blog-image",
                     "src":"./assets/posts/11-26-17-results.png"
                 },
                 "value":null,
@@ -506,7 +506,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/\nmaster/Discoveries/2017/11-Nov/11-26-JS-Async-Function/Source/Async"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/\nmaster/2017/11-Nov/11-26-JS-Async-Function"
                 },
                 "value":null,
                 "children":[

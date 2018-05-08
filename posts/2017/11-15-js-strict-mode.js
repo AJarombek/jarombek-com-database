@@ -28,20 +28,20 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In a way it protects the developer from things that happen implicitly in JavaScript (that only an experience dev would be aware of).  In a ",
+                "value":".  In a way it protects the developer from things that happen implicitly in JavaScript (that only an experienced dev would be aware of).  In a ",
                 "children":null
             },
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/\nblob/master/Discoveries/2017/11-Nov/11-11-JS-This/View/js-this.html"
+                    "href":"https://jarombek.com/blog/nov-11-2017-js-this"
                 },
                 "value":null,
                 "children":[
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"previous discovery",
+                        "value":" previous discovery",
                         "children":null
                     }
                 ]
@@ -228,7 +228,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/\nblob/master/Discoveries/2017/11-Nov/11-15-JS-Strict-Mode/Source/strict-mode.js"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/\nblob/master/2017/11-Nov/11-15-JS-Strict-Mode/strict-mode.js"
                 },
                 "value":null,
                 "children":[

@@ -131,7 +131,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2017/\n11-Nov/11-8-JS-Scope-Hoisting/View/scope-hoisting.html"
+                    "href":"https://jarombek.com/blog/nov-8-2017-scope-hoisting"
                 },
                 "value":null,
                 "children":[
@@ -921,7 +921,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2017/11-Nov/\n11-11-JS-This/Source/this.js"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/blob/master/2017/11-Nov/11-11-JS-This/this.js"
                 },
                 "value":null,
                 "children":[

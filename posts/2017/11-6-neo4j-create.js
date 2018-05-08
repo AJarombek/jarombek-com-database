@@ -371,7 +371,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries\n/2017/11-Nov/11-6-Neo4j-Create/Source/neo4j-create.cql"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/blob/\nmaster/2017/11-Nov/11-6-Neo4j-Create/neo4j-create.cql"
                 },
                 "value":null,
                 "children":[
@@ -446,7 +446,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "class": "jarombek-blog-image",
+                    "class":"jarombek-blog-image",
                     "src":"./assets/posts/11-6-17-FairfieldGraphImage.png"
                 },
                 "value":null,

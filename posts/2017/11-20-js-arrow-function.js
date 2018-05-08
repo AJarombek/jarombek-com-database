@@ -35,7 +35,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2017/11-Nov/\n11-11-JS-This/View/js-this.html"
+                    "href":"https://jarombek.com/blog/nov-11-2017-js-this"
                 },
                 "value":null,
                 "children":[
@@ -46,12 +46,6 @@ content = [
                         "children":null
                     }
                 ]
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" ",
-                "children":null
             },
             {
                 "el":"code",
@@ -589,7 +583,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2017/11-Nov/\n11-20-JS-Arrow-Function/Source/arrow-functions.js"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/blob/master/2017/11-Nov/11-20-JS-Arrow-Function/\narrow-functions.js"
                 },
                 "value":null,
                 "children":[

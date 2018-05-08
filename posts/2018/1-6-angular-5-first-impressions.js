@@ -16,7 +16,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Recently I have been learning different JavaScript technologies to build a website.  I have looked into Node.js and MongoDB for my back-end and database.  Now it is time to switch to the front-end JavaScript technologies.  The two top picks for front-end frameworks is Angular and React.js.  Today I will begin to look at Angular and if it will be a suitable option for my website.  This post won't look at too much code but instead cover my initial reactions to the framework. ",
+                "value":" Recently I have been learning different JavaScript technologies to build a website.  I have looked into Node.js and MongoDB for my back-end and database.  Now it is time to switch to the front-end JavaScript technologies.  The two top picks for front-end frameworks are Angular and React.js.  Today I will begin to look at Angular and if it is a suitable option for my website.  This post won't look at too much code but instead cover my initial reactions to the framework. ",
                 "children":null
             }
         ]
@@ -67,7 +67,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Angular CLI is also a wrapper around Webpack so it does all the module building for you",
+                "value":".  Angular CLI is also a wrapper around Webpack so it does all the module bundling for you",
                 "children":null
             },
             {
@@ -179,7 +179,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Also, using TypeScript in my front-end would end my truly full JavaScript web stack.  Although TypeScript is very similar to JavaScript, I would still have to adjust to using two different languages when developing. As my TypeScript experience grows I will see if I start seeing some benefits of the language. ",
+                "value":" Also, using TypeScript would end my truly full JavaScript web stack.  Although TypeScript is very similar to JavaScript, I would still have to adjust to using two different languages when developing. As my TypeScript experience grows I will see if I start seeing some benefits of the language. ",
                 "children":null
             }
         ]
@@ -590,7 +590,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" So this was a quick glance at how my first attempts at Angular 5 went.  I am not convinced it is the solution for me yet, but there is still a lot of work and exploring to do.  Up next I will start building a full Angular project! ",
+                "value":" So this was a quick glance at how my first attempts with Angular 5 went.  I am not convinced it is the solution for me yet, but there is still a lot of work and exploring to do.  Up next I will start building a full Angular project! ",
                 "children":null
             }
         ]

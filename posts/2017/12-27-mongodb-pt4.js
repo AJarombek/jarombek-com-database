@@ -48,7 +48,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2017/12-Dec/\n12-15-MongoDB-Pt1/View/mongodb1.html"
+                    "href":"https://jarombek.com/blog/dec-15-2017-mongodb-pt1"
                 },
                 "value":null,
                 "children":[
@@ -69,7 +69,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2017/12-Dec/\n12-16-MongoDB-Pt2/View/mongodb2.html"
+                    "href":"https://jarombek.com/blog/dec-16-2017-mongodb-pt2"
                 },
                 "value":null,
                 "children":[
@@ -132,7 +132,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function takes an array of pipeline steps.  So we first match on type frazier, group by the grade and get a count of documents in that group, and finally sort by the count with the ",
+                "value":" function takes an array of pipeline steps.  So we first match on type frazier, group by the grade and get a count of documents in that group, and finally sort by the count.  These three steps are performed with the ",
                 "children":null
             },
             {
@@ -433,7 +433,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2017/12-Dec/\n12-27-MongoDB-Pt4/Source/dbscripts.js"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2017/12-Dec/12-27-MongoDB-Pt4"
                 },
                 "value":null,
                 "children":[

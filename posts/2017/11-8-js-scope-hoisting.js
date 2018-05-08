@@ -52,7 +52,7 @@ content = [
         "attributes":{
             "language":"JavaScript"
         },
-        "value":"var x = 10;\n",
+        "value":"console.info(x);  // Error??\n\nvar x = 10;\n",
         "children":null
     },
     {
@@ -335,7 +335,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2017/11-Nov/\n11-8-JS-Scope-Hoisting/Source/scope.js"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/blob/master/2017/11-Nov/11-8-JS-Scope-Hoisting/\nscope.js"
                 },
                 "value":null,
                 "children":[

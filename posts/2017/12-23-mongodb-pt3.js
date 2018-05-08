@@ -29,7 +29,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" An example of an array in a document being useful could be a user that has multiple addresses.  In a relational database, this address information would have to be stored in a separate table that could be joined on the user table to get all the addresses.  In MongoDB, this can all be stored in one document which makes accessing quick and easy (no expensive ",
+                "value":" An example of an array in a document being useful is a user that has multiple addresses.  In a relational database, this address information would have to be stored in a separate table that could be joined on the user table to get all the addresses.  In MongoDB, this can all be stored in one document which makes accessing quick and easy (no expensive ",
                 "children":null
             },
             {
@@ -56,7 +56,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now let's look at some operations we can do on arrays from the MongoDB shell.  I created a document called ",
+                "value":" Now let's look at some operations on arrays from the MongoDB shell.  I created a document called ",
                 "children":null
             },
             {
@@ -443,14 +443,14 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2017/12-Dec/\n12-23-MongoDB-Pt3/Source/dbscripts.js"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/blob/master/2017/12-Dec/12-23-MongoDB-Pt3/dbscripts.js"
                 },
                 "value":null,
                 "children":[
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"HERE",
+                        "value":" HERE",
                         "children":null
                     }
                 ]

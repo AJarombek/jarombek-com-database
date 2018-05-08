@@ -271,7 +271,9 @@ content = [
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
                 "value":"String.Index",
                 "children":null
             },
@@ -311,7 +313,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Okay, that already sounds a bit complicated.  The question you might be asking now is how to be get these ",
+                "value":" Okay, that already sounds a bit complicated.  The question you might be asking now is how to we get these ",
                 "children":null
             },
             {
@@ -704,7 +706,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/\n2018/01-Jan/1-3-Swift-String/View/string-swift.html"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2018/01-Jan/\n1-3-Swift-String"
                 },
                 "value":null,
                 "children":[

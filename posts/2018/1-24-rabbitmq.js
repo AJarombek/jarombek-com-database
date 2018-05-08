@@ -16,7 +16,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Recently for work I've had to look into RabbitMQ, a message broker that you can use to communicate between different parts of your application.  An analogy that I really like is that RabbitMQ is like putting a post office in your application - you can have producers put messages in the post offices queue and have these messages routed to consumers",
+                "value":" Recently for work I've looked into RabbitMQ, a message broker that you can use to communicate between different parts of your application.  An analogy I really liked is that RabbitMQ is like putting a post office in your application - you can have producers put messages in the post offices queue and have these messages routed to consumers",
                 "children":null
             },
             {
@@ -54,7 +54,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In order to get to know RabbitMQ better, I made an enhanced hello world type example where producers can send JSON representing running logs to different consumers.  All the code is in Python, since the RabbitMQ Python API is very short and sweet!  Let's take a look! ",
+                "value":" In order to get to know RabbitMQ better, I made an enhanced hello world example where producers can send JSON representing running logs to different consumers.  All the code is in Python, since the RabbitMQ Python API is very short and sweet!  Let's take a look! ",
                 "children":null
             }
         ]
@@ -80,7 +80,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" My producer starts by taking command line arguments and converting them to JSON.  This will be the body of the message sent across the RabbitMQ channel.  It will also take some of the arguments to form the routing key, which in context of the post office analogy is like the mailing address. ",
+                "value":" My producer starts by taking command line arguments and converting them to JSON.  This will be the body of the message sent across the RabbitMQ channel.  It will also take arguments to form the routing key, which in context of the post office analogy is like the mailing address. ",
                 "children":null
             }
         ]
@@ -287,7 +287,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/\nblob/master/Discoveries/2018/01-Jan/1-24-RabbitMQ/Source/producer.py"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/blob/master/\n2018/01-Jan/1-24-RabbitMQ/producer.py"
                 },
                 "value":null,
                 "children":[
@@ -384,7 +384,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/\n2018/01-Jan/1-24-RabbitMQ/Source/setup.sh"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/blob/master/2018/01-Jan/\n1-24-RabbitMQ/setup.sh"
                 },
                 "value":null,
                 "children":[

@@ -22,7 +22,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2017/11-Nov/\n11-6-Neo4j-Create/View/neo4j-create.html"
+                    "href":"https://jarombek.com/blog/nov-6-2017-neo4j-create"
                 },
                 "value":null,
                 "children":[
@@ -71,7 +71,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"     Now what if I wanted to undo this action of creating people.  The first option I have is to simply     delete all of the people from the graph: ",
+                "value":" Now what if I wanted to undo this action of creating people?  The first option I have is to simply delete all of the people from the graph: ",
                 "children":null
             }
         ]
@@ -92,7 +92,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" But maybe I only want to delete specific people from the graph.  The first thing that came to my head was to simply match on a certain name such as ",
+                "value":" But maybe I only want to delete specific people from the graph.  The first thing that came into to my head was to simply match on a certain name such as ",
                 "children":null
             },
             {
@@ -206,7 +206,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now if have all four of our people vertices back in the graph, we can create a relationship between them and the settlements they are citizens of: ",
+                "value":" Now if we have all four people vertices back in the graph, we can create a relationship between them and the settlements they are citizens of: ",
                 "children":null
             }
         ]
@@ -232,7 +232,9 @@ content = [
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
                 "value":":LOCATED_IN",
                 "children":null
             },
@@ -424,7 +426,7 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"UNWIND tail(instances)as dups",
+                "value":"UNWIND tail(instances) as dups",
                 "children":null
             },
             {
@@ -703,13 +705,13 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now we are fully ready to query the graph database (which I will have in another discovery soon!).  The code used for this discovery can be found ",
+                "value":" Now we are fully ready to query the graph database.  The code used for this discovery can be found ",
                 "children":null
             },
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/\nblob/master/Discoveries/2017/11-Nov/11-12-Neo4j-Challenges/Source/neo4j-additions.cql"
+                    "href":"https://\ngithub.com/AJarombek/jarombek-com-sources/blob/master/2017/11-Nov/11-12-Neo4j-Challenges/neo4j-additions.cql"
                 },
                 "value":null,
                 "children":[

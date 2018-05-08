@@ -16,7 +16,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Regular expressions are very commonly used in my code.  However, their are still certain aspects of them that have remained a mystery to me.  Today I will explore one new aspect of regular expressions - captures.  I will write the code for captures in JavaScript but this applies to many languages with regex capabilities (including my main language Java).  Let's dig in. ",
+                "value":" Regular expressions are very commonly used in my code.  However, their are still certain aspects of them that have remained a mystery to me.  Today I will explore one new aspect of regular expressions - captures.  I will write the code for captures in JavaScript but they apply to many languages with regex capabilities (including my main language Java).  Let's dig in. ",
                 "children":null
             }
         ]
@@ -29,7 +29,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Captures allow us to save pieces of a regular expression so we can use them later on.  For example, it we have a regex that matches emails, we can capture certain aspects of the email - the local part and the domain.  We can also do the same thing with dates, saving the day, month, and year.  That is what happens in the following example: ",
+                "value":" Captures allow us to save pieces of a regular expression so we can use them later on.  For example, it we have a regex that matches emails, we can capture certain aspects of the email - the local part and the domain.  We can also do the same thing with dates - saving the day, month, and year.  That is what happens in the following example: ",
                 "children":null
             }
         ]
@@ -164,7 +164,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" token will refer to the contents of the first capture (the dates month) which is defined at runtime.  Now our regular expressions are even more dynamic! ",
+                "value":" token will refer to the contents of the first capture (the month) which is defined at runtime.  Now our regular expressions are even more dynamic! ",
                 "children":null
             }
         ]
@@ -191,7 +191,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2017/12-Dec/\n12-12-JS-Regex-Captures/Source/captures.js"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/blob/master/2017/12-Dec/\n12-12-Regex-Captures/captures.js"
                 },
                 "value":null,
                 "children":[

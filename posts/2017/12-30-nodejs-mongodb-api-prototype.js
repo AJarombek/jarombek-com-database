@@ -22,14 +22,14 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/\nblob/master/Discoveries/2017/12-Dec/12-15-MongoDB-Pt1/View"
+                    "href":"https://jarombek.com/blog/dec-15-2017-mongodb-pt1"
                 },
                 "value":null,
                 "children":[
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"basic features of the database",
+                        "value":" basic features of the database",
                         "children":null
                     }
                 ]
@@ -43,7 +43,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/\nDiscoveries/2017/11-Nov/11-10-ES6-Modules-Babel/View"
+                    "href":"https://jarombek.com/blog/nov-10-2017-es6-modules-babel"
                 },
                 "value":null,
                 "children":[
@@ -64,7 +64,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2017/\n11-Nov/11-26-JS-Async-Function/View"
+                    "href":"https://jarombek.com/blog/nov-26-2017-js-async-function"
                 },
                 "value":null,
                 "children":[
@@ -255,7 +255,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "class": "jarombek-blog-image",
+                    "class":"jarombek-blog-image",
                     "src":"./assets/posts/12-30-17-mongodb.png"
                 },
                 "value":null,
@@ -294,7 +294,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "class": "jarombek-blog-image",
+                    "class":"jarombek-blog-image",
                     "src":"./assets/posts/12-30-17-restapi.png"
                 },
                 "value":null,
@@ -570,7 +570,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/tree/\nmaster/Discoveries/2017/11-Nov/11-21-JS-Promises"
+                    "href":"https://jarombek.com/blog/nov-21-2017-js-promises"
                 },
                 "value":null,
                 "children":[
@@ -820,7 +820,6 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "class": "jarombek-blog-image",
                     "src":"./assets/posts/12-30-17-xmlresponse.png"
                 },
                 "value":null,
@@ -1047,7 +1046,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "class": "jarombek-blog-image",
+                    "class":"jarombek-blog-image",
                     "src":"./assets/posts/12-30-17-xmlresponsetext.png"
                 },
                 "value":null,

@@ -16,7 +16,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I have recently started work on my Angular 5 framework prototype.  The project will be a single page web application that displays cat pictures!  The page will have a number of tabs you can click on that will change the state of the application.  To start setting up the application, I first set up all the routes in Angular for when users click on the tabs. ",
+                "value":" I have recently started work on my Angular 5 framework prototype.  The project will be a single page web application that displays cat pictures!  The page will have a number of tabs you can click on that will change the state of the application.  To start setting up the application, I first created all the routes which will be selected when users click on tabs. ",
                 "children":null
             }
         ]
@@ -29,7 +29,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" First I set up an Angular component that has an HTML template for all the tabs. ",
+                "value":" First I made an Angular component that has an HTML template for all the tabs. ",
                 "children":null
             }
         ]
@@ -119,7 +119,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The most important piece of this module is that it maps each route to the correct component: ",
+                "value":".  The most important aspect of this module is that it maps each route to the correct component: ",
                 "children":null
             }
         ]
@@ -140,7 +140,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can see that each route is assigned a HTTP path and an Angular component.  This ",
+                "value":" You can see that each route is assigned a HTTP path and an Angular component.  The ",
                 "children":null
             },
             {
@@ -276,7 +276,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The prototype project has two modules: the root module we have looked at already and a ",
+                "value":" The prototype project has two modules: the root module that we have viewed already and a ",
                 "children":null
             },
             {
@@ -290,7 +290,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" that contains components that are only accessible by signed in users.  If you look closely at the ",
+                "value":" that contains components that are only accessible to signed in users.  If you look closely at the ",
                 "children":null
             },
             {
@@ -436,7 +436,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "class": "jarombek-blog-image",
+                    "class":"jarombek-blog-image",
                     "src":"./assets/posts/1-27-17-prelazy.png"
                 },
                 "value":null,
@@ -517,7 +517,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "class": "jarombek-blog-image",
+                    "class":"jarombek-blog-image",
                     "src":"./assets/posts/1-27-17-postlazy.png"
                 },
                 "value":null,
@@ -541,7 +541,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/angular-nodejs-mongodb-prototype/releases/tag/v0.1"
+                    "href":"https://github.com/AJarombek/mean-client-prototype/tree/v0.1"
                 },
                 "value":null,
                 "children":[

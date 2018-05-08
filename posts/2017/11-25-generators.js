@@ -263,7 +263,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2017/11-Nov/\n11-25-Generators/Source"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/\n2017/11-Nov/11-25-Generators"
                 },
                 "value":null,
                 "children":[
@@ -291,7 +291,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" JavaScript is not the only language with generators.  Of my main languages Python and PHP also have generators.  Let's look at an example in Python",
+                "value":" JavaScript is not the only language with generators.  Out of my main languages Python and PHP also have generators.  Let's look at an example in Python",
                 "children":null
             },
             {
@@ -311,7 +311,7 @@ content = [
     {
         "el":"codesnippet",
         "attributes":{
-            "language":"Python"
+            "language":"JavaScript"
         },
         "value":"def fib():\n    first = 0\n    last = 1\n\n    yield first\n    yield last\n\n    while True:\n        # Construct and deconstruct a tuple\n        first, last = last, first + last\n        yield last\n\nfibonacci = fib()\nfor x in range(50):\n    print(next(fibonacci))\n",
         "children":null

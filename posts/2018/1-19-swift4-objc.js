@@ -98,7 +98,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Since many of Apple's APIs are built in Objective-C, many of my functions were actually interacting with non-Swift code without me even knowing!  This communication between Swift and Objective-C is called Interoperability and lets you use Objective-C code in Swift and vice versa",
+                "value":".  Since many of Apple's APIs are built in Objective-C, a lot of my functions were actually interacting with non-Swift code without me even knowing!  This communication between Swift and Objective-C is called Interoperability and it lets you use Objective-C code in Swift and vice versa",
                 "children":null
             },
             {
@@ -123,7 +123,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now why is Swift 4 enforcing the ",
+                "value":" Why is Swift 4 enforcing the ",
                 "children":null
             },
             {

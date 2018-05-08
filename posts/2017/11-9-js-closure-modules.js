@@ -16,7 +16,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In JavaScript there are many module patterns that can be used to create APIs and separate concerns in code (as of ES6 there is actually syntax for modules in the specification). In the following code I have created an API using the revealing module pattern.  The name comes from the return statement at the end of the module - it 'reveals' functions to outside code. ",
+                "value":" In JavaScript there are many module patterns that can be used to create APIs and separate concerns in code (as of ES6 there is actually syntax for modules in the spec). In the following code I created an API using the revealing module pattern.  The name comes from the return statement at the end of the module - it 'reveals' functions to outside code. ",
                 "children":null
             }
         ]
@@ -239,7 +239,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2017/11-Nov/\n11-9-JS-Closure-Modules/Source/module.js"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/blob/master/2017/\n11-Nov/11-9-JS-Closure-Modules/module.js"
                 },
                 "value":null,
                 "children":[

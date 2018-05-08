@@ -22,7 +22,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/\n2017/11-Nov/11-9-JS-Closure-Modules"
+                    "href":"https://jarombek.com/blog/nov-9-2017-closure-modules"
                 },
                 "value":null,
                 "children":[
@@ -447,7 +447,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2017/11-Nov/11-10-\nES6-Modules-Babel/Source"
+                    "href":"https://github.com/AJarombek/\njarombek-com-sources/tree/master/2017/11-Nov/11-10-ES6-Modules-Babel"
                 },
                 "value":null,
                 "children":[

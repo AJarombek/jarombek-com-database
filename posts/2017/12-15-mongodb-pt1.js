@@ -16,7 +16,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Continuing the trend of learning more about JavaScript, today I will be looking at getting started with MongoDB.  Mongo is a NoSQL database which stores data in documents.  Before we get into the code, it is important to question why to even use MongoDB in the first place. ",
+                "value":" Continuing the trend of learning more about JavaScript, today I will be looking at MongoDB. Mongo is a NoSQL database which stores data in documents.  Before we get into the code, it is important to question why to even use MongoDB in the first place. ",
                 "children":null
             }
         ]
@@ -54,7 +54,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" As far as negatives are concerned, MongoDB does not have transaction support (similarly to many NoSQL databases).  MongoDB does support atomic writes for a single document (JavaScript Object - Equivalent of a row in a table in a RDBMS)",
+                "value":" As far as negatives are concerned, MongoDB does not have transaction support (similarly to many NoSQL databases).  MongoDB does support atomic writes for a single document (JavaScript object equivalent of a row of a table in a RDBMS)",
                 "children":null
             },
             {
@@ -270,7 +270,7 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"pretty",
+                "value":"pretty()",
                 "children":null
             },
             {
@@ -664,7 +664,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" as a parameter to this function, effectively calling it one thousand times.  When we check to see how many trees are in our tree collection, we will get 1002 as expected. ",
+                "value":" as a parameter to this function, effectively calling it one thousand times.  When we check to see how many trees are in our tree collection, we will get 1003 as expected. ",
                 "children":null
             }
         ]
@@ -724,7 +724,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/\nmaster/Discoveries/2017/12-Dec/12-14-MongoDB-Pt1/Source"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/\nmaster/2017/12-Dec/12-15-MongoDB-Pt1"
                 },
                 "value":null,
                 "children":[

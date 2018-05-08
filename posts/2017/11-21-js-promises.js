@@ -16,7 +16,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Today I am looking at Promises in JavaScript and how we can use them to write easier to follow and less error prone asynchronous code.  Before I talk about Promises lets make a async call in JavaScript the traditional way; with callbacks. I won't be using any fancy JavaScript framework tomato my async http request, just the simple on ",
+                "value":" Today I am looking at Promises in JavaScript and how we can use them to write easier to follow and less error prone asynchronous code.  Before I talk about Promises lets make a async call in JavaScript the traditional way; with callbacks. I won't be using any fancy JavaScript framework to make my async http request, just the simple ",
                 "children":null
             },
             {
@@ -91,7 +91,7 @@ content = [
         "attributes":{
             "language":"JavaScript"
         },
-        "value":"var httpRequest = new XMLHttpRequest();\n\nhttpRequest.open('GET', 'https://www.googleapis.com/customsearch/#', true);\nhttpRequest.send();\n\n    httpRequest.onreadystatechange = function() {\n\n    if (httpRequest.status === 200 && httpRequest.readyState === 4) {\n        var json = JSON.parse(httpRequest.response);\n\n        for (let item of json.items) {\n            console.info(item.title);\n        }\n    }\n}\n",
+        "value":"var httpRequest = new XMLHttpRequest();\n\nhttpRequest.open('GET', 'https://www.googleapis.com/customsearch/#', true);\nhttpRequest.send();\n\nhttpRequest.onreadystatechange = function() {\n\n    if (httpRequest.status === 200 && httpRequest.readyState === 4) {\n        var json = JSON.parse(httpRequest.response);\n\n        for (let item of json.items) {\n            console.info(item.title);\n        }\n    }\n}\n",
         "children":null
     },
     {
@@ -108,7 +108,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "class": "jarombek-blog-image",
+                    "class":"jarombek-blog-image",
                     "src":"./assets/posts/11-21-17-results.png"
                 },
                 "value":null,
@@ -433,7 +433,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This means that we can chain promises, like that shown in the pseudocode below: ",
+                "value":".  This means that we can chain promises, as shown in the pseudocode below: ",
                 "children":null
             }
         ]
@@ -514,7 +514,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2017/11-Nov/\n11-21-JS-Promises/Source"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2017/11-Nov/11-21-JS-Promises"
                 },
                 "value":null,
                 "children":[

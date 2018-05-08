@@ -22,7 +22,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/\nblob/master/Discoveries/2017/11-Nov/11-14-Sorting-Lists/Source"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/\nmaster/2017/11-Nov/11-14-Sorting-Lists"
                 },
                 "value":null,
                 "children":[
@@ -269,14 +269,14 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/\nblob/master/Discoveries/2017/11-Nov/11-9-JS-Closure-Modules/View/closure-modules.html"
+                    "href":"https://jarombek.com/blog/nov-9-2017-js-closure-modules"
                 },
                 "value":null,
                 "children":[
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"closure in JavaScript",
+                        "value":" closure in JavaScript",
                         "children":null
                     }
                 ]
@@ -284,7 +284,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" ) which is basically a callback function.  Since the Swift compiler knows that the ",
+                "value":") which is basically a callback function.  Since the Swift compiler knows that the ",
                 "children":null
             },
             {
@@ -564,7 +564,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" As you also likely guessed, the C code is by far the most involved.  Not shown is how we implement People in C as type defined structs.  This makes the sorting much easier (I originally tried sorting lists of lists of lists, but the pointers got out of control and I couldn’t figure it out!).  I utilized the standard libraries ",
+                "value":" As you also likely guessed, the C code is by far the most involved.  The structs do make the sorting easier (I originally tried sorting lists of lists of lists, but the pointers got out of control and I couldn’t figure it out!).  I utilized the standard libraries ",
                 "children":null
             },
             {

@@ -129,7 +129,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2017/12-Dec/\n12-7-Native-Getter-Setter/Source"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2017/12-Dec/12-7-Native-Getter-Setter"
                 },
                 "value":null,
                 "children":[

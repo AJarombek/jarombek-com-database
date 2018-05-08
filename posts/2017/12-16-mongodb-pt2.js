@@ -16,13 +16,13 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"     Today I will continue with my     ",
+                "value":" Today I will build on my ",
                 "children":null
             },
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2017/12-Dec/\n    12-15-MongoDB-Pt1/View/mongodb1.html"
+                    "href":"https://jarombek.com/blog/dec-15-2017-mongodb-pt1"
                 },
                 "value":null,
                 "children":[
@@ -37,19 +37,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"     and look at documents in more depth.  To start, let's look at how we would     handle the purchase of a Christmas tree in our database.  The first thing we need to do is pick a tree     to buy!  We can search the database for a tree to our liking and use the ",
+                "value":" and look at documents in more depth.  To start, let's look at how we would handle the purchase of a Christmas tree in our database.  The first thing we need to do is pick a tree to buy!  We can search the database for a tree to our liking and use the ",
                 "children":null
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
                 "value":"findOne()",
                 "children":null
             },
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function     to return a single tree. ",
+                "value":" function to return a single tree. ",
                 "children":null
             }
         ]
@@ -96,7 +98,9 @@ content = [
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
                 "value":"_id",
                 "children":null
             },
@@ -108,19 +112,23 @@ content = [
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
                 "value":"ObjectId(...)",
                 "children":null
             },
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" containing a hex number.  You may think that the hex digits are just randomly generated but they actually hold organized information.  The first eight hex digits (four bytes) or the ",
+                "value":" containing a hex number.  You may think that the hex digits are just randomly generated but they actually hold organized information.  The first eight hex digits (four bytes) of the ",
                 "children":null
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
                 "value":"ObjectId",
                 "children":null
             },
@@ -132,14 +140,16 @@ content = [
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
                 "value":"ObjectId",
                 "children":null
             },
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is generated in this particular process.  All these items together creates a very reliable unique key (you don't have to worry about collisions - the possibility of that is so small). ",
+                "value":" is generated in this particular process.  All these items together create a very reliable unique key (you don't have to worry about collisions - the possibility of that is so small). ",
                 "children":null
             }
         ]
@@ -157,14 +167,16 @@ content = [
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
                 "value":"ObjectId",
                 "children":null
             },
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" object?  That is because we can use these unique ids to link documents together by having a document property value containing the id of another document.  In the case of our Christmas tree database, we want a collection for purchases.  In this collection, our documents will be linked to both the tree purchased and the customer.  To do this we can take the tree and customer documents ids and put them in the purchase document. ",
+                "value":" object?  We can actually use these unique ids to link documents together by having a document property value containing the id of another document.  In the case of our Christmas tree database, we want a collection for purchases.  In this collection, our documents will be linked to both the tree purchased and the customer.  To do this we can take the tree and customer documents ids and put them in the purchase document. ",
                 "children":null
             }
         ]
@@ -211,7 +223,9 @@ content = [
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
                 "value":"username",
                 "children":null
             },
@@ -248,7 +262,9 @@ content = [
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
                 "value":"explain()",
                 "children":null
             },
@@ -281,7 +297,9 @@ content = [
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
                 "value":"totalDocsExamined",
                 "children":null
             },
@@ -314,19 +332,23 @@ content = [
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
                 "value":"1",
                 "children":null
             },
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" value.  This means that the index is stored in ascending order (an index is basically a map with keys and values), while a ",
+                "value":" value. This means that the index is stored in ascending order, while a ",
                 "children":null
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
                 "value":"-1",
                 "children":null
             },
@@ -350,14 +372,16 @@ content = [
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
                 "value":"explain()",
                 "children":null
             },
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", only the returned documents are examined.  Much better! ",
+                "value":", only the returned documents are examined. Much better! ",
                 "children":null
             }
         ]
@@ -375,7 +399,9 @@ content = [
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
                 "value":"getIndexes()",
                 "children":null
             },
@@ -425,7 +451,7 @@ content = [
         "attributes":{
             "language":"JavaScript"
         },
-        "value":"db.tree.updateMany({}, {$set: {\"availableUntil\": new Date(\"2017-12-24\")}})\n",
+        "value":"\ndb.tree.updateMany({}, {$set: {\"availableUntil\": new Date(\"2017-12-24\")}})\n",
         "children":null
     },
     {
@@ -441,19 +467,23 @@ content = [
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
                 "value":"availableUntil",
                 "children":null
             },
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" property.  The second parameter to ",
+                "value":" property. The second parameter to ",
                 "children":null
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
                 "value":"createIndex()",
                 "children":null
             },
@@ -465,7 +495,9 @@ content = [
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
                 "value":"availableUntil",
                 "children":null
             },
@@ -494,7 +526,7 @@ content = [
         "attributes":{
             "language":"JavaScript"
         },
-        "value":"db.tree.createIndex({availableUntil: 1}, {expireAfterSeconds: 0})\n",
+        "value":"\ndb.tree.createIndex({availableUntil: 1}, {expireAfterSeconds: 0})\n",
         "children":null
     },
     {
@@ -511,7 +543,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/\nDiscoveries/2017/12-Dec/12-16-MongoDB-Pt2/Source/dbscripts.js"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/blob/master/\n2017/12-Dec/12-16-MongoDB-Pt2/dbscrips.js"
                 },
                 "value":null,
                 "children":[

@@ -42,7 +42,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Let's say you needed to change an API that uses an interface.  If you add a new method definition to an interface, this also means that all classes that implement this interface have to also implement the new method.  If you have control over the implementing class this is an easy fix, but it is a very real possibility that someone else has a class that implements your interface.  This will break existing code! ",
+                "value":" Let's say you needed to change an API that uses an interface.  If you add a new method definition to an interface, all classes that implement this interface also have to implement the new method.  If you have control over the implementing class this is an easy fix, but it is a very real possibility that someone else has a class that implements your interface.  This will break existing code! ",
                 "children":null
             }
         ]
@@ -107,7 +107,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Okay so now that one concern is answered, but what about multiple inheritance?  Can't you now inherit methods with multiple implementations?  This is true, so now Java has added some rules to deal with situations where a class has multiple method bodies to choose from. ",
+                "value":" Okay so now that one concern is answered, what about multiple inheritance?  Now you can inherit methods with multiple implementations right?  This is true, but now Java has added some rules to deal with situations where a class has multiple method bodies to choose from. ",
                 "children":null
             }
         ]
@@ -145,7 +145,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now lets look at an example that shows the new default methods and what occurs in a diamond problem scenario. The interface hierarchy represents animals: ",
+                "value":" Now lets look at an example that shows the new default methods and what occurs in a diamond problem scenario. The interface hierarchy below represents animals: ",
                 "children":null
             }
         ]
@@ -166,7 +166,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "class": "jarombek-blog-image",
+                    "class":"jarombek-blog-image",
                     "src":"./assets/diamond-uml.png"
                 },
                 "value":null,
@@ -337,6 +337,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
+                    "class":"jarombek-blog-image",
                     "src":"./assets/error-message.png"
                 },
                 "value":null,
@@ -509,7 +510,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2018/01-Jan/\n1-15-Java-Default-Method/View/java-default-method.html"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2018/01-Jan/\n1-16-Java-Default-Method/defaultmethods"
                 },
                 "value":null,
                 "children":[

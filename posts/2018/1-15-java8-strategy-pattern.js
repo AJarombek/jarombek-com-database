@@ -67,7 +67,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  With a functional interface, we can pass a lambda function (algorithm) to the strategy pattern.  The functional interface will specify general algorithm structure while the lambda function implements the details at runtime. ",
+                "value":".  With a functional interface, we can pass a lambda function (algorithm) to the strategy pattern.  The functional interface will specify the general algorithm structure while the lambda function implements the details at runtime. ",
                 "children":null
             }
         ]
@@ -189,7 +189,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-submittions/blob/master/Discoveries/2018/01-Jan/\n1-15-Java8-Strategy-Pattern/View/java8-strategy.html"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2018/01-Jan/\n1-15-Java8-Strategy-Pattern"
                 },
                 "value":null,
                 "children":[
