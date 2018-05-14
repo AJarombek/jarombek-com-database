@@ -48,3 +48,5 @@ load('./posts/2018/3-18-oracle-adv-pt1.js');
 load('./posts/2018/3-19-oracle-adv-pt2.js');
 
 load('./posts/2018/4-30-react-dynamic-jsx-elements.js');
+
+load('./posts/2018/5-13-generics-arrays-complexities-java.js');
