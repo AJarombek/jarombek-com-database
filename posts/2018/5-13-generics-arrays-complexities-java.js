@@ -1,7 +1,7 @@
 /**
  * Script for the MongoDB Shell.
  * @author Andrew Jarombek
- * @since 4/29/2018
+ * @since 5/12/2018
  */
 
 connection = new Mongo();
@@ -16,7 +16,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Usually when I work in Java generics are easy to reason about.  They are there to enforce type on a collection or a class that I created.  When declaring a class with a generic, it means that an instance of the class could be one (or more) of many different element types.  A simple example would be an ",
+                "value":" Usually when I work in Java generics are easy to reason about.  They are there to enforce type on a collection or a class that I created.  When declaring a class with a generic, it means that an instance of the class can be parameterized with one (or more) of many different element types.  A simple example would be an ",
                 "children":null
             },
             {
