@@ -40,7 +40,7 @@ content = [
         "attributes":{
             "language":"Java"
         },
-        "value":"public class ArrayList<E> extends AbstractList<E> implements List<E> {\n    ...\n}\n",
+        "value":"    \npublic class ArrayList<E> extends AbstractList<E> implements List<E> {\n    ...\n}\n",
         "children":null
     },
     {
@@ -1340,6 +1340,8 @@ db.posts.remove({name: "may-13-2018-generics-arrays-complexities-java"});
 db.posts.insertOne({
     name: "may-13-2018-generics-arrays-complexities-java",
     title: "Complexities of Generics and Arrays in Java",
+    description: `There are a lot of different complexities with generics and how they differ from arrays.  
+                    This is my journey to understand Java’s Generics in depth.`,
     date: new Date('2018-05-13T12:00:00'),
     type: "Discovery",
     tags: [

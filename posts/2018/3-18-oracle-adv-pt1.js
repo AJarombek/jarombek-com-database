@@ -711,6 +711,7 @@ db.posts.remove({name: "mar-18-2018-oracle-adv-pt1"});
 db.posts.insertOne({
     name: "mar-18-2018-oracle-adv-pt1",
     title: "Oracle: Advanced Queries Part I",
+    description: `This is part I of my Oracle advanced query discovery.`,
     date: new Date('2018-03-18T12:00:00'),
     type: "Discovery",
     tags: [

@@ -717,6 +717,8 @@ db.posts.remove({name: "apr-30-2018-react-dynamic-jsx-elements"});
 db.posts.insertOne({
     name: "apr-30-2018-react-dynamic-jsx-elements",
     title: "React Dynamic JSX Elements",
+    description: `Recently I've spent a lot of time working with React.js for my upcoming website.  
+        One of the challenges I faced was dynamically deciding at runtime which JSX element to render.`,
     date: new Date('2018-04-30T12:00:00'),
     type: "Discovery",
     tags: [

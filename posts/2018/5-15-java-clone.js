@@ -780,7 +780,7 @@ content = [
         "attributes":{
             "language":"Java"
         },
-        "value":"Language language = new Language(\"Java\", LocalDate.of(1995, Month.MAY, 23),\n                            List.of(Language.Paradigm.Object_Oriented,\n                                    Language.Paradigm.Imperative));\n\nLanguage language2 = language.clone();\n\nSystem.out.println(language);\nSystem.out.println(language2);\n\n// Name is immutable and Inception is a final singleton, so changing them\n// has no impact on the copied language\nlanguage.setName(\"Prolog\");\nlanguage.setInception(LocalDate.EPOCH);\n\n// This mutation will effect the copy\nlanguage.addParadigm(Language.Paradigm.Declarative);\n\nSystem.out.println(language);\nSystem.out.println(language2);\n",
+        "value":"\nLanguage language = new Language(\"Java\", LocalDate.of(1995, Month.MAY, 23),\n                            List.of(Language.Paradigm.Object_Oriented,\n                                    Language.Paradigm.Imperative));\n\nLanguage language2 = language.clone();\n\nSystem.out.println(language);\nSystem.out.println(language2);\n\n// Name is immutable and Inception is a final singleton, so changing them\n// has no impact on the copied language\nlanguage.setName(\"Prolog\");\nlanguage.setInception(LocalDate.EPOCH);\n\n// This mutation will effect the copy\nlanguage.addParadigm(Language.Paradigm.Declarative);\n\nSystem.out.println(language);\nSystem.out.println(language2);\n",
         "children":null
     },
     {
@@ -1259,6 +1259,8 @@ db.posts.remove({name: "may-15-2018-java-clone"});
 db.posts.insertOne({
     name: "may-15-2018-java-clone",
     title: "The Curious Case of Java's Clone Method",
+    description: `The original language implementation for copying in Java was the Cloneable interface.  
+                    This is my journey to understand Java’s Cloneable interface in all its complexity.`,
     date: new Date('2018-05-15T12:00:00'),
     type: "Discovery",
     tags: [
