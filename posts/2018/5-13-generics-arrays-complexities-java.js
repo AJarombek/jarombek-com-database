@@ -40,7 +40,7 @@ content = [
         "attributes":{
             "language":"Java"
         },
-        "value":"    \npublic class ArrayList<E> extends AbstractList<E> implements List<E> {\n    ...\n}\n",
+        "value":"\npublic class ArrayList<E> extends AbstractList<E> implements List<E> {\n    ...\n}\n",
         "children":null
     },
     {

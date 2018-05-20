@@ -588,7 +588,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "class":"jarombek-header-code"
                 },
                 "value":"Cloneable",
                 "children":null
