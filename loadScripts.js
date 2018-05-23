@@ -52,3 +52,4 @@ load('./posts/2018/4-30-react-dynamic-jsx-elements.js');
 load('./posts/2018/5-13-generics-arrays-complexities-java.js');
 load('./posts/2018/5-15-java-clone.js');
 load('./posts/2018/5-20-java-generics-api.js');
+load('./posts/2018/5-23-javascript-immutable.js');
