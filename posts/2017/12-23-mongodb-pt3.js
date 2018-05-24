@@ -465,6 +465,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "dec-23-2017-mongodb-pt3"}).views;
+
 db.posts.remove({name: "dec-23-2017-mongodb-pt3"});
 
 db.posts.insertOne({
@@ -472,6 +474,7 @@ db.posts.insertOne({
     title: "Learning MongoDB Part III: Arrays and Nested Objects",
     date: new Date('2017-12-23T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "MongoDB",

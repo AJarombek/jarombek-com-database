@@ -388,6 +388,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "mar-9-2018-travisci"}).views;
+
 db.posts.remove({name: "mar-9-2018-travisci"});
 
 db.posts.insertOne({
@@ -395,6 +397,7 @@ db.posts.insertOne({
     title: "What I have Learned About TravisCI",
     date: new Date('2018-03-09T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "TravisCI",

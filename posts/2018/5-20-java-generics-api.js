@@ -2176,6 +2176,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "may-20-2018-java-generics-api"}).views;
+
 db.posts.remove({name: "may-20-2018-java-generics-api"});
 
 db.posts.insertOne({
@@ -2183,6 +2185,7 @@ db.posts.insertOne({
     title: "Building a Java API with Generics",
     date: new Date('2018-05-20T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "Java",

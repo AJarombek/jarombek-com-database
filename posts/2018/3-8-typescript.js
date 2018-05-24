@@ -413,6 +413,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "mar-8-2018-typescript"}).views;
+
 db.posts.remove({name: "mar-8-2018-typescript"});
 
 db.posts.insertOne({
@@ -420,6 +422,7 @@ db.posts.insertOne({
     title: "What I Have Learned About TypeScript",
     date: new Date('2018-03-08T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "TypeScript",

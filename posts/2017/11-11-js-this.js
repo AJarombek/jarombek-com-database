@@ -943,6 +943,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "nov-11-2017-js-this"}).views;
+
 db.posts.remove({name: "nov-11-2017-js-this"});
 
 db.posts.insertOne({
@@ -950,6 +952,7 @@ db.posts.insertOne({
     title: "Understanding \"this\" in JavaScript",
     date: new Date('2017-11-11T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "JavaScript",

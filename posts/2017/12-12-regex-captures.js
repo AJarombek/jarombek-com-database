@@ -213,6 +213,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "dec-12-2017-regex-captures"}).views;
+
 db.posts.remove({name: "dec-12-2017-regex-captures"});
 
 db.posts.insertOne({
@@ -220,6 +222,7 @@ db.posts.insertOne({
     title: "Regular Expression Captures",
     date: new Date('2017-12-12T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "JavaScript",

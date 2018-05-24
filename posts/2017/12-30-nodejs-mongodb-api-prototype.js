@@ -1283,6 +1283,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "dec-30-2017-nodejs-mongodb-api-prototype"}).views;
+
 db.posts.remove({name: "dec-30-2017-nodejs-mongodb-api-prototype"});
 
 db.posts.insertOne({
@@ -1290,6 +1292,7 @@ db.posts.insertOne({
     title: "Creating a Node.js and MongoDB REST API Prototype",
     date: new Date('2017-12-30T12:00:00'),
     type: "Blog",
+    views: postViews,
     tags: [
         {
             name: "MongoDB",

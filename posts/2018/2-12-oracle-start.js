@@ -708,6 +708,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "feb-12-2018-oracle-start"}).views;
+
 db.posts.remove({name: "feb-12-2018-oracle-start"});
 
 db.posts.insertOne({
@@ -715,6 +717,7 @@ db.posts.insertOne({
     title: "Oracle 12c Database Up & Running",
     date: new Date('2018-02-12T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "SQL",

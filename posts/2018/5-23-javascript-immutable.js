@@ -990,6 +990,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "may-23-2018-javascript-immutable"}).views;
+
 db.posts.remove({name: "may-23-2018-javascript-immutable"});
 
 db.posts.insertOne({
@@ -997,6 +999,7 @@ db.posts.insertOne({
     title: "Keeping Data Immutable in JavaScript",
     date: new Date('2018-05-23T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "JavaScript",

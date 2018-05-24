@@ -563,6 +563,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "jan-27-2018-angular-5-routing"}).views;
+
 db.posts.remove({name: "jan-27-2018-angular-5-routing"});
 
 db.posts.insertOne({
@@ -570,6 +572,7 @@ db.posts.insertOne({
     title: "Angular 5 Routing & Lazy Loading Modules",
     date: new Date('2018-01-27T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "Angular",

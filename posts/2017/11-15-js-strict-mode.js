@@ -250,6 +250,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "nov-15-2017-js-strict-mode"}).views;
+
 db.posts.remove({name: "nov-15-2017-js-strict-mode"});
 
 db.posts.insertOne({
@@ -257,6 +259,7 @@ db.posts.insertOne({
     title: "JavaScript Strict Mode",
     date: new Date('2017-11-15T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "JavaScript",

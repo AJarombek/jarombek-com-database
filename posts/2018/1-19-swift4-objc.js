@@ -197,6 +197,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "jan-19-2018-swift4-objc"}).views;
+
 db.posts.remove({name: "jan-19-2018-swift4-objc"});
 
 db.posts.insertOne({
@@ -204,6 +206,7 @@ db.posts.insertOne({
     title: "Swift 4 @objc Annotation",
     date: new Date('2018-01-19T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "Swift",

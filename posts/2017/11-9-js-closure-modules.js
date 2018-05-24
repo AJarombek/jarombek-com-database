@@ -286,6 +286,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "nov-9-2017-js-closure-modules"}).views;
+
 db.posts.remove({name: "nov-9-2017-js-closure-modules"});
 
 db.posts.insertOne({
@@ -293,6 +295,7 @@ db.posts.insertOne({
     title: "Closure & Lexical Scope in JavaScript Modules",
     date: new Date('2017-11-09T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "JavaScript",

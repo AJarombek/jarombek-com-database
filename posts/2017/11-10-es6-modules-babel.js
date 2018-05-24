@@ -469,6 +469,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "nov-10-2017-es6-modules-babel"}).views;
+
 db.posts.remove({name: "nov-10-2017-es6-modules-babel"});
 
 db.posts.insertOne({
@@ -476,6 +478,7 @@ db.posts.insertOne({
     title: "ES6 Modules Run with Babel",
     date: new Date('2017-11-10T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "JavaScript",

@@ -1024,6 +1024,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "mar-2-2018-oracle-queries"}).views;
+
 db.posts.remove({name: "mar-2-2018-oracle-queries"});
 
 db.posts.insertOne({
@@ -1031,6 +1033,7 @@ db.posts.insertOne({
     title: "Oracle: Cool Intermediate Level SQL Queries",
     date: new Date('2018-03-02T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "SQL",

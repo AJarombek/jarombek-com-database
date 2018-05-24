@@ -371,6 +371,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "nov-8-2017-js-scope-hoisting"}).views;
+
 db.posts.remove({name: "nov-8-2017-js-scope-hoisting"});
 
 db.posts.insertOne({
@@ -378,6 +380,7 @@ db.posts.insertOne({
     title: "Scope & Hoisting in JavaScript",
     date: new Date('2017-11-08T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "JavaScript",

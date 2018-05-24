@@ -471,6 +471,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "nov-6-2017-neo4j-create"}).views;
+
 db.posts.remove({name: "nov-6-2017-neo4j-create"});
 
 db.posts.insertOne({
@@ -478,6 +480,7 @@ db.posts.insertOne({
     title: "Creating a Simple Geographical Map with Neo4j and Cypher",
     date: new Date('2017-11-06T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "Neo4j",

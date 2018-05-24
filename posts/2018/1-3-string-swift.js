@@ -728,6 +728,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "jan-3-2018-string-swift"}).views;
+
 db.posts.remove({name: "jan-3-2018-string-swift"});
 
 db.posts.insertOne({
@@ -735,6 +737,7 @@ db.posts.insertOne({
     title: "Strings in Swift 3 & 4",
     date: new Date('2018-01-03T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "Swift",

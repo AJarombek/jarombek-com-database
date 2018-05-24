@@ -791,6 +791,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "nov-13-2017-js-global-object"}).views;
+
 db.posts.remove({name: "nov-13-2017-js-global-object"});
 
 db.posts.insertOne({
@@ -798,6 +800,7 @@ db.posts.insertOne({
     title: "Global Objects in JavaScript",
     date: new Date('2017-11-13T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "JavaScript",

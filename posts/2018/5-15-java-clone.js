@@ -1254,6 +1254,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "may-15-2018-java-clone"}).views;
+
 db.posts.remove({name: "may-15-2018-java-clone"});
 
 db.posts.insertOne({
@@ -1263,6 +1265,7 @@ db.posts.insertOne({
                     This is my journey to understand Java’s Cloneable interface in all its complexity.`,
     date: new Date('2018-05-15T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "Java",

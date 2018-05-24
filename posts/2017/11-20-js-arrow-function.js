@@ -605,6 +605,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "nov-20-2017-js-arrow-functions"}).views;
+
 db.posts.remove({name: "nov-20-2017-js-arrow-functions"});
 
 db.posts.insertOne({
@@ -612,6 +614,7 @@ db.posts.insertOne({
     title: "Understanding \"this\" in JavaScript",
     date: new Date('2017-11-20T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "JavaScript",

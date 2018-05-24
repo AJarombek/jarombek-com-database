@@ -733,6 +733,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "nov-12-2017-neo4j-challenges"}).views;
+
 db.posts.remove({name: "nov-12-2017-neo4j-challenges"});
 
 db.posts.insertOne({
@@ -740,6 +742,7 @@ db.posts.insertOne({
     title: "Challenges with Neo4j Graph Creation",
     date: new Date('2017-11-12T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "Neo4j",

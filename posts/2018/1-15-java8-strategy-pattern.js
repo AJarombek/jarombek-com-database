@@ -211,6 +211,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "jan-15-2018-java8-strategy-pattern"}).views;
+
 db.posts.remove({name: "jan-15-2018-java8-strategy-pattern"});
 
 db.posts.insertOne({
@@ -218,6 +220,7 @@ db.posts.insertOne({
     title: "Java 8 Strategy Design Pattern",
     date: new Date('2018-01-15T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "Java",

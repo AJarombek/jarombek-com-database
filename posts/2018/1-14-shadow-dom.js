@@ -268,6 +268,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "jan-14-2018-shadow-dom"}).views;
+
 db.posts.remove({name: "jan-14-2018-shadow-dom"});
 
 db.posts.insertOne({
@@ -275,6 +277,7 @@ db.posts.insertOne({
     title: "The Shadow Dom",
     date: new Date('2018-01-14T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "DOM"

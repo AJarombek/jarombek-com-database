@@ -151,6 +151,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "dec-7-2017-native-getter-setter"}).views;
+
 db.posts.remove({name: "dec-7-2017-native-getter-setter"});
 
 db.posts.insertOne({
@@ -158,6 +160,7 @@ db.posts.insertOne({
     title: "Native Getters & Setters",
     date: new Date('2017-12-07T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "JavaScript",

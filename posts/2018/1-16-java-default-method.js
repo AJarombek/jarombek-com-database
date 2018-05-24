@@ -532,6 +532,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "jan-16-2018-java-default-method"}).views;
+
 db.posts.remove({name: "jan-16-2018-java-default-method"});
 
 db.posts.insertOne({
@@ -539,6 +541,7 @@ db.posts.insertOne({
     title: "Java 8 Default Method",
     date: new Date('2018-01-16T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "Java",

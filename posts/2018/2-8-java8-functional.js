@@ -310,6 +310,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "feb-8-2018-java8-functional"}).views;
+
 db.posts.remove({name: "feb-8-2018-java8-functional"});
 
 db.posts.insertOne({
@@ -317,6 +319,7 @@ db.posts.insertOne({
     title: "What Is Functional Programming in Java 8?",
     date: new Date('2018-02-08T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "Java",

@@ -1130,6 +1130,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "jan-30-2018-java8-optionals"}).views;
+
 db.posts.remove({name: "jan-30-2018-java8-optionals"});
 
 db.posts.insertOne({
@@ -1137,6 +1139,7 @@ db.posts.insertOne({
     title: "Java 8 Optionals",
     date: new Date('2018-01-30T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "Java",

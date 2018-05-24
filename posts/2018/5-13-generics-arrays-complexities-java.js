@@ -1335,6 +1335,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "may-13-2018-generics-arrays-complexities-java"}).views;
+
 db.posts.remove({name: "may-13-2018-generics-arrays-complexities-java"});
 
 db.posts.insertOne({
@@ -1344,6 +1346,7 @@ db.posts.insertOne({
                     This is my journey to understand Java’s Generics in depth.`,
     date: new Date('2018-05-13T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "Java",

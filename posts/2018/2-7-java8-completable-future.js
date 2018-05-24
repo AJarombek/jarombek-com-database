@@ -443,6 +443,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "feb-7-2018-java8-completable-future"}).views;
+
 db.posts.remove({name: "feb-7-2018-java8-completable-future"});
 
 db.posts.insertOne({
@@ -450,6 +452,7 @@ db.posts.insertOne({
     title: "Java 8 Completable Future",
     date: new Date('2018-02-07T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "Java",

@@ -428,6 +428,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "mar-10-2018-sass"}).views;
+
 db.posts.remove({name: "mar-10-2018-sass"});
 
 db.posts.insertOne({
@@ -435,6 +437,7 @@ db.posts.insertOne({
     title: "What I have Learned About Sass",
     date: new Date('2018-03-10T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "Sass",

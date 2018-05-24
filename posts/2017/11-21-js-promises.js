@@ -536,6 +536,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "nov-21-2017-js-promises"}).views;
+
 db.posts.remove({name: "nov-21-2017-js-promises"});
 
 db.posts.insertOne({
@@ -543,6 +545,7 @@ db.posts.insertOne({
     title: "JavaScript Async: Converting Callbacks to Promises",
     date: new Date('2017-11-21T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "JavaScript",

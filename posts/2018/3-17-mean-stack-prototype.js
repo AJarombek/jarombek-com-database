@@ -3534,6 +3534,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "mar-17-2018-mean-stack-prototype"}).views;
+
 db.posts.remove({name: "mar-17-2018-mean-stack-prototype"});
 
 db.posts.insertOne({
@@ -3541,6 +3543,7 @@ db.posts.insertOne({
     title: "Creating a MEAN Stack Prototype",
     date: new Date('2018-03-17T12:00:00'),
     type: "Blog",
+    views: postViews,
     tags: [
         {
             name: "MongoDB",

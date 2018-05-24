@@ -706,6 +706,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "mar-18-2018-oracle-adv-pt1"}).views;
+
 db.posts.remove({name: "mar-18-2018-oracle-adv-pt1"});
 
 db.posts.insertOne({
@@ -714,6 +716,7 @@ db.posts.insertOne({
     description: `This is part I of my Oracle advanced query discovery.`,
     date: new Date('2018-03-18T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "SQL",

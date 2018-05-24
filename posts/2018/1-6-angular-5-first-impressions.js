@@ -597,6 +597,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "jan-6-2018-angular-5-first-impressions"}).views;
+
 db.posts.remove({name: "jan-6-2018-angular-5-first-impressions"});
 
 db.posts.insertOne({
@@ -604,6 +606,7 @@ db.posts.insertOne({
     title: "Angular 5 First Impressions",
     date: new Date('2018-01-06T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "Angular",

@@ -455,6 +455,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "dec-27-2017-mongodb-pt4"}).views;
+
 db.posts.remove({name: "dec-27-2017-mongodb-pt4"});
 
 db.posts.insertOne({
@@ -462,6 +464,7 @@ db.posts.insertOne({
     title: "Learning MongoDB Part IV: Aggregation Framework",
     date: new Date('2017-12-27T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "MongoDB",

@@ -345,6 +345,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "nov-25-2017-generators"}).views;
+
 db.posts.remove({name: "nov-25-2017-generators"});
 
 db.posts.insertOne({
@@ -352,6 +354,7 @@ db.posts.insertOne({
     title: "Exploring Generators",
     date: new Date('2017-11-25T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "JavaScript",
