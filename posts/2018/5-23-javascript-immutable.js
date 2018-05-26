@@ -1007,6 +1007,11 @@ db.posts.insertOne({
             color: "javascript"
         },
         {
+            name: "ECMAScript 6",
+            picture: "./assets/es6.png",
+            color: "javascript"
+        },
+        {
             name: "Immutability"
         },
         {
