@@ -54,3 +54,4 @@ load('./posts/2018/5-15-java-clone.js');
 load('./posts/2018/5-20-java-generics-api.js');
 load('./posts/2018/5-23-javascript-immutable.js');
 load('./posts/2018/5-26-nodejs-command-line.js');
+load('./posts/2018/5-31-react-seed.js');

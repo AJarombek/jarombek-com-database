@@ -955,6 +955,8 @@ content = [
     }
 ];
 
+postViews = db.posts.findOne({name: "may-26-2018-nodejs-command-line"}).views;
+
 db.posts.remove({name: "may-26-2018-nodejs-command-line"});
 
 db.posts.insertOne({
@@ -962,6 +964,7 @@ db.posts.insertOne({
     title: "A Simple Node.js Command Line Application",
     date: new Date('2018-05-26T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "Node.js",

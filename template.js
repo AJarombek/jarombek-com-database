@@ -9,6 +9,8 @@ db = connection.getDB("jarombekcom");
 
 content = [];
 
+postViews = db.posts.findOne({name: "may-26-2018-nodejs-command-line"}).views;
+
 db.posts.remove({name: "mar-6-2018-angular-5-first-impressions"});
 
 db.posts.insertOne({
@@ -16,6 +18,7 @@ db.posts.insertOne({
     title: "Angular 5 First Impressions",
     date: new Date('2018-03-06T12:00:00'),
     type: "Discovery",
+    views: postViews,
     tags: [
         {
             name: "JavaScript",
