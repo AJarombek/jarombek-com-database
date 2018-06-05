@@ -1289,7 +1289,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" While Webpack is mostly used in the front-end, there is nothing from stopping you from using it with Node.js.  You can change the environment that Webpack runs on with the ",
+                "value":" While Webpack is mostly used in the front-end, there is nothing stopping you from using it with Node.js.  You can change the environment that Webpack runs on with the ",
                 "children":null
             },
             {

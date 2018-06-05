@@ -9,7 +9,9 @@ db = connection.getDB("jarombekcom");
 
 content = [];
 
-postViews = db.posts.findOne({name: "may-26-2018-nodejs-command-line"}).views;
+existingPost = db.posts.findOne({name: "jun-4-2018-react-seed"});
+
+postViews = (existingPost) ? existingPost.views : 0;
 
 db.posts.remove({name: "mar-6-2018-angular-5-first-impressions"});
 
