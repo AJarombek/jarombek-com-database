@@ -16,7 +16,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I think Webpack is intimidating.  There is so much configuration needed to bundle a web application with JavaScript, style sheets, images, fonts, non-JavaScript files, etc.  Maintenance work on my Webpack config is never a task that I look forward to.  I have only been using Webpack for a few months now, so hopefully some of the frustration eases over time. ",
+                "value":" I think Webpack is intimidating.  There is so much configuration needed to bundle a web application that includes JavaScript, style sheets, images, fonts, non-JavaScript files, etc.  Maintenance work on my Webpack config is never a task I look forward to.  I have only used Webpack for a few months now, so hopefully some of the frustration eases over time. ",
                 "children":null
             }
         ]
@@ -29,13 +29,13 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Nonetheless, Webpack is important to know in the current state of web programming.  I used it for the first time to bundle my React prototype application (and went on to use it on the website you are currently viewing!).  My previous discovery post went over the ",
+                "value":" Nonetheless, Webpack is important to know in the current state of web programming.  I used Webpack for the first time to bundle my React prototype application (and went on to use it on the website you are currently viewing!).  My previous discovery post went over the ",
                 "children":null
             },
             {
                 "el":"a",
                 "attributes":{
-                    "href":"“https://jarombek.com/blog/may-31-2018-react-seed”"
+                    "href":"https://jarombek.com/blog/may-31-2018-react-seed"
                 },
                 "value":null,
                 "children":[
@@ -50,7 +50,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" of my prototype application.  In this post will look at the Webpack portion and some of the interesting pieces of the configuration.  This post isn't a tutorial on how to build a Webpack config - instead it focuses on things I’ve learned about the bundler and my initial observations. ",
+                "value":" of my prototype application.  In this post will look at the Webpack portion and some of the interesting configuration pieces.  This post isn't a tutorial on how to build a Webpack config - instead it focuses on things I’ve learned about the bundler and my initial observations. ",
                 "children":null
             }
         ]
@@ -82,7 +82,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"“https://jarombek.com/blog/mar-17-2018-mean-stack-prototype”"
+                    "href":"https://jarombek.com/blog/mar-17-2018-mean-stack-prototype"
                 },
                 "value":null,
                 "children":[
@@ -110,7 +110,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Webpack also has the ability to perform a wide range of tasks besides bundling because of plugins.  Plugins in Webpack intercept events during the bundling process, and can do a wide range of tasks",
+                "value":" Because of plugins, Webpack has the ability to perform a wide range of tasks besides bundling.  Plugins in Webpack intercept events during the bundling process",
                 "children":null
             },
             {
@@ -162,7 +162,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":").  How plugins actually work in the bundling pipeline is beyond the scope of this post, but is something I think is worth learning to better understand Webpack. ",
+                "value":").  How plugins actually work in the bundling pipeline is beyond the scope of this post, but is something worth learning to better understand Webpack. ",
                 "children":null
             }
         ]
@@ -272,7 +272,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The output determines a location to write the bundle files created by Webpack.  You can also specify the filename to write to along with more advanced configuration.  The output point is specified with the ",
+                "value":" The output determines a location to write the bundle files created by Webpack.  You can also specify a filename to write the bundle to along with more advanced configurations.  The output point is specified with the ",
                 "children":null
             },
             {
@@ -414,7 +414,9 @@ content = [
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
                 "value":"[name].js",
                 "children":null
             },
@@ -600,7 +602,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I find that many Webpack configurations look complex at first sight.  However, it gets easier to understand when I remember it simply boils down to entries, outputs, loaders, and plugins. ",
+                "value":" I find that many Webpack configurations look complex at first sight.  However, it gets easier to understand when I remember they simply boil down to entries, outputs, loaders, and plugins. ",
                 "children":null
             }
         ]
@@ -613,7 +615,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now I will analyze two of the cool things the Webpack configuration does in my prototype. ",
+                "value":" Now I will analyze some cool things the Webpack configuration does in my prototype. ",
                 "children":null
             }
         ]
@@ -639,7 +641,49 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Since stylesheets aren't JavaScript, Webpack needs the help of loaders and plugins to handle them.  The React prototype uses Sass for its stylesheets.  Sass is a CSS preprocessor that adds additional functionality on top of CSS. I used Sass in my MEAN stack prototype and dedicated a discovery post to the styling language.  I really enjoy writing Sass, but using it means the additional effort of converting Sass to CSS before using it on the web.  Luckily Webpack loaders make this process extremely simple. ",
+                "value":" Since stylesheets aren't JavaScript, Webpack needs the help of loaders and plugins to handle them.  The React prototype uses Sass for its stylesheets.  Sass is a CSS preprocessor that adds additional functionality on top of CSS. I used Sass in my ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/mar-17-2018-mean-stack-prototype"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"MEAN stack prototype",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" and dedicated a discovery post to the ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/mar-10-2018-sass"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"styling language",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  I really enjoy writing Sass, but using it means the additional effort of converting Sass to CSS before using it on the web.  Luckily Webpack loaders make this process extremely simple. ",
                 "children":null
             }
         ]
@@ -863,7 +907,9 @@ content = [
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
                 "value":"[name].css",
                 "children":null
             },
@@ -988,7 +1034,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"“https://github.com/AJarombek/react-webpack-seed”"
+                    "href":"https://github.com/AJarombek/react-webpack-seed"
                 },
                 "value":null,
                 "children":[

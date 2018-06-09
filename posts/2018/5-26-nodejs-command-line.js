@@ -912,7 +912,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"“https://github.com/AJarombek/html-tokenizer”"
+                    "href":"https://github.com/AJarombek/html-tokenizer"
                 },
                 "value":null,
                 "children":[
