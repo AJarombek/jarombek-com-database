@@ -58,3 +58,4 @@ load('./posts/2018/5-31-react-seed.js');
 
 load('./posts/2018/6-4-webpack-seed.js');
 load('./posts/2018/6-9-js-prototypes.js');
+load('./posts/2018/6-13-web-workers.js');
