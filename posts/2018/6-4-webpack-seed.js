@@ -1056,14 +1056,14 @@ content = [
     }
 ];
 
-existingPost = db.posts.findOne({name: "jun-4-2018-react-seed"});
+existingPost = db.posts.findOne({name: "jun-4-2018-webpack-seed"});
 
 postViews = (existingPost) ? existingPost.views : 0;
 
-db.posts.remove({name: "jun-4-2018-react-seed"});
+db.posts.remove({name: "jun-4-2018-webpack-seed"});
 
 db.posts.insertOne({
-    name: "jun-4-2018-react-seed",
+    name: "jun-4-2018-webpack-seed",
     title: "React & Webpack Seed Project Part II: Bundling With Webpack",
     date: new Date('2018-06-04T12:00:00'),
     type: "Discovery",
