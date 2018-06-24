@@ -60,3 +60,4 @@ load('./posts/2018/6-4-webpack-seed.js');
 load('./posts/2018/6-9-js-prototypes.js');
 load('./posts/2018/6-13-web-workers.js');
 load('./posts/2018/6-18-css-grid.js');
+load('./posts/2018/6-23-bit-field.js');
