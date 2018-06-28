@@ -610,37 +610,37 @@ db.posts.insertOne({
     tags: [
         {
             name: "Java",
-            picture: "./assets/java.png",
+            picture: "https://asset.jarombek.com/logos/java.png",
             color: "java"
         },
         {
             name: "Java 8",
-            picture: "./assets/java8.png",
+            picture: "https://asset.jarombek.com/logos/java8.png",
             color: "java"
         },
         {
             name: "JavaScript",
-            picture: "./assets/js.png",
+            picture: "https://asset.jarombek.com/logos/js.png",
             color: "javascript"
         },
         {
             name: "Swift",
-            picture: "./assets/swift.png",
+            picture: "https://asset.jarombek.com/logos/swift.png",
             color: "swift"
         },
         {
             name: "PHP",
-            picture: "./assets/php.svg",
+            picture: "https://asset.jarombek.com/logos/php.svg",
             color: "php"
         },
         {
             name: "Python",
-            picture: "./assets/python.png",
+            picture: "https://asset.jarombek.com/logos/python.png",
             color: "python"
         },
         {
             name: "C",
-            picture: "./assets/c.png",
+            picture: "https://asset.jarombek.com/logos/c.png",
             color: "c"
         },
         {

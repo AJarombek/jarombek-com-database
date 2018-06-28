@@ -441,12 +441,12 @@ db.posts.insertOne({
     tags: [
         {
             name: "Sass",
-            picture: "./assets/sass.png",
+            picture: "https://asset.jarombek.com/logos/sass.png",
             color: "sass"
         },
         {
             name: "CSS",
-            picture: "./assets/css.png",
+            picture: "https://asset.jarombek.com/logos/css.png",
             color: "css"
         }
     ],

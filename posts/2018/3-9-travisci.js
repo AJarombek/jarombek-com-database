@@ -401,7 +401,7 @@ db.posts.insertOne({
     tags: [
         {
             name: "TravisCI",
-            picture: "./assets/travisci.png",
+            picture: "https://asset.jarombek.com/travisci.png",
             color: "travisci"
         },
         {
@@ -409,27 +409,27 @@ db.posts.insertOne({
         },
         {
             name: "YAML",
-            picture: "./assets/yaml.png",
+            picture: "https://asset.jarombek.com/logos/yaml.png",
             color: "yaml"
         },
         {
             name: "Angular",
-            picture: "./assets/angular.png",
+            picture: "https://asset.jarombek.com/logos/angular.png",
             color: "angular"
         },
         {
             name: "Node.js",
-            picture: "./assets/nodejs.png",
+            picture: "https://asset.jarombek.com/logos/nodejs.png",
             color: "nodejs"
         },
         {
             name: "JavaScript",
-            picture: "./assets/js.png",
+            picture: "https://asset.jarombek.com/logos/js.png",
             color: "javascript"
         },
         {
             name: "MongoDB",
-            picture: "./assets/mongodb.png",
+            picture: "https://asset.jarombek.com/logos/mongodb.png",
             color: "mongodb"
         }
     ],

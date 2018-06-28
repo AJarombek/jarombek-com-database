@@ -292,7 +292,7 @@ content = [
                 "el":"img",
                 "attributes":{
                     "class":"jarombek-blog-image",
-                    "src":"./assets/posts/11-13-17-prompt.png"
+                    "src":"https://asset.jarombek.com/posts/11-13-17-prompt.png"
                 },
                 "value":null,
                 "children":[
@@ -804,12 +804,12 @@ db.posts.insertOne({
     tags: [
         {
             name: "JavaScript",
-            picture: "./assets/js.png",
+            picture: "https://asset.jarombek.com/logos/js.png",
             color: "javascript"
         },
         {
             name: "Node.js",
-            picture: "./assets/nodejs.png",
+            picture: "https://asset.jarombek.com/logos/nodejs.png",
             color: "nodejs"
         },
         {

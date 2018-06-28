@@ -934,12 +934,12 @@ db.posts.insertOne({
         },
         {
             name: "C",
-            picture: "./assets/c.png",
+            picture: "https://asset.jarombek.com/logos/c.png",
             color: "c"
         },
         {
             name: "Java",
-            picture: "./assets/java.png",
+            picture: "https://asset.jarombek.com/logos/java.png",
             color: "java"
         }
     ],

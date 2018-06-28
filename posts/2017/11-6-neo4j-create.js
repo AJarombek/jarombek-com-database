@@ -447,7 +447,7 @@ content = [
                 "el":"img",
                 "attributes":{
                     "class":"jarombek-blog-image",
-                    "src":"./assets/posts/11-6-17-FairfieldGraphImage.png"
+                    "src":"https://asset.jarombek.com/posts/11-6-17-FairfieldGraphImage.png"
                 },
                 "value":null,
                 "children":[
@@ -484,7 +484,7 @@ db.posts.insertOne({
     tags: [
         {
             name: "Neo4j",
-            picture: "./assets/neo4j.png",
+            picture: "https://asset.jarombek.com/neo4j.png",
             color: "neo4j"
         },
         {

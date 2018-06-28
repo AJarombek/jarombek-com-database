@@ -610,22 +610,22 @@ db.posts.insertOne({
     tags: [
         {
             name: "Angular",
-            picture: "./assets/angular.png",
+            picture: "https://asset.jarombek.com/logos/angular.png",
             color: "angular"
         },
         {
             name: "TypeScript",
-            picture: "./assets/ts.png",
+            picture: "https://asset.jarombek.com/logos/ts.png",
             color: "typescript"
         },
         {
             name: "JavaScript",
-            picture: "./assets/js.png",
+            picture: "https://asset.jarombek.com/logos/js.png",
             color: "javascript"
         },
         {
             name: "HTML",
-            picture: "./assets/html.png",
+            picture: "https://asset.jarombek.com/logos/html.png",
             color: "html"
         }
     ],

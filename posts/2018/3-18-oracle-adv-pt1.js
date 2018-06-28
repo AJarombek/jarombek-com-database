@@ -720,7 +720,7 @@ db.posts.insertOne({
     tags: [
         {
             name: "SQL",
-            picture: "./assets/sql.png",
+            picture: "https://asset.jarombek.com/logos/sql.png",
             color: "sql"
         },
         {
@@ -728,7 +728,7 @@ db.posts.insertOne({
         },
         {
             name: "Oracle Database",
-            picture: "./assets/oracle.png",
+            picture: "https://asset.jarombek.com/logos/oracle.png",
             color: "oracle"
         }
     ],

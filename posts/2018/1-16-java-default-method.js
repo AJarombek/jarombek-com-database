@@ -167,7 +167,7 @@ content = [
                 "el":"img",
                 "attributes":{
                     "class":"jarombek-blog-image",
-                    "src":"./assets/diamond-uml.png"
+                    "src":"https://asset.jarombek.com/diamond-uml.png"
                 },
                 "value":null,
                 "children":[
@@ -338,7 +338,7 @@ content = [
                 "el":"img",
                 "attributes":{
                     "class":"jarombek-blog-image",
-                    "src":"./assets/error-message.png"
+                    "src":"https://asset.jarombek.com/error-message.png"
                 },
                 "value":null,
                 "children":[
@@ -545,12 +545,12 @@ db.posts.insertOne({
     tags: [
         {
             name: "Java",
-            picture: "./assets/java.png",
+            picture: "https://asset.jarombek.com/logos/java.png",
             color: "java"
         },
         {
             name: "Java 8",
-            picture: "./assets/java8.png",
+            picture: "https://asset.jarombek.com/logos/java8.png",
             color: "java"
         },
         {

@@ -139,7 +139,7 @@ content = [
                 "el":"img",
                 "attributes":{
                     "class":"jarombek-blog-image",
-                    "src":"./assets/meowcat.png"
+                    "src":"https://asset.jarombek.com/meowcat.png"
                 },
                 "value":null,
                 "children":[
@@ -172,7 +172,7 @@ content = [
                 "el":"img",
                 "attributes":{
                     "class":"jarombek-blog-image",
-                    "src":"./assets/MEAN-Stack.png"
+                    "src":"https://asset.jarombek.com/MEAN-Stack.png"
                 },
                 "value":null,
                 "children":[
@@ -2339,7 +2339,7 @@ content = [
                 "el":"img",
                 "attributes":{
                     "class":"jarombek-blog-image",
-                    "src":"./assets/main-component.png"
+                    "src":"https://asset.jarombek.com/main-component.png"
                 },
                 "value":null,
                 "children":[
@@ -2826,7 +2826,7 @@ content = [
                 "el":"img",
                 "attributes":{
                     "class":"jarombek-blog-image",
-                    "src":"./assets/login-component.png"
+                    "src":"https://asset.jarombek.com/login-component.png"
                 },
                 "value":null,
                 "children":[
@@ -3017,7 +3017,7 @@ content = [
                 "el":"img",
                 "attributes":{
                     "class":"jarombek-blog-image",
-                    "src":"./assets/signup-component.png"
+                    "src":"https://asset.jarombek.com/signup-component.png"
                 },
                 "value":null,
                 "children":[
@@ -3547,77 +3547,77 @@ db.posts.insertOne({
     tags: [
         {
             name: "MongoDB",
-            picture: "./assets/mongodb.png",
+            picture: "https://asset.jarombek.com/logos/mongodb.png",
             color: "mongodb"
         },
         {
             name: "Express",
-            picture: "./assets/express.png",
+            picture: "https://asset.jarombek.com/logos/express.png",
             color: "express"
         },
         {
             name: "Angular",
-            picture: "./assets/angular.png",
+            picture: "https://asset.jarombek.com/logos/angular.png",
             color: "angular"
         },
         {
             name: "Node.js",
-            picture: "./assets/nodejs.png",
+            picture: "https://asset.jarombek.com/logos/nodejs.png",
             color: "nodejs"
         },
         {
             name: "Sass",
-            picture: "./assets/sass.png",
+            picture: "https://asset.jarombek.com/logos/sass.png",
             color: "sass"
         },
         {
             name: "HTML",
-            picture: "./assets/html.png",
+            picture: "https://asset.jarombek.com/logos/html.png",
             color: "html"
         },
         {
             name: "TypeScript",
-            picture: "./assets/ts.png",
+            picture: "https://asset.jarombek.com/logos/ts.png",
             color: "typescript"
         },
         {
             name: "JavaScript",
-            picture: "./assets/js.png",
+            picture: "https://asset.jarombek.com/logos/js.png",
             color: "javascript"
         },
         {
             name: "ECMAScript 6",
-            picture: "./assets/es6.png",
+            picture: "https://asset.jarombek.com/logos/es6.png",
             color: "ecmascript6"
         },
         {
             name: "ECMAScript 2017",
-            picture: "./assets/es2017.png",
+            picture: "https://asset.jarombek.com/logos/es2017.png",
             color: "javascript"
         },
         {
             name: "Bootstrap",
-            picture: "./assets/bootstrap.png",
+            picture: "https://asset.jarombek.com/logos/bootstrap.png",
             color: "bootstrap"
         },
         {
             name: "Mongoose",
-            picture: "./assets/mongoose.png",
+            picture: "https://asset.jarombek.com/logos/mongoose.png",
             color: "mongoose"
         },
         {
             name: "Webpack",
-            picture: "./assets/webpack.png",
+            picture: "https://asset.jarombek.com/logos/webpack.png",
             color: "webpack"
         },
         {
             name: "JWT",
-            picture: "./assets/jwt.png",
+            picture: "https://asset.jarombek.com/logos/jwt.png",
             color: "jwt"
         },
         {
             name: "TravisCI",
-            picture: "./assets/travisci.png",
+            picture: "https://asset.jarombek.com/logos/travisci.png",
             color: "travisci"
         },
         {

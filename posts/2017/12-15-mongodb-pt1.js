@@ -759,17 +759,17 @@ db.posts.insertOne({
     tags: [
         {
             name: "MongoDB",
-            picture: "./assets/mongodb.png",
+            picture: "https://asset.jarombek.com/logos/mongodb.png",
             color: "mongodb"
         },
         {
             name: "JavaScript",
-            picture: "./assets/js.png",
+            picture: "https://asset.jarombek.com/logos/js.png",
             color: "javascript"
         },
         {
             name: "Vim",
-            picture: "./assets/vim.png",
+            picture: "https://asset.jarombek.com/logos/vim.png",
             color: "vim"
         },
         {

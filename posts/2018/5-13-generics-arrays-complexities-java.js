@@ -1350,7 +1350,7 @@ db.posts.insertOne({
     tags: [
         {
             name: "Java",
-            picture: "./assets/java.png",
+            picture: "https://asset.jarombek.com/logos/java.png",
             color: "java"
         },
         {

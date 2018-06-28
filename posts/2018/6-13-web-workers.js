@@ -873,7 +873,7 @@ content = [
                 "el":"img",
                 "attributes":{
                     "class":"jarombek-blog-image",
-                    "src":"./assets/posts/6-13-18-writing-notes.gif"
+                    "src":"https://asset.jarombek.com/posts/6-13-18-writing-notes.gif"
                 },
                 "value":null,
                 "children":[
@@ -904,7 +904,7 @@ content = [
                 "el":"img",
                 "attributes":{
                     "class":"jarombek-blog-image",
-                    "src":"./assets/posts/6-13-18-network-files.png"
+                    "src":"https://asset.jarombek.com/posts/6-13-18-network-files.png"
                 },
                 "value":null,
                 "children":[
@@ -1015,7 +1015,7 @@ db.posts.insertOne({
     tags: [
         {
             name: "JavaScript",
-            picture: "./assets/js.png",
+            picture: "https://asset.jarombek.com/logos/js.png",
             color: "javascript"
         },
         {

@@ -956,7 +956,7 @@ db.posts.insertOne({
     tags: [
         {
             name: "JavaScript",
-            picture: "./assets/js.png",
+            picture: "https://asset.jarombek.com/logos/js.png",
             color: "javascript"
         }
     ],

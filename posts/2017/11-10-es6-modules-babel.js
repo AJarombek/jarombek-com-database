@@ -482,22 +482,22 @@ db.posts.insertOne({
     tags: [
         {
             name: "JavaScript",
-            picture: "./assets/js.png",
+            picture: "https://asset.jarombek.com/logos/js.png",
             color: "javascript"
         },
         {
             name: "ECMAScript 6",
-            picture: "./assets/es6.png",
+            picture: "https://asset.jarombek.com/logos/es6.png",
             color: "javascript"
         },
         {
             name: "Node.js",
-            picture: "./assets/nodejs.png",
+            picture: "https://asset.jarombek.com/logos/nodejs.png",
             color: "nodejs"
         },
         {
             name: "Babel",
-            picture: "./assets/babel.png",
+            picture: "https://asset.jarombek.com/logos/babel.png",
             color: "babel"
         },
         {

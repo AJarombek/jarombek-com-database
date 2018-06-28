@@ -1143,12 +1143,12 @@ db.posts.insertOne({
     tags: [
         {
             name: "Java",
-            picture: "./assets/java.png",
+            picture: "https://asset.jarombek.com/logos/java.png",
             color: "java"
         },
         {
             name: "Java 8",
-            picture: "./assets/java8.png",
+            picture: "https://asset.jarombek.com/logos/java8.png",
             color: "java"
         }
     ],

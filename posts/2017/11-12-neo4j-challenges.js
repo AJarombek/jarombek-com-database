@@ -746,7 +746,7 @@ db.posts.insertOne({
     tags: [
         {
             name: "Neo4j",
-            picture: "./assets/neo4j.png",
+            picture: "https://asset.jarombek.com/logos/neo4j.png",
             color: "neo4j"
         },
         {
@@ -760,7 +760,7 @@ db.posts.insertOne({
         },
         {
             name: "SQL",
-            picture: "./assets/sql.png",
+            picture: "https://asset.jarombek.com/logos/sql.png",
             color: "sql"
         }
     ],

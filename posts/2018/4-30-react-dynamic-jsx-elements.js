@@ -654,7 +654,7 @@ content = [
                 "el":"img",
                 "attributes":{
                     "class":"jarombek-blog-image",
-                    "src":"./assets/dynamic-jsx.png"
+                    "src":"https://asset.jarombek.com/dynamic-jsx.png"
                 },
                 "value":null,
                 "children":[
@@ -727,7 +727,7 @@ db.posts.insertOne({
     tags: [
         {
             name: "React",
-            picture: "./assets/react.png",
+            picture: "https://asset.jarombek.com/logos/react.png",
             color: "react"
         },
         {
@@ -735,7 +735,7 @@ db.posts.insertOne({
         },
         {
             name: "JavaScript",
-            picture: "./assets/js.png",
+            picture: "https://asset.jarombek.com/logos/js.png",
             color: "javascript"
         }
     ],

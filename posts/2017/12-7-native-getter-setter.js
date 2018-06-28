@@ -164,12 +164,12 @@ db.posts.insertOne({
     tags: [
         {
             name: "JavaScript",
-            picture: "./assets/js.png",
+            picture: "https://asset.jarombek.com/logos/js.png",
             color: "javascript"
         },
         {
             name: "Swift",
-            picture: "./assets/swift.png",
+            picture: "https://asset.jarombek.com/logos/swift.png",
             color: "swift"
         },
         {
@@ -177,7 +177,7 @@ db.posts.insertOne({
         },
         {
             name: "Java",
-            picture: "./assets/java.png",
+            picture: "https://asset.jarombek.com/logos/java.png",
             color: "java"
         }
     ],

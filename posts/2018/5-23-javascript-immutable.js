@@ -1003,12 +1003,12 @@ db.posts.insertOne({
     tags: [
         {
             name: "JavaScript",
-            picture: "./assets/js.png",
+            picture: "https://asset.jarombek.com/logos/js.png",
             color: "javascript"
         },
         {
             name: "ECMAScript 6",
-            picture: "./assets/es6.png",
+            picture: "https://asset.jarombek.com/logos/es6.png",
             color: "javascript"
         },
         {
@@ -1016,7 +1016,7 @@ db.posts.insertOne({
         },
         {
             name: "TypeScript",
-            picture: "./assets/ts.png",
+            picture: "https://asset.jarombek.com/logos/ts.png",
             color: "typescript"
         },
     ],

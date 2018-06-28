@@ -18,13 +18,15 @@ db.posts.remove({name: "mar-6-2018-angular-5-first-impressions"});
 db.posts.insertOne({
     name: "mar-6-2018-angular-5-first-impressions",
     title: "Angular 5 First Impressions",
-    date: new Date('2018-03-06T12:00:00'),
+    description: `There are a lot of different complexities with generics and how 
+        they differ from arrays.  This is my journey to understand Java’s Generics in depth.`,
+    date: new Date('2018-06-06T12:00:00'),
     type: "Discovery",
     views: postViews,
     tags: [
         {
             name: "JavaScript",
-            picture: "./assets/js.png",
+            picture: "https://asset.jarombek.com/logos/js.png",
             color: "javascript"
         }
     ],

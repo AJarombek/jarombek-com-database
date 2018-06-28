@@ -426,12 +426,12 @@ db.posts.insertOne({
     tags: [
         {
             name: "TypeScript",
-            picture: "./assets/ts.png",
+            picture: "https://asset.jarombek.com/logos/ts.png",
             color: "typescript"
         },
         {
             name: "JavaScript",
-            picture: "./assets/js.png",
+            picture: "https://asset.jarombek.com/logos/js.png",
             color: "javascript"
         }
     ],

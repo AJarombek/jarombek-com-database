@@ -538,7 +538,7 @@ content = [
                 "el":"img",
                 "attributes":{
                     "class":"jarombek-blog-image",
-                    "src":"./assets/posts/6-9-18-object-chain.png"
+                    "src":"https://asset.jarombek.com/posts/6-9-18-object-chain.png"
                 },
                 "value":null,
                 "children":[
@@ -612,7 +612,7 @@ content = [
                 "el":"img",
                 "attributes":{
                     "class":"jarombek-blog-image",
-                    "src":"./assets/posts/6-9-18-array-chain.png"
+                    "src":"https://asset.jarombek.com/posts/6-9-18-array-chain.png"
                 },
                 "value":null,
                 "children":[
@@ -672,7 +672,7 @@ content = [
                 "el":"img",
                 "attributes":{
                     "class":"jarombek-blog-image",
-                    "src":"./assets/posts/6-9-18-function-chain.png"
+                    "src":"https://asset.jarombek.com/posts/6-9-18-function-chain.png"
                 },
                 "value":null,
                 "children":[
@@ -1056,7 +1056,7 @@ content = [
                 "el":"img",
                 "attributes":{
                     "class":"jarombek-blog-image",
-                    "src":"./assets/posts/6-9-18-prototype-traverse.png"
+                    "src":"https://asset.jarombek.com/posts/6-9-18-prototype-traverse.png"
                 },
                 "value":null,
                 "children":[
@@ -1859,12 +1859,12 @@ db.posts.insertOne({
     tags: [
         {
             name: "JavaScript",
-            picture: "./assets/js.png",
+            picture: "https://asset.jarombek.com/logos/js.png",
             color: "javascript"
         },
         {
             name: "ECMAScript 6",
-            picture: "./assets/es6.png",
+            picture: "https://asset.jarombek.com/logos/es6.png",
             color: "javascript"
         },
         {

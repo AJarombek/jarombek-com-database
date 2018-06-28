@@ -435,7 +435,7 @@ content = [
                 "el":"img",
                 "attributes":{
                     "class":"jarombek-blog-image",
-                    "src":"./assets/posts/6-18-18-grid-0.png"
+                    "src":"https://asset.jarombek.com/posts/6-18-18-grid-0.png"
                 },
                 "value":null,
                 "children":[
@@ -689,7 +689,7 @@ content = [
                 "el":"img",
                 "attributes":{
                     "class":"jarombek-blog-image",
-                    "src":"./assets/posts/6-18-18-grid-1.png"
+                    "src":"https://asset.jarombek.com/posts/6-18-18-grid-1.png"
                 },
                 "value":null,
                 "children":[
@@ -874,7 +874,7 @@ content = [
                 "el":"img",
                 "attributes":{
                     "class":"jarombek-blog-image",
-                    "src":"./assets/posts/6-18-18-grid-2.png"
+                    "src":"https://asset.jarombek.com/posts/6-18-18-grid-2.png"
                 },
                 "value":null,
                 "children":[
@@ -1013,7 +1013,7 @@ db.posts.insertOne({
     tags: [
         {
             name: "CSS",
-            picture: "./assets/css.png",
+            picture: "https://asset.jarombek.com/logos/css.png",
             color: "css"
         },
         {

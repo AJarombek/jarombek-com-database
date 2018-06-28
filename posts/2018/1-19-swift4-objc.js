@@ -210,17 +210,17 @@ db.posts.insertOne({
     tags: [
         {
             name: "Swift",
-            picture: "./assets/swift.png",
+            picture: "https://asset.jarombek.com/logos/swift.png",
             color: "swift"
         },
         {
             name: "Swift 3",
-            picture: "./assets/swift.png",
+            picture: "https://asset.jarombek.com/logos/swift.png",
             color: "swift"
         },
         {
             name: "Swift 4",
-            picture: "./assets/swift.png",
+            picture: "https://asset.jarombek.com/logos/swift.png",
             color: "swift"
         }
     ],

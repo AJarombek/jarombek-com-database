@@ -296,7 +296,7 @@ content = [
                 "el":"img",
                 "attributes":{
                     "class":"jarombek-blog-image",
-                    "src":"./assets/posts/5-31-18-seed.png"
+                    "src":"https://asset.jarombek.com/posts/5-31-18-seed.png"
                 },
                 "value":null,
                 "children":[
@@ -658,7 +658,7 @@ content = [
         "attributes":{
             "language":"JavaScript"
         },
-        "value":"class App extends React.Component {\n\n    constructor(props) {\n        super(props);\n        this.state = {\n            technologies: [\n            {\n                id: \"375e6c2b-d799-47ef-848d-84b42bef7a29\",\n                name: \"JavaScript\",\n                picture: \"./assets/js.png\",\n                release_date: moment('1995-12-04')\n            },\n            {\n                id: \"75bb50f5-9067-4a30-964f-a3f0d42b5ca4\",\n                name: \"Webpack\",\n                picture: \"./assets/webpack.png\",\n                release_date: moment('2012-03-10')\n            },\n            {\n                id: \"ed13c757-27cd-4cc1-b4ac-de449ee9cbae\",\n                name: \"React\",\n                picture: \"./assets/react.png\",\n                release_date: moment('2013-03-01')\n            },\n            {\n                id: \"d9f08c13-f59f-45bb-b8e9-0bd0114b0adf\",\n                name: \"Sass\",\n                picture: \"./assets/sass.png\",\n                release_date: moment('2006-11-28')\n            }\n            ]\n        }\n    }\n\n    render() {\n        const {technologies} = this.state;\n        return (\n            <div>\n                <div className=\"title-container\">\n                    <p className=\"title\">React Webpack Seed</p>\n                </div>\n                <p className=\"sub-title\">Technologies used</p>\n                <TechnologyList techList={technologies} />\n            </div>\n        );\n    }\n}\n",
+        "value":"class App extends React.Component {\n\n    constructor(props) {\n        super(props);\n        this.state = {\n            technologies: [\n            {\n                id: \"375e6c2b-d799-47ef-848d-84b42bef7a29\",\n                name: \"JavaScript\",\n                picture: \"https://asset.jarombek.com/js.png\",\n                release_date: moment('1995-12-04')\n            },\n            {\n                id: \"75bb50f5-9067-4a30-964f-a3f0d42b5ca4\",\n                name: \"Webpack\",\n                picture: \"https://asset.jarombek.com/webpack.png\",\n                release_date: moment('2012-03-10')\n            },\n            {\n                id: \"ed13c757-27cd-4cc1-b4ac-de449ee9cbae\",\n                name: \"React\",\n                picture: \"https://asset.jarombek.com/react.png\",\n                release_date: moment('2013-03-01')\n            },\n            {\n                id: \"d9f08c13-f59f-45bb-b8e9-0bd0114b0adf\",\n                name: \"Sass\",\n                picture: \"https://asset.jarombek.com/sass.png\",\n                release_date: moment('2006-11-28')\n            }\n            ]\n        }\n    }\n\n    render() {\n        const {technologies} = this.state;\n        return (\n            <div>\n                <div className=\"title-container\">\n                    <p className=\"title\">React Webpack Seed</p>\n                </div>\n                <p className=\"sub-title\">Technologies used</p>\n                <TechnologyList techList={technologies} />\n            </div>\n        );\n    }\n}\n",
         "children":null
     },
     {
@@ -1100,7 +1100,7 @@ db.posts.insertOne({
     tags: [
         {
             name: "React",
-            picture: "./assets/react.png",
+            picture: "https://asset.jarombek.com/logos/react.png",
             color: "react"
         },
         {
@@ -1108,17 +1108,17 @@ db.posts.insertOne({
         },
         {
             name: "JavaScript",
-            picture: "./assets/js.png",
+            picture: "https://asset.jarombek.com/logos/js.png",
             color: "javascript"
         },
         {
             name: "ECMAScript 6",
-            picture: "./assets/es6.png",
+            picture: "https://asset.jarombek.com/logos/es6.png",
             color: "javascript"
         },
         {
             name: "Webpack",
-            picture: "./assets/webpack.png",
+            picture: "https://asset.jarombek.com/logos/webpack.png",
             color: "webpack"
         }
     ],

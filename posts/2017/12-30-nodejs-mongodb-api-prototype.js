@@ -256,7 +256,7 @@ content = [
                 "el":"img",
                 "attributes":{
                     "class":"jarombek-blog-image",
-                    "src":"./assets/posts/12-30-17-mongodb.png"
+                    "src":"https://asset.jarombek.com/posts/12-30-17-mongodb.png"
                 },
                 "value":null,
                 "children":[
@@ -295,7 +295,7 @@ content = [
                 "el":"img",
                 "attributes":{
                     "class":"jarombek-blog-image",
-                    "src":"./assets/posts/12-30-17-restapi.png"
+                    "src":"https://asset.jarombek.com/posts/12-30-17-restapi.png"
                 },
                 "value":null,
                 "children":[
@@ -820,7 +820,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "src":"./assets/posts/12-30-17-xmlresponse.png"
+                    "src":"https://asset.jarombek.com/posts/12-30-17-xmlresponse.png"
                 },
                 "value":null,
                 "children":[
@@ -1047,7 +1047,7 @@ content = [
                 "el":"img",
                 "attributes":{
                     "class":"jarombek-blog-image",
-                    "src":"./assets/posts/12-30-17-xmlresponsetext.png"
+                    "src":"https://asset.jarombek.com/posts/12-30-17-xmlresponsetext.png"
                 },
                 "value":null,
                 "children":[
@@ -1296,27 +1296,27 @@ db.posts.insertOne({
     tags: [
         {
             name: "MongoDB",
-            picture: "./assets/mongodb.png",
+            picture: "https://asset.jarombek.com/logos/mongodb.png",
             color: "mongodb"
         },
         {
             name: "Node.js",
-            picture: "./assets/nodejs.png",
+            picture: "https://asset.jarombek.com/logos/nodejs.png",
             color: "nodejs"
         },
         {
             name: "Express",
-            picture: "./assets/express.png",
+            picture: "https://asset.jarombek.com/logos/express.png",
             color: "express"
         },
         {
             name: "JavaScript",
-            picture: "./assets/js.png",
+            picture: "https://asset.jarombek.com/logos/js.png",
             color: "javascript"
         },
         {
             name: "ECMAScript 6",
-            picture: "./assets/es6.png",
+            picture: "https://asset.jarombek.com/logos/es6.png",
             color: "ecmascript6"
         },
         {
@@ -1327,17 +1327,17 @@ db.posts.insertOne({
         },
         {
             name: "Mongoose",
-            picture: "./assets/mongoose.png",
+            picture: "https://asset.jarombek.com/logos/mongoose.png",
             color: "mongoose"
         },
         {
             name: "Babel",
-            picture: "./assets/babel.png",
+            picture: "https://asset.jarombek.com/logos/babel.png",
             color: "babel"
         },
         {
             name: "Gulp",
-            picture: "./assets/gulp.svg",
+            picture: "https://asset.jarombek.com/logos/gulp.svg",
             color: "gulp"
         },
         {

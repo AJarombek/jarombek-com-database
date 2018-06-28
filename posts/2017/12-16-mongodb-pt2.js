@@ -578,12 +578,12 @@ db.posts.insertOne({
     tags: [
         {
             name: "MongoDB",
-            picture: "./assets/mongodb.png",
+            picture: "https://asset.jarombek.com/logos/mongodb.png",
             color: "mongodb"
         },
         {
             name: "JavaScript",
-            picture: "./assets/js.png",
+            picture: "https://asset.jarombek.com/logos/js.png",
             color: "javascript"
         },
         {

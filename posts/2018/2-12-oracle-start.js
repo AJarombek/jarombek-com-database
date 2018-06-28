@@ -252,7 +252,7 @@ content = [
                 "el":"img",
                 "attributes":{
                     "class":"jarombek-blog-image",
-                    "src":"./assets/common-user.png"
+                    "src":"https://asset.jarombek.com/common-user.png"
                 },
                 "value":null,
                 "children":[
@@ -663,7 +663,7 @@ content = [
                 "el":"img",
                 "attributes":{
                     "class":"jarombek-blog-image",
-                    "src":"./assets/bulk-insert.png"
+                    "src":"https://asset.jarombek.com/bulk-insert.png"
                 },
                 "value":null,
                 "children":[
@@ -721,7 +721,7 @@ db.posts.insertOne({
     tags: [
         {
             name: "SQL",
-            picture: "./assets/sql.png",
+            picture: "https://asset.jarombek.com/logos/sql.png",
             color: "sql"
         },
         {
@@ -729,7 +729,7 @@ db.posts.insertOne({
         },
         {
             name: "Oracle Database",
-            picture: "./assets/oracle.png",
+            picture: "https://asset.jarombek.com/logos/oracle.png",
             color: "oracle"
         }
     ],

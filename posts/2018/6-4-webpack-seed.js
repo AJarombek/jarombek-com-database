@@ -1071,37 +1071,37 @@ db.posts.insertOne({
     tags: [
         {
             name: "Webpack",
-            picture: "./assets/webpack.png",
+            picture: "https://asset.jarombek.com/logos/webpack.png",
             color: "webpack"
         },
         {
             name: "React",
-            picture: "./assets/react.png",
+            picture: "https://asset.jarombek.com/logos/react.png",
             color: "react"
         },
         {
             name: "JavaScript",
-            picture: "./assets/js.png",
+            picture: "https://asset.jarombek.com/logos/js.png",
             color: "javascript"
         },
         {
             name: "ECMAScript 6",
-            picture: "./assets/es6.png",
+            picture: "https://asset.jarombek.com/logos/es6.png",
             color: "javascript"
         },
         {
             name: "HTML",
-            picture: "./assets/html.png",
+            picture: "https://asset.jarombek.com/logos/html.png",
             color: "html"
         },
         {
             name: "Sass",
-            picture: "./assets/sass.png",
+            picture: "https://asset.jarombek.com/logos/sass.png",
             color: "sass"
         },
         {
             name: "CSS",
-            picture: "./assets/css.png",
+            picture: "https://asset.jarombek.com/logos/css.png",
             color: "css"
         }
     ],

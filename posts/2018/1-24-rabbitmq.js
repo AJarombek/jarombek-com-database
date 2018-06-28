@@ -445,7 +445,7 @@ db.posts.insertOne({
     tags: [
         {
             name: "RabbitMQ",
-            picture: "./assets/rabbitmq.png",
+            picture: "https://asset.jarombek.com/logos/rabbitmq.png",
             color: "rabbitmq"
         },
         {
@@ -453,7 +453,7 @@ db.posts.insertOne({
         },
         {
             name: "Python",
-            picture: "./assets/python.png",
+            picture: "https://asset.jarombek.com/logos/python.png",
             color: "python"
         }
     ],
