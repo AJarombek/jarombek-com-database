@@ -61,3 +61,5 @@ load('./posts/2018/6-9-js-prototypes.js');
 load('./posts/2018/6-13-web-workers.js');
 load('./posts/2018/6-18-css-grid.js');
 load('./posts/2018/6-23-bit-field.js');
+
+load('./posts/2018/7-1-java-reflection.js');
