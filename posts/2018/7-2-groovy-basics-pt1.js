@@ -1124,6 +1124,11 @@ db.posts.insertOne({
             name: "Java",
             picture: "https://asset.jarombek.com/logos/java.png",
             color: "java"
+        },
+        {
+            name: "Java 8",
+            picture: "https://asset.jarombek.com/logos/java8.png",
+            color: "java"
         }
     ],
     content,

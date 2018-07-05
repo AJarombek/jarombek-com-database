@@ -64,3 +64,4 @@ load('./posts/2018/6-23-bit-field.js');
 
 load('./posts/2018/7-1-java-reflection.js');
 load('./posts/2018/7-2-groovy-basics-pt1.js');
+load('./posts/2018/7-4-groovy-basics-pt2.js');
