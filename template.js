@@ -9,18 +9,18 @@ db = connection.getDB("jarombekcom");
 
 content = [];
 
-existingPost = db.posts.findOne({name: "jun-4-2018-react-seed"});
+existingPost = db.posts.findOne({name: "jul-4-2018-react-seed"});
 
 postViews = (existingPost) ? existingPost.views : 0;
 
-db.posts.remove({name: "mar-6-2018-angular-5-first-impressions"});
+db.posts.remove({name: "jul-6-2018-angular-5-first-impressions"});
 
 db.posts.insertOne({
     name: "mar-6-2018-angular-5-first-impressions",
     title: "Angular 5 First Impressions",
     description: `There are a lot of different complexities with generics and how 
         they differ from arrays.  This is my journey to understand Java’s Generics in depth.`,
-    date: new Date('2018-06-06T12:00:00'),
+    date: new Date('2018-07-10T12:00:00'),
     type: "Discovery",
     views: postViews,
     tags: [
