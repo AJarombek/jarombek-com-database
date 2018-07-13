@@ -63,7 +63,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2018/07-jul/\n7-10-groovy-regex"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2018/07-jul/\n7-11-groovy-regex"
                 },
                 "value":null,
                 "children":[
@@ -742,362 +742,448 @@ content = [
         ]
     },
     {
-        "el":"h5",
-        "attributes":null,
-        "value":null,
-        "children":[
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":"Regular Expression Operators",
-                "children":null
-            }
-        ]
-    },
-    {
-        "el":"definition",
+        "el":"comparisontable",
         "attributes":{
-            "word":"Find Operator =~"
+            "title":"Regular Expression Operators"
         },
         "value":null,
         "children":[
             {
-                "el":"p",
+                "el":"comparisontableentry",
                 "attributes":null,
                 "value":null,
                 "children":[
                     {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":" Checks to see if a pattern matches any substring within a string.  The value before the operand is the string to look for a match on.  The value after the operand is the regular expression to match against a substring.  For example, both ",
-                        "children":null
-                    },
-                    {
-                        "el":"code",
+                        "el":"h5",
                         "attributes":{
-                            "class":"jarombek-inline-code"
+                            "classname":"jarombek-cte-title"
                         },
-                        "value":"\"02-26\" =~ /[0-9]{2}-[0-9]{2}/",
-                        "children":null
+                        "value":null,
+                        "children":[
+                            {
+                                "el":"#text",
+                                "attributes":null,
+                                "value":" Find Operator ",
+                                "children":null
+                            },
+                            {
+                                "el":"code",
+                                "attributes":{
+                                    "class":"jarombek-header-code"
+                                },
+                                "value":"=~",
+                                "children":null
+                            }
+                        ]
                     },
                     {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":" and ",
-                        "children":null
-                    },
-                    {
-                        "el":"code",
+                        "el":"div",
                         "attributes":{
-                            "class":"jarombek-inline-code"
+                            "classname":"jarombek-cte-body"
                         },
-                        "value":"\"02-26-2018\" =~ /[0-9]{2}-[0-9]{2}/",
-                        "children":null
-                    },
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":" will return ",
-                        "children":null
-                    },
-                    {
-                        "el":"code",
-                        "attributes":{
-                            "class":"jarombek-inline-code"
-                        },
-                        "value":"true",
-                        "children":null
-                    },
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":" while ",
-                        "children":null
-                    },
-                    {
-                        "el":"code",
-                        "attributes":{
-                            "class":"jarombek-inline-code"
-                        },
-                        "value":"\"Andy\" =~ /[0-9]{2}-[0-9]{2}/",
-                        "children":null
-                    },
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":" will return ",
-                        "children":null
-                    },
-                    {
-                        "el":"code",
-                        "attributes":{
-                            "class":"jarombek-inline-code"
-                        },
-                        "value":"false",
-                        "children":null
-                    },
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":". ",
-                        "children":null
+                        "value":null,
+                        "children":[
+                            {
+                                "el":"p",
+                                "attributes":null,
+                                "value":null,
+                                "children":[
+                                    {
+                                        "el":"#text",
+                                        "attributes":null,
+                                        "value":" Checks to see if a pattern matches any substring within a string.  The value before the operand is the string to look for a match on.  The value after the operand is the regular expression to match against a substring.  For example, both ",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"code",
+                                        "attributes":{
+                                            "class":"jarombek-inline-code"
+                                        },
+                                        "value":"\"02-26\" =~ /[0-9]{2}-[0-9]{2}/",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"#text",
+                                        "attributes":null,
+                                        "value":" and ",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"code",
+                                        "attributes":{
+                                            "class":"jarombek-inline-code"
+                                        },
+                                        "value":"\"02-26-2018\" =~ /[0-9]{2}-[0-9]{2}/",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"#text",
+                                        "attributes":null,
+                                        "value":" will return ",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"code",
+                                        "attributes":{
+                                            "class":"jarombek-inline-code"
+                                        },
+                                        "value":"true",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"#text",
+                                        "attributes":null,
+                                        "value":" while ",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"code",
+                                        "attributes":{
+                                            "class":"jarombek-inline-code"
+                                        },
+                                        "value":"\"Andy\" =~ /[0-9]{2}-[0-9]{2}/",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"#text",
+                                        "attributes":null,
+                                        "value":" will return ",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"code",
+                                        "attributes":{
+                                            "class":"jarombek-inline-code"
+                                        },
+                                        "value":"false",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"#text",
+                                        "attributes":null,
+                                        "value":". ",
+                                        "children":null
+                                    }
+                                ]
+                            },
+                            {
+                                "el":"p",
+                                "attributes":null,
+                                "value":null,
+                                "children":[
+                                    {
+                                        "el":"#text",
+                                        "attributes":null,
+                                        "value":" The find operator is equivalent to invoking ",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"code",
+                                        "attributes":{
+                                            "class":"jarombek-inline-code"
+                                        },
+                                        "value":"Pattern.compile(regex).matcher(string)",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"#text",
+                                        "attributes":null,
+                                        "value":" to get an instance of ",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"code",
+                                        "attributes":{
+                                            "class":"jarombek-inline-code"
+                                        },
+                                        "value":"Matcher",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"#text",
+                                        "attributes":null,
+                                        "value":" and then calling ",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"code",
+                                        "attributes":{
+                                            "class":"jarombek-inline-code"
+                                        },
+                                        "value":"Matcher.find()",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"#text",
+                                        "attributes":null,
+                                        "value":" on the ",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"code",
+                                        "attributes":{
+                                            "class":"jarombek-inline-code"
+                                        },
+                                        "value":"Matcher",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"#text",
+                                        "attributes":null,
+                                        "value":" instance.  Since all these operations are combined into one step, the compilation of the regex is not cached for future use.  The find operator should be used if the regular expression is only compiled once in the project.  Otherwise, the compilation step should be separated out with the pattern operator for reuse. ",
+                                        "children":null
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
             {
-                "el":"p",
+                "el":"comparisontableentry",
                 "attributes":null,
                 "value":null,
                 "children":[
                     {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":" The find operator is equivalent to invoking ",
-                        "children":null
-                    },
-                    {
-                        "el":"code",
+                        "el":"h5",
                         "attributes":{
-                            "class":"jarombek-inline-code"
+                            "classname":"jarombek-cte-title"
                         },
-                        "value":"Pattern.compile(regex).matcher(string)",
-                        "children":null
+                        "value":null,
+                        "children":[
+                            {
+                                "el":"#text",
+                                "attributes":null,
+                                "value":" Match Operator ",
+                                "children":null
+                            },
+                            {
+                                "el":"code",
+                                "attributes":{
+                                    "class":"jarombek-header-code"
+                                },
+                                "value":"==~",
+                                "children":null
+                            }
+                        ]
                     },
                     {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":" to get an instance of ",
-                        "children":null
-                    },
-                    {
-                        "el":"code",
+                        "el":"div",
                         "attributes":{
-                            "class":"jarombek-inline-code"
+                            "classname":"jarombek-cte-body"
                         },
-                        "value":"Matcher",
-                        "children":null
-                    },
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":" and then calling ",
-                        "children":null
-                    },
-                    {
-                        "el":"code",
-                        "attributes":{
-                            "class":"jarombek-inline-code"
-                        },
-                        "value":"Matcher.find()",
-                        "children":null
-                    },
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":" on the ",
-                        "children":null
-                    },
-                    {
-                        "el":"code",
-                        "attributes":{
-                            "class":"jarombek-inline-code"
-                        },
-                        "value":"Matcher",
-                        "children":null
-                    },
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":" instance.  Since all these operations are combined into one step, the compilation of the regex is not cached for future use.  The find operator should be used if the regular expression is only compiled once in the project.  Otherwise, the compilation step should be separated out with the pattern operator for reuse. ",
-                        "children":null
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "el":"definition",
-        "attributes":{
-            "word":"Match Operator ==~"
-        },
-        "value":null,
-        "children":[
-            {
-                "el":"p",
-                "attributes":null,
-                "value":null,
-                "children":[
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":" Checks to see if a pattern matches an entire string.  The value before the operand is the string to look for a match on.  The value after the operand is the regular expression to match against the entire string.  For example, ",
-                        "children":null
-                    },
-                    {
-                        "el":"code",
-                        "attributes":{
-                            "class":"jarombek-inline-code"
-                        },
-                        "value":"\"02-26\" ==~ /[0-9]{2}-[0-9]{2}/",
-                        "children":null
-                    },
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":" will return ",
-                        "children":null
-                    },
-                    {
-                        "el":"code",
-                        "attributes":{
-                            "class":"jarombek-inline-code"
-                        },
-                        "value":"true",
-                        "children":null
-                    },
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":" while ",
-                        "children":null
-                    },
-                    {
-                        "el":"code",
-                        "attributes":{
-                            "class":"jarombek-inline-code"
-                        },
-                        "value":"\"02-26-2018\" ==~ /[0-9]{2}-[0-9]{2}/",
-                        "children":null
-                    },
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":" will return ",
-                        "children":null
-                    },
-                    {
-                        "el":"code",
-                        "attributes":{
-                            "class":"jarombek-inline-code"
-                        },
-                        "value":"false",
-                        "children":null
-                    },
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":". ",
-                        "children":null
+                        "value":null,
+                        "children":[
+                            {
+                                "el":"p",
+                                "attributes":null,
+                                "value":null,
+                                "children":[
+                                    {
+                                        "el":"#text",
+                                        "attributes":null,
+                                        "value":" Checks to see if a pattern matches an entire string.  The value before the operand is the string to look for a match on.  The value after the operand is the regular expression to match against the entire string.  For example, ",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"code",
+                                        "attributes":{
+                                            "class":"jarombek-inline-code"
+                                        },
+                                        "value":"\"02-26\" ==~ /[0-9]{2}-[0-9]{2}/",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"#text",
+                                        "attributes":null,
+                                        "value":" will return ",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"code",
+                                        "attributes":{
+                                            "class":"jarombek-inline-code"
+                                        },
+                                        "value":"true",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"#text",
+                                        "attributes":null,
+                                        "value":" while ",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"code",
+                                        "attributes":{
+                                            "class":"jarombek-inline-code"
+                                        },
+                                        "value":"\"02-26-2018\" ==~ /[0-9]{2}-[0-9]{2}/",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"#text",
+                                        "attributes":null,
+                                        "value":" will return ",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"code",
+                                        "attributes":{
+                                            "class":"jarombek-inline-code"
+                                        },
+                                        "value":"false",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"#text",
+                                        "attributes":null,
+                                        "value":". ",
+                                        "children":null
+                                    }
+                                ]
+                            },
+                            {
+                                "el":"p",
+                                "attributes":null,
+                                "value":null,
+                                "children":[
+                                    {
+                                        "el":"#text",
+                                        "attributes":null,
+                                        "value":" Note that the match operator is equivalent to calling ",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"code",
+                                        "attributes":{
+                                            "class":"jarombek-inline-code"
+                                        },
+                                        "value":"Pattern.matches(regex, string)",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"#text",
+                                        "attributes":null,
+                                        "value":" in Java.  Therefore, this operator combines compilation and execution into a single step.  A match operator should be used if a regular expression is only compiled once in the project.  Otherwise, the compilation step should be separated out with the pattern operator for reuse. ",
+                                        "children":null
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
             {
-                "el":"p",
+                "el":"comparisontableentry",
                 "attributes":null,
                 "value":null,
                 "children":[
                     {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":" Note that the match operator is equivalent to calling ",
-                        "children":null
-                    },
-                    {
-                        "el":"code",
+                        "el":"h5",
                         "attributes":{
-                            "class":"jarombek-inline-code"
+                            "classname":"jarombek-cte-title"
                         },
-                        "value":"Pattern.matches(regex, string)",
-                        "children":null
+                        "value":null,
+                        "children":[
+                            {
+                                "el":"#text",
+                                "attributes":null,
+                                "value":" Pattern Operator ",
+                                "children":null
+                            },
+                            {
+                                "el":"code",
+                                "attributes":{
+                                    "class":"jarombek-header-code"
+                                },
+                                "value":"~string",
+                                "children":null
+                            }
+                        ]
                     },
                     {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":" in Java.  Therefore, this operator combines compilation and execution into a single step.  A match operator should be used if a regular expression is only compiled once in the project.  Otherwise, the compilation step should be separated out with the pattern operator for reuse. ",
-                        "children":null
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "el":"definition",
-        "attributes":{
-            "word":"Pattern Operator ~string"
-        },
-        "value":null,
-        "children":[
-            {
-                "el":"p",
-                "attributes":null,
-                "value":null,
-                "children":[
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":" The pattern operator transforms a string it is applied to into an instance of ",
-                        "children":null
-                    },
-                    {
-                        "el":"code",
+                        "el":"div",
                         "attributes":{
-                            "class":"jarombek-inline-code"
+                            "classname":"jarombek-cte-body"
                         },
-                        "value":"Pattern",
-                        "children":null
-                    },
-                    {
-                        "el":"sup",
-                        "attributes":null,
-                        "value":"6",
-                        "children":null
-                    },
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":".  Patterns are a result of the compilation stage of a regular expression.  Therefore, a pattern is a state in the regular expressions finite-state machine.  The benefit of separating the compiling phase into its own operand is to cache the pattern for multiple uses, since determining the state of a regular expression based off its string representation is a slow task. ",
-                        "children":null
-                    }
-                ]
-            },
-            {
-                "el":"p",
-                "attributes":null,
-                "value":null,
-                "children":[
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":" An example of the pattern operator is ",
-                        "children":null
-                    },
-                    {
-                        "el":"code",
-                        "attributes":{
-                            "class":"jarombek-inline-code"
-                        },
-                        "value":"~/([a-zA-Z]{5-10})/",
-                        "children":null
-                    },
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":".  The result is a ",
-                        "children":null
-                    },
-                    {
-                        "el":"code",
-                        "attributes":{
-                            "class":"jarombek-inline-code"
-                        },
-                        "value":"Pattern",
-                        "children":null
-                    },
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":" object of the regular expression. ",
-                        "children":null
+                        "value":null,
+                        "children":[
+                            {
+                                "el":"p",
+                                "attributes":null,
+                                "value":null,
+                                "children":[
+                                    {
+                                        "el":"#text",
+                                        "attributes":null,
+                                        "value":" The pattern operator transforms a string it is applied to into an instance of ",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"code",
+                                        "attributes":{
+                                            "class":"jarombek-inline-code"
+                                        },
+                                        "value":"Pattern",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"sup",
+                                        "attributes":null,
+                                        "value":"6",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"#text",
+                                        "attributes":null,
+                                        "value":".  Patterns are a result of the compilation stage of a regular expression.  Therefore, a pattern is a state in the regular expressions finite-state machine.  The benefit of separating the compiling phase into its own operand is to cache the pattern for multiple uses, since determining the state of a regular expression based off its string representation is a slow task. ",
+                                        "children":null
+                                    }
+                                ]
+                            },
+                            {
+                                "el":"p",
+                                "attributes":null,
+                                "value":null,
+                                "children":[
+                                    {
+                                        "el":"#text",
+                                        "attributes":null,
+                                        "value":" An example of the pattern operator is ",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"code",
+                                        "attributes":{
+                                            "class":"jarombek-inline-code"
+                                        },
+                                        "value":"~/([a-zA-Z]{5-10})/",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"#text",
+                                        "attributes":null,
+                                        "value":".  The result is a ",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"code",
+                                        "attributes":{
+                                            "class":"jarombek-inline-code"
+                                        },
+                                        "value":"Pattern",
+                                        "children":null
+                                    },
+                                    {
+                                        "el":"#text",
+                                        "attributes":null,
+                                        "value":" object of the regular expression. ",
+                                        "children":null
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             }
@@ -1372,7 +1458,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2018/07-jul/\n7-10-groovy-regex"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2018/07-jul/\n7-11-groovy-regex"
                 },
                 "value":null,
                 "children":[
