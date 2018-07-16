@@ -66,3 +66,4 @@ load('./posts/2018/7-1-java-reflection.js');
 load('./posts/2018/7-2-groovy-basics-pt1.js');
 load('./posts/2018/7-4-groovy-basics-pt2.js');
 load('./posts/2018/7-11-groovy-regex.js');
+load('./posts/2018/7-15-groovy-optional-typing.js');
