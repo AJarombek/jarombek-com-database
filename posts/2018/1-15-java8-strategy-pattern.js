@@ -253,12 +253,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "jan-15-2018-java8-strategy-pattern"}).views;
+postName = "jan-15-2018-java8-strategy-pattern";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "jan-15-2018-java8-strategy-pattern"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "jan-15-2018-java8-strategy-pattern",
+    name: postName,
     title: "Java 8 Strategy Design Pattern",
     date: new Date('2018-01-15T12:00:00'),
     type: "Discovery",
@@ -278,7 +280,6 @@ db.posts.insertOne({
             name: "Design Pattern"
         }
     ],
-    content, 
     preview,
     sources: [
         {
@@ -300,4 +301,9 @@ db.posts.insertOne({
             link: "https://www.manning.com/books/java-8-in-action"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

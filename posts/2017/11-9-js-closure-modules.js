@@ -302,12 +302,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "nov-9-2017-js-closure-modules"}).views;
+postName = "nov-9-2017-js-closure-modules";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "nov-9-2017-js-closure-modules"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "nov-9-2017-js-closure-modules",
+    name: postName,
     title: "Closure & Lexical Scope in JavaScript Modules",
     date: new Date('2017-11-09T12:00:00'),
     type: "Discovery",
@@ -322,7 +324,6 @@ db.posts.insertOne({
             name: "API"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -338,4 +339,9 @@ db.posts.insertOne({
             link: "https://stackoverflow.com/questions/22394089/static-lexical-scoping-vs-dynamic-scoping-pseudocode"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

@@ -404,12 +404,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "mar-9-2018-travisci"}).views;
+postName = "mar-9-2018-travisci";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "mar-9-2018-travisci"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "mar-9-2018-travisci",
+    name: postName,
     title: "What I have Learned About TravisCI",
     date: new Date('2018-03-09T12:00:00'),
     type: "Discovery",
@@ -449,7 +451,6 @@ db.posts.insertOne({
             color: "mongodb"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -483,4 +484,9 @@ db.posts.insertOne({
             link: "https://docs.travis-ci.com/user/database-setup/#MongoDB"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

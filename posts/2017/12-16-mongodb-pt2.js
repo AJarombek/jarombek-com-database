@@ -616,12 +616,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "dec-16-2017-mongodb-pt2"}).views;
+postName = "dec-16-2017-mongodb-pt2";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "dec-16-2017-mongodb-pt2"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "dec-16-2017-mongodb-pt2",
+    name: postName,
     title: "Learning MongoDB Part II: Working with Documents",
     date: new Date('2017-12-16T12:00:00'),
     type: "Discovery",
@@ -647,7 +649,6 @@ db.posts.insertOne({
             name: "Document Database"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -675,4 +676,9 @@ db.posts.insertOne({
             link: "https://docs.mongodb.com/manual/tutorial/expire-data/"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

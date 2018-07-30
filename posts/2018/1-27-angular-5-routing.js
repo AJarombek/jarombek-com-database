@@ -579,12 +579,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "jan-27-2018-angular-5-routing"}).views;
+postName = "jan-27-2018-angular-5-routing";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "jan-27-2018-angular-5-routing"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "jan-27-2018-angular-5-routing",
+    name: postName,
     title: "Angular 5 Routing & Lazy Loading Modules",
     date: new Date('2018-01-27T12:00:00'),
     type: "Discovery",
@@ -606,7 +608,6 @@ db.posts.insertOne({
             color: "html"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -622,4 +623,9 @@ db.posts.insertOne({
             link: "https://github.com/angular/angular-cli/issues/6246"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

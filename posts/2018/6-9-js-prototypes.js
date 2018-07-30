@@ -1860,14 +1860,16 @@ content = [
     }
 ];
 
-existingPost = db.posts.findOne({name: "jun-9-2018-js-prototype"});
+postName = "jun-9-2018-js-prototype";
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 
-db.posts.remove({name: "jun-9-2018-js-prototype"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "jun-9-2018-js-prototype",
+    name: postName,
     title: "JavaScript Prototypes & Inheritance",
     date: new Date('2018-06-09T12:00:00'),
     type: "Discovery",
@@ -1890,7 +1892,6 @@ db.posts.insertOne({
             name: "Object Oriented"
         }
     ],
-    content, 
     preview,
     sources: [
         {
@@ -1912,4 +1913,9 @@ db.posts.insertOne({
             link: "https://github.com/getify/You-Dont-Know-JS/tree/master/this%20%26%20object%20prototypes"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

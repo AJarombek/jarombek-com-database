@@ -553,12 +553,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "feb-7-2018-java8-completable-future"}).views;
+postName = "feb-7-2018-java8-completable-future";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "feb-7-2018-java8-completable-future"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "feb-7-2018-java8-completable-future",
+    name: postName,
     title: "Java 8 Completable Future",
     date: new Date('2018-02-07T12:00:00'),
     type: "Discovery",
@@ -575,7 +577,6 @@ db.posts.insertOne({
             color: "java"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -591,4 +592,9 @@ db.posts.insertOne({
             link: "https://www.manning.com/books/java-8-in-action"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

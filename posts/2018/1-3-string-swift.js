@@ -765,12 +765,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "jan-3-2018-string-swift"}).views;
+postName = "jan-3-2018-string-swift";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "jan-3-2018-string-swift"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "jan-3-2018-string-swift",
+    name: postName,
     title: "Strings in Swift 3 & 4",
     date: new Date('2018-01-03T12:00:00'),
     type: "Discovery",
@@ -792,7 +794,6 @@ db.posts.insertOne({
             color: "swift"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -838,4 +839,9 @@ db.posts.insertOne({
             link: "https://www.raywenderlich.com/163857/whats-new-swift-4"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

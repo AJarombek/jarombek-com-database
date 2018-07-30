@@ -487,12 +487,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "nov-6-2017-neo4j-create"}).views;
+postName = "nov-6-2017-neo4j-create";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "nov-6-2017-neo4j-create"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "nov-6-2017-neo4j-create",
+    name: postName,
     title: "Creating a Simple Geographical Map with Neo4j and Cypher",
     date: new Date('2017-11-06T12:00:00'),
     type: "Discovery",
@@ -513,7 +515,7 @@ db.posts.insertOne({
             name: "NoSQL"
         }
     ],
-    content, preview,
+    preview,
     sources: [
         {
             startName: "Ian Robinson, Jim Webber & Emil Eifrem, ",
@@ -528,4 +530,9 @@ db.posts.insertOne({
             link: "http://shop.oreilly.com/product/0636920028246.do"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

@@ -745,12 +745,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "feb-12-2018-oracle-start"}).views;
+postName = "feb-12-2018-oracle-start";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "feb-12-2018-oracle-start"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "feb-12-2018-oracle-start",
+    name: postName,
     title: "Oracle 12c Database Up & Running",
     date: new Date('2018-02-12T12:00:00'),
     type: "Discovery",
@@ -770,7 +772,6 @@ db.posts.insertOne({
             color: "oracle"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -810,4 +811,9 @@ db.posts.insertOne({
             link: "https://www.amazon.com/Oracle-Database-12c-Jason-Price/dp/0071799354"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

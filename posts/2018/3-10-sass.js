@@ -465,12 +465,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "mar-10-2018-sass"}).views;
+postName = "mar-10-2018-sass";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "mar-10-2018-sass"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "mar-10-2018-sass",
+    name: postName,
     title: "What I have Learned About Sass",
     date: new Date('2018-03-10T12:00:00'),
     type: "Discovery",
@@ -487,7 +489,6 @@ db.posts.insertOne({
             color: "css"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -509,4 +510,9 @@ db.posts.insertOne({
             link: "https://abookapart.com/products/sass-for-web-designers"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

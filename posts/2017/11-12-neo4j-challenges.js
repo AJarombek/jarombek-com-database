@@ -770,12 +770,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "nov-12-2017-neo4j-challenges"}).views;
+postName = "nov-12-2017-neo4j-challenges";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "nov-12-2017-neo4j-challenges"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "nov-12-2017-neo4j-challenges",
+    name: postName,
     title: "Challenges with Neo4j Graph Creation",
     date: new Date('2017-11-12T12:00:00'),
     type: "Discovery",
@@ -801,7 +803,6 @@ db.posts.insertOne({
             color: "sql"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -841,4 +842,9 @@ db.posts.insertOne({
             link: "http://shop.oreilly.com/product/0636920028246.do"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

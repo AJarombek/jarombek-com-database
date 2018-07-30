@@ -460,12 +460,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "jan-24-2018-rabbitmq"}).views;
+postName = "jan-24-2018-rabbitmq";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "jan-24-2018-rabbitmq"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "jan-24-2018-rabbitmq",
+    name: postName,
     title: "First Look at RabbitMQ",
     date: new Date('2018-01-24T12:00:00'),
     type: "Discovery",
@@ -485,7 +487,6 @@ db.posts.insertOne({
             color: "python"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -519,4 +520,9 @@ db.posts.insertOne({
             link: "https://www.manning.com/books/rabbitmq-in-action"
         },
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

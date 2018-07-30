@@ -1081,14 +1081,16 @@ content = [
     }
 ];
 
-existingPost = db.posts.findOne({name: "jul-1-2018-java-reflection"});
+postName = "jul-1-2018-java-reflection";
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 
-db.posts.remove({name: "jul-1-2018-java-reflection"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "jul-1-2018-java-reflection",
+    name: postName,
     title: "Reflection in Java",
     description: `People often describe reflection as "hard to learn" and only for "experienced
             developers."  It turns out reflection isn’t that complicated, although questions still 
@@ -1111,7 +1113,6 @@ db.posts.insertOne({
             name: "Reflection"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -1145,4 +1146,9 @@ db.posts.insertOne({
             link: "https://docs.oracle.com/javase/tutorial/reflect/"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

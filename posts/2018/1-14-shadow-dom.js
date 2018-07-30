@@ -296,12 +296,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "jan-14-2018-shadow-dom"}).views;
+postName = "jan-14-2018-shadow-dom";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "jan-14-2018-shadow-dom"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "jan-14-2018-shadow-dom",
+    name: postName,
     title: "The Shadow Dom",
     date: new Date('2018-01-14T12:00:00'),
     type: "Discovery",
@@ -326,7 +328,6 @@ db.posts.insertOne({
             color: "javascript"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -348,4 +349,9 @@ db.posts.insertOne({
             link: "https://stackoverflow.com/questions/34119639/what-is-shadow-root"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

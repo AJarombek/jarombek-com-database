@@ -903,14 +903,16 @@ content = [
     }
 ];
 
-existingPost = db.posts.findOne({name: "jul-15-2018-groovy-optional-typing"});
+postName = "jul-15-2018-groovy-optional-typing";
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 
-db.posts.remove({name: "jul-15-2018-groovy-optional-typing"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "jul-15-2018-groovy-optional-typing",
+    name: postName,
     title: "Optional Typing in Groovy",
     description: `How can Groovy both have dynamic typing and optionally allow for types 
         to be declared like Java?`,
@@ -932,7 +934,6 @@ db.posts.insertOne({
             color: "java"
         }
     ],
-    content, 
     preview,
     sources: [
         {
@@ -984,4 +985,9 @@ db.posts.insertOne({
             link: "https://www.manning.com/books/groovy-in-action-second-edition?"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

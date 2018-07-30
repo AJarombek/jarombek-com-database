@@ -1016,14 +1016,16 @@ content = [
     }
 ];
 
-existingPost = db.posts.findOne({name: "jun-13-2018-web-workers"});
+postName = "jun-13-2018-web-workers";
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 
-db.posts.remove({name: "jun-13-2018-web-workers"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "jun-13-2018-web-workers",
+    name: postName,
     title: "Introduction to Web Workers",
     date: new Date('2018-06-13T12:00:00'),
     type: "Discovery",
@@ -1041,7 +1043,6 @@ db.posts.insertOne({
             name: "Document Object Model"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -1099,4 +1100,9 @@ db.posts.insertOne({
             link: "https://stackoverflow.com/a/6778480"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

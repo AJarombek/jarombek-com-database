@@ -1029,12 +1029,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "nov-11-2017-js-this"}).views;
+postName = "nov-11-2017-js-this";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "nov-11-2017-js-this"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "nov-11-2017-js-this",
+    name: postName,
     title: "Understanding \"this\" in JavaScript",
     date: new Date('2017-11-11T12:00:00'),
     type: "Discovery",
@@ -1046,7 +1048,6 @@ db.posts.insertOne({
             color: "javascript"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -1080,4 +1081,9 @@ db.posts.insertOne({
             link: "https://github.com/getify/You-Dont-Know-JS/tree/master/this%20%26%20object%20prototypes"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

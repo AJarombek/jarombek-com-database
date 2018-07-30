@@ -578,12 +578,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "nov-21-2017-js-promises"}).views;
+postName = "nov-21-2017-js-promises";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "nov-21-2017-js-promises"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "nov-21-2017-js-promises",
+    name: postName,
     title: "JavaScript Async: Converting Callbacks to Promises",
     date: new Date('2017-11-21T12:00:00'),
     type: "Discovery",
@@ -606,7 +608,6 @@ db.posts.insertOne({
             name: "Promises"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -640,4 +641,9 @@ db.posts.insertOne({
             link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

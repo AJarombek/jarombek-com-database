@@ -613,12 +613,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "jan-6-2018-angular-5-first-impressions"}).views;
+postName = "jan-6-2018-angular-5-first-impressions";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "jan-6-2018-angular-5-first-impressions"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "jan-6-2018-angular-5-first-impressions",
+    name: postName,
     title: "Angular 5 First Impressions",
     date: new Date('2018-01-06T12:00:00'),
     type: "Discovery",
@@ -645,7 +647,6 @@ db.posts.insertOne({
             color: "html"
         }
     ],
-    content, 
     preview,
     sources: [
         {
@@ -679,4 +680,9 @@ db.posts.insertOne({
             link: "https://www.manning.com/books/angular-2-development-with-typescript"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

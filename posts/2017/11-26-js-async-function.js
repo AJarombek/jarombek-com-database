@@ -544,12 +544,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "nov-26-2017-js-async-function"}).views;
+postName = "nov-26-2017-js-async-function";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "nov-26-2017-js-async-function"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "nov-26-2017-js-async-function",
+    name: postName,
     title: "JavaScript Async Functions: Combining Promises and Generators",
     date: new Date('2017-11-26T12:00:00'),
     type: "Discovery",
@@ -588,7 +590,6 @@ db.posts.insertOne({
             color: "nodejs"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -610,4 +611,9 @@ db.posts.insertOne({
             link: "https://nodejs.org/api/https.html"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

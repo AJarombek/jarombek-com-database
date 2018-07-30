@@ -1103,12 +1103,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "may-31-2018-react-seed"}).views;
+postName = "may-31-2018-react-seed";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "may-31-2018-react-seed"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "may-31-2018-react-seed",
+    name: postName,
     title: "React & Webpack Seed Project Part I: Building With React",
     date: new Date('2018-05-31T12:00:00'),
     type: "Discovery",
@@ -1138,7 +1140,6 @@ db.posts.insertOne({
             color: "webpack"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -1172,4 +1173,9 @@ db.posts.insertOne({
             link: "http://shop.oreilly.com/product/0636920049579.do"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

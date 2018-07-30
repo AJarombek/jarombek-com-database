@@ -1237,14 +1237,16 @@ content = [
     }
 ];
 
-existingPost = db.posts.findOne({name: "jul-29-2018-overloading"});
+postName = "jul-29-2018-overloading";
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 
-db.posts.remove({name: "jul-29-2018-overloading"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "jul-29-2018-overloading",
+    name: postName,
     title: "Method Overloading Across Languages",
     description: `When working with the object oriented paradigm methods often need to be 
         overridden or overloaded.  These similar concepts are often confused by new developers`,
@@ -1289,7 +1291,6 @@ db.posts.insertOne({
             name: "Object Oriented Programming"
         }
     ],
-    content, preview,
     preview,
     sources: [
         {
@@ -1329,4 +1330,9 @@ db.posts.insertOne({
             link: "https://www.bignerdranch.com/books/swift-programming/"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

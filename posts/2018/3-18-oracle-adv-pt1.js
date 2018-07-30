@@ -764,12 +764,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "mar-18-2018-oracle-adv-pt1"}).views;
+postName = "mar-18-2018-oracle-adv-pt1";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "mar-18-2018-oracle-adv-pt1"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "mar-18-2018-oracle-adv-pt1",
+    name: postName,
     title: "Oracle: Advanced Queries Part I",
     description: `This is part I of my Oracle advanced query discovery.`,
     date: new Date('2018-03-18T12:00:00'),
@@ -790,7 +792,6 @@ db.posts.insertOne({
             color: "oracle"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -812,4 +813,9 @@ db.posts.insertOne({
             link: "https://www.amazon.com/Oracle-Database-12c-Jason-Price/dp/0071799354"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

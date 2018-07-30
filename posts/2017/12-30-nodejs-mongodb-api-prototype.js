@@ -1362,12 +1362,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "dec-30-2017-nodejs-mongodb-api-prototype"}).views;
+postName = "dec-30-2017-nodejs-mongodb-api-prototype";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "dec-30-2017-nodejs-mongodb-api-prototype"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "dec-30-2017-nodejs-mongodb-api-prototype",
+    name: postName,
     title: "Creating a Node.js and MongoDB REST API Prototype",
     date: new Date('2017-12-30T12:00:00'),
     type: "Blog",
@@ -1429,7 +1431,6 @@ db.posts.insertOne({
             name: "Basic Auth"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -1499,4 +1500,9 @@ db.posts.insertOne({
             link: "https://www.manning.com/books/node-js-in-action-second-edition"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

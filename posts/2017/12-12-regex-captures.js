@@ -229,12 +229,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "dec-12-2017-regex-captures"}).views;
+postName = "dec-12-2017-regex-captures";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "dec-12-2017-regex-captures"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "dec-12-2017-regex-captures",
+    name: postName,
     title: "Regular Expression Captures",
     date: new Date('2017-12-12T12:00:00'),
     type: "Discovery",
@@ -249,7 +251,6 @@ db.posts.insertOne({
             name: "Regular Expression"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -265,4 +266,9 @@ db.posts.insertOne({
             link: "https://www.manning.com/books/secrets-of-the-javascript-ninja-second-edition"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

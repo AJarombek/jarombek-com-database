@@ -387,12 +387,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "nov-8-2017-js-scope-hoisting"}).views;
+postName = "nov-8-2017-js-scope-hoisting";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "nov-8-2017-js-scope-hoisting"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "nov-8-2017-js-scope-hoisting",
+    name: postName,
     title: "Scope & Hoisting in JavaScript",
     date: new Date('2017-11-08T12:00:00'),
     type: "Discovery",
@@ -404,7 +406,6 @@ db.posts.insertOne({
             color: "javascript"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -414,4 +415,9 @@ db.posts.insertOne({
             link: "https://github.com/getify/You-Dont-Know-JS/tree/master/scope%20%26%20closures"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

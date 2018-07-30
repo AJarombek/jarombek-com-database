@@ -248,12 +248,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "jan-19-2018-swift4-objc"}).views;
+postName = "jan-19-2018-swift4-objc";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "jan-19-2018-swift4-objc"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "jan-19-2018-swift4-objc",
+    name: postName,
     title: "Swift 4 @objc Annotation",
     date: new Date('2018-01-19T12:00:00'),
     type: "Discovery",
@@ -275,7 +277,6 @@ db.posts.insertOne({
             color: "swift"
         }
     ],
-    content, 
     preview,
     sources: [
         {
@@ -297,4 +298,9 @@ db.posts.insertOne({
             link: "https://www.raywenderlich.com/163857/whats-new-swift-4#objc"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

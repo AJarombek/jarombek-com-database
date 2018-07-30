@@ -512,12 +512,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "mar-11-2018-jwt"}).views;
+postName = "mar-11-2018-jwt";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "mar-11-2018-jwt"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "mar-11-2018-jwt",
+    name: postName,
     title: "What I have Learned About JSON Web Tokens",
     date: new Date('2018-03-11T12:00:00'),
     type: "Discovery",
@@ -557,7 +559,6 @@ db.posts.insertOne({
             name: "RSA"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -597,4 +598,9 @@ db.posts.insertOne({
             link: "https://jwt.io/"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

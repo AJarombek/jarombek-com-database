@@ -1025,12 +1025,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "may-23-2018-javascript-immutable"}).views;
+postName = "may-23-2018-javascript-immutable";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "may-23-2018-javascript-immutable"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "may-23-2018-javascript-immutable",
+    name: postName,
     title: "Keeping Data Immutable in JavaScript",
     date: new Date('2018-05-23T12:00:00'),
     type: "Discovery",
@@ -1055,7 +1057,6 @@ db.posts.insertOne({
             color: "typescript"
         },
     ],
-    content, 
     preview,
     sources: [
         {
@@ -1077,4 +1078,9 @@ db.posts.insertOne({
             link: "https://basarat.gitbooks.io/typescript/docs/types/readonly.html"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

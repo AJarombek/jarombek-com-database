@@ -634,12 +634,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "nov-14-2017-sorting-lists"}).views;
+postName = "nov-14-2017-sorting-lists";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "nov-14-2017-sorting-lists"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "nov-14-2017-sorting-lists",
+    name: postName,
     title: "Sorting Lists with Comparison Functions",
     date: new Date('2017-11-14T12:00:00'),
     type: "Discovery",
@@ -684,7 +686,6 @@ db.posts.insertOne({
             name: "Sorting"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -706,4 +707,9 @@ db.posts.insertOne({
             link: "http://www.geeksforgeeks.org/c-program-sort-array-names-strings/"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

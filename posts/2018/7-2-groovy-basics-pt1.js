@@ -1128,14 +1128,16 @@ content = [
     }
 ];
 
-existingPost = db.posts.findOne({name: "jul-2-2018-groovy-basics-pt1"});
+postName = "jul-2-2018-groovy-basics-pt1";
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 
-db.posts.remove({name: "jul-2-2018-groovy-basics-pt1"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "jul-2-2018-groovy-basics-pt1",
+    name: postName,
     title: "Groovy Basics Part I: Concise Syntax",
     description: `This post will look at some of the basic syntax and features of Groovy that
       really caught my eye after an hour or two of exploring.`,
@@ -1159,7 +1161,6 @@ db.posts.insertOne({
             color: "java"
         }
     ],
-    content, 
     preview,
     sources: [
         {
@@ -1229,4 +1230,9 @@ db.posts.insertOne({
             link: "http://mrhaki.blogspot.com/2009/08/groovy-goodness-elvis-operator.html"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

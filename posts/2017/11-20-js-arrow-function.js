@@ -621,12 +621,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "nov-20-2017-js-arrow-functions"}).views;
+postName = "nov-20-2017-js-arrow-functions";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "nov-20-2017-js-arrow-functions"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "nov-20-2017-js-arrow-functions",
+    name: postName,
     title: "Understanding \"this\" in JavaScript",
     date: new Date('2017-11-20T12:00:00'),
     type: "Discovery",
@@ -646,7 +648,6 @@ db.posts.insertOne({
             name: "Lambda Functions"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -662,4 +663,9 @@ db.posts.insertOne({
             link: "https://github.com/getify/You-Dont-Know-JS/tree/master/this%20%26%20object%20prototypes"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

@@ -1312,12 +1312,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "may-15-2018-java-clone"}).views;
+postName = "may-15-2018-java-clone";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "may-15-2018-java-clone"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "may-15-2018-java-clone",
+    name: postName,
     title: "The Curious Case of Java's Clone Method",
     description: `The original language implementation for copying in Java was the Cloneable interface.  
                     This is my journey to understand Java’s Cloneable interface in all its complexity.`,
@@ -1333,8 +1335,7 @@ db.posts.insertOne({
         {
             name: "Inheritance"
         }
-    ],
-    content, 
+    ], 
     preview,
     sources: [
         {
@@ -1380,4 +1381,9 @@ db.posts.insertOne({
             link: "https://www.artima.com/intv/bloch13.html"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

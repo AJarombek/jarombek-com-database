@@ -1072,14 +1072,16 @@ content = [
     }
 ];
 
-existingPost = db.posts.findOne({name: "jun-4-2018-webpack-seed"});
+postName = "jun-4-2018-webpack-seed";
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 
-db.posts.remove({name: "jun-4-2018-webpack-seed"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "jun-4-2018-webpack-seed",
+    name: postName,
     title: "React & Webpack Seed Project Part II: Bundling With Webpack",
     date: new Date('2018-06-04T12:00:00'),
     type: "Discovery",
@@ -1121,7 +1123,6 @@ db.posts.insertOne({
             color: "css"
         }
     ],
-    content, 
     preview,
     sources: [
         {
@@ -1173,4 +1174,9 @@ db.posts.insertOne({
             link: "https://survivejs.com/webpack/"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

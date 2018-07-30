@@ -833,12 +833,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "nov-13-2017-js-global-object"}).views;
+postName = "nov-13-2017-js-global-object";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "nov-13-2017-js-global-object"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "nov-13-2017-js-global-object",
+    name: postName,
     title: "Global Objects in JavaScript",
     date: new Date('2017-11-13T12:00:00'),
     type: "Discovery",
@@ -858,7 +860,6 @@ db.posts.insertOne({
             name: "Document Object Model"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -880,4 +881,9 @@ db.posts.insertOne({
             link: "https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

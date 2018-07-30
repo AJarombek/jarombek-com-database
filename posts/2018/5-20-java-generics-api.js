@@ -2192,12 +2192,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "may-20-2018-java-generics-api"}).views;
+postName = "may-20-2018-java-generics-api";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "may-20-2018-java-generics-api"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "may-20-2018-java-generics-api",
+    name: postName,
     title: "Building a Java API with Generics",
     date: new Date('2018-05-20T12:00:00'),
     type: "Discovery",
@@ -2226,7 +2228,6 @@ db.posts.insertOne({
             name: "Encapsulation"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -2284,4 +2285,9 @@ db.posts.insertOne({
             link: "https://www.safaribooksonline.com/library/view/effective-java-third/9780134686097/"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

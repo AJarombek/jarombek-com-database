@@ -1202,12 +1202,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "jan-30-2018-java8-optionals"}).views;
+postName = "jan-30-2018-java8-optionals";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "jan-30-2018-java8-optionals"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "jan-30-2018-java8-optionals",
+    name: postName,
     title: "Java 8 Optionals",
     date: new Date('2018-01-30T12:00:00'),
     type: "Discovery",
@@ -1224,7 +1226,6 @@ db.posts.insertOne({
             color: "java"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -1246,4 +1247,9 @@ db.posts.insertOne({
             link: "https://www.manning.com/books/java-8-in-action"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

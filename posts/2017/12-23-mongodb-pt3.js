@@ -481,12 +481,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "dec-23-2017-mongodb-pt3"}).views;
+postName = "dec-23-2017-mongodb-pt3";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "dec-23-2017-mongodb-pt3"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "dec-23-2017-mongodb-pt3",
+    name: postName,
     title: "Learning MongoDB Part III: Arrays and Nested Objects",
     date: new Date('2017-12-23T12:00:00'),
     type: "Discovery",
@@ -512,7 +514,6 @@ db.posts.insertOne({
             name: "Document Database"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -522,4 +523,9 @@ db.posts.insertOne({
             link: "https://www.manning.com/books/mongodb-in-action-second-edition"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

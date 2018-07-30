@@ -506,12 +506,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "nov-10-2017-es6-modules-babel"}).views;
+postName = "nov-10-2017-es6-modules-babel";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "nov-10-2017-es6-modules-babel"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "nov-10-2017-es6-modules-babel",
+    name: postName,
     title: "ES6 Modules Run with Babel",
     date: new Date('2017-11-10T12:00:00'),
     type: "Discovery",
@@ -541,7 +543,6 @@ db.posts.insertOne({
             name: "Transpiler"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -563,4 +564,9 @@ db.posts.insertOne({
             link: "https://stackoverflow.com/questions/1624691/linux-kill-background-task"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });
