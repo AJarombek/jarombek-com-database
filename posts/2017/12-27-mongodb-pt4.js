@@ -7,6 +7,90 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" For more complex queries and data manipulation in MongoDB, we can use the aggregation framework. First introduced in MongoDB V2.2 (the current version as of this writing is V3.6) the aggregation framework creates a pipeline of operations to perform on documents",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  Inside the pipeline we can do operations such as sorting, filtering, and grouping documents similar to a SQL ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"GROUP BY",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" clause.  You can even manipulate grouped data inside the pipeline, creating entirely new collections in the process.  Lets use our tree database used in the ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/dec-15-2017-mongodb-pt1"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"first",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" and ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/dec-16-2017-mongodb-pt2"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"second",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" MongoDB discoveries to explore this framework. ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -487,6 +571,7 @@ db.posts.insertOne({
         }
     ],
     content,
+    preview,
     sources: [
         {
             startName: "Kyle Banker, Peter Bakkum, Shaun Verch, Douglas Garrett &amp; Tom Hawkins, ",

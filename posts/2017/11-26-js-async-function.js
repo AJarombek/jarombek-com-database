@@ -7,6 +7,22 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" In a previous posts I looked at Promises and Generators in JavaScript.  I mentioned that these two new ES6 features can be especially powerful when combined.  I do think that Promises on their own are very useful, however I am not yet sold on Generators.  Now we can see how Generators can potentially be used in production level code. ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -573,6 +589,7 @@ db.posts.insertOne({
         }
     ],
     content,
+    preview,
     sources: [
         {
             startName: "\"async function\", ",

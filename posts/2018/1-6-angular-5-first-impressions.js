@@ -7,6 +7,22 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Recently I have been learning different JavaScript technologies to build a website.  I have looked into Node.js and MongoDB for my back-end and database.  Now it is time to switch to the front-end JavaScript technologies.  The two top picks for front-end frameworks are Angular and React.js.  Today I will begin to look at Angular and if it is a suitable option for my website.  This post won't look at too much code but instead cover my initial reactions to the framework. ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -629,7 +645,8 @@ db.posts.insertOne({
             color: "html"
         }
     ],
-    content,
+    content, 
+    preview,
     sources: [
         {
             startName: "\"The Ultimate Angular CLI Reference Guide\", ",

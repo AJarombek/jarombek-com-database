@@ -7,6 +7,36 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" While reading a book on Groovy recently I came across two different definitions that apply to the languages type system.  The first states that Groovy is an optionally typed language. Optional typing in Groovy allows certain variables defined without a type (using the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"def",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" keyword) and others with a type similar to Java. The second definition given to Groovy's type system is that it is dynamically typed.  In the past I always associated dynamic typing with not having to explicitly declare types in code (in languages like Python and JavaScript).  So how can Groovy have dynamic typing along with optional type declarations?  To answer these questions I had to dig deeper into programming languages type system and sharpen up my definitions of dynamic and static typing. ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -902,7 +932,8 @@ db.posts.insertOne({
             color: "java"
         }
     ],
-    content,
+    content, 
+    preview,
     sources: [
         {
             startName: "\"Type safety\", ",

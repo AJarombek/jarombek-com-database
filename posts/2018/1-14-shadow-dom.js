@@ -7,6 +7,34 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" I was recently reading a book on Angular 2 and came across an HTML concept I had never heard of before - the shadow DOM.  Angular utilizes the shadow DOM to modularize HTML and CSS code, although you can also use the shadow DOM API in native JavaScript",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -299,6 +327,7 @@ db.posts.insertOne({
         }
     ],
     content,
+    preview,
     sources: [
         {
             startName: "Yakov Fain &amp; Anton Moiseev, ",

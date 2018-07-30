@@ -7,6 +7,43 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" In my ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/jan-6-2018-angular-5-first-impressions"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"First Reactions to Angular",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" discovery post, I was quite critical of TypeScript.  I questioned whether it truly was a pure superset of JavaScript and didn’t like how it made the MEAN stack no longer just JavaScript.  With TypeScript I had to change languages again when moving between layers! ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -436,6 +473,7 @@ db.posts.insertOne({
         }
     ],
     content,
+    preview,
     sources: [
         {
             startName: "Yakov Fain &amp; Anton Moiseev, ",

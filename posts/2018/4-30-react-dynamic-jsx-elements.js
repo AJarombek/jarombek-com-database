@@ -7,6 +7,22 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Recently I've spent a lot of time working with React.js for my upcoming website (which by the time you are reading this is completed!).  One of the challenges I faced was dynamically deciding at runtime which JSX element to render.  It turns out there is a pretty nice solution to this problem. ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -740,6 +756,7 @@ db.posts.insertOne({
         }
     ],
     content,
+    preview,
     sources: [
         {
             startName: "Alex Banks & Eve Porcello, ",

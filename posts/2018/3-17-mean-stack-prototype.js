@@ -7,6 +7,22 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Much of my work lately has been in preparation for a personal website that I am going to build (and where this blog post will call home!).  The website is going to contain my resume, blog posts, discovery posts, and more.  I am really excited to get started building it! ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -3634,6 +3650,7 @@ db.posts.insertOne({
         }
     ],
     content,
+    preview,
     sources: [
         {
             startName: "\"Introducing Mongoose 5.0.0-rc0\", ",

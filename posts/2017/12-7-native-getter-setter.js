@@ -7,6 +7,50 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" In many languages I have worked with creating getters and setters for private class variables is a common practice.  In Java getters and setters are implemented as two functions which can be called directly on an object instance.  They are commonly used in the POJO structure.  In JavaScript getters and setters have native support in the language itself.  You can create these getters and setters with the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"get",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" and ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"set",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" keywords.  They are commonly used for computing properties, as shown in the next example. ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -182,6 +226,7 @@ db.posts.insertOne({
         }
     ],
     content,
+    preview,
     sources: [
         {
             startName: "John Resig, Bear Bibeault, & Josip Maras, ",

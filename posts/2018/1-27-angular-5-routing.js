@@ -7,6 +7,22 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" I have recently started work on my Angular 5 framework prototype.  The project will be a single page web application that displays cat pictures!  The page will have a number of tabs you can click on that will change the state of the application.  To start setting up the application, I first created all the routes which will be selected when users click on tabs. ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -591,6 +607,7 @@ db.posts.insertOne({
         }
     ],
     content,
+    preview,
     sources: [
         {
             startName: "\"Angular Module Intro\", ",

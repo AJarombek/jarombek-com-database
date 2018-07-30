@@ -7,6 +7,22 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" While working with the object oriented paradigm, methods often need to be overridden or overloaded.  These similar concepts are often confused by new developers - in my early days of software development it took a long time to remember the differences.  Both overriding and overloading consist of creating multiple methods of the same name.  The difference between the two is the scope and situation in which these methods are used. ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -1273,7 +1289,8 @@ db.posts.insertOne({
             name: "Object Oriented Programming"
         }
     ],
-    content,
+    content, preview,
+    preview,
     sources: [
         {
             startName: "Joshua Bloch, ",

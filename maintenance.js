@@ -21,3 +21,6 @@ db.viewed.updateMany(
     {},
     { $unset: {"item_id": ""}}
 );
+
+// Observe a single post
+db.posts.findOne();

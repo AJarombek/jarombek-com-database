@@ -7,6 +7,22 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" I was recently reading a book on Java and read through a chapter on how to use bit fields.  Bit Fields are a data structure that I never really understood completely (along with most of the bitwise operators), so I figured I would take some time to look at Bit Fields in detail. ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -944,6 +960,7 @@ db.posts.insertOne({
         }
     ],
     content,
+    preview,
     sources: [
         {
             startName: "\"Bit field\", ",

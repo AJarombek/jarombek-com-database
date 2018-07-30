@@ -7,6 +7,22 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Reflection in Java was always a technique clouded in mystery for me.  There aren't many practical applications for reflection, so my personal code never really needed to use it.  It also didn't help that people often describe reflection as \"hard to learn\" and only for \"experienced developers.\"  It turns out reflection isn’t that complicated, although questions still remain of its usefulness in building applications. ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -1096,6 +1112,7 @@ db.posts.insertOne({
         }
     ],
     content,
+    preview,
     sources: [
         {
             startName: "\"Reflection (computer programming)\", ",

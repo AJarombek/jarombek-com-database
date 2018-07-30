@@ -7,6 +7,22 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Regular expressions are very commonly used in my code.  However, their are still certain aspects of them that have remained a mystery to me.  Today I will explore one new aspect of regular expressions - captures.  I will write the code for captures in JavaScript but they apply to many languages with regex capabilities (including my main language Java).  Let's dig in. ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -234,6 +250,7 @@ db.posts.insertOne({
         }
     ],
     content,
+    preview,
     sources: [
         {
             startName: "John Resig, Bear Bibeault, & Josip Maras, ",

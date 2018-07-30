@@ -7,6 +7,116 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" This post is going to consist of first impressions of Java 8's new ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"CompletableFuture",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" class, which builds on top of the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"Future",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" class introduced in Java 5",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  A ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"CompletableFuture",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" represents an operation in progress that when completed will contain a value",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"2",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  We can use this class to create asynchronous code that won't block during long running tasks.  My initial impression is that a ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"CompletableFuture",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" is Java's version of a JavaScript ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"Promise",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" object.  You define an operation to perform once the value is resolved asynchronously, and if needed can chain these operations. ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -466,6 +576,7 @@ db.posts.insertOne({
         }
     ],
     content,
+    preview,
     sources: [
         {
             startName: "Raoul-Gabriel Urma, Mario Fusco &amp; Alan Mycroft, ",

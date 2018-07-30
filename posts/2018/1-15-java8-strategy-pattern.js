@@ -7,6 +7,48 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Since starting to learn Java 8 features, much of my lambda code has come using the stream API or the new ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"Iterable.forEach()",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" function.  While this is all great, I have really been looking for ways to integrate Java 8 lambdas with other programming patterns.  While reading a book on Java 8 today I saw one pattern with a lot of potential: the strategy pattern",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -236,7 +278,8 @@ db.posts.insertOne({
             name: "Design Pattern"
         }
     ],
-    content,
+    content, 
+    preview,
     sources: [
         {
             startName: "Raoul-Gabriel Urma, Mario Fusco &amp; Alan Mycroft, ",

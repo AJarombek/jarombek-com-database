@@ -7,6 +7,22 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Lately I have been reading up on graph databases and their place in the NoSQL data storage universe. The graph database I've worked with is Neo4j, which is very easy to get set up. I've found the user interface to view graphs and type in queries to be very enjoyable and I highly recommend it if you need a graph database solution. ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -497,7 +513,7 @@ db.posts.insertOne({
             name: "NoSQL"
         }
     ],
-    content,
+    content, preview,
     sources: [
         {
             startName: "Ian Robinson, Jim Webber & Emil Eifrem, ",

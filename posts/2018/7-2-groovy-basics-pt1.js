@@ -7,6 +7,34 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Starting this summer I’ll be picking a programming language to look at in-depth every season.  The language may be one I’ve worked with before that I want more knowledge on or it may be a completely new language I have never explored.  For this summer, the language of choice is Groovy.  Groovy is a programming language run on the JVM that can be used alongside Java code",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  It supports static and dynamic typing, along with a host of features in hopes to shorten the verbose Java syntax.  Groovy is used in a number of different projects such as Grails, Gradle, and Jenkins. ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -1131,7 +1159,8 @@ db.posts.insertOne({
             color: "java"
         }
     ],
-    content,
+    content, 
+    preview,
     sources: [
         {
             startName: "\"Apache Groovy\", ",

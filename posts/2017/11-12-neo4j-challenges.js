@@ -7,6 +7,43 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" In my last discovery post on graph databases and Neo4j I ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/nov-6-2017-neo4j-create"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"created a graph",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" that represented a map of Fairfield County Connecticut.  I created nodes for all the towns/cities and edges between the settlements that shared borders.  In this discovery I will add to this graph and show some of the challenges I faced along the way.  Let’s dive in! ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -765,6 +802,7 @@ db.posts.insertOne({
         }
     ],
     content,
+    preview,
     sources: [
         {
             startName: "\"What's the Cypher script to delete a node by ID?\", September 20th, 2016, ",

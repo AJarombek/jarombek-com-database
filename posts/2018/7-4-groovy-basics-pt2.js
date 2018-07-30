@@ -7,6 +7,43 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" This is the second post of my introduction to the Groovy programming language.  I'm looking at  the basic syntax I find interesting before diving into more complex topics.   To learn about some of the basic operators Groovy offers check out ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/jul-2-2018-groovy-basics-pt1"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"part I",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -1166,7 +1203,8 @@ db.posts.insertOne({
             color: "java"
         }
     ],
-    content,
+    content, 
+    preview,
     sources: [
         {
             startName: "Dierk König & Paul King, ",

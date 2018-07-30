@@ -7,6 +7,22 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" When I first heard about generators in the ES6 version of JavaScript, I wasn't quite sure how useful they would be.  In this post I will look at the basics of generators in JavaScript along with other languages, and then explore some practical uses for it in a future post on combining Generators and Promises.  ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -376,6 +392,7 @@ db.posts.insertOne({
         }
     ],
     content,
+    preview,
     sources: [
         {
             startName: "\"Improve Your Python: 'yield' and Generators Explained\", Apr. 7th, 2013, ",

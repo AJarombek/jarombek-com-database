@@ -7,6 +7,64 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" A common problem when programming is performing a deep copy of an object or data structure.  In many languages this is a complex problem, especially when the object gets large.  In Java there are many different ways to perform a deep copy on an object.  The original language implementation for copying was the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"Cloneable",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" interface.  Since ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"Cloneable",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" was the first method of copying an object in Java, it is important to understand how it works along with all its shortcomings.  This is my journey to understand Java’s ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"Cloneable",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" interface in all its complexity. ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -1276,7 +1334,8 @@ db.posts.insertOne({
             name: "Inheritance"
         }
     ],
-    content,
+    content, 
+    preview,
     sources: [
         {
             startName: "Joshua Bloch, ",

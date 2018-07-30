@@ -7,6 +7,43 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" In this discovery I will look at sorting lists in different programming languages for non-trivial objects.  The languages I will look at are my core languages: Java, JavaScript, Swift, Python, PHP, and C.  I’ve used all these languages in larger projects and wish to stay proficient in them.  I will post snippets of the code in each language but you can also check out the ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/\nmaster/2017/11-Nov/11-14-Sorting-Lists"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"full examples",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". Let’s get started! ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -648,6 +685,7 @@ db.posts.insertOne({
         }
     ],
     content,
+    preview,
     sources: [
         {
             startName: "Matthew Mathias & John Gallagher, ",

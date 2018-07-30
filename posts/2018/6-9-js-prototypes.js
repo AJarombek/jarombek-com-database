@@ -7,6 +7,22 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" For developers new to JavaScript understanding how prototypes work is quite confusing (myself included).  The construct itself is quite simple, however those of us used to class based object oriented programming have difficulty grasping JavaScripts object model.  This discovery post will attempt to clear up some of the confusing pieces of JavaScript prototypes and inheritance. ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -1874,7 +1890,8 @@ db.posts.insertOne({
             name: "Object Oriented"
         }
     ],
-    content,
+    content, 
+    preview,
     sources: [
         {
             startName: "Kyle Simpson, ",

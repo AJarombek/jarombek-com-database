@@ -7,6 +7,64 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" I'll be honest - most of the time when I write CSS I just hack away at things until they work. Building layouts in CSS never seemed intuitive to me.  Other methods such as Androids XML layout system always seems more beginner friendly and powerful.  Luckily creating web layouts in CSS gets easier every year.  New features are added to CSS often, and in the past year a new layout method called CSS Grid was added to the language specification.  Now instead of using a library such as Bootstrap to manage page layouts, CSS has native support for easy grid layout management.  I used CSS Grid in my ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/may-31-2018-react-seed"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"React",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":"/ ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/jun-4-2018-webpack-seed"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"Webpack",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" prototype back in March and applied it to every page on this website so far!  I think CSS Grid is a major enhancement to the CSS specification, providing an easier entry point to new developers.  This post will look into the basics of CSS Grid and act as a stepping stone for further CSS discoveries down the line. ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -1021,6 +1079,7 @@ db.posts.insertOne({
         }
     ],
     content,
+    preview,
     sources: [
         {
             startName: "\"Creating a Simple Responsive HTML Email\", ",

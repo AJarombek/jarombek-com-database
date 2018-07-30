@@ -7,6 +7,22 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Recently while working on my website I made a command line tool in Node.js.  The tool took in an HTML file and tokenized its contents into a JSON file.  Writing command line tools with Node.js sounded complicated at first but is actually incredibly simple!  This discovery post will introduce a simple command line tool for generating random numbers - written in Node.js. ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -980,7 +996,8 @@ db.posts.insertOne({
             name: "Command Line Application"
         }
     ],
-    content,
+    content, 
+    preview,
     sources: [
         {
             startName: "\"bin\", ",

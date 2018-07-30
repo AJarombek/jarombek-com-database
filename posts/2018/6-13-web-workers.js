@@ -7,6 +7,22 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" When developers think of the JavaScript engines execution of code in the browser, thoughts of a single threaded event loop come to mind.  You often hear people say that JavaScript does not support multithreaded programming and that only one piece of code can run at a time.  What they are referring to is the event loop, which delegates browser events for execution one at a time. But is JavaScript really single threaded?  The answer to that question used to be \"it is hard to tell\" unless you had access to how exactly different browsers were executing the JavaScript code. Now with the Web Workers API the answer is without a doubt \"no\". ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -1026,6 +1042,7 @@ db.posts.insertOne({
         }
     ],
     content,
+    preview,
     sources: [
         {
             startName: "John Resig, Bear Bibeault, & Josip Maras, ",

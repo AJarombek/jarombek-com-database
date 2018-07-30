@@ -7,6 +7,22 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" I have learned a lot about Java over the past few months.  I’ve been reading books on it, building projects with it at work, and even posting on this website about it!  It is obvious by looking at some of my old Java code just how far I have progressed (especially my SaintsXCTF Android app).  I decided to pull a bunch of the concepts I’ve learned together and build an API in Java.  This discovery goes through the API and my design decisions throughout. ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -2211,6 +2227,7 @@ db.posts.insertOne({
         }
     ],
     content,
+    preview,
     sources: [
         {
             startName: "Joshua Bloch, ",

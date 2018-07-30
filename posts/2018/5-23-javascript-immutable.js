@@ -7,6 +7,41 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" The benefits of keeping data immutable while programming is well documented.  Immutable data is side effect free, predictable, and easy to test.   While immutability is a strict requirement in the functional paradigm, for other approaches it is simply a recommendation.  In a language like JavaScript that supports multiple different paradigms, lots of the code you see will ",
+                "children":null
+            },
+            {
+                "el":"strong",
+                "attributes":null,
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"not",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" keep its data immutable.  I am guilty of it too. ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -1020,7 +1055,8 @@ db.posts.insertOne({
             color: "typescript"
         },
     ],
-    content,
+    content, 
+    preview,
     sources: [
         {
             startName: "Nicholas Zakas, ",

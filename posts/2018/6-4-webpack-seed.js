@@ -7,6 +7,22 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" I think Webpack is intimidating.  There is so much configuration needed to bundle a web application that includes JavaScript, style sheets, images, fonts, non-JavaScript files, etc.  Maintenance work on my Webpack config is never a task I look forward to.  I have only used Webpack for a few months now, so hopefully some of the frustration eases over time. ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -1105,7 +1121,8 @@ db.posts.insertOne({
             color: "css"
         }
     ],
-    content,
+    content, 
+    preview,
     sources: [
         {
             startName: "Juho Vepsäläinen, ",

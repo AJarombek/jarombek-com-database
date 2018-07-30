@@ -7,6 +7,34 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Recently for work I've looked into RabbitMQ, a message broker that you can use to communicate between different parts of your application.  An analogy I really liked is that RabbitMQ is like putting a post office in your application - you can have producers put messages in the post offices queue and have these messages routed to consumers",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -458,6 +486,7 @@ db.posts.insertOne({
         }
     ],
     content,
+    preview,
     sources: [
         {
             startName: "Alvaro Videla &amp; Jason J.W. Williams, ",

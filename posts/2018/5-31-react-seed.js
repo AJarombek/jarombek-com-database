@@ -7,6 +7,22 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Since mid March a lot of my free time work has been dedicated to building React.js apps.  In fact, this website was built this past month and a half with the MERN stack - MongoDB, Express, React and Node.js. Before I started building this website I built a sample prototype application using two key technologies - React and Webpack.  The knowledge I learned from this prototype helped jump start my work on the website. This discovery will look at the first technology used in the prototype application - React.  I will then look at the Webpack portion of the prototype in my next discovery post. ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -1123,6 +1139,7 @@ db.posts.insertOne({
         }
     ],
     content,
+    preview,
     sources: [
         {
             startName: "\"What is the Virtual DOM?\", ",

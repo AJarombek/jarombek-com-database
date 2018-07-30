@@ -7,6 +7,48 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" When you run code in JavaScript there is a global object created in the global scope.  What this object is depends on the environment JavaScript is running in.  If you are running JavaScript code in your web browser the global object will be ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"window",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":", which represents the browser window.  Window exposes an API that allows interaction with the Document Object Model (DOM), click listeners, and other information about the browser window",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -817,6 +859,7 @@ db.posts.insertOne({
         }
     ],
     content,
+    preview,
     sources: [
         {
             startName: "\"Window\", ",

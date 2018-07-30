@@ -7,6 +7,8 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [];
+
 content = [];
 
 existingPost = db.posts.findOne({name: "jul-4-2018-react-seed"});
@@ -31,6 +33,7 @@ db.posts.insertOne({
         }
     ],
     content,
+    preview,
     sources: [
         {
             startName: "\"this\", ",

@@ -7,6 +7,22 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" In many programming languages arrow functions are added to allow for concise one liners and decreased verbosity.  Less lines of code is one of the things that made the Java 8 release with lambdas so appealing.  In ES6 JavaScript also added arrow functions to write shorter, more readable code.  In JavaScript however these new functions aren’t as universally praised due to some quirks. ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -631,6 +647,7 @@ db.posts.insertOne({
         }
     ],
     content,
+    preview,
     sources: [
         {
             startName: "John Resig, Bear Bibeault, & Josip Maras, ",

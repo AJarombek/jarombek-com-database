@@ -7,6 +7,36 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Usually when I work in Java generics are easy to reason about.  They are there to enforce type on a collection or a class that I created.  When declaring a class with a generic, it means that an instance of the class can be parameterized with one (or more) of many different element types.  A simple example would be an ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"ArrayList",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":", which is implemented with a generic parameter like so: ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -1363,7 +1393,8 @@ db.posts.insertOne({
             name: "Polymorphism"
         }
     ],
-    content,
+    content, 
+    preview,
     sources: [
         {
             startName: "\"Covariance and contravariance (computer science)\", ",

@@ -7,6 +7,78 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" For anyone who has ever written code in Java (or most imperative and object oriented languages) you know the pain of dealing with ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"null",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" values. These ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"null",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" values are especially painful in Java since they throw a ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"NullPointerException",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" whenever we want to perform operations on them.  When we see a ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"NullPointerException",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" in our code, the usual fix is to perform a null check similar to the following code snippet: ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -1153,6 +1225,7 @@ db.posts.insertOne({
         }
     ],
     content,
+    preview,
     sources: [
         {
             startName: "Raoul-Gabriel Urma, Mario Fusco &amp; Alan Mycroft, ",

@@ -7,6 +7,57 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Today I updated my iOS app ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://github.com/AJarombek/saints-xctf-ios"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"SaintsXCTF",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" from Swift 3 to Swift 4.  The process could not have been easier, with many of the automated conversions consisting of API changes and String struct upgrades.  There was however one change that had me confused - many of my functions were given a ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"@objc",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" annotation.  So what is this mysterious annotation and why was it added to so many of my methods? ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -224,7 +275,8 @@ db.posts.insertOne({
             color: "swift"
         }
     ],
-    content,
+    content, 
+    preview,
     sources: [
         {
             startName: "\"when to use @objc in swift code?\", ",

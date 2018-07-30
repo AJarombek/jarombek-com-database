@@ -7,6 +7,22 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" In JavaScript there are many module patterns that can be used to create APIs and separate concerns in code (as of ES6 there is actually syntax for modules in the spec). In the following code I created an API using the revealing module pattern.  The name comes from the return statement at the end of the module - it 'reveals' functions to outside code. ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -307,6 +323,7 @@ db.posts.insertOne({
         }
     ],
     content,
+    preview,
     sources: [
         {
             startName: "Kyle Simpson, ",

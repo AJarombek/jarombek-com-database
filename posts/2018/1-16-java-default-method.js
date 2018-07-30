@@ -7,6 +7,22 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Java was originally designed to not support multiple inheritance of implemented methods.  Because of this, you could only extend one class.  However, you could simulate multiple inheritance by implementing multiple interfaces.  The only catch here was that the methods defined in the interfaces had no body and had to be created in the implementing class. ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -557,7 +573,8 @@ db.posts.insertOne({
             name: "Inheritance"
         }
     ],
-    content,
+    content, 
+    preview,
     sources: [
         {
             startName: "Raoul-Gabriel Urma, Mario Fusco &amp; Alan Mycroft, ",

@@ -7,6 +7,43 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" I recently finished looking at Java 8 (which was the topic of recent discoveries) and now am doing a deep dive into the Oracle database.  Although I don't use Oracle a ton in my free time I use it a lot at work and it is the ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"http://pypl.github.io/DB.html"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"most popular database",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" at the moment.  Therefore it is good to know well! ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -734,6 +771,7 @@ db.posts.insertOne({
         }
     ],
     content,
+    preview,
     sources: [
         {
             startName: "\"Difference between database vs user vs schema\", ",

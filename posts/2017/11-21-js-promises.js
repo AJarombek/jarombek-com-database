@@ -7,6 +7,48 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Today I am looking at Promises in JavaScript and how we can use them to write easier to follow and less error prone asynchronous code.  Before I talk about Promises lets make a async call in JavaScript the traditional way; with callbacks. I won't be using any fancy JavaScript framework to make my async http request, just the simple ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"XMLHttpRequest",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" object (which is as poorly named as AJAX, it can be used for much more than XML!)",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -565,6 +607,7 @@ db.posts.insertOne({
         }
     ],
     content,
+    preview,
     sources: [
         {
             startName: "\"Why is it called XMLHttpRequest?\", Aug. 22nd, 2012, ",

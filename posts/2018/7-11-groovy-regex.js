@@ -7,6 +7,22 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
+preview = [
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Using regular expressions for pattern matching is a task software developers perform on a regular basis.  Although regular expressions still differ a bit across languages, they are standardized to the point where they are language agnostic.  However, interacting with these regular expressions differs greatly across different programming languages.  In my recent ventures into Groovy, I saw a very unique approach to handling regular expressions.  I decided to compare the approach in Groovy to approaches in other languages I often use.  This article shares my findings. ",
+                "children":null
+            }
+        ]
+    }
+];
+
 content = [
     {
         "el":"p",
@@ -1593,7 +1609,8 @@ db.posts.insertOne({
             color: "php"
         }
     ],
-    content,
+    content, 
+    preview,
     sources: [
         {
             startName: "\"Regular expressions in C: examples?\", ",
