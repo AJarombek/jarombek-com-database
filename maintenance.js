@@ -24,3 +24,6 @@ db.viewed.updateMany(
 
 // Observe a single post
 db.posts.findOne();
+
+// Remove all user documents
+db.user.remove({});

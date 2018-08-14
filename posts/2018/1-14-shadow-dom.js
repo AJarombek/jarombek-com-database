@@ -174,7 +174,15 @@ content = [
         "attributes":{
             "language":"HTML"
         },
-        "value":"<!DOCTYPE html>\n<html>\n    <head>\n        <meta chartset=\"utf-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    </head>\n    <body>\n        <!-- This div will be the holder for the shadow dom -->\n        <div id=\"host\"></div>\n        <div>\n            <style>\n                p {color: red}\n            </style>\n        </div>\n        <p>I'm outside the shadow.</p>\n        <script>\n            // Attach the shadow dom\n            const shadow = document.querySelector(\"#host\").attachShadow({mode: 'open'});\n\n            // Create the shadow dom's contents\n            shadow.innerHTML = \"<p>I'm in a Shadow!</p>\";\n            shadow.innerHTML += `<style>\n                                    p {\n                                        font-style: italic;\n                                        color: #999;\n                                        font-weight: bold;\n                                    }\n                                </style>`\n        </script>\n    </body>\n</html>\n",
+        "value":"<!DOCTYPE html>\n<html>\n    <head>\n        <meta chartset=\"utf-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    </head>\n    <body>\n        <!-- This div will be the holder for the shadow dom -->\n        <div id=\"host\"></div>\n        <div>\n            <style>\n                p {color: red}\n            </style>\n        </div>\n        <p>I'm outside the shadow.</p>\n    </body>\n</html>\n",
+        "children":null
+    },
+    {
+        "el":"codesnippet",
+        "attributes":{
+            "language":"JavaScript"
+        },
+        "value":"// Attach the shadow dom\nconst shadow = document.querySelector(\"#host\").attachShadow({mode: 'open'});\n\n// Create the shadow dom's contents\nshadow.innerHTML = \"<p>I'm in a Shadow!</p>\";\nshadow.innerHTML += `<style>\n                        p {\n                            font-style: italic;\n                            color: #999;\n                            font-weight: bold;\n                        }\n                    </style>`\n",
         "children":null
     },
     {
@@ -206,7 +214,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "class": "jarombek-blog-image",
+                    "class":"jarombek-blog-image",
                     "src":"https://asset.jarombek.com/posts/1-14-18-webresult.png"
                 },
                 "value":null,
@@ -271,6 +279,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
+                    "class":"jarombek-blog-image",
                     "src":"https://asset.jarombek.com/posts/1-14-18-html.png",
                     "align":"middle"
                 },
@@ -289,7 +298,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The ability to modularize an HTML document is awesome!  I will utilize the shadow DOM in my Angular code and look into more native HTML modularization techniques like reusable custom elements in the future! ",
+                "value":" The ability to modularize a HTML document is awesome!  I will utilize the shadow DOM in my Angular code and look into more native HTML modularization techniques like reusable custom elements in the future! ",
                 "children":null
             }
         ]
