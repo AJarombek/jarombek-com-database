@@ -20,6 +20,31 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" So what is CI?  Continuous Integration is the practice of merging code being developed into a main repository often.  On each of these merges, testing suites and builds should be executed automatically by a tool separate from the main codebase",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  This allows for early detection of bugs and helps avoid the nightmare of backtracking through many commits to see where some functionality broke.  Now each time a commit is done with CI the developers will know if any existing code breaks.  Of course this requires some thorough testing suites to be created (something I often cut corners on admittedly). ",
+                "children":null
+            }
+        ]
     }
 ];
 

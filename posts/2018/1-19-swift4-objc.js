@@ -55,6 +55,14 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"codesnippet",
+        "attributes":{
+            "language":"Swift"
+        },
+        "value":"@objc func womensXC(_ sender: UIView) {\n    os_log(\"Go to Women's Cross Country Page\", log: logTag, type: .debug)\n    loadGroup(withGroupname: \"wmensxc\")\n}\n",
+        "children":null
     }
 ];
 

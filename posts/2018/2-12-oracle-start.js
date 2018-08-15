@@ -41,6 +41,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" This discovery is going to follow me through the setup of my database.  I will skip the actual Oracle installation and configuration (which was a challenge itself!) and move straight to the moment I started typing SQL. ",
+                "children":null
+            }
+        ]
     }
 ];
 

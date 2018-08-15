@@ -41,6 +41,31 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Sass is a CSS preprocessor with Ruby style syntax.  It is a superset of CSS so any CSS document is also valid Sass",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  Sass adds lots of new features including variable definitions, mixins, and other syntax that helps create reusable components in your styling.  The biggest problem I had with CSS is that it ends up looking like a jumbled mess with many repeated styles.  With Sass, we now have reusable styles! ",
+                "children":null
+            }
+        ]
     }
 ];
 

@@ -76,6 +76,14 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"codesnippet",
+        "attributes":{
+            "language":"Java"
+        },
+        "value":"String str = \"Hello\";\n\nif (str != null) {\n    hello.toUpperCase();\n}\n",
+        "children":null
     }
 ];
 

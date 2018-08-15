@@ -41,6 +41,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" First let’s populate this graph with some people (after all, a settlement needs to have citizens!). ",
+                "children":null
+            }
+        ]
     }
 ];
 

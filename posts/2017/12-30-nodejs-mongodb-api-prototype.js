@@ -83,6 +83,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" All of this knowledge buildup is for a personal website project that I have planned (and where this blog will call home!).  Before I start development on the website directly, I will create a series of prototypes to get a feel for some of the technologies I will use in my websites stack.  With these prototypes I can make sure the technology I choose is a good fit for the full project.  Also I can use them as templates to complete future discoveries!  In general if you have the time to build prototypes with technologies you want to use in a production project it is a great idea! ",
+                "children":null
+            }
+        ]
     }
 ];
 

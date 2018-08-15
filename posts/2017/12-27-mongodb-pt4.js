@@ -88,6 +88,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" If you remember each tree has a type and a grade specifying the height of the tree.  Let's say we wanted to find the total number of trees in each grade with type frazier fir.  The aggregation function would be like so: ",
+                "children":null
+            }
+        ]
     }
 ];
 

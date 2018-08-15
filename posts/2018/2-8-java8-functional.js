@@ -41,6 +41,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" It is hard however to fully explain functional programming with Java since it doesn't follow a pure functional style.  Instead Java 8 tries to take pieces of what makes functional programming great and incorporate it into Java's existing imperative and object oriented paradigm. ",
+                "children":null
+            }
+        ]
     }
 ];
 

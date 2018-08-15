@@ -20,6 +20,61 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" When combining Promises and Generators, we can create a function that handles asynchronous tasks (let us call it ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"async",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":").  This function takes one parameter - a generator function.  Each ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"yield",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" statement in the generator passes a promise, which when resolved with a value calls the generators iterator.  Therefore each asynchronous task in the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"async",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" function moves on to the next task in sequential order when the promise is completed.  Let's look at some pseudocode: ",
+                "children":null
+            }
+        ]
     }
 ];
 

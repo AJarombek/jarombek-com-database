@@ -41,6 +41,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" I did finish my discussion about TypeScript in that post saying how I would continue to work with it and see if I warmed up to the language.  So is TypeScript going to replace my JavaScript now that I have built a full Angular 5 app with it?  Not quite, but it is a really cool language that brings a lot to the JavaScript ecosystem! ",
+                "children":null
+            }
+        ]
     }
 ];
 

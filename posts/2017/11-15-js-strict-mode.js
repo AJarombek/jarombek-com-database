@@ -67,6 +67,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Certain things that silently fail in JavaScript will now throw errors under strict mode.  This includes setting properties to primitives and assigning values to keywords. ",
+                "children":null
+            }
+        ]
     }
 ];
 

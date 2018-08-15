@@ -39,6 +39,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" All the code I write these days has immutability in mind.  This post goes over the basics of preventing object mutations in JavaScript and how ES6+ features simplify the task. ",
+                "children":null
+            }
+        ]
     }
 ];
 

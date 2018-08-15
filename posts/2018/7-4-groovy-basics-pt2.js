@@ -41,6 +41,59 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" This discovery post will explore Groovy's object oriented features.  As far as existing object oriented libraries are concerned, Groovy extends the Java object libraries in what is commonly referred to as the GDK (Groovy Development Kit)",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  For example, the GDK gives more methods to the collections framework and specifically the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"Collection",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" interface.  Now all collections can use the GDK's ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"each()",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" method to iterate over its contents with a Groovy closure.  I utilize some of the GDK enhancements in this post. ",
+                "children":null
+            }
+        ]
     }
 ];
 

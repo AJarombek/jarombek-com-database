@@ -32,6 +32,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" One of the main reasons I want to look at Groovy in more detail is because I am working on a project involving Jenkins at work.  I also always had an interest in the language as an alternative to Java.  This post will look at some of the basic syntax and features of Groovy that caught my eye after an hour or two of exploring.  It will serve as my first impressions of Groovy along with Part II.  After these two posts I will dig deeper into Groovy features and use it in Jenkins programs.  Now it is time to start exploring! ",
+                "children":null
+            }
+        ]
     }
 ];
 

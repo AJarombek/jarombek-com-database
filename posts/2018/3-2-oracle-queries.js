@@ -41,6 +41,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Now what do I mean by intermediate difficulty.  Obviously this definition will vary among developers, but I believe that intermediate queries are ones beyond simple select statements with basic filters.  This discovery isn't really a tutorial on creating SQL queries but more exploring different SQL syntax that was interesting to me!  I will start out pretty simple and then get more complex! ",
+                "children":null
+            }
+        ]
     }
 ];
 

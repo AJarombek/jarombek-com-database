@@ -20,6 +20,104 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" In JavaScript I have ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/nov-11-2017-js-this"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"looked at",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"this",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" and how it is set dynamically at runtime instead of lexically depending on the scope code is written in.  I also went over how many JavaScript users (including myself!) are easily confused by how ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"this",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" works in the language.  Arrow functions look to ‘fix’ these confusions by implementing a lexical ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"this",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  Now the value of ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"this",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" in an arrow function depends on what ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"this",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" is equal to at the time it was written (instead of where it is called).  This leads to confusing behavior if you are expecting arrow functions to act like normal function definitions.  Let’s look at an example. ",
+                "children":null
+            }
+        ]
     }
 ];
 

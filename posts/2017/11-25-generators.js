@@ -20,6 +20,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" To introduce generators I am going to use them to create the fibonacci sequence. ",
+                "children":null
+            }
+        ]
     }
 ];
 

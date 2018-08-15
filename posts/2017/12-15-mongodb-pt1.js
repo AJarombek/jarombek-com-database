@@ -20,6 +20,31 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" First lets look at some of the positive aspects of MongoDB.  The database stores its data as JSON (and internally as BSON - short for Binary JSON) which in my personal opinion is the best structure for transferring data.  In MongoDB the BSON implementation makes this data extremely lightweight",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". If you are using a JavaScript web stack, MongoDB allows you to even use JavaScript in your database instead of SQL.  The query language of MongoDB is also JavaScript, which means if you have knowledge in JavaScript using MongoDB will be an easy transition.  You can even use JavaScript functions and variables to perform complex queries and database updates! ",
+                "children":null
+            }
+        ]
     }
 ];
 

@@ -41,6 +41,14 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"codesnippet",
+        "attributes":{
+            "language":"JavaScript"
+        },
+        "value":"export function lyrics(song) {\n    switch(song.toLowerCase()) {\n    case \"sparks fly\":\n        return lyric.sparks;\n        case \"mine\":\n        return lyric.mine;\n    case \"back to december\":\n        return lyric.dec;\n    default:\n        return lyric.other;\n    }\n}\n\nvar lyric = {\n    sparks: \"I see sparks fly whenever you smile\",\n    mine: \"You are the best thing thats ever been mine\",\n    dec: \"I go back to Decemeber all the time\",\n    other: \"I'm sorry, taylor can't pick up the phone right now\"\n}\n",
+        "children":null
     }
 ];
 

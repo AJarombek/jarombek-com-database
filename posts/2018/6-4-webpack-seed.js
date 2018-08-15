@@ -20,6 +20,40 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Nonetheless, Webpack is important to know in the current state of web programming.  I used Webpack for the first time to bundle my React prototype application (and went on to use it on the website you are currently viewing!).  My previous discovery post went over the ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/may-31-2018-react-seed"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"React portion",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" of my prototype application.  In this post will look at the Webpack portion and some of the interesting configuration pieces.  This post isn't a tutorial on how to build a Webpack config - instead it focuses on things I’ve learned about the bundler and my initial observations. ",
+                "children":null
+            }
+        ]
     }
 ];
 

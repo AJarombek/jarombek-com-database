@@ -20,6 +20,74 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"h5",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":"The API",
+                "children":null
+            }
+        ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" The API I built for this discovery post has two major pieces.  The first is a workout API.  It has an ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"Exercise",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" interface along with two concrete classes that implement it - ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"Run",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" and ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"Ski",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  I am an avid runner and have been experimenting with nordic skiing so I thought they would be appropriate. ",
+                "children":null
+            }
+        ]
     }
 ];
 

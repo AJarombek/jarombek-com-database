@@ -20,6 +20,33 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" An example of an array in a document being useful is a user that has multiple addresses.  In a relational database, this address information would have to be stored in a separate table that could be joined on the user table to get all the addresses.  In MongoDB, this can all be stored in one document which makes accessing quick and easy (no expensive ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"JOIN",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" operations) as well as simplifying updating. ",
+                "children":null
+            }
+        ]
     }
 ];
 

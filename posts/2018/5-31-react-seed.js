@@ -20,6 +20,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" React is a library for generating views.  A view is the UI of an application, and for a web application renders HTML.  In a traditional web application, the client side JavaScript code manipulates the HTML view through the Document Object Model (DOM) API.  When using React on the client side, views are interacted with through a construct called the \"Virtual DOM.\" ",
+                "children":null
+            }
+        ]
     }
 ];
 

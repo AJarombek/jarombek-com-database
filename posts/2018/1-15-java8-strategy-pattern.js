@@ -46,6 +46,31 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" The strategy design pattern allows you to define a group of algorithms.  One of the algorithms in this group can be selected for use at runtime",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"2",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  With a functional interface, we can pass a lambda function (algorithm) to the strategy pattern.  The functional interface will specify the general algorithm structure while the lambda function implements the details at runtime. ",
+                "children":null
+            }
+        ]
     }
 ];
 

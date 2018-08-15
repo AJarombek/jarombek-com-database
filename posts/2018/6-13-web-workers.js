@@ -20,6 +20,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Web Workers allow multithreaded JavaScript programming in the browser.  This discovery post will discuss the basics of what Web Workers are and give some sample code of their basic functionality. ",
+                "children":null
+            }
+        ]
     }
 ];
 

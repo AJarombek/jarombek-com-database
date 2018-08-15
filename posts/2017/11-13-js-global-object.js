@@ -46,6 +46,47 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" In the past I have used the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"window",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" object to check the current URL and previous page visited by the user (to create a ‘back’ button).  The most common use of ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"window",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" however is to manipulate the DOM and set click listeners (I used frameworks such as JQuery to perform these tasks in the past). ",
+                "children":null
+            }
+        ]
     }
 ];
 

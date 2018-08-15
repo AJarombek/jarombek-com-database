@@ -41,6 +41,33 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" You would think something as simple as a string would be straightforward, but in Swift there were a few quirks.  I wrote the code in Xcode 8 and Swift 3 this fall.  Since then Xcode 9 and Swift 4 have released, making ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"String",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" a bit less confusing.  I will dive into strings in Swift 3 and then look at how the code has changed with Swift 4. ",
+                "children":null
+            }
+        ]
     }
 ];
 

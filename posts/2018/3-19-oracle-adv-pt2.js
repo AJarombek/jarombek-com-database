@@ -83,6 +83,59 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" The ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"MODEL",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" clause allows you to access columns in a multidimensional array.  The calculations you can perform on this array are similar to those seen in a spreadsheet application such as Excel",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". The reason for including the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"MODEL",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" clause in Oracle was that users would often copy and paste SQL query results into a spreadsheet and then manipulate the data from there.  Now you can perform these manipulations in native SQL. ",
+                "children":null
+            }
+        ]
     }
 ];
 

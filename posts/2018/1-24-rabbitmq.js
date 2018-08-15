@@ -32,6 +32,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" The configuration for RabbitMQ can be written in any language with a RabbitMQ library (which consists of most languages you know).  This is extremely powerful since you could have different pieces of the RabbitMQ channel in different languages.  For example, let's say your RabbitMQ server has one producer and three consumers.  Your message producer might be written in Java, while your consumers are written in JavaScript, Python, and PHP.  Imagine all the different possibilities of sending RabbitMQ messages across applications! ",
+                "children":null
+            }
+        ]
     }
 ];
 

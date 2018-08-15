@@ -41,6 +41,31 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" JWT’s are used to securely transfer a series of claims between parties",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  In my application, these claims determined whether the user is signed in.  The parties that these claims are transferred between are the Node.js/Express web server and my Angular 5 client. ",
+                "children":null
+            }
+        ]
     }
 ];
 

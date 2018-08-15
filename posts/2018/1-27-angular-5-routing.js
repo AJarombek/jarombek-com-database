@@ -20,6 +20,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" First I made an Angular component that has an HTML template for all the tabs. ",
+                "children":null
+            }
+        ]
     }
 ];
 

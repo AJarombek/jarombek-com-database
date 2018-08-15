@@ -20,6 +20,47 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"definition",
+        "attributes":{
+            "word":"Bit Field"
+        },
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" A data structure that consists of one or many memory locations (bits).  Each of these bits has a unique meaning defined by the programmer",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  It is common practice to use an unsigned integer data type of a specified length for a bit field.  For example, in C you could define a bit field as ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"unsigned int bitField : 2",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  This bit field consists of two bits which can be turned on or off - each of which has a unique meaning defined by the programmer. ",
+                "children":null
+            }
+        ]
     }
 ];
 

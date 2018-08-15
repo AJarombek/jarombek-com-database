@@ -34,6 +34,32 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"h5",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":"Dynamic & Static Typing",
+                "children":null
+            }
+        ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" As previously mentioned, I used to associate dynamic typing with a lack of type definitions.  I likely made this association because languages that don't declare types in code are often dynamically typed - such as JavaScript and Python.  While both JavaScript and Python are dynamically typed, the meaning of dynamic typing is less about existence of type definitions and more about when types are enforced. ",
+                "children":null
+            }
+        ]
     }
 ];
 

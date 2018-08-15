@@ -20,6 +20,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Captures allow us to save pieces of a regular expression so we can use them later on.  For example, it we have a regex that matches emails, we can capture certain aspects of the email - the local part and the domain.  We can also do the same thing with dates - saving the day, month, and year.  That is what happens in the following example: ",
+                "children":null
+            }
+        ]
     }
 ];
 

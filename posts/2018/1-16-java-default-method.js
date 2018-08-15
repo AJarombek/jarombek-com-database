@@ -20,6 +20,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" This design avoided many issues that come with multiple inheritance such as the diamond problem.  However, there were some issues that came with using interfaces for an API as well. ",
+                "children":null
+            }
+        ]
     }
 ];
 

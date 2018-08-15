@@ -114,6 +114,33 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" I created a simple example API to test it out.  The API contains a list of programming languages that you can ask for information about. The operation of getting a language takes a long time to complete (to simulate a possible long running network call) so we will use a ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"CompletableFuture",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" to deal with its value once it arrives.  In the meantime, we will be able to perform other operations. ",
+                "children":null
+            }
+        ]
     }
 ];
 

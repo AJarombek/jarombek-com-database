@@ -62,6 +62,66 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" If you have ever heard or read about Java’s ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"Cloneable",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" interface you likely were told the following three words: ",
+                "children":null
+            },
+            {
+                "el":"strong",
+                "attributes":null,
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"Don’t Use It",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  This is good advice, as there are many simpler ways to implement deep copying.  Unfortunately there is a lot of code in existence that already uses ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"Cloneable",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  To understand how it works, first let’s look at the source code for the interface: ",
+                "children":null
+            }
+        ]
     }
 ];
 

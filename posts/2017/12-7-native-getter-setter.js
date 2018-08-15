@@ -48,6 +48,14 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"codesnippet",
+        "attributes":{
+            "language":"JavaScript"
+        },
+        "value":"    var person = {\n        _first: 'Andy',\n        _last: 'Jarombek',\n        get full() {\n            console.info('Accessing Full Name');\n            // Use ES6 template literals\n            return `${this._first} ${this._last}`;\n        }\n    };\n",
+        "children":null
     }
 ];
 

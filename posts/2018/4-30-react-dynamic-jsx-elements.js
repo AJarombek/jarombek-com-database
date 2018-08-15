@@ -20,6 +20,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" First off, if you have been following by posts you will know that this is the first time I have posted about React.js.  Therefore lets quickly review/initiate ourselves with the React library. ",
+                "children":null
+            }
+        ]
     }
 ];
 

@@ -20,6 +20,21 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"definition",
+        "attributes":{
+            "word":"Language Agnostic"
+        },
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" A concept that is independent from any single programming language implementation.  Skills that are language agnostic can be applied throughout the software development ecosystem. ",
+                "children":null
+            }
+        ]
     }
 ];
 

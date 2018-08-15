@@ -90,6 +90,80 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" What makes ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"this",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" so confusing is that it is set during program runtime instead of defined at author time",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  In other words it does not follow the rules of ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/nov-8-2017-scope-hoisting"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"lexical scope",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" that I am comfortable with.  It also is incredibly daunting for new programmers since the value of ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"this",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" can potentially be different when calling the same function at different instances. ",
+                "children":null
+            }
+        ]
     }
 ];
 

@@ -20,6 +20,31 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Without going into too much detail, the largest draw to graph databases is storing relationships between data and the speed at which you can query related data points (or in graph terms nodes/vertices). Relationships are first class citizens in graph databases which allows you to query related data by traversing the relationship itself.  This is contrasted with a typical relational database solution where you have to find relationships through foreign keys or combine two tables of data with a very slow SQL JOIN operation",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".   Our same slow query in a RDBMS (Relational DataBase Management System) is extremely quick in a graph database. ",
+                "children":null
+            }
+        ]
     }
 ];
 

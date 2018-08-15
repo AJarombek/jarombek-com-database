@@ -20,6 +20,31 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Reflection is the combination of inspecting runtime elements of an application and modifying its runtime structure",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  The first piece of this definition is more specifically referred to as type introspection. ",
+                "children":null
+            }
+        ]
     }
 ];
 

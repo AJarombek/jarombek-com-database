@@ -20,6 +20,40 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" One of the great things about the Node.js and the npm ecosystem is all the community built npm modules at a developers disposal.  For command line tools there are many different modules to choose from.  In this discovery post I will be using ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"“https://github.com/tj/commander.js/”"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"commander.js",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  The reason I chose this module over all the others it is has no dependencies!  Less dependencies generally means more reliable code and less unused code. ",
+                "children":null
+            }
+        ]
     }
 ];
 

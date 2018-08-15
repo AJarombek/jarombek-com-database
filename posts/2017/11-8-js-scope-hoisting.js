@@ -20,6 +20,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" This will be the first of many discovery posts on JavaScript.  Let’s look at one of the basic concepts of the language: how variables interact with scope.  By scope I mean the area of a program you can access a variable (e.g. a variable declared in a function can only be accessed within that function). You can also think of scope as the execution environment for a line in a program.  The scope is all the other variables and functions this program line is aware of.  In JavaScript scope can get a bit tricky. ",
+                "children":null
+            }
+        ]
     }
 ];
 

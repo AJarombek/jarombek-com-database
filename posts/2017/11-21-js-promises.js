@@ -46,6 +46,45 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" I made a custom google search API which is actually really easy and fun to create",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"2",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":"! It searches certain websites for cat related posts (and is appropriately called meowmeow)! Who wouldn't love that?  So in my code I want to get the article names of the top 10 searches of my custom meow search.  Here is how you would do that with the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"XMLHttpRequest",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" and callback function: ",
+                "children":null
+            }
+        ]
     }
 ];
 

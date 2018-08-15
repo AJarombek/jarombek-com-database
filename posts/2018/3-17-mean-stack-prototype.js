@@ -20,6 +20,61 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" The first order of business however is to decide which technology stack I want to use for the website. I have narrowed it down to a full JavaScript stack, from the front-end through the database.  There are two remaining tech stacks in competition: the MEAN stack (MongoDB, Express, Angular, & Node.js) and the MERN stack (MongoDB, Express, React.js & Node.js).  I started the journey of deciding by reading many JavaScript books and writing plenty of discovery posts about them. I also explored Node.js and MongoDB in depth.  I even made a ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/dec-30-2017-nodejs-mongodb-api-prototype"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"blog post",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" and ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://github.com/AJarombek/nodejs-mongodb-api-prototype"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"prototype",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" on both the technologies!  Now it is time to pick between the two front end JavaScript frameworks: Angular by Google and React.js by Facebook. ",
+                "children":null
+            }
+        ]
     }
 ];
 

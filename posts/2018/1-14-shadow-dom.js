@@ -32,6 +32,73 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" A shadow DOM results in modularization by removing its contents from the main document object model. You have to attach the shadow DOM onto an existing HTML element using the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"Element.attachShadow()",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" function",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"2",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  You can then add new HTML code or ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"<style>",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" elements containing CSS to the shadow DOM.  All of the styles and HTML specified in the shadow DOM will be hidden from the outer HTML implementation.  You can utilize shadow DOM to avoid CSS style conflicts, HTML ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"id",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" overlap, and more! ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -174,7 +241,15 @@ content = [
         "attributes":{
             "language":"HTML"
         },
-        "value":"<!DOCTYPE html>\n<html>\n    <head>\n        <meta chartset=\"utf-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    </head>\n    <body>\n        <!-- This div will be the holder for the shadow dom -->\n        <div id=\"host\"></div>\n        <div>\n            <style>\n                p {color: red}\n            </style>\n        </div>\n        <p>I'm outside the shadow.</p>\n        <script>\n            // Attach the shadow dom\n            const shadow = document.querySelector(\"#host\").attachShadow({mode: 'open'});\n\n            // Create the shadow dom's contents\n            shadow.innerHTML = \"<p>I'm in a Shadow!</p>\";\n            shadow.innerHTML += `<style>\n                                    p {\n                                        font-style: italic;\n                                        color: #999;\n                                        font-weight: bold;\n                                    }\n                                </style>`\n        </script>\n    </body>\n</html>\n",
+        "value":"<!DOCTYPE html>\n<html>\n    <head>\n        <meta chartset=\"utf-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    </head>\n    <body>\n        <!-- This div will be the holder for the shadow dom -->\n        <div id=\"host\"></div>\n        <div>\n            <style>\n                p {color: red}\n            </style>\n        </div>\n        <p>I'm outside the shadow.</p>\n    </body>\n</html>\n",
+        "children":null
+    },
+    {
+        "el":"codesnippet",
+        "attributes":{
+            "language":"JavaScript"
+        },
+        "value":"// Attach the shadow dom\nconst shadow = document.querySelector(\"#host\").attachShadow({mode: 'open'});\n\n// Create the shadow dom's contents\nshadow.innerHTML = \"<p>I'm in a Shadow!</p>\";\nshadow.innerHTML += `<style>\n                        p {\n                            font-style: italic;\n                            color: #999;\n                            font-weight: bold;\n                        }\n                    </style>`\n",
         "children":null
     },
     {
@@ -206,7 +281,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "class": "jarombek-blog-image",
+                    "class":"jarombek-blog-image",
                     "src":"https://asset.jarombek.com/posts/1-14-18-webresult.png"
                 },
                 "value":null,
@@ -271,6 +346,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
+                    "class":"jarombek-blog-image",
                     "src":"https://asset.jarombek.com/posts/1-14-18-html.png",
                     "align":"middle"
                 },
@@ -289,7 +365,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The ability to modularize an HTML document is awesome!  I will utilize the shadow DOM in my Angular code and look into more native HTML modularization techniques like reusable custom elements in the future! ",
+                "value":" The ability to modularize a HTML document is awesome!  I will utilize the shadow DOM in my Angular code and look into more native HTML modularization techniques like reusable custom elements in the future! ",
                 "children":null
             }
         ]
