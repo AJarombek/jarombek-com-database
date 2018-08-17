@@ -36,12 +36,87 @@ preview = [
         ]
     },
     {
-        "el":"codesnippet",
-        "attributes":{
-            "language":"Java"
-        },
-        "value":"\npublic class ArrayList<E> extends AbstractList<E> implements List<E> {\n    ...\n}\n",
-        "children":null
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Note that the class extends ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"AbstractList",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" and implements ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"List",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"AbstractList",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" actually implements ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"List",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" itself, so the definition of ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"implements <List>",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" is not needed in this case.  It is only there for clarity and readability. ",
+                "children":null
+            }
+        ]
     }
 ];
 

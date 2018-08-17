@@ -43,12 +43,31 @@ preview = [
         ]
     },
     {
-        "el":"codesnippet",
-        "attributes":{
-            "language":"JavaScript"
-        },
-        "value":"export function lyrics(song) {\n    switch(song.toLowerCase()) {\n    case \"sparks fly\":\n        return lyric.sparks;\n        case \"mine\":\n        return lyric.mine;\n    case \"back to december\":\n        return lyric.dec;\n    default:\n        return lyric.other;\n    }\n}\n\nvar lyric = {\n    sparks: \"I see sparks fly whenever you smile\",\n    mine: \"You are the best thing thats ever been mine\",\n    dec: \"I go back to Decemeber all the time\",\n    other: \"I'm sorry, taylor can't pick up the phone right now\"\n}\n",
-        "children":null
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" The only difference with our API is the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"export",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" keyword. This new keyword in ES6 will reveal the function to other JavaScript code that imports this module.  Each JavaScript file can be a module if it exports functions/variables, but there can’t be more than one module in a file.  You can however have multiple exports.  Since one file is one and only one module, the name of the module is the filename. Now let’s check out the module import code: ",
+                "children":null
+            }
+        ]
     }
 ];
 

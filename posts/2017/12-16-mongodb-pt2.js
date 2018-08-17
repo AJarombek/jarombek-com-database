@@ -57,12 +57,17 @@ preview = [
         ]
     },
     {
-        "el":"codesnippet",
-        "attributes":{
-            "language":"JavaScript"
-        },
-        "value":"db.tree.findOne({type:\"douglas\", grade:\"7-8ft\", height:\"7' 3\\\"\"})\n\n/* Result */\n{\n    \"_id\" : ObjectId(\"5a3352702e48ee76cb1fe459\"),\n    \"type\" : \"douglas\",\n    \"height\" : \"7' 3\\\"\",\n    \"source_price\" : 10,\n    \"sell_price\" : 60,\n    \"grade\" : \"7-8ft\",\n    \"sold\" : false,\n    \"buyer_id\" : undefined\n}\n",
-        "children":null
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Now we need to create a customer collection to hold all the people who are buying trees: ",
+                "children":null
+            }
+        ]
     }
 ];
 

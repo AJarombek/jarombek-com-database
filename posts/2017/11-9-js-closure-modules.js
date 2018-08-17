@@ -22,12 +22,31 @@ preview = [
         ]
     },
     {
-        "el":"codesnippet",
-        "attributes":{
-            "language":"JavaScript"
-        },
-        "value":"var taylorSwiftApi = function() {\n    var lyric = {\n        sparks: \"I see sparks fly whenever you smile\",\n        mine: \"You are the best thing thats ever been mine\",\n        dec: \"I go back to Decemeber all the time\",\n        other: \"I'm sorry, taylor can't pick up the phone right now\"\n    }\n\n    function lyrics(song) {\n        switch(song.toLowerCase()) {\n            case \"sparks fly\":\n            return lyric.sparks;\n            case \"mine\":\n            return lyric.mine;\n            case \"back to december\":\n            return lyric.dec;\n            default:\n            return lyric.other;\n        }\n    }\n\n    return {\n        lyrics: lyrics\n    }\n}();\n",
-        "children":null
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" This module shows Taylor Swift lyrics for songs that the user enters (because who doesn’t enjoy some T-Swift!)  The return statement is the public API revealed to outside code.  All interior details, such as the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"lyric",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" variable, are hidden. This pattern harnesses the power of closure in JavaScript! ",
+                "children":null
+            }
+        ]
     }
 ];
 

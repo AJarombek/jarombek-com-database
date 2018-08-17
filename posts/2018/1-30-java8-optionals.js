@@ -78,12 +78,51 @@ preview = [
         ]
     },
     {
-        "el":"codesnippet",
-        "attributes":{
-            "language":"Java"
-        },
-        "value":"String str = \"Hello\";\n\nif (str != null) {\n    hello.toUpperCase();\n}\n",
-        "children":null
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"null",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" has some other issues besides uglifying our code by littering it with null checks.  As explained in a book I was reading recently on Java 8, ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"null",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" actually doesn't follow the statically typed system that Java uses",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  It is the wrong way of representing the absence of a value. ",
+                "children":null
+            }
+        ]
     }
 ];
 

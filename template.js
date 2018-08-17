@@ -34,7 +34,6 @@ db.posts.insertOne({
             color: "javascript"
         }
     ],
-    content,
     preview,
     sources: [
         {

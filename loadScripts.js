@@ -68,3 +68,8 @@ load('./posts/2018/7-4-groovy-basics-pt2.js');
 load('./posts/2018/7-11-groovy-regex.js');
 load('./posts/2018/7-15-groovy-optional-typing.js');
 load('./posts/2018/7-29-overloading.js');
+load('./posts/2018/7-31-batch-scripting.js');
+
+load('./posts/2018/8-5-graphql-pt1.js');
+load('./posts/2018/8-9-graphql-pt2.js');
+load('./posts/2018/8-16-groovy-closures.js');

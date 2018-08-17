@@ -727,7 +727,7 @@ db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
     name: postName,
-    title: "Understanding \"this\" in JavaScript",
+    title: "JavaScript Arrow Functions",
     date: new Date('2017-11-20T12:00:00'),
     type: "Discovery",
     views: postViews,

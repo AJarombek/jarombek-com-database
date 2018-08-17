@@ -57,12 +57,55 @@ preview = [
         ]
     },
     {
-        "el":"codesnippet",
-        "attributes":{
-            "language":"Swift"
-        },
-        "value":"@objc func womensXC(_ sender: UIView) {\n    os_log(\"Go to Women's Cross Country Page\", log: logTag, type: .debug)\n    loadGroup(withGroupname: \"wmensxc\")\n}\n",
-        "children":null
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" The ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"@objc",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" annotation allows for functions to interact with Objective-C code",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  Since many of Apple's APIs are built in Objective-C, a lot of my functions were actually interacting with non-Swift code without me even knowing!  This communication between Swift and Objective-C is called Interoperability and it lets you use Objective-C code in Swift and vice versa",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"2",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
+                "children":null
+            }
+        ]
     }
 ];
 
