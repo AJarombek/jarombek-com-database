@@ -114,6 +114,33 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" I created a simple example API to test it out.  The API contains a list of programming languages that you can ask for information about. The operation of getting a language takes a long time to complete (to simulate a possible long running network call) so we will use a ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"CompletableFuture",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" to deal with its value once it arrives.  In the meantime, we will be able to perform other operations. ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -553,12 +580,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "feb-7-2018-java8-completable-future"}).views;
+postName = "feb-7-2018-java8-completable-future";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "feb-7-2018-java8-completable-future"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "feb-7-2018-java8-completable-future",
+    name: postName,
     title: "Java 8 Completable Future",
     date: new Date('2018-02-07T12:00:00'),
     type: "Discovery",
@@ -575,7 +604,6 @@ db.posts.insertOne({
             color: "java"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -591,4 +619,9 @@ db.posts.insertOne({
             link: "https://www.manning.com/books/java-8-in-action"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

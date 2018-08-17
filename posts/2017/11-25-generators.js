@@ -20,6 +20,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" To introduce generators I am going to use them to create the fibonacci sequence. ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -361,12 +374,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "nov-25-2017-generators"}).views;
+postName = "nov-25-2017-generators";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "nov-25-2017-generators"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "nov-25-2017-generators",
+    name: postName,
     title: "Exploring Generators",
     date: new Date('2017-11-25T12:00:00'),
     type: "Discovery",
@@ -391,7 +406,6 @@ db.posts.insertOne({
             name: "Generators"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -401,4 +415,9 @@ db.posts.insertOne({
             link: "https://jeffknupp.com/blog/2013/04/07/improve-your-python-yield-and-generators-explained/"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

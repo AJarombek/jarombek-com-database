@@ -11,14 +11,16 @@ preview = [];
 
 content = [];
 
-existingPost = db.posts.findOne({name: "jul-4-2018-react-seed"});
+postName = "jul-29-2018-overloading";
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 
-db.posts.remove({name: "jul-6-2018-angular-5-first-impressions"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "mar-6-2018-angular-5-first-impressions",
+    name: postName,
     title: "Angular 5 First Impressions",
     description: `There are a lot of different complexities with generics and how 
         they differ from arrays.  This is my journey to understand Java’s Generics in depth.`,
@@ -32,7 +34,6 @@ db.posts.insertOne({
             color: "javascript"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -66,4 +67,9 @@ db.posts.insertOne({
             link: "https://github.com/getify/You-Dont-Know-JS/tree/master/this%20%26%20object%20prototypes"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

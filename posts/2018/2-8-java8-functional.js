@@ -41,6 +41,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" It is hard however to fully explain functional programming with Java since it doesn't follow a pure functional style.  Instead Java 8 tries to take pieces of what makes functional programming great and incorporate it into Java's existing imperative and object oriented paradigm. ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -347,12 +360,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "feb-8-2018-java8-functional"}).views;
+postName = "feb-8-2018-java8-functional";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "feb-8-2018-java8-functional"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "feb-8-2018-java8-functional",
+    name: postName,
     title: "What Is Functional Programming in Java 8?",
     date: new Date('2018-02-08T12:00:00'),
     type: "Discovery",
@@ -372,7 +387,6 @@ db.posts.insertOne({
             name: "Functional Programming"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -400,4 +414,9 @@ db.posts.insertOne({
             link: "https://www.manning.com/books/java-8-in-action"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

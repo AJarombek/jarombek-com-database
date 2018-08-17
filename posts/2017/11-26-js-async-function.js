@@ -20,6 +20,61 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" When combining Promises and Generators, we can create a function that handles asynchronous tasks (let us call it ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"async",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":").  This function takes one parameter - a generator function.  Each ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"yield",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" statement in the generator passes a promise, which when resolved with a value calls the generators iterator.  Therefore each asynchronous task in the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"async",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" function moves on to the next task in sequential order when the promise is completed.  Let's look at some pseudocode: ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -544,12 +599,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "nov-26-2017-js-async-function"}).views;
+postName = "nov-26-2017-js-async-function";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "nov-26-2017-js-async-function"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "nov-26-2017-js-async-function",
+    name: postName,
     title: "JavaScript Async Functions: Combining Promises and Generators",
     date: new Date('2017-11-26T12:00:00'),
     type: "Discovery",
@@ -588,7 +645,6 @@ db.posts.insertOne({
             color: "nodejs"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -610,4 +666,9 @@ db.posts.insertOne({
             link: "https://nodejs.org/api/https.html"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

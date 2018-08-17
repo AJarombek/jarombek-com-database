@@ -55,6 +55,57 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" The ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"@objc",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" annotation allows for functions to interact with Objective-C code",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  Since many of Apple's APIs are built in Objective-C, a lot of my functions were actually interacting with non-Swift code without me even knowing!  This communication between Swift and Objective-C is called Interoperability and it lets you use Objective-C code in Swift and vice versa",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"2",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -248,12 +299,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "jan-19-2018-swift4-objc"}).views;
+postName = "jan-19-2018-swift4-objc";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "jan-19-2018-swift4-objc"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "jan-19-2018-swift4-objc",
+    name: postName,
     title: "Swift 4 @objc Annotation",
     date: new Date('2018-01-19T12:00:00'),
     type: "Discovery",
@@ -275,7 +328,6 @@ db.posts.insertOne({
             color: "swift"
         }
     ],
-    content, 
     preview,
     sources: [
         {
@@ -297,4 +349,9 @@ db.posts.insertOne({
             link: "https://www.raywenderlich.com/163857/whats-new-swift-4#objc"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

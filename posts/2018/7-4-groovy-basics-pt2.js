@@ -41,6 +41,59 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" This discovery post will explore Groovy's object oriented features.  As far as existing object oriented libraries are concerned, Groovy extends the Java object libraries in what is commonly referred to as the GDK (Groovy Development Kit)",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  For example, the GDK gives more methods to the collections framework and specifically the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"Collection",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" interface.  Now all collections can use the GDK's ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"each()",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" method to iterate over its contents with a Groovy closure.  I utilize some of the GDK enhancements in this post. ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -1177,14 +1230,16 @@ content = [
     }
 ];
 
-existingPost = db.posts.findOne({name: "jul-4-2018-groovy-basics-pt2"});
+postName = "jul-4-2018-groovy-basics-pt2";
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 
-db.posts.remove({name: "jul-4-2018-groovy-basics-pt2"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "jul-4-2018-groovy-basics-pt2",
+    name: postName,
     title: "Groovy Basics Part II: Object Oriented Features",
     description: `This discovery post will explore more of the object oriented features 
         Groovy has to offer`,
@@ -1202,8 +1257,7 @@ db.posts.insertOne({
             picture: "https://asset.jarombek.com/logos/java.png",
             color: "java"
         }
-    ],
-    content, 
+    ], 
     preview,
     sources: [
         {
@@ -1255,4 +1309,9 @@ db.posts.insertOne({
             link: "https://www.manning.com/books/groovy-in-action-second-edition?"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

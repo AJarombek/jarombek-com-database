@@ -32,6 +32,73 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" A shadow DOM results in modularization by removing its contents from the main document object model. You have to attach the shadow DOM onto an existing HTML element using the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"Element.attachShadow()",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" function",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"2",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  You can then add new HTML code or ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"<style>",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" elements containing CSS to the shadow DOM.  All of the styles and HTML specified in the shadow DOM will be hidden from the outer HTML implementation.  You can utilize shadow DOM to avoid CSS style conflicts, HTML ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"id",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" overlap, and more! ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -305,12 +372,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "jan-14-2018-shadow-dom"}).views;
+postName = "jan-14-2018-shadow-dom";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "jan-14-2018-shadow-dom"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "jan-14-2018-shadow-dom",
+    name: postName,
     title: "The Shadow Dom",
     date: new Date('2018-01-14T12:00:00'),
     type: "Discovery",
@@ -335,7 +404,6 @@ db.posts.insertOne({
             color: "javascript"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -357,4 +425,9 @@ db.posts.insertOne({
             link: "https://stackoverflow.com/questions/34119639/what-is-shadow-root"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

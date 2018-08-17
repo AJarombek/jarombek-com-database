@@ -20,6 +20,44 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"h5",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":"What is a Batch Script?",
+                "children":null
+            }
+        ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Batch scripts are pieces of code written in a command line interface (shell) on the Windows operating system.  For someone new to programming like myself, I always thought of Batch as the precursor to PowerShell.  This actually forms a pretty good one sentence comparison between Batch and PowerShell.  Although you will often hear developers advocating the switch from Batch to PowerShell, Batch scripting is far from extinct",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -1028,14 +1066,16 @@ content = [
     }
 ];
 
-existingPost = db.posts.findOne({name: "jul-31-2018-batch-scripting"});
+postName = "jul-31-2018-batch-scripting";
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 
-db.posts.remove({name: "jul-31-2018-batch-scripting"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "jul-31-2018-batch-scripting",
+    name: postName,
     title: "Exploring Batch Scripting",
     description: `I figured this was the perfect opportunity to take a look at the basics of Batch 
         scripting.  With some knowledge of how to write a Batch script, I can compare these scripts 
@@ -1053,7 +1093,6 @@ db.posts.insertOne({
             name: "Command Line Scripting"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -1105,4 +1144,9 @@ db.posts.insertOne({
             link: "https://ss64.com/nt/delayedexpansion.html"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

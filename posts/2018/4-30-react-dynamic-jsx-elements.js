@@ -20,6 +20,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" First off, if you have been following by posts you will know that this is the first time I have posted about React.js.  Therefore lets quickly review/initiate ourselves with the React library. ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -728,12 +741,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "apr-30-2018-react-dynamic-jsx-elements"}).views;
+postName = "apr-30-2018-react-dynamic-jsx-elements";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "apr-30-2018-react-dynamic-jsx-elements"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "apr-30-2018-react-dynamic-jsx-elements",
+    name: postName,
     title: "React Dynamic JSX Elements",
     description: `Recently I've spent a lot of time working with React.js for my upcoming website.  
         One of the challenges I faced was dynamically deciding at runtime which JSX element to render.`,
@@ -755,7 +770,6 @@ db.posts.insertOne({
             color: "javascript"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -777,4 +791,9 @@ db.posts.insertOne({
             link: "http://shop.oreilly.com/product/0636920049579.do"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

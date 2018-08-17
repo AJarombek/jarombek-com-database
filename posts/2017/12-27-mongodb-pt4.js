@@ -88,6 +88,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" If you remember each tree has a type and a grade specifying the height of the tree.  Let's say we wanted to find the total number of trees in each grade with type frazier fir.  The aggregation function would be like so: ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -539,12 +552,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "dec-27-2017-mongodb-pt4"}).views;
+postName = "dec-27-2017-mongodb-pt4";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "dec-27-2017-mongodb-pt4"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "dec-27-2017-mongodb-pt4",
+    name: postName,
     title: "Learning MongoDB Part IV: Aggregation Framework",
     date: new Date('2017-12-27T12:00:00'),
     type: "Discovery",
@@ -570,7 +585,6 @@ db.posts.insertOne({
             name: "Document Database"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -592,4 +606,9 @@ db.posts.insertOne({
             link: "https://www.manning.com/books/mongodb-in-action-second-edition"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

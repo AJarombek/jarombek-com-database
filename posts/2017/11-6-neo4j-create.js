@@ -20,6 +20,31 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Without going into too much detail, the largest draw to graph databases is storing relationships between data and the speed at which you can query related data points (or in graph terms nodes/vertices). Relationships are first class citizens in graph databases which allows you to query related data by traversing the relationship itself.  This is contrasted with a typical relational database solution where you have to find relationships through foreign keys or combine two tables of data with a very slow SQL JOIN operation",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".   Our same slow query in a RDBMS (Relational DataBase Management System) is extremely quick in a graph database. ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -487,12 +512,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "nov-6-2017-neo4j-create"}).views;
+postName = "nov-6-2017-neo4j-create";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "nov-6-2017-neo4j-create"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "nov-6-2017-neo4j-create",
+    name: postName,
     title: "Creating a Simple Geographical Map with Neo4j and Cypher",
     date: new Date('2017-11-06T12:00:00'),
     type: "Discovery",
@@ -513,7 +540,7 @@ db.posts.insertOne({
             name: "NoSQL"
         }
     ],
-    content, preview,
+    preview,
     sources: [
         {
             startName: "Ian Robinson, Jim Webber & Emil Eifrem, ",
@@ -528,4 +555,9 @@ db.posts.insertOne({
             link: "http://shop.oreilly.com/product/0636920028246.do"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

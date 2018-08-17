@@ -41,6 +41,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" I did finish my discussion about TypeScript in that post saying how I would continue to work with it and see if I warmed up to the language.  So is TypeScript going to replace my JavaScript now that I have built a full Angular 5 app with it?  Not quite, but it is a really cool language that brings a lot to the JavaScript ecosystem! ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -450,12 +463,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "mar-8-2018-typescript"}).views;
+postName = "mar-8-2018-typescript";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "mar-8-2018-typescript"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "mar-8-2018-typescript",
+    name: postName,
     title: "What I Have Learned About TypeScript",
     date: new Date('2018-03-08T12:00:00'),
     type: "Discovery",
@@ -472,7 +487,6 @@ db.posts.insertOne({
             color: "javascript"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -488,4 +502,9 @@ db.posts.insertOne({
             link: "https://www.manning.com/books/angular-2-development-with-typescript"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

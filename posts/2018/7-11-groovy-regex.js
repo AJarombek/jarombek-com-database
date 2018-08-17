@@ -20,6 +20,21 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"definition",
+        "attributes":{
+            "word":"Language Agnostic"
+        },
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" A concept that is independent from any single programming language implementation.  Skills that are language agnostic can be applied throughout the software development ecosystem. ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -1559,14 +1574,16 @@ content = [
     }
 ];
 
-existingPost = db.posts.findOne({name: "jul-11-2018-groovy-regex"});
+postName = "jul-11-2018-groovy-regex";
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 
-db.posts.remove({name: "jul-11-2018-groovy-regex"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "jul-11-2018-groovy-regex",
+    name: postName,
     title: "How Do Regular Expressions in Groovy Stack Up?",
     description: `In my recent ventures into Groovy, I saw a very unique approach to handling 
         regular expressions.  I decided to compare the approach in Groovy to approaches in other 
@@ -1609,7 +1626,6 @@ db.posts.insertOne({
             color: "php"
         }
     ],
-    content, 
     preview,
     sources: [
         {
@@ -1655,4 +1671,9 @@ db.posts.insertOne({
             link: "https://github.com/getify/You-Dont-Know-JS/tree/master/types%20%26%20grammar"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

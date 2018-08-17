@@ -20,6 +20,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" This design avoided many issues that come with multiple inheritance such as the diamond problem.  However, there were some issues that came with using interfaces for an API as well. ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -548,12 +561,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "jan-16-2018-java-default-method"}).views;
+postName = "jan-16-2018-java-default-method";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "jan-16-2018-java-default-method"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "jan-16-2018-java-default-method",
+    name: postName,
     title: "Java 8 Default Method",
     date: new Date('2018-01-16T12:00:00'),
     type: "Discovery",
@@ -573,7 +588,6 @@ db.posts.insertOne({
             name: "Inheritance"
         }
     ],
-    content, 
     preview,
     sources: [
         {
@@ -601,4 +615,9 @@ db.posts.insertOne({
             link: "https://www.manning.com/books/java-8-in-action"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

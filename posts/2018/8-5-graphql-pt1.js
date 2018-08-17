@@ -20,6 +20,40 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" I created a ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2018/\n08-Aug/8-5-graphql"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"prototype GraphQL API",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" in JavaScript.  There was a bit more development work  for the GraphQL prototype then I anticipated, so I am splitting up my GraphQL research across two separate discovery posts.  The post you are reading now serves as an introduction to the GraphQL ecosystem and compares it to the humble REST API.  The follow up post will look at my work developing a GraphQL prototype. ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -659,14 +693,16 @@ content = [
     }
 ];
 
-existingPost = db.posts.findOne({name: "aug-5-2018-graphql-pt1"});
+postName = "aug-5-2018-graphql-pt1";
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 
-db.posts.remove({name: "aug-5-2018-graphql-pt1"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "aug-5-2018-graphql-pt1",
+    name: postName,
     title: "GraphQL Part I - A High Level View",
     description: `I decided that I'd heard enough about GraphQL and it was time to try it out 
         and form my own opinions.`,
@@ -686,7 +722,6 @@ db.posts.insertOne({
             name: "API"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -714,4 +749,9 @@ db.posts.insertOne({
             link: "https://graphql.org/learn/"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

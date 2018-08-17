@@ -20,6 +20,74 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"h5",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":"The API",
+                "children":null
+            }
+        ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" The API I built for this discovery post has two major pieces.  The first is a workout API.  It has an ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"Exercise",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" interface along with two concrete classes that implement it - ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"Run",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" and ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"Ski",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  I am an avid runner and have been experimenting with nordic skiing so I thought they would be appropriate. ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -2192,12 +2260,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "may-20-2018-java-generics-api"}).views;
+postName = "may-20-2018-java-generics-api";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "may-20-2018-java-generics-api"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "may-20-2018-java-generics-api",
+    name: postName,
     title: "Building a Java API with Generics",
     date: new Date('2018-05-20T12:00:00'),
     type: "Discovery",
@@ -2226,7 +2296,6 @@ db.posts.insertOne({
             name: "Encapsulation"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -2284,4 +2353,9 @@ db.posts.insertOne({
             link: "https://www.safaribooksonline.com/library/view/effective-java-third/9780134686097/"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

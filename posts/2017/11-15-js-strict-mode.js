@@ -67,6 +67,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Certain things that silently fail in JavaScript will now throw errors under strict mode.  This includes setting properties to primitives and assigning values to keywords. ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -313,12 +326,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "nov-15-2017-js-strict-mode"}).views;
+postName = "nov-15-2017-js-strict-mode";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "nov-15-2017-js-strict-mode"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "nov-15-2017-js-strict-mode",
+    name: postName,
     title: "JavaScript Strict Mode",
     date: new Date('2017-11-15T12:00:00'),
     type: "Discovery",
@@ -335,7 +350,6 @@ db.posts.insertOne({
             color: "javascript"
         },
     ],
-    content,
     preview,
     sources: [
         {
@@ -345,4 +359,9 @@ db.posts.insertOne({
             link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

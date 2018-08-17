@@ -41,6 +41,33 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" The only difference with our API is the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"export",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" keyword. This new keyword in ES6 will reveal the function to other JavaScript code that imports this module.  Each JavaScript file can be a module if it exports functions/variables, but there can’t be more than one module in a file.  You can however have multiple exports.  Since one file is one and only one module, the name of the module is the filename. Now let’s check out the module import code: ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -506,12 +533,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "nov-10-2017-es6-modules-babel"}).views;
+postName = "nov-10-2017-es6-modules-babel";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "nov-10-2017-es6-modules-babel"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "nov-10-2017-es6-modules-babel",
+    name: postName,
     title: "ES6 Modules Run with Babel",
     date: new Date('2017-11-10T12:00:00'),
     type: "Discovery",
@@ -541,7 +570,6 @@ db.posts.insertOne({
             name: "Transpiler"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -563,4 +591,9 @@ db.posts.insertOne({
             link: "https://stackoverflow.com/questions/1624691/linux-kill-background-task"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

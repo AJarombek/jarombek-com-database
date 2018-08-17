@@ -20,6 +20,116 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"comparisontable",
+        "attributes":{
+            "title":"Method Overloading vs. Overriding"
+        },
+        "value":null,
+        "children":[
+            {
+                "el":"comparisontableentry",
+                "attributes":null,
+                "value":null,
+                "children":[
+                    {
+                        "el":"h5",
+                        "attributes":{
+                            "classname":"jarombek-cte-title"
+                        },
+                        "value":null,
+                        "children":[
+                            {
+                                "el":"#text",
+                                "attributes":null,
+                                "value":" Overloading ",
+                                "children":null
+                            }
+                        ]
+                    },
+                    {
+                        "el":"div",
+                        "attributes":{
+                            "classname":"jarombek-cte-body"
+                        },
+                        "value":null,
+                        "children":[
+                            {
+                                "el":"p",
+                                "attributes":null,
+                                "value":null,
+                                "children":[
+                                    {
+                                        "el":"#text",
+                                        "attributes":null,
+                                        "value":" Overloading is creating multiple methods or functions in the same scope with the same name.  For overloaded methods the scope is a class definition.  The difference between overloaded methods is the number of parameters - or for a language with explicit type definitions the parameter types.  A programming language is tasked with choosing between the different overloaded methods when they are invoked.  Invocation processes differ across programming languages. ",
+                                        "children":null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "el":"comparisontableentry",
+                "attributes":null,
+                "value":null,
+                "children":[
+                    {
+                        "el":"h5",
+                        "attributes":{
+                            "classname":"jarombek-cte-title"
+                        },
+                        "value":null,
+                        "children":[
+                            {
+                                "el":"#text",
+                                "attributes":null,
+                                "value":" Overriding ",
+                                "children":null
+                            }
+                        ]
+                    },
+                    {
+                        "el":"div",
+                        "attributes":{
+                            "classname":"jarombek-cte-body"
+                        },
+                        "value":null,
+                        "children":[
+                            {
+                                "el":"p",
+                                "attributes":null,
+                                "value":null,
+                                "children":[
+                                    {
+                                        "el":"#text",
+                                        "attributes":null,
+                                        "value":" Overriding methods occurs in object oriented programming when a subclass implements a method already defined in the superclass.  Everything about the method signature stays the same - including the number of parameters and the return type of the method.  When the method is called from a subclass instance, the overridden method is invoked instead of the superclass method. ",
+                                        "children":null
+                                    }
+                                ]
+                            },
+                            {
+                                "el":"p",
+                                "attributes":null,
+                                "value":null,
+                                "children":[
+                                    {
+                                        "el":"#text",
+                                        "attributes":null,
+                                        "value":" Languages such as JavaScript use a similar technique to overriding with prototypal inheritance. The JavaScript technique is called shadowing, in which an object lower on the prototype chain has a method that shares the same name as a method higher up the chain.  Methods lower on the prototype chain will block - or shadow - methods with the same signature higher on the chain. Shadowing results in methods lower on the chain being invoked. ",
+                                        "children":null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 ];
 
@@ -1237,14 +1347,16 @@ content = [
     }
 ];
 
-existingPost = db.posts.findOne({name: "jul-29-2018-overloading"});
+postName = "jul-29-2018-overloading";
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 
-db.posts.remove({name: "jul-29-2018-overloading"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "jul-29-2018-overloading",
+    name: postName,
     title: "Method Overloading Across Languages",
     description: `When working with the object oriented paradigm methods often need to be 
         overridden or overloaded.  These similar concepts are often confused by new developers`,
@@ -1289,7 +1401,6 @@ db.posts.insertOne({
             name: "Object Oriented Programming"
         }
     ],
-    content, preview,
     preview,
     sources: [
         {
@@ -1329,4 +1440,9 @@ db.posts.insertOne({
             link: "https://www.bignerdranch.com/books/swift-programming/"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

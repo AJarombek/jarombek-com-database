@@ -83,6 +83,59 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" The ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"MODEL",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" clause allows you to access columns in a multidimensional array.  The calculations you can perform on this array are similar to those seen in a spreadsheet application such as Excel",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". The reason for including the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"MODEL",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" clause in Oracle was that users would often copy and paste SQL query results into a spreadsheet and then manipulate the data from there.  Now you can perform these manipulations in native SQL. ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -823,12 +876,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "mar-19-2018-oracle-adv-pt2"}).views;
+postName = "mar-19-2018-oracle-adv-pt2";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "mar-19-2018-oracle-adv-pt2"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "mar-19-2018-oracle-adv-pt2",
+    name: postName,
     title: "Oracle: Advanced Queries Part II",
     description: `This is part II of my Oracle advanced query discovery.`,
     date: new Date('2018-03-19T12:00:00'),
@@ -849,7 +904,6 @@ db.posts.insertOne({
             color: "oracle"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -877,4 +931,9 @@ db.posts.insertOne({
             link: "https://www.amazon.com/Oracle-Database-12c-Jason-Price/dp/0071799354"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

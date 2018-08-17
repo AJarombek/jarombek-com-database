@@ -32,6 +32,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" One of the main reasons I want to look at Groovy in more detail is because I am working on a project involving Jenkins at work.  I also always had an interest in the language as an alternative to Java.  This post will look at some of the basic syntax and features of Groovy that caught my eye after an hour or two of exploring.  It will serve as my first impressions of Groovy along with Part II.  After these two posts I will dig deeper into Groovy features and use it in Jenkins programs.  Now it is time to start exploring! ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -1128,14 +1141,16 @@ content = [
     }
 ];
 
-existingPost = db.posts.findOne({name: "jul-2-2018-groovy-basics-pt1"});
+postName = "jul-2-2018-groovy-basics-pt1";
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 
-db.posts.remove({name: "jul-2-2018-groovy-basics-pt1"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "jul-2-2018-groovy-basics-pt1",
+    name: postName,
     title: "Groovy Basics Part I: Concise Syntax",
     description: `This post will look at some of the basic syntax and features of Groovy that
       really caught my eye after an hour or two of exploring.`,
@@ -1159,7 +1174,6 @@ db.posts.insertOne({
             color: "java"
         }
     ],
-    content, 
     preview,
     sources: [
         {
@@ -1229,4 +1243,9 @@ db.posts.insertOne({
             link: "http://mrhaki.blogspot.com/2009/08/groovy-goodness-elvis-operator.html"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

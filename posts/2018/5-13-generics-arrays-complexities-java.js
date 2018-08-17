@@ -34,6 +34,89 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Note that the class extends ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"AbstractList",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" and implements ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"List",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"AbstractList",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" actually implements ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"List",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" itself, so the definition of ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"implements <List>",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" is not needed in this case.  It is only there for clarity and readability. ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -1365,12 +1448,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "may-13-2018-generics-arrays-complexities-java"}).views;
+postName = "may-13-2018-generics-arrays-complexities-java";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "may-13-2018-generics-arrays-complexities-java"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "may-13-2018-generics-arrays-complexities-java",
+    name: postName,
     title: "Complexities of Generics and Arrays in Java",
     description: `There are a lot of different complexities with generics and how they differ from arrays.  
                     This is my journey to understand Java’s Generics in depth.`,
@@ -1393,7 +1478,6 @@ db.posts.insertOne({
             name: "Polymorphism"
         }
     ],
-    content, 
     preview,
     sources: [
         {
@@ -1427,4 +1511,9 @@ db.posts.insertOne({
             link: "https://stackoverflow.com/a/2777297"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

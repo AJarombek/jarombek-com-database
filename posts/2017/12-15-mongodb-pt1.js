@@ -20,6 +20,31 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" First lets look at some of the positive aspects of MongoDB.  The database stores its data as JSON (and internally as BSON - short for Binary JSON) which in my personal opinion is the best structure for transferring data.  In MongoDB the BSON implementation makes this data extremely lightweight",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". If you are using a JavaScript web stack, MongoDB allows you to even use JavaScript in your database instead of SQL.  The query language of MongoDB is also JavaScript, which means if you have knowledge in JavaScript using MongoDB will be an easy transition.  You can even use JavaScript functions and variables to perform complex queries and database updates! ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -762,12 +787,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "dec-15-2017-mongodb-pt1"}).views;
+postName = "dec-15-2017-mongodb-pt1";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "dec-15-2017-mongodb-pt1"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "dec-15-2017-mongodb-pt1",
+    name: postName,
     title: "Learning MongoDB Part I: Creating the Database",
     date: new Date('2017-12-15T12:00:00'),
     type: "Discovery",
@@ -798,7 +825,6 @@ db.posts.insertOne({
             name: "Document Database"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -832,4 +858,9 @@ db.posts.insertOne({
             link: "https://www.manning.com/books/mongodb-in-action-second-edition"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

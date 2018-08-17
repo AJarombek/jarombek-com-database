@@ -20,6 +20,47 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"definition",
+        "attributes":{
+            "word":"Bit Field"
+        },
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" A data structure that consists of one or many memory locations (bits).  Each of these bits has a unique meaning defined by the programmer",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  It is common practice to use an unsigned integer data type of a specified length for a bit field.  For example, in C you could define a bit field as ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"unsigned int bitField : 2",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  This bit field consists of two bits which can be turned on or off - each of which has a unique meaning defined by the programmer. ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -932,14 +973,16 @@ content = [
     }
 ];
 
-existingPost = db.posts.findOne({name: "jun-23-2018-bit-field"});
+postName = "jun-23-2018-bit-field";
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 
-db.posts.remove({name: "jun-23-2018-bit-field"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "jun-23-2018-bit-field",
+    name: postName,
     title: "Working with Bit Fields",
     date: new Date('2018-06-23T12:00:00'),
     type: "Discovery",
@@ -959,7 +1002,6 @@ db.posts.insertOne({
             color: "java"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -999,4 +1041,9 @@ db.posts.insertOne({
             link: "https://eddmann.com/posts/using-bit-flags-and-enumsets-in-java/"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

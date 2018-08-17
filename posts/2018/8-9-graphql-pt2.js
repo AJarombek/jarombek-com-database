@@ -1854,14 +1854,16 @@ content = [
     }
 ];
 
-existingPost = db.posts.findOne({name: "aug-9-2018-graphql-pt2"});
+postName = "aug-9-2018-graphql-pt2";
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 
-db.posts.remove({name: "aug-9-2018-graphql-pt2"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "aug-9-2018-graphql-pt2",
+    name: postName,
     title: "GraphQL Part II - A JavaScript Implementation",
     description: `It is time to discuss the language features of GraphQL and how it can be used 
         to create an API in JavaScript.`,
@@ -1886,7 +1888,6 @@ db.posts.insertOne({
             name: "API"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -1908,4 +1909,9 @@ db.posts.insertOne({
             link: "http://graphql.github.io/learn/schema/#the-query-and-mutation-types"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

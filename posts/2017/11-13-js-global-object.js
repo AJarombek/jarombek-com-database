@@ -46,6 +46,47 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" In the past I have used the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"window",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" object to check the current URL and previous page visited by the user (to create a ‘back’ button).  The most common use of ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"window",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" however is to manipulate the DOM and set click listeners (I used frameworks such as JQuery to perform these tasks in the past). ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -833,12 +874,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "nov-13-2017-js-global-object"}).views;
+postName = "nov-13-2017-js-global-object";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "nov-13-2017-js-global-object"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "nov-13-2017-js-global-object",
+    name: postName,
     title: "Global Objects in JavaScript",
     date: new Date('2017-11-13T12:00:00'),
     type: "Discovery",
@@ -858,7 +901,6 @@ db.posts.insertOne({
             name: "Document Object Model"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -880,4 +922,9 @@ db.posts.insertOne({
             link: "https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

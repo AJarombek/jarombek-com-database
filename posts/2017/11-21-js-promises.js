@@ -46,6 +46,45 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" I made a custom google search API which is actually really easy and fun to create",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"2",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":"! It searches certain websites for cat related posts (and is appropriately called meowmeow)! Who wouldn't love that?  So in my code I want to get the article names of the top 10 searches of my custom meow search.  Here is how you would do that with the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"XMLHttpRequest",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" and callback function: ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -578,12 +617,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "nov-21-2017-js-promises"}).views;
+postName = "nov-21-2017-js-promises";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "nov-21-2017-js-promises"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "nov-21-2017-js-promises",
+    name: postName,
     title: "JavaScript Async: Converting Callbacks to Promises",
     date: new Date('2017-11-21T12:00:00'),
     type: "Discovery",
@@ -606,7 +647,6 @@ db.posts.insertOne({
             name: "Promises"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -640,4 +680,9 @@ db.posts.insertOne({
             link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

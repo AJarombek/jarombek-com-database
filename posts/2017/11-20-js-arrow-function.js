@@ -20,6 +20,104 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" In JavaScript I have ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/nov-11-2017-js-this"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"looked at",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"this",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" and how it is set dynamically at runtime instead of lexically depending on the scope code is written in.  I also went over how many JavaScript users (including myself!) are easily confused by how ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"this",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" works in the language.  Arrow functions look to ‘fix’ these confusions by implementing a lexical ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"this",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  Now the value of ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"this",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" in an arrow function depends on what ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"this",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" is equal to at the time it was written (instead of where it is called).  This leads to confusing behavior if you are expecting arrow functions to act like normal function definitions.  Let’s look at an example. ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -621,13 +719,15 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "nov-20-2017-js-arrow-functions"}).views;
+postName = "nov-20-2017-js-arrow-functions";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "nov-20-2017-js-arrow-functions"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "nov-20-2017-js-arrow-functions",
-    title: "Understanding \"this\" in JavaScript",
+    name: postName,
+    title: "JavaScript Arrow Functions",
     date: new Date('2017-11-20T12:00:00'),
     type: "Discovery",
     views: postViews,
@@ -646,7 +746,6 @@ db.posts.insertOne({
             name: "Lambda Functions"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -662,4 +761,9 @@ db.posts.insertOne({
             link: "https://github.com/getify/You-Dont-Know-JS/tree/master/this%20%26%20object%20prototypes"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

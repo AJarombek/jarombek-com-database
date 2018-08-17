@@ -72,3 +72,4 @@ load('./posts/2018/7-31-batch-scripting.js');
 
 load('./posts/2018/8-5-graphql-pt1.js');
 load('./posts/2018/8-9-graphql-pt2.js');
+load('./posts/2018/8-16-groovy-closures.js');

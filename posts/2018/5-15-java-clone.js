@@ -62,6 +62,66 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" If you have ever heard or read about Java’s ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"Cloneable",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" interface you likely were told the following three words: ",
+                "children":null
+            },
+            {
+                "el":"strong",
+                "attributes":null,
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"Don’t Use It",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  This is good advice, as there are many simpler ways to implement deep copying.  Unfortunately there is a lot of code in existence that already uses ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"Cloneable",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  To understand how it works, first let’s look at the source code for the interface: ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -1312,12 +1372,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "may-15-2018-java-clone"}).views;
+postName = "may-15-2018-java-clone";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "may-15-2018-java-clone"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "may-15-2018-java-clone",
+    name: postName,
     title: "The Curious Case of Java's Clone Method",
     description: `The original language implementation for copying in Java was the Cloneable interface.  
                     This is my journey to understand Java’s Cloneable interface in all its complexity.`,
@@ -1333,8 +1395,7 @@ db.posts.insertOne({
         {
             name: "Inheritance"
         }
-    ],
-    content, 
+    ], 
     preview,
     sources: [
         {
@@ -1380,4 +1441,9 @@ db.posts.insertOne({
             link: "https://www.artima.com/intv/bloch13.html"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

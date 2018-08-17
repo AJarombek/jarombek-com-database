@@ -41,6 +41,19 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Now what do I mean by intermediate difficulty.  Obviously this definition will vary among developers, but I believe that intermediate queries are ones beyond simple select statements with basic filters.  This discovery isn't really a tutorial on creating SQL queries but more exploring different SQL syntax that was interesting to me!  I will start out pretty simple and then get more complex! ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -1061,12 +1074,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "mar-2-2018-oracle-queries"}).views;
+postName = "mar-2-2018-oracle-queries";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "mar-2-2018-oracle-queries"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "mar-2-2018-oracle-queries",
+    name: postName,
     title: "Oracle: Cool Intermediate Level SQL Queries",
     date: new Date('2018-03-02T12:00:00'),
     type: "Discovery",
@@ -1086,7 +1101,6 @@ db.posts.insertOne({
             color: "oracle"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -1126,4 +1140,9 @@ db.posts.insertOne({
             link: "https://www.amazon.com/Oracle-Database-12c-Jason-Price/dp/0071799354"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

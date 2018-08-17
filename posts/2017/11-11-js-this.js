@@ -90,6 +90,80 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" What makes ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"this",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" so confusing is that it is set during program runtime instead of defined at author time",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  In other words it does not follow the rules of ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/nov-8-2017-scope-hoisting"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"lexical scope",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" that I am comfortable with.  It also is incredibly daunting for new programmers since the value of ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"this",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" can potentially be different when calling the same function at different instances. ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -1029,12 +1103,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "nov-11-2017-js-this"}).views;
+postName = "nov-11-2017-js-this";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "nov-11-2017-js-this"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "nov-11-2017-js-this",
+    name: postName,
     title: "Understanding \"this\" in JavaScript",
     date: new Date('2017-11-11T12:00:00'),
     type: "Discovery",
@@ -1046,7 +1122,6 @@ db.posts.insertOne({
             color: "javascript"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -1080,4 +1155,9 @@ db.posts.insertOne({
             link: "https://github.com/getify/You-Dont-Know-JS/tree/master/this%20%26%20object%20prototypes"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

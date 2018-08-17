@@ -48,6 +48,14 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"codesnippet",
+        "attributes":{
+            "language":"JavaScript"
+        },
+        "value":"    var person = {\n        _first: 'Andy',\n        _last: 'Jarombek',\n        get full() {\n            console.info('Accessing Full Name');\n            // Use ES6 template literals\n            return `${this._first} ${this._last}`;\n        }\n    };\n",
+        "children":null
     }
 ];
 
@@ -195,12 +203,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "dec-7-2017-native-getter-setter"}).views;
+postName = "dec-7-2017-native-getter-setter";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "dec-7-2017-native-getter-setter"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "dec-7-2017-native-getter-setter",
+    name: postName,
     title: "Native Getters & Setters",
     date: new Date('2017-12-07T12:00:00'),
     type: "Discovery",
@@ -225,7 +235,6 @@ db.posts.insertOne({
             color: "java"
         }
     ],
-    content,
     preview,
     sources: [
         {
@@ -241,4 +250,9 @@ db.posts.insertOne({
             link: "https://www.bignerdranch.com/books/swift-programming/"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });

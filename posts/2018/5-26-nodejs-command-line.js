@@ -20,6 +20,40 @@ preview = [
                 "children":null
             }
         ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" One of the great things about the Node.js and the npm ecosystem is all the community built npm modules at a developers disposal.  For command line tools there are many different modules to choose from.  In this discovery post I will be using ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"“https://github.com/tj/commander.js/”"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"commander.js",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  The reason I chose this module over all the others it is has no dependencies!  Less dependencies generally means more reliable code and less unused code. ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -971,12 +1005,14 @@ content = [
     }
 ];
 
-postViews = db.posts.findOne({name: "may-26-2018-nodejs-command-line"}).views;
+postName = "may-26-2018-nodejs-command-line";
+postViews = db.posts.findOne({name: postName}).views;
 
-db.posts.remove({name: "may-26-2018-nodejs-command-line"});
+db.posts.remove({name: postName});
+db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
-    name: "may-26-2018-nodejs-command-line",
+    name: postName,
     title: "A Simple Node.js Command Line Application",
     date: new Date('2018-05-26T12:00:00'),
     type: "Discovery",
@@ -995,8 +1031,7 @@ db.posts.insertOne({
         {
             name: "Command Line Application"
         }
-    ],
-    content, 
+    ], 
     preview,
     sources: [
         {
@@ -1030,4 +1065,9 @@ db.posts.insertOne({
             link: "https://stackoverflow.com/a/33510581"
         }
     ]
+});
+
+db.posts_content.insertOne({
+    name: postName,
+    content
 });
