@@ -817,6 +817,7 @@ db.posts.insertOne({
         }
     ],
     preview,
+    previewString: JSON.stringify(preview),
     sources: [
         {
             startName: "\"What's the Cypher script to delete a node by ID?\", September 20th, 2016, ",
@@ -859,5 +860,6 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
-    content
+    content,
+    contentString: JSON.stringify(content)
 });

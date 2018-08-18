@@ -648,6 +648,7 @@ db.posts.insertOne({
         }
     ],
     preview,
+    previewString: JSON.stringify(preview),
     sources: [
         {
             startName: "\"Why is it called XMLHttpRequest?\", Aug. 22nd, 2012, ",
@@ -684,5 +685,6 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
-    content
+    content,
+    contentString: JSON.stringify(content)
 });

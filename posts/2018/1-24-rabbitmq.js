@@ -501,6 +501,7 @@ db.posts.insertOne({
         }
     ],
     preview,
+    previewString: JSON.stringify(preview),
     sources: [
         {
             startName: "Alvaro Videla &amp; Jason J.W. Williams, ",
@@ -537,5 +538,6 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
-    content
+    content,
+    contentString: JSON.stringify(content)
 });

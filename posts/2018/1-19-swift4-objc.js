@@ -329,6 +329,7 @@ db.posts.insertOne({
         }
     ],
     preview,
+    previewString: JSON.stringify(preview),
     sources: [
         {
             startName: "\"when to use @objc in swift code?\", ",
@@ -353,5 +354,6 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
-    content
+    content,
+    contentString: JSON.stringify(content)
 });

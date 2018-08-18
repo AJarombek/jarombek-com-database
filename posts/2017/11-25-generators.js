@@ -407,6 +407,7 @@ db.posts.insertOne({
         }
     ],
     preview,
+    previewString: JSON.stringify(preview),
     sources: [
         {
             startName: "\"Improve Your Python: 'yield' and Generators Explained\", Apr. 7th, 2013, ",
@@ -419,5 +420,6 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
-    content
+    content,
+    contentString: JSON.stringify(content)
 });
