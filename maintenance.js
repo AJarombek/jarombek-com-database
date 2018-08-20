@@ -25,5 +25,12 @@ db.viewed.updateMany(
 // Observe a single post
 db.posts.findOne();
 
+// Get all the indexes and then drop one of them
+db.posts.getIndexes();
+db.posts.dropIndex('post-text-index');
+
+db.posts_content.getIndexes();
+db.posts_content.dropIndex('post-content-text-index');
+
 // Remove all user documents
 db.user.remove({});

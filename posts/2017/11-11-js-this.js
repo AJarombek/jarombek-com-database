@@ -131,7 +131,7 @@ preview = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://jarombek.com/blog/nov-8-2017-scope-hoisting"
+                    "href":"https://jarombek.com/blog/nov-8-2017-js-scope-hoisting"
                 },
                 "value":null,
                 "children":[
@@ -291,7 +291,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://jarombek.com/blog/nov-8-2017-scope-hoisting"
+                    "href":"https://jarombek.com/blog/nov-8-2017-js-scope-hoisting"
                 },
                 "value":null,
                 "children":[

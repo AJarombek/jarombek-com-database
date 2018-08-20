@@ -22,7 +22,7 @@ preview = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://jarombek.com/blog/nov-9-2017-closure-modules"
+                    "href":"https://jarombek.com/blog/nov-9-2017-js-closure-modules"
                 },
                 "value":null,
                 "children":[
@@ -86,7 +86,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://jarombek.com/blog/nov-9-2017-closure-modules"
+                    "href":"https://jarombek.com/blog/nov-9-2017-js-closure-modules"
                 },
                 "value":null,
                 "children":[
