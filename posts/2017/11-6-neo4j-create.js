@@ -527,7 +527,7 @@ db.posts.insertOne({
     tags: [
         {
             name: "Neo4j",
-            picture: "https://asset.jarombek.com/neo4j.png",
+            picture: "https://asset.jarombek.com/logos/neo4j.png",
             color: "neo4j"
         },
         {
