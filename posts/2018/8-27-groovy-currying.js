@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Something I'm really interested in is incorporating functional programming practices into my code.  Although I don't work in any purely functional languages (although I am starting to look at Haskell), most imperative and object oriented languages support certain functional  operations.  In my recent exploration of Groovy, I noticed that closures support the currying technique.  Currying in Groovy takes an existing function and creates a new specialized function based on the existing one.  This post explains how to use currying to enhance Groovy closures. ",
+                "value":" Something I'm really interested in is incorporating functional programming practices into my code.  Despite not working in any purely functional languages (although I am starting to look at Haskell), most imperative and object oriented languages support certain functional  operations.  In my recent exploration of Groovy, I noticed that closures support the currying technique.  Currying in Groovy takes an existing function and creates a new specialized variant.  This post explains how to use currying to enhance Groovy closures. ",
                 "children":null
             }
         ]
@@ -42,7 +42,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" My exploration of Groovy isn't the first time I've crossed paths with currying.  Currying was mentioned in my readings on Java 8 along with my brief research so far of Haskell (a functional programming language).  Currying is named after Haskell Curry, an American mathematician (the Haskell language is also named after Curry)",
+                "value":" My exploration of Groovy wasn't the first time I crossed paths with currying.  Currying was mentioned in my readings on Java 8 along with my brief research so far of Haskell (a functional programming language).  Currying is named after Haskell Curry, an American mathematician (the Haskell language is also named after Curry)",
                 "children":null
             },
             {
@@ -54,7 +54,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The goal of currying in Groovy is to make specialized versions of a function.  To accomplish this, pieces of a function are put in a fixed state before its invoked. ",
+                "value":".  The goal of currying in Groovy is to make specialized versions of a function.  To accomplish this, pieces of a function are put into a fixed state prior to invocation. ",
                 "children":null
             }
         ]
@@ -70,7 +70,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Something I'm really interested in is incorporating functional programming practices into my code.  Although I don't work in any purely functional languages (although I am starting to look at Haskell), most imperative and object oriented languages support certain functional  operations.  In my recent exploration of Groovy, I noticed that closures support the currying technique.  Currying in Groovy takes an existing function and creates a new specialized function based on the existing one.  This post explains how to use currying to enhance Groovy closures. ",
+                "value":" Something I'm really interested in is incorporating functional programming practices into my code.  Despite not working in any purely functional languages (although I am starting to look at Haskell), most imperative and object oriented languages support certain functional  operations.  In my recent exploration of Groovy, I noticed that closures support the currying technique.  Currying in Groovy takes an existing function and creates a new specialized variant.  This post explains how to use currying to enhance Groovy closures. ",
                 "children":null
             }
         ]
@@ -96,7 +96,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" My exploration of Groovy isn't the first time I've crossed paths with currying.  Currying was mentioned in my readings on Java 8 along with my brief research so far of Haskell (a functional programming language).  Currying is named after Haskell Curry, an American mathematician (the Haskell language is also named after Curry)",
+                "value":" My exploration of Groovy wasn't the first time I crossed paths with currying.  Currying was mentioned in my readings on Java 8 along with my brief research so far of Haskell (a functional programming language).  Currying is named after Haskell Curry, an American mathematician (the Haskell language is also named after Curry)",
                 "children":null
             },
             {
@@ -108,7 +108,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The goal of currying in Groovy is to make specialized versions of a function.  To accomplish this, pieces of a function are put in a fixed state before its invoked. ",
+                "value":".  The goal of currying in Groovy is to make specialized versions of a function.  To accomplish this, pieces of a function are put into a fixed state prior to invocation. ",
                 "children":null
             }
         ]
@@ -121,7 +121,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Confusingly, Groovy's definition of currying does not match the purely functional definition of currying.  Currying in Groovy matches closer to the definition of a partial application. ",
+                "value":" Confusingly, Groovy's definition of currying does not match the purely functional definition of currying.  Currying in Groovy aligns closer to the definition of a partial application. ",
                 "children":null
             }
         ]
@@ -160,7 +160,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Returning a function makes a curried function a higher order function - one that either takes in a function as an argument or results a function.  A basic example of a curried function is one that multiplies two numbers. This curried function is denoted as ",
+                "value":".  Returning a function makes a curried function a higher order function - one that either takes in a function as an argument or results in a function.  A basic example of a curried function is one that multiplies two numbers. Denoted as ",
                 "children":null
             },
             {
@@ -174,7 +174,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", and is invoked with ",
+                "value":", this curried function is invoked with the statement ",
                 "children":null
             },
             {
@@ -202,7 +202,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" (note the syntax is in Haskell). ",
+                "value":" (note the syntax matches Haskell). ",
                 "children":null
             },
             {
@@ -231,7 +231,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" A partial application is when some of a curried function's arguments are applied before its invoked. The resulting function is a specialized version of the curried function. ",
+                "value":" A partial application is when some of a curried function's arguments are supplied a fixed value before invocation.  The resulting function is a specialized version of the curried function. ",
                 "children":null
             }
         ]
@@ -284,7 +284,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now that a curried function exists, partial implementations are easily defined.  Note that partial implementations fix one of the curried functions arguments to a value.  For example,  ",
+                "value":" Now that a curried function exists, partial implementations are easily defined.  Note that the following partial implementations fix one of the curried functions arguments to a value.  For example, ",
                 "children":null
             },
             {
@@ -298,7 +298,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" fixes one of the integer arguments to  ",
+                "value":" fixes one of the integer arguments to ",
                 "children":null
             },
             {
@@ -312,7 +312,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", so all function invocations will multiply the function  argument by 2. ",
+                "value":", so all function invocations will multiply the functions argument by 2. ",
                 "children":null
             }
         ]
@@ -339,7 +339,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Haskell isn't the focus of the remaining article, so no more code from the language is shown. However, I think it's important to see how a functional language handles currying.  Keeping the purely functional approach in the back of our minds will assist in understanding Groovy's approach. ",
+                "value":" Haskell isn't the focus of the remaining article, so no more code from the language is shown. However, I think it's important to see different ways a functional language handles currying.  Keeping the purely functional approach in the back of our minds will assist in understanding Groovy's approach. ",
                 "children":null
             }
         ]
@@ -407,7 +407,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" does not create a curried function like those we defined in Haskell (yes, this is confusing).  Currying in Groovy only creates specialized versions of a function. ",
+                "value":" does not create a curried function like those we defined in Haskell.  Currying in Groovy only creates specialized versions of a function (yes, this is confusing.  You may want to re-read this paragraph). ",
                 "children":null
             }
         ]
@@ -420,7 +420,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The basic example of partial implementation in Groovy matches the multiplication methods we defined in Haskell: ",
+                "value":" The basic example of partial implementations in Groovy match the multiplication methods we defined in Haskell: ",
                 "children":null
             }
         ]
@@ -570,7 +570,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I'm still unsure about specific use cases for currying and partial implementations outside of purely functional languages like Haskell.  However, like any programming concept it is another skill added to the resume.  I'll keep you updated if I use currying or partial implementations in any of my production applications. ",
+                "value":" I'm still unsure about specific use cases for currying and partial implementations outside of  a purely functional language like Haskell.  However, like any programming concept it is another skill added to the resume.  I'll keep you updated if I use currying or partial implementations in any of my production applications. ",
                 "children":null
             }
         ]
