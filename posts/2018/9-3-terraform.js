@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Ever since I first heard about infrastructure as code (IaC) and Terraform almost 9 months ago I’ve been really intrigued by what the fuss is all about.  I always developed software and nothing more. Digging through Linux or setting up email servers are things I have nightmares about.  When told that learning operations is important for developers and the eventual combination of developer and operations (DevOps) I’ve kindly said \"no thank you, operations are not for me.\" ",
+                "value":" Ever since I first heard about infrastructure as code (IaC) and Terraform 9 months ago, I’ve been intrigued by what the fuss is all about.  I always developed software and nothing more. Digging through Linux or setting up email servers are things I have nightmares about.  When told that learning operations is important for developers and warned of the combination of developer and operations (DevOps), I kindly said \"no thank you, operations are not for me.\" ",
                 "children":null
             }
         ]
@@ -50,7 +50,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I was exposed to the world of setting up a linux server to host my website.  I set up an Apache web server, set up DNS routing, and stumbled through a Postfix mail transferring agent.  I felt very accomplished by all that, but quickly shifted my focus back to developing software.  After all, writing code is what I love to do! ",
+                "value":", I was exposed to the world of setting up linux servers to host websites.  I set up an Apache web server with DNS routing and stumbled through a Postfix mail transferring agent.  I felt very accomplished by all that, but quickly shifted my focus back to developing software.  After all, writing code is what I love to do! ",
                 "children":null
             }
         ]
@@ -63,7 +63,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" With my second website (which you are currently viewing) I started working in the cloud with AWS. I didn't enjoy my time clicking through the AWS UI, picking EC2 instances to start up and configuring S3 buckets.  Clicking through a website to configure cloud infrastructure isn't fun, writing code is. If only I could configure all my infrastructure by writing code, and checking that code into a repository for future use. ",
+                "value":" With my second website (which you are currently viewing) I started working in the cloud with AWS. I didn't enjoy my time clicking through the AWS UI, picking EC2 instances to start up and configuring S3 buckets.  Clicking through a website to configure cloud infrastructure isn't fun, writing code is. If only I could configure all my infrastructure by writing code! ",
                 "children":null
             }
         ]
@@ -79,7 +79,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Ever since I first heard about infrastructure as code (IaC) and Terraform almost 9 months ago I’ve been really intrigued by what the fuss is all about.  I always developed software and nothing more. Digging through Linux or setting up email servers are things I have nightmares about.  When told that learning operations is important for developers and the eventual combination of developer and operations (DevOps) I’ve kindly said \"no thank you, operations are not for me.\" ",
+                "value":" Ever since I first heard about infrastructure as code (IaC) and Terraform 9 months ago, I’ve been intrigued by what the fuss is all about.  I always developed software and nothing more. Digging through Linux or setting up email servers are things I have nightmares about.  When told that learning operations is important for developers and warned of the combination of developer and operations (DevOps), I kindly said \"no thank you, operations are not for me.\" ",
                 "children":null
             }
         ]
@@ -113,7 +113,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I was exposed to the world of setting up a linux server to host my website.  I set up an Apache web server, set up DNS routing, and stumbled through a Postfix mail transferring agent.  I felt very accomplished by all that, but quickly shifted my focus back to developing software.  After all, writing code is what I love to do! ",
+                "value":", I was exposed to the world of setting up linux servers to host websites.  I set up an Apache web server with DNS routing and stumbled through a Postfix mail transferring agent.  I felt very accomplished by all that, but quickly shifted my focus back to developing software.  After all, writing code is what I love to do! ",
                 "children":null
             }
         ]
@@ -126,7 +126,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" With my second website (which you are currently viewing) I started working in the cloud with AWS. I didn't enjoy my time clicking through the AWS UI, picking EC2 instances to start up and configuring S3 buckets.  Clicking through a website to configure cloud infrastructure isn't fun, writing code is. If only I could configure all my infrastructure by writing code, and checking that code into a repository for future use. ",
+                "value":" With my second website (which you are currently viewing) I started working in the cloud with AWS. I didn't enjoy my time clicking through the AWS UI, picking EC2 instances to start up and configuring S3 buckets.  Clicking through a website to configure cloud infrastructure isn't fun, writing code is. If only I could configure all my infrastructure by writing code! ",
                 "children":null
             }
         ]
@@ -139,7 +139,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" With Terraform writing code for cloud infrastructure is a reality.  I never thought I could have fun doing operations work, but finally I’ve found a product that allows me to do just that.  No longer will I have to stumble through a cloud UI to set up a website.  Infrastructure as code is not a completely new concept, however it is one that managed to evade me to this point.  This post is my first baby steps with IaC and Terraform. ",
+                "value":" With Terraform writing code for cloud infrastructure is a reality.  I never thought I could have fun doing operations work, but now Terraform allows me to!  No longer will I stumble through a cloud UI to set up a website.  Infrastructure as code is not a completely new concept, however it is one that managed to evade me until now.  This post is my first baby steps with IaC and Terraform. ",
                 "children":null
             }
         ]
@@ -165,7 +165,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Terraform is a part of the more general DevOps movement, which describes the combination of software development and operations.  Terraform in particular allows developers to write infrastructure as code. ",
+                "value":" Terraform is part of the DevOps movement, which describes the combination of software development and operations.  Terraform in particular allows developers to write infrastructure as code. ",
                 "children":null
             }
         ]
@@ -180,7 +180,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Software developers create application software, while operations teams work on managing the hardware infrastructure that the application sits upon.  As new technologies such as cloud hosting and infrastructure as code emerged, the lines between developer and operations blurred.  Often these days the development and operations roles have merged, since in both cases the job involves writing code! ",
+                "value":" Software developers create application software, while operations teams work on managing the hardware infrastructure that applications sit upon.  As new technologies such as cloud hosting and infrastructure as code emerged, the lines between developer and operations blurred.  Often these days the development and operations roles are merged, since in both cases the job involves writing code! ",
                 "children":null
             }
         ]
@@ -195,7 +195,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Traditionally handling infrastructure meant setting up physical servers. With the cloud, servers that run software are part of a paid cloud subscription model.  One benefit of the cloud is not directly handling the hardware.  Imagine the nightmare of adjusting physical servers to fit the scaling needs of a company.  Another benefit is that we can define infrastructure in new ways - for example as code written in a programming language.  IaC enables building scripts that will run and provision cloud infrastructure instantly.  For example, a script that sets up a linux machine with a web server. ",
+                "value":" Traditionally, managing infrastructure meant setting up physical servers. With the cloud, servers are part of a paid subscription model.  Companies no longer adjust physical servers to fit the scaling needs of a company.  Cloud infrastructure is declared in new ways - such as code written in a programming language.  IaC uses scripts to run and provision cloud infrastructure instantly.  For example, a script can set up a linux machine with a web server. ",
                 "children":null
             }
         ]
@@ -220,7 +220,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  IaC can be fully documented and versioned.  Just looking at a Terraform script will declaratively outline an entire applications infrastructure needs. Reverting to a previous infrastructure simply requires pulling an old tag or a different branch from version control and executing the Terraform script again.  It is much more pleasant and fun compared to navigating a cloud providers UI! ",
+                "value":".  IaC can be fully documented and versioned.  Just looking at a Terraform script declaratively outlines an applications infrastructure needs. Reverting to a previous infrastructure simply requires pulling an old tag or different branch from version control and executing the Terraform script.  Terraform is pleasant and fun compared to navigating a cloud providers UI! ",
                 "children":null
             }
         ]
@@ -258,7 +258,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  When HashiCorp was creating Terraform, they thought of using JSON for IaC, however certain JSON limitations (such as the inability to write comments) caused them to create their own configuration language",
+                "value":".  When HashiCorp created Terraform, they thought of using JSON for IaC.   However, certain JSON limitations (such as the inability to write comments) caused them to create their own configuration language",
                 "children":null
             },
             {
@@ -283,7 +283,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" To create a hello world web server in Terraform, I wrote one file with all the IaC configurations. The configuration file creates a new EC2 instance to host a web server.  Let’s spend the rest of this section breaking down the code in ",
+                "value":" To create a \"hello world\" web server in Terraform, I wrote one file with all the IaC configuration. The configuration file creates a new EC2 instance to host a web server.  Let’s spend the following  sections breaking down the code in ",
                 "children":null
             },
             {
@@ -351,7 +351,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Variables are used as inputs for terraform scripts.  They allow for more flexible and configurable scripts.  After the ",
+                "value":" Variables are used as inputs in terraform scripts for flexibility across executions. Variables are defined with the ",
                 "children":null
             },
             {
@@ -365,7 +365,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" keyword comes the variable name followed by a block of configuration items. ",
+                "value":" keyword followed by a block of configuration items. ",
                 "children":null
             }
         ]
@@ -481,7 +481,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" documents an input variable both in the code and when using the Terraform CLI",
+                "value":" documents an input variable both in code and when using the Terraform CLI",
                 "children":null
             },
             {
@@ -507,7 +507,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" gives the input variable a value to fall back on if no value is provided.  There are a couple ways to provide input variables in Terraform, all which utilize command line flags or environment variables.  ",
+                "value":" gives input variables a value to fall back on if one isn't provided.  There are a couple ways to provide input variables in Terraform, all which utilize command line flags or environment variables.  ",
                 "children":null
             },
             {
@@ -521,7 +521,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" explicitly binds the variable to a type. If no type is specified in a variables configuration, HCL will implicitly guess what the type is. ",
+                "value":" explicitly binds variables to a type. If type isn't specified in a variable configuration, HCL will implicitly guess what the type is. ",
                 "children":null
             }
         ]
@@ -597,7 +597,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" determines the Amazon Machine Image for the EC2 instance. An AMI is a blueprint for the EC2 instance (virtual machine), and in the Terraform script I specified one of the official Ubuntu AMIs as the default",
+                "value":" determines the Amazon Machine Image for an EC2 instance. An AMI is a blueprint for EC2 instances (virtual machines), and in the Terraform script I specified one of the official Ubuntu AMIs as the default",
                 "children":null
             },
             {
@@ -609,7 +609,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Finally ",
+                "value":".  Finally, ",
                 "children":null
             },
             {
@@ -649,7 +649,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Once input variables are declared, a service provider for the script is specified.  My cloud provider is AWS, and the region to build infrastructure in AWS is determined by the input variable. ",
+                "value":" Once input variables are declared, a service provider for the script is specified.  My cloud provider is AWS, and the region to build infrastructure is determined by an input variable. ",
                 "children":null
             }
         ]
@@ -710,7 +710,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now we can pick apart the meat of a Terraform script - resources.  Resources are the pieces of infrastructure on your provider.  I created three resources - the EC2 instance, an elastic IP address, and an AWS security group.  First let’s look at the EC2 instance resource. ",
+                "value":" Now we can pick apart the meat of Terraform scripts - resources.  Resources are the pieces of infrastructure on your provider.  I created three resources - an EC2 instance, an elastic IP address, and an AWS security group.  First let’s look at the EC2 instance resource. ",
                 "children":null
             }
         ]
@@ -731,7 +731,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" A resource follows a similar syntax to variables and providers: ",
+                "value":" Resources follow a similar syntax to variables and providers: ",
                 "children":null
             }
         ]
@@ -752,7 +752,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Both the AMI and instance type of the instance are defined in input variables.  The tags code block will display a name for the instance in the AWS UI",
+                "value":" The AMI and instance type of the EC2 instance are defined in input variables.  The ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"tags",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" code block displays a name for the instance in the AWS UI",
                 "children":null
             },
             {
@@ -778,7 +792,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" config is interesting because any statements written in its body are executed when the instance starts up.  In my config, a batch script executes which starts a basic web server. ",
+                "value":" is interesting because any statements written in its body are executed when the instance starts up.  In my config, a batch script executes and starts a basic web server. ",
                 "children":null
             }
         ]
@@ -845,7 +859,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Elastic IP addresses are static while EC2 IP addresses change when an instance is torn down. Instead of accessing an EC2 instance from the instances IP address, you can go through the elastic IP address instead. ",
+                "value":" Elastic IP addresses are static while EC2 IP addresses change when an instance is torn down. Instead of accessing an EC2 instance from the instances IP address, you can go through the elastic IP address. ",
                 "children":null
             }
         ]
@@ -858,7 +872,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" For example, an elastic IP is 60.0.0.1 and an EC2 instances IP is 60.0.0.2.  Both IPs are available to access the EC2 instance.  What would happen if the EC2 instance went down or was torn down by Terraform?  In this case the IP address would probably change.  Once the EC2 instance is back online, the IP is changed to 60.0.0.3.  If all your web server DNS entries were mapped to 60.0.0.2, you would now have to reconfigure them.  However, the elastic IP address never changed, so the new EC2 instance is still accessible through 60.0.0.1.  Elastic IPs mask failures of EC2 instances ",
+                "value":" For example, let's say an elastic IP is 60.0.0.1 and an EC2 instance IP is 60.0.0.2.  Both IPs are available to access the EC2 instance.  What would happen if the EC2 instance went down or was torn down by Terraform?  In this case the IP address would probably change.  Once the EC2 instance is back online, the IP is changed to 60.0.0.3.  If all your web server DNS entries were mapped to 60.0.0.2, you would have to reconfigure them.  However, the elastic IP address never changed, so the new EC2 instance is still accessible through 60.0.0.1.  Elastic IPs mask failures of EC2 instances ",
                 "children":null
             },
             {
@@ -896,7 +910,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The final piece of the Terraform script defines output variables.  Once a Terraform script is executed, output variables are displayed and stored for future access.  In general, output variables are important pieces of data that a script user needs access to - such as the generated EC2 instance IP address. ",
+                "value":" The final piece of the Terraform script defines output variables.  Once a Terraform script executes, output variables are displayed and stored for future access.  In general, output variables are important pieces of data that script users need access to - such as the generated EC2 IP address. ",
                 "children":null
             }
         ]
@@ -951,7 +965,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is complete and AWS infrastructure is ready to be built. ",
+                "value":" is complete and the AWS infrastructure is ready to build. ",
                 "children":null
             }
         ]
@@ -1143,7 +1157,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Using Terraform and IaC makes building cloud infrastructure fun!  I am excited to learn more about Terraform and different DevOps practices.  The code for this discovery post along with my other DevOps adventures is on ",
+                "value":" Using Terraform and IaC makes building cloud infrastructure fun!  I'm excited to learn more about Terraform and different DevOps practices.  The code for this discovery post along with my other DevOps adventures is on ",
                 "children":null
             },
             {
@@ -1228,6 +1242,12 @@ db.posts.insertOne({
             endName: ", 34",
             linkName: "Yevgeniy.",
             link: "https://www.terraformupandrunning.com/"
+        },
+        {
+            startName: "\"HCL: Why?\", ",
+            endName: "",
+            linkName: "https://github.com/hashicorp/hcl#why",
+            link: "https://github.com/hashicorp/hcl#why"
         },
         {
             startName: "\"Regions and Availability Zones\", ",
