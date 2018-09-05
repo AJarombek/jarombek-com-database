@@ -76,3 +76,4 @@ load('./posts/2018/8-16-groovy-closures.js');
 load('./posts/2018/8-27-groovy-currying.js');
 
 load('./posts/2018/9-3-terraform.js');
+load('./posts/2018/9-7-aws-lambda-api-gateway.js');
