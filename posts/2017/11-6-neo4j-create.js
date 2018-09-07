@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Lately I have been reading up on graph databases and their place in the NoSQL data storage universe. The graph database I've worked with is Neo4j, which is very easy to get set up. I've found the user interface to view graphs and type in queries to be very enjoyable and I highly recommend it if you need a graph database solution. ",
+                "value":" Lately I've read about graph databases and their place in the NoSQL data storage universe. The graph database I've worked with is Neo4j, which is fun and easy to get started with. I found the user interface very enjoyable for viewing graphs and executing queries. I highly recommend it if you need a graph database solution. ",
                 "children":null
             }
         ]
@@ -29,7 +29,21 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Without going into too much detail, the largest draw to graph databases is storing relationships between data and the speed at which you can query related data points (or in graph terms nodes/vertices). Relationships are first class citizens in graph databases which allows you to query related data by traversing the relationship itself.  This is contrasted with a typical relational database solution where you have to find relationships through foreign keys or combine two tables of data with a very slow SQL JOIN operation",
+                "value":" The largest draw for graph databases is storing relationships between data and the speed at which you can query related data points (or in graph terms nodes/vertices). Relationships are first class citizens, which enables related data querying by traversing the relationship entities themselves.  This is contrasted with a typical relational database where you have to find relationships through foreign keys or combine two tables with a very slow SQL ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"JOIN",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" operation",
                 "children":null
             },
             {
@@ -41,7 +55,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".   Our same slow query in a RDBMS (Relational DataBase Management System) is extremely quick in a graph database. ",
+                "value":". The same slow query in a RDBMS (Relational DataBase Management System) is extremely quick in a graph database. ",
                 "children":null
             }
         ]
@@ -57,7 +71,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Lately I have been reading up on graph databases and their place in the NoSQL data storage universe. The graph database I've worked with is Neo4j, which is very easy to get set up. I've found the user interface to view graphs and type in queries to be very enjoyable and I highly recommend it if you need a graph database solution. ",
+                "value":" Lately I've read about graph databases and their place in the NoSQL data storage universe. The graph database I've worked with is Neo4j, which is fun and easy to get started with. I found the user interface very enjoyable for viewing graphs and executing queries. I highly recommend it if you need a graph database solution. ",
                 "children":null
             }
         ]
@@ -70,7 +84,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Without going into too much detail, the largest draw to graph databases is storing relationships between data and the speed at which you can query related data points (or in graph terms nodes/vertices). Relationships are first class citizens in graph databases which allows you to query related data by traversing the relationship itself.  This is contrasted with a typical relational database solution where you have to find relationships through foreign keys or combine two tables of data with a very slow SQL JOIN operation",
+                "value":" The largest draw for graph databases is storing relationships between data and the speed at which you can query related data points (or in graph terms nodes/vertices). Relationships are first class citizens, which enables related data querying by traversing the relationship entities themselves.  This is contrasted with a typical relational database where you have to find relationships through foreign keys or combine two tables with a very slow SQL ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"JOIN",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" operation",
                 "children":null
             },
             {
@@ -82,7 +110,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".   Our same slow query in a RDBMS (Relational DataBase Management System) is extremely quick in a graph database. ",
+                "value":". The same slow query in a RDBMS (Relational DataBase Management System) is extremely quick in a graph database. ",
                 "children":null
             }
         ]
@@ -108,7 +136,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":" Fairfield County CT ",
+                        "value":" Fairfield County CT",
                         "children":null
                     }
                 ]
@@ -116,7 +144,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" .  The first task on my list was to create a vertex to represent a state - in this case Connecticut. In Cypher (the query language used by Neo4j) that is easy! ",
+                "value":".  My first task was to create a vertex representing a state - in this case Connecticut.  In Cypher (the query language used by Neo4j) that was easy! ",
                 "children":null
             }
         ]
@@ -137,7 +165,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" We use the ",
+                "value":" The ",
                 "children":null
             },
             {
@@ -151,7 +179,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" statement to build a vertex and pass it a label ",
+                "value":" statement builds a vertex and passes it a label ",
                 "children":null
             },
             {
@@ -179,7 +207,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" . The label is used for grouping, in this case all states will have the label ",
+                "value":" . The label is used for grouping - in this case all states will have the label ",
                 "children":null
             },
             {
@@ -193,7 +221,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". You can also name the vertex along with supply additional key->value information in the vertices properties. ",
+                "value":". Properties can give vertices names along with supplying additional key->value information. ",
                 "children":null
             }
         ]
@@ -206,7 +234,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can also create multiple vertices from a single ",
+                "value":" Building multiple vertices at once can be done from a single ",
                 "children":null
             },
             {
@@ -220,7 +248,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"  statement. I will utilize this to populate the counties towns and cities: ",
+                "value":"  statement. I utilize this to populate the counties towns and cities: ",
                 "children":null
             }
         ]
@@ -241,7 +269,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Before I create any relationships, I want to make life easier and group together cities and towns under one common label. After all they are both considered settlements. ",
+                "value":" Before I made any relationships, I wanted to simplify things and group together cities and towns under one common label. After all they are both considered settlements. ",
                 "children":null
             }
         ]
@@ -276,7 +304,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"  which queries the database based on some ASCII Art that I pass it. The ",
+                "value":",  which queries the database based on some ASCII Art I pass it. The ",
                 "children":null
             },
             {
@@ -284,13 +312,13 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"(...)",
+                "value":"(s)",
                 "children":null
             },
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" token represents a node in the database which I assign to variable ",
+                "value":" token represents a node in the database that I assign to variable ",
                 "children":null
             },
             {
@@ -304,7 +332,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". So this query says \"for each vertex in the database that is a city or town set a new label called Settlement\". In Neo4j a vertex can have multuple labels so this ",
+                "value":". This query says \"for each vertex in the database that is a city or town, set a new label called Settlement\". In Neo4j vertices can have multiple labels, so the ",
                 "children":null
             },
             {
@@ -318,7 +346,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" operation will not override the old labels. ",
+                "value":" operation will not override old labels. ",
                 "children":null
             }
         ]
@@ -331,7 +359,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now it is time for the fun part: relationships. Lets create a relationship between all the settlements and the state of Connecticut: ",
+                "value":" Now its time for the fun part: relationships. Lets create a relationship between all the settlements and the state of Connecticut: ",
                 "children":null
             }
         ]
@@ -352,7 +380,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" As you likely guessed, the ASCII art for a relationship is ",
+                "value":" As you likely guessed, the ASCII art for relationships is ",
                 "children":null
             },
             {
@@ -360,13 +388,13 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"{`<-[:IN]-`}",
+                "value":"<-[:IN]-",
                 "children":null
             },
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" where the arrow shows the direction of the relationship. We also give the relationship a label, in this case ",
+                "value":" where the arrow shows the direction of the relationship. Relationships are given a label, in this case ",
                 "children":null
             },
             {
@@ -380,7 +408,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" . We could also give a relationship properties just like you would a vertex. This is what I meant by 'relationships are first class entities' - they are treated and can be queried just like a vertex! This is extremely powerful. ",
+                "value":" .  Relationships can also have properties just like a vertex. This is what I meant by 'relationships are first class entities' - they are treated and queried just like a vertex! First class relationships are extremely powerful. ",
                 "children":null
             }
         ]
@@ -393,7 +421,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You may have noticied that in this query we match for multiple vertices. In this case, we want all the vertices where the label is State or Settlement. Then we create the relationship \"settlement is in state\". Since the only state in the database is Connecticut, this simple query will give us the intended result. ",
+                "value":" You may have noticed in the query I matched multiple vertices. I looked for all vertices where the label is State or Settlement. Then I created the relationship \"all settlements are in all the states\". Since the only state in the database is Connecticut, all settlements are given a ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":":IN",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" relationship to Connecticut. ",
                 "children":null
             }
         ]
@@ -406,7 +448,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" For the final step of this graph we want to create relationships between all the neighboring towns. This is a long query so I'll just show a snippet (the full code for this and the other snippets can be found ",
+                "value":" For the final step I created relationships between all the neighboring towns. The query is long so I'll just show a snippet (the full code for all queries is on ",
                 "children":null
             },
             {
@@ -419,7 +461,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"HERE",
+                        "value":"GitHub",
                         "children":null
                     }
                 ]
@@ -448,7 +490,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In this code we first want to give variables for all the settlement nodes by their name. Then we want to create neighbors relationships between towns that share borders. One thing that I questioned when writing this code is 'why cant there be bi-directional relationships?' It turns out at the time of this writing Neo4j does not support bi-directional relationships. This is because traversing a relationship takes the same amount of time (O(1)) regardless of the direction it is pointing",
+                "value":" This code creates neighbor relationships between towns that share borders. One thing that I questioned when writing this code is 'why cant there be bi-directional relationships?' It turns out Neo4j does not support bi-directional relationships at this time. This is because traversing a relationship takes the same amount of time (O(1)) regardless of the direction it is pointing",
                 "children":null
             },
             {
@@ -460,7 +502,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". In a case like   this one where we will treat the relationships as bi-directional, you can just ignore the arrow in ",
+                "value":". In a case like this where the relationships should be bi-directional, you can just ignore the arrow in ",
                 "children":null
             },
             {
@@ -505,7 +547,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I will look further at Neo4j and build off this graph in future discoveries. I hope this shows you just how simple it is to build a graph database! ",
+                "value":" I will look further at Neo4j and build off this graph in future discoveries. I hope this post  shows just how simple it is to build a graph database! ",
                 "children":null
             }
         ]

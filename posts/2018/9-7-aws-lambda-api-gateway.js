@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Traditionally when building a mobile app or website, the application is split into a few different layers.  Commonly a front-end, backend, and database comprises all the necessary layers.  In recent years the backend is often a ",
+                "value":" Traditionally when building a mobile app or website, the application is split into a few different layers.  The necessary layers commonly comprise a front-end, backend, and database.  In recent years, the backend is often a ",
                 "children":null
             },
             {
@@ -50,7 +50,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" To set up a REST API, a server is needed to host backend code.  Having a backend server means app developers have to spend time managing infrastructure.  As I mentioned in my post on ",
+                "value":" To set up a REST API, a server is needed to host backend code.  Using a backend server means app developers have to spend time managing infrastructure.  As I mentioned in my post on ",
                 "children":null
             },
             {
@@ -71,7 +71,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", when cloud computing came along new techniques for handling infrastructure were introduced.  With AWS Lambda, we now have a new technique for handling code and infrastructure in our backend.  AWS Lambda brings containerized functions and serverless computing to the backend. ",
+                "value":", when cloud computing came along new techniques for handling infrastructure were introduced.  With AWS Lambda, we have a new technique for handling code and infrastructure in our backend.  AWS Lambda introduces containerized functions and serverless computing. ",
                 "children":null
             }
         ]
@@ -87,7 +87,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Traditionally when building a mobile app or website, the application is split into a few different layers.  Commonly a front-end, backend, and database comprises all the necessary layers.  In recent years the backend is often a ",
+                "value":" Traditionally when building a mobile app or website, the application is split into a few different layers.  The necessary layers commonly comprise a front-end, backend, and database.  In recent years, the backend is often a ",
                 "children":null
             },
             {
@@ -121,7 +121,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" To set up a REST API, a server is needed to host backend code.  Having a backend server means app developers have to spend time managing infrastructure.  As I mentioned in my post on ",
+                "value":" To set up a REST API, a server is needed to host backend code.  Using a backend server means app developers have to spend time managing infrastructure.  As I mentioned in my post on ",
                 "children":null
             },
             {
@@ -142,7 +142,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", when cloud computing came along new techniques for handling infrastructure were introduced.  With AWS Lambda, we now have a new technique for handling code and infrastructure in our backend.  AWS Lambda brings containerized functions and serverless computing to the backend. ",
+                "value":", when cloud computing came along new techniques for handling infrastructure were introduced.  With AWS Lambda, we have a new technique for handling code and infrastructure in our backend.  AWS Lambda introduces containerized functions and serverless computing. ",
                 "children":null
             }
         ]
@@ -180,7 +180,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". While each container does run on a server, AWS abstracts the infrastructure away, leaving developers to solely focus on the function definition.  You only pay Amazon for the memory usage of the function.  If the function never executes, you never have to pay. ",
+                "value":". While each container does run on a server, AWS abstracts the server infrastructure away, letting developers focus solely on the function definition.  Developers only pay Amazon for the memory usage of a function.  If a function never executes, you never have to pay. ",
                 "children":null
             }
         ]
@@ -193,7 +193,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" AWS Lambda is a service for defining functions that fit the serverless model.  APIs are defined with lambda functions and another AWS service called API Gateway.  API Gateway gives lambda functions a REST API endpoint mapping. ",
+                "value":" AWS Lambda is a service for defining functions that fit the serverless model.  APIs are defined with another AWS service called API Gateway.  API Gateway gives AWS Lambda functions a REST API endpoint mapping. ",
                 "children":null
             }
         ]
@@ -250,7 +250,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" AWS Lambda functions are just like any other programming language function - they take in arguments and return a value.  They are specified as synchronous or asynchronous.  A number of different runtimes are supported for lambda functions - Node.js, Java, and Python to name a few. ",
+                "value":" AWS Lambda functions are just like any other programming language function - they take in arguments and return a value.  They are specified as synchronous or asynchronous.  A number of different runtimes are supported for lambda functions - such as Node.js, Java, and Python. ",
                 "children":null
             }
         ]
@@ -263,7 +263,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I created a lambda function in JavaScript on the Node.js runtime.  The function takes an integer as an argument and returns the roman numeral equivalent.  The following code sets up the function: ",
+                "value":" I created a lambda function in JavaScript on the Node.js runtime.  The function takes an integer argument and returns a roman numeral equivalent.  The following code sets up the function: ",
                 "children":null
             }
         ]
@@ -326,7 +326,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is an error.  If this argument is ",
+                "value":" is an error status.  If this argument is ",
                 "children":null
             },
             {
@@ -340,7 +340,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", that means the lambda function is returning successfully.  The seconds argument contains any data the lambda function should return. My function always returns back the roman numeral. ",
+                "value":", the lambda function returned successfully.  The second argument contains any data the lambda function should return. My function always returns back the roman numeral. ",
                 "children":null
             }
         ]
@@ -388,7 +388,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" provides information about the AWS Lambda function request.  Inside ",
+                "value":" provides information about the lambda function request.  Inside ",
                 "children":null
             },
             {
@@ -402,7 +402,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" you find data passed by whoever invoked the function.  In the code above I access the ",
+                "value":" exists data passed by whoever invoked the function.  In the code above I access the ",
                 "children":null
             },
             {
@@ -444,7 +444,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" contains a number that will convert to a roman numeral when ",
+                "value":" contains a number that is passed to ",
                 "children":null
             },
             {
@@ -458,7 +458,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is invoked. ",
+                "value":". ",
                 "children":null
             }
         ]
@@ -492,7 +492,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One way to set up an AWS Lambda function is to go into the AWS Console UI and follow the steps on the graphical display.  If you read my previous post on ",
+                "value":" One way to set up a lambda function is to go into the AWS Console UI and follow the steps on the graphical display.  If you read my previous post on ",
                 "children":null
             },
             {
@@ -513,7 +513,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" you know that there is a better option - Terraform! Terraform provisions cloud infrastructure with a script and CLI.  In my previous post I used Terraform to configure infrastructure for a web server, however you can also use it with AWS Lambda and API Gateway. ",
+                "value":" you know that there is a better option - Terraform! Terraform provisions cloud infrastructure with a script and CLI.  In my previous post I used Terraform to configure infrastructure for a web server, however it also works with AWS Lambda and API Gateway. ",
                 "children":null
             }
         ]
@@ -547,7 +547,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Terraform also has great documentation for using ",
+                "value":".  Terraform has great documentation for ",
                 "children":null
             },
             {
@@ -651,7 +651,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is replaced with whatever number a user of the API wants converted to roman numerals. ",
+                "value":" is replaced with whatever number a user of the API wants converted to a roman numeral. ",
                 "children":null
             }
         ]
@@ -749,7 +749,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" respectively.  For both HTTP requests and responses to API Gateway, templates are used to determine what is passed to an AWS Lambda function and returned back to whoever invoked the API. ",
+                "value":" respectively.  For  HTTP requests and responses to API Gateway, templates are used to determine what is passed to AWS Lambda functions and returned back to the API invoker. ",
                 "children":null
             }
         ]
@@ -956,7 +956,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  If the response exists, it is returned with the JSON.  Otherwise the JSON property ",
+                "value":".  If the response exists, it is returned with the JSON.  Otherwise, the JSON property ",
                 "children":null
             },
             {
@@ -1026,7 +1026,7 @@ content = [
     {
         "el":"codesnippet",
         "attributes":{
-            "language":"HCL"
+            "language":"Bash"
         },
         "value":"curl https://xyhzuzr8z2.execute-api.us-east-1.amazonaws.com/dev/roman-numeral/8\n# {\"romanNumeral\": \"VIII\"}\n\ncurl https://xyhzuzr8z2.execute-api.us-east-1.amazonaws.com/dev/roman-numeral/28\n# {\"romanNumeral\": \"XXVIII\"}\n\ncurl https://xyhzuzr8z2.execute-api.us-east-1.amazonaws.com/dev/roman-numeral/2013\n# {\"romanNumeral\": \"MMXIII\"}\n\ncurl https://xyhzuzr8z2.execute-api.us-east-1.amazonaws.com/dev/roman-numeral/ye\n# {\"error\": \"failed converting to roman numeral\"}\n",
         "children":null
@@ -1039,7 +1039,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Although I only created one lambda function and REST endpoint, you can imagine how you could easily scale up a serverless backend with more lambda functions. ",
+                "value":" Although I only created one lambda function and REST endpoint, you can imagine a scaled up serverless backend with more lambda functions. ",
                 "children":null
             }
         ]
@@ -1052,7 +1052,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This is only the beginning of my development with serverless architecture.  I am actually using AWS Lambda and API Gateway to handle the subscription feature of this website, and it has worked great so far.  You can view the full code from this discovery post on ",
+                "value":" This is only the beginning of my development with serverless architecture.  I am actively using AWS Lambda and API Gateway to handle the subscription feature for this website, and it has worked great so far.  You can view the full code from this discovery post on ",
                 "children":null
             },
             {
@@ -1105,7 +1105,7 @@ db.posts.insertOne({
         },
         {
             name: "API Gateway",
-            picture: "https://asset.jarombek.com/logos/apigateway.png",
+            picture: "https://asset.jarombek.com/logos/apigateway.svg",
             color: "apigateway"
         },
         {
