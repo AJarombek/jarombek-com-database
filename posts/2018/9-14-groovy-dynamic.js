@@ -29,7 +29,7 @@ preview = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":" Groovy’s type system",
+                        "value":" Groovy's type system",
                         "children":null
                     }
                 ]
@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I discovered that dynamic typing and dynamic programming are two completely different concepts.  Dynamic typing specifies a language that enforces types at runtime.  Dynamic programming allows a language to change attributes of a program at runtime that are typically kept static.  This post is my introduction to the features of a dynamic programming language and its use cases in a Groovy application. ",
+                "value":" I learned that dynamic typing and dynamic programming are two completely different concepts.  Dynamic typing specifies a language that enforces types at runtime.  Dynamic programming languages allow attributes of a program to change at runtime that are typically kept static.  This post is my introduction to the features of a dynamic programming language and their use cases in Groovy applications. ",
                 "children":null
             }
         ]
@@ -63,7 +63,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Groovy builds upon Java which is statically typed and does not have dynamic language features.  While Groovy does use Java’s type system, it enforces types at runtime only, making Groovy a dynamically typed.  Groovy also has dynamic language capabilities that Java does not. ",
+                "value":" Groovy builds upon Java which is statically typed and does not have dynamic language features.  While Groovy does use Java's type system, it enforces types at runtime only, making Groovy dynamically typed.  Groovy also has dynamic language capabilities that Java does not. ",
                 "children":null
             }
         ]
@@ -92,7 +92,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":" Groovy’s type system",
+                        "value":" Groovy's type system",
                         "children":null
                     }
                 ]
@@ -100,7 +100,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I discovered that dynamic typing and dynamic programming are two completely different concepts.  Dynamic typing specifies a language that enforces types at runtime.  Dynamic programming allows a language to change attributes of a program at runtime that are typically kept static.  This post is my introduction to the features of a dynamic programming language and its use cases in a Groovy application. ",
+                "value":" I learned that dynamic typing and dynamic programming are two completely different concepts.  Dynamic typing specifies a language that enforces types at runtime.  Dynamic programming languages allow attributes of a program to change at runtime that are typically kept static.  This post is my introduction to the features of a dynamic programming language and their use cases in Groovy applications. ",
                 "children":null
             }
         ]
@@ -126,7 +126,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Groovy builds upon Java which is statically typed and does not have dynamic language features.  While Groovy does use Java’s type system, it enforces types at runtime only, making Groovy a dynamically typed.  Groovy also has dynamic language capabilities that Java does not. ",
+                "value":" Groovy builds upon Java which is statically typed and does not have dynamic language features.  While Groovy does use Java's type system, it enforces types at runtime only, making Groovy dynamically typed.  Groovy also has dynamic language capabilities that Java does not. ",
                 "children":null
             }
         ]
@@ -199,7 +199,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" class at runtime or an existing methods behavior can be altered at runtime.  These manipulations don’t affect the original class definition and can be applied per instance or across all instances",
+                                        "value":" class at runtime or an existing methods behavior can be altered at runtime.  These manipulations don't effect the original class definition and can be applied per instance or across all instances",
                                         "children":null
                                     },
                                     {
@@ -224,7 +224,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" Another powerful feature of dynamic programming languages is dynamic method dispatch",
+                                        "value":" Another powerful feature of a dynamic programming language is dynamic method dispatch",
                                         "children":null
                                     },
                                     {
@@ -236,7 +236,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":". This allows methods that don’t exist to be called on an object.  As a developer you can implement certain logic that will occur when a method is invoked but not found. ",
+                                        "value":". This allows methods that don't exist to be invoked.  As a developer you can implement certain logic that will occur when a method is invoked but not found. ",
                                         "children":null
                                     }
                                 ]
@@ -280,7 +280,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" Static languages disallow certain attributes of a program from changing at runtime that dynamic languages are flexible with.  In the object oriented paradigm, a classes fields and methods are static and their definitions can’t be changed at runtime.  Field and method definitions are finalized at compile time.  For example, the number of methods and fields on ",
+                                        "value":" Static languages disallow certain attributes of a program from changing at runtime that dynamic languages are flexible with.  In the object oriented paradigm, a classes fields and methods are static and their definitions can't be changed at runtime (they are finalized at compile time).  For example, the number of methods and fields on ",
                                         "children":null
                                     },
                                     {
@@ -294,7 +294,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" can’t change once a program compiles.  If a method is invoked that does not exist, the program will not even compile. ",
+                                        "value":" can't change once a program compiles.  If a method is invoked that does not exist, the program will not even compile. ",
                                         "children":null
                                     }
                                 ]
@@ -313,7 +313,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One of the challenges Groovy faced was allowing dynamic features for code that is compiled to Java byte code.  Java class definitions are immutable once compiled, so Groovy had to implement a layer of indirection to get dynamic language features to work",
+                "value":" One of the challenges Groovy faced was allowing dynamic features for code that is compiled to Java byte code.  Java class definitions are immutable once compiled to byte code, so Groovy had to implement a layer of indirection to get dynamic language features to work",
                 "children":null
             },
             {
@@ -325,7 +325,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This layer of indirection occurs between a method/field lookup and method invocation/field access. ",
+                "value":".  This layer of indirection occurs between the method or field lookup and the method invocation/field access. ",
                 "children":null
             }
         ]
@@ -414,7 +414,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"Java’s Reflection API",
+                        "value":"Java's Reflection API",
                         "children":null
                     }
                 ]
@@ -443,7 +443,35 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Another piece of the MOP is handling method calls for methods that do not exist.  Groovy has special methods called hook methods for the MOP to invoke whenever a non-existent method is called.  As developers we can overwrite hook methods and add our own logic! ",
+                "value":" Whenever you invoke a method on a Groovy object, behind the scenes ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"invokeMethod()",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" is called on the Groovy object's ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"MetaClass",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
                 "children":null
             }
         ]
@@ -456,7 +484,20 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The hook method the MOP uses when a method is missing is ",
+                "value":" Another piece of the MOP is handling calls for methods that don't exist.  Groovy has special hook methods for the MOP to invoke whenever a non-existent method is called.  As developers we can overwrite hook methods and add our own logic! ",
+                "children":null
+            }
+        ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" The hook method that the MOP uses when a method is missing is ",
                 "children":null
             },
             {
@@ -470,7 +511,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Similar to missing methods, the hook method for missing properties is ",
+                "value":".  Similarly, the hook method for missing properties is ",
                 "children":null
             },
             {
@@ -787,7 +828,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". I decided to build on this sample code in a way that would fit the needs of SaintsXCTF.  The following code dynamically adds new methods to the ",
+                "value":". I decided to build upon this sample code in a way that would fit the needs of SaintsXCTF.  The following code dynamically adds new methods to the ",
                 "children":null
             },
             {
@@ -801,7 +842,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" class that assist conversions between miles, kilometers, and meters. ",
+                "value":" class that assists conversions between miles, kilometers, and meters. ",
                 "children":null
             }
         ]
@@ -912,7 +953,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is set to the owner of a closure, which is the closures lexical scope.  In the code above ",
+                "value":" is set to the owner of a closure, which is the closures lexical scope.  In the code above, ",
                 "children":null
             },
             {
@@ -981,7 +1022,20 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Manipulating a class in a language library to accommodate an application is the greatest power of dynamic programming languages.  It removes restrictions that language developers set for the core APIs! ",
+                "value":" Manipulating classes in a languages standard library to accommodate an application is the greatest power of dynamic programming languages.  It removes restrictions that language developers set for the core APIs! ",
+                "children":null
+            }
+        ]
+    },
+    {
+        "el":"h5",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":"Conclusions",
                 "children":null
             }
         ]
@@ -994,7 +1048,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" While I still haven’t used any dynamic programming language techniques in any of my production applications, my research for this post has opened my eyes to their potential.  You can find all the code for this discovery post on ",
+                "value":" While I still haven't used any dynamic programming language techniques in any of my production applications, my research for this post has opened my eyes to their potential.  You can find all the code for this discovery post on ",
                 "children":null
             },
             {
