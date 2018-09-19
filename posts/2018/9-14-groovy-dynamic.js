@@ -1087,8 +1087,8 @@ db.posts_content.remove({name: postName});
 db.posts.insertOne({
     name: postName,
     title: "Groovy's Dynamic Language Features",
-    description: `There are a lot of different complexities with generics and how 
-        they differ from arrays.  This is my journey to understand Java’s Generics in depth.`,
+    description: `This post is my introduction to the features of a dynamic
+        programming language and their use cases in Groovy applications.`,
     date: new Date('2018-09-14T12:00:00'),
     type: "Discovery",
     views: postViews,

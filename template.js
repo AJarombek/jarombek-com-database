@@ -40,8 +40,8 @@ db.posts.insertOne({
         {
             startName: "\"this\", ",
             endName: "",
-            linkName: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this",
-            link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this"
+            linkName: "http",
+            link: "http"
         },
         {
             startName: "Kyle Simpson, ",
@@ -50,20 +50,8 @@ db.posts.insertOne({
             link: "https://github.com/getify/You-Dont-Know-JS/tree/master/this%20%26%20object%20prototypes"
         },
         {
-            startName: "\"Object.prototype\", ",
-            endName: "",
-            linkName: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype",
-            link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype"
-        },
-        {
             startName: "",
             endName: ", 22",
-            linkName: "Simpson.",
-            link: "https://github.com/getify/You-Dont-Know-JS/tree/master/this%20%26%20object%20prototypes"
-        },
-        {
-            startName: "",
-            endName: ", 33",
             linkName: "Simpson.",
             link: "https://github.com/getify/You-Dont-Know-JS/tree/master/this%20%26%20object%20prototypes"
         }
