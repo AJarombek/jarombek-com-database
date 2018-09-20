@@ -29,7 +29,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The largest draw for graph databases is storing relationships between data and the speed at which you can query related data points (or in graph terms nodes/vertices). Relationships are first class citizens, which enables related data querying by traversing the relationship entities themselves.  This is contrasted with a typical relational database where you have to find relationships through foreign keys or combine two tables with a very slow SQL ",
+                "value":" Graph databases largest draw is related data storage and the speed at which you can query related data points (or in graph terms, nodes/vertices). Relationships are first class citizens, which allows related data queries to be executed by traversing relationships themselves.  This is contrasted with a typical relational database where you have to find relationships through foreign keys or combine two tables with a very slow SQL ",
                 "children":null
             },
             {
@@ -84,7 +84,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The largest draw for graph databases is storing relationships between data and the speed at which you can query related data points (or in graph terms nodes/vertices). Relationships are first class citizens, which enables related data querying by traversing the relationship entities themselves.  This is contrasted with a typical relational database where you have to find relationships through foreign keys or combine two tables with a very slow SQL ",
+                "value":" Graph databases largest draw is related data storage and the speed at which you can query related data points (or in graph terms, nodes/vertices). Relationships are first class citizens, which allows related data queries to be executed by traversing relationships themselves.  This is contrasted with a typical relational database where you have to find relationships through foreign keys or combine two tables with a very slow SQL ",
                 "children":null
             },
             {
@@ -269,7 +269,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Before I made any relationships, I wanted to simplify things and group together cities and towns under one common label. After all they are both considered settlements. ",
+                "value":" Before I made any relationships, I wanted to simplify things and group together cities and towns under one common label. After all towns and cities are both considered settlements. ",
                 "children":null
             }
         ]
@@ -290,7 +290,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I introduced some new keywords here. Most important of them is ",
+                "value":" I introduced some new keywords here, most importantly ",
                 "children":null
             },
             {
@@ -332,7 +332,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". This query says \"for each vertex in the database that is a city or town, set a new label called Settlement\". In Neo4j vertices can have multiple labels, so the ",
+                "value":". This query can be read as \"for each vertex in the database that is a city or town, give the vertex a new label called Settlement\". In Neo4j vertices can have multiple labels, so the ",
                 "children":null
             },
             {
@@ -421,7 +421,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You may have noticed in the query I matched multiple vertices. I looked for all vertices where the label is State or Settlement. Then I created the relationship \"all settlements are in all the states\". Since the only state in the database is Connecticut, all settlements are given a ",
+                "value":" You may have noticed the query matches multiple vertices. I looked for all vertices where the label is State or Settlement. Then I created the relationship \"all settlements are in all the states\". Since the only state in the database is Connecticut, all settlements are given an ",
                 "children":null
             },
             {
@@ -547,7 +547,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I will look further at Neo4j and build off this graph in future discoveries. I hope this post  shows just how simple it is to build a graph database! ",
+                "value":" I will look further at Neo4j and build off this graph in future discoveries. I hope this post  helps show how simple it is to build a graph database! ",
                 "children":null
             }
         ]
