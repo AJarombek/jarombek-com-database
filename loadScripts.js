@@ -80,3 +80,4 @@ load('./posts/2018/9-7-aws-lambda-api-gateway.js');
 load('./posts/2018/9-14-groovy-dynamic.js');
 load('./posts/2018/9-20-intro-programming.js');
 load('./posts/2018/9-21-jenkins.js');
+load('./posts/2018/9-24-python-data-model.js');
