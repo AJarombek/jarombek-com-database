@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Recently I was talking to a friend who wanted me to teach him programming.  I said okay, but I wasn't sure where to begin.  At this point I’ve accumulated almost two and a half years experience in my software development career.  This article uses the knowledge I’ve gained and attempts to give a five minute introduction to programming (before writing any code). ",
+                "value":" Recently I talked to a friend who wanted me to teach him programming.  I said okay, but I wasn't sure where to begin.  At this point I’ve accumulated almost two and a half years experience in my software development career.  This article uses the knowledge I’ve gained and attempts to give a five minute introduction to programming (before writing any code). ",
                 "children":null
             }
         ]
@@ -75,7 +75,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This makes them a perfect match for binary, which also only has two states.  Each binary number is known as a binary digit, or bit for short. ",
+                "value":".  This makes them a perfect match for binary, which also has two states.  Each binary number is known as a binary digit, or bit for short. ",
                 "children":null
             }
         ]
@@ -91,7 +91,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Recently I was talking to a friend who wanted me to teach him programming.  I said okay, but I wasn't sure where to begin.  At this point I’ve accumulated almost two and a half years experience in my software development career.  This article uses the knowledge I’ve gained and attempts to give a five minute introduction to programming (before writing any code). ",
+                "value":" Recently I talked to a friend who wanted me to teach him programming.  I said okay, but I wasn't sure where to begin.  At this point I’ve accumulated almost two and a half years experience in my software development career.  This article uses the knowledge I’ve gained and attempts to give a five minute introduction to programming (before writing any code). ",
                 "children":null
             }
         ]
@@ -150,7 +150,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This makes them a perfect match for binary, which also only has two states.  Each binary number is known as a binary digit, or bit for short. ",
+                "value":".  This makes them a perfect match for binary, which also has two states.  Each binary number is known as a binary digit, or bit for short. ",
                 "children":null
             }
         ]
@@ -176,7 +176,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Obviously programmers do not spend their time working in binary (well, at least the sane ones don’t). We use different programming languages, and out of those languages we create the programs that everyone uses on their computers every day.  However, all the code written that makes computers operate is eventually converted into binary instructions for the computer’s processor to consume. ",
+                "value":" Obviously programmers do not spend their time working in binary (well, at least the sane ones don’t). We use different programming languages, and with those languages we create applications that people use on their computers every day.  However, all the code that controls applications is eventually converted into binary instructions for the computer’s processor to consume. ",
                 "children":null
             }
         ]
@@ -217,7 +217,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The process of hiding away implementation details at a lower level to create a simpler higher-level framework.  In programming languages, abstraction is used to hide away the complexity of machine level instructions at a low level, while presenting a human readable language at a higher level ",
+                "value":" The process of hiding away implementation details at a lower level to create a simpler high-level framework.  In programming languages, abstraction is used to hide away the complexity of machine level instructions at a low level, while presenting a human readable language at a higher level ",
                 "children":null
             },
             {
@@ -229,7 +229,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Inside a piece of software, certain complex components can be abstracted away and presented to future developers in a simpler form.  In a non-programming context, abstraction is classically used to describe how a car has simple high-level operations such as braking, moving forward, and moving backward.  At a low level, a car is made of many smaller pieces working together - however the driver does not need to understand how they work.  These low level operations are abstracted away. ",
+                "value":".  Inside a piece of software, certain complex components can be abstracted away and presented to future developers in a simpler form.  In a non-programming context, abstraction is classically used to describe how a car has simple high-level operations such as braking, moving forward, and moving backward.  At a low level, a car is made of many small pieces working together - however the driver does not need to understand how they work.  These low level operations are abstracted away. ",
                 "children":null
             }
         ]
@@ -242,7 +242,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In programming languages there are multiple layers of abstraction.  The first layer of abstraction away from binary is called assembly language.  Assembly consists of instructions that are presented in a more human readable form.  Each instruction is processed by the computer one at a time.  When assembly language is executed, it is converted into binary for the computer to read. ",
+                "value":" In programming languages there are multiple layers of abstraction.  The first layer of abstraction from binary is called assembly language.  Assembly consists of instructions that are written in a more human readable form than binary.  Instructions are processed by computers one at a time.  When assembly language is executed, it is converted into binary for the computer to read. ",
                 "children":null
             }
         ]
@@ -276,7 +276,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Assembly code snippet adds two numbers (7 and 3) together and prints out the result: ",
+                "value":" Assembly code adds two numbers (7 and 3) together and prints out the result: ",
                 "children":null
             }
         ]
@@ -310,7 +310,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The second layer of abstraction away from binary is a high-level programming language.  If you have no programming experience, high-level languages are likely the ones you have heard of before (Java, C, Python, JavaScript, PHP, etc.).  The benefit of high-level languages is they allow for very concise programs that can be read similarly to how humans think. ",
+                "value":" The second layer of abstraction from binary is high-level programming languages.  If you have no programming experience, high-level languages are likely the ones you've heard of before (Java, C, Python, JavaScript, PHP, etc.).  High-level languages enable the creation of concise programs that are read similarly to how humans think. ",
                 "children":null
             }
         ]
@@ -331,7 +331,7 @@ content = [
     {
         "el":"codesnippet",
         "attributes":{
-            "language":"Assembly"
+            "language":"Python"
         },
         "value":"print(7 + 3)\n",
         "children":null
