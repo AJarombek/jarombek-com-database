@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This summer I started a trend where I pick a different programming language each season to explore. The language of the summer was ",
+                "value":" This summer I started a trend of picking a different programming language each season to explore. The language of the summer was ",
                 "children":null
             },
             {
@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", which was selected because I was using Groovy at work.  For the fall I’ve decided to deep dive into Python.  Python was the very first language I learned back in ",
+                "value":", which was selected because I used Groovy at work.  For the fall I’ve decided to deep dive into Python.  Python was the first language I learned, beginning with ",
                 "children":null
             },
             {
@@ -71,7 +71,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Python is well documented as a beginner friendly language.  It is taught at most colleges as an ",
+                "value":" Python is well documented as a beginner friendly language.  It is taught at most colleges to ",
                 "children":null
             },
             {
@@ -84,7 +84,7 @@ preview = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"introduction to programming",
+                        "value":"introduce programming",
                         "children":null
                     }
                 ]
@@ -92,7 +92,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". The ease of learning Python does come at a price.  Very few master the Python language since they feel there is no need to",
+                "value":". The ease of learning Python does come at a price.  Very few master the language since they feel there is no need to",
                 "children":null
             },
             {
@@ -104,7 +104,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The goal of dissecting Python this fall is to truly understand everything the core language has to offer.  One language feature I never fully appreciation was Python’s data model. ",
+                "value":".  The goal of dissecting Python this fall is to truly understand everything the core language has to offer.  To begin, I will explore Python’s data model. ",
                 "children":null
             }
         ]
@@ -120,7 +120,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This summer I started a trend where I pick a different programming language each season to explore. The language of the summer was ",
+                "value":" This summer I started a trend of picking a different programming language each season to explore. The language of the summer was ",
                 "children":null
             },
             {
@@ -141,7 +141,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", which was selected because I was using Groovy at work.  For the fall I’ve decided to deep dive into Python.  Python was the very first language I learned back in ",
+                "value":", which was selected because I used Groovy at work.  For the fall I’ve decided to deep dive into Python.  Python was the first language I learned, beginning with ",
                 "children":null
             },
             {
@@ -175,7 +175,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Python is well documented as a beginner friendly language.  It is taught at most colleges as an ",
+                "value":" Python is well documented as a beginner friendly language.  It is taught at most colleges to ",
                 "children":null
             },
             {
@@ -188,7 +188,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"introduction to programming",
+                        "value":"introduce programming",
                         "children":null
                     }
                 ]
@@ -196,7 +196,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". The ease of learning Python does come at a price.  Very few master the Python language since they feel there is no need to",
+                "value":". The ease of learning Python does come at a price.  Very few master the language since they feel there is no need to",
                 "children":null
             },
             {
@@ -208,7 +208,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The goal of dissecting Python this fall is to truly understand everything the core language has to offer.  One language feature I never fully appreciation was Python’s data model. ",
+                "value":".  The goal of dissecting Python this fall is to truly understand everything the core language has to offer.  To begin, I will explore Python’s data model. ",
                 "children":null
             }
         ]
@@ -303,7 +303,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Some of a MOP’s functions include type introspection and reflection of objects at runtime.  This means you can observe and modify aspects of an object or program at runtime through a MOP.  A MOP also is used for method dispatch, sometimes as an internal function and other times exposed in the protocols API.  Languages often expose methods from the MOP to be used in class definitions. ",
+                "value":".  Functions of a MOP include type introspection and reflection of objects at runtime.  This means you can observe and modify aspects of an object or program at runtime through the MOP.  A MOP is also used for method dispatch, sometimes as an internal function and other times exposed in the protocols API.  Languages often expose MOP methods for use in class definitions. ",
                 "children":null
             }
         ]
@@ -368,7 +368,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I’ve used special methods in Python before, but never learned that they were part of the python data model (which is also the MOP).  I decided to test out some special models in two classes. ",
+                "value":" I used Python's special methods in the past, but never knew they were part of the Python data model (aka the MOP).  I decided to test out some special methods in two classes. ",
                 "children":null
             }
         ]
@@ -606,7 +606,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" An important note is that none of the special methods I defined are invoked directly.  All of them are indirectly invoked through language operators or built-in functions.  For example, the ",
+                "value":" Its important to note that none of the special methods I defined are invoked directly.  All of them are indirectly invoked through language operators or built-in functions.  For example, the ",
                 "children":null
             },
             {
@@ -647,7 +647,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The Python data model enables a standard API applicable across all objects",
+                "value":" The Python data model creates a standard API across all objects",
                 "children":null
             },
             {
@@ -673,7 +673,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" can use the languages indexing syntax.  To get the length of any object in Python developers know they need to use the built-in ",
+                "value":" can use the languages indexing syntax.  To get the length of any object in Python, developers know they need to use the built-in ",
                 "children":null
             },
             {
@@ -687,7 +687,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function.  This is a vast improvement over Java, where arrays use the ",
+                "value":" function.  This is a vast improvement over Java, where arrays use a ",
                 "children":null
             },
             {
@@ -743,7 +743,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" method.  I had to search through the Java documentation just to make sure I correctly remembered the methods for finding length (and Java is the language I’ve used the most!). ",
+                "value":" method.  I had to search through the Java documentation just to make sure I correctly remembered all these methods (and Java is the language I’ve used the most!). ",
                 "children":null
             }
         ]
@@ -762,7 +762,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2018/09-Sep/\n9-27-python-data-model"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2018/09-Sep/\n9-24-python-data-model"
                 },
                 "value":null,
                 "children":[
@@ -812,8 +812,7 @@ db.posts.insertOne({
     name: postName,
     title: "Python's Data Model",
     description: `The goal of dissecting Python this fall is to truly understand everything the 
-        core language has to offer.  One language feature I never fully appreciation was Python’s 
-        data model.`,
+        core language has to offer.  To begin, I will explore Python’s data model.`,
     date: new Date('2018-09-24T12:00:00'),
     type: "Discovery",
     views: postViews,
