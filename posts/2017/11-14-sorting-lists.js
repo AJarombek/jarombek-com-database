@@ -93,8 +93,10 @@ content = [
         ]
     },
     {
-        "el":"h5",
-        "attributes":null,
+        "el":"sectiontitle",
+        "attributes":{
+            "title":"Java"
+        },
         "value":null,
         "children":[
             {
@@ -155,8 +157,10 @@ content = [
         ]
     },
     {
-        "el":"h5",
-        "attributes":null,
+        "el":"sectiontitle",
+        "attributes":{
+            "title":"JavaScript"
+        },
         "value":null,
         "children":[
             {
@@ -258,8 +262,10 @@ content = [
         ]
     },
     {
-        "el":"h5",
-        "attributes":null,
+        "el":"sectiontitle",
+        "attributes":{
+            "title":"Swift"
+        },
         "value":null,
         "children":[
             {
@@ -448,8 +454,10 @@ content = [
         ]
     },
     {
-        "el":"h5",
-        "attributes":null,
+        "el":"sectiontitle",
+        "attributes":{
+            "title":"PHP"
+        },
         "value":null,
         "children":[
             {
@@ -538,8 +546,10 @@ content = [
         ]
     },
     {
-        "el":"h5",
-        "attributes":null,
+        "el":"sectiontitle",
+        "attributes":{
+            "title":"Python"
+        },
         "value":null,
         "children":[
             {
@@ -586,8 +596,10 @@ content = [
         ]
     },
     {
-        "el":"h5",
-        "attributes":null,
+        "el":"sectiontitle",
+        "attributes":{
+            "title":"C"
+        },
         "value":null,
         "children":[
             {

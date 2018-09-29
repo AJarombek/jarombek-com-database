@@ -279,8 +279,10 @@ content = [
         ]
     },
     {
-        "el":"h5",
-        "attributes":null,
+        "el":"sectiontitle",
+        "attributes":{
+            "title":"Prototype Structure"
+        },
         "value":null,
         "children":[
             {
@@ -410,8 +412,10 @@ content = [
         ]
     },
     {
-        "el":"h5",
-        "attributes":null,
+        "el":"sectiontitle",
+        "attributes":{
+            "title":"Using Mongoose"
+        },
         "value":null,
         "children":[
             {
@@ -636,8 +640,10 @@ content = [
         "children":null
     },
     {
-        "el":"h5",
-        "attributes":null,
+        "el":"sectiontitle",
+        "attributes":{
+            "title":"Switching to Promises"
+        },
         "value":null,
         "children":[
             {
@@ -731,8 +737,10 @@ content = [
         "children":null
     },
     {
-        "el":"h5",
-        "attributes":null,
+        "el":"sectiontitle",
+        "attributes":{
+            "title":"Using EJS to Return XML"
+        },
         "value":null,
         "children":[
             {
@@ -922,8 +930,10 @@ content = [
         ]
     },
     {
-        "el":"h5",
-        "attributes":null,
+        "el":"sectiontitle",
+        "attributes":{
+            "title":"Text Search"
+        },
         "value":null,
         "children":[
             {
@@ -1149,8 +1159,10 @@ content = [
         ]
     },
     {
-        "el":"h5",
-        "attributes":null,
+        "el":"sectiontitle",
+        "attributes":{
+            "title":"Basic Auth"
+        },
         "value":null,
         "children":[
             {
@@ -1234,8 +1246,10 @@ content = [
         "children":null
     },
     {
-        "el":"h5",
-        "attributes":null,
+        "el":"sectiontitle",
+        "attributes":{
+            "title":"Gulp"
+        },
         "value":null,
         "children":[
             {
@@ -1314,8 +1328,10 @@ content = [
         ]
     },
     {
-        "el":"h5",
-        "attributes":null,
+        "el":"sectiontitle",
+        "attributes":{
+            "title":"Conclusions"
+        },
         "value":null,
         "children":[
             {
