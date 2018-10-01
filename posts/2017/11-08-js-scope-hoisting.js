@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" JavaScript has quickly become one of the languages that I use the most (probably second behind Java). Many people use JavaScript along with one of its many frontend frameworks (JQuery, AngularJS, etc.) without really knowing how the core language operates.  I don’t want to be one of those people! ",
+                "value":" JavaScript has quickly become one of the languages I use the most (probably second behind Java). Many people use JavaScript along with one of its many frontend frameworks (JQuery, AngularJS, etc.) without really knowing how the core language operates.  I don't want to be one of those people! ",
                 "children":null
             }
         ]
@@ -29,7 +29,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This will be the first of many discovery posts on JavaScript.  Let’s look at one of the basic concepts of the language: how variables interact with scope.  By scope I mean the area of a program you can access a variable (e.g. a variable declared in a function can only be accessed within that function). You can also think of scope as the execution environment for a line in a program.  The scope is all the other variables and functions this program line is aware of.  In JavaScript scope can get a bit tricky. ",
+                "value":" This is my first of many discovery posts on JavaScript.  Let's look at one of the basic concepts of the language: how variables interact with scope.  Scope describes the area of a program where a variable is accessible (e.g. a variable declared in a function is only accessible within that function). Scope is also the execution environment for each line of a program.  It consists of the variables and functions a program line is aware of.  In JavaScript, scope can get a bit tricky. ",
                 "children":null
             }
         ]
@@ -45,7 +45,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" JavaScript has quickly become one of the languages that I use the most (probably second behind Java). Many people use JavaScript along with one of its many frontend frameworks (JQuery, AngularJS, etc.) without really knowing how the core language operates.  I don’t want to be one of those people! ",
+                "value":" JavaScript has quickly become one of the languages I use the most (probably second behind Java). Many people use JavaScript along with one of its many frontend frameworks (JQuery, AngularJS, etc.) without really knowing how the core language operates.  I don't want to be one of those people! ",
                 "children":null
             }
         ]
@@ -58,7 +58,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This will be the first of many discovery posts on JavaScript.  Let’s look at one of the basic concepts of the language: how variables interact with scope.  By scope I mean the area of a program you can access a variable (e.g. a variable declared in a function can only be accessed within that function). You can also think of scope as the execution environment for a line in a program.  The scope is all the other variables and functions this program line is aware of.  In JavaScript scope can get a bit tricky. ",
+                "value":" This is my first of many discovery posts on JavaScript.  Let's look at one of the basic concepts of the language: how variables interact with scope.  Scope describes the area of a program where a variable is accessible (e.g. a variable declared in a function is only accessible within that function). Scope is also the execution environment for each line of a program.  It consists of the variables and functions a program line is aware of.  In JavaScript, scope can get a bit tricky. ",
                 "children":null
             }
         ]
@@ -71,7 +71,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One tricky part is that declared variables in JavaScript get hoisted to the top of their scope.  Let’s look at a quick code snippet. ",
+                "value":" One tricky part is that declared variables in JavaScript get hoisted to the top of their scope.  Let's look at a quick code snippet. ",
                 "children":null
             }
         ]
@@ -92,7 +92,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" For a Java developer like myself when first starting JavaScript I expected an error.  Variable x hasn’t been declared yet!  However, JavaScript returns ",
+                "value":" For a Java developer like myself, I initially expected an error here.  Variable ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"x",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" hasn't been declared yet on line 1.  However, JavaScript returns ",
                 "children":null
             },
             {
@@ -106,7 +120,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", which means the variable has been declared but not initialized a variable. ",
+                "value":", which means the variable was declared but not initialized to a value. ",
                 "children":null
             }
         ]
@@ -119,7 +133,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" What’s happening is JavaScript splits the statement ",
+                "value":" What happened is JavaScript split the statement ",
                 "children":null
             },
             {
@@ -133,7 +147,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" into its declaration and assignment.  It then ‘hoists’ the declaration to the top of the scope (in this case the global program scope).  Before the call to ",
+                "value":" into its declaration and assignment.  It then ‘hoisted' the declaration to the top of the scope (in this case the global program scope).  When ",
                 "children":null
             },
             {
@@ -147,7 +161,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" there is a line created that contains",
+                "value":" is invoked, JavaScript is already aware of ",
                 "children":null
             },
             {
@@ -155,7 +169,7 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"var x;",
+                "value":"var x",
                 "children":null
             },
             {
@@ -174,7 +188,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now if you are using ES6+ and don’t want hoisting you can use the ",
+                "value":" If you are using ES6+ and don't want hoisting, you can use the ",
                 "children":null
             },
             {
@@ -188,7 +202,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" keyword (replace ",
+                "value":" keyword (simply replace ",
                 "children":null
             },
             {
@@ -216,7 +230,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" in the previous example).  Now if you run the code the ",
+                "value":" in the previous example).  Now if you run the code again, invoking ",
                 "children":null
             },
             {
@@ -230,7 +244,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" call will throw an error. ",
+                "value":" will throw an error. ",
                 "children":null
             }
         ]
@@ -264,7 +278,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In JavaScript you can define a scope with the ",
+                "value":" In JavaScript you can define a block scope with curly bracket syntax - ",
                 "children":null
             },
             {
@@ -278,7 +292,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" block. You can see that the ",
+                "value":". In this code, the variable defined with ",
                 "children":null
             },
             {
@@ -292,7 +306,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" statement is only available within the block scope while the variable defined with ",
+                "value":" is only available within the block scope, while the variable defined with ",
                 "children":null
             },
             {
@@ -318,20 +332,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This can be useful when you want to constrain a variable to one small piece of code. ",
-                "children":null
-            }
-        ]
-    },
-    {
-        "el":"p",
-        "attributes":null,
-        "value":null,
-        "children":[
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" One thing that the ",
+                "value":".  ",
                 "children":null
             },
             {
@@ -339,13 +340,13 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"{ }",
+                "value":"let",
                 "children":null
             },
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" block behavior made me question was ‘are variables defined in functions available globally?’  The answer is NO (thankfully) so your internally defined function variables are local and safe. ",
+                "value":" is useful when you want to constrain a variable to one small piece of code. ",
                 "children":null
             }
         ]
@@ -358,7 +359,34 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can check out the code for these examples ",
+                "value":" One thing that JavaScript block scope made me question was 'are variables defined with ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"var",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" in functions available globally?'  The answer is NO (thankfully) so your internally defined function variables are local and safe! ",
+                "children":null
+            }
+        ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" You can check out the full code for these examples on ",
                 "children":null
             },
             {
@@ -371,7 +399,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"HERE",
+                        "value":"GitHub",
                         "children":null
                     }
                 ]
@@ -379,7 +407,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" along with a look at how variables in for loops leak into the global scope in JavaScript (Yuck! – but there is a solution with ",
+                "value":", along with a look at how variables in ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"for",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" loops leak into the global scope (Yuck! – but there is a solution with ",
                 "children":null
             },
             {

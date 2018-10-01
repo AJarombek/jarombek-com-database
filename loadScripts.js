@@ -81,3 +81,5 @@ load('./posts/2018/09-14-groovy-dynamic.js');
 load('./posts/2018/09-20-intro-programming.js');
 load('./posts/2018/09-21-jenkins.js');
 load('./posts/2018/09-24-python-data-model.js');
+
+load('./posts/2018/10-04-python-data-structures.js');

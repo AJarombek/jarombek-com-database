@@ -305,7 +305,49 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Functions of a MOP include type introspection and reflection of objects at runtime.  This means you can observe and modify aspects of an object or program at runtime through the MOP.  A MOP is also used for method dispatch, sometimes as an internal function and other times exposed in the protocols API.  Languages often expose MOP methods for use in class definitions. ",
+                "value":".  Functions of a MOP include ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/jul-1-2018-java-reflection#type-introspection"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"type introspection",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" and ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/jul-1-2018-java-reflection#reflection"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"reflection",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" of objects at runtime.  This means you can observe and modify aspects of an object or program at runtime through the MOP.  A MOP is also used for method dispatch, sometimes as an internal function and other times exposed in the protocols API.  Languages often expose MOP methods for use in class definitions. ",
                 "children":null
             }
         ]

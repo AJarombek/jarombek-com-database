@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In my last discovery I went over the ",
+                "value":" In my last discovery post, I went over the ",
                 "children":null
             },
             {
@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now I will recreate the same API with ES6 modules.  The API code will look familiar: ",
+                "value":" Now I am recreating the same API with ES6 modules.  The API code will look familiar: ",
                 "children":null
             }
         ]
@@ -50,7 +50,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The only difference with our API is the ",
+                "value":" The only change to the API is the ",
                 "children":null
             },
             {
@@ -64,7 +64,49 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" keyword. This new keyword in ES6 will reveal the function to other JavaScript code that imports this module.  Each JavaScript file can be a module if it exports functions/variables, but there can’t be more than one module in a file.  You can however have multiple exports.  Since one file is one and only one module, the name of the module is the filename. Now let’s check out the module import code: ",
+                "value":" keyword. ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"export",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" is a new keyword in ES6 that reveals the function ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"lyrics",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" to other JavaScript code.  Each JavaScript file can be a module if it exports functions/variables, and there can only be one module in a file.  A module can have multiple items exported.  Since one file is one and only one module, the name of a module is the filename. Code to import a module uses the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"import",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" keyword: ",
                 "children":null
             }
         ]
@@ -80,7 +122,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In my last discovery I went over the ",
+                "value":" In my last discovery post, I went over the ",
                 "children":null
             },
             {
@@ -101,7 +143,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now I will recreate the same API with ES6 modules.  The API code will look familiar: ",
+                "value":" Now I am recreating the same API with ES6 modules.  The API code will look familiar: ",
                 "children":null
             }
         ]
@@ -122,7 +164,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The only difference with our API is the ",
+                "value":" The only change to the API is the ",
                 "children":null
             },
             {
@@ -136,7 +178,49 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" keyword. This new keyword in ES6 will reveal the function to other JavaScript code that imports this module.  Each JavaScript file can be a module if it exports functions/variables, but there can’t be more than one module in a file.  You can however have multiple exports.  Since one file is one and only one module, the name of the module is the filename. Now let’s check out the module import code: ",
+                "value":" keyword. ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"export",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" is a new keyword in ES6 that reveals the function ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"lyrics",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" to other JavaScript code.  Each JavaScript file can be a module if it exports functions/variables, and there can only be one module in a file.  A module can have multiple items exported.  Since one file is one and only one module, the name of a module is the filename. Code to import a module uses the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"import",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" keyword: ",
                 "children":null
             }
         ]
@@ -157,21 +241,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Here we ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "class":"jarombek-inline-code"
-                },
-                "value":"import *",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" (all variables/functions in the module) from the ",
+                "value":" All variables/functions in the ",
                 "children":null
             },
             {
@@ -185,7 +255,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" module and give it the alias ",
+                "value":" module are imported with the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"import *",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" syntax. The imported module is then given the alias ",
                 "children":null
             },
             {
@@ -199,7 +283,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". We can then call the ",
+                "value":". With the Taylor Swift API imported, I invoked the ",
                 "children":null
             },
             {
@@ -207,7 +291,7 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"ts.lyrics()",
+                "value":"lyrics()",
                 "children":null
             },
             {
@@ -223,7 +307,7 @@ content = [
         "attributes":{
             "language":"JavaScript"
         },
-        "value":"console.info(ts.lyrics(\"Sparks Fly\"));\n",
+        "value":"ts.lyrics(\"Sparks Fly\");\n",
         "children":null
     },
     {
@@ -234,7 +318,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If you tried running this code in many environments it would fail.  Many JavaScript engines are not ES6 compliant (including my version of Node.js!).  Therefore when I try to run my main.js file (containing the input code) I get an error: ",
+                "value":" If you tried running this code in certain environments it would fail.  Many JavaScript engines are not ES6 compliant (including my version of Node.js!).  Therefore, when I try to run my main.js file (containing the input code) I get an error: ",
                 "children":null
             }
         ]
@@ -255,7 +339,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Okay so that didn’t work.  We can however get this code to work by jumping through some hoops. The tool to get the job done is Babel, and it is a JavaScript transpiler. ",
+                "value":" Okay, so that didn't work.  I eventually got this code to work by jumping through some hoops. The tool to get the job done was Babel, which is a JavaScript transpiler. ",
                 "children":null
             }
         ]
@@ -268,7 +352,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The way we are going to get our ES6 code to work in all environments is by converting the code to its ES5 equivalent (or as close as possible).  This would be quite the task to do manually for all our code, so we let Babel do the work for us.  Transpile is a combination of the words translate and compile.  So Babel (the compiler) converts (translates) our ES6 code to ES5. ",
+                "value":" The way to get ES6 code to work in all environments is by converting it to an ES5 equivalent (or as close as possible).  This is quite the task to do manually, so instead Babel does the work for us.  As I mentioned, Babel is a transpiler.  Transpile is a combination of the words translate and compile.  So Babel (a compiler) converts (translates) ES6 code to ES5. ",
                 "children":null
             }
         ]
@@ -281,7 +365,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Let’s get to work.  Since I’m using Node.js I need to set up my dependency manager and install Babel",
+                "value":" Let’s set up Babel.  Since I’m using Node.js I set up a dependency manager and installed Babel",
                 "children":null
             },
             {
@@ -314,7 +398,35 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I then need to configure Babel by creating a .babelrc file.  In this JSON file I set “presets” to “env” which lets Babel automatically determine the Babel plugins I need to perform the transpiling based on my environment",
+                "value":" I then configured Babel by creating a .babelrc file.  In this JSON file I set ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"presets",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" to ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"\"env\"",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":", which helps Babel determine the Babel plugins I need to perform a transpilation based on my environment",
                 "children":null
             },
             {
@@ -347,7 +459,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now when I got to this point I thought “great I’m done! Let’s run the code!”  Unfortunately I forgot to actually tell Babel which files to convert to ES5.  One way to do this is like so: ",
+                "value":" Now when I got to this point I thought \"great I’m done! Let’s run the code!\"  Unfortunately, I forgot to actually tell Babel which files to convert to ES5.  One way to do this is like so: ",
                 "children":null
             }
         ]
@@ -368,7 +480,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I am telling Babel to take main.js and transpile it to a file of the same name in a folder called es5 (note: ",
+                "value":" This command tells Babel to take main.js and transpile it to a file of the same name in a folder named es5 (note: ",
                 "children":null
             },
             {
@@ -409,7 +521,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" There is however a better way of doing this.  You can actually ask Babel to watch your ES6 files for changes. When a change is made, the code is automatically transpiled to the output file. ",
+                "value":" There is however a better way of doing this.  Babel has the ability to watch ES6 files for changes. When a change is made, ES6 code is automatically transpiled to an output file. ",
                 "children":null
             }
         ]
@@ -430,7 +542,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can see I added the ampersand to the end of these commands to place these tasks in the background. This is so the bash shell will not be blocked and I can continue to execute commands in one window.  You can kill these background tasks at any time with their job number",
+                "value":" I added the ampersand to the end of these commands to place them in the background. This is so the bash shell is not blocked and I can continue to execute commands in one window. Background tasks can be killed at any time with their job number",
                 "children":null
             },
             {
@@ -463,7 +575,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now we finally did it! ",
+                "value":" Now Babel is all set and the files are transpiled! ",
                 "children":null
             }
         ]
@@ -484,7 +596,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If we look at the transpiled ES5 code you can see that Babel is using CommonJS for the modules.  This is the library that Node.js uses for modules in pre-ES6 code. ",
+                "value":" Looking at the transpiled ES5 code reveals that Babel is using CommonJS for the ES6 modules.  This is the library that Node.js uses for modules in pre-ES6 code. ",
                 "children":null
             }
         ]
@@ -505,7 +617,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Whew that was a lot of work to just see some sparks fly using ES6!  Obviously it is not practical to transpile ES6 code for such a small codebase, but for larger projects you don’t want to be held back from newer JavaScript versions because of the environment you are using.  I will be using Babel for many projects in the future.  You can find all the code in this demo ",
+                "value":" That was a lot of work to just see some sparks fly using ES6!  Obviously it is not practical to transpile ES6 code for such a small codebase, but for larger projects we want to use ES6+ JavaScript features because no matter the environment.  I'll be using Babel for many projects in the future.  You can find all the code in this demo on ",
                 "children":null
             },
             {
@@ -518,7 +630,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"HERE",
+                        "value":"GitHub",
                         "children":null
                     }
                 ]

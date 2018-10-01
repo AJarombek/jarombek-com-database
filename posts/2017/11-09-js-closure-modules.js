@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In JavaScript there are many module patterns that can be used to create APIs and separate concerns in code (as of ES6 there is actually syntax for modules in the spec). In the following code I created an API using the revealing module pattern.  The name comes from the return statement at the end of the module - it 'reveals' functions to outside code. ",
+                "value":" In JavaScript there are multiple module patterns for creating APIs and separating concerns in code (as of ES6 there is also official module syntax in the spec). In the following code I created an API using the revealing module pattern.  The name 'revealing module pattern' comes from the return statement at the end of the module - it 'reveals' functions to outside code. ",
                 "children":null
             }
         ]
@@ -29,7 +29,21 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This module shows Taylor Swift lyrics for songs that the user enters (because who doesn’t enjoy some T-Swift!)  The return statement is the public API revealed to outside code.  All interior details, such as the ",
+                "value":" This module provides lyrics for Taylor Swift songs (because who doesn't enjoy some T-Swift!)  The ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"return",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" statement is the public API for the module.  All interior details, such as the ",
                 "children":null
             },
             {
@@ -59,7 +73,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In JavaScript there are many module patterns that can be used to create APIs and separate concerns in code (as of ES6 there is actually syntax for modules in the spec). In the following code I created an API using the revealing module pattern.  The name comes from the return statement at the end of the module - it 'reveals' functions to outside code. ",
+                "value":" In JavaScript there are multiple module patterns for creating APIs and separating concerns in code (as of ES6 there is also official module syntax in the spec). In the following code I created an API using the revealing module pattern.  The name 'revealing module pattern' comes from the return statement at the end of the module - it 'reveals' functions to outside code. ",
                 "children":null
             }
         ]
@@ -69,7 +83,7 @@ content = [
         "attributes":{
             "language":"JavaScript"
         },
-        "value":"var taylorSwiftApi = function() {\n    var lyric = {\n        sparks: \"I see sparks fly whenever you smile\",\n        mine: \"You are the best thing thats ever been mine\",\n        dec: \"I go back to Decemeber all the time\",\n        other: \"I'm sorry, taylor can't pick up the phone right now\"\n    }\n\n    function lyrics(song) {\n        switch(song.toLowerCase()) {\n            case \"sparks fly\":\n            return lyric.sparks;\n            case \"mine\":\n            return lyric.mine;\n            case \"back to december\":\n            return lyric.dec;\n            default:\n            return lyric.other;\n        }\n    }\n\n    return {\n        lyrics: lyrics\n    }\n}();\n",
+        "value":"var taylorSwiftApi = function() {\n    var lyric = {\n        sparks: \"I see sparks fly whenever you smile\",\n        mine: \"You are the best thing that's ever been mine\",\n        dec: \"I go back to December all the time\",\n        other: \"I'm sorry, taylor can't pick up the phone right now\"\n    }\n\n    function lyrics(song) {\n        switch(song.toLowerCase()) {\n            case \"sparks fly\":\n                return lyric.sparks;\n            case \"mine\":\n                return lyric.mine;\n            case \"back to december\":\n                return lyric.dec;\n            default:\n                return lyric.other;\n        }\n    }\n\n    return {\n        lyrics: lyrics\n    }\n}();\n",
         "children":null
     },
     {
@@ -80,7 +94,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This module shows Taylor Swift lyrics for songs that the user enters (because who doesn’t enjoy some T-Swift!)  The return statement is the public API revealed to outside code.  All interior details, such as the ",
+                "value":" This module provides lyrics for Taylor Swift songs (because who doesn't enjoy some T-Swift!)  The ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"return",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" statement is the public API for the module.  All interior details, such as the ",
                 "children":null
             },
             {
@@ -107,7 +135,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Closure has been defined as “when a function is able to remember and access its lexical scope even when that function is executing outside its lexical scope",
+                "value":" Closure is defined \"when a function is able to remember and access its lexical scope even when that function is executing outside its lexical scope",
                 "children":null
             },
             {
@@ -119,7 +147,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".” ",
+                "value":".\" ",
                 "children":null
             }
         ]
@@ -132,7 +160,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Okay cool, so even when we call ",
+                "value":" Okay cool, so when ",
                 "children":null
             },
             {
@@ -146,7 +174,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" later in the code it will be aware of the interior ",
+                "value":" is invoked later on, it will remember the modules interior ",
                 "children":null
             },
             {
@@ -160,7 +188,22 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" variable! But what is this 'lexical scope' I see in the definition? ",
+                "value":" variable! But what is this 'lexical scope' the definition refers to? ",
+                "children":null
+            }
+        ]
+    },
+    {
+        "el":"definition",
+        "attributes":{
+            "word":"Lexical Scope"
+        },
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Lexical scope is when the physical structure of a program determines the scope.  Because of this, the scope in which you define a function is always that functions scope.  The lexical scope attached to a function can never change. ",
                 "children":null
             }
         ]
@@ -173,20 +216,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Lexical scope is when the physical structure of the program you write determines the scope.  Because of this the scope in which you define a function in JavaScript will always be that functions scope.  This scope is immutable and can’t be changed. ",
-                "children":null
-            }
-        ]
-    },
-    {
-        "el":"p",
-        "attributes":null,
-        "value":null,
-        "children":[
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" Maybe lexical scope and closure will be easier to understand with an example of us calling the Taylor Swift API: ",
+                "value":" Maybe lexical scope and closure will be easier to understand with an example using the Taylor Swift API: ",
                 "children":null
             }
         ]
@@ -207,7 +237,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can see that in the global scope we define another variable named lyric with a different (and as Swift fans know – incorrect) value.  The question is when we call ",
+                "value":" In the global scope I defined a second ",
                 "children":null
             },
             {
@@ -215,13 +245,13 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"taylorSwiftApi.lyrics()",
+                "value":"lyric",
                 "children":null
             },
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" which ",
+                "value":" variable with a different (and as T-Swift fans know – incorrect) value.  The question now is which ",
                 "children":null
             },
             {
@@ -235,21 +265,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" variable will the API find?  In this case it will be the one defined in ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "class":"jarombek-inline-code"
-                },
-                "value":"taylorSwiftApi",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" because of a closure that was created over the lexical scope of the API.  The function ",
+                "value":" variable will the API find when invoking ",
                 "children":null
             },
             {
@@ -263,7 +279,35 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" was defined in the API functions lexical scope, so that scope can’t change! ",
+                "value":"?  In this case, it will be the one defined in the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"taylorSwiftApi",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" module.  This is because of a closure that was created over the lexical scope of the API. ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"taylorSwiftApi.lyrics()",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" was defined in the API's lexical scope, so that scope can’t change! ",
                 "children":null
             }
         ]
@@ -276,7 +320,28 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" As I briefly mentioned in the beginning of this discovery there is support for modules in the JavaScript spec as of ES6.  I will look at this Taylor Swift API using these modules in the future.  You can find all the code for this discovery ",
+                "value":" As I mentioned in the beginning of this discovery, there is support for modules in the JavaScript spec as of ES6.  I will expand on the Taylor Swift API using ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/nov-10-2017-es6-modules-babel"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"ES6 modules",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" in the future.  You can find all the code from this article on ",
                 "children":null
             },
             {
@@ -289,7 +354,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"HERE",
+                        "value":"GitHub",
                         "children":null
                     }
                 ]
@@ -310,7 +375,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" A final note: there is another type of scoping called dynamic scope.  This is used in shell scripts such as Bash and PowerShell.  In these scripting languages the scope is determined by the executing programs location on the call stack",
+                "value":" A final note: there is another type of scoping called dynamic scope.  This is used in shell scripts such as Bash and PowerShell.  In these scripting languages, the scope is determined by the executing programs location on the call stack",
                 "children":null
             },
             {
