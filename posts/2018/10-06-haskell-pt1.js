@@ -85,7 +85,7 @@ preview = [
         ]
     },
     {
-        "el":"sectiontitle",
+        "el":"h5",
         "attributes":{
             "title":"Guarded Equations"
         },
@@ -201,7 +201,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Often when writing a programming with branching outcomes, a conditional expression is used.  Haskell also supports ",
+                "value":" Often when writing a program with branching outcomes, a conditional expression is used.  Haskell also supports ",
                 "children":null
             },
             {
@@ -313,7 +313,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Guarded equations follow a more mathematical design, with the ",
+                "value":" Guarded equations follow a more mathematical design, using a ",
                 "children":null
             },
             {
@@ -327,7 +327,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" syntax read as \"Such that condition, an outcome",
+                "value":" syntax which is read \"Such that a condition is met, return an outcome",
                 "children":null
             },
             {
@@ -339,7 +339,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".\"  Guarded equations are easily translated to a mathematical equation",
+                "value":".\"  Guarded equations are easily translated into mathematical equations",
                 "children":null
             },
             {
@@ -372,7 +372,9 @@ content = [
     },
     {
         "el":"mathnotation",
-        "attributes":null,
+        "attributes":{
+            "tex":`older'(x) = \\begin{cases} 1 & x > 23 \\\\ 0 & x = 23 \\\\ -1 & otherwise \\end{cases}`
+        },
         "value":null,
         "children":[
 
@@ -386,7 +388,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" For a more advanced example of a guarded equation, the following function returns a sub-list from a list. ",
+                "value":" The following function demonstrates a more advanced example of guarded equations.  It returns a sub-list from a list using recursion and the cons operator (",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":":",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":"), which constructs a list. ",
                 "children":null
             }
         ]
@@ -422,7 +438,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I use lambda functions (also known as arrow functions in some languages) all the time in my code. In many languages lambda functions are tacked on features, but in Haskell they are an integral part of the language.  The following two functions demonstrate lambda expressions in Haskell. ",
+                "value":" I use lambda functions (also known as arrow functions in some languages) all the time in my code. In many languages, lambda functions are tacked on features, but in Haskell they are an integral part of the language.  The following two functions demonstrate lambda expressions in Haskell. ",
                 "children":null
             }
         ]
@@ -432,7 +448,7 @@ content = [
         "attributes":{
             "language":"Haskell"
         },
-        "value":"{-|\n  Multiply two numbers together.  Curried functions are easier to understand\n  when a lambda function syntax is used.\n-}\nmult :: Int -> (Int -> Int)\nmult = \\x -> (\\y -> x * y)\n\n{-|\n  An age function which returns a constant value of my age can be written to utilize lambda functions.\n-}\nage' :: a -> Int\nage' = \\_ -> 23\n",
+        "value":"{-|\n  Multiply two numbers together.  Curried functions are easier to understand\n  when the lambda function syntax is used.\n-}\nmult :: Int -> (Int -> Int)\nmult = \\x -> (\\y -> x * y)\n\n{-|\n  An age function which returns a constant value of my age.  Written to utilize lambda functions.\n-}\nage' :: a -> Int\nage' = \\_ -> 23\n",
         "children":null
     },
     {
@@ -443,7 +459,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If you are curious about curried functions, I devoted an entire article to them and have a sub-section that applies strictly to ",
+                "value":" If you are curious about curried functions, I devoted an entire article to them with a sub-section applying strictly to ",
                 "children":null
             },
             {
@@ -529,7 +545,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The following function uses a list comprehension to square all the items in a list and then calculates the sum of the new list. ",
+                "value":".  The following function uses a list comprehension to square all items in a list and then calculate the sum of the new list. ",
                 "children":null
             }
         ]
@@ -564,7 +580,49 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is read as \"item x drawn from list xs such that x^2\".  When ",
+                "value":" is read as \"item ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"x",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" drawn from list ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"xs",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" such that ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"x^2",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":"\". When ",
                 "children":null
             },
             {
@@ -592,7 +650,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Then the sum of the list is calculated, which is ",
+                "value":" first.  Then the sum of the list is calculated, which is ",
                 "children":null
             },
             {
@@ -626,7 +684,9 @@ content = [
     },
     {
         "el":"mathnotation",
-        "attributes":null,
+        "attributes":{
+            "tex":`\\{x^2 \\: | \\: x \\in xs\\}`
+        },
         "value":null,
         "children":[
 
@@ -661,7 +721,9 @@ content = [
     },
     {
         "el":"mathnotation",
-        "attributes":null,
+        "attributes":{
+            "tex":`\\{(x', y') \\: | \\: x' \\in \\{0..x\\}, \\: y' \\in \\{0..y\\}\\}`
+        },
         "value":null,
         "children":[
 
@@ -675,7 +737,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The last two list comprehensions shown mapped each item in a list to a new value.  List comprehensions can also use filters to only operate on and return certain items from a list.  A list comprehension filter is called a guard, and is placed in a list comprehension following a comma after the source list. ",
+                "value":" These list comprehensions mapped each item in a list to a new value.  List comprehensions can also use filters to only operate on and return certain items from a list.  A list comprehension filter is called a guard, and is placed in a list comprehension following the source list and a comma. ",
                 "children":null
             }
         ]
@@ -691,16 +753,8 @@ content = [
     {
         "el":"codesnippet",
         "attributes":null,
-        "value":"> vowels \"Andy Jarombek\"\n\"Aaoe\"\n> vowels \"Greenwich,CT\"\n\"eei\"\n",
+        "value":"> square 1\n[(0,0),(0,1),(1,0),(1,1)]\n> square 2\n[(0,0),(0,1),(0,2),(1,0),(1,2),(2,0),(2,1),(2,2)]\n\n> vowels \"Andy Jarombek\"\n\"Aaoe\"\n> vowels \"Greenwich,CT\"\n\"eei\"\n",
         "children":null
-    },
-    {
-        "el":"mathnotation",
-        "attributes":null,
-        "value":null,
-        "children":[
-
-        ]
     },
     {
         "el":"sectiontitle",
@@ -725,7 +779,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Haskell is a challenging language to get accustomed to, but I am really enjoying it.  I am also learning about many new functional programming concepts and how they closely relate to mathematical concepts.  All the code from this discovery and more is on ",
+                "value":" Haskell is a challenging language to get accustomed to, but I am really enjoying it.  I'm also learning many new functional programming concepts and how they closely relate to mathematical concepts.  All the Haskell code from this discovery and more is on ",
                 "children":null
             },
             {

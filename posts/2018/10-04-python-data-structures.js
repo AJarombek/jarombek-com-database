@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In my time researching ",
+                "value":" In my time spent researching ",
                 "children":null
             },
             {
@@ -37,13 +37,13 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" this past week I’ve stumbled across some really interesting data structures.  Python has a vast standard library, with many data structures that specialize in certain tasks.  It reminds me of Java’s standard library, except that Python data structures either have their own literal syntax or a built-in function for construction!  This discovery post looks at three data structures that I found especially interesting. ",
+                "value":" this week I stumbled across some really interesting data structures.  Python has a vast standard library, with many data structures that specialize in certain tasks.  It reminds me of Java’s standard library, except that Python data structures either have their own literal syntax or a built-in function for construction!  This discovery post looks at three data structures that I found especially interesting. ",
                 "children":null
             }
         ]
     },
     {
-        "el":"sectiontitle",
+        "el":"h5",
         "attributes":{
             "title":"Tuples"
         },
@@ -65,7 +65,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Tuples are a very commonly used data structure in Python.  They hold immutable records, and are often used as an immutable list.  One thing I didn't realize about tuples is that they support 'tuple unpacking' - which spreads the contents of a tuple across multiple variables. ",
+                "value":" Tuples are a commonly used data structure in Python.  They hold immutable records, and are often used as immutable lists.  One thing I didn't know is that tuples support 'tuple unpacking', which spreads their contents across multiple variables. ",
                 "children":null
             }
         ]
@@ -81,7 +81,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In my time researching ",
+                "value":" In my time spent researching ",
                 "children":null
             },
             {
@@ -102,7 +102,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" this past week I’ve stumbled across some really interesting data structures.  Python has a vast standard library, with many data structures that specialize in certain tasks.  It reminds me of Java’s standard library, except that Python data structures either have their own literal syntax or a built-in function for construction!  This discovery post looks at three data structures that I found especially interesting. ",
+                "value":" this week I stumbled across some really interesting data structures.  Python has a vast standard library, with many data structures that specialize in certain tasks.  It reminds me of Java’s standard library, except that Python data structures either have their own literal syntax or a built-in function for construction!  This discovery post looks at three data structures that I found especially interesting. ",
                 "children":null
             }
         ]
@@ -130,7 +130,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Tuples are a very commonly used data structure in Python.  They hold immutable records, and are often used as an immutable list.  One thing I didn't realize about tuples is that they support 'tuple unpacking' - which spreads the contents of a tuple across multiple variables. ",
+                "value":" Tuples are a commonly used data structure in Python.  They hold immutable records, and are often used as immutable lists.  One thing I didn't know is that tuples support 'tuple unpacking', which spreads their contents across multiple variables. ",
                 "children":null
             }
         ]
@@ -199,7 +199,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":") which behaves in different ways depending on the context it is used.  One context is to use it when passing a tuple in a function argument.  In this case, the tuple records are spread out as separate arguments to the function. ",
+                "value":"), which behaves in different ways depending on the context.  One such context is using a tuple as a functions argument.  In this case, the tuple records are spread out as separate arguments to the function. ",
                 "children":null
             }
         ]
@@ -337,14 +337,14 @@ content = [
     {
         "el":"sectiontitle",
         "attributes":{
-            "title":"Memory View"
+            "title":"Memory Views"
         },
         "value":null,
         "children":[
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"Memory View",
+                "value":"Memory Views",
                 "children":null
             }
         ]
@@ -692,7 +692,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Sets in Python are really cool, and allow you to perform all the basic set theory operations using Pythons native operators (thanks to ",
+                "value":" Sets in Python are really cool, and allow you to perform all the basic set theory operations using native Pythons operators (thanks to ",
                 "children":null
             },
             {
@@ -705,7 +705,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":" Pythons MOP",
+                        "value":" Python's MOP",
                         "children":null
                     }
                 ]
@@ -713,7 +713,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":").  Sets also have their own literal syntax which matches the syntax from set theory. ",
+                "value":").  Sets have their own literal syntax which matches the syntax from set theory. ",
                 "children":null
             }
         ]
@@ -723,7 +723,7 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"s1 = {1, 2, 3}\ns2 = {3, 4, 5}\n\n# Bitwise and is used to get the Set intersection\nassert s1 & s2 == {3}\n\n# Bitwise or is used to get the Set union\nassert s1 | s2 == {1, 2, 3, 4, 5}\n\n# Subtraction sign is used to get the Set difference\nassert s1 - s2 == {1, 2}\nassert s2 - s1 == {4, 5}\n\n# Bitwise not is used to get the complement of the Set intersection\nassert s1 ^ s2 == {1, 2, 4, 5}\n\ns3 = {22, 44, 66}\ns4 = {22}\n\n# Determine whether a set is a subset or superset of another set with the comparison operators\n\nassert not s3 <= s4  # s3 is not a subset of s4\nassert not s3 < s4   # s3 is not a proper subset (subset but not matching set) of s4\nassert s3 >= s4      # s3 is a superset of s4\nassert s3 > s4       # s3 is a proper superset (superset but not matching set) of s4\n",
+        "value":"s1 = {1, 2, 3}\ns2 = {3, 4, 5}\n\n# Bitwise AND is used to get the Set intersection\nassert s1 & s2 == {3}\n\n# Bitwise OR is used to get the Set union\nassert s1 | s2 == {1, 2, 3, 4, 5}\n\n# The subtraction sign is used to get the Set difference\nassert s1 - s2 == {1, 2}\nassert s2 - s1 == {4, 5}\n\n# Bitwise NOT is used to get the complement of the Set intersection\nassert s1 ^ s2 == {1, 2, 4, 5}\n\ns3 = {22, 44, 66}\ns4 = {22}\n\n# Determine whether a set is a subset or superset of another set with the comparison operators\n\nassert not s3 <= s4  # s3 is not a subset of s4\nassert not s3 < s4   # s3 is not a proper subset (subset but not matching set) of s4\nassert s3 >= s4      # s3 is a superset of s4\nassert s3 > s4       # s3 is a proper superset (superset but not matching set) of s4\n",
         "children":null
     },
     {
@@ -734,7 +734,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This is the best ",
+                "value":" Python has the best ",
                 "children":null
             },
             {
@@ -776,7 +776,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This concludes my look at some of the interesting Python data structures.  There are many structures that I didn't look at here, but I already love Pythons use of built-in functions, literal syntax, and the MOP to simplify the use of commonly used data structures. ",
+                "value":" This concludes my look at interesting Python data structures.  There are many structures I haven't observed yet, but I already love Pythons use of built-in functions, literal syntax, and the MOP to simplify the use of commonly leveraged data structures. ",
                 "children":null
             }
         ]
