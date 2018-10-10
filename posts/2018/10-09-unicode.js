@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I often think of processing strings of characters in an application as a simple process.  The reason behind this line of thought is the simple APIs for strings that programming languages usually provide.  However, processing characters is only straightforward when edge cases are avoided.  With the growth of Unicode and special character use (localization, emojis), these edge cases have become increasingly common.  This post explores the complexities of Unicode and how programming languages support its edge cases. ",
+                "value":" I often think that processing strings of characters in an application is a simple process.  The reasoning behind this line of thought is that string APIs provided by programming languages are usually very simple.  However, processing characters is only straightforward when edge cases are avoided.  With the growth of Unicode and use of special characters (for localization, emojis, etc.), edge cases are increasingly common.  This post explores the complexities of Unicode and how programming languages support its edge cases. ",
                 "children":null
             }
         ]
@@ -77,7 +77,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" (which is built upon ",
+                "value":" and its subset ",
                 "children":null
             },
             {
@@ -98,7 +98,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":").  These old encodings have limited scope (ASCII has just 128 characters),  which makes them inapt for any international application.  While ASCII often works fine for applications used by English speakers in the United States (ASCII contains the characters A-Z, numbers 0-9, punctuation, and common symbols), anyone else is out of luck.  Unicode fixes these limitations, implementing characters from languages across the world, and even creating fun symbols and emojis.  As of Unicode 11.0 over ",
+                "value":".  These old encodings have limited scope (ASCII has just 128 characters),  making them inapt for international applications.  While ASCII often works fine for applications used by English speakers in the United States (ASCII contains the characters A-Z, numbers 0-9, punctuation, and common symbols), anyone else is out of luck.  Unicode fixes these limitations, implementing characters from languages across the world, and even creating fun symbols and emojis.  As of Unicode 11.0 over ",
                 "children":null
             },
             {
@@ -135,7 +135,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I often think of processing strings of characters in an application as a simple process.  The reason behind this line of thought is the simple APIs for strings that programming languages usually provide.  However, processing characters is only straightforward when edge cases are avoided.  With the growth of Unicode and special character use (localization, emojis), these edge cases have become increasingly common.  This post explores the complexities of Unicode and how programming languages support its edge cases. ",
+                "value":" I often think that processing strings of characters in an application is a simple process.  The reasoning behind this line of thought is that string APIs provided by programming languages are usually very simple.  However, processing characters is only straightforward when edge cases are avoided.  With the growth of Unicode and use of special characters (for localization, emojis, etc.), edge cases are increasingly common.  This post explores the complexities of Unicode and how programming languages support its edge cases. ",
                 "children":null
             }
         ]
@@ -196,7 +196,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" (which is built upon ",
+                "value":" and its subset ",
                 "children":null
             },
             {
@@ -217,7 +217,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":").  These old encodings have limited scope (ASCII has just 128 characters),  which makes them inapt for any international application.  While ASCII often works fine for applications used by English speakers in the United States (ASCII contains the characters A-Z, numbers 0-9, punctuation, and common symbols), anyone else is out of luck.  Unicode fixes these limitations, implementing characters from languages across the world, and even creating fun symbols and emojis.  As of Unicode 11.0 over ",
+                "value":".  These old encodings have limited scope (ASCII has just 128 characters),  making them inapt for international applications.  While ASCII often works fine for applications used by English speakers in the United States (ASCII contains the characters A-Z, numbers 0-9, punctuation, and common symbols), anyone else is out of luck.  Unicode fixes these limitations, implementing characters from languages across the world, and even creating fun symbols and emojis.  As of Unicode 11.0 over ",
                 "children":null
             },
             {
@@ -251,7 +251,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Unicode is backwards compatible with ISO 8859 and ASCII.  For example, in some Unicode encodings the character ‘A’ is the same in Unicode and ASCII, and any valid ASCII is valid Unicode. ",
+                "value":" Unicode is somewhat backwards compatible with ISO 8859 and ASCII.  For example, in some Unicode encodings the character 'A' is the same in Unicode and ASCII, and any valid ASCII encoding is valid Unicode. ",
                 "children":null
             }
         ]
@@ -291,7 +291,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Most languages allow for unicode code points to be used in strings as an escaped sequence.  For example, the following JavaScript statement creates a string containing the Unicode code point 0394. ",
+                "value":".  Most languages allow unicode code points to be used in strings as escaped sequences.  For example, the following JavaScript statement creates a string containing the Unicode code point 0394. ",
                 "children":null
             }
         ]
@@ -299,7 +299,7 @@ content = [
     {
         "el":"codesnippet",
         "attributes":{
-            "language":"Python"
+            "language":"JavaScript"
         },
         "value":"const delta = '\\u0394';\n",
         "children":null
@@ -312,7 +312,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The hexadecimal number 0394 represents a single Unicode character - the greek delta (Δ).  Unicode code points are often prefixed with the character ‘U’ like so: ",
+                "value":" The hexadecimal number 0394 represents a single Unicode character - the greek delta (Δ).  Unicode code points are often prefixed with the character 'U' like so: ",
                 "children":null
             },
             {
@@ -339,7 +339,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Things begin to get confusing when we consider which character encoding the string ",
+                "value":" Things get confusing when we consider which character encoding the string ",
                 "children":null
             },
             {
@@ -353,21 +353,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" uses.  A reasonable guess would be that string ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "class":"jarombek-inline-code"
-                },
-                "value":"delta",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" uses the Unicode character encoding.  Unfortunately it is not that simple.  Unicode is a standard for how to create character encodings, and there are many different encoding formats that match the Unicode spec. ",
+                "value":" uses.  A reasonable guess is that it uses  the Unicode character encoding.  Unfortunately it's not that simple.  Unicode is a standard for how to create character encodings, and there are many different encoding formats that match the Unicode spec. ",
                 "children":null
             }
         ]
@@ -705,7 +691,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":".  Since all code points in UTF-32 use 4 bytes, it is very easy to determine the length of a string using this encoding.  However, UTF-32 is often memory intensive, since there are often many wasted bytes (as you can see in the BOM where some bytes are empty - ",
+                                        "value":".  Since all code points in UTF-32 use 4 bytes, it is very easy to determine the length of a string using this encoding.  However, UTF-32 is memory intensive, since there are often many wasted bytes (as you can see in the BOM where some bytes are empty - ",
                                         "children":null
                                     },
                                     {
@@ -775,7 +761,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" A character encoding for Unicode that always uses 2 bytes.  Each unit in UCS-2 is 16 bits, or two bytes.  UTF-8, UTF-16, and UTF-32 all support the full Unicode standard.  On the other hand, UCS-2 only supports a subsection of Unicode called the Basic Multilingual Plane (BMP).  The BMP contains characters from most modern languages and symbols, however some common characters (such as certain emojis) reside outside of the BMP",
+                                        "value":" A character encoding for Unicode that always uses 2 bytes.  Each unit in UCS-2 is 16 bits, or two bytes.  UTF-8, UTF-16, and UTF-32 all support the full Unicode standard.  On the other hand, UCS-2 only supports a subsection of Unicode called the Basic Multilingual Plane (BMP).  The BMP contains characters from most modern languages and symbols, however some common characters (such as certain emojis) reside outside the BMP",
                                         "children":null
                                     },
                                     {
@@ -820,7 +806,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This means the first byte in the group is the least significant bit.  For example, the character ‘a’ in the UTF-16 little endian encoding is represented as ",
+                "value":".  With little endian,  the first byte in the group is the least significant byte.  For example, the character 'a' in the UTF-16 little endian encoding is represented as ",
                 "children":null
             },
             {
@@ -848,7 +834,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is the least significant bit in the ",
+                "value":" is the least significant byte in the ",
                 "children":null
             },
             {
@@ -877,7 +863,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Describes a byte ordering where groups of bytes are ordered from the big end.  This means the first byte in the group is the most significant bit.  For example, the character ‘a’ in the UTF-16 big endian encoding is represented as ",
+                "value":" Describes a byte ordering where groups of bytes are ordered from the big end.  With big endian, the first byte in the group is the most significant byte.  For example, the character 'a' in the UTF-16 big endian encoding is represented as ",
                 "children":null
             },
             {
@@ -905,7 +891,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is the most significant bit in the ",
+                "value":" is the most significant byte in the ",
                 "children":null
             },
             {
@@ -932,7 +918,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Let’s look at different Unicode encodings in some Python code.  The following strings represent two different ways to write the string ",
+                "value":" Let's look at different Unicode encodings in Python code.  The following strings represent two different ways of writing ",
                 "children":null
             },
             {
@@ -994,7 +980,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This code also reveals some complexities of the Unicode standard.  Strings can look the same, but use different code points under the covers.  These Unicode complexities cause issues, especially when checking for equality between two strings.  Upon looking at the strings in variables ",
+                "value":" This code also reveals some complexities of the Unicode standard.  Strings can look the same, but use different code points under the hood.  Unicode complexities cause issues, especially when checking for equality between two strings.  Upon observing the strings in variables ",
                 "children":null
             },
             {
@@ -1071,7 +1057,35 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":") to represent ‘é’, Python thinks it has length 8, even though the human readable representation has 7 characters.  The ‘e’ code point is called a base character and the accent code point is called a combining character",
+                "value":") to represent 'é', Python says it has length 8, even though the human readable representation has 7 characters.  The 'e' code point ( ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"\\u0065",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":") is called a base character and the accent code point ( ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"\\u0301",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":") is called a combining character.  Code points are defined this way since combining characters are merged with base characters to create a single visible character",
                 "children":null
             },
             {
@@ -1083,7 +1097,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".   The solution to the issues of length and equality in Unicode strings is normalization. ",
+                "value":". To solve the issue of length and equality disparity in Unicode strings (in large part thanks to combining and base characters), normalization is used. ",
                 "children":null
             }
         ]
@@ -1111,7 +1125,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Normalization in Unicode is the process of transforming Unicode code points to match a certain standard.  Once a standard is matched, it is likely that our prior issues of mismatching string lengths and inequality will be fixed.  There are four normalized forms for Unicode: NFC, NFD, NFKC, and NFKD. ",
+                "value":" Normalization in Unicode is the process of transforming code points to match a certain standard.  Once a standard is matched, it is likely that our prior issues of mismatching string lengths and inequality will be fixed.  There are four Unicode normalized forms: NFC, NFD, NFKC, and NFKD. ",
                 "children":null
             }
         ]
@@ -1158,7 +1172,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" NFC first decomposes each code point, expanding each one into all its possible base characters and combining characters (ex. ‘é’ can be decomposed into ‘e’ and the accent character).  Then once all the characters are decomposed, NFC recomposes each one based on canonical equivalence",
+                                        "value":" NFC first decomposes each code point, expanding each into all its possible base characters and combining characters (ex. 'é' can be decomposed into 'e' and the accent character).  Once all the characters are decomposed, NFC recomposes each one based on canonical equivalence",
                                         "children":null
                                     },
                                     {
@@ -1203,7 +1217,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":", so normalizing a string multiple times will have the same result as normalizing it once. ",
+                                        "value":", so normalizing a string multiple times has the same result as normalizing it once. ",
                                         "children":null
                                     }
                                 ]
@@ -1247,7 +1261,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" NFD decomposes each code point, expanding each one into all its possible base characters and combining characters.  These decomposed characters are sorted in a standardized manner, and equivalence is determined by canonical equivalence.  Similar to NFC, NFD is idempotent. ",
+                                        "value":" NFD decomposes each code point, expanding each into all its possible base characters and combining characters.  Decomposed characters are sorted in a standardized manner, and equivalence is determined by canonical equivalence.  Similar to NFC, NFD is idempotent. ",
                                         "children":null
                                     }
                                 ]
@@ -1291,7 +1305,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" NFKC is the same as NFC except that it decomposes and recomposes based on compatibility instead of canonical equivalence.  With compatibility, characters can look completely different, but still deemed equivalent in certain contexts.  NFKC is a stronger form of normalization and is lossy, unlike NFC which is lossless.  However, NFKC is still idempotent like NFC. ",
+                                        "value":" NFKC is the same as NFC except it decomposes and recomposes based on compatibility instead of canonical equivalence.  With compatibility, characters can look completely different, but still be deemed equivalent in certain contexts.  NFKC is a stronger form of normalization and is lossy, unlike NFC which is lossless.  However, NFKC is still idempotent like NFC. ",
                                         "children":null
                                     }
                                 ]
@@ -1335,7 +1349,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" NFKD is the same as NFD except that it decomposes based on compatibility instead of canonical equivalence.  Just like NFKC, NFKD is lossy.  It is also idempotent, making all the normalization forms safe to use multiple times without side effects. ",
+                                        "value":" NFKD is the same as NFD except it decomposes based on compatibility instead of canonical equivalence.  Just like NFKC, NFKD is lossy.  It is also idempotent, making all four Unicode normalization forms safe to use multiple times without side effects. ",
                                         "children":null
                                     }
                                 ]
@@ -1354,7 +1368,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The following code uses NFC to normalize the two ‘beyoncé’ strings in Python.  NFC can easily be replaced here with the other three normalization techniques: ",
+                "value":" The following code uses NFC to normalize the two 'beyoncé' strings in Python.  NFC can easily be replaced here with the other three normalization techniques: ",
                 "children":null
             }
         ]
@@ -1375,7 +1389,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" After normalization, both ‘beyoncé’ strings have the same length and are deemed equivalent. ",
+                "value":" After normalization, both 'beyoncé' strings have the same length and are deemed equivalent. ",
                 "children":null
             }
         ]
@@ -1388,7 +1402,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Almost all languages support Unicode to some extent.  For example, the following code in JavaScript attempts the same Python operations I showed throughout this post (along with a bonus look at emojis!). ",
+                "value":" Almost all languages support Unicode to some extent.  The following JavaScript code attempts the same operations I showed throughout this post (along with a bonus look at emojis!). ",
                 "children":null
             }
         ]
@@ -1398,7 +1412,7 @@ content = [
         "attributes":{
             "language":"JavaScript"
         },
-        "value":"const delta = '\\u0394'; // Δ\nassert(delta.length === 1);\n\nconst b = 'beyonce\\u0301'; // beyoncé\nconst b2 = 'beyonc\\u00E9'; // beyoncé\n\n// Both appear to have 7 characters, yet variable 'b' which uses combining characters\n// (it combines 'e' and '\\u0301', the second of which is a diacritic) is listed\n// as having length 8.\nassert(b.length === 8);\nassert(b2.length === 7);\n\n// While the two strings appear the same, JavaScript does not recognize them as equal\nassert(b !== b2);\n\n// Normalize defaults to NFC normalization\nconst b_norm = b.normalize();\nassert(b_norm.length === 7);\n\n// Once normalized, the two strings are equal\nassert(b.normalize() === b2.normalize());\n\n// The length of emojis are also greater than one\nconst smiley = '😊';\nassert(smiley.length === 2);\n\n// Find the actual length of an emoji\nassert([...smiley].length === 1);\n\nconst emojis = '🦌\\u{1F98C}';\n\nassert(emojis.length === 4);\nassert([...emojis].length === 2);\n",
+        "value":"const b = 'beyonce\\u0301'; // beyoncé\nconst b2 = 'beyonc\\u00E9'; // beyoncé\n\n// Both appear to have 7 characters, yet variable 'b' which uses combining characters\n// (it combines 'e' and '\\u0301', the second of which is a diacritic) is listed\n// as having length 8.\nassert(b.length === 8);\nassert(b2.length === 7);\n\n// While the two strings appear the same, JavaScript does not recognize them as equal\nassert(b !== b2);\n\n// Normalize defaults to NFC normalization\nconst b_norm = b.normalize();\nassert(b_norm.length === 7);\n\n// Once normalized, the two strings are equal\nassert(b.normalize() === b2.normalize());\n\n// The length of emojis are also greater than one\nconst smiley = '😊';\nassert(smiley.length === 2);\n\n// Find the actual length of an emoji\nassert([...smiley].length === 1);\n\nconst emojis = '🦌\\u{1F98C}';\n\nassert(emojis.length === 4);\nassert([...emojis].length === 2);\n",
         "children":null
     },
     {
@@ -1445,7 +1459,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Unicode is much more complex than I initially thought, with many edge cases that creep up when using non-English characters.  This post only scratches the surface, but I bet this research will help me detect Unicode bugs quicker and write better software with Strings. ",
+                "value":" Unicode is much more complex than I initially thought, with many edge cases that creep up when using non-English characters.  I only scratched the surface of Unicode, but I know this research will help me detect Unicode bugs quicker and write better software with Strings. ",
                 "children":null
             }
         ]
