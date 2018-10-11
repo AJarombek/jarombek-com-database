@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In my last discovery post on graph databases and Neo4j I ",
+                "value":" In my last discovery post on graph databases and Neo4j, I ",
                 "children":null
             },
             {
@@ -29,7 +29,7 @@ preview = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"created a graph",
+                        "value":" created a graph",
                         "children":null
                     }
                 ]
@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" that represented a map of Fairfield County Connecticut.  I created nodes for all the towns/cities and edges between the settlements that shared borders.  In this discovery I will add to this graph and show some of the challenges I faced along the way.  Let’s dive in! ",
+                "value":" representing a map of Fairfield County, Connecticut.  I created nodes for all the towns/cities and edges between the settlements that shared borders.  This discovery adds to the graph and shows some of the challenges I faced along the way.  Let's dive in! ",
                 "children":null
             }
         ]
@@ -50,7 +50,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" First let’s populate this graph with some people (after all, a settlement needs to have citizens!). ",
+                "value":" First I populated the graph with some people (after all, a settlement needs citizens!). ",
                 "children":null
             }
         ]
@@ -66,7 +66,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In my last discovery post on graph databases and Neo4j I ",
+                "value":" In my last discovery post on graph databases and Neo4j, I ",
                 "children":null
             },
             {
@@ -79,7 +79,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"created a graph",
+                        "value":" created a graph",
                         "children":null
                     }
                 ]
@@ -87,7 +87,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" that represented a map of Fairfield County Connecticut.  I created nodes for all the towns/cities and edges between the settlements that shared borders.  In this discovery I will add to this graph and show some of the challenges I faced along the way.  Let’s dive in! ",
+                "value":" representing a map of Fairfield County, Connecticut.  I created nodes for all the towns/cities and edges between the settlements that shared borders.  This discovery adds to the graph and shows some of the challenges I faced along the way.  Let's dive in! ",
                 "children":null
             }
         ]
@@ -100,7 +100,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" First let’s populate this graph with some people (after all, a settlement needs to have citizens!). ",
+                "value":" First I populated the graph with some people (after all, a settlement needs citizens!). ",
                 "children":null
             }
         ]
@@ -121,7 +121,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now what if I wanted to undo this action of creating people?  The first option I have is to simply delete all of the people from the graph: ",
+                "value":" If I want to undo this ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"CREATE",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" statement, one option is to simply delete all the people from the graph: ",
                 "children":null
             }
         ]
@@ -142,7 +156,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" But maybe I only want to delete specific people from the graph.  The first thing that came into to my head was to simply match on a certain name such as ",
+                "value":" However, maybe I just want specific people removed from the graph.  The first idea that came into to my head was to match on a certain name such as ",
                 "children":null
             },
             {
@@ -150,13 +164,41 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"MATCH (p:Person {name: ‘Andy J.’})",
+                "value":"MATCH (p:Person {name: 'Andy J.'})",
                 "children":null
             },
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In this case I would delete all nodes with label people and where property name equals ‘Andy J.’. You may be seeing the potential issue here.  What if there are two people with the name ‘Andy J’?  Then Cypher will delete both of the vertices!  In a large graph like this that is a very likely scenario. What you can do instead is delete the vertex by looking up its node id.  Each vertex and edge in the graph has a unique node id.  That means if I delete a vertex by its id I know only one vertex will be deleted.  You can get a nodes id with the Cypher ",
+                "value":". In this case I would delete all nodes with label ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":":Person",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" where the property ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"name",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" equals 'Andy J.'. You may see the potential issue here.  What if there are two people with the name 'Andy J'?  In that case Cypher deletes both of the vertices!  In a large graph that scenario is very likely. What I can do instead is delete a vertex by looking up its node id.  Each vertex and edge has a unique id, so if I delete a vertex by its id I know only one vertex will be removed.  Node ids are accessed with the Cypher ",
                 "children":null
             },
             {
@@ -203,7 +245,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In this example I found that the node I wanted to delete had an id of 62 and then searched all nodes with label people for it.  The pair of keywords here that I haven’t used before are ",
+                "value":" This example searches for a node where the id equals 62 and deletes it.  The pair of keywords I haven't used before are ",
                 "children":null
             },
             {
@@ -231,7 +273,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" removes both of them",
+                "value":" removes both",
                 "children":null
             },
             {
@@ -256,7 +298,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now if we have all four people vertices back in the graph, we can create a relationship between them and the settlements they are citizens of: ",
+                "value":" If all four people vertices are back in the graph, I can create a relationship between them and the settlements they are citizens of: ",
                 "children":null
             }
         ]
@@ -277,7 +319,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" We now have a populated map!  Fairfield County still seems a bit boring however.  Let’s populate it will some of the top rated pizza places in the county.  I want to create a vertex pizza and give it a ",
+                "value":" The settlements are now populated with people!  However, Fairfield County still seems a bit boring.  Let's populate it with the top rated pizza places in the county.  I created pizza vertices and gave them a ",
                 "children":null
             },
             {
@@ -301,7 +343,7 @@ content = [
         "attributes":{
             "language":"Cypher"
         },
-        "value":"CREATE (stan:Pizza {name: 'Stanziato’s Wood Fired Pizza', price: 2, rating: 4.5}),\n    (stan)-[:LOCATED_IN]->(:Settlement {name: 'Danbury'}),\n    (bw:Pizza {name: 'Brick + Wood', price: 2, rating: 4.5}),\n    (bw)-[:LOCATED_IN]->(:Settlement {name: 'Fairfield'}),\n    ...\n",
+        "value":"CREATE (stan:Pizza {name: 'Stanziatos Wood Fired Pizza', price: 2, rating: 4.5}),\n    (stan)-[:LOCATED_IN]->(:Settlement {name: 'Danbury'}),\n    (bw:Pizza {name: 'Brick + Wood', price: 2, rating: 4.5}),\n    (bw)-[:LOCATED_IN]->(:Settlement {name: 'Fairfield'}),\n    ...\n",
         "children":null
     },
     {
@@ -312,7 +354,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When I first ran this code I really thought it would work!  However instead of connecting the newly created pizza places to existing settlements, Cypher created new settlements as well!  Now we have duplicate cities in our graph that we need to delete.  The following query will do the job",
+                "value":" When I first ran this code I really thought it would work!  However, instead of connecting the newly created pizza places to existing settlements, Cypher created new settlements as well!  Now there are duplicate settlements in the graph that need to be deleted.  The following query does the job",
                 "children":null
             },
             {
@@ -345,7 +387,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Let’s walk through this.  First we are going to query the graph for all settlements.  Then we want to basically set up a table with two columns.  The first column will be the name of the settlement and the second column will be a list of all the settlement vertices with that name. The list of names is created when we write ",
+                "value":" Let's walk through this.  First I queried the graph for all settlements.  Then I set up a table with two columns.  The first column contains the name of a  settlement and the second column contains a list of all settlement vertices with that name. The first column is created with the statement ",
                 "children":null
             },
             {
@@ -373,7 +415,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause is used to manipulate our data (in this case the settlement vertices information) before we pass it on to the next line in our query",
+                "value":" clause is used to manipulate data (in this case the settlement vertices) before its passed to the next line in the query",
                 "children":null
             },
             {
@@ -399,7 +441,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" keyword simply creates an alias for the column. We then create the list of all the settlement vertices with a given name with Cypher’s ",
+                "value":" keyword creates an alias for a column. I created a list of all the settlement vertices with a given name with Cypher's ",
                 "children":null
             },
             {
@@ -413,7 +455,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function.  You can think of this entire line of code as an implicit ",
+                "value":" function.  The entire second line of code in the sample above is basically an implicit ",
                 "children":null
             },
             {
@@ -427,7 +469,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" statement (like that seen in SQL – Cypher has no explicit ",
+                "value":" statement (like those in SQL).  Cypher has no explicit ",
                 "children":null
             },
             {
@@ -441,7 +483,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"). ",
+                "value":" syntax. ",
                 "children":null
             }
         ]
@@ -454,7 +496,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now the line ",
+                "value":" Next, the line ",
                 "children":null
             },
             {
@@ -468,47 +510,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" filters our list for only settlement names that have more than one vertex.  After all the goal of this is to delete all the duplicates! The next line, ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "class":"jarombek-inline-code"
-                },
-                "value":"UNWIND tail(instances) as dups",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" transforms our list back into rows in a table",
-                "children":null
-            },
-            {
-                "el":"sup",
-                "attributes":null,
-                "value":"5",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":". This ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "class":"jarombek-inline-code"
-                },
-                "value":"UNWIND",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" operation will happen for each ",
+                "value":" filters the ",
                 "children":null
             },
             {
@@ -522,7 +524,33 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" list we encounter.  Now we see if the row (which is a settlement) has a ",
+                "value":" list down to those with multiple vertices.  The following line, ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"UNWIND tail(instances) as dups",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" transforms the list back into table rows",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"5",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". Finally we see if a table row (which is a settlement) has a ",
                 "children":null
             },
             {
@@ -550,7 +578,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  If so this is the duplicated data.  In the final line, we delete the settlement, relationship, and pizza place from the graph.  The graph is successfully cleaned up! ",
+                "value":".  If so the settlement is duplicated data.  In the final line, I deleted the settlement, relationship, and pizza place from the graph.  The graph is successfully cleaned up! ",
                 "children":null
             }
         ]
@@ -563,7 +591,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Let’s again create pizza places and relate them to a town without creating duplicates: ",
+                "value":" Let's again create pizza places and relate them to a settlement without creating duplicates: ",
                 "children":null
             }
         ]
@@ -573,7 +601,7 @@ content = [
         "attributes":{
             "language":"Cypher"
         },
-        "value":"CREATE (p1:Pizza {name: 'Stanziato’s Wood Fired Pizza', price: 2, rating: 4.5})\nWITH p1\nMATCH (s1:Settlement {name: 'Danbury'})\nMERGE (p1)-[:LOCATED_IN]->(s1)\n",
+        "value":"CREATE (p1:Pizza {name: 'Stanziatos Wood Fired Pizza', price: 2, rating: 4.5})\nWITH p1\nMATCH (s1:Settlement {name: 'Danbury'})\nMERGE (p1)-[:LOCATED_IN]->(s1)\n",
         "children":null
     },
     {
@@ -584,7 +612,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" First we create the pizza place and pass its variable to the ",
+                "value":" First I created a pizza place and passed it to the ",
                 "children":null
             },
             {
@@ -598,7 +626,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" statement through the ",
+                "value":" statement via the ",
                 "children":null
             },
             {
@@ -612,7 +640,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause.  This shows that you can also use ",
+                "value":" clause.  This sequence uses ",
                 "children":null
             },
             {
@@ -626,7 +654,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" for strictly variable passing without performing any manipulations on it.  Now instead of creating a new settlement we ",
+                "value":" for variable passing without performing any manipulations.  Instead of creating a new settlement I used ",
                 "children":null
             },
             {
@@ -640,7 +668,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" an existing one and then ",
+                "value":" to find an existing one.  I then used ",
                 "children":null
             },
             {
@@ -654,7 +682,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" the ",
+                "value":" to create a ",
                 "children":null
             },
             {
@@ -668,7 +696,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" relationship. ",
+                "value":" relationship between the settlement and the pizza place. ",
                 "children":null
             },
             {
@@ -682,7 +710,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" will only create the new relationship if it does not already exist.  If the relationship does not exist it acts the same as ",
+                "value":" only creates a new relationship if one does not already exist.  If a relationship does not exist, ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"MERGE",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" acts the same as ",
                 "children":null
             },
             {
@@ -709,7 +751,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" So we now have a complete graph with settlements, people, and places to eat.  One thing that is important to mention before finishing this discovery is indexes.  In Neo4j, just like in SQL, we can create indexes to speed up vertex lookup speeds",
+                "value":" Now the graph is complete with settlements, people, and places to eat.  One last important thing to mention is indexes.  In Neo4j indexes are used to speed up vertex lookup speeds",
                 "children":null
             },
             {
@@ -721,7 +763,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This is important when we are searching for a specific item in the graph, such as a person with name Tom. ",
+                "value":". This is important when searching for a specific item in a graph, such as a person with the name Tom. ",
                 "children":null
             }
         ]
@@ -734,7 +776,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Since we are often going to query settlements and pizza places by their names we can create indexes on those labels and properties like so: ",
+                "value":" Since settlements and pizza places are often queried by their names, I created indexes on those labels and properties like so: ",
                 "children":null
             }
         ]
@@ -755,7 +797,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now we are fully ready to query the graph database.  The code used for this discovery can be found ",
+                "value":" Now the graph database is ready to be queried.  The code used for this discovery can be found on ",
                 "children":null
             },
             {
@@ -768,7 +810,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"HERE",
+                        "value":"GitHub",
                         "children":null
                     }
                 ]

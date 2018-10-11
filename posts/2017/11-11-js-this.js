@@ -14,9 +14,17 @@ preview = [
         "value":null,
         "children":[
             {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"this",
+                "children":null
+            },
+            {
                 "el":"#text",
                 "attributes":null,
-                "value":" The ",
+                "value":" in JavaScript is part of the language that always confused me.  The keyword doesn't work like its Java counterpart where it refers to the object instance of a method or constructor.  Often in the past when using ",
                 "children":null
             },
             {
@@ -30,7 +38,21 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" keyword in JavaScript is a piece of the language that has always confused me.  It doesn't work like ",
+                "value":" I took shortcuts such as the popular ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"var self = this",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" statement so I wouldn't worry about the value of ",
                 "children":null
             },
             {
@@ -44,49 +66,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" in Java where it refers to the method or constructors object.  Often in the past when using ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "class":"jarombek-inline-code"
-                },
-                "value":"this",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" I have taken shortcuts such as the popular ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "class":"jarombek-inline-code"
-                },
-                "value":"var self = this;",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" so I wouldn't have to worry about what value ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "class":"jarombek-inline-code"
-                },
-                "value":"this",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" holds in nested functions. ",
+                "value":" in nested functions. ",
                 "children":null
             }
         ]
@@ -113,7 +93,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" so confusing is that it is set during program runtime instead of defined at author time",
+                "value":" so confusing is that it's set at runtime instead of author time (compile time)",
                 "children":null
             },
             {
@@ -125,13 +105,13 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In other words it does not follow the rules of ",
+                "value":".  In other words it doesn't follow the rules of ",
                 "children":null
             },
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://jarombek.com/blog/nov-8-2017-js-scope-hoisting"
+                    "href":"https://jarombek.com/blog/nov-9-2017-js-closure-modules#lexical-scope"
                 },
                 "value":null,
                 "children":[
@@ -146,7 +126,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" that I am comfortable with.  It also is incredibly daunting for new programmers since the value of ",
+                "value":" that I am comfortable with.  ",
                 "children":null
             },
             {
@@ -160,7 +140,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" can potentially be different when calling the same function at different instances. ",
+                "value":" is incredibly daunting for new programmers since its value can be different when calling the same function on separate occasions. ",
                 "children":null
             }
         ]
@@ -174,9 +154,17 @@ content = [
         "value":null,
         "children":[
             {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"this",
+                "children":null
+            },
+            {
                 "el":"#text",
                 "attributes":null,
-                "value":" The ",
+                "value":" in JavaScript is part of the language that always confused me.  The keyword doesn't work like its Java counterpart where it refers to the object instance of a method or constructor.  Often in the past when using ",
                 "children":null
             },
             {
@@ -190,7 +178,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" keyword in JavaScript is a piece of the language that has always confused me.  It doesn't work like ",
+                "value":" I took shortcuts such as the popular ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"var self = this",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" statement so I wouldn't worry about the value of ",
                 "children":null
             },
             {
@@ -204,49 +206,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" in Java where it refers to the method or constructors object.  Often in the past when using ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "class":"jarombek-inline-code"
-                },
-                "value":"this",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" I have taken shortcuts such as the popular ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "class":"jarombek-inline-code"
-                },
-                "value":"var self = this;",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" so I wouldn't have to worry about what value ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "class":"jarombek-inline-code"
-                },
-                "value":"this",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" holds in nested functions. ",
+                "value":" in nested functions. ",
                 "children":null
             }
         ]
@@ -273,7 +233,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" so confusing is that it is set during program runtime instead of defined at author time",
+                "value":" so confusing is that it's set at runtime instead of author time (compile time)",
                 "children":null
             },
             {
@@ -285,13 +245,13 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In other words it does not follow the rules of ",
+                "value":".  In other words it doesn't follow the rules of ",
                 "children":null
             },
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://jarombek.com/blog/nov-8-2017-js-scope-hoisting"
+                    "href":"https://jarombek.com/blog/nov-9-2017-js-closure-modules#lexical-scope"
                 },
                 "value":null,
                 "children":[
@@ -306,7 +266,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" that I am comfortable with.  It also is incredibly daunting for new programmers since the value of ",
+                "value":" that I am comfortable with.  ",
                 "children":null
             },
             {
@@ -320,7 +280,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" can potentially be different when calling the same function at different instances. ",
+                "value":" is incredibly daunting for new programmers since its value can be different when calling the same function on separate occasions. ",
                 "children":null
             }
         ]
@@ -347,7 +307,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"?  If you are in the global scope it refers to the global object, which will be different depending on the environment you are running JavaScript in.  For example if you are running JavaScript in your browser, this will be the window object. ",
+                "value":"?  In the global scope it refers to the global object, which is different depending on the environment you run JavaScript in. For example, if you run JavaScript in your browser, ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"this",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" is the window object. ",
                 "children":null
             }
         ]
@@ -360,7 +334,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" There is an exception to this rule though.  If you are using strict mode, a function won't default its ",
+                "value":" There is an exception to this rule though.  While using strict mode, ",
                 "children":null
             },
             {
@@ -374,7 +348,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" binding to the global object and instead will return ",
+                "value":" isn't bound to the global object, instead returning ",
                 "children":null
             },
             {
@@ -388,7 +362,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The following example shows an IIFE (Immediately Invoked Function Expression) that is set to strict mode so ",
+                "value":". The following example shows an IIFE (Immediately Invoked Function Expression) set to strict mode, causing ",
                 "children":null
             },
             {
@@ -402,7 +376,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is set to ",
+                "value":" to equal ",
                 "children":null
             },
             {
@@ -416,21 +390,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". However, if we removed ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "class":"jarombek-inline-code"
-                },
-                "value":"'use strict';",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" it would return the global object. ",
+                "value":". ",
                 "children":null
             }
         ]
@@ -451,7 +411,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can imagine how confusing it would be dealing with ",
+                "value":" Imagine the confusion of determining what value ",
                 "children":null
             },
             {
@@ -465,7 +425,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" if some parts of the code were in strict mode and others weren't.  Beacuse of this (and potentially more confusing cases I haven't discovered yet) having different pieces of a codebase be strict while others are not is considered bad practice",
+                "value":" held in a project where some pieces of code were in strict mode and others weren't.  Because of this (and other confusing cases), strict mode should be enabled or disabled at the project level",
                 "children":null
             },
             {
@@ -490,7 +450,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can also explicity define the value of ",
+                "value":" You can explicitly define the value of ",
                 "children":null
             },
             {
@@ -504,7 +464,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" when calling a function with the ",
+                "value":" on a function invocation with the ",
                 "children":null
             },
             {
@@ -558,7 +518,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Both functions take a parameter which is the value you want to set to ",
+                "value":".  All three functions take an argument with a value to assign to ",
                 "children":null
             },
             {
@@ -572,7 +532,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The difference is that while ",
+                "value":".  The difference between them is ",
                 "children":null
             },
             {
@@ -600,7 +560,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" bind the ",
+                "value":" bind a value to ",
                 "children":null
             },
             {
@@ -614,7 +574,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" value for this one call, ",
+                "value":" for a single call, while ",
                 "children":null
             },
             {
@@ -628,7 +588,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" creates an immutable bind for all future calls. First lets look at an example of ",
+                "value":" creates an immutable bind for all future calls. Here is an example of ",
                 "children":null
             },
             {
@@ -663,7 +623,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In is example instead of the function call defaulting to the global scope for ",
+                "value":" In this example I gave ",
                 "children":null
             },
             {
@@ -677,19 +637,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", we manipulate it and pass in an object ",
+                "value":" the value of ",
                 "children":null
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
                 "value":"user",
                 "children":null
             },
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" to bind to ",
+                "value":" with the help of ",
                 "children":null
             },
             {
@@ -697,13 +659,13 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"this",
+                "value":"call()",
                 "children":null
             },
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Now lets look at ",
+                "value":". Now lets look at ",
                 "children":null
             },
             {
@@ -727,7 +689,7 @@ content = [
         "attributes":{
             "language":"JavaScript"
         },
-        "value":"var n = name.bind(user); // Andy\n",
+        "value":"var n = name.bind(user);\n",
         "children":null
     },
     {
@@ -738,7 +700,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The result we get back from the ",
+                "value":" The result from ",
                 "children":null
             },
             {
@@ -752,7 +714,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function is a function itself.  The above code is the equivalent of: ",
+                "value":" is a function itself.  The above code is the equivalent of: ",
                 "children":null
             }
         ]
@@ -773,7 +735,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"     When we call the function created by ",
+                "value":" In the function created by ",
                 "children":null
             },
             {
@@ -787,7 +749,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" the     ",
+                "value":", ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"user",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" is bound to the value of ",
                 "children":null
             },
             {
@@ -801,7 +777,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" value we passed to it is used.  You can also see     if we try and change the value of ",
+                "value":". Now if I try and change the value of ",
                 "children":null
             },
             {
@@ -815,7 +791,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", we are unable to: ",
+                "value":" I am unable to: ",
                 "children":null
             }
         ]
@@ -836,7 +812,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"     Another way to manipulate ",
+                "value":" Another way to manipulate ",
                 "children":null
             },
             {
@@ -850,7 +826,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is by performing a constructor     call on an object with the ",
+                "value":" is through an object constructor call with the ",
                 "children":null
             },
             {
@@ -864,7 +840,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" keyword.  In this     case ",
+                "value":" keyword.  For constructor calls, ",
                 "children":null
             },
             {
@@ -903,7 +879,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"     Finally if you call a function in the context of an object, that object is used as the value for     ",
+                "value":" Finally if you call an objects method, that object is the value of ",
                 "children":null
             },
             {
@@ -927,7 +903,7 @@ content = [
         "attributes":{
             "language":"JavaScript"
         },
-        "value":"var n = name.bind(user); // Andy\n",
+        "value":"var user = {\n    username: \"Andy\",\n\n    name: function name() {\n        console.info(this.username);\n    }\n};\n\nuser.name(); // Andy\n\nuser.name.call({username: \"Joe\"}); // Joe\n",
         "children":null
     },
     {
@@ -938,7 +914,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can see that we make the call ",
+                "value":" The invocation ",
                 "children":null
             },
             {
@@ -946,13 +922,13 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"user.name();",
+                "value":"user.name()",
                 "children":null
             },
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" in the context of the ",
+                "value":" is made in the context of the ",
                 "children":null
             },
             {
@@ -1022,7 +998,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function ",
+                "value":" function. ",
                 "children":null
             }
         ]
@@ -1049,7 +1025,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" works then by all means use it!  However if you are on a team of people who are new to JavaScript it may be smart to avoid it.  I do agree with Kyle Simpson that ",
+                "value":" works then by all means use it!  However, if you are on a team of developers new to JavaScript it may be smart to avoid it.  I do agree with Kyle Simpson that ",
                 "children":null
             },
             {
@@ -1063,7 +1039,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is a confusing hack around practice that shouldn't be used ",
+                "value":" is a confusing hack that shouldn't be used ",
                 "children":null
             },
             {
@@ -1075,7 +1051,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  You can find the source code for the examples I used ",
+                "value":".  As always, you can find the source code for the examples I used on ",
                 "children":null
             },
             {
@@ -1088,7 +1064,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"HERE",
+                        "value":"GitHub",
                         "children":null
                     }
                 ]

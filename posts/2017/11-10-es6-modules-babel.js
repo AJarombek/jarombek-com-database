@@ -92,7 +92,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" to other JavaScript code.  Each JavaScript file can be a module if it exports functions/variables, and there can only be one module in a file.  A module can have multiple items exported.  Since one file is one and only one module, the name of a module is the filename. Code to import a module uses the ",
+                "value":" to other JavaScript code.  Any JavaScript file can be a module if it exports functions/variables. Only one module can exist per file, and each module can export multiple items.  Since one file is one and only one module, the name of a module is the filename. Code to import a module uses the ",
                 "children":null
             },
             {
@@ -206,7 +206,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" to other JavaScript code.  Each JavaScript file can be a module if it exports functions/variables, and there can only be one module in a file.  A module can have multiple items exported.  Since one file is one and only one module, the name of a module is the filename. Code to import a module uses the ",
+                "value":" to other JavaScript code.  Any JavaScript file can be a module if it exports functions/variables. Only one module can exist per file, and each module can export multiple items.  Since one file is one and only one module, the name of a module is the filename. Code to import a module uses the ",
                 "children":null
             },
             {
@@ -318,7 +318,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If you tried running this code in certain environments it would fail.  Many JavaScript engines are not ES6 compliant (including my version of Node.js!).  Therefore, when I try to run my main.js file (containing the input code) I get an error: ",
+                "value":" If you tried running this code in certain environments it would fail.  Many JavaScript engines are not ES6 compliant (including my version of Node.js!).  Therefore, when I tried running my main.js file (containing the input code) I got an error: ",
                 "children":null
             }
         ]
@@ -339,7 +339,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Okay, so that didn't work.  I eventually got this code to work by jumping through some hoops. The tool to get the job done was Babel, which is a JavaScript transpiler. ",
+                "value":" Eventually I got this code to work after jumping through some hoops. The tool to get the job done was Babel, which is a JavaScript transpiler. ",
                 "children":null
             }
         ]
@@ -352,7 +352,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The way to get ES6 code to work in all environments is by converting it to an ES5 equivalent (or as close as possible).  This is quite the task to do manually, so instead Babel does the work for us.  As I mentioned, Babel is a transpiler.  Transpile is a combination of the words translate and compile.  So Babel (a compiler) converts (translates) ES6 code to ES5. ",
+                "value":" The way to get ES6 code to work in all environments is by converting it to an ES5 equivalent (or as close as possible).  This would be quite the task to do manually, so Babel does the work for us.  As I mentioned, Babel is a transpiler.  Transpile is a combination of the words translate and compile.  So Babel (a compiler) converts (translates) ES6 code to ES5. ",
                 "children":null
             }
         ]
@@ -459,7 +459,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now when I got to this point I thought \"great I’m done! Let’s run the code!\"  Unfortunately, I forgot to actually tell Babel which files to convert to ES5.  One way to do this is like so: ",
+                "value":" Now when I got to this point I thought \"great I’m done! Let’s run the code!\"  Unfortunately, I forgot to actually tell Babel which files to convert to ES5.  One way to do that is like so: ",
                 "children":null
             }
         ]
@@ -521,7 +521,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" There is however a better way of doing this.  Babel has the ability to watch ES6 files for changes. When a change is made, ES6 code is automatically transpiled to an output file. ",
+                "value":" There is however a better way of doing this.  Babel has the ability to watch ES6 files for changes. When a change is made, the ES6 code is automatically transpiled to an output file. ",
                 "children":null
             }
         ]
@@ -617,7 +617,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" That was a lot of work to just see some sparks fly using ES6!  Obviously it is not practical to transpile ES6 code for such a small codebase, but for larger projects we want to use ES6+ JavaScript features because no matter the environment.  I'll be using Babel for many projects in the future.  You can find all the code in this demo on ",
+                "value":" That was a lot of work just to see some sparks fly using ES6!  Obviously it is not practical to transpile ES6 code for such a small codebase, but for larger projects we want to use ES6+ JavaScript features no matter the environment.  I'll be using Babel for many projects in the future.  You can find all the code in this demo on ",
                 "children":null
             },
             {
