@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One JavaScript feature I have used before but never fully known the details of is strict mode. Strict mode restricts certain features and leniencies in the language",
+                "value":" One JavaScript feature I've used before but never fully understood is strict mode. Strict mode restricts certain features and leniencies in the language",
                 "children":null
             },
             {
@@ -28,7 +28,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In a way it protects the developer from things that happen implicitly in JavaScript (that only an experienced dev would be aware of).  In a ",
+                "value":". It protects the developer from things that happen implicitly in JavaScript (that only an experienced dev would be aware of).  In a ",
                 "children":null
             },
             {
@@ -63,7 +63,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" to be set to the global scope when invoking a function.  What else does strict mode have to offer? ",
+                "value":" from containing the global scope variable.  What else does strict mode have to offer? ",
                 "children":null
             }
         ]
@@ -76,7 +76,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Certain things that silently fail in JavaScript will now throw errors under strict mode.  This includes setting properties to primitives and assigning values to keywords. ",
+                "value":" Certain things that silently fail in JavaScript throw errors when executed in strict mode.  This includes setting properties to primitives and assigning values to keywords. ",
                 "children":null
             }
         ]
@@ -92,7 +92,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One JavaScript feature I have used before but never fully known the details of is strict mode. Strict mode restricts certain features and leniencies in the language",
+                "value":" One JavaScript feature I've used before but never fully understood is strict mode. Strict mode restricts certain features and leniencies in the language",
                 "children":null
             },
             {
@@ -104,7 +104,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In a way it protects the developer from things that happen implicitly in JavaScript (that only an experienced dev would be aware of).  In a ",
+                "value":". It protects the developer from things that happen implicitly in JavaScript (that only an experienced dev would be aware of).  In a ",
                 "children":null
             },
             {
@@ -139,7 +139,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" to be set to the global scope when invoking a function.  What else does strict mode have to offer? ",
+                "value":" from containing the global scope variable.  What else does strict mode have to offer? ",
                 "children":null
             }
         ]
@@ -152,7 +152,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Certain things that silently fail in JavaScript will now throw errors under strict mode.  This includes setting properties to primitives and assigning values to keywords. ",
+                "value":" Certain things that silently fail in JavaScript throw errors when executed in strict mode.  This includes setting properties to primitives and assigning values to keywords. ",
                 "children":null
             }
         ]
@@ -162,7 +162,7 @@ content = [
         "attributes":{
             "language":"JavaScript"
         },
-        "value":"try {\n    undefined = \"defined!\";\n} catch(e) {\n    console.error('Strict mode disallows assigning values to keywords');\n    console.error(e);\n}\n\ntry {\n    false.not = true;\n} catch(e) {\n    console.error('Strict mode disallows setting properties for primitive values');\n    console.error(e);\n}\n",
+        "value":"try {\n    undefined = \"defined!\";\n} catch(e) {\n    console.error('Strict mode disallows assigning values to keywords');\n}\n\ntry {\n    false.not = true;\n} catch(e) {\n    console.error('Strict mode disallows setting properties for primitive values');\n}\n",
         "children":null
     },
     {
@@ -173,7 +173,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Strict mode also disallows duplicate parameter names for functions.  It also used to restrict duplicate property names on an object, but this restriction has been lifted as of ES6 (either a bug or poor design choice). ",
+                "value":" Strict mode also disallows duplicate parameter names for functions.  In previous JavaScript versions it restricted duplicate property names on objects, but this restriction was lifted in ES6 (either a bug or poor design choice). ",
                 "children":null
             }
         ]
@@ -194,7 +194,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One final feature we will look at is the restriction of creating a new variable when assigning a value to a variable without the ",
+                "value":" Strict mode also stops variable creation when assigning a value to an undeclared variable without a ",
                 "children":null
             },
             {
@@ -285,7 +285,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" variable is “forgiving.”  If the variable has not yet been defined, JavaScript creates a new global variable with the name provided. In my opinion this should be considered a syntax mistake by the developer and throw an error.  That is exactly what happens in strict mode. ",
+                "value":" variable is \"forgiving.\"  If the variable is not defined, JavaScript creates a new global variable with the name provided. In my opinion this should be considered a syntax mistake by the developer and throw an error.  That is exactly what happens in strict mode. ",
                 "children":null
             }
         ]
@@ -298,7 +298,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Strict mode has other features as well that can come in useful (such as throwing errors when trying to assign values to immutable properties) but the ones I went over have the largest impact on my code. You can find the code used in this discovery ",
+                "value":" Strict mode includes other features that can come in useful (such as throwing errors when trying to assign values to immutable properties) but the ones I went over have the largest impact on my code. You can find the code used in this discovery on ",
                 "children":null
             },
             {
@@ -311,7 +311,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"HERE",
+                        "value":"GitHub",
                         "children":null
                     }
                 ]

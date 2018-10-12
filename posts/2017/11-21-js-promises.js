@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Today I am looking at Promises in JavaScript and how we can use them to write easier to follow and less error prone asynchronous code.  Before I talk about Promises lets make a async call in JavaScript the traditional way; with callbacks. I won't be using any fancy JavaScript framework to make my async http request, just the simple ",
+                "value":" Today I am looking at Promises in JavaScript and how they are used to write easy to follow  and error resistant asynchronous code.  Before writing any Promises I made an async call in JavaScript the traditional way; with callbacks. I didn't use any fancy JavaScript framework to make my async http request, just the simple ",
                 "children":null
             },
             {
@@ -30,7 +30,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" object (which is as poorly named as AJAX, it can be used for much more than XML!)",
+                "value":" object (which is as poorly named as AJAX - it can be used for much more than XML!)",
                 "children":null
             },
             {
@@ -55,7 +55,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I made a custom google search API which is actually really easy and fun to create",
+                "value":" I made a custom google search API which was really easy and fun to create",
                 "children":null
             },
             {
@@ -67,7 +67,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"! It searches certain websites for cat related posts (and is appropriately called meowmeow)! Who wouldn't love that?  So in my code I want to get the article names of the top 10 searches of my custom meow search.  Here is how you would do that with the ",
+                "value":"! It searches certain websites for cat related posts (and is appropriately called meowmeow)! Who wouldn't love that?  In my code I retrieve the article names from the top 10 searches in my custom meow search.  The code uses the ",
                 "children":null
             },
             {
@@ -81,7 +81,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and callback function: ",
+                "value":" object and a callback function: ",
                 "children":null
             }
         ]
@@ -97,7 +97,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Today I am looking at Promises in JavaScript and how we can use them to write easier to follow and less error prone asynchronous code.  Before I talk about Promises lets make a async call in JavaScript the traditional way; with callbacks. I won't be using any fancy JavaScript framework to make my async http request, just the simple ",
+                "value":" Today I am looking at Promises in JavaScript and how they are used to write easy to follow  and error resistant asynchronous code.  Before writing any Promises I made an async call in JavaScript the traditional way; with callbacks. I didn't use any fancy JavaScript framework to make my async http request, just the simple ",
                 "children":null
             },
             {
@@ -111,7 +111,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" object (which is as poorly named as AJAX, it can be used for much more than XML!)",
+                "value":" object (which is as poorly named as AJAX - it can be used for much more than XML!)",
                 "children":null
             },
             {
@@ -136,7 +136,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I made a custom google search API which is actually really easy and fun to create",
+                "value":" I made a custom google search API which was really easy and fun to create",
                 "children":null
             },
             {
@@ -148,7 +148,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"! It searches certain websites for cat related posts (and is appropriately called meowmeow)! Who wouldn't love that?  So in my code I want to get the article names of the top 10 searches of my custom meow search.  Here is how you would do that with the ",
+                "value":"! It searches certain websites for cat related posts (and is appropriately called meowmeow)! Who wouldn't love that?  In my code I retrieve the article names from the top 10 searches in my custom meow search.  The code uses the ",
                 "children":null
             },
             {
@@ -162,7 +162,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and callback function: ",
+                "value":" object and a callback function: ",
                 "children":null
             }
         ]
@@ -207,7 +207,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I won't go into how the ",
+                "value":" I won't explain the ",
                 "children":null
             },
             {
@@ -221,7 +221,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" object works in this post but you can see that the callback function is placed in the ",
+                "value":" object in detail here but you can see that the callback function is placed on the ",
                 "children":null
             },
             {
@@ -235,7 +235,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function.  This gets even uglier because ",
+                "value":" property.  This approach gets pretty ugly since ",
                 "children":null
             },
             {
@@ -249,7 +249,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is called multiple times for each request.  This is why we must check if the ",
+                "value":" is called multiple times for each request.  Due to multiple invocations I checked if ",
                 "children":null
             },
             {
@@ -263,7 +263,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", in which 4 represents the request being done",
+                "value":", where 4 represents the request being done",
                 "children":null
             },
             {
@@ -288,7 +288,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" There are some obvious issues with this callback function approach.  What happens if the request errors out?  In this code we have no error handling so the result of an unsuccessful call to our google search is unclear.  Also what if we need to make another asynchronous call after this request is completed? In this case you would need nested callback functions which quickly becomes ugly and hard to follow, commonly referred to as callback hell. ",
+                "value":" There are obvious issues with this callback function approach.  What happens if the request errors out?  This code has no error handling so the result of an unsuccessful call to the custom google search is unclear.  Also what if I need to make a second asynchronous call after this request is completed? Using callbacks I would need nested callback functions, which quickly becomes ugly and hard to follow.  This is commonly referred to as callback hell. ",
                 "children":null
             }
         ]
@@ -301,7 +301,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" These are just a few of the reasons to move away from callbacks and to a more elegant solution - promises! A promise object is a value that currently does not exist but is guaranteed to exist in the future. With promises we can have error handling for asynchronous code and hide some of the asynchronous details inside the promise definition.  Let's look at how the ",
+                "value":" These are just a few of the reasons to move away from callbacks to a more elegant solution - promises! A promise object is a value that currently does not exist but is guaranteed to exist in the future. With promises it is easy to write error handling for asynchronous code and hide some of the asynchronous details inside the promise definition.  Let's see how ",
                 "children":null
             },
             {
@@ -315,7 +315,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" will look using promises: ",
+                "value":" works using promises: ",
                 "children":null
             }
         ]
@@ -336,7 +336,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You will notice that this code is broken up into two parts.  First we have the ",
+                "value":" This code is broken up into two parts.  First the ",
                 "children":null
             },
             {
@@ -350,7 +350,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function which returns a ",
+                "value":" function returns a ",
                 "children":null
             },
             {
@@ -378,7 +378,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" as a reusable function to execute our http requests, hiding the ",
+                "value":" as a reusable function to execute http requests, hiding the ",
                 "children":null
             },
             {
@@ -392,7 +392,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" details from outer code.  With the promise you can either reject or resolve the currently non-existing value.  This is represented in our code by the ",
+                "value":" details from outside code.  A promise can either reject or resolve a currently non-existent value.  This is represented in code by the ",
                 "children":null
             },
             {
@@ -461,7 +461,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function which is called once the promise value exists.  You can see ",
+                "value":" function which is called once the promise value exists.  ",
                 "children":null
             },
             {
@@ -475,7 +475,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is supplied two functions, the first which is called when the promise is resolved, the second when it is rejected.  You can see this solution is nice since we don't need to know the details of the promise, just supply it the details of what to do on success and failure. ",
+                "value":" is supplied two functions, the first which is called when the promise is resolved, the second when it is rejected.  With this solution I'm not required to know the details of the promise and can simply supply it with actions to perform on success or failure. ",
                 "children":null
             }
         ]
@@ -514,7 +514,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This means that we can chain promises, as shown in the pseudocode below: ",
+                "value":".  This allows for chained promises, as shown in the pseudocode below: ",
                 "children":null
             }
         ]
@@ -535,7 +535,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can imagine all the possibilities with chained promises (and escaping callback hell!).  Other ",
+                "value":" Chained promises help with readability and are an escape from callback hell!  Other ",
                 "children":null
             },
             {
@@ -549,7 +549,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" object functions include ",
+                "value":" object methods include ",
                 "children":null
             },
             {
@@ -577,7 +577,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", which resolve or reject the promised value after all promises are completed or the first completes respectively",
+                "value":", which resolve or reject a value after all promises complete or the first promise completes (respectively)",
                 "children":null
             },
             {
@@ -589,7 +589,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  You can look at all the code from this discovery ",
+                "value":".  You can read all the code from this discovery on ",
                 "children":null
             },
             {
@@ -602,7 +602,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"HERE",
+                        "value":"GitHub",
                         "children":null
                     }
                 ]

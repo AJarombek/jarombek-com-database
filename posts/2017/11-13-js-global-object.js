@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When you run code in JavaScript there is a global object created in the global scope.  What this object is depends on the environment JavaScript is running in.  If you are running JavaScript code in your web browser the global object will be ",
+                "value":" When you run code in JavaScript there is a global object created in the global scope.  What this object is depends on the environment JavaScript is running in.  If you run JavaScript code in your web browser the global object is ",
                 "children":null
             },
             {
@@ -30,7 +30,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", which represents the browser window.  Window exposes an API that allows interaction with the Document Object Model (DOM), click listeners, and other information about the browser window",
+                "value":", which represents the browser window.  Window exposes an API for interaction with the Document Object Model (DOM), click listeners, and other information about the browser window",
                 "children":null
             },
             {
@@ -69,7 +69,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" object to check the current URL and previous page visited by the user (to create a ‘back’ button).  The most common use of ",
+                "value":" object to check the current URL and previous page visited by the user (to create a 'back' button).  However, the most common use of ",
                 "children":null
             },
             {
@@ -83,7 +83,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" however is to manipulate the DOM and set click listeners (I used frameworks such as JQuery to perform these tasks in the past). ",
+                "value":" is to manipulate the DOM and set click listeners (I used frameworks such as JQuery to perform these tasks in the past). ",
                 "children":null
             }
         ]
@@ -99,7 +99,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When you run code in JavaScript there is a global object created in the global scope.  What this object is depends on the environment JavaScript is running in.  If you are running JavaScript code in your web browser the global object will be ",
+                "value":" When you run code in JavaScript there is a global object created in the global scope.  What this object is depends on the environment JavaScript is running in.  If you run JavaScript code in your web browser the global object is ",
                 "children":null
             },
             {
@@ -113,7 +113,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", which represents the browser window.  Window exposes an API that allows interaction with the Document Object Model (DOM), click listeners, and other information about the browser window",
+                "value":", which represents the browser window.  Window exposes an API for interaction with the Document Object Model (DOM), click listeners, and other information about the browser window",
                 "children":null
             },
             {
@@ -152,7 +152,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" object to check the current URL and previous page visited by the user (to create a ‘back’ button).  The most common use of ",
+                "value":" object to check the current URL and previous page visited by the user (to create a 'back' button).  However, the most common use of ",
                 "children":null
             },
             {
@@ -166,7 +166,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" however is to manipulate the DOM and set click listeners (I used frameworks such as JQuery to perform these tasks in the past). ",
+                "value":" is to manipulate the DOM and set click listeners (I used frameworks such as JQuery to perform these tasks in the past). ",
                 "children":null
             }
         ]
@@ -179,7 +179,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Before we look at some of the uses for the window object, it is important to note that when we run code in the global scope ",
+                "value":" Before we look at some uses for the window object, it is important to note that when code is run in the global scope ",
                 "children":null
             },
             {
@@ -193,7 +193,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" will contain the ",
+                "value":" contains the ",
                 "children":null
             },
             {
@@ -207,7 +207,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" variable. ",
+                "value":" object. ",
                 "children":null
             }
         ]
@@ -319,7 +319,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" which displays a field for the user to enter a value.  In the global scope you can call ",
+                "value":", which displays a field for the user to enter a value.  In the global scope you can call ",
                 "children":null
             },
             {
@@ -420,7 +420,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" which creates and returns a new window.  We will use ",
+                "value":" which creates and returns a new window.  The following code uses ",
                 "children":null
             },
             {
@@ -434,7 +434,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" along with windows ",
+                "value":" along with the window objects ",
                 "children":null
             },
             {
@@ -448,7 +448,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function which will write a new element to the DOM. ",
+                "value":" function to write a new element to the DOM. ",
                 "children":null
             }
         ]
@@ -469,7 +469,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In this code we open a new window and assign the newly created ",
+                "value":" In this code I opened a new window and assigned the newly created ",
                 "children":null
             },
             {
@@ -525,7 +525,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is the API revealed for the DOM.  It is in the document API where we can traverse and manipulate the DOM to create dynamic web pages. ",
+                "value":" is the API revealed for the DOM. The document API can traverse and manipulate the DOM to create dynamic web pages. ",
                 "children":null
             }
         ]
@@ -538,7 +538,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Finally we can utilize the ",
+                "value":" Finally I utilized the ",
                 "children":null
             },
             {
@@ -552,7 +552,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" object's event listeners. Let’s create a function that will be called when the user clicks on the new window.  Once clicked, we want the new window to close. ",
+                "value":" object's event listeners. I created a function that is called when a user clicks on the new window.  Once clicked, the new window closes. ",
                 "children":null
             }
         ]
@@ -573,7 +573,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"     The problem with this approach is that we can only assign one click listener to the window",
+                "value":" The problem with this approach is only one click listener can be assigned to the window at a time",
                 "children":null
             },
             {
@@ -585,7 +585,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".     If we wanted to create more, we could utilize the ",
+                "value":". If I wanted to create more, I could utilize the ",
                 "children":null
             },
             {
@@ -599,7 +599,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"     function on the target object (in this case the window)",
+                "value":" function on the target object (in this case the window)",
                 "children":null
             },
             {
@@ -624,7 +624,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"     This look into the ",
+                "value":" The ",
                 "children":null
             },
             {
@@ -638,7 +638,22 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" object and DOM API only scratched     the surface of all the features.  I think understanding both of them can     help a programmer to build better web pages (even if you aren’t contacting them directly.  In newer code,     you are likely to be using higher level frameworks such as JQuery, AngularJS, or ReactJS instead). ",
+                "value":" object and DOM API have many features.  I think understanding both of them can help a programmer to build better web pages (even if you aren't contacting them directly.  In newer code, you are likely using a higher level framework such as JQuery, AngularJS, or ReactJS instead). ",
+                "children":null
+            }
+        ]
+    },
+    {
+        "el":"sectiontitle",
+        "attributes":{
+            "title":"Global Object in Nodejs"
+        },
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":"Global Object in Node.js",
                 "children":null
             }
         ]
@@ -651,7 +666,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"     So what about code running in Node.js?  In Node there is also a global object called     ",
+                "value":" So what about code running in Node.js?  In Node there is also a global object called ",
                 "children":null
             },
             {
@@ -665,7 +680,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  I haven’t yet found anything too useful     in this global object (although my knowledge of Node is limited) but you can get information on the     environment Node is running in by reading global properties. ",
+                "value":".  I haven't found anything too useful in this global object (although my knowledge of Node is limited), but it does expose information on the environment Node is running in. ",
                 "children":null
             }
         ]
@@ -686,7 +701,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"     One final note on the global object in Node.  You may expect the assigned value of     ",
+                "value":" One final note on the global object in Node.  You may expect the assigned value of ",
                 "children":null
             },
             {
@@ -714,7 +729,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" in the     global scope (just like ",
+                "value":" in the global scope (just like ",
                 "children":null
             },
             {
@@ -728,7 +743,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" in the browser).  Let’s try it out: ",
+                "value":" in the browser).  Let's try it out: ",
                 "children":null
             }
         ]
@@ -749,7 +764,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If you run this code, the returned value is the empty object ",
+                "value":" If you run this code, the returned value is actually the empty object ",
                 "children":null
             },
             {
@@ -763,7 +778,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" instead.  Why is this?  It turns out when we debug the file, this code is actually executed like so: ",
+                "value":" .  Why is this?  It turns out upon debugging the file, this code is executed like so: ",
                 "children":null
             }
         ]
@@ -784,7 +799,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" It turns out ",
+                "value":" In this code ",
                 "children":null
             },
             {
@@ -798,7 +813,28 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is assigned to the module itself, which here is empty.  As I mentioned my Node.js experience is limited, but I will be fixing that soon! ",
+                "value":" is assigned to the module itself, which is empty.  As I mentioned my Node.js experience is limited, but I'll be ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/dec-30-2017-nodejs-mongodb-api-prototype"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"fixing that soon",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":"! ",
                 "children":null
             }
         ]
@@ -846,7 +882,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" All the code from this discovery can be found ",
+                "value":" All the code from this discovery can be found on ",
                 "children":null
             },
             {
@@ -859,7 +895,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"HERE",
+                        "value":"GitHub",
                         "children":null
                     }
                 ]

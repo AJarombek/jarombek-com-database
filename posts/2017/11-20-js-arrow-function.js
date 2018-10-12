@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In many programming languages arrow functions are added to allow for concise one liners and decreased verbosity.  Less lines of code is one of the things that made the Java 8 release with lambdas so appealing.  In ES6 JavaScript also added arrow functions to write shorter, more readable code.  In JavaScript however these new functions aren’t as universally praised due to some quirks. ",
+                "value":" In many programming languages arrow functions are added to allow for concise one liners and decreased verbosity.  Less lines of code is one of the things that made the Java 8 release with lambdas so appealing.  In ES6 JavaScript also added arrow functions to write shorter, more readable code.  However, in JavaScript the arrow functions aren't as universally praised due to some quirks. ",
                 "children":null
             }
         ]
@@ -29,7 +29,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In JavaScript I have ",
+                "value":" In JavaScript I ",
                 "children":null
             },
             {
@@ -48,6 +48,12 @@ preview = [
                 ]
             },
             {
+                "el":"#text",
+                "attributes":null,
+                "value":"  ",
+                "children":null
+            },
+            {
                 "el":"code",
                 "attributes":{
                     "class":"jarombek-inline-code"
@@ -58,7 +64,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and how it is set dynamically at runtime instead of lexically depending on the scope code is written in.  I also went over how many JavaScript users (including myself!) are easily confused by how ",
+                "value":" and how its set dynamically at runtime instead of depending on its lexical scope.  I also went over how many JavaScript users (including myself!) are easily confused by how ",
                 "children":null
             },
             {
@@ -72,7 +78,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" works in the language.  Arrow functions look to ‘fix’ these confusions by implementing a lexical ",
+                "value":" works.  Arrow functions look to 'fix' these confusions by implementing a lexical ",
                 "children":null
             },
             {
@@ -114,7 +120,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is equal to at the time it was written (instead of where it is called).  This leads to confusing behavior if you are expecting arrow functions to act like normal function definitions.  Let’s look at an example. ",
+                "value":" was equal to when arrow function was written (instead of when its called).  This leads to confusing behavior if you are expecting arrow functions to act like normal function definitions.  Let's look at an example. ",
                 "children":null
             }
         ]
@@ -130,7 +136,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In many programming languages arrow functions are added to allow for concise one liners and decreased verbosity.  Less lines of code is one of the things that made the Java 8 release with lambdas so appealing.  In ES6 JavaScript also added arrow functions to write shorter, more readable code.  In JavaScript however these new functions aren’t as universally praised due to some quirks. ",
+                "value":" In many programming languages arrow functions are added to allow for concise one liners and decreased verbosity.  Less lines of code is one of the things that made the Java 8 release with lambdas so appealing.  In ES6 JavaScript also added arrow functions to write shorter, more readable code.  However, in JavaScript the arrow functions aren't as universally praised due to some quirks. ",
                 "children":null
             }
         ]
@@ -143,7 +149,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In JavaScript I have ",
+                "value":" In JavaScript I ",
                 "children":null
             },
             {
@@ -162,6 +168,12 @@ content = [
                 ]
             },
             {
+                "el":"#text",
+                "attributes":null,
+                "value":"  ",
+                "children":null
+            },
+            {
                 "el":"code",
                 "attributes":{
                     "class":"jarombek-inline-code"
@@ -172,7 +184,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and how it is set dynamically at runtime instead of lexically depending on the scope code is written in.  I also went over how many JavaScript users (including myself!) are easily confused by how ",
+                "value":" and how its set dynamically at runtime instead of depending on its lexical scope.  I also went over how many JavaScript users (including myself!) are easily confused by how ",
                 "children":null
             },
             {
@@ -186,7 +198,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" works in the language.  Arrow functions look to ‘fix’ these confusions by implementing a lexical ",
+                "value":" works.  Arrow functions look to 'fix' these confusions by implementing a lexical ",
                 "children":null
             },
             {
@@ -228,7 +240,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is equal to at the time it was written (instead of where it is called).  This leads to confusing behavior if you are expecting arrow functions to act like normal function definitions.  Let’s look at an example. ",
+                "value":" was equal to when arrow function was written (instead of when its called).  This leads to confusing behavior if you are expecting arrow functions to act like normal function definitions.  Let's look at an example. ",
                 "children":null
             }
         ]
@@ -249,7 +261,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In this example we have a function ",
+                "value":" In this example there is a function ",
                 "children":null
             },
             {
@@ -263,7 +275,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" which creates an API for multiplying the ",
+                "value":" which creates an API for multiplying the value in ",
                 "children":null
             },
             {
@@ -277,7 +289,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" value by two.  Since we use the constructor call (with the ",
+                "value":" by two.  Since I used the constructor call (with the ",
                 "children":null
             },
             {
@@ -291,7 +303,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" keyword) ",
+                "value":" keyword), ",
                 "children":null
             },
             {
@@ -305,7 +317,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is assigned with the newly created object, in this case the returned object.  Now let’s look at what happens when we call these functions: ",
+                "value":" is assigned with the newly created object from the return statement.  Now let's observe what happens when invoking these functions: ",
                 "children":null
             }
         ]
@@ -452,7 +464,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" in JavaScript equals ",
+                "value":" in JavaScript returns ",
                 "children":null
             },
             {
@@ -507,21 +519,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" , the ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "class":"jarombek-inline-code"
-                },
-                "value":"this",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" reference in ",
+                "value":", its value in ",
                 "children":null
             },
             {
@@ -535,7 +533,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is the value that was held by ",
+                "value":" is the same as ",
                 "children":null
             },
             {
@@ -549,7 +547,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" in the function definitions scope (",
+                "value":" in the functions definition scope (",
                 "children":null
             },
             {
@@ -577,7 +575,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" values cannot be changed even when called later in the code in different scopes.  Let’s put this claim to the test by trying to explicitly set ",
+                "value":" values cannot be changed even when called in different scopes.  Let's put this claim to the test by trying to explicitly set ",
                 "children":null
             },
             {
@@ -626,7 +624,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" binding!  Very cool (and a bit confusing).  Some claim that arrow functions fix some of JavaScript’s flaws",
+                "value":" binding!  Very cool (and a bit confusing).  Some claim that arrow functions fix JavaScript's flawed ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"this",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" rules",
                 "children":null
             },
             {
@@ -638,21 +650,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" (in this case confusing ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "class":"jarombek-inline-code"
-                },
-                "value":"this",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" rules).  Others say it breaks expected behavior in the language",
+                "value":".  Others say it breaks expected behavior in the language",
                 "children":null
             },
             {
@@ -664,7 +662,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  I think if you aren’t using ",
+                "value":".  I think if you aren't using ",
                 "children":null
             },
             {
@@ -678,7 +676,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" in your code arrow functions can be a great way to increase readability.  Just be careful if the code gets in the hands of developers who aren’t aware of JavaScript’s quirks! ",
+                "value":" in your code then arrow functions increase readability.  Just be careful if your code gets in the hands of developers who aren't aware of JavaScript's quirks! ",
                 "children":null
             }
         ]
@@ -691,7 +689,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can find the full example code ",
+                "value":" You can find the full example code on ",
                 "children":null
             },
             {
@@ -704,7 +702,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"HERE",
+                        "value":"GitHub",
                         "children":null
                     }
                 ]

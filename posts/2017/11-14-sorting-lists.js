@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In this discovery I will look at sorting lists in different programming languages for non-trivial objects.  The languages I will look at are my core languages: Java, JavaScript, Swift, Python, PHP, and C.  I’ve used all these languages in larger projects and wish to stay proficient in them.  I will post snippets of the code in each language but you can also check out the ",
+                "value":" In this discovery I look at sorting lists in different programming languages for non-trivial objects.  The languages I use are my core languages: Java, JavaScript, Swift, Python, PHP, and C.  I've used all these languages in larger projects and wish to stay proficient in them.  Throughout this article I show snippets of code in each language, but you can also check out the full code ",
                 "children":null
             },
             {
@@ -29,7 +29,7 @@ preview = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"full examples",
+                        "value":"on GitHub",
                         "children":null
                     }
                 ]
@@ -37,14 +37,16 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". Let’s get started! ",
+                "value":". Let's get started! ",
                 "children":null
             }
         ]
     },
     {
         "el":"h5",
-        "attributes":null,
+        "attributes":{
+            "title":"Java"
+        },
         "value":null,
         "children":[
             {
@@ -66,7 +68,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In this discovery I will look at sorting lists in different programming languages for non-trivial objects.  The languages I will look at are my core languages: Java, JavaScript, Swift, Python, PHP, and C.  I’ve used all these languages in larger projects and wish to stay proficient in them.  I will post snippets of the code in each language but you can also check out the ",
+                "value":" In this discovery I look at sorting lists in different programming languages for non-trivial objects.  The languages I use are my core languages: Java, JavaScript, Swift, Python, PHP, and C.  I've used all these languages in larger projects and wish to stay proficient in them.  Throughout this article I show snippets of code in each language, but you can also check out the full code on ",
                 "children":null
             },
             {
@@ -79,7 +81,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"full examples",
+                        "value":"GitHub",
                         "children":null
                     }
                 ]
@@ -87,7 +89,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". Let’s get started! ",
+                "value":". Let's get started! ",
                 "children":null
             }
         ]
@@ -112,7 +114,7 @@ content = [
         "attributes":{
             "language":"Java"
         },
-        "value":"List<Person> list = Arrays.asList(new Person(\"Andrew\", \"Jar.\"),\n                                        new Person(\"Thomas\", \"Cau.\"),\n                                        new Person(\"Joe\", \"Smi.\"),\n                                        new Person(\"Ben\", \"Fis.\"));\n\nlist = list.stream()\n    .sorted(Comparator.comparing(Person::getLast))\n    .collect(toList());\n",
+        "value":"List<Person> list = Arrays.asList(new Person(\"Andrew\", \"Jar.\"),\n                                    new Person(\"Thomas\", \"Cau.\"),\n                                    new Person(\"Joe\", \"Smi.\"),\n                                    new Person(\"Ben\", \"Fis.\"));\n\nlist = list.stream()\n    .sorted(Comparator.comparing(Person::getLast))\n    .collect(toList());\n",
         "children":null
     },
     {
@@ -123,7 +125,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You may have expected the Java code to be messy and verbose with iterators and complex comparison functions.  With Java 8 it is short and concise thanks to streams and the comparator API. Also with the short-hand lambda syntax (called a method reference) we can simply write ",
+                "value":" You may have expected the Java code to be messy and verbose with iterators and complex comparison functions.  With Java 8 it is short and concise thanks to streams and the comparator API. Also using the short-hand lambda syntax (method reference) I was able to write ",
                 "children":null
             },
             {
@@ -151,7 +153,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Most of the Java code in the full example is for creating the Person POJO. ",
+                "value":".  Most of the code in the full example is for creating the Person POJO. ",
                 "children":null
             }
         ]
@@ -187,7 +189,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The JavaScript version is even simpler.  We just pass a call back function to ",
+                "value":" The JavaScript version is even simpler.  I just passed a call back function to ",
                 "children":null
             },
             {
@@ -201,7 +203,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and it uses this function when making comparisons. ",
+                "value":" and it uses the callback when making comparisons. ",
                 "children":null
             }
         ]
@@ -228,7 +230,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" calls produced the sorted array even though the first ",
+                "value":" invocations produced the sorted array even though the first ",
                 "children":null
             },
             {
@@ -242,7 +244,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" occurs before people is even sorted.  This is because depending on the environment console calls can be asynchronous. Therefore we may not get the results at the time we expect.  You can’t always trust ",
+                "value":" occurs before people is sorted.  This is because console functions are asynchronous in some environments. Therefore we may not get the results at the time we expect.  You can't always trust ",
                 "children":null
             },
             {
@@ -305,7 +307,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If you don’t know much Swift the sorting operation may look a bit confusing.  The ",
+                "value":" If you don't know much Swift the sorting operation may look a bit confusing.  The ",
                 "children":null
             },
             {
@@ -319,7 +321,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" method of the Array type is passed a Swift closure (not to be confused with a ",
+                "value":" method on the Array type is passed a Swift closure (not to be confused with a ",
                 "children":null
             },
             {
@@ -340,7 +342,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":") which is basically a callback function.  Since the Swift compiler knows that the ",
+                "value":"), which is basically a callback function.  Since the Swift compiler knows that the ",
                 "children":null
             },
             {
@@ -354,7 +356,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function takes a closure you can use the parameter shorthand which are represented as ",
+                "value":" function takes a closure you can use parameter shorthands which are represented as ",
                 "children":null
             },
             {
@@ -382,7 +384,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"(",
+                "value":" (",
                 "children":null
             },
             {
@@ -422,7 +424,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  We also utilize trailing closure syntax which can be used when the closure is the last parameter of the function.  What trailing closure syntax allows us to do is remove the functions parenthesis, and as you can see ",
+                "value":".  I also utilized trailing closure syntax which can be used when the closure is the last parameter of a function. Trailing closure syntax enables the removal of a function invocations parenthesis, and you can see ",
                 "children":null
             },
             {
@@ -473,7 +475,7 @@ content = [
         "attributes":{
             "language":"PHP"
         },
-        "value":"$array = array(new Person('Andrew', 'Jar.'), new Person(\"Thomas\", \"Cau.\"),\nnew Person(\"Joe\", \"Smi.\"), new Person(\"Ben\", \"Fis.\"));\n\nfunction comparator($a, $b) {\n    return $a->last < $b->last ? -1 : 1;\n}\n\nuasort($array, 'comparator');\n",
+        "value":"$array = array(new Person('Andrew', 'Jar.'), new Person(\"Thomas\", \"Cau.\"),\n                new Person(\"Joe\", \"Smi.\"), new Person(\"Ben\", \"Fis.\"));\n\nfunction comparator($a, $b) {\n    return $a->last < $b->last ? -1 : 1;\n}\n\nuasort($array, 'comparator');\n",
         "children":null
     },
     {
@@ -484,7 +486,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The PHP solution may be my least favorite.  We create the ",
+                "value":" The PHP solution may be my least favorite.  I created the ",
                 "children":null
             },
             {
@@ -526,7 +528,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is used for user defined comparisons where argument one is the array and argument two is the string name of the comparison function we defined.  Why can’t we treat our comparison function as a first class citizen and pass it as a variable to the second ",
+                "value":" is used for user defined comparisons where argument one is the array and argument two is the string name of the comparison function.  Why can't I treat the comparison function as a first class citizen and pass it as the second ",
                 "children":null
             },
             {
@@ -540,7 +542,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" argument?  Ugly. ",
+                "value":" argument?  This code feels ugly. ",
                 "children":null
             }
         ]
@@ -626,7 +628,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" As you also likely guessed, the C code is by far the most involved.  The structs do make the sorting easier (I originally tried sorting lists of lists of lists, but the pointers got out of control and I couldn’t figure it out!).  I utilized the standard libraries ",
+                "value":" As you also likely guessed, the C code is by far the most involved.  The structs do make the sorting easier (I originally tried sorting lists of lists of lists, but the pointers got out of control and I couldn't figure it out!).  I utilized the standard libraries ",
                 "children":null
             },
             {
