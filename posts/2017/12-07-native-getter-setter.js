@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In many languages I have worked with creating getters and setters for private class variables is a common practice.  In Java getters and setters are implemented as two functions which can be called directly on an object instance.  They are commonly used in the POJO structure.  In JavaScript getters and setters have native support in the language itself.  You can create these getters and setters with the ",
+                "value":" Creating getters and setters for private class variables is a common practice in many languages.  In Java getters and setters are implemented as two methods on an object instance. Getters and setters are often used in the POJO structure.  In JavaScript getters and setters have native support in the language itself.  JavaScript getters and setters are created with the ",
                 "children":null
             },
             {
@@ -54,7 +54,7 @@ preview = [
         "attributes":{
             "language":"JavaScript"
         },
-        "value":"    var person = {\n        _first: 'Andy',\n        _last: 'Jarombek',\n        get full() {\n            console.info('Accessing Full Name');\n            // Use ES6 template literals\n            return `${this._first} ${this._last}`;\n        }\n    };\n",
+        "value":"var person = {\n    _first: 'Andy',\n    _last: 'Jarombek',\n    get full() {\n        console.info('Accessing Full Name');\n        // Use ES6 template literals\n        return `${this._first} ${this._last}`;\n    }\n};\n",
         "children":null
     }
 ];
@@ -68,7 +68,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In many languages I have worked with creating getters and setters for private class variables is a common practice.  In Java getters and setters are implemented as two functions which can be called directly on an object instance.  They are commonly used in the POJO structure.  In JavaScript getters and setters have native support in the language itself.  You can create these getters and setters with the ",
+                "value":" Creating getters and setters for private class variables is a common practice in many languages.  In Java getters and setters are implemented as two methods on an object instance. Getters and setters are often used in the POJO structure.  In JavaScript getters and setters have native support in the language itself.  JavaScript getters and setters are created with the ",
                 "children":null
             },
             {
@@ -106,7 +106,7 @@ content = [
         "attributes":{
             "language":"JavaScript"
         },
-        "value":"    var person = {\n        _first: 'Andy',\n        _last: 'Jarombek',\n        get full() {\n            console.info('Accessing Full Name');\n            // Use ES6 template literals\n            return `${this._first} ${this._last}`;\n        }\n    };\n",
+        "value":"var person = {\n    _first: 'Andy',\n    _last: 'Jarombek',\n    get full() {\n        console.info('Accessing Full Name');\n        // Use ES6 template literals\n        return `${this._first} ${this._last}`;\n    }\n};\n",
         "children":null
     },
     {
@@ -117,7 +117,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can also use setters to perform validation on incoming data.  In the dynamically typed JavaScript language we can implement a strictly typed variable",
+                "value":" Setters can also perform validation on incoming data, such as type checking",
                 "children":null
             },
             {
@@ -150,7 +150,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can see that we can perform any sort of logic inside our getters and setters.  To make things even nicer we don't have to call a function to use our native getters and setters.  We just have to assign a value or access a property just like any normal object property! ",
+                "value":" Any sort of logic can be performed inside getters and setters.  To make things even nicer a function invocation isn't needed to utilize native getters and setters.  Value assignments and property accesses with getters and setters work just like any normal object property! ",
                 "children":null
             }
         ]
@@ -163,7 +163,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Out of all the other languages I use, the only other one with native getter and setter support like JavaScript is Swift",
+                "value":" Out of all the languages I use, the only other one with native getter and setter support is Swift",
                 "children":null
             },
             {
@@ -175,7 +175,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  You can check out the full getter and setter code in both languages ",
+                "value":". You can check out the full getter and setter code in both languages on ",
                 "children":null
             },
             {
@@ -188,7 +188,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"HERE",
+                        "value":"GitHub",
                         "children":null
                     }
                 ]

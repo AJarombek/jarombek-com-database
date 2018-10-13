@@ -16,7 +16,49 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In a previous posts I looked at Promises and Generators in JavaScript.  I mentioned that these two new ES6 features can be especially powerful when combined.  I do think that Promises on their own are very useful, however I am not yet sold on Generators.  Now we can see how Generators can potentially be used in production level code. ",
+                "value":" In previous posts I looked at ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/nov-21-2017-js-promises"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"Promises",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" and ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/nov-25-2017-generators"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"Generators",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" in JavaScript.  I mentioned these two new ES6 features are especially powerful when combined.  I do think that Promises on their own are very useful, however I am not yet sold on Generators. ",
                 "children":null
             }
         ]
@@ -29,7 +71,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When combining Promises and Generators, we can create a function that handles asynchronous tasks (let us call it ",
+                "value":" By combining Promises and Generators, we can create a function that handles asynchronous tasks (let's call it ",
                 "children":null
             },
             {
@@ -57,7 +99,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" statement in the generator passes a promise, which when resolved with a value calls the generators iterator.  Therefore each asynchronous task in the ",
+                "value":" statement in the generator returns a promise, which calls the generators iterator once resolved.  Therefore each asynchronous task in the ",
                 "children":null
             },
             {
@@ -71,7 +113,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function moves on to the next task in sequential order when the promise is completed.  Let's look at some pseudocode: ",
+                "value":" function moves on to the next task in sequential order.  Let's look at some pseudocode: ",
                 "children":null
             }
         ]
@@ -87,7 +129,49 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In a previous posts I looked at Promises and Generators in JavaScript.  I mentioned that these two new ES6 features can be especially powerful when combined.  I do think that Promises on their own are very useful, however I am not yet sold on Generators.  Now we can see how Generators can potentially be used in production level code. ",
+                "value":" In previous posts I looked at ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/nov-21-2017-js-promises"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"Promises",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" and ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/nov-25-2017-generators"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"Generators",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" in JavaScript.  I mentioned these two new ES6 features are especially powerful when combined.  I do think that Promises on their own are very useful, however I am not yet sold on Generators. ",
                 "children":null
             }
         ]
@@ -100,7 +184,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When combining Promises and Generators, we can create a function that handles asynchronous tasks (let us call it ",
+                "value":" By combining Promises and Generators, we can create a function that handles asynchronous tasks (let's call it ",
                 "children":null
             },
             {
@@ -128,7 +212,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" statement in the generator passes a promise, which when resolved with a value calls the generators iterator.  Therefore each asynchronous task in the ",
+                "value":" statement in the generator returns a promise, which calls the generators iterator once resolved.  Therefore each asynchronous task in the ",
                 "children":null
             },
             {
@@ -142,7 +226,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function moves on to the next task in sequential order when the promise is completed.  Let's look at some pseudocode: ",
+                "value":" function moves on to the next task in sequential order.  Let's look at some pseudocode: ",
                 "children":null
             }
         ]
@@ -163,7 +247,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This code lacks all the error handling and other technicalities that would be seen in production code, but displays the basic ideas of the ",
+                "value":" This code lacks error handling and other technicalities present in production code, but displays the basic idea of the ",
                 "children":null
             },
             {
@@ -177,7 +261,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function.  Now lets look at some pseudocode of how ",
+                "value":" function.  The following pseudocode uses ",
                 "children":null
             },
             {
@@ -191,7 +275,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" would be called using some made up functions that execute HTTP GET calls. ",
+                "value":" to execute HTTP GET requests. ",
                 "children":null
             }
         ]
@@ -212,7 +296,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" With our reusable ",
+                "value":" With the reusable ",
                 "children":null
             },
             {
@@ -226,7 +310,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function, this is how simple our asynchronous code can be!  Even better, it is laid out in a synchronous manner, no promises or dreaded callbacks to deal with!  All of the ",
+                "value":" function, asynchronous code is very simple!  Even better, its written in a synchronous manner with no promises or dreaded callbacks to deal with!  All of the ",
                 "children":null
             },
             {
@@ -240,33 +324,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" code is extracted out. So why am I only showing pseudocode and not the real thing?  This is because in ECMAScript 2017 (or following the old naming convention ES8) this pattern has gotten even easier with a standardized ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "class":"jarombek-inline-code"
-                },
-                "value":"async",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" function",
-                "children":null
-            },
-            {
-                "el":"sup",
-                "attributes":null,
-                "value":"1",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" which is created using the ",
+                "value":" code is abstracted away. So why am I only showing pseudocode and not the real thing?  The reason is because ECMAScript 2017 (or following the old naming convention ES8) implemented this pattern using the new ",
                 "children":null
             },
             {
@@ -294,7 +352,19 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" keywords. ",
+                "value":" keywords",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
                 "children":null
             }
         ]
@@ -307,7 +377,28 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In my discovery on promises I created a google search API for cat posts.  I am going to use this example again except this time using an ES2017 ",
+                "value":" In my discovery on ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/nov-21-2017-js-promises"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"promises",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" I created a google search API for cat posts.  Let's refactor this example using an ES2017 ",
                 "children":null
             },
             {
@@ -321,7 +412,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function.  I will use Node 9 so that I won't have to transpile my code with Babel.  One thing that Node 9 (the newest version of Node.js as of November 2017) does not currently support is ES6 modules by default, so I have to use the ",
+                "value":" function.  I used Node 9 for the refactor to avoid transpiling my code with Babel.  One thing that Node 9 (the newest version of Node.js as of November 2017) does not support by default is ES6 modules.  As a workaround, the ",
                 "children":null
             },
             {
@@ -335,7 +426,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" flag when running my code to enable them",
+                "value":" flag can be used to enable ES6 modules",
                 "children":null
             },
             {
@@ -347,7 +438,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  I also have to use the .mjs extension for my JavaScript files so Node.js knows that they are modules.  These files are hilariously referred to as Micheal Jackson Scripts.  Hopefully the .mjs files are just for the experimental version and not here to stay - I would miss those .js files (and it doesn't seem like an elegant solution)! ",
+                "value":".  To notify Node.js that files are modules, the .mjs file extension is used. These files are hilariously referred to as Micheal Jackson Scripts.  Hopefully the .mjs files are just for the experimental version and not here to stay - I would miss those .js files (and it doesn't seem like an elegant solution)! ",
                 "children":null
             }
         ]
@@ -360,7 +451,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now let's get to the code.  The first piece is the meowHttp module which creates a promise for our google search",
+                "value":" Now let's get to the code.  The first module creates a promise for a request to the google search API",
                 "children":null
             },
             {
@@ -372,7 +463,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This module will be imported into the main JavaScript file and used in the ",
+                "value":". The second module imports the first module and uses the ES2017 ",
                 "children":null
             },
             {
@@ -396,35 +487,8 @@ content = [
         "attributes":{
             "language":"JavaScript"
         },
-        "value":"import {default as https} from 'https';\n\nexport function search(query = 'cat') {\n\nconst url = 'https://www.googleapis.com/customsearch/v1?key=AIzaSyA2QIPJoGYMx_DuQH6wDqNG3AHXG7bcb94' +\n            '&cx=005720647135116730303:chkg-pnyocg&q=' + query + '&prettyPrint=false';\n\nreturn new Promise(function (resolve, reject) {\n\n    https.get(url, res => {\n        res.setEncoding('utf-8');\n        let response = '';\n\n        res.on('data', data => {\n            response += data;\n        });\n\n        res.on('end', () => {\n            resolve(JSON.parse(response));\n        });\n        });\n    });\n}\n",
+        "value":"import {default as https} from 'https';\n\nexport function search(query = 'cat') {\n\n    const url = 'https://www.googleapis.com/customsearch/v1?key=AIzaSyA2QIPJoGYMx_DuQH6wDqNG3AHXG7bcb94' +\n                '&cx=005720647135116730303:chkg-pnyocg&q=' + query + '&prettyPrint=false';\n\n    return new Promise(function (resolve, reject) {\n\n        https.get(url, res => {\n            res.setEncoding('utf-8');\n            let response = '';\n\n            res.on('data', data => {\n                response += data;\n            });\n\n            res.on('end', () => {\n                resolve(JSON.parse(response));\n            });\n        });\n    });\n}\n",
         "children":null
-    },
-    {
-        "el":"p",
-        "attributes":null,
-        "value":null,
-        "children":[
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" Let's put this module to work with our ES2017 ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "class":"jarombek-inline-code"
-                },
-                "value":"async",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" function: ",
-                "children":null
-            }
-        ]
     },
     {
         "el":"codesnippet",
@@ -442,7 +506,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If you compare this code with the previous Promise and Generator code you can see that the ",
+                "value":" You may have noticed that the ",
                 "children":null
             },
             {
@@ -470,7 +534,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" keywords and simply syntactic sugar for our ",
+                "value":" keywords are simply syntactic sugar for our ",
                 "children":null
             },
             {
@@ -498,35 +562,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" functions.  Now this is a truly elegant solution that allows asynchronous code to be written in an easy to understand synchronous manner.  All of the synchronous code is separated out in our imported modules ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "class":"jarombek-inline-code"
-                },
-                "value":"search()",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" function.  In this code the ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "class":"jarombek-inline-code"
-                },
-                "value":"print()",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" function displays the names of the articles from the API, and the result of running the code is as follows: ",
+                "value":" functions.  This is a truly elegant solution that allows asynchronous code to be written in an easily understandable synchronous manner.  Executing this code results in the following: ",
                 "children":null
             }
         ]
@@ -557,7 +593,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now you can see how powerful the ES2017 ",
+                "value":" The ES2017 ",
                 "children":null
             },
             {
@@ -571,7 +607,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function is! Although you don't actually work with the details of combined Promises and Generators in ES2017, it is still good to know what is going on behind the scenes!  You can find all the code from this discovery ",
+                "value":" function is very powerful! Although you never need to fully understand the details of combined Promises and Generators when using ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"async",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" functions, it is still good to know what is going on behind the scenes! All the code from this discovery is on ",
                 "children":null
             },
             {
@@ -584,7 +634,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"HERE",
+                        "value":"GitHub",
                         "children":null
                     }
                 ]

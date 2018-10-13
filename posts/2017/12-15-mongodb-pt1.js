@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Continuing the trend of learning more about JavaScript, today I will be looking at MongoDB. Mongo is a NoSQL database which stores data in documents.  Before we get into the code, it is important to question why to even use MongoDB in the first place. ",
+                "value":" Continuing the trend of learning more about JavaScript, today I'm looking at MongoDB. Mongo is a NoSQL database that stores data in documents.  Before getting into the code, its important to question why MongoDB is used in the first place. ",
                 "children":null
             }
         ]
@@ -29,7 +29,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" First lets look at some of the positive aspects of MongoDB.  The database stores its data as JSON (and internally as BSON - short for Binary JSON) which in my personal opinion is the best structure for transferring data.  In MongoDB the BSON implementation makes this data extremely lightweight",
+                "value":" First lets look at some positive aspects of MongoDB.  MongoDB stores its data as JSON (and internally as BSON - short for Binary JSON) which in my personal opinion is the best structure for transferable data.  BSON causes the stored data to be extremely lightweight",
                 "children":null
             },
             {
@@ -41,7 +41,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". If you are using a JavaScript web stack, MongoDB allows you to even use JavaScript in your database instead of SQL.  The query language of MongoDB is also JavaScript, which means if you have knowledge in JavaScript using MongoDB will be an easy transition.  You can even use JavaScript functions and variables to perform complex queries and database updates! ",
+                "value":". MongoDB is great for a full JavaScript web stack, since MongoDB uses JavaScript as its query language instead of SQL.  Having simple JavaScript knowledge helps make MongoDB an easy transition.  You can even use JavaScript functions and variables to perform complex queries and database updates! ",
                 "children":null
             }
         ]
@@ -57,7 +57,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Continuing the trend of learning more about JavaScript, today I will be looking at MongoDB. Mongo is a NoSQL database which stores data in documents.  Before we get into the code, it is important to question why to even use MongoDB in the first place. ",
+                "value":" Continuing the trend of learning more about JavaScript, today I'm looking at MongoDB. Mongo is a NoSQL database that stores data in documents.  Before getting into the code, its important to question why MongoDB is used in the first place. ",
                 "children":null
             }
         ]
@@ -70,7 +70,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" First lets look at some of the positive aspects of MongoDB.  The database stores its data as JSON (and internally as BSON - short for Binary JSON) which in my personal opinion is the best structure for transferring data.  In MongoDB the BSON implementation makes this data extremely lightweight",
+                "value":" First lets look at some positive aspects of MongoDB.  MongoDB stores its data as JSON (and internally as BSON - short for Binary JSON) which in my personal opinion is the best structure for transferable data.  BSON causes the stored data to be extremely lightweight",
                 "children":null
             },
             {
@@ -82,7 +82,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". If you are using a JavaScript web stack, MongoDB allows you to even use JavaScript in your database instead of SQL.  The query language of MongoDB is also JavaScript, which means if you have knowledge in JavaScript using MongoDB will be an easy transition.  You can even use JavaScript functions and variables to perform complex queries and database updates! ",
+                "value":". MongoDB is great for a full JavaScript web stack, since MongoDB uses JavaScript as its query language instead of SQL.  Having simple JavaScript knowledge helps make MongoDB an easy transition.  You can even use JavaScript functions and variables to perform complex queries and database updates! ",
                 "children":null
             }
         ]
@@ -95,7 +95,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" As far as negatives are concerned, MongoDB does not have transaction support (similarly to many NoSQL databases).  MongoDB does support atomic writes for a single document (JavaScript object equivalent of a row of a table in a RDBMS)",
+                "value":" As far as negatives are concerned, MongoDB does not have transaction support (similar to many NoSQL databases).  MongoDB does support atomic writes for a single document (the equivalent of a row in a RDBMS table)",
                 "children":null
             },
             {
@@ -107,7 +107,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In other words, while you are updating a document either the entire update takes place, or no changes occur.  Other database connections will never see an update in progress, it will either have not started or be fully completed",
+                "value":".  In other words, while you are updating a document either the entire update takes place, or no change occurs.  Other database connections will never see an update in progress",
                 "children":null
             },
             {
@@ -119,7 +119,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This is however where MongoDB's ACID transaction properties end.  This can cause issues if you need true transactions in your database.  Another drawback (in my opinion) for MongoDB is the lack of SQL.  Using JavaScript for querying is nice, but SQL is at the top for query languages.  Luckily if you know SQL and JavaScript the learning curve for querying MongoDB is small. ",
+                "value":".  Unfortunately this is where MongoDB's ACID transaction properties end.  This can cause issues if you need true transactions in your database.  Another drawback (in my opinion) for MongoDB is the lack of SQL.  Using JavaScript for querying is nice, but SQL is the de facto standard of query languages.  Luckily if you know SQL and JavaScript the learning curve for querying MongoDB is small. ",
                 "children":null
             }
         ]
@@ -132,7 +132,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One thing about MongoDB that can be seen as a positive or negative is its schema-less design.  This allows you to have a variable number of properties in a document and to add and remove properties whenever you like.  This allows for a lot of flexibility with changing requirements and evolving object state.  It also debatably makes it harder to create a well structured database.  With more power comes more responsibility! ",
+                "value":" One thing about MongoDB that can be seen as a positive or negative is its schema-less design.  This allows for a variable number of properties in a document and the ability to add or remove properties at any time. A schema-less design provides a lot of flexibility for changing requirements and evolving object state.  However it can make it harder to create a well structured database.  With more power comes more responsibility! ",
                 "children":null
             }
         ]
@@ -159,7 +159,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" command in bash to start up the database and CLI.  It is important to know that in MongoDB there are three main logical groupings; databases, collections, and documents.  Databases are not the same as a traditional RDBMS database connection - they are simply groupings (namespaces) for collections and documents",
+                "value":" command in bash to start up the database and CLI.  It is important to know that MongoDB has three logical groupings; databases, collections, and documents.  Databases are not the same as a traditional RDBMS database connection - they are simply groupings (namespaces) for collections and documents",
                 "children":null
             },
             {
@@ -171,7 +171,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". Collections are the way we group documents together in MongoDB, similar to tables in an RDBMS. ",
+                "value":". Collections are a way to group documents together in MongoDB, similar to tables in an RDBMS. ",
                 "children":null
             }
         ]
@@ -184,7 +184,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" To start, let's make a new database for our Christmas trees.  To change databases we can use the ",
+                "value":" To start, I made a new database for Christmas trees.  The ",
                 "children":null
             },
             {
@@ -198,7 +198,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" command. ",
+                "value":" command changes the current database. ",
                 "children":null
             }
         ]
@@ -219,7 +219,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This command does not actually create the database yet, first we need to add some collections and documents. Let's add a document to a collection we will call tree: ",
+                "value":" This command does not create a database yet.  To do that I need to add some collections and documents. I added a document to a collection called ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"tree",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":": ",
                 "children":null
             }
         ]
@@ -240,7 +254,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can see the document JSON is passed into the ",
+                "value":" The document JSON is passed as an argument to the ",
                 "children":null
             },
             {
@@ -268,7 +282,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" collection object.  If we want to view all the documents in the tree collection, we can use the collections ",
+                "value":" collection object.  The ",
                 "children":null
             },
             {
@@ -282,7 +296,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function. ",
+                "value":" function can be used to view all the documents in the tree collection. ",
                 "children":null
             }
         ]
@@ -303,7 +317,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This code sample also shows that we can chain functions.  The second function ",
+                "value":" This code sample shows the ability to chain functions.  The second function ",
                 "children":null
             },
             {
@@ -330,7 +344,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Let's say we want to add more properties to our new tree document.  Since MongoDB collections have no schema, we can add any properties that we want! ",
+                "value":" Let's say I want to add more properties to the tree document.  Since MongoDB collections have no schema, any properties can be added! ",
                 "children":null
             }
         ]
@@ -351,7 +365,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" We use the ",
+                "value":" I used the ",
                 "children":null
             },
             {
@@ -365,7 +379,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function on the collection to edit a document.  The first parameter will query the collection and match with a document, and the second parameter defines what to update.  The ",
+                "value":" function on the collection to edit a document.  The first parameter queries the collection and matches with a document.  The second parameter defines what to update.  The ",
                 "children":null
             },
             {
@@ -379,7 +393,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" property will set the specified properties in the document to the given values",
+                "value":" property binds the specified properties in the document to the given values",
                 "children":null
             },
             {
@@ -404,7 +418,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" With these code samples you can start to imagine the possibilities for using JavaScript to query MongoDB. However performing complex JavaScript code in the CLI gets quite difficult.  Thankfully MongoDB allows us to edit any variable or function in our favorite text editor.  In my case I will be using Vim.  To get this to work we first have to change the ",
+                "value":" These simple queries are easily written in the MongoDB CLI. However performing complex JavaScript code in the CLI gets quite difficult.  Thankfully MongoDB allows any variable or function to be edited in a text editor.  In my case I used Vim.  To get Vim to work I had to change the ",
                 "children":null
             },
             {
@@ -453,7 +467,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now in the MongoDB shell we can define a function that we will edit in vim: ",
+                "value":" Now in the MongoDB shell I defined a function to edit in Vim: ",
                 "children":null
             }
         ]
@@ -474,7 +488,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Using the name of this function, we can begin editing it in vim with the ",
+                "value":" Using the name of this function, I began editing in Vim with the ",
                 "children":null
             },
             {
@@ -509,7 +523,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Since MongoDB queries use JavaScript, we can use everything in the JavaScript language (even ES6+ features!) in our function.  I will edit the ",
+                "value":" Since MongoDB queries use JavaScript, anything in the JavaScript language (even ES6+ features!) can be used in a function.  I edited the ",
                 "children":null
             },
             {
@@ -523,7 +537,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function so that it inserts another document into the tree collection.  When the function is edited to our liking, write and quit vim. ",
+                "value":" function so that it inserts another document into the tree collection.  Once the function was finalized, I saved the file and quit vim. ",
                 "children":null
             }
         ]
@@ -552,7 +566,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now back in the MongoDB CLI we can view the functions contents by typing ",
+                "value":" Back in the MongoDB CLI the functions contents can be viewed by typing ",
                 "children":null
             },
             {
@@ -566,7 +580,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and run the code in the function by typing ",
+                "value":".  The function is executed by typing ",
                 "children":null
             },
             {
@@ -593,7 +607,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now our tree collection contains two documents.  Let's say we want to add two properties to our existing documents, ",
+                "value":" Now the tree collection contains two documents.  What if I wanted to add the properties ",
                 "children":null
             },
             {
@@ -621,7 +635,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  We could use the ",
+                "value":" to the existing documents?  I could use the ",
                 "children":null
             },
             {
@@ -635,7 +649,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function, however this function only matches with the first document it finds.  To match all the documents that fit the query conditions, we must use ",
+                "value":" function, however it only matches with the first document it finds.  To match all documents that fit certain query conditions, the ",
                 "children":null
             },
             {
@@ -649,7 +663,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". ",
+                "value":" function is used. ",
                 "children":null
             }
         ]
@@ -670,7 +684,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Finally to show the power of using JavaScript functions in MongoDB, I will create a function that bulk inserts random trees into our database. ",
+                "value":" Finally to show the power of using JavaScript functions in MongoDB, I created a function that bulk inserts random trees into the database. ",
                 "children":null
             }
         ]
@@ -691,7 +705,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" We can pass ",
+                "value":" I passed ",
                 "children":null
             },
             {
@@ -705,7 +719,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" as a parameter to this function, effectively calling it one thousand times.  When we check to see how many trees are in our tree collection, we will get 1003 as expected. ",
+                "value":" as a parameter to this function, invoking it one thousand times.  When I checked to see the number of trees in tree collection, I got 1003 as expected. ",
                 "children":null
             }
         ]
@@ -731,14 +745,16 @@ content = [
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
                 "value":"find()",
                 "children":null
             },
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function also accepts JSON, we can count all trees of type Frazier and height between 6-7 feet: ",
+                "value":" function also accepts JSON, it is easy to count all the trees of type Frazier with a height between 6-7 feet: ",
                 "children":null
             }
         ]
@@ -759,20 +775,20 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" With knowledge of JavaScript and query languages, MongoDB can be an extremely powerful database.  I have only scratched the surface here, but there we will many more discoveries to come!  You can find all the code from this discovery ",
+                "value":" With knowledge of JavaScript and query languages, MongoDB can be an extremely powerful database.  I  only scratched the surface here, but there will be many more discoveries to come!  You can find all the code from this discovery on ",
                 "children":null
             },
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/\nmaster/2017/12-Dec/12-15-MongoDB-Pt1"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2017/12-Dec/12-15-MongoDB-Pt1"
                 },
                 "value":null,
                 "children":[
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"HERE",
+                        "value":"GitHub",
                         "children":null
                     }
                 ]

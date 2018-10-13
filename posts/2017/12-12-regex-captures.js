@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Regular expressions are very commonly used in my code.  However, their are still certain aspects of them that have remained a mystery to me.  Today I will explore one new aspect of regular expressions - captures.  I will write the code for captures in JavaScript but they apply to many languages with regex capabilities (including my main language Java).  Let's dig in. ",
+                "value":" Regular expressions are commonly used in my code.  However, there are still certain aspects of them that remain a mystery to me.  Today I'm exploring one new aspect of regular expressions - captures.  Although JavaScript is used in this post, the following concepts apply to many languages with regex capabilities (including my main language Java).  Let's dig in. ",
                 "children":null
             }
         ]
@@ -29,7 +29,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Captures allow us to save pieces of a regular expression so we can use them later on.  For example, it we have a regex that matches emails, we can capture certain aspects of the email - the local part and the domain.  We can also do the same thing with dates - saving the day, month, and year.  That is what happens in the following example: ",
+                "value":" Captures help save pieces of a regular expression for later use.  For example, if a regex matches emails, I can capture the two main pieces of an email - the local-part and the domain.  The following code saves the day, month, and year from a date. ",
                 "children":null
             }
         ]
@@ -45,7 +45,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Regular expressions are very commonly used in my code.  However, their are still certain aspects of them that have remained a mystery to me.  Today I will explore one new aspect of regular expressions - captures.  I will write the code for captures in JavaScript but they apply to many languages with regex capabilities (including my main language Java).  Let's dig in. ",
+                "value":" Regular expressions are commonly used in my code.  However, there are still certain aspects of them that remain a mystery to me.  Today I'm exploring one new aspect of regular expressions - captures.  Although JavaScript is used in this post, the following concepts apply to many languages with regex capabilities (including my main language Java).  Let's dig in. ",
                 "children":null
             }
         ]
@@ -58,7 +58,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Captures allow us to save pieces of a regular expression so we can use them later on.  For example, it we have a regex that matches emails, we can capture certain aspects of the email - the local part and the domain.  We can also do the same thing with dates - saving the day, month, and year.  That is what happens in the following example: ",
+                "value":" Captures help save pieces of a regular expression for later use.  For example, if a regex matches emails, I can capture the two main pieces of an email - the local-part and the domain.  The following code saves the day, month, and year from a date. ",
                 "children":null
             }
         ]
@@ -68,7 +68,7 @@ content = [
         "attributes":{
             "language":"JavaScript"
         },
-        "value":"let date = \"02/26/1995\";\n\nlet pattern = /(\\d{1,2})\\/(\\d{2})\\/(\\d{4})/;\nlet captures = date.match(pattern);\n\nconsole.info(captures); // [\"02/26/1995\", \"02\", \"26\", \"1995\"]\n\n// The captures can be accessed from the array produced by match()\nconsole.info(`Month: ${captures[1]}, Day: ${captures[2]}, Year: ${captures[3]}`);\n",
+        "value":"let date = \"02/26/1995\";\n\nlet pattern = /(\\d{1,2})\\/(\\d{2})\\/(\\d{4})/;\nlet captures = date.match(pattern);\n\nconsole.info(captures); // [\"02/26/1995\", \"02\", \"26\", \"1995\"]\n\n// The captures are accessed from the array produced by match()\nconsole.info(`Month: ${captures[1]}, Day: ${captures[2]}, Year: ${captures[3]}`);\n",
         "children":null
     },
     {
@@ -79,7 +79,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" We use the grouping syntax ",
+                "value":" The grouping syntax ",
                 "children":null
             },
             {
@@ -93,7 +93,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" to define a capture.  The value matched inside this capture is then saved into an array when the ",
+                "value":" is used to define a capture.  The value matched to a capture is saved to an array when the ",
                 "children":null
             },
             {
@@ -107,7 +107,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function is called on the string.  We can then access this arrays elements, as shown on the last line. ",
+                "value":" function is called. ",
                 "children":null
             }
         ]
@@ -120,7 +120,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If we want to use grouping but don't need to capture pieces of our regular expression, JavaScript allows us to specify that a group shouldn't create a capture with the ",
+                "value":" If I want to use grouping but don't need to capture pieces of a regular expression, the syntax ",
                 "children":null
             },
             {
@@ -134,7 +134,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" syntax.  This will result in less work for the languages engine to perform",
+                "value":" specifies that a group shouldn't create a capture. This results in less work for the languages engine to perform",
                 "children":null
             },
             {
@@ -167,7 +167,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One final thing to explore with captures is backreferences.  This allows us to refer to previous captures created in the same regular expression",
+                "value":" One final thing to explore with captures is backreferences.  Backreferences refer to previous captures created in the same regular expression",
                 "children":null
             },
             {
@@ -179,7 +179,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  We can use backreferences to check if the month and day in our dates are equal.  In the following code the ",
+                "value":".  In the following code I used backreferences to check if the month and day in a date are equal.  The ",
                 "children":null
             },
             {
@@ -193,7 +193,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" token will refer to the contents of the first capture (the month) which is defined at runtime.  Now our regular expressions are even more dynamic! ",
+                "value":" token refers to the contents of the first capture (the month).  The contents of ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"\\1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" is defined at runtime.  Backreferences make regular expressions even more dynamic! ",
                 "children":null
             }
         ]
@@ -214,7 +228,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can find the full code from this discovery ",
+                "value":" You can find the full code from this discovery on ",
                 "children":null
             },
             {
@@ -227,7 +241,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"HERE",
+                        "value":"GitHub",
                         "children":null
                     }
                 ]

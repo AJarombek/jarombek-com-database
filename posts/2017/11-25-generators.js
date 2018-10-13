@@ -16,7 +16,49 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When I first heard about generators in the ES6 version of JavaScript, I wasn't quite sure how useful they would be.  In this post I will look at the basics of generators in JavaScript along with other languages, and then explore some practical uses for it in a future post on combining Generators and Promises.  ",
+                "value":" When I first heard about generators in the ES6 version of JavaScript, I wasn't quite sure how useful they would be.  In this post I will look at the basics of generators in JavaScript and other languages. In a ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/nov-26-2017-js-async-function"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"future post",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" I'll explore how to combine Generators and ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/nov-21-2017-js-promises"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"Promises",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
                 "children":null
             }
         ]
@@ -29,7 +71,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" To introduce generators I am going to use them to create the fibonacci sequence. ",
+                "value":" The following code uses generators to create a fibonacci sequence. ",
                 "children":null
             }
         ]
@@ -45,7 +87,49 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When I first heard about generators in the ES6 version of JavaScript, I wasn't quite sure how useful they would be.  In this post I will look at the basics of generators in JavaScript along with other languages, and then explore some practical uses for it in a future post on combining Generators and Promises.  ",
+                "value":" When I first heard about generators in the ES6 version of JavaScript, I wasn't quite sure how useful they would be.  In this post I will look at the basics of generators in JavaScript and other languages. In a ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/nov-26-2017-js-async-function"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"future post",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" I'll explore how to combine Generators and ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/nov-21-2017-js-promises"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"Promises",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
                 "children":null
             }
         ]
@@ -58,7 +142,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" To introduce generators I am going to use them to create the fibonacci sequence. ",
+                "value":" The following code uses generators to create a fibonacci sequence. ",
                 "children":null
             }
         ]
@@ -79,7 +163,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" To create a generator function in JavaScript you put the ",
+                "value":" To create a generator function in JavaScript the ",
                 "children":null
             },
             {
@@ -93,7 +177,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" token next to a function.  When you call a generator function, it does not execute like a normal function.  Instead it creates an iterator which can be called to execute the functions contents. Therefore the ",
+                "value":" token is placed next to a function.  When a generator function is invoked, it does not execute like a normal function.  Instead it creates an iterator which is called to execute the functions contents. Therefore the ",
                 "children":null
             },
             {
@@ -121,7 +205,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function.  When the ",
+                "value":" function.  When ",
                 "children":null
             },
             {
@@ -135,7 +219,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function is called, the generator contents execute until the whole code body is run or a ",
+                "value":" is called, the generator contents execute until the whole code body is run or a ",
                 "children":null
             },
             {
@@ -149,7 +233,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" keyword is encountered.  At this point the generator is paused.  You can also return a value with a ",
+                "value":" keyword is encountered.  At this point a generator is paused.  ",
                 "children":null
             },
             {
@@ -163,7 +247,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" statement, as I did in the code above.  This value is placed in the ",
+                "value":" statements can also return a value.  A returned value is placed in the ",
                 "children":null
             },
             {
@@ -177,7 +261,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" property of the iterator (which is itself an object). We print this property out when we call ",
+                "value":" property of the iterator (which itself is an object). I printed this property out when I called ",
                 "children":null
             },
             {
@@ -218,7 +302,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" loop in the generator. Usually of course you should avoid infinite loops, but in generator bodies it is completely okay!  This is because it is up to the user of the generator how many times they want to call the iterator, so it won't necessarily run forever. ",
+                "value":" loop in the generator. Usually infinite loops should be avoided, but in generator bodies they are completely okay!  The reason infinite loops are okay is because the user of the generator decides how many times the iterator is called, so it won't necessarily run forever. ",
                 "children":null
             }
         ]
@@ -231,7 +315,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I say not necessarily because it is certainly possible for a generator to be called infinite times. In ES6 there is a new for…of loop which is used to loop through the iterator until completion.  In the fibonacci example, I did not use this loop because it would run forever! ",
+                "value":" It is still possible for a generator to be called an infinite number of times. In ES6 there is a new ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"for...of",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" loop which is used to loop through the iterator until completion.  In the fibonacci example, I did not use this loop because it would run forever! ",
                 "children":null
             }
         ]
@@ -286,7 +384,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function.  You can see an example of this in this discoveries ",
+                "value":" function.  An example of passing values into generators can be found in this articles ",
                 "children":null
             },
             {
@@ -320,7 +418,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" JavaScript is not the only language with generators.  Out of my main languages Python and PHP also have generators.  Let's look at an example in Python",
+                "value":" JavaScript is not the only language with generators.  Amongst my commonly used languages Python and PHP also have generators.  Let's look at an example in Python",
                 "children":null
             },
             {
@@ -340,7 +438,7 @@ content = [
     {
         "el":"codesnippet",
         "attributes":{
-            "language":"JavaScript"
+            "language":"Python"
         },
         "value":"def fib():\n    first = 0\n    last = 1\n\n    yield first\n    yield last\n\n    while True:\n        # Construct and deconstruct a tuple\n        first, last = last, first + last\n        yield last\n\nfibonacci = fib()\nfor x in range(50):\n    print(next(fibonacci))\n",
         "children":null
@@ -353,7 +451,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can see that the Python code is nearly identical - although you don't need the ",
+                "value":" Notice that the Python code is nearly identical - although you don't need the ",
                 "children":null
             },
             {
