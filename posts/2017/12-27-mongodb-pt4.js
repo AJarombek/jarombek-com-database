@@ -28,7 +28,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Inside the pipeline we can do operations such as sorting, filtering, and grouping documents similar to a SQL ",
+                "value":".  Pipelines support operations such as sorting, filtering, and grouping documents similar to a SQL ",
                 "children":null
             },
             {
@@ -42,7 +42,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause.  You can even manipulate grouped data inside the pipeline, creating entirely new collections in the process.  Lets use our tree database used in the ",
+                "value":" clause.  Pipelines also enable grouped data manipulation, creating entirely new collections in the process.  I used the tree database from my ",
                 "children":null
             },
             {
@@ -84,7 +84,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" MongoDB discoveries to explore this framework. ",
+                "value":" MongoDB discoveries to explore the aggregation framework. ",
                 "children":null
             }
         ]
@@ -97,7 +97,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If you remember each tree has a type and a grade specifying the height of the tree.  Let's say we wanted to find the total number of trees in each grade with type frazier fir.  The aggregation function would be like so: ",
+                "value":" If you remember from my previous posts, each tree has a type and a grade which specifies the height of the tree.  One piece of information I'm curious about is the total number of trees in each grade with type frazier fir.  The aggregation function to answer my question is written like so: ",
                 "children":null
             }
         ]
@@ -125,7 +125,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Inside the pipeline we can do operations such as sorting, filtering, and grouping documents similar to a SQL ",
+                "value":".  Pipelines support operations such as sorting, filtering, and grouping documents similar to a SQL ",
                 "children":null
             },
             {
@@ -139,7 +139,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause.  You can even manipulate grouped data inside the pipeline, creating entirely new collections in the process.  Lets use our tree database used in the ",
+                "value":" clause.  Pipelines also enable grouped data manipulation, creating entirely new collections in the process.  I used the tree database from my ",
                 "children":null
             },
             {
@@ -181,7 +181,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" MongoDB discoveries to explore this framework. ",
+                "value":" MongoDB discoveries to explore the aggregation framework. ",
                 "children":null
             }
         ]
@@ -194,7 +194,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If you remember each tree has a type and a grade specifying the height of the tree.  Let's say we wanted to find the total number of trees in each grade with type frazier fir.  The aggregation function would be like so: ",
+                "value":" If you remember from my previous posts, each tree has a type and a grade which specifies the height of the tree.  One piece of information I'm curious about is the total number of trees in each grade with type frazier fir.  The aggregation function to answer my question is written like so: ",
                 "children":null
             }
         ]
@@ -215,7 +215,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can see that the ",
+                "value":" The ",
                 "children":null
             },
             {
@@ -229,7 +229,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function takes an array of pipeline steps.  So we first match on type frazier, group by the grade and get a count of documents in that group, and finally sort by the count.  These three steps are performed with the ",
+                "value":" function takes an array of pipeline steps.  The first step matches on type frazier.  The seconds step groups all matched documents by grade and gets the number of documents in each group. The final step sorts each group by the count.  These three steps are performed with the ",
                 "children":null
             },
             {
@@ -284,7 +284,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can also group on more than one property by adding it to the ",
+                "value":" Grouping is not restricted to a single property.  To group by multiple properties, each property is added to the ",
                 "children":null
             },
             {
@@ -298,7 +298,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" object.  In the next example we group on both type and grade.  Also since we are matching on the entire collection, we can exclude the ",
+                "value":" object.  In the next example I grouped the aggregate by type and grade.  Also since I matched on the entire collection, I excluded the ",
                 "children":null
             },
             {
@@ -312,7 +312,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" step from the pipeline. ",
+                "value":" pipeline step. ",
                 "children":null
             }
         ]
@@ -333,7 +333,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can also combine multiple ",
+                "value":" Multiple ",
                 "children":null
             },
             {
@@ -347,7 +347,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" operations in an aggregation pipeline.  In the next pipeline we are going to get all the tree statistics - count, expenses, revenue, and profits.  Since we don't want the result of this aggregation to go to waste, we are going to save its result to a collection with the ",
+                "value":" operations can exist in an aggregation pipeline.  In the next pipeline I get all the tree statistics - count, expenses, revenue, and profits.  Since I don't want the result of this aggregation to go to waste, I saved its result to a new collection with the ",
                 "children":null
             },
             {
@@ -361,7 +361,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" operator.  We just need to specify the name of the collection to save to, in this case ",
+                "value":" operator.  I simply specified the name of the collection to save the output to (",
                 "children":null
             },
             {
@@ -375,7 +375,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  We also use the ",
+                "value":").  I also used the ",
                 "children":null
             },
             {
@@ -389,7 +389,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" operator to structure and pick the properties that we want in the collection.  All properties specified in the ",
+                "value":" operator to structure and pick the properties for the output collection.  All properties specified in the ",
                 "children":null
             },
             {
@@ -438,7 +438,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" operator is that it completely replaces the existing collection with the result of our aggregation",
+                "value":" operator is it completely replaces the existing collection with the result of the aggregation",
                 "children":null
             },
             {
@@ -450,21 +450,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This means that you could accidentally wipe out an entire collection such as ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "class":"jarombek-inline-code"
-                },
-                "value":"tree",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":". Then our database would be ruined! ",
+                "value":".  This can accidentally wipe out an entire collection. Be careful! ",
                 "children":null
             }
         ]
@@ -477,7 +463,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Let's now get the tree count, expenses, revenue, and profits for all trees using our newly created tree stat collection: ",
+                "value":" Finally I got the tree count, expenses, revenue, and profits for all trees using the newly created ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"treestat",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" collection: ",
                 "children":null
             }
         ]
@@ -498,7 +498,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Hopefully this has begun to show the power of the aggregation framework.  You can even use the framework to create a kind of pseudo ",
+                "value":" The aggregation framework is very powerful.  You can even use it to create a pseudo ",
                 "children":null
             },
             {
@@ -524,7 +524,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"!  You can find the source code for this discovery ",
+                "value":"!  The source code for this discovery is on ",
                 "children":null
             },
             {
@@ -537,7 +537,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"HERE",
+                        "value":"GitHub",
                         "children":null
                     }
                 ]

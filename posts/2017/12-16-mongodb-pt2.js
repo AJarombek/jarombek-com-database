@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Today I will build on my ",
+                "value":" Today I'm building on my ",
                 "children":null
             },
             {
@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and look at documents in more depth.  To start, let's look at how we would handle the purchase of a Christmas tree in our database.  The first thing we need to do is pick a tree to buy!  We can search the database for a tree to our liking and use the ",
+                "value":" and looking at documents in more depth.  To start, let's implement Christmas tree purchases in the database.  The first task is picking a tree to buy!  I searched the database for a tree I liked and used the ",
                 "children":null
             },
             {
@@ -64,7 +64,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now we need to create a customer collection to hold all the people who are buying trees: ",
+                "value":" Next I created a customer collection to hold all the people who bought trees: ",
                 "children":null
             }
         ]
@@ -80,7 +80,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Today I will build on my ",
+                "value":" Today I'm building on my ",
                 "children":null
             },
             {
@@ -101,7 +101,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and look at documents in more depth.  To start, let's look at how we would handle the purchase of a Christmas tree in our database.  The first thing we need to do is pick a tree to buy!  We can search the database for a tree to our liking and use the ",
+                "value":" and looking at documents in more depth.  To start, let's implement Christmas tree purchases in the database.  The first task is picking a tree to buy!  I searched the database for a tree I liked and used the ",
                 "children":null
             },
             {
@@ -136,7 +136,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now we need to create a customer collection to hold all the people who are buying trees: ",
+                "value":" Next I created a customer collection to hold all the people who bought trees: ",
                 "children":null
             }
         ]
@@ -171,7 +171,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" with an ",
+                "value":" with a value of ",
                 "children":null
             },
             {
@@ -185,7 +185,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" containing a hex number.  You may think that the hex digits are just randomly generated but they actually hold organized information.  The first eight hex digits (four bytes) of the ",
+                "value":" containing a hex number.  These hex digits are not randomly generated.  Instead they hold organized information about the document.  The first eight hex digits (four bytes) of the ",
                 "children":null
             },
             {
@@ -199,7 +199,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" are actually a timestamp of the time when the id was created.  The rest of the id is broken down into three pieces - the machine ID, process ID, and a counter which increments each time an ",
+                "value":" are a timestamp of when the id was created.  The rest of the id is broken down into three pieces - the machine ID, process ID, and a counter which increments each time an ",
                 "children":null
             },
             {
@@ -213,7 +213,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is generated in this particular process.  All these items together create a very reliable unique key (you don't have to worry about collisions - the possibility of that is so small). ",
+                "value":" is generated. All these items together create a very reliable unique key (you don't have to worry about collisions, the possibility is so small). ",
                 "children":null
             }
         ]
@@ -240,7 +240,49 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" object?  We can actually use these unique ids to link documents together by having a document property value containing the id of another document.  In the case of our Christmas tree database, we want a collection for purchases.  In this collection, our documents will be linked to both the tree purchased and the customer.  To do this we can take the tree and customer documents ids and put them in the purchase document. ",
+                "value":"?  These unique ids are commonly used to link documents together by creating a property on one document that contains the id of another document.  In the case of the Christmas tree database, I created a collection for purchases.  In this collection, each document is linked to both the purchased tree and the customer.  I took the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"tree",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" and ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"customer",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" document ids and put them in the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"purchase",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" document. ",
                 "children":null
             }
         ]
@@ -261,7 +303,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This code also displays our ability in MongoDB to use JavaScript variables in the query language.  This allows for more readable and structured queries. Now when we look at the purchase document we can see the other documents ids: ",
+                "value":" This code also displays the ability to use JavaScript variables in MongoDB queries.  Variables allow for readable and structured queries. Now I can see the other document ids in the purchase document: ",
                 "children":null
             }
         ]
@@ -282,7 +324,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You will also notice some duplicated fields from other collections in the purchase document (such as the ",
+                "value":" You will notice there are some duplicated fields from other collections in the purchase document (such as the ",
                 "children":null
             },
             {
@@ -296,7 +338,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" property). This sort of duplication is frowned upon in a RDBMS, however with no JOINs in MongoDB this duplication is okay",
+                "value":" property). This sort of duplication is frowned upon in a RDBMS, however since there are no JOINs in MongoDB duplication is okay",
                 "children":null
             },
             {
@@ -321,7 +363,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now you have seen how we can link related documents in MongoDB which allows us to find a linked document without a JOIN operation.  Let's take a step back and look at the first query we made picking out a Christmas tree.  We can call the ",
+                "value":" I've demonstrated how to link related documents in MongoDB, making it easy to find a linked document without a ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"JOIN",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" operation.  Let's take a step back and look at the first query I made for picking out a Christmas tree.  I called the ",
                 "children":null
             },
             {
@@ -335,7 +391,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function on our query to find useful information on its execution: ",
+                "value":" function on this query to find useful execution information: ",
                 "children":null
             }
         ]
@@ -356,7 +412,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The important property we look at on the returned JSON object is ",
+                "value":" The most important property in the returned JSON object is ",
                 "children":null
             },
             {
@@ -370,7 +426,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  You can see that our query looked at every single document in our collection.  Now imagine how slow this could be if we had millions of documents in our collection!  For anyone who has used databases before the answer should come to mind - an index.  Let's add indexes on the fields in tree we are querying against. ",
+                "value":". Notice that the query looked at every single document in the collection.  Now imagine how slow this could be if there were millions of documents in the collection!  For anyone who has used databases before the solution should come to mind - an index.  Let's add indexes to the commonly queried fields in ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"tree",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
                 "children":null
             }
         ]
@@ -391,7 +461,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You may be wondering what the significance is of the ",
+                "value":" You may be wondering about the significance of the value ",
                 "children":null
             },
             {
@@ -405,7 +475,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" value. This means that the index is stored in ascending order, while a ",
+                "value":". This means that the index is stored in ascending order, while a ",
                 "children":null
             },
             {
@@ -419,7 +489,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" would mean descending",
+                "value":" means descending order",
                 "children":null
             },
             {
@@ -431,7 +501,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Now if we do the same query and call ",
+                "value":".  When I call ",
                 "children":null
             },
             {
@@ -445,7 +515,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", only the returned documents are examined. Much better! ",
+                "value":" again, only the returned documents are examined.  Much better! ",
                 "children":null
             }
         ]
@@ -458,7 +528,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" We can view all the indexes on a document with the ",
+                "value":" All the indexes on a document are displayed with the ",
                 "children":null
             },
             {
@@ -493,7 +563,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Indexes can be used for other purposes other than just speeding up query times.  We can use them to expire documents in what is called a time-to-live (TTL) collection",
+                "value":" Indexes are used for other purposes besides speeding up query times.  They can expire documents in a time-to-live (TTL) collection",
                 "children":null
             },
             {
@@ -505,7 +575,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  These collections use indexes to set a date for when a document expires.  To do this, we first need to set a date property on our tree documents.  This date will be Christmas eve, since you won't be able to buy a tree anymore after this date. ",
+                "value":".  These collections use indexes to set a date that a document expires.  In order to create a TTL collection, a date property needs to exist on the documents.  In the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"tree",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" documents I set this date to Christmas eve, since nobody will buy a tree after then. ",
                 "children":null
             }
         ]
@@ -526,7 +610,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now we can create an index on this ",
+                "value":" Next I created an index on the ",
                 "children":null
             },
             {
@@ -540,7 +624,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" property. The second parameter to ",
+                "value":" property. The second parameter of ",
                 "children":null
             },
             {
@@ -554,7 +638,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" supplies additional options, and in this case we want to expire the document zero seconds after the date in the ",
+                "value":" contains additional options, in this case expiring the document zero seconds after the date in ",
                 "children":null
             },
             {
@@ -563,12 +647,6 @@ content = [
                     "class":"jarombek-inline-code"
                 },
                 "value":"availableUntil",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" property",
                 "children":null
             },
             {
@@ -601,7 +679,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" We added a lot of new MongoDB concepts to our tree database.  The power of linked documents and indexes in MongoDB are becoming apparent.  I will look at MongoDB even more in my next discovery.  The code for this discovery can be found ",
+                "value":" I applied a lot of new MongoDB concepts to the tree database.  The power of linked documents and indexes in MongoDB is now clear.  I will look at MongoDB even more in my next discovery.  The code for this discovery can be found on ",
                 "children":null
             },
             {
@@ -614,7 +692,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"HERE",
+                        "value":"GitHub",
                         "children":null
                     }
                 ]

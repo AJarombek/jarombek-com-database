@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One of the really powerful things about a document database like MongoDB is the ability to store arrays of values in a document.  This array itself can even store sub-documents, allowing for many levels of nested data. ",
+                "value":" One of the really powerful things about a document database like MongoDB is the ability to store arrays of values in a document.  Arrays can even store sub-documents, allowing for many levels of nested data. ",
                 "children":null
             }
         ]
@@ -29,7 +29,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" An example of an array in a document being useful is a user that has multiple addresses.  In a relational database, this address information would have to be stored in a separate table that could be joined on the user table to get all the addresses.  In MongoDB, this can all be stored in one document which makes accessing quick and easy (no expensive ",
+                "value":" An example use case of an array in a document database is a user with multiple addresses.  In a relational database, this address information would be stored in a separate table.  To get a users addresses, the addresses table would be joined with the users table.  In MongoDB, a user and their addresses can be stored in one document, making data access and updates quick and easy (with no expensive ",
                 "children":null
             },
             {
@@ -43,7 +43,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" operations) as well as simplifying updating. ",
+                "value":" operations). ",
                 "children":null
             }
         ]
@@ -59,7 +59,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One of the really powerful things about a document database like MongoDB is the ability to store arrays of values in a document.  This array itself can even store sub-documents, allowing for many levels of nested data. ",
+                "value":" One of the really powerful things about a document database like MongoDB is the ability to store arrays of values in a document.  Arrays can even store sub-documents, allowing for many levels of nested data. ",
                 "children":null
             }
         ]
@@ -72,7 +72,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" An example of an array in a document being useful is a user that has multiple addresses.  In a relational database, this address information would have to be stored in a separate table that could be joined on the user table to get all the addresses.  In MongoDB, this can all be stored in one document which makes accessing quick and easy (no expensive ",
+                "value":" An example use case of an array in a document database is a user with multiple addresses.  In a relational database, this address information would be stored in a separate table.  To get a users addresses, the addresses table would be joined with the users table.  In MongoDB, a user and their addresses can be stored in one document, making data access and updates quick and easy (with no expensive ",
                 "children":null
             },
             {
@@ -86,7 +86,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" operations) as well as simplifying updating. ",
+                "value":" operations). ",
                 "children":null
             }
         ]
@@ -99,7 +99,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now let's look at some operations on arrays from the MongoDB shell.  I created a document called ",
+                "value":" Now let's look at some array operations in the MongoDB shell.  I created a document called ",
                 "children":null
             },
             {
@@ -113,7 +113,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" which will hold running log information.  This info consists of an array of exercise logs, an array of planned exercises, and the users personal records. ",
+                "value":" which holds running log information.  This info consists of an array of exercise logs, an array of planned exercises, and the users personal records. ",
                 "children":null
             }
         ]
@@ -126,7 +126,35 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Accessing data from nested objects and arrays is easy.  Lets say we have a plan array that contains exercise plans.  These plans contain two properties - a date and a distance in miles.  If we want to just return the miles and not the date, we can do this using dot notation - ",
+                "value":" Accessing data from nested objects and arrays is easy.  For example, each user has a ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"plan",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" array that contains exercise plans.  Each item in the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"plan",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" array contains two properties - a date and a distance in miles.  If I'm only interested in the miles and not the date, I can use the following dot notation - ",
                 "children":null
             },
             {
@@ -161,7 +189,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If you wanted to just return the first item in the plan array to see the next run you have to go on, you can use the ",
+                "value":" If I only want the first item in the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"plan",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" array, I can use the ",
                 "children":null
             },
             {
@@ -189,7 +231,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" allows you to determine a number of items to return from an array. ",
+                "value":" determines the number of items to return from an array. ",
                 "children":null
             }
         ]
@@ -208,9 +250,17 @@ content = [
         "value":null,
         "children":[
             {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"$slice",
+                "children":null
+            },
+            {
                 "el":"#text",
                 "attributes":null,
-                "value":" We pass ",
+                "value":" is given a value of 1 which returns the first element in the array.  If ",
                 "children":null
             },
             {
@@ -224,21 +274,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" a value of 1 which says to only return the first element from the array.  You can give ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "class":"jarombek-inline-code"
-                },
-                "value":"$slice",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" a negative value to return from the end of the array. ",
+                "value":" is given a negative value it returns items from the end of the array. ",
                 "children":null
             }
         ]
@@ -251,7 +287,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"     Like any property, you can put an index on a nested property using dot notation: ",
+                "value":" Indexes are easily added to nested properties using dot notation: ",
                 "children":null
             }
         ]
@@ -272,7 +308,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can update an array with numerous operators including ",
+                "value":" There are numerous operators for updating arrays, including ",
                 "children":null
             },
             {
@@ -328,7 +364,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" removes an item from the array, while both ",
+                "value":" removes an item from an array, while both ",
                 "children":null
             },
             {
@@ -356,7 +392,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" add an item to the array.  The difference is with ",
+                "value":" add an item to an array.  With ",
                 "children":null
             },
             {
@@ -370,7 +406,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" the new item will only be added if it does not already exist in the array.  This is a safer option if we want to avoid duplicates. ",
+                "value":", a new item is only added if it does not already exist in the array.  This is a better option if duplicates should be avoided. ",
                 "children":null
             }
         ]
@@ -405,7 +441,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". This command allows you to both update a document and return the new document atomically",
+                "value":". This command both updates and returns the newly altered document atomically",
                 "children":null
             },
             {
@@ -417,7 +453,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  All updates in MongoDB are performed atomically (an update is never half completed and no database connection ever sees an update in progress).  However, when you do ",
+                "value":".  All updates in MongoDB are performed atomically (an update is never half completed and no database connection ever sees an update in progress).  However, when calling the ",
                 "children":null
             },
             {
@@ -459,7 +495,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" eliminates this problem so you know any changes reflected in the document are from the update just performed. The following query will add another sub-document to the plan array and also return the new updated document. ",
+                "value":" eliminates this problem so you know any changes reflected in the document are from the update just performed. The following query adds another sub-document to the plan array and also returns the newly updated document. ",
                 "children":null
             }
         ]
@@ -480,7 +516,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" These code samples begin to expose the power of arrays and sub-documents in MongoDB.  With them you can combine what would be many tables in a RDBMS into a single document.  All the code samples are found ",
+                "value":" These code samples begin to expose the power of arrays and sub-documents in MongoDB.  A multi-table RDBMS structure is easily compressed into a single document with MongoDB.  All the code samples from this post are on ",
                 "children":null
             },
             {
@@ -493,7 +529,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":" HERE",
+                        "value":"GitHub",
                         "children":null
                     }
                 ]

@@ -197,7 +197,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" My planned production web stacks will be either MEAN (MongoDB, Express, ",
+                "value":" My planned production web stack will be either MEAN (MongoDB, Express, ",
                 "children":null
             },
             {
@@ -235,7 +235,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", Node.js).  You will notice that three of these technologies are present in both stacks - ",
+                "value":", Node.js).  Both of these web stacks share three technologies  - ",
                 "children":null
             },
             {
@@ -273,7 +273,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". We will be using all three to build the prototype today! ",
+                "value":".  I used all three of these technologies to build this prototype! ",
                 "children":null
             }
         ]
@@ -447,7 +447,28 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" First off Mongoose allows you to set strict schema rules for your MongoDB objects.  As previously mentioned MongoDB is schema-less so this stricter model can help restrict what exactly a user can place in a document.  You can also create nested schemas for complex JSON documents.  For example, my song collection schema contains a nested schema for a list of comments. ",
+                "value":" First off Mongoose allows you to set strict schema rules for your MongoDB objects.  As previously mentioned ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/dec-15-2017-mongodb-pt1"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"MongoDB is schema-less",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":", so this stricter model can help restrict what exactly a user can place in a document.  You can also create nested schemas for complex JSON documents.  For example, my song collection schema contains a nested schema for a list of comments. ",
                 "children":null
             }
         ]
@@ -468,7 +489,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can see that each ",
+                "value":" Each ",
                 "children":null
             },
             {
@@ -598,7 +619,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Another powerful feature of MongoDB is that we can define database indexes directly on the ",
+                "value":" Another powerful feature of Mongoose is we can define database indexes directly on the ",
                 "children":null
             },
             {
@@ -612,7 +633,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" object.  With features such as this one Mongoose has transformed into something much more powerful than a ORM.  With Mongoose I did not even have to go into MongoDB itself since everything I needed could be performed through Mongoose.  Here is an index I made on the ",
+                "value":" object.  With advanced features such as this, Mongoose has transformed into something much more powerful than a ORM.  With Mongoose I never used the MongoDB CLI since everything I needed could be performed through Mongoose.  Here is an index I made on the ",
                 "children":null
             },
             {
@@ -662,7 +683,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Mongoose allows you to perform any query, update, insert, or delete operation on a Schema.  By default however, Mongoose uses callbacks to perform these operations.  We want to avoid callbacks as they become ugly and hard to read once nested database calls need to be made (commonly known as callback hell). Luckily Mongoose allows us to use ",
+                "value":" Mongoose allows you to perform any query, update, insert, or delete operation on a Schema.  By default Mongoose uses callbacks to perform these operations.  We want to avoid callbacks as they become ugly and hard to read once nested database calls are made (commonly known as callback hell). Luckily Mongoose allows us to use ",
                 "children":null
             },
             {
@@ -695,7 +716,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  One of the first things I did when creating my API calls was to replace all the callbacks I could with Promises.  Here is some code that performs a ",
+                "value":".  One of the first things I did when creating my API calls was replace all the callbacks with Promises.  Here is some code that performs a ",
                 "children":null
             },
             {
@@ -723,7 +744,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" schema and then returns it to as a HTTP response using a promise. ",
+                "value":" schema and then returns it as a HTTP response using a promise. ",
                 "children":null
             }
         ]
@@ -787,7 +808,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" header.  Normally I don't think the development work needed to return both notations would be worth it but Express made it so easy to implement",
+                "value":" header.  Normally I don't think the amount of development work needed to return both notations would be worth it but Express made it so easy to implement",
                 "children":null
             },
             {
@@ -845,7 +866,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This is a bit messy as you are mixing JavaScript and a markup language together.  A more elegant solution would be to use a tempting language to generate the XML.  The template language I used is EJS (embedded javascript templating) which mixes JavaScript with HTML similarly to JSP for Java or PHP (which I used in my ",
+                "value":" This is a bit messy as you are mixing JavaScript and a markup language together.  A more elegant solution uses a tempting language to generate the XML.  The template language I used is EJS (Embedded JavaScript Templating) which mixes JavaScript with HTML similarly to JSP for Java or PHP (which I used in my ",
                 "children":null
             },
             {
@@ -878,7 +899,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  We then use this template to create the markup on the server using JavaScript before sending it to the client. ",
+                "value":".  I used this template to create the markup on the server before sending it to the client. ",
                 "children":null
             }
         ]
@@ -1071,7 +1092,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now a text search can be executed on the song collection.  When a text string is entered, it will be matched on values in the songs ",
+                "value":" Now a text search can be executed on the song collection.  When a text string is entered, it finds matches on the ",
                 "children":null
             },
             {
@@ -1268,7 +1289,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The final major piece of this prototype was the build automation tool - gulp.  Gulp allows you to build your project in stages using tasks defined as JavaScript functions",
+                "value":" The final major piece of this prototype was the build automation tool - Gulp.  Gulp allows you to build your project in stages using tasks defined as JavaScript functions",
                 "children":null
             },
             {
@@ -1280,7 +1301,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  I am still trying to get a hang of gulp but I made a build file that watches for any file changes and automatically restarts the Express server with the changes applied.  In the process, gulp uses babel to transpile all the ES6+ files into ES5 and moves these transpiled files into a new directory.  I also move all my EJS files into this new directory.  The code is very hackish (as I don't know gulp well) but gets the job done! ",
+                "value":".  I am still trying to get a hang of gulp but I made a build file that watches for any file changes and automatically restarts the Express server with the changes applied.  In the process, Gulp uses Babel to transpile all the ES6+ files into ES5 and moves these transpiled files into a new directory.  I also move all my EJS files into this new directory.  The code is very hackish (as I don't know gulp well) but gets the job done! ",
                 "children":null
             }
         ]
@@ -1322,7 +1343,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Gulp made my life a lot easier in this project.  Combining gulp which restarted my server on all changes and the WebStorm IDE which automatically saves files, I never had to save a file or restart my server throughout development.  I could put 100% of my focus on developing! ",
+                "value":" Gulp made my life a lot easier in this project.  Combining Gulp which restarted my server on all changes and the WebStorm IDE which automatically saves files, I never had to save a file or restart my server throughout development.  I put 100% of my focus on developing! ",
                 "children":null
             }
         ]
@@ -1350,7 +1371,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This MongoDB and Node.js prototype was very enjoyable to make and has really made the full JavaScript stack grow on me.  There are still many unexplored areas of Node.js development for me but it is clear why this server side environment was such a game changer.  I look forward to adding on a client side framework in the future! ",
+                "value":" This MongoDB and Node.js prototype was very enjoyable to make and the full JavaScript stack is growing on me.  There are still many unexplored areas of Node.js development for me but it is clear why this server side environment was such a game changer. ",
                 "children":null
             }
         ]
