@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and its corresponding native iOS and Android apps (because as we know a codebase is never complete).  I was looking at the Swift code for my iOS app and found a bug where I incorrectly selected a substring from a base64 encoded image.  Luckily the fix was easy to implement, but viewing the code made me remember just how confusing the String structure was in Swift. ",
+                "value":" and its corresponding native iOS and Android apps (because as we know a codebase is never complete).  I was looking at the Swift code for my iOS app and found a bug where I incorrectly selected a substring from a base64 encoded image.  Luckily the fix was easy to implement, but viewing the code made me remember just how confusing the String structure is in Swift. ",
                 "children":null
             }
         ]
@@ -50,7 +50,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You would think something as simple as a string would be straightforward, but in Swift there were a few quirks.  I wrote the code in Xcode 8 and Swift 3 this fall.  Since then Xcode 9 and Swift 4 have released, making ",
+                "value":" You would think something as simple as a string would be straightforward, but in Swift there are a few quirks.  I wrote the code for my iOS app in Xcode 8 and Swift 3 this fall.  Since then Xcode 9 and Swift 4 were released, making ",
                 "children":null
             },
             {
@@ -64,7 +64,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" a bit less confusing.  I will dive into strings in Swift 3 and then look at how the code has changed with Swift 4. ",
+                "value":" a bit less confusing.  I dive into strings in Swift 3 first and then look at what changed in Swift 4. ",
                 "children":null
             }
         ]
@@ -101,7 +101,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and its corresponding native iOS and Android apps (because as we know a codebase is never complete).  I was looking at the Swift code for my iOS app and found a bug where I incorrectly selected a substring from a base64 encoded image.  Luckily the fix was easy to implement, but viewing the code made me remember just how confusing the String structure was in Swift. ",
+                "value":" and its corresponding native iOS and Android apps (because as we know a codebase is never complete).  I was looking at the Swift code for my iOS app and found a bug where I incorrectly selected a substring from a base64 encoded image.  Luckily the fix was easy to implement, but viewing the code made me remember just how confusing the String structure is in Swift. ",
                 "children":null
             }
         ]
@@ -114,7 +114,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You would think something as simple as a string would be straightforward, but in Swift there were a few quirks.  I wrote the code in Xcode 8 and Swift 3 this fall.  Since then Xcode 9 and Swift 4 have released, making ",
+                "value":" You would think something as simple as a string would be straightforward, but in Swift there are a few quirks.  I wrote the code for my iOS app in Xcode 8 and Swift 3 this fall.  Since then Xcode 9 and Swift 4 were released, making ",
                 "children":null
             },
             {
@@ -128,7 +128,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" a bit less confusing.  I will dive into strings in Swift 3 and then look at how the code has changed with Swift 4. ",
+                "value":" a bit less confusing.  I dive into strings in Swift 3 first and then look at what changed in Swift 4. ",
                 "children":null
             }
         ]
@@ -198,7 +198,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" variable of type ",
+                "value":" property of type ",
                 "children":null
             },
             {
@@ -212,7 +212,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" which is a collection of all the characters in the string",
+                "value":", which is a collection of all the characters in the string",
                 "children":null
             },
             {
@@ -259,7 +259,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"     Like any other collection, you can also perform functions such as filter, map, or sort on     ",
+                "value":" Like any other collection, you can perform functions such as filter, map, and sort on ",
                 "children":null
             },
             {
@@ -273,7 +273,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Of course array operators are also possible. ",
+                "value":".  Array operations are also possible. ",
                 "children":null
             }
         ]
@@ -299,26 +299,30 @@ content = [
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
                 "value":"substring()",
                 "children":null
             },
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function with two integer arguments specifying the start and end indexes.  Swift also has a ",
+                "value":" function with two integer arguments specifying the start and end indices.  Swift also has a ",
                 "children":null
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
                 "value":"substring()",
                 "children":null
             },
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function except it accepts a ",
+                "value":" function but it accepts a ",
                 "children":null
             },
             {
@@ -379,7 +383,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Okay, that already sounds a bit complicated.  The question you might be asking now is how to we get these ",
+                "value":" Okay, that already sounds a bit complicated.  The question is how do we get these ",
                 "children":null
             },
             {
@@ -407,7 +411,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" on our string",
+                "value":" on a string",
                 "children":null
             },
             {
@@ -433,7 +437,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" structs and then use them to get a substring.  You will notice that since the first parameter of ",
+                "value":" structs and then uses them to get a substring.  Since the first argument of ",
                 "children":null
             },
             {
@@ -461,7 +465,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" structure we can use the strings built in ",
+                "value":" structure, I used the strings built in ",
                 "children":null
             },
             {
@@ -475,7 +479,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" variable, which is zero. ",
+                "value":" property, which is the zero index of a string. ",
                 "children":null
             }
         ]
@@ -510,7 +514,28 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" madness even necessary?  The answer has to do with the way Swift characters are stored, and in particular the possible complexities of using unicode scalars.  Characters in Swift are unicode scalars which are characters defined in Unicode",
+                "value":" madness even necessary?  The answer has to do with the way Swift characters are stored, and in particular the possible complexities of using ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/oct-9-2018-unicode"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"Unicode",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" scalars.  Characters in Swift are Unicode scalars which are characters defined in Unicode",
                 "children":null
             },
             {
@@ -555,7 +580,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This means that an index in the internal character structure may actually hold only a piece of a visible character",
+                "value":" The consequence of this is an index in the internal character structure may only hold a piece of a visible character",
                 "children":null
             },
             {
@@ -581,7 +606,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" struct.  Annoying sure, but it makes sense so that no newcomers to Swift will be tricked by the character implementation. ",
+                "value":" struct.  Annoying sure, but it makes sense so that newcomers to Swift won't be tricked by the character implementation. ",
                 "children":null
             }
         ]
@@ -623,7 +648,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" collection is deprecated and the ",
+                "value":" collection was deprecated and the ",
                 "children":null
             },
             {
@@ -637,7 +662,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" struct has become a collection.  This makes strings easier since you can perform all collection operations directly on the string object. ",
+                "value":" struct became a collection.  This makes strings easier since you can perform all collection operations directly on the string object. ",
                 "children":null
             }
         ]
@@ -686,7 +711,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" structure since our string is a collection! ",
+                "value":" structure since strings are collections! ",
                 "children":null
             }
         ]

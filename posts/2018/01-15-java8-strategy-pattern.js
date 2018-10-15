@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Since starting to learn Java 8 features, much of my lambda code has come using the stream API or the new ",
+                "value":" Since I started learning Java 8, much of my lambda code is from the stream API or the new ",
                 "children":null
             },
             {
@@ -30,7 +30,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function.  While this is all great, I have really been looking for ways to integrate Java 8 lambdas with other programming patterns.  While reading a book on Java 8 today I saw one pattern with a lot of potential: the strategy pattern",
+                "value":" function.  While both are great, I've been looking for ways to integrate Java 8 lambdas with other programming patterns.  While reading a book on Java 8 today I saw one pattern with a lot of potential: the strategy pattern",
                 "children":null
             },
             {
@@ -55,7 +55,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The strategy design pattern allows you to define a group of algorithms.  One of the algorithms in this group can be selected for use at runtime",
+                "value":" The strategy design pattern defines a group of algorithms.  One of the algorithms in this group is selected for use at runtime",
                 "children":null
             },
             {
@@ -67,7 +67,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  With a functional interface, we can pass a lambda function (algorithm) to the strategy pattern.  The functional interface will specify the general algorithm structure while the lambda function implements the details at runtime. ",
+                "value":".  With a functional interface, a lambda function (algorithm) is passed to the strategy pattern.  The functional interface specifies the general algorithm structure while the lambda function implements the details at runtime. ",
                 "children":null
             }
         ]
@@ -83,7 +83,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Since starting to learn Java 8 features, much of my lambda code has come using the stream API or the new ",
+                "value":" Since I started learning Java 8, much of my lambda code is from the stream API or the new ",
                 "children":null
             },
             {
@@ -97,7 +97,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function.  While this is all great, I have really been looking for ways to integrate Java 8 lambdas with other programming patterns.  While reading a book on Java 8 today I saw one pattern with a lot of potential: the strategy pattern",
+                "value":" function.  While both are great, I've been looking for ways to integrate Java 8 lambdas with other programming patterns.  While reading a book on Java 8 today I saw one pattern with a lot of potential: the strategy pattern",
                 "children":null
             },
             {
@@ -122,7 +122,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The strategy design pattern allows you to define a group of algorithms.  One of the algorithms in this group can be selected for use at runtime",
+                "value":" The strategy design pattern defines a group of algorithms.  One of the algorithms in this group is selected for use at runtime",
                 "children":null
             },
             {
@@ -134,7 +134,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  With a functional interface, we can pass a lambda function (algorithm) to the strategy pattern.  The functional interface will specify the general algorithm structure while the lambda function implements the details at runtime. ",
+                "value":".  With a functional interface, a lambda function (algorithm) is passed to the strategy pattern.  The functional interface specifies the general algorithm structure while the lambda function implements the details at runtime. ",
                 "children":null
             }
         ]
@@ -147,7 +147,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" First I need to specify a functional interface that takes a variable number of ",
+                "value":" First I created a functional interface that takes a variable number of ",
                 "children":null
             },
             {
@@ -161,7 +161,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" arrays and returns a double. ",
+                "value":" arrays and returns a ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"double",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
                 "children":null
             }
         ]
@@ -182,7 +196,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Next I implement the strategy pattern",
+                "value":" Next I implemented the strategy pattern",
                 "children":null
             },
             {
@@ -229,7 +243,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Finally we can execute the strategy pattern with multiple different lambda expressions.  If we needed to execute a strategy on multiple different data sets, this pattern would help a lot with code reuse! ",
+                "value":" Finally I executed the strategy pattern with multiple different lambda expressions.  If I ever need to execute a strategy on multiple data sets, this pattern will help a lot with code reuse! ",
                 "children":null
             }
         ]
@@ -250,20 +264,20 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can check out the full code for this example ",
+                "value":" You can check out the full code for this example on ",
                 "children":null
             },
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2018/01-Jan/\n1-15-Java8-Strategy-Pattern"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2018/01-Jan/1-15-Java8-Strategy-Pattern"
                 },
                 "value":null,
                 "children":[
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"here",
+                        "value":"GitHub",
                         "children":null
                     }
                 ]

@@ -41,7 +41,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" A shadow DOM results in modularization by removing its contents from the main document object model. You have to attach the shadow DOM onto an existing HTML element using the ",
+                "value":" A shadow DOM results in modularization by removing its contents from the main Document Object Model. The shadow DOM is attached onto an existing HTML element using the ",
                 "children":null
             },
             {
@@ -81,7 +81,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" elements containing CSS to the shadow DOM.  All of the styles and HTML specified in the shadow DOM will be hidden from the outer HTML implementation.  You can utilize shadow DOM to avoid CSS style conflicts, HTML ",
+                "value":" elements containing CSS to the shadow DOM.  All of the styles and HTML specified in the shadow DOM are hidden from the outer HTML implementation.  Shadow DOM helps avoid CSS style conflicts, HTML ",
                 "children":null
             },
             {
@@ -95,7 +95,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" overlap, and more! ",
+                "value":" overlaps, and more! ",
                 "children":null
             }
         ]
@@ -136,7 +136,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" A shadow DOM results in modularization by removing its contents from the main document object model. You have to attach the shadow DOM onto an existing HTML element using the ",
+                "value":" A shadow DOM results in modularization by removing its contents from the main Document Object Model. The shadow DOM is attached onto an existing HTML element using the ",
                 "children":null
             },
             {
@@ -176,7 +176,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" elements containing CSS to the shadow DOM.  All of the styles and HTML specified in the shadow DOM will be hidden from the outer HTML implementation.  You can utilize shadow DOM to avoid CSS style conflicts, HTML ",
+                "value":" elements containing CSS to the shadow DOM.  All of the styles and HTML specified in the shadow DOM are hidden from the outer HTML implementation.  Shadow DOM helps avoid CSS style conflicts, HTML ",
                 "children":null
             },
             {
@@ -190,7 +190,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" overlap, and more! ",
+                "value":" overlaps, and more! ",
                 "children":null
             }
         ]
@@ -217,7 +217,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" variable is a new shadow DOM element and I add to the shadow using ",
+                "value":" variable is a new shadow DOM element and I add elements to the shadow using ",
                 "children":null
             },
             {
@@ -299,7 +299,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When we look at our browsers developer tools and inspect the HTML, you can see that our shadow DOM is wrapped in a ",
+                "value":" Upon inspecting the HTML in the browsers developer tools, you will notice that the shadow DOM is wrapped in a ",
                 "children":null
             },
             {
@@ -365,7 +365,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The ability to modularize a HTML document is awesome!  I will utilize the shadow DOM in my Angular code and look into more native HTML modularization techniques like reusable custom elements in the future! ",
+                "value":" The ability to modularize a HTML document is awesome!  I will utilize the shadow DOM in my Angular code and look into other native HTML modularization techniques like reusable custom elements in the future! ",
                 "children":null
             }
         ]

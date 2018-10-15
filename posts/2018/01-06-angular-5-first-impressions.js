@@ -16,14 +16,58 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Recently I have been learning different JavaScript technologies to build a website.  I have looked into Node.js and MongoDB for my back-end and database.  Now it is time to switch to the front-end JavaScript technologies.  The two top picks for front-end frameworks are Angular and React.js.  Today I will begin to look at Angular and if it is a suitable option for my website.  This post won't look at too much code but instead cover my initial reactions to the framework. ",
+                "value":" Recently I learned a few JavaScript technologies for building website backends.  I looked at ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/dec-30-2017-nodejs-mongodb-api-prototype"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"Node.js",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" in the server layer and ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/dec-15-2017-mongodb-pt1"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"MongoDB",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" in the database layer.  Now I'm switching gears and learning some front-end JavaScript technologies.  My top two picks for front-end frameworks are Angular and React.js.  Today I'm beginning my journey with Angular.  Through this research I will determine if its a suitable option for my website.  This post won't display much code, instead focusing on my initial reactions to the framework. ",
                 "children":null
             }
         ]
     },
     {
         "el":"h5",
-        "attributes":null,
+        "attributes":{
+            "title":"Angular CLI"
+        },
         "value":null,
         "children":[
             {
@@ -45,7 +89,49 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Recently I have been learning different JavaScript technologies to build a website.  I have looked into Node.js and MongoDB for my back-end and database.  Now it is time to switch to the front-end JavaScript technologies.  The two top picks for front-end frameworks are Angular and React.js.  Today I will begin to look at Angular and if it is a suitable option for my website.  This post won't look at too much code but instead cover my initial reactions to the framework. ",
+                "value":" Recently I learned a few JavaScript technologies for building website backends.  I looked at ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/dec-30-2017-nodejs-mongodb-api-prototype"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"Node.js",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" in the server layer and ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/dec-15-2017-mongodb-pt1"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"MongoDB",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" in the database layer.  Now I'm switching gears and learning some front-end JavaScript technologies.  My top two picks for front-end frameworks are Angular and React.js.  Today I'm beginning my journey with Angular.  Through this research I will determine if its a suitable option for my website.  This post won't display much code, instead focusing on my initial reactions to the framework. ",
                 "children":null
             }
         ]
@@ -73,7 +159,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I struggled for a very long time getting all my Angular dependencies set up.  I wanted to do it all manually to start just so I could get to know the framework better.  I messed around with this for a few hours and eventually gave up.  The problem was my Angular \"hello world\" code returned a blank screen with no error messages (which is quite hard to debug).  I decided that I was in over my head with this framework and had to choose an easier entry approach. ",
+                "value":" Getting started, I struggled for a very long time setting up all my Angular dependencies.  I wanted to do it all manually in the beginning so I could get to know the framework better.  I tried and failed for a few hours and eventually gave up.  The problem was my Angular \"hello world\" code returned a blank screen with no error messages (which is quite hard to debug).  I decided that I was in over my head with this framework and had to choose an easier entry approach. ",
                 "children":null
             }
         ]
@@ -86,7 +172,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Luckily there is an easier option - the Angular CLI.  Angular CLI will build a new Angular project for you, create new components, run the server and more",
+                "value":" Luckily there is an easier option - the Angular CLI.  Angular CLI automates many common tasks in the Angular framework.  It builds new Angular projects, creates new components, runs Angular code on a server and more",
                 "children":null
             },
             {
@@ -98,7 +184,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Angular CLI is also a wrapper around Webpack so it does all the module bundling for you",
+                "value":".  The Angular CLI is also a wrapper around Webpack, performing all the module bundling for you",
                 "children":null
             },
             {
@@ -110,7 +196,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  I don't yet know the details of Webpack so for now it is nice that the process is done for me.  Later on however I'm sure I would like to have more control of the building of my project. ",
+                "value":".  I don't yet know the details of Webpack, so auto bundling makes Angular CLI really helpful.  Once I really understand the ins and outs of Angular, it may be nice to have more control over a project than Angular CLI gives me. ",
                 "children":null
             }
         ]
@@ -123,7 +209,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The nice thing about Angular CLI is how easy it is to setup a new project.  After installing it from npm, creating and running a new Angular project is as easy as the following two Bash commands. ",
+                "value":" The nicest thing about Angular CLI is how easy it is to setup a new project.  After Angular CLI is installed, creating and running a new Angular project is as easy as the following two Bash commands. ",
                 "children":null
             }
         ]
@@ -144,7 +230,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The one thing that annoyed me about Angular CLI is how much content they put into the base Angular project. The bloat included fully set up testing suites (multiple), fully populated gitignore file, and more.  For someone who likes to customize my own project, this was overkill.  I ended up deleting most of these files to get only the necessary components. ",
+                "value":" The one thing that annoyed me about Angular CLI is how much content they put into the base Angular project. The bloat included fully set up testing suites (multiple), a fully populated .gitignore file, and more.  For someone who likes to customize my own project, this was overkill.  I ended up deleting most of these files to get only the necessary components. ",
                 "children":null
             }
         ]
@@ -172,7 +258,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The creators of Angular suggest that you use TypeScript, a superset of JavaScript that is statically typed. You can also use JavaScript, but I've decided to follow the advice and try TypeScript out.  So far I have found it to be more detrimental than beneficial. ",
+                "value":" The creators of Angular suggest that you use TypeScript, a superset of JavaScript that is statically typed. You can also use JavaScript, but I've decided to follow the advice and try TypeScript.  So far I've found it to be more detrimental than beneficial. ",
                 "children":null
             }
         ]
@@ -185,7 +271,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" It is said that TypeScript is a true superset of JavaScript such that all JavaScript code is valid TypeScript code.  However in my first attempts at the language I had trouble using JavaScript features in TypeScript. For example when using a ",
+                "value":" Supposedly TypeScript is a true superset of JavaScript, meaning all JavaScript code is valid TypeScript code.  However, in my first hacks at the language I had trouble using JavaScript features in TypeScript. For example, when using a ",
                 "children":null
             },
             {
@@ -212,7 +298,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Also, using TypeScript would end my truly full JavaScript web stack.  Although TypeScript is very similar to JavaScript, I would still have to adjust to using two different languages when developing. As my TypeScript experience grows I will see if I start seeing some benefits of the language. ",
+                "value":" Also, using TypeScript disrupts my full JavaScript web stack.  Although TypeScript is very similar to JavaScript, I still have to adjust to using two different languages when developing. As my TypeScript experience grows I will see if I start seeing some benefits of the language. ",
                 "children":null
             }
         ]
@@ -252,7 +338,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  When working with AngularJS a bit in the past I always liked the modularized structure of my JavaScript compared to the spaghetti code style of old. Angular 5 seems to be even more modularized then that, which at first glance looks nice. ",
+                "value":".  When working with AngularJS I always liked the modularized structure it gave my JavaScript code in comparison to my old JQuery spaghetti code. Angular 5 seems even more modularized then AngularJS, which appears beneficial at first glance. ",
                 "children":null
             }
         ]
@@ -265,7 +351,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" My hello world type Angular project contains one module.  It is exported for use in other classes. ",
+                "value":" My \"hello world\" Angular project contains one module.  It is exported for use in other classes. ",
                 "children":null
             }
         ]
@@ -275,7 +361,7 @@ content = [
         "attributes":{
             "language":"TypeScript"
         },
-        "value":"import { BrowserModule } from '@angular/platform-browser';\nimport { NgModule } from '@angular/core';\n\nimport { DeveloperComponent } from './app.component';\nimport { ValidDevDirective } from './valid-dev.directive';\n\n// Wrap our component and directive into a module.\n// Each file can be one module which can be exported.\n// You must import BrowserModule in the root module\n@NgModule({\n    imports: [BrowserModule],\n    declarations: [DeveloperComponent, ValidDevDirective],\n    bootstrap: [DeveloperComponent]\n})\nexport class AppModule { }\n",
+        "value":"import { BrowserModule } from '@angular/platform-browser';\nimport { NgModule } from '@angular/core';\n\nimport { DeveloperComponent } from './app.component';\nimport { ValidDevDirective } from './valid-dev.directive';\n\n// Wrap a component and directive into a module.\n// Each file can be one module which can be exported.\n// You must import BrowserModule in the root module\n@NgModule({\n    imports: [BrowserModule],\n    declarations: [DeveloperComponent, ValidDevDirective],\n    bootstrap: [DeveloperComponent]\n})\nexport class AppModule { }\n",
         "children":null
     },
     {
@@ -313,7 +399,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The annotations object has a declarations property that specifies all the members of the module",
+                "value":" The annotations object has a ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"declarations",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" property that specifies all the members of the module",
                 "children":null
             },
             {
@@ -325,20 +425,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". These two declarations are what we will look at next. ",
-                "children":null
-            }
-        ]
-    },
-    {
-        "el":"p",
-        "attributes":null,
-        "value":null,
-        "children":[
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" The first module member is a Component named ",
+                "value":". The first module member is a Component named ",
                 "children":null
             },
             {
@@ -352,7 +439,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". A component has a TypeScript class defining model data and a view (which in my case is HTML). ",
+                "value":". Each component has a TypeScript class that defines model data and a view (which is usually HTML). ",
                 "children":null
             }
         ]
@@ -373,7 +460,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The awesome thing about components is that you can place them in your HTML as a tag using the name defined in the ",
+                "value":" The awesome thing about components is they define a reusable HTML tag.  Each HTML tag is named after the ",
                 "children":null
             },
             {
@@ -401,7 +488,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" property.  The component's HTML is defined in the ",
+                "value":" property.  The contents of a HTML tag are defined in the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"@Component",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" annotations ",
                 "children":null
             },
             {
@@ -429,7 +530,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" property and will render on your webpage at runtime. ",
+                "value":" properties.  The HTML contents render on a webpage at runtime, replacing the components HTML tag. ",
                 "children":null
             }
         ]
@@ -477,7 +578,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" tag will be replaced with the markup defined in my component: ",
+                "value":" tag is replaced with the markup defined in my component: ",
                 "children":null
             }
         ]
@@ -498,7 +599,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Another cool thing to notice is that the line ",
+                "value":" The characters ",
                 "children":null
             },
             {
@@ -512,7 +613,35 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" in the HTML will be replaced with the variables value defined in the TypeScript component class.  This binding between the HTML and TypeScript model creates many possibilities for dynamic webpages that I can't wait to fully explore! ",
+                "value":" in the HTML document are replaced with the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"dev",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" variables value in the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"DeveloperComponent",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" class.  This binding between HTML and TypeScript creates many possibilities for dynamic webpages that I can't wait to explore! ",
                 "children":null
             }
         ]
@@ -554,7 +683,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". A directive is like a component except that it has no view and is placed on an existing HTML element ",
+                "value":". A directive is like a component except it has no view and is placed on an existing HTML element ",
                 "children":null
             },
             {
@@ -566,7 +695,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  If you look back to the HTML input tag of my component you will see an attribute called ",
+                "value":".  If you look at the HTML ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"input",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" element in my component above you will see an attribute called ",
                 "children":null
             },
             {
@@ -601,7 +744,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Obviously this is a very trivial implementation, but it is cool how you can extend the implementation of any HTML element.  Also the fact that directives an components are reusable makes them easy to use throughout a project.  Just like components I am excited to try out more complex implementations. ",
+                "value":" This is a very trivial implementation, but it is cool how directives extend the implementation of HTML elements.  Reusable directives and components save time and lines of code throughout a project.  Like components, I am excited to try out more complex directive implementations. ",
                 "children":null
             }
         ]
@@ -629,7 +772,28 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" So this was a quick glance at how my first attempts with Angular 5 went.  I am not convinced it is the solution for me yet, but there is still a lot of work and exploring to do.  Up next I will start building a full Angular project! ",
+                "value":" This was a quick glance at my first attempts with Angular 5.  I am not convinced Angular is the solution for me yet, but there is still a lot of work and exploring to do.  Up next I will start building a ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/mar-17-2018-mean-stack-prototype"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"full Angular project",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":"! ",
                 "children":null
             }
         ]
