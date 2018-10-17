@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Java was originally designed to not support multiple inheritance of implemented methods.  Because of this, you could only extend one class.  However, you could simulate multiple inheritance by implementing multiple interfaces.  The only catch here was that the methods defined in the interfaces had no body and had to be created in the implementing class. ",
+                "value":" Java was not originally designed to support multiple inheritance of implemented methods.  Because of this, a class could only extend one other class.  However, multiple inheritance could be simulated by implementing multiple interfaces.  The only catch was the methods in the interface had no body and had to be created in the implementing class. ",
                 "children":null
             }
         ]
@@ -29,7 +29,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This design avoided many issues that come with multiple inheritance such as the diamond problem.  However, there were some issues that came with using interfaces for an API as well. ",
+                "value":" This design helped avoid multiple inheritance issues, such as the diamond problem.  However, using interfaces for APIs was far from perfect. ",
                 "children":null
             }
         ]
@@ -45,7 +45,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Java was originally designed to not support multiple inheritance of implemented methods.  Because of this, you could only extend one class.  However, you could simulate multiple inheritance by implementing multiple interfaces.  The only catch here was that the methods defined in the interfaces had no body and had to be created in the implementing class. ",
+                "value":" Java was not originally designed to support multiple inheritance of implemented methods.  Because of this, a class could only extend one other class.  However, multiple inheritance could be simulated by implementing multiple interfaces.  The only catch was the methods in the interface had no body and had to be created in the implementing class. ",
                 "children":null
             }
         ]
@@ -58,7 +58,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This design avoided many issues that come with multiple inheritance such as the diamond problem.  However, there were some issues that came with using interfaces for an API as well. ",
+                "value":" This design helped avoid multiple inheritance issues, such as the diamond problem.  However, using interfaces for APIs was far from perfect. ",
                 "children":null
             }
         ]
@@ -71,7 +71,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Let's say you needed to change an API that uses an interface.  If you add a new method definition to an interface, all classes that implement this interface also have to implement the new method.  If you have control over the implementing class this is an easy fix, but it is a very real possibility that someone else has a class that implements your interface.  This will break existing code! ",
+                "value":" Let's say you need to change an API that uses an interface.  When adding a new method definition to an interface, all classes that implement this interface must also implement the new method.  If all the implementing classes of this interface belong to you this is an easy fix. Unfortunately in the case of public APIs it is likely that someone else has a class that implements your interface.  Adding a new method to the interface breaks their code! ",
                 "children":null
             }
         ]
@@ -84,7 +84,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Java 8 has a fix for this called default methods.  Now interfaces can add bodies to methods specified with the ",
+                "value":" Java 8 has a fix for this issue called default methods.  With default methods, interface methods with the ",
                 "children":null
             },
             {
@@ -98,7 +98,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" keyword.  If this method does not exist in the implementing class, the default method in the interface is called instead!  Now existing code will not break on interface changes! ",
+                "value":" keyword can contain bodies.  If an interface method isn't implemented in the concrete class and a default method exists, the default method in the interface is invoked!  With default methods existing code doesn't break on interface changes! ",
                 "children":null
             }
         ]
@@ -111,7 +111,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" But wait!  What is the difference between an abstract class and an interface with default methods?  Although both can now have method bodies, there are still other differences between the two.  First off a class can still only extend one abstract class but can implement multiple interfaces with default methods.  Second abstract classes can have instance variables while an interface still does not have this ability",
+                "value":" But wait!  What's the difference between an abstract class and an interface with default methods?  Although both can have method bodies now, there are still differences between the two.  First off a class can still only extend one abstract class but can implement multiple interfaces.  Second, abstract classes can have instance variables while an interface still can't",
                 "children":null
             },
             {
@@ -136,7 +136,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Okay so now that one concern is answered, what about multiple inheritance?  Now you can inherit methods with multiple implementations right?  This is true, but now Java has added some rules to deal with situations where a class has multiple method bodies to choose from. ",
+                "value":" What about multiple inheritance now that you can inherit methods with implementations from different interfaces? With Java 8 new rules were added to deal with situations where a class has multiple method bodies to choose from. ",
                 "children":null
             }
         ]
@@ -149,7 +149,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" First off, if one of the method bodies comes from a class and the rest come from default methods, the classes implementation is picked.  Second, multiple default methods exist on different levels of the inheritance chain, the implementation in the interface closest to the class along the chain is picked.  If neither of these conditions are met, the class has to explicitly select which method body to use",
+                "value":" First off, if one method body comes from a class and the rest come from default methods, the classes implementation is picked.  Second, if multiple default methods exist on different levels of the inheritance chain, the implementation in the interface closest to the class is picked.  If neither of these conditions are met, the class has to explicitly select which method body to use",
                 "children":null
             },
             {
@@ -174,7 +174,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now lets look at an example that shows the new default methods and what occurs in a diamond problem scenario. The interface hierarchy below represents animals: ",
+                "value":" Lets observe an example of default methods and what occurs in a diamond problem scenario. The interface hierarchy below represents animals: ",
                 "children":null
             }
         ]
@@ -233,38 +233,12 @@ content = [
         ]
     },
     {
-        "el":"p",
-        "attributes":null,
-        "value":null,
-        "children":[
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":"     Animal.java ",
-                "children":null
-            }
-        ]
-    },
-    {
         "el":"codesnippet",
         "attributes":{
             "language":"Java"
         },
         "value":"public interface Animal {\n\n    String aboutMe();\n\n    /**\n    * Default method will be called if this method doesn't exist in the implemented class\n    * @return the age of the animal\n    */\n    default int age() {\n        return 0;\n    }\n\n    /**\n    * In Java 8 interfaces can have static methods\n    * @return a description of this animal\n    */\n    static String info() {\n        return \"I am an animal\";\n    }\n}\n",
         "children":null
-    },
-    {
-        "el":"p",
-        "attributes":null,
-        "value":null,
-        "children":[
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":"     LivingAnimal.java ",
-                "children":null
-            }
-        ]
     },
     {
         "el":"codesnippet",
@@ -275,19 +249,6 @@ content = [
         "children":null
     },
     {
-        "el":"p",
-        "attributes":null,
-        "value":null,
-        "children":[
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":"     Pet.java ",
-                "children":null
-            }
-        ]
-    },
-    {
         "el":"codesnippet",
         "attributes":{
             "language":"Java"
@@ -296,38 +257,12 @@ content = [
         "children":null
     },
     {
-        "el":"p",
-        "attributes":null,
-        "value":null,
-        "children":[
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":"     Cat.java ",
-                "children":null
-            }
-        ]
-    },
-    {
         "el":"codesnippet",
         "attributes":{
             "language":"Java"
         },
         "value":"public class Cat implements LivingAnimal, Pet {\n\n    private String name;\n    private String owner;\n\n    public Cat(String name) {\n        this.name = name;\n    }\n\n    public Cat(String name, String owner) {\n        this.name = name;\n        this.owner = owner;\n    }\n}\n",
         "children":null
-    },
-    {
-        "el":"p",
-        "attributes":null,
-        "value":null,
-        "children":[
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":"     Main.java ",
-                "children":null
-            }
-        ]
     },
     {
         "el":"codesnippet",
@@ -345,7 +280,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When we try to run the code right now, we get the following error: ",
+                "value":" When I tried running this code I got the following error: ",
                 "children":null
             }
         ]
@@ -384,7 +319,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The reason for the error is that we forgot to explicitly select which method body to implement in Cat.java for ",
+                "value":" This error occurred because I forgot to explicitly select which ",
                 "children":null
             },
             {
@@ -398,7 +333,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Let's fix this issue and explicitly call the ",
+                "value":" method body to implement in the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"Cat",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" class.  Let's fix this issue and explicitly call the ",
                 "children":null
             },
             {
@@ -445,7 +394,63 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now when we run the code we get the result of age = 0 and status = 'I am a pet!'. ",
+                "value":" Now when I run the code ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"age",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" equals ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"0",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" and ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"status",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" equals ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"'I am a pet!'",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
                 "children":null
             }
         ]
@@ -486,7 +491,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" having a copy of the default method specified in ",
+                "value":" having a copy of the default method ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"age()",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" defined in ",
                 "children":null
             },
             {
@@ -500,7 +519,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" as they would in C++, Java knows that there is actually only one existence of the default method ",
+                "value":" as they would in C++, Java knows there is only one default method ",
                 "children":null
             },
             {
@@ -509,6 +528,20 @@ content = [
                     "class":"jarombek-inline-code"
                 },
                 "value":"age()",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" in ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"Animal",
                 "children":null
             },
             {
@@ -533,20 +566,20 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Working with API's got a lot easier to deal with in Java 8.  You can check out all the code for this discovery ",
+                "value":" Working with API's got a lot easier in Java 8.  You can check out all the code for this discovery on ",
                 "children":null
             },
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2018/01-Jan/\n1-16-Java-Default-Method/defaultmethods"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2018/01-Jan/1-16-Java-Default-Method/defaultmethods"
                 },
                 "value":null,
                 "children":[
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"here",
+                        "value":"GitHub",
                         "children":null
                     }
                 ]

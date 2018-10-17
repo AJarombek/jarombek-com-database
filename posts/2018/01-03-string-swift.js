@@ -612,6 +612,63 @@ content = [
         ]
     },
     {
+        "el":"updateinfo",
+        "attributes":{
+            "date":"October 15th, 2018"
+        },
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Many languages handle ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/oct-9-2018-unicode"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"Unicode characters",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" in a different way. Languages such as Python, JavaScript, Java, etc. have a simpler string implementation at the expense of string lengths potentially not matching the number of visible characters.  This problem is remedied with ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/oct-9-2018-unicode#normalization"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"normalization",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
+                "children":null
+            }
+        ]
+    },
+    {
         "el":"sectiontitle",
         "attributes":{
             "title":"Swift 4"
