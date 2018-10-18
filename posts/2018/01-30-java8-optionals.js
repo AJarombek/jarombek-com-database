@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" For anyone who has ever written code in Java (or most imperative and object oriented languages) you know the pain of dealing with ",
+                "value":" Everyone who has written code in Java (or most imperative and object oriented languages) knows the pain of dealing with ",
                 "children":null
             },
             {
@@ -30,7 +30,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" values. These ",
+                "value":" values. ",
                 "children":null
             },
             {
@@ -58,7 +58,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" whenever we want to perform operations on them.  When we see a ",
+                "value":" whenever operations are performed on them.  When a ",
                 "children":null
             },
             {
@@ -72,7 +72,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" in our code, the usual fix is to perform a null check similar to the following code snippet: ",
+                "value":" is encountered, the usual fix is to perform a null check similar to the following code snippet: ",
                 "children":null
             }
         ]
@@ -93,7 +93,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" has some other issues besides uglifying our code by littering it with null checks.  As explained in a book I was reading recently on Java 8, ",
+                "value":" has other issues besides littering code with null checks. As explained in a book I read on Java 8, ",
                 "children":null
             },
             {
@@ -107,7 +107,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" actually doesn't follow the statically typed system that Java uses",
+                "value":" doesn't follow the statically typed system that Java uses",
                 "children":null
             },
             {
@@ -119,7 +119,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  It is the wrong way of representing the absence of a value. ",
+                "value":".  It is an incorrect way to represent the absence of a value. ",
                 "children":null
             }
         ]
@@ -135,7 +135,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" For anyone who has ever written code in Java (or most imperative and object oriented languages) you know the pain of dealing with ",
+                "value":" Everyone who has written code in Java (or most imperative and object oriented languages) knows the pain of dealing with ",
                 "children":null
             },
             {
@@ -149,7 +149,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" values. These ",
+                "value":" values. ",
                 "children":null
             },
             {
@@ -177,7 +177,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" whenever we want to perform operations on them.  When we see a ",
+                "value":" whenever operations are performed on them.  When a ",
                 "children":null
             },
             {
@@ -191,7 +191,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" in our code, the usual fix is to perform a null check similar to the following code snippet: ",
+                "value":" is encountered, the usual fix is to perform a null check similar to the following code snippet: ",
                 "children":null
             }
         ]
@@ -220,7 +220,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" has some other issues besides uglifying our code by littering it with null checks.  As explained in a book I was reading recently on Java 8, ",
+                "value":" has other issues besides littering code with null checks. As explained in a book I read on Java 8, ",
                 "children":null
             },
             {
@@ -234,7 +234,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" actually doesn't follow the statically typed system that Java uses",
+                "value":" doesn't follow the statically typed system that Java uses",
                 "children":null
             },
             {
@@ -246,7 +246,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  It is the wrong way of representing the absence of a value. ",
+                "value":".  It is an incorrect way to represent the absence of a value. ",
                 "children":null
             }
         ]
@@ -259,7 +259,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Upgrades in Java 8 allow you to implement missing values in a statically typed manner with the ",
+                "value":" Java 8 added the ",
                 "children":null
             },
             {
@@ -273,7 +273,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" class. The ",
+                "value":" class, which implements missing values in a statically typed manner. The ",
                 "children":null
             },
             {
@@ -287,7 +287,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" object wraps a value, which can be either present or absent (an absent value is simply ",
+                "value":" object wraps a value, which can either be present or absent (an absent value is simply ",
                 "children":null
             },
             {
@@ -301,7 +301,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":").  Now instead of performing null checks, you can simply interact with the ",
+                "value":").  Instead of using null checks, methods are invoked on the ",
                 "children":null
             },
             {
@@ -328,7 +328,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In this discovery I am going to build an API for athletes in Java using the ",
+                "value":" For this discovery I built an API in Java which utilizes optionals.  There are a couple methods in the ",
                 "children":null
             },
             {
@@ -342,21 +342,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" class for null values.  There are a couple of methods in the ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "class":"jarombek-inline-code"
-                },
-                "value":"Optional",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" class that we need to be familiar with before getting started: ",
+                "value":" class to go over before getting started: ",
                 "children":null
             }
         ]
@@ -385,21 +371,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "class":"jarombek-inline-code"
-                },
-                "value":"empty()",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" static method returns an empty ",
+                "value":" Returns an empty ",
                 "children":null
             },
             {
@@ -413,7 +385,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" instance.  This is the equivalent of a ",
+                "value":" instance.  Equivalent to a ",
                 "children":null
             },
             {
@@ -427,7 +399,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" value in a strictly typed setting. ",
+                "value":" value in a statically typed setting. ",
                 "children":null
             }
         ]
@@ -464,7 +436,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Wraps the argument value in the ",
+                "value":" Wraps the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"value",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" argument in an ",
                 "children":null
             },
             {
@@ -478,7 +464,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" object.  However, if you pass ",
+                "value":" object.  However, if ",
                 "children":null
             },
             {
@@ -492,7 +478,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" to the ",
+                "value":" is passed as an argument to ",
                 "children":null
             },
             {
@@ -506,7 +492,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" static method it will throw a ",
+                "value":", a ",
                 "children":null
             },
             {
@@ -520,7 +506,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Only use ",
+                "value":" is thrown.  Only use ",
                 "children":null
             },
             {
@@ -534,7 +520,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" if you know that the value being passed is not ",
+                "value":" if the ",
                 "children":null
             },
             {
@@ -542,13 +528,13 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"null",
+                "value":"value",
                 "children":null
             },
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". ",
+                "value":" argument is guaranteed to exist. ",
                 "children":null
             }
         ]
@@ -599,7 +585,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" except if the value is absent no error will be thrown and an empty ",
+                "value":" except no error is thrown on an empty ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"value",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" argument.  In that case an empty ",
                 "children":null
             },
             {
@@ -613,7 +613,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" object will be returned. ",
+                "value":" object is returned. ",
                 "children":null
             }
         ]
@@ -642,7 +642,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If an optional's value is present, this method will perform the actions specified by the consumer argument. This can be a lambda function or method reference. ",
+                "value":" If an optional's value is present, perform the actions specified by the consumer argument. The consumer argument can be a lambda function or method reference. ",
                 "children":null
             }
         ]
@@ -671,7 +671,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Returns whether the optional's value is present. ",
+                "value":" Returns whether the optional's value exists. ",
                 "children":null
             }
         ]
@@ -700,7 +700,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If the optional's value is present, return its value.  Otherwise, return the value specified as an argument. ",
+                "value":" If the optional's value exists, its value is returned.  Otherwise, the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"other",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" argument is returned. ",
                 "children":null
             }
         ]
@@ -728,7 +742,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now let's take a quick look at the API.  If you want the full code it is available on ",
+                "value":" Now let's take a quick look at the API I built.  The full code is available on ",
                 "children":null
             },
             {
@@ -785,7 +799,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The first thing I created for this API was a helper class for dealing with values that should not be ",
+                "value":" The first thing I created was a helper class for handling values that should never be ",
                 "children":null
             },
             {
@@ -799,7 +813,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  When calling a getter or setter on a POJO, there is nothing really stopping users from entering an empty value by default.  You can however add some validation logic to make sure that the value passed is not empty.  If it is equal to ",
+                "value":".  When calling a getter or setter on a POJO, there is nothing stopping users from entering an empty value by default.  Validation logic can easily be added to ensure argument values exist.  If arguments are equal to ",
                 "children":null
             },
             {
@@ -813,7 +827,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" you can either throw an error or assign that variable some default value.  This code would probably contain some null checks like discussed earlier.  We don't want our API littered with these checks! ",
+                "value":", an error can be thrown or a default value can be used.  Prior to Java 8 validation logic would likely contain null checks.  I don't want to litter the API with those! ",
                 "children":null
             }
         ]
@@ -826,7 +840,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Instead we will use optionals to check for value existence.  The following class is used in my getters and setters to check for value existence.  You can see that if the value entered is ",
+                "value":" Instead I used optionals to check for existence.  The following helper class is used by my POJOs getters and setters.  These helper functions take input values as an argument.  If the input value is ",
                 "children":null
             },
             {
@@ -840,7 +854,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" we throw an error using a variation of the ",
+                "value":" an error is thrown using a variation of the ",
                 "children":null
             },
             {
@@ -912,7 +926,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The athlete class is the heart of the API.  It holds information such as the athletes name, age, team, personal records, and exercise history.  All of this information is contained in instance variables, some of which are optional. ",
+                "value":" The athlete class is the heart of the API.  It holds information such as an athletes name, age, team, personal records, and exercise history.  All of this information is contained in instance variables, some of which are optional. ",
                 "children":null
             }
         ]
@@ -933,7 +947,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If you had this code in an IDE you would probably get a complaint on the ",
+                "value":" My Intellij IDE complains about using ",
                 "children":null
             },
             {
@@ -947,7 +961,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" instance variables.  This is because the new ",
+                "value":" for instance variables. This is because ",
                 "children":null
             },
             {
@@ -961,7 +975,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" class was not meant to be used as a field type. It also does not implement the ",
+                "value":" was not designed to be used as a field type. ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"Optional",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" also does not implement the ",
                 "children":null
             },
             {
@@ -987,7 +1015,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In most cases however I fall among the group of developers that think using the ",
+                "value":".  However, I fall among the group of developers that think using ",
                 "children":null
             },
             {
@@ -1001,7 +1029,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" class with instance variables can greatly increase the readability of an API.  Just be aware of its limitations! ",
+                "value":"  with instance variables can greatly increase the readability of an API.  Just be aware of its limitations! ",
                 "children":null
             }
         ]
@@ -1035,7 +1063,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" For the ",
+                "value":" I wrapped the ",
                 "children":null
             },
             {
@@ -1049,7 +1077,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" parameter I simply wrap it in an ",
+                "value":" parameter in an ",
                 "children":null
             },
             {
@@ -1077,7 +1105,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  For the other two parameters I am assigning them to concrete types.  Therefore I want to check if their value is empty, and if it is give the instance variable a default value.  This is where the ",
+                "value":".  I assigned the other two parameters to concrete types.  First I checked if their values were empty, and if so provided default values.  This is where the ",
                 "children":null
             },
             {
@@ -1091,7 +1119,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" methods come in. ",
+                "value":" method is utilized. ",
                 "children":null
             }
         ]
@@ -1104,7 +1132,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" After the constructors I have getters and setters for the instance variables.  Most of them are not interesting, but here are a few that utilize the ",
+                "value":" After the constructors I have getters and setters for the instance variables.  Most of them are boring, but there are a few that utilize the ",
                 "children":null
             },
             {
@@ -1118,7 +1146,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" class that I showed off earlier.  These setters check for the existance of a variable, and if it is empty throw an error. ",
+                "value":" class I showed off earlier.  These setters check for argument value existence and throw an error if no value is found. ",
                 "children":null
             }
         ]
@@ -1139,7 +1167,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I also have a method that allows you to add a personal record to the ",
+                "value":" I also have a method for adding a personal record to the ",
                 "children":null
             },
             {
@@ -1167,7 +1195,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" method to add the new PR if both of the functions arguments exist and returns whether or not the value was added successfully. ",
+                "value":" method to add the a PR if both the arguments exist.  Finally it returns a boolean indicating if the value was added successfully. ",
                 "children":null
             }
         ]
@@ -1211,7 +1239,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The main class executes our API.  The only new piece here is the ",
+                "value":" The main class executes the API.  I used the ",
                 "children":null
             },
             {
@@ -1225,7 +1253,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" method which I use to print out the value if it exists (and avoid a null check!). ",
+                "value":" method to print out the athletes 5000m PR if it exists. ",
                 "children":null
             }
         ]
@@ -1254,7 +1282,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I really am liking the new ",
+                "value":" I really like the new ",
                 "children":null
             },
             {
@@ -1268,7 +1296,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" class in Java.  I have already started using it in some of my Java code! ",
+                "value":" class in Java.  I'm already using it in some of my Java code! ",
                 "children":null
             }
         ]

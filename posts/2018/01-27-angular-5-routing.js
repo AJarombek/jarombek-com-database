@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I have recently started work on my Angular 5 framework prototype.  The project will be a single page web application that displays cat pictures!  The page will have a number of tabs you can click on that will change the state of the application.  To start setting up the application, I first created all the routes which will be selected when users click on tabs. ",
+                "value":" I recently started working on an Angular 5 framework prototype.  The project is a single page web application that displays cat pictures!  It has a few tabs you can click on that change the application state.  When first setting up the application, I created the routes corresponding to each tab. ",
                 "children":null
             }
         ]
@@ -45,7 +45,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I have recently started work on my Angular 5 framework prototype.  The project will be a single page web application that displays cat pictures!  The page will have a number of tabs you can click on that will change the state of the application.  To start setting up the application, I first created all the routes which will be selected when users click on tabs. ",
+                "value":" I recently started working on an Angular 5 framework prototype.  The project is a single page web application that displays cat pictures!  It has a few tabs you can click on that change the application state.  When first setting up the application, I created the routes corresponding to each tab. ",
                 "children":null
             }
         ]
@@ -79,7 +79,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The code sets up ",
+                "value":" This code sets up ",
                 "children":null
             },
             {
@@ -93,7 +93,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" properties that specify which path to route to.  Each of these routes is assigned an Angular component as we will soon see.  When you click a route, its components template will be placed inside the ",
+                "value":" properties which specify which path to route to.  Each of these routes is assigned to an Angular component.  When you click a route, its component template is placed inside the ",
                 "children":null
             },
             {
@@ -120,7 +120,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The Angular component for this template is called ",
+                "value":" The Angular component for the template above is ",
                 "children":null
             },
             {
@@ -134,7 +134,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and is wrapped along with the router's components in a module called ",
+                "value":". It is wrapped with the router's components inside a module called ",
                 "children":null
             },
             {
@@ -148,7 +148,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The most important aspect of this module is that it maps each route to the correct component: ",
+                "value":".  The most important aspect of ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"AppModule",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" is the mappings from routes to components: ",
                 "children":null
             }
         ]
@@ -158,7 +172,7 @@ content = [
         "attributes":{
             "language":"TypeScript"
         },
-        "value":"export const routes: Routes = [\n    {path: '', component: HomeComponent},\n    {path: 'profile', loadChildren: './profile/profile.module#ProfileModule'},\n    {path: 'about', component: AboutComponent},\n    {path: 'profile/post', loadChildren: './profile/profile.module#ProfileModule'},\n    {path: 'login', component: LoginComponent},\n    {path: 'signup', component: SignupComponent}\n];\n\n/**\n* @NgModule configures an Angular module, helping to organize the application into components\n* In Angular 5 NgModules allow for Ahead-Of-Time Compilation, where the JavaScript and HTML\n* is compiled before the code is sent to the client\n* declarations - items used in templates (ex. components, directives)\n* imports - import other modules\n* providers - services used in the module\n* bootstrap - specifies the root component of the application as a bootstrap entry point\n*/\n@NgModule({\n    declarations: [\n        AppComponent,\n        HomeComponent,\n        AboutComponent,\n        LoginComponent,\n        SignupComponent\n    ],\n    imports: [\n        BrowserModule,\n        RouterModule.forRoot(routes)\n    ],\n    providers: [],\n    bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
+        "value":"export const routes: Routes = [\n    {path: '', component: HomeComponent},\n    {path: 'profile', loadChildren: './profile/profile.module#ProfileModule'},\n    {path: 'about', component: AboutComponent},\n    {path: 'profile/post', loadChildren: './profile/profile.module#ProfileModule'},\n    {path: 'login', component: LoginComponent},\n    {path: 'signup', component: SignupComponent}\n];\n\n/**\n* @NgModule configures an Angular module, helping to organize the application into components.\n* In Angular 5 NgModules allow for Ahead-Of-Time Compilation, where the JavaScript and HTML\n* is compiled before the code is sent to the client\n* declarations - items used in templates (ex. components, directives)\n* imports - import other modules\n* providers - services used in the module\n* bootstrap - specifies the root component of the application as a bootstrap entry point\n*/\n@NgModule({\n    declarations: [\n        AppComponent,\n        HomeComponent,\n        AboutComponent,\n        LoginComponent,\n        SignupComponent\n    ],\n    imports: [\n        BrowserModule,\n        RouterModule.forRoot(routes)\n    ],\n    providers: [],\n    bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
         "children":null
     },
     {
@@ -169,7 +183,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can see that each route is assigned a HTTP path and an Angular component.  The ",
+                "value":" Each route is assigned a relative path and an Angular component.  The ",
                 "children":null
             },
             {
@@ -183,7 +197,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" variable is then used in the ",
+                "value":" variable is used in the ",
                 "children":null
             },
             {
@@ -197,7 +211,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" annotation with the ",
+                "value":" annotation with ",
                 "children":null
             },
             {
@@ -211,7 +225,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  We use the ",
+                "value":".  I used ",
                 "children":null
             },
             {
@@ -225,7 +239,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" method because ",
+                "value":" because ",
                 "children":null
             },
             {
@@ -252,7 +266,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Most of the components assigned to routes are very simple.  However, you will notice that some have a ",
+                "value":" Most of the components used in ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"routes",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" are very simple.  However, notice that some have a ",
                 "children":null
             },
             {
@@ -280,46 +308,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This is because these components are lazily loaded",
-                "children":null
-            },
-            {
-                "el":"sup",
-                "attributes":null,
-                "value":"1,2",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":".  They are not shipped with the main application and are only loaded from the server when they need to be accessed. ",
-                "children":null
-            }
-        ]
-    },
-    {
-        "el":"p",
-        "attributes":null,
-        "value":null,
-        "children":[
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" The prototype project has two modules: the root module that we have viewed already and a ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "class":"jarombek-inline-code"
-                },
-                "value":"ProfileModule",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" that contains components that are only accessible to signed in users.  If you look closely at the ",
+                "value":".  The routes with a ",
                 "children":null
             },
             {
@@ -333,7 +322,32 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" properties you can see that they specify the path to the ",
+                "value":" property are lazily loaded",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1,2",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  They are not shipped with the main application and are only loaded from the server when accessed. ",
+                "children":null
+            }
+        ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" The prototype project has two modules: the root module that I just showed and a ",
                 "children":null
             },
             {
@@ -347,7 +361,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" in the project.  This module will be lazily loaded when you follow either of these paths.  Here you can see the code for the ",
+                "value":" that contains components accessible only to signed in users.  If you look closely at the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"loadChildren",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" properties you can see that they specify a file path to ",
                 "children":null
             },
             {
@@ -361,7 +389,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" (and that it specifies its own sub-paths): ",
+                "value":". This module is lazily loaded upon following either of these paths.  Here is the code for ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"ProfileModule",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" (notice that it specifies its own sub-routes): ",
                 "children":null
             }
         ]
@@ -382,7 +424,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You may be wondering what these components consist of.  Right now they are just placeholders that specify a simple template that displays some text.  For example, here is the text for the ",
+                "value":" The templates for these components are just placeholders at the moment.  For example, here is the placeholder for ",
                 "children":null
             },
             {
@@ -432,7 +474,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Let's make sure that lazy loading is actually working.  When we first load the page, the ",
+                "value":" Let's make sure that lazy loading is actually working.  When the page first loads, ",
                 "children":null
             },
             {
@@ -446,7 +488,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is displayed as expected and we can see in the developer tools all the files that were loaded with our application. ",
+                "value":" is displayed as expected and the developer tools reveal all the files loaded with the application. ",
                 "children":null
             }
         ]
@@ -485,7 +527,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now if I click on the Profile tab, we will load the ",
+                "value":" Now if I click on the Profile tab, the ",
                 "children":null
             },
             {
@@ -499,7 +541,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". This component is lazily loaded.  As expected the webpage displays ‘Profile Component!' and if we look at the developer tools, another file has been loaded!  This contains all the code for the ",
+                "value":" loads. This component is lazily loaded.  As expected the webpage displays 'Profile Component!' and in the developer tools another file is loaded!  This file contains all the code for ",
                 "children":null
             },
             {
@@ -513,7 +555,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" including the ",
+                "value":" including ",
                 "children":null
             },
             {
@@ -566,7 +608,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I have just begun my journey on this Angular 5 prototype but am excited to continue to learn!  It is all a bit overwhelming at the moment, but I know it will get easier from here.  You can check out the code from this discovery on ",
+                "value":" I just began my journey with Angular 5 and am excited to learn more!  Angular is a bit overwhelming at the moment, but I know it will get easier from here.  You can check out the code from this discovery on ",
                 "children":null
             },
             {

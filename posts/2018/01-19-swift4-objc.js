@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Today I updated my iOS app ",
+                "value":" Today I upgraded my iOS app ",
                 "children":null
             },
             {
@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" from Swift 3 to Swift 4.  The process could not have been easier, with many of the automated conversions consisting of API changes and String struct upgrades.  There was however one change that had me confused - many of my functions were given a ",
+                "value":" from Swift 3 to Swift 4.  The process was extremely easy, with many of the automated conversions consisting of API changes and String struct upgrades.  However there was one change that had me confused - many of my functions were given an ",
                 "children":null
             },
             {
@@ -90,7 +90,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Since many of Apple's APIs are built in Objective-C, a lot of my functions were actually interacting with non-Swift code without me even knowing!  This communication between Swift and Objective-C is called Interoperability and it lets you use Objective-C code in Swift and vice versa",
+                "value":".  Since many of Apple's APIs are built in Objective-C, a lot of my functions were actually interacting with non-Swift code without me even knowing!  This communication between Swift and Objective-C is called Interoperability and it enables usage of Objective-C code in Swift and vice versa",
                 "children":null
             },
             {
@@ -118,7 +118,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Today I updated my iOS app ",
+                "value":" Today I upgraded my iOS app ",
                 "children":null
             },
             {
@@ -139,7 +139,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" from Swift 3 to Swift 4.  The process could not have been easier, with many of the automated conversions consisting of API changes and String struct upgrades.  There was however one change that had me confused - many of my functions were given a ",
+                "value":" from Swift 3 to Swift 4.  The process was extremely easy, with many of the automated conversions consisting of API changes and String struct upgrades.  However there was one change that had me confused - many of my functions were given an ",
                 "children":null
             },
             {
@@ -200,7 +200,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Since many of Apple's APIs are built in Objective-C, a lot of my functions were actually interacting with non-Swift code without me even knowing!  This communication between Swift and Objective-C is called Interoperability and it lets you use Objective-C code in Swift and vice versa",
+                "value":".  Since many of Apple's APIs are built in Objective-C, a lot of my functions were actually interacting with non-Swift code without me even knowing!  This communication between Swift and Objective-C is called Interoperability and it enables usage of Objective-C code in Swift and vice versa",
                 "children":null
             },
             {
@@ -239,7 +239,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" annotation when Swift 3 didn't?  It looks like the Swift compiler used to infer the ",
+                "value":" annotation when Swift 3 didn't?  It turns out the Swift 3 compiler inferred the ",
                 "children":null
             },
             {
@@ -253,7 +253,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" annotation for you, so you did not have to manually include it in your code",
+                "value":" annotation for you, so you didn't have to manually write it",
                 "children":null
             },
             {
@@ -265,7 +265,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". That has now changed in Swift 4. ",
+                "value":". This changed in Swift 4. ",
                 "children":null
             }
         ]
@@ -292,7 +292,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" annotation is that in Swift 3 it was never obvious if the annotation would be inferred by the compiler.  I would argue however that having to use it in my code is more of a burden than a feature.  Now I am even more dependent on an IDE than before, since I often do not know if I am interacting with an Apple API written in Objective-C.  Some of my favorite languages are the ones that you can just write in a text editor (one of Java's major weak points in my opinion is that you are tied to an IDE), and Swift has now taken another step further away from that simplistic nature. ",
+                "value":" annotation in Swift 4 is that it was never obvious if the annotation would be inferred by the compiler in Swift 3.  I would argue that having to use ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"@objc",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" in my code is more of a burden than a feature.  Now I am dependent on an IDE, since I often don't know if I'm interacting with an Apple API written in Objective-C. Some of my favorite languages are the ones where code can be written easily in a text editor (one of Java's weak points for me is that I'm tied to an IDE), and Swift has now taken a step further away from simplicity. ",
                 "children":null
             }
         ]

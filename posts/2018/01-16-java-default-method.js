@@ -29,7 +29,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This design helped avoid multiple inheritance issues, such as the diamond problem.  However, using interfaces for APIs was far from perfect. ",
+                "value":" This design helped avoid multiple inheritance issues, such as the diamond problem.  However, using interfaces for APIs is far from perfect. ",
                 "children":null
             }
         ]
@@ -58,7 +58,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This design helped avoid multiple inheritance issues, such as the diamond problem.  However, using interfaces for APIs was far from perfect. ",
+                "value":" This design helped avoid multiple inheritance issues, such as the diamond problem.  However, using interfaces for APIs is far from perfect. ",
                 "children":null
             }
         ]
@@ -71,7 +71,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Let's say you need to change an API that uses an interface.  When adding a new method definition to an interface, all classes that implement this interface must also implement the new method.  If all the implementing classes of this interface belong to you this is an easy fix. Unfortunately in the case of public APIs it is likely that someone else has a class that implements your interface.  Adding a new method to the interface breaks their code! ",
+                "value":" Let's say you need to change an API that uses an interface.  When adding a new method definition to an interface, all classes that implement this interface must also implement the new method.  If all the implementing classes of this interface belong to you its is an easy fix. Unfortunately in the case of public APIs its likely that someone else has a class that implements your interface.  Adding a new method to the interface breaks their code! ",
                 "children":null
             }
         ]
@@ -98,7 +98,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" keyword can contain bodies.  If an interface method isn't implemented in the concrete class and a default method exists, the default method in the interface is invoked!  With default methods existing code doesn't break on interface changes! ",
+                "value":" keyword contain bodies.  If an interface method isn't implemented in the concrete class and a default method exists, the default method in the interface is invoked!  With default methods existing code doesn't break on interface changes. ",
                 "children":null
             }
         ]
@@ -111,7 +111,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" But wait!  What's the difference between an abstract class and an interface with default methods?  Although both can have method bodies now, there are still differences between the two.  First off a class can still only extend one abstract class but can implement multiple interfaces.  Second, abstract classes can have instance variables while an interface still can't",
+                "value":" But wait!  What's the difference between an abstract class and an interface with default methods?  Although both can have method bodies now, there are still differences between the two.  First off a class can still only extend one abstract class but can implement multiple interfaces.  Second, abstract classes can have instance variables while interfaces can't",
                 "children":null
             },
             {

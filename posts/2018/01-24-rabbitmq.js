@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Recently for work I've looked into RabbitMQ, a message broker that you can use to communicate between different parts of your application.  An analogy I really liked is that RabbitMQ is like putting a post office in your application - you can have producers put messages in the post offices queue and have these messages routed to consumers",
+                "value":" Recently I looked at RabbitMQ, a message broker used to communicate between different parts of an application.  An analogy I really liked is that RabbitMQ puts a post office in an application, where producers put messages in a post office box, which are then routed to consumers",
                 "children":null
             },
             {
@@ -41,7 +41,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The configuration for RabbitMQ can be written in any language with a RabbitMQ library (which consists of most languages you know).  This is extremely powerful since you could have different pieces of the RabbitMQ channel in different languages.  For example, let's say your RabbitMQ server has one producer and three consumers.  Your message producer might be written in Java, while your consumers are written in JavaScript, Python, and PHP.  Imagine all the different possibilities of sending RabbitMQ messages across applications! ",
+                "value":" RabbitMQ configuration can be written in any language with a RabbitMQ library (which consists of most languages you know).  This is extremely powerful since different pieces of the RabbitMQ channel can be implemented in different languages.  For example, let's say a RabbitMQ server has one producer and three consumers.  The single producer might be written in Java, while the three consumers might be written in JavaScript, Python, and PHP.  Imagine all the different possibilities of sending RabbitMQ messages across applications! ",
                 "children":null
             }
         ]
@@ -57,7 +57,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Recently for work I've looked into RabbitMQ, a message broker that you can use to communicate between different parts of your application.  An analogy I really liked is that RabbitMQ is like putting a post office in your application - you can have producers put messages in the post offices queue and have these messages routed to consumers",
+                "value":" Recently I looked at RabbitMQ, a message broker used to communicate between different parts of an application.  An analogy I really liked is that RabbitMQ puts a post office in an application, where producers put messages in a post office box, which are then routed to consumers",
                 "children":null
             },
             {
@@ -82,7 +82,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The configuration for RabbitMQ can be written in any language with a RabbitMQ library (which consists of most languages you know).  This is extremely powerful since you could have different pieces of the RabbitMQ channel in different languages.  For example, let's say your RabbitMQ server has one producer and three consumers.  Your message producer might be written in Java, while your consumers are written in JavaScript, Python, and PHP.  Imagine all the different possibilities of sending RabbitMQ messages across applications! ",
+                "value":" RabbitMQ configuration can be written in any language with a RabbitMQ library (which consists of most languages you know).  This is extremely powerful since different pieces of the RabbitMQ channel can be implemented in different languages.  For example, let's say a RabbitMQ server has one producer and three consumers.  The single producer might be written in Java, while the three consumers might be written in JavaScript, Python, and PHP.  Imagine all the different possibilities of sending RabbitMQ messages across applications! ",
                 "children":null
             }
         ]
@@ -95,7 +95,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In order to get to know RabbitMQ better, I made an enhanced hello world example where producers can send JSON representing running logs to different consumers.  All the code is in Python, since the RabbitMQ Python API is very short and sweet!  Let's take a look! ",
+                "value":" In order to get to know RabbitMQ better, I made an enhanced 'hello world' example where producers send JSON representing running logs to different consumers.  All the code is in Python, since the RabbitMQ Python API is very short and sweet!  Let's take a look! ",
                 "children":null
             }
         ]
@@ -123,7 +123,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" My producer starts by taking command line arguments and converting them to JSON.  This will be the body of the message sent across the RabbitMQ channel.  It will also take arguments to form the routing key, which in context of the post office analogy is like the mailing address. ",
+                "value":" My producer starts by taking command line arguments and converting them to JSON.  This JSON is used for the message bodies sent across the RabbitMQ channel.  The producer also takes arguments to help create routing keys, which are like mailing addresses. ",
                 "children":null
             }
         ]
@@ -144,7 +144,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now we need to generate a routing key to use for this message.  Routing keys in RabbitMQ are strings separated by ",
+                "value":" Now I need to generate a routing key for this message.  Routing keys in RabbitMQ are strings separated by ",
                 "children":null
             },
             {
@@ -158,7 +158,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" symbols.  For example, a key could be ",
+                "value":" symbols.  For example, a key could be written as ",
                 "children":null
             },
             {
@@ -205,7 +205,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now we need to create a connection to RabbitMQ.  First lets use the command line to create two new RabbitMQ users, one for consuming and one for producing.  The following example gives both users full permissions to configure, read, and write to RabbitMQ  across all queues and exchanges.  The ",
+                "value":" Now I need to create a connection to RabbitMQ.  First I created two new RabbitMQ users on the command line, one for consuming and one for producing.  The following example creates the users and gives them both full permissions to configure, read, and write to RabbitMQ across all queues and exchanges.  The ",
                 "children":null
             },
             {
@@ -219,7 +219,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" pattern is what matches to any queue or exchange, with the first for configuring, the second for reading, and the last for writing",
+                "value":" pattern is what matches to any queue or exchange, with the first pattern for configuring, the second for reading, and the last for writing",
                 "children":null
             },
             {
@@ -252,7 +252,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Since we are building the producer now, I will use the ",
+                "value":" Since I'm building the producer, I'll use the ",
                 "children":null
             },
             {
@@ -299,7 +299,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now comes the biggest piece of the producer: the exchange.  In fact, all that the producer really does is publish a message on the exchange and RabbitMQ handles the rest.  Eventually, the exchanges will hand off the messages to queues based on the routing keys we specified",
+                "value":" Now comes the largest piece of the producer: the exchange.  In fact, all the producer really does is publish messages on the exchange and RabbitMQ handles the rest.  Eventually, exchanges hand off messages to queues based on specified routing keys",
                 "children":null
             },
             {
@@ -324,7 +324,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The following code declares the exchange and publishes a message to it with the JSON we created earlier. The full code for the producer is up on ",
+                "value":" The following code creates an exchange and publishes a message to it with the JSON I created earlier. The full code for the producer is up on ",
                 "children":null
             },
             {
@@ -381,7 +381,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now it is time to build the RabbitMQ consumer.  Similarly to the producer, we start by creating a connection and defining an exchange.  We then create a queue on the exchange and determine all the routing keys that the queue accepts.  The python code will take routing keys as command line arguments.  If there is no command line argument, the queue will match all routing keys. ",
+                "value":" Now its time to build the RabbitMQ consumer.  Similar to the producer, I started by creating a connection and defining an exchange.  I then created a queue on the exchange and determined all the routing keys that the queue accepts.  The python code takes routing keys as command line arguments.  If there is no command line argument, the queue accepts all routing keys. ",
                 "children":null
             }
         ]
@@ -402,7 +402,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now that the queues are set up, we can create a consumer to read the RabbitMQ messages.  The following Python code sets up a consumer and tells it to listen to the queue we created.  It also defines a callback function which will be called when messages are received. ",
+                "value":" Now that the queues are set up, I created a consumer to read messages.  The following Python code sets up a consumer and tells it to listen to certain queues.  The consumer uses a callback function which is invoked when messages are received. ",
                 "children":null
             }
         ]
@@ -423,13 +423,13 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If you would like to run both the producers and consumers to see messages in action, you can find the commands in ",
+                "value":" If you want to run the producers and consumers to see messaging in action, the commands are on ",
                 "children":null
             },
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-sources/blob/master/2018/01-Jan/\n1-24-RabbitMQ/setup.sh"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/blob/master/2018/01-Jan/1-24-RabbitMQ/setup.sh"
                 },
                 "value":null,
                 "children":[
@@ -472,7 +472,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The code to set up RabbitMQ here is all in Python, but as previously mentioned this can be done in many different languages! I hope this code shows how little configuration you can have to set up messaging. RabbitMQ is simply a data transfer mechanism, the real power of your applications will be the code that works around it. ",
+                "value":" While I wrote my RabbitMQ code in Python, it can be written in many different languages! This code shows the small amount of configuration needed to set up messaging.  RabbitMQ is simply a data transfer mechanism, the real power of an application is the code around it! ",
                 "children":null
             }
         ]
