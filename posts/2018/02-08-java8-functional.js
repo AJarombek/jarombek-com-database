@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" With all the functional additions to Java 8, I do think it is important to try to define what it means for a program to be 'functional.'  The end of the book I was reading, ",
+                "value":" With all the functional additions in Java 8, I think its important to define what it means for a program to be 'functional.'  The book ",
                 "children":null
             },
             {
@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", tried to explain exactly that. ",
+                "value":" tries to supply this definition. ",
                 "children":null
             }
         ]
@@ -50,7 +50,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" It is hard however to fully explain functional programming with Java since it doesn't follow a pure functional style.  Instead Java 8 tries to take pieces of what makes functional programming great and incorporate it into Java's existing imperative and object oriented paradigm. ",
+                "value":" It is hard to explain functional programming with Java since it doesn't follow a pure functional style.  Instead Java 8 takes pieces of functional programming and incorporates them into Java's existing imperative and object oriented paradigm. ",
                 "children":null
             }
         ]
@@ -66,7 +66,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" With all the functional additions to Java 8, I do think it is important to try to define what it means for a program to be 'functional.'  The end of the book I was reading, ",
+                "value":" With all the functional additions in Java 8, I think its important to define what it means for a program to be 'functional.'  The book ",
                 "children":null
             },
             {
@@ -87,7 +87,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", tried to explain exactly that. ",
+                "value":" tries to supply this definition. ",
                 "children":null
             }
         ]
@@ -100,7 +100,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" It is hard however to fully explain functional programming with Java since it doesn't follow a pure functional style.  Instead Java 8 tries to take pieces of what makes functional programming great and incorporate it into Java's existing imperative and object oriented paradigm. ",
+                "value":" It is hard to explain functional programming with Java since it doesn't follow a pure functional style.  Instead Java 8 takes pieces of functional programming and incorporates them into Java's existing imperative and object oriented paradigm. ",
                 "children":null
             }
         ]
@@ -113,7 +113,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" My experience with functional programming is extremely limited.  The only true functional programming that I wrote was with ",
+                "value":" My experience with functional programming is extremely limited.  The only true functional programming language I've used is ",
                 "children":null
             },
             {
@@ -134,7 +134,64 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" back during the winter of Junior year in college (a few months before I really got invested in programming and software development).  So I don't remember much! ",
+                "value":" during my Junior year of college (a few months before I really got invested in programming and software development).  So I don't remember much! ",
+                "children":null
+            }
+        ]
+    },
+    {
+        "el":"updateinfo",
+        "attributes":{
+            "date":"October 20th, 2018"
+        },
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" In recent months I've spent more time with functional programming.  I've written about ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/aug-27-2018-groovy-currying"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"currying",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" and worked with ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/oct-6-2018-haskell-pt1"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"Haskell",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":", a functional programming language. ",
                 "children":null
             }
         ]
@@ -147,7 +204,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Functional programming, like mathematics, is focused around the function.  This function takes a variable number of arguments and returns a variable number of results.  Most importantly however is that the function has zero side effects",
+                "value":" Functional programming, like mathematics, is focused around the function.  Functions take a variable number of arguments and return a result.  Most importantly, a 'pure' function has zero side effects",
                 "children":null
             },
             {
@@ -159,7 +216,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This means that each time the function is called with the same arguments, the same result will occur.  Also no variables of the program can be mutated. They all must be effectively final.  You also can't output to a log file or throw exceptions",
+                "value":".  This means each time a function is called with the same arguments, the same result occurs.  A pure function also can't output to a log file or throw exceptions",
                 "children":null
             },
             {
@@ -171,7 +228,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". These are a lot of things you can't do, but the result is a function that will not cause unexpected errors in the rest of your code.  It is very predictable. ",
+                "value":". In a functional program variables can't mutate.  They must be effectively final. I've listed a lot of things you can't do in functional programming, but these rules result in functions that don't cause unexpected errors and are very predictable. ",
                 "children":null
             }
         ]
@@ -184,7 +241,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Functional style programming in Java is not quite this strict.  I don't think anyone will complain if your program outputs some information to a log file for debugging.  However, reducing the number of variables your function mutates and removing exceptions can be seen as beneficial.  Predictable functions are nice to work with and will help future developers who work on your code! ",
+                "value":" Functional style programming in Java is not quite this strict.  However, reducing the number of variables a function mutates and removing unnecessary exceptions is beneficial.  Predictable functions are nice to work with and help future developers who look at your code! ",
                 "children":null
             }
         ]
@@ -197,7 +254,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Elimination null errors in your code is very simple now with Java 8's ",
+                "value":" As an example, eliminating null errors is simple with Java 8's ",
                 "children":null
             },
             {
@@ -211,7 +268,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" class!  I looked into optionals in detail in a prior ",
+                "value":" class!  I described optionals in a prior ",
                 "children":null
             },
             {
@@ -224,7 +281,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"discovery post",
+                        "value":"article",
                         "children":null
                     }
                 ]
@@ -232,7 +289,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", but you could easily express an invalid condition in functions with optionals. For example, the book I read discusses a divide by zero scenario: ",
+                "value":", but invalid conditions are easily expressed in functions with optionals.  For example, the book I read discusses a divide by zero scenario: ",
                 "children":null
             }
         ]
@@ -253,7 +310,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Here we first try to divide 5 by 2, then 5 by 0, and finally the dreaded ",
+                "value":" First I tried dividing 5 by 2, then 5 by 0, and finally the dreaded ",
                 "children":null
             },
             {
@@ -267,7 +324,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" by 6.5.  With optionals, we do not have to throw any errors here.  Instead the client of our APIs function simply checks the ",
+                "value":" by 6.5.  With optionals, none of these divisions throw an error. Instead I simply check the resulting ",
                 "children":null
             },
             {
@@ -281,7 +338,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" for a value.  Our first valid division will contain a result while the other two will return ",
+                "value":" for a value.  The first valid division contains a result while the other two return ",
                 "children":null
             },
             {
@@ -302,10 +359,8 @@ content = [
     },
     {
         "el":"codesnippet",
-        "attributes":{
-            "language":"Bash"
-        },
-        "value":"# 2.5\n# Can't Divide By Zero\n# Can't Pass an Empty Value\n",
+        "attributes":null,
+        "value":"2.5\n\"Can't Divide By Zero\"\n\"Can't Pass an Empty Value\"\n",
         "children":null
     },
     {
@@ -316,7 +371,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Functional programming also often utilizes recursion to avoid mutating variables.  The only issue in Java with recursion is that each time a recursive function is called, a new stack frame is created ",
+                "value":" Functional programming often utilizes recursion to avoid mutating variables.  The only issue with recursion in Java is each time a recursive function is called, a new stack frame is created ",
                 "children":null
             },
             {
@@ -328,7 +383,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This can cause overflows for large operations.  Java also does not have tail recursion optimizations in place, so you can't be smart and avoid stack frame creation",
+                "value":".  This causes overflows for large operations.  Java also doesn't have tail recursion optimization, so there is no way to avoid stack frame creation",
                 "children":null
             },
             {
@@ -346,6 +401,42 @@ content = [
         ]
     },
     {
+        "el":"updateinfo",
+        "attributes":{
+            "date":"October 20th, 2018"
+        },
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" In a recent article I wrote about my experience working with higher order functions in Haskell.  In particular I discussed ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/oct-20-2018-haskell-pt2"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"fold functions",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":", which are recursively implemented.  Fold functions share similar issues of overflowing the program stack. ",
+                "children":null
+            }
+        ]
+    },
+    {
         "el":"p",
         "attributes":null,
         "value":null,
@@ -353,7 +444,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" There are other functional practices that you can use in Java that I won't go into here, but they will be exciting for me to try out in the future.  While Java 8 doesn't introduce pure functional programming, it does give you more tools to create code without unwanted side effects! ",
+                "value":" There are other functional operations available in Java that I won't describe here, but I'm interested to try them out in the future.  While Java 8 doesn't introduce pure functional programming, it does give you more tools to create code without unwanted side effects! ",
                 "children":null
             }
         ]

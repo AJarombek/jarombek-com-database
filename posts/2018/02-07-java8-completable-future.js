@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This post is going to consist of first impressions of Java 8's new ",
+                "value":" This post reviews Java 8's new ",
                 "children":null
             },
             {
@@ -30,7 +30,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" class, which builds on top of the ",
+                "value":" class, which builds upon the ",
                 "children":null
             },
             {
@@ -70,7 +70,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" represents an operation in progress that when completed will contain a value",
+                "value":" represents an operation in progress that  will contain a value when completed",
                 "children":null
             },
             {
@@ -82,7 +82,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  We can use this class to create asynchronous code that won't block during long running tasks.  My initial impression is that a ",
+                "value":".  ",
                 "children":null
             },
             {
@@ -96,7 +96,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is Java's version of a JavaScript ",
+                "value":" helps create asynchronous code that doesn't block during long running tasks.  It is basically Java's version of JavaScript's ",
                 "children":null
             },
             {
@@ -110,7 +110,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" object.  You define an operation to perform once the value is resolved asynchronously, and if needed can chain these operations. ",
+                "value":" object. ",
                 "children":null
             }
         ]
@@ -123,7 +123,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I created a simple example API to test it out.  The API contains a list of programming languages that you can ask for information about. The operation of getting a language takes a long time to complete (to simulate a possible long running network call) so we will use a ",
+                "value":" I created a simple API to test it out.  The API contains a list of programming languages and information about them.  Getting a language from the API takes a long time to complete (simulating a long running network call) so I used ",
                 "children":null
             },
             {
@@ -137,11 +137,12 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" to deal with its value once it arrives.  In the meantime, we will be able to perform other operations. ",
+                "value":" to deal with the language information once it arrives.  In the meantime I can perform other operations. ",
                 "children":null
             }
         ]
-    }
+    },
+
 ];
 
 content = [
@@ -153,7 +154,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This post is going to consist of first impressions of Java 8's new ",
+                "value":" This post reviews Java 8's new ",
                 "children":null
             },
             {
@@ -167,7 +168,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" class, which builds on top of the ",
+                "value":" class, which builds upon the ",
                 "children":null
             },
             {
@@ -207,7 +208,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" represents an operation in progress that when completed will contain a value",
+                "value":" represents an operation in progress that  will contain a value when completed",
                 "children":null
             },
             {
@@ -219,7 +220,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  We can use this class to create asynchronous code that won't block during long running tasks.  My initial impression is that a ",
+                "value":".  ",
                 "children":null
             },
             {
@@ -233,7 +234,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is Java's version of a JavaScript ",
+                "value":" helps create asynchronous code that doesn't block during long running tasks.  It is basically Java's version of JavaScript's ",
                 "children":null
             },
             {
@@ -247,7 +248,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" object.  You define an operation to perform once the value is resolved asynchronously, and if needed can chain these operations. ",
+                "value":" object. ",
                 "children":null
             }
         ]
@@ -260,7 +261,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I created a simple example API to test it out.  The API contains a list of programming languages that you can ask for information about. The operation of getting a language takes a long time to complete (to simulate a possible long running network call) so we will use a ",
+                "value":" I created a simple API to test it out.  The API contains a list of programming languages and information about them.  Getting a language from the API takes a long time to complete (simulating a long running network call) so I used ",
                 "children":null
             },
             {
@@ -274,7 +275,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" to deal with its value once it arrives.  In the meantime, we will be able to perform other operations. ",
+                "value":" to deal with the language information once it arrives.  In the meantime I can perform other operations. ",
                 "children":null
             }
         ]
@@ -287,7 +288,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Here is the APIs class: ",
+                "value":" Here is the API: ",
                 "children":null
             }
         ]
@@ -297,7 +298,7 @@ content = [
         "attributes":{
             "language":"Java"
         },
-        "value":"public class LanguageAPI {\n\n    private static Random random =  new Random();\n    private Map<String, Language> languages;\n\n    public LanguageAPI() {\n\n        // Populate the languages map\n        languages = Stream.of(\n            new Language(\"Java\", LocalDate.of(1995, Month.MAY, 23), \"9.0\", \"Object Oriented\"),\n            new Language(\"JavaScript\", LocalDate.of(1995, Month.DECEMBER, 4),\n                            \"9.0\", \"Prototype Based\"))\n            .collect(toMap(Language::getName, e -> e));\n    }\n\n    /**\n    * Get one of the languages stored in the API with a delay\n    * @param name - the name of the language\n    * @return - the language object\n    */\n    public Language getLanguage(String name) {\n        randomDelay();\n        return languages.get(name);\n    }\n\n    /**\n    * Create a random delay between 0-3 seconds\n    */\n    private void randomDelay() {\n        double delay = random.nextDouble() * 3_000;\n        System.out.println(\"The delay will be \" + delay + \" ms\");\n        try {\n            Thread.sleep((long) delay);\n        } catch (InterruptedException e) {\n            e.printStackTrace();\n        }\n    }\n}\n",
+        "value":"public class LanguageAPI {\n\n    private static Random random =  new Random();\n    private Map<String, Language> languages;\n\n    public LanguageAPI() {\n\n        // Populate the languages map\n        languages = Stream.of(\n            new Language(\"Java\", LocalDate.of(1995, Month.MAY, 23), \"9.0\", \"Object Oriented\"),\n            new Language(\"JavaScript\", LocalDate.of(1995, Month.DECEMBER, 4), \"9.0\", \"Prototype Based\"))\n            .collect(toMap(Language::getName, e -> e));\n    }\n\n    /**\n    * Get one of the languages stored in the API with a delay\n    * @param name - the name of the language\n    * @return - the language object\n    */\n    public Language getLanguage(String name) {\n        randomDelay();\n        return languages.get(name);\n    }\n\n    /**\n    * Create a random delay between 0-3 seconds\n    */\n    private void randomDelay() {\n        double delay = random.nextDouble() * 3_000;\n        System.out.println(\"The delay will be \" + delay + \" ms\");\n        try {\n            Thread.sleep((long) delay);\n        } catch (InterruptedException e) {\n            e.printStackTrace();\n        }\n    }\n}\n",
         "children":null
     },
     {
@@ -308,7 +309,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can see that we initialize the API's language values in the constructor.  I also used Java 8's nice new Date and Time API to specifies the languages creation date. ",
+                "value":" I initialized the language values in the constructor.  I also used Java 8's Date and Time API to specify each languages creation date.  Here is the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"Language",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" POJO. ",
                 "children":null
             }
         ]
@@ -329,7 +344,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"     Now to use this API on the client side: ",
+                "value":" Finally I invoked the API: ",
                 "children":null
             }
         ]
@@ -339,7 +354,7 @@ content = [
         "attributes":{
             "language":"Java"
         },
-        "value":"public class APIClient {\n\n    private static LanguageAPI languageAPI = new LanguageAPI();\n\n    /**\n    * Get a language asynchronously.\n    * When the language object is finally received, print it\n    * @param name - the language name\n    * @return the CompletableFuture\n    */\n    public static CompletableFuture<Void> getLanguageAsync(String name) {\n\n        // Start up a new thread and perform the language APIs getLanguage()\n        // method asynchronously\n        CompletableFuture<Language> futureLanguage =\n            CompletableFuture.supplyAsync(() -> languageAPI.getLanguage(name));\n\n        // Print out the Language once the futures value is supplied\n        return futureLanguage.thenAccept(System.out::println);\n    }\n\n    public static void main(String... args) {\n\n        // Get the Java language asynchronously\n        CompletableFuture<Void> future = getLanguageAsync(\"Java\");\n        System.out.println(\"Finding Java...\");\n\n        // Wait for the future to complete before ending the Java process\n        future.join();\n    }\n}\n",
+        "value":"public class APIClient {\n\n    private static LanguageAPI languageAPI = new LanguageAPI();\n\n    /**\n    * Get a language asynchronously.\n    * When the language object is finally received, print it.\n    * @param name - the language name\n    * @return the CompletableFuture\n    */\n    public static CompletableFuture<Void> getLanguageAsync(String name) {\n\n        // Start up a new thread and perform the language APIs getLanguage()\n        // method asynchronously\n        CompletableFuture<Language> futureLanguage =\n            CompletableFuture.supplyAsync(() -> languageAPI.getLanguage(name));\n\n        // Print out the Language once the futures value is supplied\n        return futureLanguage.thenAccept(System.out::println);\n    }\n\n    public static void main(String... args) {\n\n        // Get the Java language asynchronously\n        CompletableFuture<Void> future = getLanguageAsync(\"Java\");\n        System.out.println(\"Finding Java...\");\n\n        // Wait for the future to complete before ending the Java process\n        future.join();\n    }\n}\n",
         "children":null
     },
     {
@@ -364,7 +379,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" method takes so long to complete, I wrapped it in a ",
+                "value":" method takes a long time to complete, I wrapped it in a ",
                 "children":null
             },
             {
@@ -378,7 +393,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  To do this I use ",
+                "value":".  To do this I used ",
                 "children":null
             },
             {
@@ -420,7 +435,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" that will be asynchronously executed.  I put the ",
+                "value":" which is asynchronously executed.  I put the ",
                 "children":null
             },
             {
@@ -434,7 +449,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" method in this ",
+                "value":" method in the ",
                 "children":null
             },
             {
@@ -448,7 +463,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Once the value is resolved I will print it out using the ",
+                "value":" argument.  Once the value is resolved I print it using ",
                 "children":null
             },
             {
@@ -462,7 +477,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" method. The contents of this method are executed once the value exists, so I pass it the ",
+                "value":". The contents of this method are executed once the value exists, in my case the ",
                 "children":null
             },
             {
@@ -489,7 +504,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If you run this code, you will see that 'Finding Java...' will be printed out before the ",
+                "value":" Running this code prints 'Finding Java...' before the ",
                 "children":null
             },
             {
@@ -503,7 +518,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" object is resolved and printed.  Asynchronous code at work! ",
+                "value":" object is resolved.  Asynchronous code at work! ",
                 "children":null
             }
         ]
@@ -538,7 +553,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" does seem like a nice new addition to Java.  In the past when I had to perform asynchronous code in Java I used Android libraries or the Spring framework, but I can see myself using ",
+                "value":" seems like a nice new addition to Java.  In the past when performing asynchronous code in Java I used Android libraries or the Spring framework, but I can see myself using ",
                 "children":null
             },
             {
@@ -552,7 +567,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"s in my code in the future!  The code for this discovery is on ",
+                "value":" in the future!  The code for this discovery is on ",
                 "children":null
             },
             {
@@ -565,7 +580,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":" GitHub",
+                        "value":"GitHub",
                         "children":null
                     }
                 ]

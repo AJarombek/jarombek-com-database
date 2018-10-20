@@ -16,7 +16,49 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I recently finished looking at Java 8 (which was the topic of recent discoveries) and now am doing a deep dive into the Oracle database.  Although I don't use Oracle a ton in my free time I use it a lot at work and it is the ",
+                "value":" I recently finished looking at Java 8 (which was the topic of ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/feb-7-2018-java8-completable-future"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"recent",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":"  ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/feb-8-2018-java8-functional"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"discoveries",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":") and now I'm switching gears and exploring the Oracle database.  Although I don't use Oracle a ton in my free time I use it a lot at work and it is the ",
                 "children":null
             },
             {
@@ -37,7 +79,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" at the moment.  Therefore it is good to know well! ",
+                "value":" at the moment.  Therefore its good to know well! ",
                 "children":null
             }
         ]
@@ -50,7 +92,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This discovery is going to follow me through the setup of my database.  I will skip the actual Oracle installation and configuration (which was a challenge itself!) and move straight to the moment I started typing SQL. ",
+                "value":" This discovery follows the setup of my database.  I will skip the actual Oracle installation and configuration (which was a challenge itself!) and move straight to the moment I started typing SQL. ",
                 "children":null
             }
         ]
@@ -66,7 +108,49 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I recently finished looking at Java 8 (which was the topic of recent discoveries) and now am doing a deep dive into the Oracle database.  Although I don't use Oracle a ton in my free time I use it a lot at work and it is the ",
+                "value":" I recently finished looking at Java 8 (which was the topic of ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/feb-7-2018-java8-completable-future"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"recent",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":"  ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/feb-8-2018-java8-functional"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"discoveries",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":") and now I'm switching gears and exploring the Oracle database.  Although I don't use Oracle a ton in my free time I use it a lot at work and it is the ",
                 "children":null
             },
             {
@@ -87,7 +171,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" at the moment.  Therefore it is good to know well! ",
+                "value":" at the moment.  Therefore its good to know well! ",
                 "children":null
             }
         ]
@@ -100,7 +184,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This discovery is going to follow me through the setup of my database.  I will skip the actual Oracle installation and configuration (which was a challenge itself!) and move straight to the moment I started typing SQL. ",
+                "value":" This discovery follows the setup of my database.  I will skip the actual Oracle installation and configuration (which was a challenge itself!) and move straight to the moment I started typing SQL. ",
                 "children":null
             }
         ]
@@ -113,7 +197,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" A disclaimer before I begin.  A lot of my discoveries are about languages and technologies that I really love using.  In this case I wouldn't say that I love Oracle but it is a good tool to have in the kit. Just try installing an Oracle product and you will begin to see why many get frustrated with this database!  One bright spot would be the PL/SQL language, which allows developers to add some really cool functionality at the database layer of applications.  I won't be going into PL/SQL much this time around but definitely will in the future! ",
+                "value":" A disclaimer before I begin.  A lot of my discoveries are about languages and technologies that I really love using.  I wouldn't say I love Oracle but it is a good tool to have in the bag. Just try installing an Oracle product and you will see why many get frustrated with this database!  One bright spot is the PL/SQL language, which allows developers to add some really cool functionality at the database layer of applications.  I won't go into PL/SQL much this time around but definitely will in the future! ",
                 "children":null
             }
         ]
@@ -141,7 +225,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" So to start out I installed Oracle (the only good installation guide was found on a non-Oracle backed ",
+                "value":" To start I installed Oracle (the only good installation guide I could find was in a non-Oracle backed ",
                 "children":null
             },
             {
@@ -187,7 +271,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I started by creating a tablespace called ",
+                "value":" I created a tablespace called ",
                 "children":null
             },
             {
@@ -248,7 +332,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and gave it all privileges. I also set its default tablespace to the one I just created.  You may be wondering what is up with the strange username?  The ",
+                "value":" and gave it all privileges. I also set its default tablespace to the one I just created.  You may be wondering what is up with the strange username.  The ",
                 "children":null
             },
             {
@@ -274,7 +358,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  A common user can be used across all Oracle pluggable databases instead of being local to a single one.  You can confirm that the user is a common user with the following query: ",
+                "value":".  A common user is accessible across all Oracle pluggable databases instead of being local to a single one.  You can confirm the user is a common user with the following query: ",
                 "children":null
             }
         ]
@@ -333,7 +417,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This allows for users to control multiple databases while only running one instance of Oracle 12c.  I am going to ignore the pluggable database feature for the rest of the discovery but I want to breifly show how you could create a user for a pluggable database. ",
+                "value":".  This allows users to control multiple databases while only running one instance of Oracle 12c.  I'm going to ignore pluggable databases for the rest of this article, but I'll briefly show how to create a user for a pluggable database. ",
                 "children":null
             }
         ]
@@ -346,7 +430,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In SQL*Plus you can change the current session to a pluggable database with the following command: ",
+                "value":" In SQL*Plus the following command changes the current session to a pluggable database: ",
                 "children":null
             }
         ]
@@ -367,7 +451,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" From here you can simply create a new user like before but without the ",
+                "value":" From here a pluggable database user is created like before but without the ",
                 "children":null
             },
             {
@@ -430,7 +514,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The database is going to store books that I have read.  These books have a many-to-many relationship to programming languages (since a book can be about many languages and a language can have many books describing it).  The first table I added was ",
+                "value":" The database stores books that I have read.  These books have a many-to-many relationship to programming languages (since a book can be about many languages and a language can have many books describing it).  The first table I added was ",
                 "children":null
             },
             {
@@ -454,7 +538,7 @@ content = [
         "attributes":{
             "language":"SQL"
         },
-        "value":"-- I was thinking of using a sequence to generate a primary key for this table.\n-- However, Oracle 12c introduced identity columns which simplifies sequence\n-- generation statements on columns\nCREATE TABLE languages(\n    language_id INTEGER GENERATED BY DEFAULT AS IDENTITY (\n    START WITH 1 INCREMENT BY 1\n    ),\n    name VARCHAR2(63),\n    created DATE\n) TABLESPACE ANDY;\n\nALTER TABLE languages ADD CONSTRAINT languages_id_pk PRIMARY KEY (language_id);\n\n-- All language name values must be unique in the table\n-- Specifying a unique constraint also creates an index on the column\nALTER TABLE languages ADD CONSTRAINT languages_name_uq UNIQUE (name);\n",
+        "value":"-- I was thinking of using a sequence to generate a primary key for this table.\n-- However, Oracle 12c introduced identity columns which simplifies sequence\n-- generation statements on columns\nCREATE TABLE languages(\n    language_id INTEGER GENERATED BY DEFAULT AS IDENTITY (\n        START WITH 1 INCREMENT BY 1\n    ),\n    name VARCHAR2(63),\n    created DATE\n) TABLESPACE ANDY;\n\nALTER TABLE languages ADD CONSTRAINT languages_id_pk PRIMARY KEY (language_id);\n\n-- All language name values must be unique in the table\n-- Specifying a unique constraint also creates an index on the column\nALTER TABLE languages ADD CONSTRAINT languages_name_uq UNIQUE (name);\n",
         "children":null
     },
     {
@@ -465,7 +549,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Some interesting aspects of this table is that each language has an id that is auto incremented.  This means that you don't actually assign a language an id, Oracle will generate one for you on request. ",
+                "value":" One interesting aspect of this table is that each language has an id that is auto incremented.  This means that languages aren't manually assigned an id, instead Oracle generates one on request. ",
                 "children":null
             }
         ]
@@ -478,7 +562,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The second table was for books: ",
+                "value":" The second table is for books: ",
                 "children":null
             }
         ]
@@ -513,7 +597,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" column.  This is a virtual column, a feature added in Oracle 11g.  Virtual columns aren't actually stored on disk, instead they are dynamically generated by performing computations on other columns in the table",
+                "value":" column.  This is a virtual column, a feature added in Oracle 11g.  Virtual columns aren't stored on disk, instead they are dynamically generated by performing computations on other columns in the table",
                 "children":null
             },
             {
@@ -552,7 +636,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" constraints on them.  These constraints enforce rules on the data users try to put into the columns",
+                "value":" constraints on them.  These constraints enforce rules on the data that users try inserting into columns",
                 "children":null
             },
             {
@@ -591,7 +675,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Finally I created the ",
+                "value":" Finally I created a ",
                 "children":null
             },
             {
@@ -605,7 +689,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" table that stores the many to many relationship between books and languages: ",
+                "value":" table that stores a many to many relationship between books and languages: ",
                 "children":null
             }
         ]
@@ -615,7 +699,7 @@ content = [
         "attributes":{
             "language":"SQL"
         },
-        "value":"CREATE TABLE book_languages(\n    isbn INTEGER NOT NULL,\n    name VARCHAR2(63),\n    CONSTRAINT books_languages_isbn_fk\n    FOREIGN KEY (isbn) REFERENCES books(isbn) ON DELETE CASCADE,\n    CONSTRAINT book_languages_name_fk\n    FOREIGN KEY (name) REFERENCES languages(name) ON DELETE CASCADE\n) TABLESPACE ANDY;\n",
+        "value":"CREATE TABLE book_languages(\n    isbn INTEGER NOT NULL,\n    name VARCHAR2(63),\n    CONSTRAINT books_languages_isbn_fk\n        FOREIGN KEY (isbn) REFERENCES books(isbn) ON DELETE CASCADE,\n    CONSTRAINT book_languages_name_fk\n        FOREIGN KEY (name) REFERENCES languages(name) ON DELETE CASCADE\n) TABLESPACE ANDY;\n",
         "children":null
     },
     {
@@ -626,7 +710,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can see that both the columns in this table are actually foreign keys by looking at their constraints! ",
+                "value":" The table constraints define both the columns as foreign keys! ",
                 "children":null
             }
         ]
@@ -675,7 +759,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Writing out each insert statement is a bit of overhead, so for the ",
+                "value":" Writing out each insert statement requires a bit of overhead, so for the ",
                 "children":null
             },
             {
@@ -689,7 +773,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I created a PL/SQL procedure to do it for me!  In PL/SQL, a procedure is just a function with no output value.  This is perfect for doing some inserts! ",
+                "value":" table I created a PL/SQL procedure to do it for me!  In PL/SQL, a procedure is just a function with no output value.  This is perfect for doing some inserts! ",
                 "children":null
             }
         ]
@@ -736,7 +820,28 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I'll dive more into PL/SQL later.  Now the database is fully set up and ready to query (which I will do next time).  The full code for this discovery (with some nice comments!) is up on ",
+                "value":" I'll look into PL/SQL later.  Now the database is fully set up and ready to query (which I will do ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/mar-2-2018-oracle-queries"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"next time",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":").  The full code for this discovery (with some nice comments!) is up on ",
                 "children":null
             },
             {

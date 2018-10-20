@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I got a database instance up and running plus set up my basic table structure.  The database held programming language information and different books that I have read.  In this discovery I continue with that example and perform some interesting queries on the database of intermediate difficulty. ",
+                "value":" I got a database instance up and running and created a basic table structure.  The database held programming language information and books I've read.  In this discovery I continue with that example and perform some interesting queries on the database of intermediate difficulty. ",
                 "children":null
             }
         ]
@@ -50,7 +50,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now what do I mean by intermediate difficulty.  Obviously this definition will vary among developers, but I believe that intermediate queries are ones beyond simple select statements with basic filters.  This discovery isn't really a tutorial on creating SQL queries but more exploring different SQL syntax that was interesting to me!  I will start out pretty simple and then get more complex! ",
+                "value":" I believe intermediate queries are ones beyond simple select statements with basic filters.  This discovery isn't a tutorial on creating SQL queries.  It explores different SQL syntax that was interesting to me!  I will start out pretty simple and then get more complex. ",
                 "children":null
             }
         ]
@@ -87,7 +87,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I got a database instance up and running plus set up my basic table structure.  The database held programming language information and different books that I have read.  In this discovery I continue with that example and perform some interesting queries on the database of intermediate difficulty. ",
+                "value":" I got a database instance up and running and created a basic table structure.  The database held programming language information and books I've read.  In this discovery I continue with that example and perform some interesting queries on the database of intermediate difficulty. ",
                 "children":null
             }
         ]
@@ -100,7 +100,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now what do I mean by intermediate difficulty.  Obviously this definition will vary among developers, but I believe that intermediate queries are ones beyond simple select statements with basic filters.  This discovery isn't really a tutorial on creating SQL queries but more exploring different SQL syntax that was interesting to me!  I will start out pretty simple and then get more complex! ",
+                "value":" I believe intermediate queries are ones beyond simple select statements with basic filters.  This discovery isn't a tutorial on creating SQL queries.  It explores different SQL syntax that was interesting to me!  I will start out pretty simple and then get more complex. ",
                 "children":null
             }
         ]
@@ -142,7 +142,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" conditions, chained by ",
+                "value":" conditions chained by ",
                 "children":null
             },
             {
@@ -156,7 +156,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clauses.  If I wanted to find whether a column is between two different values, I can use the ",
+                "value":" clauses.  If I want to find whether a column is between two different values, I can use the ",
                 "children":null
             },
             {
@@ -170,7 +170,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause.  This will make my intentions more clear and reduce my use of ",
+                "value":" clause instead.  This makes my intentions clearer and reduces the number of ",
                 "children":null
             },
             {
@@ -213,7 +213,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clauses can also look for soft varchar matches, where only a portion of a string has to match a columns value.  Soft matches use the ",
+                "value":" clauses can also look for soft matches, where only a portion of a string matches.  Soft matches use the ",
                 "children":null
             },
             {
@@ -256,8 +256,10 @@ content = [
     },
     {
         "el":"span",
-        "attributes":null,
-        "value":"ISBN           TITLE              RELEASED   STARTED   FINISHED  EDITION TIME_READING\n-------------- ------------------ ---------- --------- --------- ------- ------------\n9781617291999  Java 8 in Action   01-AUG-14  10-OCT-17 08-FEB-18         121\n",
+        "attributes":{
+            "class":"code-span"
+        },
+        "value":"ISBN TITLE            RELEASED  STARTED   FINISHED  TIME_READING\n---- ---------------- --------- --------- --------- ------------\n.... Java 8 in Action 01-AUG-14 10-OCT-17 08-FEB-18 121\n",
         "children":null
     },
     {
@@ -307,7 +309,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In the following query I perform an inner join across this many to many relationship to get a book, the language that it is about, and the inception date of the language.  Inner joins only return rows when the columns in the ",
+                "value":" In the following query I perform an inner join across this many to many relationship to get a book, the language its about, and the inception date of the language.  Inner joins only return rows when the columns in the ",
                 "children":null
             },
             {
@@ -315,13 +317,13 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"JOIN ON",
+                "value":"JOIN ... ON ...",
                 "children":null
             },
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause have non-null values",
+                "value":" statement have non-null values",
                 "children":null
             },
             {
@@ -333,7 +335,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Therefore, no row will be returned for a language that has no corresponding book. ",
+                "value":".  Therefore, no row is returned for a language that has no corresponding book. ",
                 "children":null
             }
         ]
@@ -348,8 +350,10 @@ content = [
     },
     {
         "el":"span",
-        "attributes":null,
-        "value":"           ISBN TITLE                      NAME       CREATED\n--------------- -------------------------- ---------- --------------\n  9781491901946 AngularJS: Up and Running  JavaScript 04-DEC-95\n  9781617291999 Java 8 in Action           Java       23-MAY-95\n  9780071799355 Oracle Database 12c SQL    SQL        01-JAN-74\n  9780071799355 Oracle Database 12c SQL    PL/SQL     01-JAN-92\n  9781617291203 Spring In Action           Java       23-MAY-95\n",
+        "attributes":{
+            "class":"code-span"
+        },
+        "value":"           ISBN TITLE                      NAME       CREATED\n--------------- -------------------------- ---------- ----------\n  9781491901946 AngularJS: Up and Running  JavaScript 04-DEC-95\n  9781617291999 Java 8 in Action           Java       23-MAY-95\n  9780071799355 Oracle Database 12c SQL    SQL        01-JAN-74\n  9780071799355 Oracle Database 12c SQL    PL/SQL     01-JAN-92\n  9781617291203 Spring In Action           Java       23-MAY-95\n",
         "children":null
     },
     {
@@ -360,7 +364,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Sometimes you may want to make a SQL query that doesn't actually return the data in a table, but instead different values depending on the underlying structure.  The following query does exactly that. Depending on whether a book has a ",
+                "value":" You may want to make a SQL query that doesn't actually return the data in a table, but instead returns different values depending on the underlying structure.  The following query does exactly that. Depending on whether a book has a ",
                 "children":null
             },
             {
@@ -374,7 +378,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" value, we will return 'Finished Reading' or 'Not Completed' (note: the ",
+                "value":" value, it returns 'Finished Reading' or 'Not Completed' (note: the ",
                 "children":null
             },
             {
@@ -388,7 +392,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"column is a virtual column that is only generated when both a ",
+                "value":" column is a virtual column that is only generated when both a ",
                 "children":null
             },
             {
@@ -402,7 +406,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"and ",
+                "value":" and ",
                 "children":null
             },
             {
@@ -416,7 +420,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"date exist).  This operation is performed with the ",
+                "value":" date exist).  This operation is performed with the ",
                 "children":null
             },
             {
@@ -430,7 +434,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function, which for its first argument takes a column.  If this column is not null, the second argument is returned, otherwise the third is returned. ",
+                "value":" function, which for its first argument takes a column.  If this column isn't null, the second argument is returned.  Otherwise the third argument is returned. ",
                 "children":null
             }
         ]
@@ -451,7 +455,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If you want to perform more complex if-else logic then checking for null values, you can use a ",
+                "value":" For if-else logic more complex than checking for null values, the ",
                 "children":null
             },
             {
@@ -465,7 +469,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" statement",
+                "value":" statement is used",
                 "children":null
             },
             {
@@ -477,14 +481,16 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". Here I check if the time spent reading the book is greater than certain values, and if so return a different string.  Here is the result of this query: ",
+                "value":". I checked if the time spent reading a book was greater than certain values, and if so returned a different string.  Here is the result of this query: ",
                 "children":null
             }
         ]
     },
     {
         "el":"span",
-        "attributes":null,
+        "attributes":{
+            "class":"code-span"
+        },
         "value":"TITLE                       STILL_READING     DURATION\n--------------------------- ----------------- -------------\nJava 8 in Action            Finished Reading  Long Read\nOracle Database 12c SQL     Finished Reading  Moderate Read\nAngularJS: Up and Running   Not Completed     Short Read\nJump Start: Bootstrap       Finished Reading  Short Read\nSpring In Action            Finished Reading  Short Read\n",
         "children":null
     },
@@ -496,7 +502,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The next query is going to look at hierarchical data.  This data forms parent child relationships in a tree structure.  The three tables in the database don't have any hierarchical data. Let's change that by creating a new table called ",
+                "value":" The next query looks at hierarchical data.  This data forms parent child relationships in a tree structure.  The three tables in the database don't have any hierarchical data. I changed that by creating a new table called ",
                 "children":null
             },
             {
@@ -520,12 +526,14 @@ content = [
         "attributes":{
             "language":"SQL"
         },
-        "value":"-- Both name and influenced_by fields come from the language tables name column\nCREATE TABLE language_hierarchy(\n    name VARCHAR2(63),\n    influnced_by VARCHAR2(63),\n    CONSTRAINT language_hierarchy_name_fk\n    FOREIGN KEY (name) REFERENCES languages(name) ON DELETE CASCADE,\n    CONSTRAINT language_hierarchy_inf_by_fk\n    FOREIGN KEY (influnced_by) REFERENCES languages(name) ON DELETE CASCADE\n);\n",
+        "value":"-- Both name and influenced_by fields come from the language tables name column\nCREATE TABLE language_hierarchy(\n    name VARCHAR2(63),\n    influnced_by VARCHAR2(63),\n    CONSTRAINT language_hierarchy_name_fk\n      FOREIGN KEY (name) REFERENCES languages(name) ON DELETE CASCADE,\n    CONSTRAINT language_hierarchy_inf_by_fk\n      FOREIGN KEY (influnced_by) REFERENCES languages(name) ON DELETE CASCADE\n);\n",
         "children":null
     },
     {
         "el":"span",
-        "attributes":null,
+        "attributes":{
+            "class":"code-span"
+        },
         "value":"NAME          INFLUNCED_BY\n------------- --------------\nJava          C\nC\nJavaScript    Java\nJavaScript    C\nJavaScript    Python\nSQL\nPL/SQL        SQL\nHTML\nXML\nCSS\nSass          CSS\nSwift         Python\nPHP           C\nPHP           Java\nPython        C\nPython        Java\nTypeScript    Java\nTypeScript    JavaScript\nJSON          JavaScript\n",
         "children":null
     },
@@ -537,7 +545,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now we can display the hierarchical nature of this data using the ",
+                "value":" The hierarchical nature of this data can be displayed using the ",
                 "children":null
             },
             {
@@ -579,7 +587,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" defines a row to start the hierarchical analysis at (it does not have to be the root node in the graph).  In the following query we start with the language 'C' since so many modern day languages were influenced by it. The ",
+                "value":" defines a row to start the hierarchical analysis at (it doesn't have to be the root node in the graph).  In the following query I started with the language 'C' since so many modern languages are influenced by it. The ",
                 "children":null
             },
             {
@@ -593,7 +601,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" defines the parent child relationship.  Let's say we have two rows where the ",
+                "value":" clause defines the parent child relationship.  For example, let's say there are two rows where the ",
                 "children":null
             },
             {
@@ -635,7 +643,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" statement defines that row #1 is the child node and has a relationship with parent node row #2. ",
+                "value":" statement says that row #1 is the child node and has a relationship with parent node row #2. ",
                 "children":null
             }
         ]
@@ -663,7 +671,9 @@ content = [
     },
     {
         "el":"span",
-        "attributes":null,
+        "attributes":{
+            "class":"code-span"
+        },
         "value":"    LEVEL LANGUAGE\n--------- -----------------------\n        1 C\n        2   Java\n        3     JavaScript\n        4       JSON\n        4       TypeScript\n        3     PHP\n        3     Python\n        4       JavaScript\n        5         JSON\n        5         TypeScript\n        4       Swift\n        3     TypeScript\n        2   JavaScript\n        3     JSON\n        3     TypeScript\n        2   PHP\n        2   Python\n        3     JavaScript\n        4       JSON\n        4       TypeScript\n        3     Swift\n",
         "children":null
     },
@@ -695,7 +705,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" column.  This is a pseudo column which indicates the level at which we are at in the tree",
+                "value":" column.  This is a pseudo column which indicates the level in the tree",
                 "children":null
             },
             {
@@ -707,7 +717,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  We use this ",
+                "value":".  ",
                 "children":null
             },
             {
@@ -721,7 +731,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" column along with the ",
+                "value":" is used along with the ",
                 "children":null
             },
             {
@@ -735,7 +745,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function to add tabs to the front of the language name depending on the tree depth.  In this example we started at the root column of the tree and navigated downwards, but you can also traverse the tree upwards from a child node.  You can do this by simply switching the columns in the ",
+                "value":" function to add tabs in front of the language name.  In this example I started at the root column of the tree and navigated downwards, but trees can also be traversed upwards from a child node.  This is achieved by switching the columns in the ",
                 "children":null
             },
             {
@@ -776,7 +786,9 @@ content = [
     },
     {
         "el":"span",
-        "attributes":null,
+        "attributes":{
+            "class":"code-span"
+        },
         "value":"    LEVEL LANGUAGE\n--------- -----------------------\n        1 Java\n        2   C\n",
         "children":null
     },
@@ -788,7 +800,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Let say I want to group my time reading by the language I am reading about.  I can do this by joining the ",
+                "value":" Let say I want to group the time spent reading with the language I am reading about.  I can do this by joining the ",
                 "children":null
             },
             {
@@ -844,21 +856,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" column. This is a pretty simple use case of the ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "class":"jarombek-inline-code"
-                },
-                "value":"GROUP BY",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" clause.  Now let's say I also want a row in the result set that totals all the time spent reading.  This is where the ",
+                "value":" column.  Finally I want a row in the result set that totals all the time spent reading.  This is where the ",
                 "children":null
             },
             {
@@ -872,7 +870,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause comes in.  You use ",
+                "value":" clause comes in.  ",
                 "children":null
             },
             {
@@ -886,7 +884,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" in conjunction with the ",
+                "value":" is used in conjunction with the ",
                 "children":null
             },
             {
@@ -927,7 +925,9 @@ content = [
     },
     {
         "el":"span",
-        "attributes":null,
+        "attributes":{
+            "class":"code-span"
+        },
         "value":"NAME          SUM(B.TIME_READING)\n------------- -------------------\nJava          134\nJavaScript\nPL/SQL        26\nSQL           26\n              186\n",
         "children":null
     },
@@ -939,7 +939,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now if you wanted to make the result table more pretty it would be nice for the name column for the subtotal row to display a name like 'Total Days'.  We can implement this behavior with the help of the ",
+                "value":" It would be nice if the name column in the subtotal row displayed a name like 'Total Days'.  This behavior is implemented with the help of the ",
                 "children":null
             },
             {
@@ -953,7 +953,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function.  This function accepts a column and returns 1 if the column value is null and 0 if a value exists",
+                "value":" function.  ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"grouping()",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" accepts a column and returns 1 if the column value is null and 0 if the value exists",
                 "children":null
             },
             {
@@ -965,7 +979,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In this example we can use the ",
+                "value":".  In this example I used the ",
                 "children":null
             },
             {
@@ -993,7 +1007,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause to populate the ",
+                "value":" clause to populate the last rows ",
                 "children":null
             },
             {
@@ -1007,21 +1021,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" column with a value when it would usually be ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "class":"jarombek-inline-code"
-                },
-                "value":"null",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":". ",
+                "value":" column. ",
                 "children":null
             }
         ]
@@ -1031,12 +1031,14 @@ content = [
         "attributes":{
             "language":"SQL"
         },
-        "value":"    SELECT\n        CASE grouping(l.name)\n            WHEN 1 THEN '*Total Days'\n            ELSE l.name\n            END AS name,\n        sum(b.time_reading) AS total_time_reading\n        FROM books b\n        INNER JOIN book_languages l ON b.isbn = l.isbn\n    GROUP BY ROLLUP(l.name);\n",
+        "value":"SELECT\n    CASE grouping(l.name)\n        WHEN 1 THEN '*Total Days'\n        ELSE l.name\n        END AS name,\n    sum(b.time_reading) AS total_time_reading\n    FROM books b\n    INNER JOIN book_languages l ON b.isbn = l.isbn\nGROUP BY ROLLUP(l.name);\n",
         "children":null
     },
     {
         "el":"span",
-        "attributes":null,
+        "attributes":{
+            "class":"code-span"
+        },
         "value":"NAME          TOTAL_TIME_READING\n------------- -------------------\nJava          134\nJavaScript\nPL/SQL        26\nSQL           26\n*Total Days   186\n",
         "children":null
     },
@@ -1048,7 +1050,28 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" There are a ton more cool queries to explore in Oracle, and next time I plan on exploring analytic functions.  You can check out all the code for this discovery on ",
+                "value":" There are a ton more cool queries to explore in Oracle, and next time I plan on exploring ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/mar-18-2018-oracle-adv-pt1"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"analytic functions",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  You can check out all the code from this discovery on ",
                 "children":null
             },
             {
