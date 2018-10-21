@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I used Sass for my stylesheets over CSS.  I had experimented with Sass before, but this was my first time using it in a full project.  Until native CSS adds the features that Sass provides, I will continue using Sass for stylesheets in the future. ",
+                "value":" I used Sass for stylesheets instead of CSS.  I experimented with Sass before, but this was my first time using it in a full project.  Until native CSS adds the features that Sass provides, I will continue using Sass for stylesheets in the future. ",
                 "children":null
             }
         ]
@@ -50,7 +50,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Sass is a CSS preprocessor with Ruby style syntax.  It is a superset of CSS so any CSS document is also valid Sass",
+                "value":" Sass is a CSS preprocessor with Ruby style syntax.  Its a superset of CSS, so any CSS document is valid Sass",
                 "children":null
             },
             {
@@ -62,7 +62,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Sass adds lots of new features including variable definitions, mixins, and other syntax that helps create reusable components in your styling.  The biggest problem I had with CSS is that it ends up looking like a jumbled mess with many repeated styles.  With Sass, we now have reusable styles! ",
+                "value":".  Sass adds lots of new features including variable definitions, mixins, and other syntax to help create reusable components in stylesheets.  The biggest problem I had with CSS is that it ends up looking like a jumbled mess with many repeated styles.  With Sass, I can create reusable styles! ",
                 "children":null
             }
         ]
@@ -99,7 +99,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I used Sass for my stylesheets over CSS.  I had experimented with Sass before, but this was my first time using it in a full project.  Until native CSS adds the features that Sass provides, I will continue using Sass for stylesheets in the future. ",
+                "value":" I used Sass for stylesheets instead of CSS.  I experimented with Sass before, but this was my first time using it in a full project.  Until native CSS adds the features that Sass provides, I will continue using Sass for stylesheets in the future. ",
                 "children":null
             }
         ]
@@ -112,7 +112,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Sass is a CSS preprocessor with Ruby style syntax.  It is a superset of CSS so any CSS document is also valid Sass",
+                "value":" Sass is a CSS preprocessor with Ruby style syntax.  Its a superset of CSS, so any CSS document is valid Sass",
                 "children":null
             },
             {
@@ -124,7 +124,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Sass adds lots of new features including variable definitions, mixins, and other syntax that helps create reusable components in your styling.  The biggest problem I had with CSS is that it ends up looking like a jumbled mess with many repeated styles.  With Sass, we now have reusable styles! ",
+                "value":".  Sass adds lots of new features including variable definitions, mixins, and other syntax to help create reusable components in stylesheets.  The biggest problem I had with CSS is that it ends up looking like a jumbled mess with many repeated styles.  With Sass, I can create reusable styles! ",
                 "children":null
             }
         ]
@@ -137,7 +137,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In the past I had played around with basic Sass features like inline comments and variables.  For example, you can define variables for a bunch of colors you use throughout the application. ",
+                "value":" In the past I played around with basic Sass features like inline comments and variables.  For example, a variable can be defined for a color used throughout the application. ",
                 "children":null
             }
         ]
@@ -158,7 +158,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now when you have a CSS declaration you can reference this variable: ",
+                "value":" Variables can be referenced inside a CSS declaration: ",
                 "children":null
             }
         ]
@@ -207,7 +207,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Mixins are an extremely powerful Sass property that allows you to create reusable style blocks. You can create a mixin with the ",
+                "value":" Mixins are an extremely powerful Sass property that create reusable style blocks. Mixins are created with the ",
                 "children":null
             },
             {
@@ -221,7 +221,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" directive and can use it in a style declaration with the ",
+                "value":" directive and are used in a style declaration with the ",
                 "children":null
             },
             {
@@ -247,7 +247,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  For example, in my application I created a mixin for each of my font styles: ",
+                "value":".  For example, in my application I created a mixin for each of my fonts: ",
                 "children":null
             }
         ]
@@ -268,7 +268,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Then I could apply the styles in the mixin to a style declaration: ",
+                "value":" Then I included the mixin in a declaration: ",
                 "children":null
             }
         ]
@@ -289,7 +289,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Every element in the website that needed that specific font would simply include the mixin!  I also used mixins to perform more complex operations like transformations.  Another powerful feature of mixins is the ability to pass it arguments.  These arguments can even have default values!  Here is a mixin that I created to apply a transition to a property: ",
+                "value":" Every element in the website that needed a specific font used its mixin!  I also used mixins to perform more complex operations like transformations.  Another powerful feature of mixins is the ability to pass in arguments.  These arguments can also have default values!  Here is a mixin that I created to apply a transition to a property: ",
                 "children":null
             }
         ]
@@ -310,7 +310,35 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This mixin creates a transition style on the property parameter.  Also if no time is specified as a parameter, the default argument of 0.3 seconds is used. ",
+                "value":" This mixin creates a transition style for the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"$property",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" parameter.  If no ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"$time",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" argument is passed to the mixin, the default 0.3 seconds is used. ",
                 "children":null
             }
         ]
@@ -337,7 +365,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":") placeholder.  This placeholder will be a reference to the parent selector once Sass is converted to native CSS",
+                "value":") placeholder.  This placeholder is a reference to the parent selector",
                 "children":null
             },
             {
@@ -363,7 +391,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" pseudo-class in the above example will be applied to the parent selector that the mixin is included in! ",
+                "value":" pseudo-class is applied to the parent selector that the mixin is included in! ",
                 "children":null
             }
         ]
@@ -425,7 +453,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If you have multiple selectors that use the same styles, you can extend these matching styles from a class. Here is an example: ",
+                "value":" When there are multiple selectors that use the same styles, each selector can extend a single class. Here is an example: ",
                 "children":null
             }
         ]
@@ -460,7 +488,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" class will be used in the ",
+                "value":" class are used in the ",
                 "children":null
             },
             {
@@ -474,7 +502,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" element.  The best part is that this class can be extended into other CSS selectors as well!  It is yet another great way to reuse components in CSS. ",
+                "value":" element.  The best part is that this class can be extended into other CSS selectors as well!  It is yet another great way to create reusable styling. ",
                 "children":null
             }
         ]
@@ -487,7 +515,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I am having a ton of fun exploring Sass and all the exciting possibilities it offers.  While I hope these features eventually make it into the native CSS spec, for now Sass is a nice alternative.  I am sure this won't be my last discovery on the matter! ",
+                "value":" I'm having a ton of fun exploring Sass and all the exciting possibilities it offers.  While I hope these features eventually make it into the native CSS spec, for now Sass is a nice alternative.  I'm sure this won't be my last discovery on the matter! ",
                 "children":null
             }
         ]
@@ -502,7 +530,7 @@ db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
     name: postName,
-    title: "What I have Learned About Sass",
+    title: "What I Learned About Sass",
     date: new Date('2018-03-10T12:00:00'),
     type: "Discovery",
     views: postViews,

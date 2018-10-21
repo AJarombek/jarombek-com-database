@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" discovery post, I was quite critical of TypeScript.  I questioned whether it truly was a pure superset of JavaScript and didn’t like how it made the MEAN stack no longer just JavaScript.  With TypeScript I had to change languages again when moving between layers! ",
+                "value":" discovery post, I was quite critical of TypeScript.  I questioned whether it truly was a pure superset of JavaScript and didn't like how it forced the MEAN stack to use multiple languages. ",
                 "children":null
             }
         ]
@@ -50,7 +50,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I did finish my discussion about TypeScript in that post saying how I would continue to work with it and see if I warmed up to the language.  So is TypeScript going to replace my JavaScript now that I have built a full Angular 5 app with it?  Not quite, but it is a really cool language that brings a lot to the JavaScript ecosystem! ",
+                "value":" I did finish my TypeScript discussion saying I'd give it a chance and continue working with it.  So is TypeScript going to replace my JavaScript now that I built a full Angular 5 app with it?  Not quite, but it is a really cool language that brings a lot to the JavaScript ecosystem! ",
                 "children":null
             }
         ]
@@ -87,7 +87,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" discovery post, I was quite critical of TypeScript.  I questioned whether it truly was a pure superset of JavaScript and didn’t like how it made the MEAN stack no longer just JavaScript.  With TypeScript I had to change languages again when moving between layers! ",
+                "value":" discovery post, I was quite critical of TypeScript.  I questioned whether it truly was a pure superset of JavaScript and didn't like how it forced the MEAN stack to use multiple languages. ",
                 "children":null
             }
         ]
@@ -100,7 +100,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I did finish my discussion about TypeScript in that post saying how I would continue to work with it and see if I warmed up to the language.  So is TypeScript going to replace my JavaScript now that I have built a full Angular 5 app with it?  Not quite, but it is a really cool language that brings a lot to the JavaScript ecosystem! ",
+                "value":" I did finish my TypeScript discussion saying I'd give it a chance and continue working with it.  So is TypeScript going to replace my JavaScript now that I built a full Angular 5 app with it?  Not quite, but it is a really cool language that brings a lot to the JavaScript ecosystem! ",
                 "children":null
             }
         ]
@@ -128,7 +128,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The biggest argument for TypeScript over JavaScript is that it is statically typed.  This can allow for quicker development and for many bugs that stem from type incompatibilities to never appear in the first place!  TypeScript does a great job of this!  It is also really nice how TypeScript does not force static typing on you, meaning you don't have to give each variable a type. If you don't give a variable a type it uses the default ",
+                "value":" The biggest argument for TypeScript over JavaScript is that its statically typed.  This can result in quicker development and for bugs that stem from type incompatibilities to never appear in the first place.  TypeScript does a great job of this!  Its also really nice that TypeScript doesn't force type definitions. If you don't explicitly give a variable a type it uses the default ",
                 "children":null
             },
             {
@@ -156,7 +156,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", so these variables can be assigned any value just like JavaScript",
+                "value":".  Variables of type ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"any",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" can be assigned any value just like JavaScript",
                 "children":null
             },
             {
@@ -168,7 +182,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"!  This allows you to slowly incorporate TypeScript specific features into your code. ",
+                "value":"!  This allows developers to slowly incorporate TypeScript specific features into their code. ",
                 "children":null
             }
         ]
@@ -196,7 +210,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" There were some other cool features of TypeScript that assisted my Angular development.  One of these features was access modifiers and constructors.  TypeScript allows you to use access modifiers on your constructor arguments and then automatically adds these arguments as properties of the object. This reduces code and the use of ",
+                "value":" There were many cool features of TypeScript that assisted my Angular development.  One of these features was access modifiers and constructors.  TypeScript allows you to use access modifiers on constructor arguments and then automatically adds these arguments as properties of the object. This reduces code and the use of ",
                 "children":null
             },
             {
@@ -223,7 +237,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Here is an example of a TypeScript class with one of these constructor shortcuts: ",
+                "value":" Here is an example of a TypeScript class using the constructor shortcut: ",
                 "children":null
             }
         ]
@@ -244,7 +258,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In JavaScript we don’t have this shortcut and have to explicitly assign properties on the object. Now here is the equivalent in JavaScript**: ",
+                "value":" In JavaScript this shortcut doesn't exist and properties must be explicitly assigned to an object. Here is the JavaScript equivalent**: ",
                 "children":null
             }
         ]
@@ -265,7 +279,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" **Well, kinda.  The object properties in this class are accessible to the outside code.  To make them private requires additional complexity.  If you want to see exactly what TypeScript converts to, you can paste this code into the online ",
+                "value":" **Well, kinda.  The object properties in this class are accessible to outside code.  To make them private requires additional complexity.  If you want to see exactly how TypeScript converts to JavaScript, you can paste this code into the online ",
                 "children":null
             },
             {
@@ -299,7 +313,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" It is also important to remember that with both TypeScript and JavaScript classes are simply syntactic sugar on top of Prototype chains. ",
+                "value":" Its also important to remember that both TypeScript and JavaScript classes are syntactic sugar on top of Prototypes. ",
                 "children":null
             }
         ]
@@ -327,7 +341,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" While JavaScript still has no native interfaces, TypeScript gives developers an ",
+                "value":" While JavaScript doesn't have interfaces, TypeScript gives developers an ",
                 "children":null
             },
             {
@@ -366,7 +380,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In my Angular project I had classes that interacted with my backend APIs.  Since they all had similar structures, I had them all implement an interface to help enforce types and class structure: ",
+                "value":" In my Angular project I had multiple classes interacting with my backend API.  Since each class had a similar structure, each implemented an interface: ",
                 "children":null
             }
         ]
@@ -443,7 +457,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" These were a few of the features of TypeScript that really stood out to me.  I really missed optional static typing amongst other features when switching back to JavaScript.  While I don’t think TypeScript will replace my use of JavaScript, I do hope JavaScript implements some of these features in the future (in fact, there is a ",
+                "value":" These were a few TypeScript features that really stood out to me.  I really missed  static typing amongst other features when switching back to JavaScript.  While I don't think TypeScript will replace my use of JavaScript, I do hope JavaScript implements some of these features in the future (in fact, there is a ",
                 "children":null
             },
             {
@@ -464,7 +478,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" to add interfaces to JavaScript in the wild, so there is hope!). ",
+                "value":" to add interfaces to JavaScript, so there is hope!). ",
                 "children":null
             }
         ]
@@ -479,7 +493,7 @@ db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
     name: postName,
-    title: "What I Have Learned About TypeScript",
+    title: "What I Learned About TypeScript",
     date: new Date('2018-03-08T12:00:00'),
     type: "Discovery",
     views: postViews,

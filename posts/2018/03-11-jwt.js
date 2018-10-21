@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", I had to implement a way for users to be authenticated.  For example, if a user wanted to create a new post, I had to make sure that they were signed in.  After looking at multiple solutions I settled with JSON Web Tokens (JWT) for authentication purposes. ",
+                "value":" I had to implement user authentication.  For example, if a user wanted to create a new post, I had to make sure that they were signed in.  After looking at multiple solutions I settled on JSON Web Tokens (JWT) for authentication. ",
                 "children":null
             }
         ]
@@ -50,7 +50,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" JWT’s are used to securely transfer a series of claims between parties",
+                "value":" JWT's are used to securely transfer a series of claims between parties",
                 "children":null
             },
             {
@@ -62,7 +62,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In my application, these claims determined whether the user is signed in.  The parties that these claims are transferred between are the Node.js/Express web server and my Angular 5 client. ",
+                "value":".  In my application, these claims determine whether a user is signed in.  The parties that these claims are transferred between are the Node.js/Express web server and my Angular 5 client. ",
                 "children":null
             }
         ]
@@ -99,7 +99,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", I had to implement a way for users to be authenticated.  For example, if a user wanted to create a new post, I had to make sure that they were signed in.  After looking at multiple solutions I settled with JSON Web Tokens (JWT) for authentication purposes. ",
+                "value":" I had to implement user authentication.  For example, if a user wanted to create a new post, I had to make sure that they were signed in.  After looking at multiple solutions I settled on JSON Web Tokens (JWT) for authentication. ",
                 "children":null
             }
         ]
@@ -112,7 +112,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" JWT’s are used to securely transfer a series of claims between parties",
+                "value":" JWT's are used to securely transfer a series of claims between parties",
                 "children":null
             },
             {
@@ -124,7 +124,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In my application, these claims determined whether the user is signed in.  The parties that these claims are transferred between are the Node.js/Express web server and my Angular 5 client. ",
+                "value":".  In my application, these claims determine whether a user is signed in.  The parties that these claims are transferred between are the Node.js/Express web server and my Angular 5 client. ",
                 "children":null
             }
         ]
@@ -156,7 +156,9 @@ content = [
     },
     {
         "el":"span",
-        "attributes":null,
+        "attributes":{
+            "class":"code-span"
+        },
         "value":"eyJhbGciOiJSUzI1NiJ9.\neyJpYXQiOjE1MjAzOTI5NDIsImV4cCI6MTUyMDM5NjU0Miwic3ViIjoiNWE5NjE2IyZThiZDBiZDVlIn0.\ndGQU3FsuuOy9-IEEMHGTPB1bCOOk_28d_vofg56h9\n",
         "children":null
     },
@@ -168,7 +170,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In the above JWT the first line is the header, the second line is the payload, and third line the signature.  The header carries claims about the JWT itself.  In my use case, there was only one claim used - the algorithm used to sign the JWT.  In my use case the algorithm was RS256, which is RSA along with SHA256.  More on this later. ",
+                "value":" In the above JWT the first line is the header, the second line is the payload, and third line the signature.  The header carries claims about the JWT itself.  In my use case, there was only one claim  - the algorithm to sign the JWT.  This algorithm was RS256, which is RSA along with SHA256.  More on this later. ",
                 "children":null
             }
         ]
@@ -189,7 +191,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The payload contains user data about the JWT.  This is the data that I wanted to transfer in the first place.  In my implementation the JWT payload had three claims.  The first is the ",
+                "value":" The payload contains user data about the JWT.  This is the data that I wanted transferred in the first place.  In my implementation the JWT payload has three claims.  The first is the ",
                 "children":null
             },
             {
@@ -203,7 +205,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" claim, which identifies the subject that the claim is about.  In my application, the subject was the user that is logged in.  The second claim is the ",
+                "value":" claim, which identifies the subject that the claim is about.  In my application, the subject is the user that is logged in.  The second claim is the ",
                 "children":null
             },
             {
@@ -217,7 +219,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" claim, which specifies the time the JWT was issued. The final claim is the ",
+                "value":" claim, which specifies when the JWT was issued. The final claim is the ",
                 "children":null
             },
             {
@@ -231,7 +233,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" claim, which is the expiration time of the JWT.  Both the issued time and expiration time are specified in UNIX time, or the number of seconds since midnight January 1st, 1970.  Here is an example decoded payload from my application: ",
+                "value":" claim, which is the expiration time of the JWT.  Both the issued time and expiration time are specified in UNIX time, or the number of seconds since midnight January 1st, 1970.  Here is a sample decoded payload from my application: ",
                 "children":null
             }
         ]
@@ -252,7 +254,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If you look at the issued time and expiration time closely, you can see that there is a 3600 difference between the two.  That means that the JWT was valid for an hour after it was issued. ",
+                "value":" If you look at the issued time and expiration time closely, you can see there is a difference of 3,600 between the two.  That means the JWT was valid for an hour after it was issued. ",
                 "children":null
             }
         ]
@@ -265,7 +267,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The signature, also known as the JSON Web Signature, is the really cool portion of JWT’s that make them so powerful.  The signature is how you determine the authenticity of a JWT",
+                "value":" The signature, also known as JSON Web Signature, is a really cool portion of JWTs that helps make them so powerful.  The signature is how you determine the authenticity of a JWT",
                 "children":null
             },
             {
@@ -314,7 +316,20 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This creates some interesting application possibilities since you can give applications a public key and restrict them from signing JWTs.  My Node.js/Express server simply held both the private and public key, using the private one to sign JWTs and the public one to authenticate.  Next I will go through the JWT setup I made for my MEAN stack. ",
+                "value":".  This creates some interesting application possibilities since you can give applications a public key and restrict them from signing JWTs.  My Node.js/Express server simply held both the private and public key, using the private one to sign JWTs and the public one to authenticate. ",
+                "children":null
+            }
+        ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Next I will go through the JWT setup for my MEAN stack. ",
                 "children":null
             }
         ]
@@ -342,7 +357,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The first step in setting up the MEAN stack with JWT is to install some dependencies which will simplify the JWT incorporation and to generate both the private and public keys with RSA. ",
+                "value":" The first step in setting up the MEAN stack with JWT is to install some dependencies that simplify JWT incorporation and generate both the private and public keys with RSA. ",
                 "children":null
             }
         ]
@@ -363,7 +378,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The next step was to create a login REST endpoint in the Node.js backend.  If the correct username and password is sent to this endpoint, a new JWT is created and sent back to the user.  The subject in the JWT payload is the ID of the user in MongoDB. ",
+                "value":" The next step is to create a login REST endpoint in the Node.js backend.  If the correct username and password is sent to this endpoint, a new JWT is created and sent back to the user.  The subject in the JWT payload is the ID of the user in MongoDB. ",
                 "children":null
             }
         ]
@@ -384,7 +399,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can see that we use the private key to sign the JWT.  I separated out variables that reference the private key, public key, and JWT authentication function in a utility class. ",
+                "value":" I use the private key to sign the JWT.  I separated out variables that reference the private key, public key, and JWT authentication function in a utility class. ",
                 "children":null
             }
         ]
@@ -405,7 +420,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" That authentication function is then used on all routes that require a JWT: ",
+                "value":" That authentication function is used on all routes that require a JWT: ",
                 "children":null
             }
         ]
@@ -426,7 +441,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now the backend is completely set up.  Let’s switch to the Angular 5 frontend.  I created an authentication service that sends a request to the login endpoint for a JWT.  If it gets a JWT as a response, it places that JWT in localStorage.  The service also has helper methods for logging out (removing the JWT from localStorage) and checking if the JWT hasn’t expired (the users session is still valid). ",
+                "value":" Now the backend is completely set up.  Let's switch to the Angular 5 frontend.  I created an authentication service that sends a request to the login endpoint for a JWT.  If it gets a JWT as a response, it places it in localStorage.  The service also has helper methods for logging out (removing the JWT from localStorage) and checking if the JWT hasn't expired (the users session is still valid). ",
                 "children":null
             }
         ]
@@ -447,7 +462,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When navigating to routes in the application that are only accessible to signed in users, the Angular components check to see if the JWT is still valid.  If it is not valid, users are redirected back to the login form. ",
+                "value":" When navigating to routes in the application that are only accessible to signed in users, the Angular components check to see if the JWT is still valid.  If its not valid, users are redirected back to the login form. ",
                 "children":null
             }
         ]
@@ -510,7 +525,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I’m sure this will not be the last time I explore JWT.  I also am really interested in how exactly the authentication algorithms work!  Huge shout out to Angular University",
+                "value":" I'm sure this won't be the last time I explore JWT.  I'm also really interested in how exactly the authentication algorithms work!  Huge shout out to Angular University",
                 "children":null
             },
             {
@@ -534,7 +549,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" for really helping me get set up with JWT! ",
+                "value":" for helping me get set up with JWT! ",
                 "children":null
             }
         ]
@@ -549,7 +564,7 @@ db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
     name: postName,
-    title: "What I have Learned About JSON Web Tokens",
+    title: "What I Learned About JSON Web Tokens",
     date: new Date('2018-03-11T12:00:00'),
     type: "Discovery",
     views: postViews,

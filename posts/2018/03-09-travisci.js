@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" My MEAN stack prototype was the first personal project that used Continuous Integration (CI). Continuous Integration is great and has made me realize that I really should use it on all future projects. ",
+                "value":" My MEAN stack prototype is the first personal project that uses Continuous Integration (CI). Continuous Integration is great and I will likely use it in all future projects. ",
                 "children":null
             }
         ]
@@ -29,7 +29,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" So what is CI?  Continuous Integration is the practice of merging code being developed into a main repository often.  On each of these merges, testing suites and builds should be executed automatically by a tool separate from the main codebase",
+                "value":" So what is CI?  Continuous Integration is the practice of merging code in development into a main repository on a regular basis.  On each of these merges, testing suites and builds are executed automatically by a tool separate from the main codebase",
                 "children":null
             },
             {
@@ -41,7 +41,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This allows for early detection of bugs and helps avoid the nightmare of backtracking through many commits to see where some functionality broke.  Now each time a commit is done with CI the developers will know if any existing code breaks.  Of course this requires some thorough testing suites to be created (something I often cut corners on admittedly). ",
+                "value":".  This allows for early detection of bugs and helps avoid the nightmare of backtracking through many commits to see where some functionality broke.  With CI each time a commit is made the developer knows if any existing code broke.  Of course this requires some thorough testing suites to be created (something I often cut corners on admittedly). ",
                 "children":null
             }
         ]
@@ -57,7 +57,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" My MEAN stack prototype was the first personal project that used Continuous Integration (CI). Continuous Integration is great and has made me realize that I really should use it on all future projects. ",
+                "value":" My MEAN stack prototype is the first personal project that uses Continuous Integration (CI). Continuous Integration is great and I will likely use it in all future projects. ",
                 "children":null
             }
         ]
@@ -70,7 +70,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" So what is CI?  Continuous Integration is the practice of merging code being developed into a main repository often.  On each of these merges, testing suites and builds should be executed automatically by a tool separate from the main codebase",
+                "value":" So what is CI?  Continuous Integration is the practice of merging code in development into a main repository on a regular basis.  On each of these merges, testing suites and builds are executed automatically by a tool separate from the main codebase",
                 "children":null
             },
             {
@@ -82,7 +82,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This allows for early detection of bugs and helps avoid the nightmare of backtracking through many commits to see where some functionality broke.  Now each time a commit is done with CI the developers will know if any existing code breaks.  Of course this requires some thorough testing suites to be created (something I often cut corners on admittedly). ",
+                "value":".  This allows for early detection of bugs and helps avoid the nightmare of backtracking through many commits to see where some functionality broke.  With CI each time a commit is made the developer knows if any existing code broke.  Of course this requires some thorough testing suites to be created (something I often cut corners on admittedly). ",
                 "children":null
             }
         ]
@@ -108,7 +108,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" After you have signed up for ",
+                "value":" After signing up for ",
                 "children":null
             },
             {
@@ -129,7 +129,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and enabled its support for certain repositories, GitHub will notify Travis each time new commits are pushed",
+                "value":" and enabling it on for certain repositories, GitHub notifies Travis each time new commits are pushed",
                 "children":null
             },
             {
@@ -141,7 +141,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"!  I set up TravisCI for both the client side and server side of my MEAN stack prototype. Let’s take a look at the configuration file (named .travis.yml) and what it does for each project! ",
+                "value":"!  I set up TravisCI for both the client side and server side of my MEAN stack prototype. Let’s take a look at the configuration file (named .travis.yml) and see what it does for each project! ",
                 "children":null
             }
         ]
@@ -177,7 +177,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" So let’s break this file down.  You can see that we set the language being used to a Node.js flavor of JavaScript ",
+                "value":" Let’s break this file down.  I set the language to a Node.js flavor of JavaScript by writing ",
                 "children":null
             },
             {
@@ -191,7 +191,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and we will run the tests on three different Node.js versions.  I did this to test out how backwards compatible my project was!  Even though the project is an Angular frontend and not Node, I guess specifying the language as Node.js basically tells Travis \"This project uses npm.\" ",
+                "value":".  My TravisCI config runs tests on two different Node.js versions.  I did this to test out how backwards compatible my project was!  Even though the project uses TypeScript and not Node.js, I guess specifying the language as Node.js basically tells Travis \"This project uses npm.\" ",
                 "children":null
             }
         ]
@@ -229,7 +229,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Accomplishing this requires you to use the apt add-on.  This allows us to provide commands to the apt-get package handler for installation",
+                "value":" Accomplishing this requires use of the apt add-on.  The apt add-on provides commands to the apt-get package handler for installation",
                 "children":null
             },
             {
@@ -241,7 +241,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In this case I specify that I want to install ",
+                "value":". I specified that I want to install ",
                 "children":null
             },
             {
@@ -296,7 +296,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":").  This will allow TravisCI to use the ",
+                "value":").  This allows TravisCI to use the ",
                 "children":null
             },
             {
@@ -310,7 +310,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" commands in the scripts.  Then in my scripts, I specify that the tests should be run and that a build should be created.  Both of these scripts succeeding defines the success criteria.  Finally, code coverage statistics are sent to ",
+                "value":" commands.  Then I specified that the tests should run and that a build should execute.  If both of these commands succeed, TravisCI's success criteria is met.  Finally, code coverage statistics are sent to ",
                 "children":null
             },
             {
@@ -344,7 +344,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" After TravisCI finishes our scripts, there is an option to send notifications about the build details.  I decided to have emails sent out each time a build finished, no matter if it succeeded or failed.  Notifications are very easily configurable to fit your needs. ",
+                "value":" After TravisCI finishes executing the scripts, there is an option to send notifications about the build details.  I decided to have emails sent out each time a build finished, no matter if it succeeded or failed.  Notifications are very easily configurable to fit your needs. ",
                 "children":null
             }
         ]
@@ -369,7 +369,7 @@ content = [
         "attributes":{
             "language":"YAML"
         },
-        "value":"language: node_js\nnode_js:\n    - '9.2'\n    - '8.0'\n\nservices:\n    - mongodb\n\n# Put some mock data into MongoDB for testing purposes\n# https://docs.travis-ci.com/user/database-setup/#MongoDB\nbefore_script:\n    - mongo meowcat --eval 'db.user.insert({_id: '5a9616e6c5631b2e8bd0bd5e',\n                                            username: \"andy\",\n                                            first: \"Andrew\",\n                                            last: \"Jarombek\",\n                                            password: \"pw\",\n                                            postCount: 4});'\n\nscript:\n    - npm run test\n\nafter_success:\n    - npm run coveralls\n\nnotifications:\n  email:\n    recipients:\n        - ajarombek95@gmail.com\n    on_success: always\n    on_failure: always\n",
+        "value":"language: node_js\nnode_js:\n    - '9.2'\n    - '8.0'\n\nscript:\n    - npm run test\n\nafter_success:\n    - npm run coveralls\n\nnotifications:\n  email:\n    recipients:\n        - ajarombek95@gmail.com\n    on_success: always\n    on_failure: always\n",
         "children":null
     },
     {
@@ -380,43 +380,25 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Just by glancing at this code you will see that not much has changed from the Angular frontend TravisCI configuration.  Node.js is used as the language, a test script is run, and email notifications are sent out on success and failure. ",
+                "value":" Just by glancing at this code you will see that not much changed from the Angular frontend configuration.  Node.js is used as the language, a test script is run, and email notifications are sent out on success and failure. ",
                 "children":null
             }
         ]
     },
     {
-        "el":"p",
-        "attributes":null,
-        "value":null,
-        "children":[
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" One big difference is the use of a service specification.  I tell TravisCI to create a new MongoDB service and then I give it an insert statement to execute before running my tests",
-                "children":null
-            },
-            {
-                "el":"sup",
-                "attributes":null,
-                "value":"5",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":".  This is incredibly cool!  Since the Express app consists of REST endpoints that make calls to MongoDB, we can actually expect endpoints to return exact mock data based on the TravisCI config!  Here is some code in Node.js that runs a test based on the insert statement specified in the TravisCI configuration: ",
-                "children":null
-            }
-        ]
-    },
-    {
-        "el":"codesnippet",
+        "el":"sectiontitle",
         "attributes":{
-            "language":"JavaScript"
+            "title":"Conclusions"
         },
-        "value":"const request = require('supertest');\nconst app = require('../src/app');\n\n// Tests for the user api endpoint '/api/user'\ndescribe(\"GET '/api/user'\", () => {\n\n    /**\n     * This test will be successful when run in TravisCI since it is based off mocked data\n     * used there.  It will not (most likely) work in a development environment where the\n     * database has different user documents.\n     */\n    it('responded with correct JSON from database', () => {\n        return request(app).get('/api/user')\n            .expect(200, [\n                {\n                    _id: '5a9616e6c5631b2e8bd0bd5e',\n                    username: \"andy\",\n                    first: \"Andrew\",\n                    last: \"Jarombek\",\n                    password: \"pw\",\n                    postCount: 4\n                }]);\n    });\n});\n",
-        "children":null
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":"Conclusions",
+                "children":null
+            }
+        ]
     },
     {
         "el":"p",
@@ -426,7 +408,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now that is powerful stuff!  This is the kinda stuff that makes me realize I need more unit testing in my applications.  The first baby step has been taken, by my next application hopefully I will have a full fledged test suite with near complete code coverage!  I will be using TravisCI in my projects for the foreseeable future. ",
+                "value":" With TravisCI the first baby step has been taken towards a full fledged test suite with continuous integration!  I'll be using TravisCI in my projects for the foreseeable future. ",
                 "children":null
             }
         ]
@@ -441,14 +423,14 @@ db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
     name: postName,
-    title: "What I have Learned About TravisCI",
+    title: "What I Learned About TravisCI",
     date: new Date('2018-03-09T12:00:00'),
     type: "Discovery",
     views: postViews,
     tags: [
         {
             name: "TravisCI",
-            picture: "https://asset.jarombek.com/travisci.png",
+            picture: "https://asset.jarombek.com/logos/travisci.png",
             color: "travisci"
         },
         {
