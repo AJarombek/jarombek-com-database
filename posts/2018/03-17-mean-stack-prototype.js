@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Much of my work lately has been in preparation for a personal website that I am going to build (and where this blog post will call home!).  The website is going to contain my resume, blog posts, discovery posts, and more.  I am really excited to get started building it! ",
+                "value":" Much of my work lately has been in preparation for a personal website that I'm going to build (and where this blog post will call home!).  The website is going to contain my resume, blog posts, and more. I am really excited to get started building it! ",
                 "children":null
             }
         ]
@@ -29,7 +29,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The first order of business however is to decide which technology stack I want to use for the website. I have narrowed it down to a full JavaScript stack, from the front-end through the database.  There are two remaining tech stacks in competition: the MEAN stack (MongoDB, Express, Angular, & Node.js) and the MERN stack (MongoDB, Express, React.js & Node.js).  I started the journey of deciding by reading many JavaScript books and writing plenty of discovery posts about them. I also explored Node.js and MongoDB in depth.  I even made a ",
+                "value":" However, the first order of business is to decide which technology stack I want to use for the website. I've narrowed it down to a full JavaScript stack, from the front-end through the database.  There are two remaining tech stacks in competition: the MEAN stack (MongoDB, Express, Angular, & Node.js) and the MERN stack (MongoDB, Express, React.js & Node.js).  I started my research for building the website by reading JavaScript books and writing plenty of discovery posts about them.  I also explored Node.js and MongoDB in depth.  I even made a ",
                 "children":null
             },
             {
@@ -71,7 +71,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" on both the technologies!  Now it is time to pick between the two front end JavaScript frameworks: Angular by Google and React.js by Facebook. ",
+                "value":" on both technologies! Now its time to pick between the two front end JavaScript frameworks: Angular by Google and React.js by Facebook. ",
                 "children":null
             }
         ]
@@ -87,7 +87,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Much of my work lately has been in preparation for a personal website that I am going to build (and where this blog post will call home!).  The website is going to contain my resume, blog posts, discovery posts, and more.  I am really excited to get started building it! ",
+                "value":" Much of my work lately has been in preparation for a personal website that I'm going to build (and where this blog post will call home!).  The website is going to contain my resume, blog posts, and more. I am really excited to get started building it! ",
                 "children":null
             }
         ]
@@ -100,7 +100,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The first order of business however is to decide which technology stack I want to use for the website. I have narrowed it down to a full JavaScript stack, from the front-end through the database.  There are two remaining tech stacks in competition: the MEAN stack (MongoDB, Express, Angular, & Node.js) and the MERN stack (MongoDB, Express, React.js & Node.js).  I started the journey of deciding by reading many JavaScript books and writing plenty of discovery posts about them. I also explored Node.js and MongoDB in depth.  I even made a ",
+                "value":" However, the first order of business is to decide which technology stack I want to use for the website. I've narrowed it down to a full JavaScript stack, from the front-end through the database.  There are two remaining tech stacks in competition: the MEAN stack (MongoDB, Express, Angular, & Node.js) and the MERN stack (MongoDB, Express, React.js & Node.js).  I started my research for building the website by reading JavaScript books and writing plenty of discovery posts about them.  I also explored Node.js and MongoDB in depth.  I even made a ",
                 "children":null
             },
             {
@@ -142,7 +142,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" on both the technologies!  Now it is time to pick between the two front end JavaScript frameworks: Angular by Google and React.js by Facebook. ",
+                "value":" on both technologies! Now its time to pick between the two front end JavaScript frameworks: Angular by Google and React.js by Facebook. ",
                 "children":null
             }
         ]
@@ -155,7 +155,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This blog post is my journey through creating a prototype with Angular.  I will look at the prototype at a higher level and deep dive into code that makes the website function.  All along the way I will give my thoughts about Angular and all the other technologies that I learned in the process.  I will conclude with my current thoughts on Angular and what I feel React.js needs to bring to the table to defeat it! ",
+                "value":" This blog post is my journey through creating a prototype with Angular.  I'll describe the prototype at a high level and deep dive into code that makes the website function.  All along the way I will give my thoughts about Angular and all the other technologies that I learned in the process.  I will conclude with my current thoughts on Angular and what I feel React.js needs to bring to the table to defeat it! ",
                 "children":null
             }
         ]
@@ -168,7 +168,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I had a lot of fun (for the most part!) building with Angular, so let’s get started! ",
+                "value":" I had a lot of fun (for the most part!) building with Angular, so let's get started! ",
                 "children":null
             }
         ]
@@ -196,7 +196,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The MEAN stack prototype was a website that allows its users to upload cat pictures!  Appropriately, the website is named MeowPics. ",
+                "value":" The MEAN stack prototype is a website that allows its users to upload cat pictures!  Appropriately, the website is named MeowPics. ",
                 "children":null
             }
         ]
@@ -262,7 +262,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The first piece of the technology stack for MeowPics that I will walkthrough is the MongoDB document database. ",
+                "value":" The first piece of the technology stack for MeowPics that I will go over is the MongoDB document database. ",
                 "children":null
             }
         ]
@@ -290,7 +290,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I have ",
+                "value":" I've ",
                 "children":null
             },
             {
@@ -356,7 +356,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" on MongoDB in the past, but in general terms it is a NoSQL document database that stores data in collections of objects.  I used it extensively in my Node.js and MongoDB prototype as well.  The biggest reason I want to use MongoDB in my website is that it fits the JavaScript web stack since its queries are in JavaScript and objects are BSON (Binary JSON). ",
+                "value":" on MongoDB in the past, but in general terms its a NoSQL document database that stores data in collections of objects.  I used it extensively in my Node.js and MongoDB prototype as well.  The biggest reason I want to use MongoDB in my website is that it fits the JavaScript web stack since its queries are in JavaScript and objects are BSON (Binary JSON). ",
                 "children":null
             }
         ]
@@ -403,7 +403,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" While these statements are performed on the MongoDB database directly, most of my interactions were done through Mongoose.  Mongoose is a Node.js module that allows you to model objects from MongoDB as well as perform queries, inserts, updates and more.  It is a really powerful tool that I used in my Node.js and MongoDB prototype.  For that prototype I was using version 4 of Mongoose.  I was really excited to see that in early January Mongoose 5 was released, which took big steps by using Promises by default and supporting async functions",
+                "value":" While these statements are performed on the MongoDB database directly, most of my interactions were done through Mongoose.  Mongoose is a Node.js module that allows you to model objects from MongoDB as well as perform queries, inserts, updates and more.  It is a really powerful tool that I used in my Node.js and MongoDB prototype.  For that prototype I was using version 4 of Mongoose.  I was excited to see that in early January Mongoose 5 was released, including large improvements by using Promises by default and supporting async functions",
                 "children":null
             },
             {
@@ -415,7 +415,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"!  Let’s take a look at Mongoose 5 and the rest of the Node.js/Express API. ",
+                "value":"!  Let's take a look at Mongoose 5 and the rest of the Node.js/Express API. ",
                 "children":null
             }
         ]
@@ -464,7 +464,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If you have seen an Express application before this should look familiar.  Some important points are that we are using Mongoose 5, which requires less startup configuration.  I also had to set the ",
+                "value":" If you've seen an Express application before this should look familiar, although there are a few unique configurations. I'm using Mongoose 5, which requires less startup configuration.  I also set the ",
                 "children":null
             },
             {
@@ -492,7 +492,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" because the client may be sending large cat images to the server.  Now any request with a body under 50MB should succeed. ",
+                "value":" because the client sends large cat images to the server.  Now any request with a body under 50MB succeeds. ",
                 "children":null
             }
         ]
@@ -505,7 +505,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I am also using the helmet module which secures my API by setting certain HTTP headers on requests ",
+                "value":" I'm also using the helmet module which secures my API by setting certain HTTP headers on requests ",
                 "children":null
             },
             {
@@ -517,7 +517,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  All I have to do to activate helmet is write one line: ",
+                "value":".  All I did to activate helmet was write one line: ",
                 "children":null
             },
             {
@@ -544,7 +544,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Let’s take a look at one of these routes - the user route.  The first thing to look at is the user model which is defined using Mongoose.  The model can be used to define all the properties of an object and certain validation rules such as regex matches and length requirements. ",
+                "value":" Let's take a look at the user route in the API.  The first thing to look at is the user model which is defined using Mongoose.  The model defines all the properties of an object and configures validation rules such as regex matches and length requirements. ",
                 "children":null
             }
         ]
@@ -649,7 +649,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" - along with certain validation for each.  Mongoose even allows you to define indexes!  You can really do practically all necessary MongoDB interactions and setup from Mongoose!  Now I am ready to use this model in my ",
+                "value":".  It also configures validation for each property.  Mongoose even helps define indexes!  Practically all necessary MongoDB configurations and setup can be done from Mongoose! Now I am ready to use this model in my ",
                 "children":null
             },
             {
@@ -690,7 +690,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" defines a CRUD API for the User model.  Here is how I have the GET request set up for all the users in the database. ",
+                "value":" defines a CRUD API for the User model.  Here is the GET request for all the users in the database. ",
                 "children":null
             }
         ]
@@ -711,7 +711,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can see I am utilizing Mongoose 5’s support for async functions here.  It is much more concise and easy to read this way!  For more on how async functions work you can check out my ",
+                "value":" I am utilizing Mongoose 5's support for async functions here.  It is much more concise and easy to read this way!  For more on how async functions work you can check out my ",
                 "children":null
             },
             {
@@ -760,7 +760,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" schema.  This function will asynchronously return all of the documents in the user collection. ",
+                "value":" schema.  This function asynchronously returns all of the documents in the user collection. ",
                 "children":null
             }
         ]
@@ -773,7 +773,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I’ll show one more of the REST endpoints defined on the user route - this time for an HTTP DELETE request. ",
+                "value":" Here is another REST endpoint defined on the user route - this time for HTTP DELETE requests. ",
                 "children":null
             }
         ]
@@ -794,7 +794,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In this code I used three Mongoose functions, ",
+                "value":" In this code I used three Mongoose functions: ",
                 "children":null
             },
             {
@@ -850,7 +850,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" deletes an instance of the Mongoose user schema, ",
+                "value":" deletes an instance of the Mongoose user schema and ",
                 "children":null
             },
             {
@@ -864,7 +864,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" then tries to find that user to make sure it was properly deleted.  Finally I use ",
+                "value":" tries to find that user to make sure it was properly deleted.  Finally I use ",
                 "children":null
             },
             {
@@ -878,7 +878,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" to insert a new document in the audit collection.  This audit collection holds all the important interaction history with the database.  Let’s take a quick look at the ",
+                "value":" to insert a new document in the audit collection.  This audit collection holds all the important database interaction history.  Let's take a quick look at the ",
                 "children":null
             },
             {
@@ -927,7 +927,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" property on the ",
+                "value":" property on ",
                 "children":null
             },
             {
@@ -941,7 +941,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and the corresponding index defined on the ",
+                "value":" and the corresponding index defined for ",
                 "children":null
             },
             {
@@ -955,7 +955,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" property.  This is how you create a time-to-live (TTL) collection in Mongoose.  In MongoDB a TTL collection is one that expires its documents after a set amount of time",
+                "value":".  This is how you create a time-to-live (TTL) collection in Mongoose.  In MongoDB a TTL collection is one that expires its documents after a set amount of time",
                 "children":null
             },
             {
@@ -994,7 +994,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The second important spect is the ",
+                "value":" The second important aspect is the ",
                 "children":null
             },
             {
@@ -1008,19 +1008,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" property at the end of the schema definition.  This defines a fixed number of documents (the ",
+                "value":" property at the end of the schema definition.  This defines a max number of documents (the ",
                 "children":null
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
                 "value":"max",
                 "children":null
             },
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" property) and max number of bytes (the ",
+                "value":" property) and a max number of bytes (the ",
                 "children":null
             },
             {
@@ -1046,7 +1048,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In my case the ",
+                "value":".  The ",
                 "children":null
             },
             {
@@ -1073,7 +1075,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The ability to create complex MongoDB structures in Mongoose shows off the versatility of the module. I use Mongoose with all of my user and post routes.  One important aspect of the post route is the ability to upload a picture with a cat post.  I need to store this picture as a file on the server Node.js is running on.  Let’s first look at the HTTP POST endpoint for posts, which is where I instruct Node to save the picture data as a file. ",
+                "value":" Creating complex MongoDB structures in Mongoose shows off the versatility of the module. I use Mongoose with all my user and post routes.  One important aspect of the post route is the ability to upload a picture with a cat post.  I need to store this picture as a file on the server Node.js is running on.  Let's first look at the HTTP POST endpoint for posts, where I instruct Node to save the picture data as a file. ",
                 "children":null
             }
         ]
@@ -1094,7 +1096,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This endpoint extracts the picture data from the HTTP request body and sends it to the function ",
+                "value":" This endpoint extracts picture data from the HTTP request body and sends it to the function ",
                 "children":null
             },
             {
@@ -1108,7 +1110,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". The arguments for this function are the base 64 encoded picture data and the file name.  Let’s take a look at that function now: ",
+                "value":". The arguments for this function pass base 64 encoded picture data and the file name.  Let's take a look at ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"saveFile()",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" now: ",
                 "children":null
             }
         ]
@@ -1170,7 +1186,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Besides for adding a new file when uploading a post, I also delete the file when no more posts reference it.  You can check out all of the file manipulation functions I created in ",
+                "value":" Besides for adding a new file when uploading a post, I also delete a file when no more posts reference it.  You can check out all of the file manipulation functions I created in ",
                 "children":null
             },
             {
@@ -1191,7 +1207,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and all the endpoints that use the file manipulation functions in ",
+                "value":" and all the endpoints that use these functions in ",
                 "children":null
             },
             {
@@ -1225,7 +1241,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You may have also noticed that I passed the ",
+                "value":" You may have noticed that I passed ",
                 "children":null
             },
             {
@@ -1233,21 +1249,7 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"post()",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" function in the ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "class":"jarombek-inline-code"
-                },
-                "value":"postRouter",
+                "value":"postRouter.post()",
                 "children":null
             },
             {
@@ -1267,7 +1269,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This is a function that I use for authentication.  Certain endpoints in my REST API require the user to be authenticated, such as deleting a user or creating a new post.  When a user logs in, they go through the ",
+                "value":".  This is a function used for authentication.  Certain endpoints in my REST API require the user to be authenticated, such as deleting a user or creating a new post.  When a user logs in, they go through the ",
                 "children":null
             },
             {
@@ -1281,7 +1283,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and get an authentication token.  This token will then be included on all further HTTP requests.  I used JSON Web Tokens (JWT) for authentication in my application.  JWT’s are a huge topic in itself, and I made a ",
+                "value":" and get an authentication token.  This token is included on all further HTTP requests.  I used JSON Web Tokens (JWT) for authentication in my application.  JWT's are a huge topic, and I wrote an ",
                 "children":null
             },
             {
@@ -1294,7 +1296,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"discovery",
+                        "value":"article",
                         "children":null
                     }
                 ]
@@ -1302,7 +1304,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" about some of the basic concepts.  I also include the code in this prototype, so check it out if you want more details! ",
+                "value":" about some of the basic concepts.  Check it out if you want more details! ",
                 "children":null
             }
         ]
@@ -1330,7 +1332,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The MEAN Stack prototype was also my first experience with Webpack!  While Angular CLI is built on top of Webpack, you don't actually have to interact with the underlying Webpack config files to use it.  The Node.js server was my first actual time configuring Webpack to bundle an application! ",
+                "value":" The MEAN Stack prototype was also my first experience with Webpack!  While Angular CLI is built on top of Webpack, you don't have to interact with the underlying Webpack config files to use it.  The Node.js server was my first actual time configuring Webpack to bundle an application! ",
                 "children":null
             }
         ]
@@ -1343,7 +1345,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Webpack is a module bundler commonly used with JavaScript projects, especially those used in the browser",
+                "value":" Webpack is a module bundler commonly used in JavaScript projects, especially those used in the browser",
                 "children":null
             },
             {
@@ -1355,7 +1357,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  It builds a dependency graph of your projects modules and then bundles them into a few larger files.  The reason for bundling JavaScript files is that HTTP requests from the web browser to the server are expensive.  If you bundled your JavaScript files into a smaller number of files, it would reduce the number of HTTP requests, speeding up the web application.  There is much more complexity to Webpack that deserves many discovery posts of its own, but that is the basic idea! ",
+                "value":".  It builds a dependency graph of a projects modules and bundles those modules into a few larger files.  The reason for bundling JavaScript files is that HTTP requests from the web browser to the server are expensive.  If JavaScript files are bundled into a smaller number of files, the amount of HTTP requests is reduced, thus speeding up the web application.  Webpack is quite complex and deserves many discovery posts of its own, but that is the basic idea! ",
                 "children":null
             }
         ]
@@ -1368,7 +1370,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" While Webpack is mostly used in the front-end, there is nothing stopping you from using it with Node.js.  You can change the environment that Webpack runs on with the ",
+                "value":" While Webpack is mostly used in the front-end, there is nothing stopping you from using it with Node.js.  The environment Webpack runs on is changed with the ",
                 "children":null
             },
             {
@@ -1382,7 +1384,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" field used in the Webpack configuration",
+                "value":" field in the Webpack configuration",
                 "children":null
             },
             {
@@ -1394,7 +1396,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Let’s take a look at the Webpack configuration file ",
+                "value":".  Let's take a look at the Webpack configuration file ",
                 "children":null
             },
             {
@@ -1436,7 +1438,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I will quickly run through what this configuration does.  First it declares two entry points for webpack to start building its dependency graph.  The entry ",
+                "value":" First this configuration declares two entry points for Webpack to start building its dependency graph.  The entry ",
                 "children":null
             },
             {
@@ -1517,7 +1519,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" field defines Webpack loaders.  Loaders perform transformations on the files during the bundling process. The loader used here is for Babel, a compiler that will transpile ES6+ JavaScript code into ES5. While less important on the server side since newest versions of Node.js support the newest JavaScript features, transpiling into ES5 gives much greater browser compatibility for a web application.  I did a full discovery on ",
+                "value":" field defines Webpack loaders.  Loaders perform transformations on files during the bundling process. The loader used here is for Babel, a compiler that transpiles ES6+ JavaScript code into ES5. While less important on the server side since newest versions of Node.js support the newest JavaScript features, transpiling into ES5 gives much greater browser compatibility for a web application.  I did a full discovery on ",
                 "children":null
             },
             {
@@ -1593,7 +1595,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" on files with the JavaScript extension.  The other regex defined in the ",
+                "value":" on files with the JavaScript extension.  The other regex defined in ",
                 "children":null
             },
             {
@@ -1607,7 +1609,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" property tells Webpack to not run this loader on the projects module dependencies in the ",
+                "value":" tells Webpack to not run this loader on the projects module dependencies in the ",
                 "children":null
             },
             {
@@ -1648,7 +1650,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" property defines where the completed bundle will be located.  I tell Webpack to put it in the build directory with the name app.js.  And just like that, the Webpack config for the server application is completed! ",
+                "value":" property defines where the completed bundle is located.  I tell Webpack to put it in the build directory with the name app.js. And just like that, the Webpack config for the server application is completed! ",
                 "children":null
             }
         ]
@@ -1703,7 +1705,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" While the server side app doesn't really require bundling, it was a really good experience to start using Webpack.  Also the configuration on the server side is much simpler than it would be on the front-end, so it was great for a beginner.  I am excited to use Webpack with my upcoming React prototype! ",
+                "value":" While the server side app doesn't really require bundling, it was a really good experience to start using Webpack.  Also configuration on the server is much simpler than on the front-end, so it was great for a beginner.  I am excited to use Webpack with my upcoming React prototype! ",
                 "children":null
             }
         ]
@@ -1731,7 +1733,28 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The MEAN Stack prototype was the first project I made with Continuous Integration (CI).  With CI you integrate your code into the main repository on every commit.  With this approach unit tests get run every time new code is submitted.  This allows for constant regression testing and makes it easier to catch bugs early on.  I wrote a whole discovery about using TravisCI for my CI in this project!  It really was a game changer, and I will use it in my projects from now on! ",
+                "value":" The MEAN Stack prototype was the first project I made with Continuous Integration (CI).  CI integrates code into the main repository on every commit.  With this approach unit tests are run every time new code is submitted.  This allows for constant regression testing and makes it easier to catch bugs early on.  I wrote a whole discovery about using ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/mar-9-2018-travisci"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"TravisCI",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" for CI in this project!  It's a game changer, and I will use it in my projects from now on! ",
                 "children":null
             }
         ]
@@ -1744,7 +1767,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" With CI it is important to have good tests.  I have always had a bad habit of slacking on writing test code.  While I didn't completely break this bad habit with the MEAN prototype, I did write some test code for my REST endpoints! ",
+                "value":" With CI its important to have good unit tests.  I have a bad habit of slacking on writing test code.  While I didn't completely break this bad habit with the MEAN prototype, I did write some test code for my REST endpoints! ",
                 "children":null
             }
         ]
@@ -1757,7 +1780,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I analyzed one of my tests in my TravisCI discovery, but lets look quickly at two other test suites here.  I used the supertest npm module for testing HTTP requests along with the mocha test framework. Supertest was a really nice API that made testing my endpoints easy!  Here is the testing suite for my main app endpoint: ",
+                "value":" I used the supertest npm module for testing HTTP requests along with the mocha test framework. Supertest is a really nice API that made testing my endpoints easy!  Here is the testing suite for my main app endpoint: ",
                 "children":null
             }
         ]
@@ -1818,7 +1841,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  You can see in the code above I defined a testing group with three test cases. The first test case simply checks to see if the endpoint returns an HTTP 200 OK status.  I use the supertest ",
+                "value":".  In the code above I defined a testing group with three test cases. The first test case checks to see if an endpoint returns an HTTP 200 OK status.  I use the supertest ",
                 "children":null
             },
             {
@@ -1832,7 +1855,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function to make a GET request to the endpoint given as an argument and ",
+                "value":" function to make a GET request to an endpoint and use ",
                 "children":null
             },
             {
@@ -1873,7 +1896,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" functions to define multiple anticipated responses.  The second test checks to see that the returned content type is JSON and is of a certain length.  The last test case makes sure that the helmet module discussed earlier is properly adding certain HTTP headers.  You can see with these tests how easy it is to create some HTTP endpoint tests with supertest and mocha! ",
+                "value":" functions to define multiple anticipated responses.  The second test checks that the returned content type is JSON and is a certain length.  The last test case makes sure the helmet module discussed earlier is properly adding HTTP headers. It is really easy to create HTTP endpoint tests with supertest and mocha! ",
                 "children":null
             }
         ]
@@ -1886,7 +1909,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I defined one more test suite for the posts endpoints in ",
+                "value":" I defined one more test suite in ",
                 "children":null
             },
             {
@@ -1907,7 +1930,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In that test case I make sure an endpoint that requires a JWT returns a 401 error when no token is present on the request header. ",
+                "value":".  One of the test cases makes sure an endpoint requiring JWT authentication returns a 401 error when no token is present on the request header. ",
                 "children":null
             }
         ]
@@ -1920,7 +1943,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" That finishes up my discussion of the Node.js/Express backend for my MEAN stack prototype. If you want to check out all the code for the Node.js backend it is available on ",
+                "value":" That finishes up my discussion of the Node.js/Express backend for my MEAN stack prototype. If you want to check out all the code for the Node.js backend its available on ",
                 "children":null
             },
             {
@@ -1941,7 +1964,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". Whenever the Angular front-end needs data from the server it simply hits one of the REST endpoints I defined in Node.js.  Now let’s move on to the Angular frontend! ",
+                "value":".  Now let's move on to the Angular frontend! ",
                 "children":null
             }
         ]
@@ -1969,7 +1992,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The frontend of the MEAN stack uses Angular.  Angular is a full fledged frontend framework, meaning that you must follow the code structure defined by the framework.  While this may give less flexibility to the developer it can also make sure the code stays structured even in the most complex applications.  The version of the Angular framework is 5 at the time of this writing, and that is what I used in my prototype.  While you can write Angular applications in JavaScript or any language that transpiles to JavaScript, the team at Angular suggests that you use TypeScript. TypeScript is a language developed by Microsoft that gives the option to apply strict typing on top of JavaScript.  I wrote a discovery post on ",
+                "value":" The frontend of the MEAN stack uses Angular.  Angular is a full fledged frontend framework, meaning the code structure defined by Angular must be followed.  While this gives less flexibility to the developer, it makes sure the code stays structured even in the most complex applications.  The latest version of Angular at the time of this writing is 5, and that is what I used in my prototype.  While you can write Angular applications in JavaScript or any language that transpiles to JavaScript, the team at Angular suggests that you use TypeScript. TypeScript is a language developed by Microsoft that applies static typing on top of JavaScript.  I wrote a discovery post on ",
                 "children":null
             },
             {
@@ -1990,7 +2013,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" that goes into more details about the features of the language and what I learned/liked about it from this Angular project. ",
+                "value":" that explores different details of the language and analyzes what I learned about it from this project. ",
                 "children":null
             }
         ]
@@ -2024,7 +2047,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" of the Angular framework.  In that post I was a bit critical of the framework.  While I think Angular is far from perfect, it was definitely a joy to learn and work with.  It does have its issues which I will cover in this blog.  Another note is that this blog isn't going to teach beginners how to use Angular.  I expect that you have some knowledge about the framework and how it works.  I will go through all the major components of my application as well as other cool services, directives, etc.  Let’s get started by exploring the app component.  This component is the entry point for the application and holds all the routes through the single page application (SPA). ",
+                "value":" of the Angular framework.  In that post I was a bit critical of Angular.  While I think Angular is far from perfect, it was a joy to learn and work with.  It does have its issues which I will cover in this blog.  Another note is that this blog isn't going to teach beginners how to use Angular.  I expect that you have some knowledge about the framework and how it works.  I will go through all the major components of my application as well as other cool services, directives, etc.  Let's get started by exploring the app component.  This component is the entry point for the application and holds all the routes in the single page application (SPA). ",
                 "children":null
             }
         ]
@@ -2052,7 +2075,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Before we look at the app component code directly, it is important to look at some of the code in ",
+                "value":" Before looking at the app component directly, its important to observe the code in ",
                 "children":null
             },
             {
@@ -2073,7 +2096,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This module contains all the components except those for user profiles and cat posts. It also defines the routes for my application.  Here are these route definitions: ",
+                "value":".  This module contains all the components except for user profiles and cat posts. It also defines the routes for the application: ",
                 "children":null
             }
         ]
@@ -2094,7 +2117,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The user route is unique because it implements lazy loading.  This means that the module containing code for that route will not be loaded from the server until we traverse the route.  I discussed ",
+                "value":" The user route is unique because it implements lazy loading.  The module for the user route is not loaded from the server until the route is traversed.  I discussed ",
                 "children":null
             },
             {
@@ -2115,7 +2138,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" in more depth in a discovery post. ",
+                "value":" in a discovery post. ",
                 "children":null
             }
         ]
@@ -2142,7 +2165,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is missing in these routes.  The AppComponent is actually the root component and it is bootstrapped into the module",
+                "value":" is missing in these routes.  ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"AppComponent",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" is actually the root component and is bootstrapped into the module",
                 "children":null
             },
             {
@@ -2154,7 +2191,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  It is defined in the ",
+                "value":".  Its defined in the ",
                 "children":null
             },
             {
@@ -2196,7 +2233,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" will then be bootstrapped and rendered by default. ",
+                "value":" is bootstrapped and rendered by default. ",
                 "children":null
             }
         ]
@@ -2231,7 +2268,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" template defines the navigation bar for the website.  Clicking on this navigation bar will change the route.  Based on the routes definition code shown before, different routes will display different components on the page.  The components will be displayed in the ",
+                "value":" template defines the navigation bar for the website.  Clicking on the navigation bar changes the route.  Based on the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"routes",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" variable shown before, different routes display different components on the page.  The components are displayed in the ",
                 "children":null
             },
             {
@@ -2266,13 +2317,13 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". The code for the app components template is found in ",
+                "value":". The code for the app component template is found in ",
                 "children":null
             },
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/mean-client-prototype/blob/master/web-app/src/app/\napp.component.html"
+                    "href":"https://github.com/AJarombek/mean-client-prototype/blob/master/web-app/src/app/app.component.html"
                 },
                 "value":null,
                 "children":[
@@ -2294,7 +2345,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The navigation bar uses both Bootstrap and Sass for the styling.  In fact, all of the website uses a combination of Bootstrap and Sass for the UI.  I really loved Sass and how it modularized my stylesheets and made them easier to read and work with.  I made a discovery post about ",
+                "value":" The navigation bar uses Bootstrap and Sass for styling.  In fact, the entire website UI uses a combination of Bootstrap and Sass.  I really loved Sass and how it modularized my stylesheets, making them easier to read and work with.  I made a discovery post about ",
                 "children":null
             },
             {
@@ -2315,7 +2366,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" if you want to learn more about how I used it in this prototype.  Bootstrap on the other hand I have mixed feelings about.  While it does have really cool components like the navbar I used for this website, it also comes with many frustrations.  For one the current state of Bootstrap is a bit of a mess.  Different versions come with completely different non-backwards compatible naming conventions.  While this is confusing, to make matters worse the documentation online is not even up to date with the current release.  This made developing with Bootstrap really frustrating. ",
+                "value":" if you want to learn more.  On the other hand, I have mixed feelings about Bootstrap.  While it does have cool components like the navbar I used for this website, it also comes with many frustrations.  For one the current state of Bootstrap is a bit of a mess. Different versions come with completely different naming conventions.  To make matters worse the documentation online is not up to date with the current release.  This made developing with Bootstrap really frustrating. ",
                 "children":null
             }
         ]
@@ -2328,7 +2379,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If this was the only issue I had with Bootstrap I would suggest to wait for it to get into a more stable state before jumping on board.  However, I also found that many of the components were not as customizable as I would have liked.  This makes bootstrap seem like more of a fun pet project tool than something worth using in production.  I will discuss this lack of customization in more detail when discussing the cat picture module. ",
+                "value":" If that was the only issue with Bootstrap I'd suggest to wait for its version to stabilize before jumping on board.  However, I also found that many Bootstrap components were not very customizable.  Bootstrap seem like more of a prototyping/pet project tool than something worth using in production.  I'll demonstrate the lack of customization later. ",
                 "children":null
             }
         ]
@@ -2362,7 +2413,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" code also subscribes to certain services that emit and receive messages to and from child components.  This allows for message passing between components. I will go into detail about these services once I look at the child components that subscribe to them. ",
+                "value":" code also subscribes to certain services that emit and receive messages to and from child components.  This allows for message passing between components. I'll go into detail about these services once I look at the child components that subscribe to them. ",
                 "children":null
             }
         ]
@@ -2375,7 +2426,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now I want to look at the default route of the application which displays the ",
+                "value":" Let's look at the default route of the application which displays the ",
                 "children":null
             },
             {
@@ -2443,7 +2494,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The code in the ",
+                "value":" The code in ",
                 "children":null
             },
             {
@@ -2499,7 +2550,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" the component will get all the cat posts stored on the server.  These will then be displayed in the UI. ",
+                "value":" the component gets all the cat posts stored on the server.  These are displayed in the UI. ",
                 "children":null
             }
         ]
@@ -2509,7 +2560,7 @@ content = [
         "attributes":{
             "language":"TypeScript"
         },
-        "value":"import { Component } from '@angular/core';\nimport {PostService} from \"../post.service\";\nimport {Post} from \"../models/post\";\nimport {environment} from \"../../environments/environment\";\n\n@Component({\n    selector: 'app-home',\n    templateUrl: './home.component.html',\n    styleUrls: ['./home.component.scss']\n})\nexport class HomeComponent {\n    posts: [Post];\n\n    // The private modifier creates a new instance variable\n    constructor(private postService: PostService) {\n\n    // When the Observable getAll() value returns give it to the posts variable\n    postService.getAll().subscribe(data => {\n\n        this.posts = data;\n\n        // Different behavior depending on environment\n        if (environment.evt === 'dev') {\n            this.posts.forEach(post => {\n                post.date = new Date(post.date);\n                post.picture = `${post.picture}`;\n            });\n        }\n    });\n    }\n}\n",
+        "value":"import { Component } from '@angular/core';\nimport {PostService} from \"../post.service\";\nimport {Post} from \"../models/post\";\nimport {environment} from \"../../environments/environment\";\n\n@Component({\n    selector: 'app-home',\n    templateUrl: './home.component.html',\n    styleUrls: ['./home.component.scss']\n})\nexport class HomeComponent {\n    posts: [Post];\n\n    // The private modifier creates a new instance variable\n    constructor(private postService: PostService) {\n\n        // When the Observable getAll() value returns give it to the posts variable\n        postService.getAll().subscribe(data => {\n\n            this.posts = data;\n\n            // Different behavior depending on environment\n            if (environment.evt === 'dev') {\n                this.posts.forEach(post => {\n                    post.date = new Date(post.date);\n                    post.picture = `${post.picture}`;\n                });\n            }\n        });\n    }\n}\n",
         "children":null
     },
     {
@@ -2555,7 +2606,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Each function in the service corresponds with a route defined in the Node.js ",
+                "value":" Each function corresponds with a route defined in the Node.js ",
                 "children":null
             },
             {
@@ -2569,7 +2620,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" API.  You can also see that the service implements a TypeScript interface.  The code for this interface is found in ",
+                "value":" API.  The service implements a TypeScript interface.  The code for this interface is found in ",
                 "children":null
             },
             {
@@ -2590,7 +2641,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  I defined this interface to be implemented in all my HTTP request services. ",
+                "value":".  This interface is implemented in all my HTTP request services. ",
                 "children":null
             }
         ]
@@ -2603,7 +2654,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The HTML template for the ",
+                "value":" The HTML template for ",
                 "children":null
             },
             {
@@ -2645,7 +2696,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This component will display the cat post on the UI. ",
+                "value":".  This component displays the cat post on the UI. ",
                 "children":null
             }
         ]
@@ -2655,7 +2706,7 @@ content = [
         "attributes":{
             "language":"HTML"
         },
-        "value":"<div id=\"home-container\" class=\"container-fluid mt-3\">\n    <!-- Go through all the cat posts and pass each post to the cat-picture component -->\n    <div class=\"card-columns\">\n        <div *ngFor=\"let post of posts\">\n        <cat-picture [post]=\"post\"></cat-picture>\n        </div>\n    </div>\n</div>\n",
+        "value":"<div id=\"home-container\" class=\"container-fluid mt-3\">\n    <!-- Go through all the cat posts and pass each post to the cat-picture component -->\n    <div class=\"card-columns\">\n        <div *ngFor=\"let post of posts\">\n            <cat-picture [post]=\"post\"></cat-picture>\n        </div>\n    </div>\n</div>\n",
         "children":null
     },
     {
@@ -2679,12 +2730,6 @@ content = [
         "value":null,
         "children":[
             {
-                "el":"#text",
-                "attributes":null,
-                "value":" The ",
-                "children":null
-            },
-            {
                 "el":"code",
                 "attributes":{
                     "class":"jarombek-inline-code"
@@ -2695,7 +2740,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" displays the cat post details and picture in the UI.  It does this through the Bootstrap card component",
+                "value":" displays details about a cat post and a picture in the UI.  It does this with the Bootstrap card component",
                 "children":null
             },
             {
@@ -2707,7 +2752,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The cards component makes displaying the cat posts in a resizable grid extremely easy.  The big problem I have with it is you can’t easily customize its default behavior.  By default the cards component displays each post from left to right.  This is a problem since now very old cat posts will show up near the top of the page.  Ideally I could easily change the behavior to populate the cards to populate from top to bottom instead.  However, Bootstrap does not allow for this customization. This is another reason why I feel like Bootstrap components aren’t quite adequate for the needs of a production level website. ",
+                "value":".  The card component makes displaying cat posts in a resizable grid extremely easy.  The one problem I have is the card components default behavior can't be customized.  By default the cards component displays each post from left to right.  This is a problem since old cat posts now show up at the top of the page.  Ideally I could change this behavior to populate cards from top to bottom instead.  However, Bootstrap does not allow for this customization. Bootstrap components aren't quite adequate for the needs of a production level website. ",
                 "children":null
             }
         ]
@@ -2720,7 +2765,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Here is the HTML for ",
+                "value":" Here is the ",
                 "children":null
             },
             {
@@ -2734,7 +2779,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Take a close look at the first ",
+                "value":" template.  Take a close look at the first ",
                 "children":null
             },
             {
@@ -2748,7 +2793,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" element and the ",
+                "value":" element, the ",
                 "children":null
             },
             {
@@ -2762,7 +2807,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" event and the ",
+                "value":" event, and the ",
                 "children":null
             },
             {
@@ -2776,7 +2821,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Angular property. ",
+                "value":" property. ",
                 "children":null
             }
         ]
@@ -2797,7 +2842,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The click event and router are placed on the name of the user who made the post.  This allows users to click the name and quickly view the uploaders profile.  Besides for changing the SPA route, the ",
+                "value":" The click event and router are placed on the name of the user who made the post.  This allows users to click the name and view the uploader's profile.  Besides for changing the SPA route, the ",
                 "children":null
             },
             {
@@ -2880,7 +2925,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" While I don't mind setting up messaging between components, I wish there was a nicer way to store global data that would be used throughout the application.  This seems to be a bit of a weak point of the Angular framework, and I am curious how React.js will handle the same situation. ",
+                "value":" While I don't mind setting up messaging between components, I wish there was a nicer way to store global data for use throughout the application.  This seems to be a weak point of the Angular framework, and I am curious how React.js handles the same situation. ",
                 "children":null
             }
         ]
@@ -2934,7 +2979,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The function of the ",
+                "value":" The ",
                 "children":null
             },
             {
@@ -2948,7 +2993,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is pretty self explanatory - it logs in a user!  This is where I ask for authentication from the server and get a JWT as a response.  I then store the JWT in ",
+                "value":" is pretty self explanatory - it logs in a user!  ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"LoginComponent",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" asks for authentication from the server and get a JWT in response.  I then store the JWT in ",
                 "children":null
             },
             {
@@ -2989,7 +3048,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" also uses the Angular forms API to easily create and validate form inputs.  I actually really liked working with the forms API.  It really simplified what is often the most convoluted part of a web application.  I remember how difficult it was to create a simple login and signup form on my first website (which was a LAMP stack website using JQuery in the frontend).  The Angular approach to forms is a welcome change! ",
+                "value":" also uses the Angular forms API to easily create and validate form inputs.  I really liked working with the forms API.  It simplified what is often the most convoluted part of a web application.  I remember how difficult it was to create a simple login and signup form on my first website (which was a LAMP stack website using JQuery in the frontend).  The Angular approach to forms is a welcome change! ",
                 "children":null
             }
         ]
@@ -3002,7 +3061,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I am not going to go into how the form API works, but you can check out the code for the login form in ",
+                "value":" You can check out the code for the login form in ",
                 "children":null
             },
             {
@@ -3044,7 +3103,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". A more complex example of the form API can be found in ",
+                "value":". A more complex example of the form API is found in ",
                 "children":null
             },
             {
@@ -3125,7 +3184,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Another cool thing about the forms API is it is super easy to implement your own custom validator. This validator can then be placed on any form element.  You can check out a custom validator I made which checks for whitespace in ",
+                "value":" Another cool thing about the forms API is the ease of implementing a custom validator. Validators are placed on any form element.  You can check out a custom validator I made which checks for whitespace in ",
                 "children":null
             },
             {
@@ -3187,7 +3246,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The component can be in three different states.  Each of these states presents a different UI for the user.  The first state allows the user to upload the cat posts details in an Angular form.  The second state allows them to upload a cat picture.  The third state is when the upload has been successfully made. ",
+                "value":" The component lives in three different states.  Each of these states presents a different UI for the user.  The first state allows users to upload cat post details in an Angular form.  The second state allows them to upload a cat picture.  The third state occurs after the upload is successfully made. ",
                 "children":null
             }
         ]
@@ -3200,7 +3259,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In order to display these three states, I used Angular’s ",
+                "value":" In order to display these three states, I used Angular's ",
                 "children":null
             },
             {
@@ -3214,7 +3273,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" HTML element.  This element is the Angular implementation of HTML’s native ",
+                "value":" HTML element.  ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"<ng-template>",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" is Angular's implementation of HTML's native ",
                 "children":null
             },
             {
@@ -3228,7 +3301,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" element.  Anything in this element will not be rendered when the page is first loaded, but can be added to the page later on.  In my case the contents of ",
+                "value":" element.  Anything in ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"<template>",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" is not be rendered when the page first loads, but is added to the page later on.  In my case the contents of ",
                 "children":null
             },
             {
@@ -3242,7 +3329,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" will be rendered when certain variables in the ",
+                "value":" are rendered when certain variables in the ",
                 "children":null
             },
             {
@@ -3283,7 +3370,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One of the big challenges I had with the ",
+                "value":" One of the challenges I faced with ",
                 "children":null
             },
             {
@@ -3297,7 +3384,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" was getting the value in an HTML ",
+                "value":" was retrieving the value in an HTML ",
                 "children":null
             },
             {
@@ -3311,7 +3398,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" element before it was destroyed.  This happened when the first state was destroyed and the second state was created.  The solution I ended up going with was setting up a spy directive on the ",
+                "value":" element before it was removed from the DOM.  This scenario occurred when the first state was destroyed and the second state was created.  The solution was to create a spy directive on the ",
                 "children":null
             },
             {
@@ -3337,7 +3424,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This spy checks the lifecycles of the ",
+                "value":".  The spy monitored the lifecycle of the ",
                 "children":null
             },
             {
@@ -3351,7 +3438,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" element.  When it is created or destroyed I can then perform certain actions, such as initializing its value or retrieving its value.  Here is a look at the spy directive: ",
+                "value":" element.  When the element was created or destroyed I performed certain actions, such as initializing its value or retrieving its value.  Here is a look at the spy directive: ",
                 "children":null
             }
         ]
@@ -3386,7 +3473,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" allows for message passing between this directive and the ",
+                "value":" allows for message passing between the spy directive and the ",
                 "children":null
             },
             {
@@ -3434,7 +3521,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Once again I think the message passing services are a bit of a messy approach to sharing data between components.  Maybe there is a better approach out there.  However, the fact that you can check the lifecycle of an HTML element through a directive is really cool! ",
+                "value":" Once again I think the message passing services are a messy approach for sharing data between components.  Maybe there is a better approach out there.  However, the fact you can monitor the lifecycle of any HTML element through a directive is really cool! ",
                 "children":null
             }
         ]
@@ -3462,7 +3549,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I didn’t do much unit testing with my Angular application.  It is however set up with TravisCI and a testing suite just like the server side Node.js code.  I did write unit testing code to test some of the mock services in the project.  These mock services allowed me to work on the front-end code before the Node.js service was created.  This was really helpful during early development! ",
+                "value":" I didn't do much unit testing with my Angular application.  However it is set up with TravisCI and a testing suite just like the server side Node.js code.  I did write unit tests for a few mock services in the project.  These mock services allowed me to work on the front-end code before the Node.js API was created.  Mock services were very helpful during early development! ",
                 "children":null
             }
         ]
@@ -3475,7 +3562,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Here is an example of one of my mock services test code.  This one is for the user service: ",
+                "value":" Here is an example of unit tests for one of my mock services: ",
                 "children":null
             }
         ]
@@ -3496,7 +3583,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When Angular CLI sets up components or services for you, it also generates a spec file that contains unit testing code for the component or service.  It only contains one test by default.  This test makes sure that the component or service loads properly.  Although I wasn’t adding any more tests to the spec files, I found it really helpful to maintain the default test for each component.  This way I had to make sure all my components were following the code conventions of the Angular framework.  It even helped me to make design decisions.  For example, when the test code for a component became really difficult or impossible to maintain, I would realize it was time to create a new module to hold the component.  This is exactly what happened when I separated out the ",
+                "value":" When Angular CLI sets up components and services, it also generates a spec file that contains unit testing code for the component or service.  It only contains one test by default.  This test makes sure that the component or service loads properly.  Although I wasn't adding any more tests to the spec files, I found it really helpful to maintain the default test for each component.  This helped ensure all my components followed the coding conventions of the Angular framework.  It even helped me to make design decisions.  For example, when the test code for a component became really difficult or impossible to maintain, I'd create a new module to hold the component.  This is exactly what happened when I separated out the ",
                 "children":null
             },
             {
@@ -3523,7 +3610,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" However, in general writing unit tests for Angular was a big pain.  There were many occasions where unit testing code for components would fail without any obvious reason.  Also the documentation online is practically nonexistent, so you have to hope that someone else online ran into the same issue you did.  This was not always the case.  An easy to use unit testing suite could be a big point for React.js to win from Angular. ",
+                "value":" However, in general writing unit tests for Angular was a big pain.  On many occasions the unit testing code for a component would fail without any obvious reason.  Also there is no official documentation, so you have to hope someone else ran into the same issue and asked about it online.  This was not always the case. An easy to use testing suite could give React.js a leg up on Angular. ",
                 "children":null
             }
         ]
@@ -3551,7 +3638,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" That concludes my look into the current state of my MEAN Stack prototype.  If you want to check out the frontend code in full you can look on ",
+                "value":" That concludes the discussion on my MEAN Stack prototype.  If you want to check out the frontend code it is available on ",
                 "children":null
             },
             {
@@ -3585,7 +3672,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" As far as further steps are concerned, I might continue to update this prototype as Angular versions advance.  That would be a really nice way to keep up to date on the framework and always have a working prototype to look back on. ",
+                "value":" As far as further steps are concerned, I might continue updating this prototype as Angular versions advance.  That would be a nice way to keep informed about the framework and always have a working prototype to look back on. ",
                 "children":null
             }
         ]
@@ -3598,7 +3685,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" It also would be really cool to deploy it to AWS or another cloud service.  Then I could get experience pushing an Angular app all the way to production! ",
+                "value":" I may also deploy it to AWS or another cloud service.  Then I could get experience pushing an Angular app all the way to production! ",
                 "children":null
             }
         ]
@@ -3626,7 +3713,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I really liked the Angular framework, but it did have some shortcomings.  This gives React some room to beat Angular out when I finally pick the front end JavaScript framework/library to use for my website.  These shortcomings include less than ideal cross component data transfer and complex unit testing.  Angular also does a lot of things well.  I really enjoyed the forms API and the general strict framework Angular presents simplifies frontend development.  TypeScript as a language has also really grown on me!  I am excited to work with Angular again in the future and look forward to learning React next! ",
+                "value":" While I liked the Angular framework, it did have some shortcomings.  Weak points include less than ideal cross component data transfer and complex unit testing.  These shortcomings give React some room to beat Angular when I pick the front end JavaScript framework/library for my website.  Angular also does a lot of things well.  I really enjoyed the forms API and the strict framework simplifies frontend development.  TypeScript also really grew on me!  I'm excited to work with Angular again in the future and look forward to learning React! ",
                 "children":null
             }
         ]
