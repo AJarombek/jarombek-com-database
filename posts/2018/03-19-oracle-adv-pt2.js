@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" as well!  The two clauses I will look at in this discovery are ",
+                "value":" as well!  The two clauses I'm analyzing in this discovery are ",
                 "children":null
             },
             {
@@ -65,7 +65,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The table I am running queries against is called ",
+                "value":".  The table I'm running queries against is ",
                 "children":null
             },
             {
@@ -79,7 +79,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and it stores data about how many lines of code I wrote in each language over the years. The data is real too, I actually wrote the amount of code listed! ",
+                "value":", which stores how many lines of code I wrote in each language over the years. The data is real too! ",
                 "children":null
             }
         ]
@@ -106,7 +106,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause allows you to access columns in a multidimensional array.  The calculations you can perform on this array are similar to those seen in a spreadsheet application such as Excel",
+                "value":" clause allows you to access columns in a multidimensional array.  The calculations performed on this array are similar to those seen in a spreadsheet application",
                 "children":null
             },
             {
@@ -118,7 +118,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". The reason for including the ",
+                "value":". The reason Oracle included the ",
                 "children":null
             },
             {
@@ -132,7 +132,21 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause in Oracle was that users would often copy and paste SQL query results into a spreadsheet and then manipulate the data from there.  Now you can perform these manipulations in native SQL. ",
+                "value":" clause is users often copied SQL query results and pasted them into spreadsheets, manipulating the data from there.  With ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"MODEL",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":", similar manipulations are performed in native SQL. ",
                 "children":null
             }
         ]
@@ -169,7 +183,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" as well!  The two clauses I will look at in this discovery are ",
+                "value":" as well!  The two clauses I'm analyzing in this discovery are ",
                 "children":null
             },
             {
@@ -197,7 +211,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The table I am running queries against is called ",
+                "value":".  The table I'm running queries against is ",
                 "children":null
             },
             {
@@ -211,7 +225,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and it stores data about how many lines of code I wrote in each language over the years. The data is real too, I actually wrote the amount of code listed! ",
+                "value":", which stores how many lines of code I wrote in each language over the years. The data is real too! ",
                 "children":null
             }
         ]
@@ -238,7 +252,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause allows you to access columns in a multidimensional array.  The calculations you can perform on this array are similar to those seen in a spreadsheet application such as Excel",
+                "value":" clause allows you to access columns in a multidimensional array.  The calculations performed on this array are similar to those seen in a spreadsheet application",
                 "children":null
             },
             {
@@ -250,7 +264,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". The reason for including the ",
+                "value":". The reason Oracle included the ",
                 "children":null
             },
             {
@@ -264,7 +278,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause in Oracle was that users would often copy and paste SQL query results into a spreadsheet and then manipulate the data from there.  Now you can perform these manipulations in native SQL. ",
+                "value":" clause is users often copied SQL query results and pasted them into spreadsheets, manipulating the data from there.  With ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"MODEL",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":", similar manipulations are performed in native SQL. ",
                 "children":null
             }
         ]
@@ -291,7 +319,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause.  I figured that my lines written statistics were not quite an accurate representation of time I spent writing code in each language.  For example, Java is very verbose and 200 lines of code could have been for creating a simple POJO.  That would only take a minute to make! Meanwhile, Python has very concise syntax and I often make complex programs in less than 100 lines of code.  I used the ",
+                "value":" clause.  I don't think my lines written statistics are an accurate representation of time spent in each language.  For example, Java is a very verbose language. Meanwhile, Python has very concise syntax and I often make complex programs in very little code.  I used the ",
                 "children":null
             },
             {
@@ -305,7 +333,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause to adjust the lines written for both Java and Python based on their verbosity. ",
+                "value":" clause to adjust the lines written for Java and Python based on their verbosity. ",
                 "children":null
             }
         ]
@@ -334,7 +362,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" As you can see from the results, now Swift is listed as the language with the most lines written in 2017. ",
+                "value":" In the results, Swift is now listed as the language with the most lines written in 2017. ",
                 "children":null
             }
         ]
@@ -361,7 +389,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause, the three other important clauses here are ",
+                "value":" clause, the three other important clauses in this query are ",
                 "children":null
             },
             {
@@ -417,7 +445,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" defines groupings in the result set.  the ",
+                "value":" defines groupings in a result set. ",
                 "children":null
             },
             {
@@ -431,7 +459,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause will then perform operations on each of these groupings",
+                "value":" performs operations on each of these groupings",
                 "children":null
             },
             {
@@ -443,7 +471,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In my query, I partition by the year so that rules defined later will be applied to each year. ",
+                "value":".  In my query I partition by year, so rules defined later are applied to each year. ",
                 "children":null
             }
         ]
@@ -464,7 +492,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" identifies each cell in the partition. These cells make up one element in the multidimensional array.  In my example, I dimension by language so that each cell is a language.  For instance I pick an index in the array with the strings ",
+                "value":" identifies each cell in the partition. Each cell makes up one element in a multidimensional array.  In the query above, I dimension by language so each cell is a language.  I selected a cell with the strings ",
                 "children":null
             },
             {
@@ -492,7 +520,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The array created from this partition only has one dimension, but that doesn't have to be the case. ",
+                "value":".  The array created from the partition in the query above only has one dimension, but that doesn't have to be the case. ",
                 "children":null
             }
         ]
@@ -513,7 +541,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" defines what type will be located in each cell along with the name of the array",
+                "value":" defines what type is located in each cell along with the name of the array",
                 "children":null
             },
             {
@@ -525,7 +553,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In the previous query, I said that each cell will contain a ",
+                "value":".  In the previous query, I declared that each cell contains a ",
                 "children":null
             },
             {
@@ -539,7 +567,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" element and the array will be named ",
+                "value":" element and the array is named ",
                 "children":null
             },
             {
@@ -566,7 +594,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Another really cool thing about the ",
+                "value":" Another cool thing about the ",
                 "children":null
             },
             {
@@ -580,7 +608,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause is that you can loop through the array of cells with a ",
+                "value":" clause is its possible to loop through the array of cells with a ",
                 "children":null
             },
             {
@@ -606,7 +634,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  You can then get the current value within the ",
+                "value":".  You can get the current value within the ",
                 "children":null
             },
             {
@@ -620,7 +648,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" loop with the ",
+                "value":" loop with ",
                 "children":null
             },
             {
@@ -634,7 +662,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function.  The following queries get the monthly line totals for each language.  Although the queries all return the same result, you can follow the comments to see how each optimizes the previous query. ",
+                "value":".  The following queries get the monthly line totals for each language.  Although the queries all return the same result, you can follow the comments to see how each optimizes the previous query. ",
                 "children":null
             }
         ]
@@ -663,7 +691,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now onto probably the coolest thing I have seen in Oracle so far: the ",
+                "value":" Now onto probably the coolest thing I've seen in Oracle so far: the ",
                 "children":null
             },
             {
@@ -677,7 +705,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause!  You can use this clause to rotate rows into columns!  You must use an aggregate function with the ",
+                "value":" clause!  ",
                 "children":null
             },
             {
@@ -691,7 +719,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause.  The following query rotates the row ",
+                "value":" is used to rotate rows into columns!  An aggregate function must be used with the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"PIVOT",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" clause.  The following query rotates the ",
                 "children":null
             },
             {
@@ -705,7 +747,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" into columns: ",
+                "value":" row into multiple columns: ",
                 "children":null
             }
         ]
@@ -734,7 +776,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now that is awesome!  This is the exact layout I would want for this data in an Excel spreadsheet and it was generated in pure SQL!  I can improve this query result by displaying the total number of lines for each language with the ",
+                "value":" Now that is awesome!  This is the exact layout I'd use for this data in an Excel spreadsheet.  I can improve this query by displaying the total number of lines for each language using the ",
                 "children":null
             },
             {
@@ -762,7 +804,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function. ",
+                "value":". ",
                 "children":null
             }
         ]
@@ -791,7 +833,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Notice that I created a table from the result of this query.  I did this so I can use the ",
+                "value":" Notice that I created a table from the result of this query.  I did this to demonstrate the ",
                 "children":null
             },
             {
@@ -848,7 +890,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Next time I create an Oracle discovery I will look at some PL/SQL!  I'm sure I will come back to these discoveries when I need to use similar SQL queries in the future!  All the code is up on ",
+                "value":" My next Oracle discovery will be on PL/SQL!  I'm sure I will come back to these discoveries when I use similar SQL queries in the future!  All the code is up on ",
                 "children":null
             },
             {

@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Here in the third installment of my Oracle discoveries, I dig into analytic functions and some more advanced queries.  Nothing too out of this world crazy, but I definitely explored some SQL syntax that I had never seen before.  The ",
+                "value":" In this installment of my Oracle discoveries, I dig into analytic functions and some other advanced queries.  In the ",
                 "children":null
             },
             {
@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" discovery saw me create a new database and set up the basic tables. In the ",
+                "value":" Oracle discovery I created a new database and set up basic tables. In the ",
                 "children":null
             },
             {
@@ -50,7 +50,7 @@ preview = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"second",
+                        "value":" second",
                         "children":null
                     }
                 ]
@@ -58,7 +58,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I did some more intermediate level queries on the database.  Now I will continue building off this knowledge!  These are some more advanced queries that I found really cool! ",
+                "value":" discovery I wrote intermediate level queries for the database.  I continue building my Oracle knowledge in this discovery post! ",
                 "children":null
             }
         ]
@@ -71,7 +71,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The database I built contains books I have read and different programming languages I have used. There is also a relationship between books and languages, since all the books are about programming! ",
+                "value":" The database I built contains books and programming languages. There is a relationship between books and languages, since all the books are about programming! ",
                 "children":null
             }
         ]
@@ -87,7 +87,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Here in the third installment of my Oracle discoveries, I dig into analytic functions and some more advanced queries.  Nothing too out of this world crazy, but I definitely explored some SQL syntax that I had never seen before.  The ",
+                "value":" In this installment of my Oracle discoveries, I dig into analytic functions and some other advanced queries.  In the ",
                 "children":null
             },
             {
@@ -108,7 +108,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" discovery saw me create a new database and set up the basic tables. In the ",
+                "value":" Oracle discovery I created a new database and set up basic tables. In the ",
                 "children":null
             },
             {
@@ -121,7 +121,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"second",
+                        "value":" second",
                         "children":null
                     }
                 ]
@@ -129,7 +129,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I did some more intermediate level queries on the database.  Now I will continue building off this knowledge!  These are some more advanced queries that I found really cool! ",
+                "value":" discovery I wrote intermediate level queries for the database.  I continue building my Oracle knowledge in this discovery post! ",
                 "children":null
             }
         ]
@@ -142,7 +142,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The database I built contains books I have read and different programming languages I have used. There is also a relationship between books and languages, since all the books are about programming! ",
+                "value":" The database I built contains books and programming languages. There is a relationship between books and languages, since all the books are about programming! ",
                 "children":null
             }
         ]
@@ -155,7 +155,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The first analytic function query is a ranking of programming languages and the time spent reading about them.  There are two main functions that you can use for ranking, ",
+                "value":" The first query that uses analytic functions ranks programming languages by the time spent reading about them.  There are two main functions used for ranking - ",
                 "children":null
             },
             {
@@ -183,7 +183,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The only difference between the two is the way that they handle ties in the rankings",
+                "value":".  The only difference between them is the way they handle ties in the rankings",
                 "children":null
             },
             {
@@ -195,7 +195,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  You can see this difference in action with the following query and the ranking given to the JavaScript language. ",
+                "value":".  The difference in rankings is apparent in the following query: ",
                 "children":null
             }
         ]
@@ -224,7 +224,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Another interesting piece of this query is the ",
+                "value":" An interesting piece of this query is the ",
                 "children":null
             },
             {
@@ -238,7 +238,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause.  By default when ordering ",
+                "value":" clause.  When ordering items, ",
                 "children":null
             },
             {
@@ -252,7 +252,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" values come first.  In this case however null is equivalent to zero days spent reading, so we want them to come last.  The ",
+                "value":" values come first by default.  In this query ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"null",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" is equivalent to zero time reading, so I want them to come last.  The ",
                 "children":null
             },
             {
@@ -266,7 +280,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause performs this switch when ordering. ",
+                "value":" clause performs this switch. ",
                 "children":null
             }
         ]
@@ -279,7 +293,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When performing rankings, you can also partition the ranks into subgroups by specifying a ",
+                "value":" Ranks can also be partitioned into subgroups by specifying a ",
                 "children":null
             },
             {
@@ -293,7 +307,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" column.  This is a bit too complex an operation for our basic ",
+                "value":" column. Partitions are a bit too complex for my basic ",
                 "children":null
             },
             {
@@ -307,7 +321,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" table, so I am going to create a new table called ",
+                "value":" table, so I created a new table ",
                 "children":null
             },
             {
@@ -321,7 +335,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" that we can use for the rest of the examples. This table contains a year, a language, and the number of lines of code I wrote in that language for the year (these are real statistics!): ",
+                "value":" that is used for the remaining examples.  This table contains a year, language, and lines of code written in that language for the year (these are real statistics!): ",
                 "children":null
             }
         ]
@@ -342,7 +356,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now on this new table we can partition our rankings based on the year, creating a new yearly ranking! ",
+                "value":" With this new table I can partition rankings based on the year, creating a new yearly ranking! ",
                 "children":null
             }
         ]
@@ -371,7 +385,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can do other types of rankings such as percentile rankings.  From this we can see that Java in 2015 was in the top 30% of performances across all years. ",
+                "value":" Other types of rankings are available such as percentile rankings.  With a percentile ranking I see that Java in 2015 was in the top 30% of performances all time. ",
                 "children":null
             }
         ]
@@ -481,7 +495,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". This subset is known as the window.  Here is an example of a query using a window function that shows the cumulative sum of code lines written: ",
+                "value":". This subset is known as the window.  Here's an example of a window function query that shows the cumulative sum of lines written: ",
                 "children":null
             }
         ]
@@ -524,7 +538,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is the really interesting one here.  It starts by saying \"compute the sum of all the rows in the window with the statement ",
+                "value":" is really interesting.  Its SQL statement starts by saying \"compute the sum of all the rows in the window with the statement ",
                 "children":null
             },
             {
@@ -538,7 +552,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"\".  Now I have to define what rows are in the window.  I ",
+                "value":"\".  Next I defined what rows are in the window.  ",
                 "children":null
             },
             {
@@ -552,7 +566,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" so that we accumulate the sum in yearly order.  This is enforced with ",
+                "value":" accumulates the sum in a yearly order.  This is enforced with ",
                 "children":null
             },
             {
@@ -560,13 +574,13 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"ROWS BETWEEN UNBOUNDED PRECEDING\nAND CURRENT ROW",
+                "value":"ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW",
                 "children":null
             },
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", which states that the window consists of this row and all the rows that came prior. ",
+                "value":", which says the window consists of this row and all rows prior. ",
                 "children":null
             }
         ]
@@ -579,7 +593,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can perform other really cool data analysis with window functions such as moving averages and centered averages.  I show both of these examples below.  Look closely at how the window is defined in each query. ",
+                "value":" Other cool data analysis operations are possible with window functions such as moving averages and centered averages.  I show both of these examples below.  Look closely at how the window is defined in each query. ",
                 "children":null
             }
         ]
@@ -600,7 +614,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If you want to get a certain value in a window, you can use the ",
+                "value":" If you want to get a certain value in a window, use ",
                 "children":null
             },
             {
@@ -614,7 +628,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function to get the first row in the window, ",
+                "value":" to get the first row in the window, ",
                 "children":null
             },
             {
@@ -642,7 +656,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" to get any other row.  When the first value in the window is predictable beforehand you can do really powerful things with this function.  For example, in the following query I know that ",
+                "value":" to get any other row.  When the first value in the window is predictable beforehand you can do really powerful things.  For example, in the following query I know that ",
                 "children":null
             },
             {
@@ -656,7 +670,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" will return the previous years total lines written every time.   I can use this knowledge to perform comparisons between the row in the query and the first row in the window, such as the percent change between the two: ",
+                "value":" returns the previous years total lines written.   I can easily to perform comparisons between the row in the query and the first row in the window, such as the percentage change between the two: ",
                 "children":null
             }
         ]
@@ -666,7 +680,7 @@ content = [
         "attributes":{
             "language":"SQL"
         },
-        "value":"SELECT\n    year,\n    SUM(lines) AS total_lines,\n    FIRST_VALUE(SUM(lines))\n        OVER (ORDER BY year ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING) AS last_year_total,\n    ROUND(SUM(lines)/FIRST_VALUE(SUM(lines))\n        OVER (ORDER BY year ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING) * 100, 2)\n        || '%' AS percent_change\nFROM code_written\nGROUP BY year;\n",
+        "value":"SELECT\n    year,\n    SUM(lines) AS total_lines,\n    FIRST_VALUE(SUM(lines))\n        OVER (ORDER BY year ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING) AS last_year_total,\n    ROUND(SUM(lines) / FIRST_VALUE(SUM(lines))\n        OVER (ORDER BY year ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING) * 100, 2)\n        || '%' AS percent_change\nFROM code_written\nGROUP BY year;\n",
         "children":null
     },
     {
@@ -685,7 +699,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The final query I will show in this discovery lists all the languages used each year ordered from most used to least used.  You can combine strings from a column across multiple rows with the ",
+                "value":" The final query in this discovery lists all the languages used each year ordered from most used to least used.  You can combine column values across multiple rows with the ",
                 "children":null
             },
             {
@@ -742,7 +756,28 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Next time I will look at the ",
+                "value":" In my next ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/mar-19-2018-oracle-adv-pt2"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"discovery",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" I will look at the ",
                 "children":null
             },
             {
@@ -770,7 +805,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" clause that allows you to pivot a table on a certain column! ",
+                "value":" clause that pivots a table on a certain column! ",
                 "children":null
             }
         ]

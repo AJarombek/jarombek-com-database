@@ -309,6 +309,12 @@ content = [
                 ]
             },
             {
+                "el":"#text",
+                "attributes":null,
+                "value":"  ",
+                "children":null
+            },
+            {
                 "el":"a",
                 "attributes":{
                     "href":"https://jarombek.com/blog/dec-16-2017-mongodb-pt2"
@@ -324,6 +330,12 @@ content = [
                 ]
             },
             {
+                "el":"#text",
+                "attributes":null,
+                "value":"  ",
+                "children":null
+            },
+            {
                 "el":"a",
                 "attributes":{
                     "href":"https://jarombek.com/blog/dec-23-2017-mongodb-pt3"
@@ -337,6 +349,12 @@ content = [
                         "children":null
                     }
                 ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":"  ",
+                "children":null
             },
             {
                 "el":"a",
