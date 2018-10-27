@@ -50,7 +50,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" of my prototype application.  In this post will look at the Webpack portion and some of the interesting configuration pieces.  This post isn't a tutorial on how to build a Webpack config - instead it focuses on things I’ve learned about the bundler and my initial observations. ",
+                "value":" of my prototype application.  This post looks at the Webpack portion and some of the interesting configuration pieces.  I'm not giving a tutorial on how to build a Webpack config - instead focusing on things I've learned about the bundler and my initial observations. ",
                 "children":null
             }
         ]
@@ -100,7 +100,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" of my prototype application.  In this post will look at the Webpack portion and some of the interesting configuration pieces.  This post isn't a tutorial on how to build a Webpack config - instead it focuses on things I’ve learned about the bundler and my initial observations. ",
+                "value":" of my prototype application.  This post looks at the Webpack portion and some of the interesting configuration pieces.  I'm not giving a tutorial on how to build a Webpack config - instead focusing on things I've learned about the bundler and my initial observations. ",
                 "children":null
             }
         ]
@@ -149,7 +149,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", Webpack is a module bundler commonly used with JavaScript projects, especially those used client side.  Webpack builds a dependency graph of your projects modules and bundles them into a few larger files (or just one file if you want).  The reason for bundling JavaScript files is that HTTP requests from the web browser to the server are expensive.  Bundling JavaScript modules into a few files reduces the number of HTTP requests, speeding up the web application. ",
+                "value":", Webpack is a module bundler commonly used with JavaScript projects, especially those on the client side.  Webpack builds a dependency graph of a projects modules and bundles them into a few larger files (or just one file if you want).  The reason for bundling JavaScript files is that HTTP requests from the web browser to the server are expensive.  Bundling JavaScript modules into a few files reduces the number of HTTP requests, speeding up the web application. ",
                 "children":null
             }
         ]
@@ -227,7 +227,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In order to work with Webpack you need to create a configuration file (although with Webpack 4 you don’t necessarily need it for extremely simple applications).  Here is the basic layout: ",
+                "value":" In order to work with Webpack you need to create a configuration file (although with Webpack 4 you don't necessarily need it for extremely simple applications).  Here is the basic layout: ",
                 "children":null
             }
         ]
@@ -268,7 +268,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":" An entry point in a Webpack configuration is a path to a module.  This module is the root module in Webpack’s internal dependency graph.  From this module Webpack will find all other referenced modules, adding them to the graph",
+                        "value":" An entry point in a Webpack configuration is a path to a module.  This module is the root module in Webpack's internal dependency graph.  From this module Webpack will find all other referenced modules, adding them to the graph",
                         "children":null
                     },
                     {
@@ -544,7 +544,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Two loaders are specified.  The first transpiles all JavaScript files from ES2017 to ES5 using Babel, allowing for greater cross browser compatibility (since some users still use old browsers that don’t support the latest JavaScript features).  The second loader allows Webpack to handle HTML files. ",
+                "value":" Two loaders are specified.  The first transpiles all JavaScript files from ES2017 to ES5 using Babel, allowing for greater cross browser compatibility (since some users still use old browsers that don't support the latest JavaScript features).  The second loader allows Webpack to handle HTML files. ",
                 "children":null
             }
         ]
@@ -599,7 +599,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" constructor function specifies the name of the created HTML file ( ",
+                "value":" constructor function specifies the name of the created HTML file (",
                 "children":null
             },
             {
@@ -627,7 +627,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":").  The created index.html file will be located in the output directory (",
+                "value":").  The created index.html file is located in the output directory (",
                 "children":null
             },
             {
@@ -667,7 +667,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now I will analyze some cool things the Webpack configuration does in my prototype. ",
+                "value":" Now let's analyze some cool things the Webpack configuration does in my prototype. ",
                 "children":null
             }
         ]
@@ -716,7 +716,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and dedicated a discovery post to the ",
+                "value":" and dedicated a ",
                 "children":null
             },
             {
@@ -729,7 +729,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"styling language",
+                        "value":"discovery post",
                         "children":null
                     }
                 ]
@@ -737,7 +737,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  I really enjoy writing Sass, but using it means the additional effort of converting Sass to CSS before using it on the web.  Luckily Webpack loaders make this process extremely simple. ",
+                "value":" to it.  I really enjoy writing Sass, but using it includes the additional effort of converting Sass to CSS before using it on the web.  Luckily Webpack loaders make this process extremely simple. ",
                 "children":null
             }
         ]
@@ -800,7 +800,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". Confusingly Webpack executes loaders from right to left - so in this case ",
+                "value":". Confusingly Webpack executes loaders from right to left - so ",
                 "children":null
             },
             {
@@ -842,7 +842,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" creates a dependency graph in CSS files by linking ",
+                "value":" creates a dependency graph of CSS files by linking ",
                 "children":null
             },
             {
@@ -896,7 +896,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" tag.  When viewing the webpage elements will now appear styled according to the projects stylesheets. ",
+                "value":" tag.  When viewing the website, elements appear styled according to the projects stylesheets. ",
                 "children":null
             }
         ]
@@ -1012,7 +1012,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In order to reduce the number of server calls a client has to make to load a web page, Webpack helps inline images in the JavaScript bundle.  These images are represented as base64 encoded strings",
+                "value":" To reduce the number of server calls a client makes to load a web page, Webpack helps inline images in the JavaScript bundle.  These images are represented as base64 encoded strings",
                 "children":null
             },
             {
@@ -1024,7 +1024,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In a development environment it is fine to inline all of the images.  However, in an effort to keep Webpack’s output bundle relatively small, images beyond a certain size will not be inlined for production.  Here is the config to inline any images less than 15kB in size. ",
+                "value":".  In a development environment it is fine to inline all of the images.  However, in an effort to keep Webpack's output bundle relatively small, images beyond a certain size are not inlined for production.  Here is the config to inline any images less than 15kB in size. ",
                 "children":null
             }
         ]
@@ -1060,7 +1060,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" These are a few of many really cool things you can do with Webpack.  These configurations along with development servers and hot module replacement helped make development work and deploying code a breeze. ",
+                "value":" There are many cool things you can do with Webpack.  These configurations along with development servers and hot module replacement helped make development work and code deployment a breeze. ",
                 "children":null
             }
         ]
@@ -1073,7 +1073,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Once Webpack is all set up and working it really is an amazing tool that goes far beyond bundling JavaScript.  I will be using Webpack and learning more of its intricacies for the foreseeable future. ",
+                "value":" Once Webpack is all set up and working it really is an amazing tool that goes far beyond bundling JavaScript.  I'll be using Webpack and learning more of its intricacies for the foreseeable future. ",
                 "children":null
             }
         ]
@@ -1099,7 +1099,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":" GitHub",
+                        "value":"GitHub",
                         "children":null
                     }
                 ]

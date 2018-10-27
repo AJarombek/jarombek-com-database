@@ -16,7 +16,28 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Since mid March a lot of my free time work has been dedicated to building React.js apps.  In fact, this website was built this past month and a half with the MERN stack - MongoDB, Express, React and Node.js. Before I started building this website I built a sample prototype application using two key technologies - React and Webpack.  The knowledge I learned from this prototype helped jump start my work on the website. This discovery will look at the first technology used in the prototype application - React.  I will then look at the Webpack portion of the prototype in my next discovery post. ",
+                "value":" Since mid March a lot of my free time work has been dedicated to building React.js apps.  In fact, I built this website in the past month and a half with the MERN stack - MongoDB, Express, React and Node.js. Before I started building this website I built a sample prototype application using two key technologies - React and Webpack.  The knowledge I learned from this prototype helped jump start my work on the website. This discovery looks at the first technology used in the prototype application - React.  I will look at the Webpack portion of the prototype in my ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/jun-4-2018-webpack-seed"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"next discovery post",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
                 "children":null
             }
         ]
@@ -29,7 +50,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" React is a library for generating views.  A view is the UI of an application, and for a web application renders HTML.  In a traditional web application, the client side JavaScript code manipulates the HTML view through the Document Object Model (DOM) API.  When using React on the client side, views are interacted with through a construct called the \"Virtual DOM.\" ",
+                "value":" React is a library for generating views.  A view is the UI of an application, and for a web application it is rendered HTML.  In a traditional web application, the client side JavaScript code manipulates the HTML view through the Document Object Model (DOM) API.  When using React on the client side, views are interacted with through a construct called the \"Virtual DOM.\" ",
                 "children":null
             }
         ]
@@ -45,7 +66,28 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Since mid March a lot of my free time work has been dedicated to building React.js apps.  In fact, this website was built this past month and a half with the MERN stack - MongoDB, Express, React and Node.js. Before I started building this website I built a sample prototype application using two key technologies - React and Webpack.  The knowledge I learned from this prototype helped jump start my work on the website. This discovery will look at the first technology used in the prototype application - React.  I will then look at the Webpack portion of the prototype in my next discovery post. ",
+                "value":" Since mid March a lot of my free time work has been dedicated to building React.js apps.  In fact, I built this website in the past month and a half with the MERN stack - MongoDB, Express, React and Node.js. Before I started building this website I built a sample prototype application using two key technologies - React and Webpack.  The knowledge I learned from this prototype helped jump start my work on the website. This discovery looks at the first technology used in the prototype application - React.  I will look at the Webpack portion of the prototype in my ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/jun-4-2018-webpack-seed"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"next discovery post",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
                 "children":null
             }
         ]
@@ -58,7 +100,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" React is a library for generating views.  A view is the UI of an application, and for a web application renders HTML.  In a traditional web application, the client side JavaScript code manipulates the HTML view through the Document Object Model (DOM) API.  When using React on the client side, views are interacted with through a construct called the \"Virtual DOM.\" ",
+                "value":" React is a library for generating views.  A view is the UI of an application, and for a web application it is rendered HTML.  In a traditional web application, the client side JavaScript code manipulates the HTML view through the Document Object Model (DOM) API.  When using React on the client side, views are interacted with through a construct called the \"Virtual DOM.\" ",
                 "children":null
             }
         ]
@@ -73,7 +115,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The Virtual DOM is a layer of abstraction used over the Document Object Model (DOM) in React.  The Virtual DOM is kept in memory and can be altered using the react library.  This means a React developer never interacts with the DOM API itself.  They only communicate with the Virtual DOM to change the UI.  Behind the scenes React makes sure the Virtual DOM’s virtual representation of the UI matches the state of the DOM",
+                "value":" The Virtual DOM is a layer of abstraction used over the Document Object Model (DOM) in React.  The Virtual DOM is kept in memory and is altered using the React library.  A React developer never interacts with the DOM API itself.  They only communicate with the Virtual DOM to change the UI.  Behind the scenes, React makes sure the Virtual DOM's virtual representation of the UI matches the state of the DOM",
                 "children":null
             },
             {
@@ -98,7 +140,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The biggest difference between the Virtual DOM and the DOM is that the Virtual DOM implements a declarative API while the DOM’s API is imperative.  In other words, a programmer tells the DOM API how the view needs to be changed while another programmer tells the Virtual DOM what needs to be changed about the view.  Imperative is how something needs to be done to accomplish a task.  Declarative is what task should be accomplished. ",
+                "value":" The biggest difference between the Virtual DOM and the DOM is that the Virtual DOM implements a declarative API while the DOM's API is imperative.  In other words, one programmer tells the DOM API how the view needs to change while another programmer tells the Virtual DOM what needs to change about the view.  Imperative is how something needs to be done to accomplish a task.  Declarative is what task should be accomplished. ",
                 "children":null
             }
         ]
@@ -111,7 +153,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" A more in depth analysis of imperative and declarative paradigms is beyond the scope of this discovery post, but in the context of the Virtual DOM a developer doesn't need to know how the DOM API works in order to update views.  All a React developer needs to tell the Virtual DOM is what they want the view to be.  React is declarative - it asks the developer for what needs to be accomplished and internally it takes care of how it is done. ",
+                "value":" A more in depth analysis of imperative and declarative paradigms is beyond the scope of this discovery post, but in the context of the Virtual DOM a developer doesn't need to know how the DOM API works in order to update views.  All a React developer needs to tell the Virtual DOM is what they want the view to be.  React is declarative - it asks the developer for what needs to be accomplished and internally it takes care of how its done. ",
                 "children":null
             }
         ]
@@ -124,7 +166,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Reacts declarative approach makes it easy and quick to create views without the learning curve of the DOM API. However, the Virtual DOM does have some drawbacks.  First off it is memory intensive, due to the fact that the UI has to be kept in memory throughout the applications lifecycle",
+                "value":" Reacts declarative approach makes it easy and quick to create views without the learning curve of the DOM API. However, the Virtual DOM does have some drawbacks.  First off its memory intensive since the UI is kept in memory throughout the applications lifecycle",
                 "children":null
             },
             {
@@ -161,7 +203,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Despite the drawbacks using this declarative approach makes creating views a breeze for JavaScript developers.   React allows them to think of view elements as a simple construct - the JavaScript object!  Views in React are made up of many building blocks called React Elements. ",
+                "value":" Despite the drawbacks using a declarative approach makes creating views a breeze for JavaScript developers.   React allows developers to think of view elements as a simple construct - the JavaScript object!  Views in React are made up of many building blocks called React Elements. ",
                 "children":null
             }
         ]
@@ -176,7 +218,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" A JavaScript object that represents the smallest building block of the UI.  In a web environment a react element would represent an HTML element (also referred to as a DOM node).  It can also represent a React component. While a react element can be created directly as a JavaScript object with the ",
+                "value":" A JavaScript object that represents the smallest building block of the UI.  In a web environment a React element represents an HTML element (also referred to as a DOM node).  It can also represent a React component. While a React element can be created directly as a JavaScript object with ",
                 "children":null
             },
             {
@@ -190,7 +232,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function, doing this for an entire UI is very verbose.  Often React elements are created in JSX, which allows us to create elements in HTML style syntax. ",
+                "value":", doing this for an entire UI is very verbose.  Often React elements are created in JSX, which uses an HTML style syntax. ",
                 "children":null
             }
         ]
@@ -205,7 +247,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Components in React are a form of encapsulation over react elements.  Components promote code reuse, containing a piece of the UI that can be used multiple times throughout an application.  Components also have entire lifecycles and can contain ",
+                "value":" Components in React are a form of encapsulation over React elements.  Components promote code reuse, containing a piece of the UI that can be used multiple times throughout an application.  Components also have lifecycles and can contain ",
                 "children":null
             },
             {
@@ -219,7 +261,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" (values passed to the component from another component) and ",
+                "value":" (values passed to the component from other components) and ",
                 "children":null
             },
             {
@@ -276,7 +318,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" JSX is an extension of the JavaScript language created by Facebook for React.  It follows HTML-like syntax to create hierarchies of React elements.  For example, a React element in JavaScript would be created like so: ",
+                "value":" JSX is an extension of the JavaScript language created by Facebook for React.  It follows HTML-like syntax to create hierarchies of React elements.  For example, a React element in JavaScript is created like so: ",
                 "children":null
             },
             {
@@ -290,7 +332,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The same element would be created in JSX with the following syntax: ",
+                "value":".  The same element is created in JSX with the following syntax: ",
                 "children":null
             },
             {
@@ -311,7 +353,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" With these concepts in mind, I will begin to go over the React seed project I built!  Here is what the final product looks like: ",
+                "value":" With these concepts in mind, let's go over the React seed project I built!  Here is what the final product looks like: ",
                 "children":null
             }
         ]
@@ -419,7 +461,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" tag is with the JavaScript.  Webpack will actually handle bundling the JavaScript and including it in the HTML document, so we don’t have to worry about it!  I will discuss the Webpack aspects of this project in my next discovery post. ",
+                "value":" tag is for the JavaScript.  Webpack  actually handles bundling the JavaScript and including it in the HTML document, so we don't have to worry about it!  I will discuss the Webpack aspects of this project in my next discovery post. ",
                 "children":null
             }
         ]
@@ -446,7 +488,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function must be called. The following code sample sets up the entire React application. ",
+                "value":" function is called. The following code sample sets up the entire React application. ",
                 "children":null
             }
         ]
@@ -522,7 +564,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The second parameter is the container in which the React element will be rendered.  This is the only DOM API call that is made in the application.  ",
+                "value":" The second parameter is the container in which the React element is rendered.  This is the only DOM API call made in the application.  ",
                 "children":null
             },
             {
@@ -530,7 +572,7 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"document.getElementById(‘react-container')",
+                "value":"document.getElementById('react-container')",
                 "children":null
             },
             {
@@ -667,7 +709,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" component needs to hold the state of my entire application, I needed to use a class based component.   A class based component extends the ",
+                "value":" component needs to hold the state of my entire application, I need to use a class based component.   A class based component extends the ",
                 "children":null
             },
             {
@@ -702,7 +744,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The application will display a list of different technologies used in the application.  In the above code these technologies are assigned to ",
+                "value":" The application displays a list of different technologies.  In the code above these technologies are assigned to ",
                 "children":null
             },
             {
@@ -729,7 +771,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The other major piece of this component is the ",
+                "value":" Another major piece of this component is the ",
                 "children":null
             },
             {
@@ -743,7 +785,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function.  The returned value of this function is what will be rendered in the HTML.  The returned value is a hierarchy of React Elements in the form of JSX.  I also deconstructed the ",
+                "value":" function.  The return value of this function is what is rendered in the HTML.  The returned value is a hierarchy of React Elements in the form of JSX.  I also deconstructed the ",
                 "children":null
             },
             {
@@ -771,7 +813,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" component. Remember that props are simply values passed from one component to another component.  The ",
+                "value":" component. Remember that props are simply values passed from one component to another.  The ",
                 "children":null
             },
             {
@@ -785,7 +827,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" component will orchestrate the UI display for all the technologies.  Let’s look at that now. ",
+                "value":" component orchestrates the UI display for all the technologies.  Let's look at that now. ",
                 "children":null
             }
         ]
@@ -837,7 +879,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Unlike the main application component which holds the state, ",
+                "value":" Unlike the main application component which holds state, ",
                 "children":null
             },
             {
@@ -851,7 +893,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is a stateless functional component.  Keeping only one component stateful makes an application easier to manage since no child components will be causing unexpected changes to the application state. ",
+                "value":" is a stateless functional component.  Keeping only one component stateful makes an application easier to manage since no child components will cause unexpected changes to the application state. ",
                 "children":null
             }
         ]
@@ -905,7 +947,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" says that there will be a prop called ",
+                "value":" defines a prop called ",
                 "children":null
             },
             {
@@ -919,7 +961,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and if it does not exist its default value will be an empty array. ",
+                "value":" with an empty array default value. ",
                 "children":null
             }
         ]
@@ -932,7 +974,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In the JSX for this component I incorporated some JavaScript code to check if the technology list was populated. Depending on whether or not it is populated different React elements will be rendered.  If there are objects in the list, a ",
+                "value":" In the JSX for this component I incorporated some JavaScript code to check if the technology list is populated. Depending on whether or not its populated, different React elements are rendered.  If there are objects in the list, a ",
                 "children":null
             },
             {
@@ -946,7 +988,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" component will be rendered for each one.  You can see here the dynamic nature of React and JSX - depending on the state and props passed into a component different UIs can be displayed. ",
+                "value":" component is rendered for each one.  This shows the dynamic nature of React and JSX - depending on the state and props passed into a component different UIs are displayed. ",
                 "children":null
             }
         ]
@@ -987,7 +1029,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" component.  This is used for property validation.  If a prop type is passed in to the component that doesn’t match the type defined in ",
+                "value":" component.  This is used for property validation.  If a prop type is passed in to the component that doesn't match the type defined in ",
                 "children":null
             },
             {
@@ -1001,7 +1043,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", a warning will be issued.  This is actually extremely helpful in catching bugs early and unit testing",
+                "value":", a warning is issued.  This is extremely helpful for catching bugs early and unit testing",
                 "children":null
             },
             {
@@ -1119,7 +1161,28 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Next time I will go over the Webpack portion of the project! ",
+                "value":".  Next time I will go over the  ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/jun-4-2018-webpack-seed"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"Webpack",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" portion of the project! ",
                 "children":null
             }
         ]

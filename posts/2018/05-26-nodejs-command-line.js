@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Recently while working on my website I made a command line tool in Node.js.  The tool took in an HTML file and tokenized its contents into a JSON file.  Writing command line tools with Node.js sounded complicated at first but is actually incredibly simple!  This discovery post will introduce a simple command line tool for generating random numbers - written in Node.js. ",
+                "value":" Recently while working on my website I made a command line tool in Node.js.  The tool took in an HTML file and tokenized its contents into a JSON file.  Writing command line tools with Node.js sounds  complicated at first but is actually incredibly simple!  This discovery post introduces a simple command line tool for generating random numbers - written in Node.js. ",
                 "children":null
             }
         ]
@@ -29,7 +29,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One of the great things about the Node.js and the npm ecosystem is all the community built npm modules at a developers disposal.  For command line tools there are many different modules to choose from.  In this discovery post I will be using ",
+                "value":" One of the great things about the Node.js and the npm ecosystem is all the community built npm modules.   For command line tools there are many different modules to choose from.  In this discovery post I use ",
                 "children":null
             },
             {
@@ -50,7 +50,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The reason I chose this module over all the others it is has no dependencies!  Less dependencies generally means more reliable code and less unused code. ",
+                "value":".  I chose this module over all the others because it has no dependencies!  Less dependencies generally means more reliable code and less unused code. ",
                 "children":null
             }
         ]
@@ -66,7 +66,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Recently while working on my website I made a command line tool in Node.js.  The tool took in an HTML file and tokenized its contents into a JSON file.  Writing command line tools with Node.js sounded complicated at first but is actually incredibly simple!  This discovery post will introduce a simple command line tool for generating random numbers - written in Node.js. ",
+                "value":" Recently while working on my website I made a command line tool in Node.js.  The tool took in an HTML file and tokenized its contents into a JSON file.  Writing command line tools with Node.js sounds  complicated at first but is actually incredibly simple!  This discovery post introduces a simple command line tool for generating random numbers - written in Node.js. ",
                 "children":null
             }
         ]
@@ -79,7 +79,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One of the great things about the Node.js and the npm ecosystem is all the community built npm modules at a developers disposal.  For command line tools there are many different modules to choose from.  In this discovery post I will be using ",
+                "value":" One of the great things about the Node.js and the npm ecosystem is all the community built npm modules.   For command line tools there are many different modules to choose from.  In this discovery post I use ",
                 "children":null
             },
             {
@@ -100,7 +100,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The reason I chose this module over all the others it is has no dependencies!  Less dependencies generally means more reliable code and less unused code. ",
+                "value":".  I chose this module over all the others because it has no dependencies!  Less dependencies generally means more reliable code and less unused code. ",
                 "children":null
             }
         ]
@@ -113,7 +113,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The first step for building the application is initializing the projects package.json file and setting up the ",
+                "value":" The first step for building the application is initializing the projects package.json file and setting up a  ",
                 "children":null
             },
             {
@@ -154,12 +154,6 @@ content = [
         "value":null,
         "children":[
             {
-                "el":"#text",
-                "attributes":null,
-                "value":" The ",
-                "children":null
-            },
-            {
                 "el":"code",
                 "attributes":{
                     "class":"jarombek-inline-code"
@@ -170,7 +164,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" field is an object of key value pairs.  The key is the name of a command and the value is the file that will be executed when the command is called.  Npm takes the key value pairs in ",
+                "value":" is an object of key value pairs.  The key is the name of a command and the value is the file that executes when the command is called.  Npm takes the key value pairs in ",
                 "children":null
             },
             {
@@ -210,7 +204,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The ",
+                "value":".  In Unix systems ",
                 "children":null
             },
             {
@@ -224,7 +218,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" variable in Unix systems declares a list of directories for executable programs",
+                "value":" declares a list of directories for executable programs",
                 "children":null
             },
             {
@@ -236,7 +230,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In order to install this executable globally the following command must be run: ",
+                "value":".  In order to install this executable globally the following command is run: ",
                 "children":null
             }
         ]
@@ -257,7 +251,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now the executable can be referenced globally throughout the filesystem by running ",
+                "value":" Now the executable is referenced globally throughout the filesystem by running ",
                 "children":null
             },
             {
@@ -271,7 +265,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" in Bash.  Finally the commander.js dependency is added and the JavaScript development can start! ",
+                "value":" in Bash.  Finally the commander.js dependency is added. Now JavaScript development can start! ",
                 "children":null
             }
         ]
@@ -292,7 +286,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Commander.js introduces a really nice API for building command line apps.  The API allows you to chain together methods to declare the applications functionality.  Let’s go through the Node.js application piece by piece before displaying the entire application in full. ",
+                "value":" Commander.js introduces a really nice API for building command line apps.  The API uses chained  methods to declare the applications functionality.  Let's go through the Node.js application piece by piece before displaying the entire application in full. ",
                 "children":null
             }
         ]
@@ -305,7 +299,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The first line of the script must be a shebang line in order for the command line application to work. ",
+                "value":" The first line of the script must be a shebang line, otherwise the command line application won't work. ",
                 "children":null
             }
         ]
@@ -333,7 +327,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":" A shebang line is written to determine which interpreter will be used on an executable file",
+                        "value":" A shebang line is written to determine which interpreter is used on an executable file",
                         "children":null
                     },
                     {
@@ -345,7 +339,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":".  The syntax is the ",
+                        "value":".  The syntax consists of the ",
                         "children":null
                     },
                     {
@@ -359,7 +353,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":" symbols followed by the path to the interpreter script.  The shebang line is used on Unix operating systems, but in different OS environments other methods are used.  For example, on Windows the interpreter is simply implied by the file name extension. ",
+                        "value":" symbols followed by a path to an interpreter script.  The shebang line is used on Unix operating systems, but in different OS environments other methods are used.  For example, on Windows the interpreter is simply implied by the file name extension. ",
                         "children":null
                     }
                 ]
@@ -386,7 +380,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":" followed by the interpreter name.  This sequence will use the Unix ",
+                        "value":" followed by the interpreter name.  This sequence uses the Unix ",
                         "children":null
                     },
                     {
@@ -441,7 +435,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" While the shebang line is only needed for unix systems, it will always be included for cross compatibility. Windows OS will simply ignore the line",
+                "value":" While the shebang line is only needed for Unix systems, its always included for cross compatibility. Windows OS simply ignores it",
                 "children":null
             },
             {
@@ -453,7 +447,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Also, note that this line isn’t actually valid JavaScript - ",
+                "value":".  Also note the shebang line isn't valid JavaScript - ",
                 "children":null
             },
             {
@@ -467,7 +461,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" are not comments in JavaScript.  The JavaScript interpreter will actually ignore this line when executing the program. ",
+                "value":" is not a comment in JavaScript.  The JavaScript interpreter actually ignores this line when executing the program. ",
                 "children":null
             }
         ]
@@ -480,7 +474,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Also note that I used the ",
+                "value":" I also used the ",
                 "children":null
             },
             {
@@ -508,7 +502,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" interpreter.  This will enable the use of ES6+ features. ",
+                "value":" interpreter.  This flag enables the use of ES6+ features. ",
                 "children":null
             }
         ]
@@ -556,7 +550,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", which specifies a version number that will be displayed when using the ",
+                "value":", which specifies a version number that is displayed when using the ",
                 "children":null
             },
             {
@@ -639,7 +633,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" argument specifies the smallest number that the random number can be, and ",
+                "value":" argument specifies a lower bound the random number, and ",
                 "children":null
             },
             {
@@ -653,7 +647,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" specifies the largest number it can be.  Later in the method chain we can access these two arguments with the ",
+                "value":" specifies an upper bound.  Later in the method chain I accessed these two arguments with the ",
                 "children":null
             },
             {
@@ -722,7 +716,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" specifies an optional flag and value that can be added to the command.  This will provide additional functionality to the application.  The code above specifies an option that can be declared with either the ",
+                "value":" specifies optional flags for the command.  Optional flags provides additional functionality for an application.  The code above specifies a flag declared with either ",
                 "children":null
             },
             {
@@ -750,7 +744,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" flags followed by a ",
+                "value":" followed by a ",
                 "children":null
             },
             {
@@ -764,7 +758,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" argument.  This option can be sued to specify if the random number should be an integer or a floating point number. ",
+                "value":" argument.  Its used to specify whether the random number is an integer or a floating point number. ",
                 "children":null
             }
         ]
@@ -777,7 +771,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Options can also be accessed later on as variables in the ",
+                "value":" Optional flags are also accessed as variables in the ",
                 "children":null
             },
             {
@@ -791,7 +785,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" method call.  The ",
+                "value":" method.  The ",
                 "children":null
             },
             {
@@ -805,7 +799,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" option is stored in the ",
+                "value":" argument is stored in the ",
                 "children":null
             },
             {
@@ -846,7 +840,35 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The final two methods in the chain specify what text to display when calling ",
+                "value":" The methods ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"on()",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" and ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"parse()",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" specify text to display when calling ",
                 "children":null
             },
             {
@@ -860,7 +882,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" along with the fact that the programs arguments are coming from the command line arguments (",
+                "value":" and to explicitly bind the programs arguments to the command line arguments (",
                 "children":null
             },
             {
@@ -885,12 +907,6 @@ content = [
         "value":null,
         "children":[
             {
-                "el":"#text",
-                "attributes":null,
-                "value":" The final piece is the core of the application - what logic to perform based on the command line arguments.  This business logic is executed in the ",
-                "children":null
-            },
-            {
                 "el":"code",
                 "attributes":{
                     "class":"jarombek-inline-code"
@@ -901,7 +917,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" method. ",
+                "value":" contains logic to perform based on the command line arguments.  This is the meat of the application. ",
                 "children":null
             }
         ]
@@ -922,7 +938,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The code here is straightforward.  Return either an integer or floating point random number within the bounds specified in the command line arguments.  That is all! ",
+                "value":" The code here is straightforward.  Return a random integer or floating point number within the bounds specified in the command line arguments.  That is all! ",
                 "children":null
             }
         ]
@@ -935,7 +951,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now the program can be executed like so: ",
+                "value":" The program is executed like so: ",
                 "children":null
             }
         ]
@@ -956,7 +972,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Easy!  The command line application I built for my website has a bit more complexity, but even that is simple and easy to understand.  You can check out the code for that app on ",
+                "value":" Easy!  The command line application I built for my website has a bit more complexity, but even that is simple and easy to understand.  You can check out the code for my app on ",
                 "children":null
             },
             {
@@ -990,7 +1006,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" There are many different languages you can build simple command line applications in.  Now you know that JavaScript running in the Node.js environment is one of them! Here is the full code for the application: ",
+                "value":" There are many different languages command line applications can be built in. JavaScript running in the Node.js environment is one of them! Here is the full code for the application: ",
                 "children":null
             }
         ]

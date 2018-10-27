@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The benefits of keeping data immutable while programming is well documented.  Immutable data is side effect free, predictable, and easy to test.   While immutability is a strict requirement in the functional paradigm, for other approaches it is simply a recommendation.  In a language like JavaScript that supports multiple different paradigms, lots of the code you see will ",
+                "value":" The benefits of keeping data immutable while programming is well documented.  Immutable data is side effect free, predictable, and easy to test.   While immutability is a strict requirement in the functional paradigm, for other paradigms it is simply a recommendation.  In a language like JavaScript that supports multiple paradigms, some code does ",
                 "children":null
             },
             {
@@ -35,7 +35,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" keep its data immutable.  I am guilty of it too. ",
+                "value":" keep data immutable.  I am guilty of it too. ",
                 "children":null
             }
         ]
@@ -64,7 +64,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The benefits of keeping data immutable while programming is well documented.  Immutable data is side effect free, predictable, and easy to test.   While immutability is a strict requirement in the functional paradigm, for other approaches it is simply a recommendation.  In a language like JavaScript that supports multiple different paradigms, lots of the code you see will ",
+                "value":" The benefits of keeping data immutable while programming is well documented.  Immutable data is side effect free, predictable, and easy to test.   While immutability is a strict requirement in the functional paradigm, for other paradigms it is simply a recommendation.  In a language like JavaScript that supports multiple paradigms, some code does ",
                 "children":null
             },
             {
@@ -83,7 +83,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" keep its data immutable.  I am guilty of it too. ",
+                "value":" keep data immutable.  I am guilty of it too. ",
                 "children":null
             }
         ]
@@ -111,7 +111,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Something that is immutable can not be changed.  In a programming language data is immutable when the value of an object or primitive can’t be altered. ",
+                "value":" Something that is immutable can't be changed.  In a programming language data is immutable when the value of an object or primitive can't be altered. ",
                 "children":null
             }
         ]
@@ -153,7 +153,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" keyword introduced in ES6.  The ",
+                "value":" keyword introduced in ES6.  ",
                 "children":null
             },
             {
@@ -167,7 +167,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" keyword declares a constant variable, one that can’t be changed once it has been assigned.  The trick is that constant in JavaScript doesn't mean that the referenced object is immutable.  You can mutate the referenced object all you want. What you can’t do is change the reference to point to a different object or primitive. ",
+                "value":" declares a constant variable, one that can't change once its assigned.  The trick is that constant in JavaScript doesn't mean that the referenced object is immutable.  You can mutate the referenced object all you want. What you can't do is change the reference to point to a different object or primitive. ",
                 "children":null
             }
         ]
@@ -195,9 +195,7 @@ content = [
     },
     {
         "el":"codesnippet",
-        "attributes":{
-            "language":"Bash"
-        },
+        "attributes":null,
         "value":"Joe\n",
         "children":null
     },
@@ -209,7 +207,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Objects however are not necessarily immutable.  More care has to be taken to not mutate an object.  Here is an example of a constant variable referencing an array.  Note that the array can mutate: ",
+                "value":" Objects are not necessarily immutable.  More care must be taken to avoid mutating an object.  Here is an example of a constant variable referencing an array.  Note that the array can mutate: ",
                 "children":null
             }
         ]
@@ -224,9 +222,7 @@ content = [
     },
     {
         "el":"codesnippet",
-        "attributes":{
-            "language":"Bash"
-        },
+        "attributes":null,
         "value":"Names After Modification: Joe,Jarombek\nNames After Frozen: Joe,Jarombek\n",
         "children":null
     },
@@ -308,7 +304,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In JavaScript all objects have internal attributes that determine actions which can be performed on them",
+                "value":" In JavaScript all objects have internal attributes determining which actions can be performed on them",
                 "children":null
             },
             {
@@ -334,7 +330,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", which determines whether or not an object can be modified.  Modifying an object would entail removing or adding a property from it.  By default, objects in JavaScript are extensible, meaning programmers are free to modify them. ",
+                "value":", which determines whether an object can be modified.  Modifying an object entails removing or adding a property.  By default, objects in JavaScript are extensible, meaning programmers are free to modify them. ",
                 "children":null
             }
         ]
@@ -361,7 +357,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" attribute to false is with the ",
+                "value":" attribute to false is ",
                 "children":null
             },
             {
@@ -375,7 +371,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function.  Once an object is passed to this function it can no longer be modified.  Note that sealing is not the same as making the object immutable.  You can still mutate existing properties: ",
+                "value":".  Once an object is passed to this function it can no longer be modified.  Note that sealing is not the same as making an object immutable.  You can still mutate existing properties: ",
                 "children":null
             }
         ]
@@ -390,9 +386,7 @@ content = [
     },
     {
         "el":"codesnippet",
-        "attributes":{
-            "language":"Bash"
-        },
+        "attributes":null,
         "value":"Is Cat Sealed: true\nSealed Cat After Modification: {\"breed\":\"Russian Blue\",\"name\":\"Dotty\"}\n",
         "children":null
     },
@@ -404,7 +398,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Sealing an object makes the object itself explicitly un-modifiable.  This is nice, however we are looking for explicit immutability.  To achieve this goal, we can use the ",
+                "value":" Sealing an object makes it explicitly un-modifiable.  This is nice, however we are looking for explicit immutability.  To achieve this goal, we can use ",
                 "children":null
             },
             {
@@ -418,7 +412,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function. ",
+                "value":". ",
                 "children":null
             }
         ]
@@ -433,9 +427,7 @@ content = [
     },
     {
         "el":"codesnippet",
-        "attributes":{
-            "language":"Bash"
-        },
+        "attributes":null,
         "value":"Is Person Frozen: true\n{\n    name: 'Andy',\n    hometown: {\n        city: 'Riverside',\n        state: 'Connecticut',\n        country: 'Canada'\n    }\n}\n",
         "children":null
     },
@@ -447,7 +439,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Once an object is frozen none of its properties can be modified.  The ",
+                "value":" Once an object is frozen none of its properties can be modified.  ",
                 "children":null
             },
             {
@@ -461,7 +453,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function explicitly states that the object passed to it as an argument is immutable. ",
+                "value":" explicitly states the object passed as an argument is immutable. ",
                 "children":null
             }
         ]
@@ -544,7 +536,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When something is implicit it is not directly said or expressed but is implied and known to be true.  When data is implicitly immutable in a programming language it is never strictly declared as being immutable.  However, as a developer it is implied that the data is immutable because no other code that interacts with it mutates it.  It is known to be immutable. ",
+                "value":" When something is implicit it is not directly said or expressed.  Instead its implied and known to be true.  When data is implicitly immutable in a programming language it is never strictly declared as being immutable.  However, as a developer its implied that the data is immutable because other code doesn't mutate it.  Its known to be immutable. ",
                 "children":null
             }
         ]
@@ -571,7 +563,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and the other is the spread operator (the recommended approach).  I will demonstrate both on the ",
+                "value":" and the other is the spread operator (the recommended approach).  I demonstrate both on the ",
                 "children":null
             },
             {
@@ -600,10 +592,8 @@ content = [
     },
     {
         "el":"codesnippet",
-        "attributes":{
-            "language":"Bash"
-        },
-        "value":"\nThe Original Person: {\"name\":\"Andy\",\"hometown\":{\"city\":\"Riverside\",\"state\":\"Connecticut\",\"country\":\"USA\"}}\nThe New Person: {\"name\":\"Joe\",\"hometown\":{\"city\":\"Riverside\",\"state\":\"Connecticut\",\"country\":\"USA\"}}\nThe New Person: {\"name\":\"Joe\",\"hometown\":{\"city\":\"Riverside\",\"state\":\"Connecticut\",\"country\":\"USA\"}}\nThe New(er) Person: {\"name\":\"Tom\",\"hometown\":{\"city\":\"Riverside\",\"state\":\"Connecticut\",\"country\":\"USA\"}}\n",
+        "attributes":null,
+        "value":"\nThe Original Person: {\"name\":\"Andy\",\"hometown\":{\"city\":\"Riverside\",\"state\":\"Connecticut\",\"country\":\"USA\"}}\nThe New Person: {\"name\":\"Joe\",\"hometown\":{\"city\":\"Riverside\",\"state\":\"Connecticut\",\"country\":\"USA\"}}\n\nThe New Person: {\"name\":\"Joe\",\"hometown\":{\"city\":\"Riverside\",\"state\":\"Connecticut\",\"country\":\"USA\"}}\nThe New(er) Person: {\"name\":\"Tom\",\"hometown\":{\"city\":\"Riverside\",\"state\":\"Connecticut\",\"country\":\"USA\"}}\n",
         "children":null
     },
     {
@@ -628,7 +618,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":") makes copies of all the properties on the original object (or array) and spreads them out in the new object (or array).  This performs the necessary copy to keep the properties data immutable.  Note that just like ",
+                "value":") makes a copy of every property on an original object (or array) and spreads them out into a new object (or array).  It performs the necessary copy to keep property data immutable.  Note that just like ",
                 "children":null
             },
             {
@@ -642,7 +632,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", the spread operator makes a shallow copy.  If you wanted to make a deep copy the code would be a bit more involved. ",
+                "value":", the spread operator makes a shallow copy.  If you wanted to make a deep copy the code is a bit more involved. ",
                 "children":null
             }
         ]
@@ -663,7 +653,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is a bit more verbose.  It creates a copy of an object, where the first parameter is the target object upon which the new object will be built.  The rest of the parameters are the sources objects, which will be copied into the target object.  Although ",
+                "value":" is a bit more verbose.  It creates a copy of an object, where the first parameter is the target object upon which the new object is built.  The rest of the parameters are the sources objects, which are copied into the target object.  Although ",
                 "children":null
             },
             {
@@ -677,7 +667,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" will get the job done, the spread operator is much more concise (and is the recommended approach). ",
+                "value":" gets the job done, the spread operator is much more concise (and the recommended approach). ",
                 "children":null
             }
         ]
@@ -690,7 +680,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One important note before moving on.  In both the examples above the ",
+                "value":" One important note before moving on.  In the examples above the ",
                 "children":null
             },
             {
@@ -704,7 +694,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" property is defined twice in the target object.  In JavaScript this is okay.  In the case of this conflict the value of the second property will overwrite the value of the first property.  This behavior allows us to give the copied object’s property a new value without actually mutating the existing property! ",
+                "value":" property is defined twice in the target object.  In JavaScript this is okay.  In the case of a property name conflict the  second property value overwrites the first property value.  Property conflict resolution helps give a copied object's property a new value without mutating the existing property! ",
                 "children":null
             }
         ]
@@ -717,7 +707,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The following two sections show off some basic operations you can make on objects and arrays to keep them immutable. These operations follow the “implicitly immutable” approach.  Note the extensive use of ES6+ features such as the spread operator, destructuring, and functional methods. ",
+                "value":" The following two sections show some basic operations on objects and arrays to keep them immutable. These operations follow the \"implicitly immutable\" approach.  Note the extensive use of ES6+ features such as the spread operator, destructuring, and functional methods. ",
                 "children":null
             }
         ]
@@ -745,7 +735,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The following code provides some static methods for objects to keep them immutable: ",
+                "value":" The following code provides static methods for objects to keep them immutable: ",
                 "children":null
             }
         ]
@@ -789,7 +779,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The following code provides some static methods for arrays to keep them immutable: ",
+                "value":" The following code provides static methods for arrays to keep them immutable: ",
                 "children":null
             }
         ]
@@ -804,9 +794,7 @@ content = [
     },
     {
         "el":"codesnippet",
-        "attributes":{
-            "language":"Bash"
-        },
+        "attributes":null,
         "value":"[ 1, 2, 4, 8, 16 ]\n[ 1, 2, 4, 8, 16, 32 ]\n\n[ 1, 2, 4, 8, 16 ]\n[ 1, 2, 0, 8, 16 ]\n\n[ 1, 2, 4, 8, 16 ]\n[ 1, 2, 4, 16 ]\n",
         "children":null
     },
@@ -875,7 +863,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  TypeScript actually has a really cool way to define properties and variables as explicitly immutable with the ",
+                "value":".  TypeScript has a really cool way to define explicitly immutable properties and variables with the ",
                 "children":null
             },
             {
@@ -916,9 +904,7 @@ content = [
     },
     {
         "el":"codesnippet",
-        "attributes":{
-            "language":"Bash"
-        },
+        "attributes":null,
         "value":"Run {\n    date: 1527090916455,\n    name: 'Beach Run',\n    miles: 3.26,\n    time: { minutes: 25, seconds: 56 }\n}\n",
         "children":null
     },
@@ -930,7 +916,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Pretty cool right?  Too bad there is not syntax similar in JavaScript that can be defined on the property definition. ",
+                "value":" Pretty cool right?  Too bad there isn't any similar syntax in JavaScript that can be defined on property definitions. ",
                 "children":null
             }
         ]
@@ -958,7 +944,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" We all know that mutability is bad and leads to fragile code.  I recently worked on an existing codebase in Java that contained mutable data and it was a nightmare.  A central data structure to the application was being mutated by a function call on a variable that didn't even match the one the data structure was bound to!  It was confusing to say the least. ",
+                "value":" We all know that mutability is bad and leads to fragile code.  I recently worked on an existing codebase in Java that contained mutable data and it was a nightmare.  A central data structure to the application was mutated by a function call on a variable that didn't even match the one the data structure was bound to!  It was confusing to say the least. ",
                 "children":null
             }
         ]
@@ -985,7 +971,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" approach to explicit immutability is not very safe.  Since the object is not frozen when it is initialized there will be points in time before it is frozen.  This is dangerous.  The TypeScript approach to explicit immutability is much better since it is applied to the property definitions themselves. ",
+                "value":" approach to explicit immutability is not very safe.  Since the object is not frozen when it is initialized there are points in time before its frozen.  This is dangerous.  The TypeScript approach to explicit immutability is much better since it is applied to the property definitions. ",
                 "children":null
             }
         ]
@@ -998,7 +984,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The upside to explicit immutability is that it is very obvious to other developers (and your future self) that properties can’t be mutated.  The fact that attempts to mutate an object will fail is a very safe approach. ",
+                "value":" The upside to explicit immutability is that its obvious to other developers (and your future self) that properties can't be mutated.  The fact that attempts to mutate an object will fail is a very safe approach. ",
                 "children":null
             }
         ]
@@ -1011,7 +997,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" However if you know what you are doing implicit immutability is plenty.  With it your code will be dependable and side effect free! ",
+                "value":" However if you know what you're doing implicit immutability is good enough.  With implicit immutability code is dependable and side effect free! ",
                 "children":null
             }
         ]
@@ -1024,7 +1010,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" As always, the code for this discovery is up on ",
+                "value":" As always, the code for this discovery is on ",
                 "children":null
             },
             {

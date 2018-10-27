@@ -359,6 +359,42 @@ content = [
         ]
     },
     {
+        "el":"updateinfo",
+        "attributes":{
+            "date":"May 31st, 2018"
+        },
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" If you want more background information on React.js, check out the discovery post for my ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/may-31-2018-react-seed"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"React seed project",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
+                "children":null
+            }
+        ]
+    },
+    {
         "el":"p",
         "attributes":null,
         "value":null,
