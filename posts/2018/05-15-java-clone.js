@@ -44,7 +44,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" was the first method of copying an object in Java, it is important to understand how it works along with all its shortcomings.  This is my journey to understand Java’s ",
+                "value":" was the first method for copying objects in Java, it is important to understand how it works along with all its shortcomings.  This is my journey to understand Java’s ",
                 "children":null
             },
             {
@@ -71,7 +71,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If you have ever heard or read about Java’s ",
+                "value":" If you've ever heard or read about Java’s ",
                 "children":null
             },
             {
@@ -162,7 +162,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" was the first method of copying an object in Java, it is important to understand how it works along with all its shortcomings.  This is my journey to understand Java’s ",
+                "value":" was the first method for copying objects in Java, it is important to understand how it works along with all its shortcomings.  This is my journey to understand Java’s ",
                 "children":null
             },
             {
@@ -189,7 +189,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If you have ever heard or read about Java’s ",
+                "value":" If you've ever heard or read about Java’s ",
                 "children":null
             },
             {
@@ -313,7 +313,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" class.  This method in question is ",
+                "value":" class.  This method I'm referring to is ",
                 "children":null
             },
             {
@@ -416,7 +416,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" keyword means that the method is implemented using the Java Native Interface (JNI).  This means that the code is actually not written in Java, instead it is implemented in another language such as C, C++, or Assembly",
+                "value":" keyword means that the method is implemented using the Java Native Interface (JNI).  This means the method body is not written in Java, instead implemented in another language such as C, C++, or Assembly",
                 "children":null
             },
             {
@@ -428,7 +428,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The basic idea here is that writing the code in a low level machine specific language will increase performance. ",
+                "value":".  The reason for this is writing code in a low level, machine specific language increases performance. ",
                 "children":null
             }
         ]
@@ -441,7 +441,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Another important piece is the ",
+                "value":" Another important piece of ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"clone()",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" is the ",
                 "children":null
             },
             {
@@ -455,7 +469,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" annotation. This annotation allows the HotSpot VM (an implementation of the Java Virtual Machine) know that the implementation of this method may be an intrinsic function",
+                "value":" annotation. This annotation allows the HotSpot VM (an implementation of the Java Virtual Machine) know that the method implementation may be an intrinsic function",
                 "children":null
             },
             {
@@ -687,7 +701,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This should not be a legal Java implementation and it is very confusing. ",
+                "value":".  This should not be a legal Java operation and is downright confusing. ",
                 "children":null
             }
         ]
@@ -723,7 +737,49 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Here is a simple class I made in Java which represents a programming language.  It contains three fields - name, creation date, and all the paradigms the language follows.  It also has getters and setters along with a method ",
+                "value":" Here is a simple class I made in Java representing a programming language.  It contains three fields - ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"name",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":", ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"inception",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":", and ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"paradigms",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  It also has getters and setters along with a method ",
                 "children":null
             },
             {
@@ -737,7 +793,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" which will mutate the list of paradigms by adding a new paradigm. ",
+                "value":" which mutates the list of paradigms by adding a new paradigm. ",
                 "children":null
             }
         ]
@@ -758,7 +814,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now here is my first attempt at overriding the ",
+                "value":" Here is my first attempt at overriding the ",
                 "children":null
             },
             {
@@ -807,7 +863,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" here will always succeed. The catch clause will also never be reached since we implemented ",
+                "value":" always succeeds. On the other hand, the catch clause is never reached since we implemented ",
                 "children":null
             },
             {
@@ -821,7 +877,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", however we need to include it since ",
+                "value":", however it must be included since ",
                 "children":null
             },
             {
@@ -876,7 +932,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now I will create a ",
+                "value":" I created a ",
                 "children":null
             },
             {
@@ -890,7 +946,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" instance and test out cloning it. ",
+                "value":" instance to try cloning. ",
                 "children":null
             }
         ]
@@ -919,7 +975,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Upon studying the output you will see that adding an item to the paradigm list in the first ",
+                "value":" Adding an item to the paradigm list in the first ",
                 "children":null
             },
             {
@@ -947,7 +1003,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" does not make a deep copy of each field in an object.  It simply copies the value assigned to the field to the new clone.  In the case of an object, the copied value is a reference to the object.  Altering the object the reference points to will change the value in both the original and cloned instances.  Of course this would never be an issue if the type of your fields were immutable objects (which both ",
+                "value":" does not make a deep copy of each field in an object.  It simply copies the value assigned to the field into the clone.  In the case of an object, the copied value is a reference to the object.  Altering the object the reference points to changes the value in both the original and cloned instances.  Of course this is never an issue if object fields are immutable objects (which both ",
                 "children":null
             },
             {
@@ -988,7 +1044,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" To fix this we need to add another line to the clone method.  This time we will make a new instance of the ",
+                "value":" To prevent mutations I added another line to the clone method.  This time a new instance of the ",
                 "children":null
             },
             {
@@ -1002,7 +1058,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" in the clone. ",
+                "value":" is created in each clone. ",
                 "children":null
             }
         ]
@@ -1072,7 +1128,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" all its subclasses have to as well",
+                "value":" all its subclasses have to implement it as well",
                 "children":null
             },
             {
@@ -1098,7 +1154,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" too. ",
+                "value":". ",
                 "children":null
             }
         ]
@@ -1148,7 +1204,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is a bad idea, what are the alternatives?  The two best choices for copying an object are copy constructors or copy static factories.  Both of these take an existing object as an argument and return a copy of that object.  Both of these can be used together, as shown below: ",
+                "value":" is a bad idea, what are the alternatives?  The two best choices for copying an object are copy constructors and copy static factories.  Both take an existing object as an argument and return a copy of that object. They can be used together, as shown below: ",
                 "children":null
             }
         ]
@@ -1169,7 +1225,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Copy constructors or copy static factories are within the bounds of the Java language, making them excellent alternatives.  Use them! ",
+                "value":" Copy constructors and copy static factories are within the bounds of the Java language, making them excellent alternatives.  Use them! ",
                 "children":null
             }
         ]
@@ -1280,7 +1336,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I’ll remind you that ",
+                "value":" Remember that ",
                 "children":null
             },
             {
@@ -1294,7 +1350,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" does not perform a deep copy on the objects within a class or array.  If you mutate an object within a class or array that was cloned, the mutation 'will be observed in both the original and the copy. ",
+                "value":" does not perform a deep copy on objects within a class or array.  If you mutate an object within a class or array that was cloned, the mutation occurs in both the original and the copy. ",
                 "children":null
             }
         ]

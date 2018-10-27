@@ -16,14 +16,16 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I have learned a lot about Java over the past few months.  I’ve been reading books on it, building projects with it at work, and even posting on this website about it!  It is obvious by looking at some of my old Java code just how far I have progressed (especially my SaintsXCTF Android app).  I decided to pull a bunch of the concepts I’ve learned together and build an API in Java.  This discovery goes through the API and my design decisions throughout. ",
+                "value":" I've learned a lot about Java over the past few months.  I've read books on it, built projects with it at work, and even posting on this website about it!  Its obvious when looking at some of my old Java code how far I've progressed (especially since my SaintsXCTF Android app).  I decided to pull a bunch of concepts I've learned together and build an API in Java.  This discovery goes through the API and my design decisions throughout. ",
                 "children":null
             }
         ]
     },
     {
-        "el":"h5",
-        "attributes":null,
+        "el":"sectiontitle",
+        "attributes":{
+            "title":"The API"
+        },
         "value":null,
         "children":[
             {
@@ -100,7 +102,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I have learned a lot about Java over the past few months.  I’ve been reading books on it, building projects with it at work, and even posting on this website about it!  It is obvious by looking at some of my old Java code just how far I have progressed (especially my SaintsXCTF Android app).  I decided to pull a bunch of the concepts I’ve learned together and build an API in Java.  This discovery goes through the API and my design decisions throughout. ",
+                "value":" I've learned a lot about Java over the past few months.  I've read books on it, built projects with it at work, and even posting on this website about it!  Its obvious when looking at some of my old Java code how far I've progressed (especially since my SaintsXCTF Android app).  I decided to pull a bunch of concepts I've learned together and build an API in Java.  This discovery goes through the API and my design decisions throughout. ",
                 "children":null
             }
         ]
@@ -207,7 +209,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The second piece of the API holds a blockchain data structure.  I’ve started to read about blockchain in my free time so I thought it would be cool to implement a similar data structure in Java.  An important note - the blockchain data structure I built is extremely primitive.  In fact it is almost unrecognizable next to the structure used in modern day blockchain technologies.  All my Java code does is implement a chain of blocks that contain a list of transactions.  That is it. ",
+                "value":" The second piece of the API holds a blockchain data structure.  I've started to read about blockchain in my free time so I thought it would be cool to implement a similar data structure in Java.  An important note - the blockchain data structure I built is extremely primitive.  In fact it is almost unrecognizable next to the structure used in modern day blockchain technologies.  All my Java code does is implement a chain of blocks that contain a list of transactions.  That is it. ",
                 "children":null
             }
         ]
@@ -314,7 +316,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" implement.  This interface defines the methods that all exercises must have.  For three of these methods the implementing class must supply the method body. However one of the methods has a default implementation, which will be used in case the implementing class doesn't override it.  I made a whole discovery post on ",
+                "value":" implement.  This interface defines the methods that all exercises must have.  For three of these methods the implementing class must supply the method body. However one of the methods has a default implementation, which is used when the implementing class doesn't override it.  I made a whole discovery post on ",
                 "children":null
             },
             {
@@ -356,7 +358,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now let’s look at the first implementing class - ",
+                "value":" Now let's look at the first implementing class - ",
                 "children":null
             },
             {
@@ -454,7 +456,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" interface gives objects of a class a natural ordering, which allows them to be sorted in a logical way ",
+                "value":" interface gives objects a natural ordering, which allows them to be sorted in a logical way",
                 "children":null
             },
             {
@@ -500,7 +502,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". If you ever have a class that has a logical ordering, definitely implement ",
+                "value":". If you ever have a class with a logical ordering, definitely implement ",
                 "children":null
             },
             {
@@ -535,7 +537,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" With Java 8’s introduction of the ",
+                "value":" With Java 8's introduction of the ",
                 "children":null
             },
             {
@@ -589,7 +591,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" static method above takes in a lambda function, specifying the sorting key.  You can then chain on the result from ",
+                "value":" static method above takes in a lambda function, specifying a sorting key.  ",
                 "children":null
             },
             {
@@ -603,7 +605,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" with ",
+                "value":" can be chained with ",
                 "children":null
             },
             {
@@ -617,7 +619,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This would be in the case of a tie.  In my code, the first item that is compared is the date of the run, followed by the miles run, etc.  Note that I use a method reference instead of a lambda function in this example. ",
+                "value":", which is used in case of a tie.  In my code, the first item compared is the date of the run, followed by the miles run, etc.  Note that I use a method reference instead of a lambda function. ",
                 "children":null
             }
         ]
@@ -632,7 +634,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" A method reference is a shorthand notation for a lambda function (also known as an arrow function).  A common use case of a lambda is to simply call a method on the lambda input parameter.  Example: ",
+                "value":" A method reference is a shorthand notation for a lambda function (also known as an arrow function).  A common use case of a lambda is to simply call a method on the input parameter.  Example: ",
                 "children":null
             },
             {
@@ -646,7 +648,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In Java, for simple lambdas that just call an existing method you can use a method reference",
+                "value":".  In Java, simple lambdas that call an existing method can use a method reference",
                 "children":null
             },
             {
@@ -658,7 +660,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The example can be rewritten with a method reference as ",
+                "value":".  The example above can be rewritten with a method reference as ",
                 "children":null
             },
             {
@@ -672,7 +674,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Note that we use the type and not the instance itself in the method reference (",
+                "value":".  Note that we use the class and not the instance itself in the method reference (",
                 "children":null
             },
             {
@@ -700,7 +702,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":").  This is because no argument named ",
+                "value":").  This is because ",
                 "children":null
             },
             {
@@ -714,7 +716,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is explicitly defined in the Java code to pass to the method reference.  The only case where you would use an instance in a method reference is when calling a method on an existing variable outside the lambdas scope",
+                "value":" isn't explicitly defined anywhere for use in the method reference.  The only case where you would use an instance in a method reference is when calling a method on an existing variable outside the lambdas scope",
                 "children":null
             },
             {
@@ -753,7 +755,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" class is that it does not have a public constructor method.  In order to create a new ",
+                "value":" class is it doesn't have a public constructor method.  In order to create a new ",
                 "children":null
             },
             {
@@ -767,7 +769,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" instance you have to call one of its many static factory methods, which internally make calls to the private constructor in the class. ",
+                "value":" instance you have to call one of its many static factory methods, which internally make calls to a private constructor. ",
                 "children":null
             }
         ]
@@ -788,7 +790,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Static factory methods have some benefits and some drawbacks.  You can use them to be more explicit about what type of object you are creating or even limit the ways in which the constructor can be called.  When I say you can be more explicit I mean you can uniquely name a static factory method.  Constructors on the other hand are always the name of the class.  A common problem with static factory methods is that programmers may not even know they exist!  If they want to find them they will have to search through the JavaDocs, which for large objects can be quite the hassle. ",
+                "value":" Static factory methods have some benefits and some drawbacks.  You can use them to be more explicit about what type of object you are creating or even limit the ways in which constructors are called.  When I say you can be more explicit I mean you can uniquely name a static factory method.  Constructors on the other hand are always the name of the class.  A common problem with static factory methods is programmers often don't know they exist!  To find them they have to search through the JavaDocs, which for large objects can be a hassle. ",
                 "children":null
             }
         ]
@@ -882,7 +884,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":").  But why would you want to stop inheritance? What is the benefit? ",
+                "value":").  But why stop inheritance? What is the benefit? ",
                 "children":null
             }
         ]
@@ -895,7 +897,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One of the requirements for building an immutable object is to prohibit the class to be subclassed.  You may have created a perfect immutable class with no side effects, but that doesn't mean that a subclass is required to stay immutable",
+                "value":" One of the requirements for building immutable objects is prohibiting their class from being subclassed.  You may have created a perfect immutable class with no side effects, but that doesn't mean a subclass is required to stay immutable",
                 "children":null
             },
             {
@@ -907,7 +909,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This can cause code to behave unexpectedly, since in Java variables are ",
+                "value":".  This can cause code to behave unexpectedly, since Java variables are ",
                 "children":null
             },
             {
@@ -928,7 +930,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Removing inheritance allows for my ",
+                "value":".  Removing inheritance keeps my ",
                 "children":null
             },
             {
@@ -956,7 +958,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" classes to be safely immutable! ",
+                "value":" classes immutable! ",
                 "children":null
             }
         ]
@@ -1088,7 +1090,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". You can check out the code from the ",
+                "value":". You can check out the code in the ",
                 "children":null
             },
             {
@@ -1214,7 +1216,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" These are the three key methods that will be used in all blockchain implementations.  A design decision for the blockchain API was to not have my concrete child classes directly implement ",
+                "value":" These are the three key methods used in all blockchain implementations.  One design decision for the blockchain API was to not have concrete child classes directly implement ",
                 "children":null
             },
             {
@@ -1228,7 +1230,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Instead I created a skeletal implementation of the interface, and then had my concrete classes extend the skeletal implementation. ",
+                "value":".  Instead I created a skeletal implementation of the interface, and had my concrete classes extend the skeletal implementation. ",
                 "children":null
             }
         ]
@@ -1243,7 +1245,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In Java a Skeletal Implementation is when interfaces and abstract classes are combined to create an enhanced blueprint for subclasses.  Interfaces are powerful in that they do not break encapsulation (unless you use Java 8’s default methods) while defining the rules for a type.  Abstract classes are powerful because you can make development quicker and more DRY by defining shared code for subclasses.  A problem with abstract classes is that     they break encapsulation, making subclasses dependent on the abstract class for implementation details",
+                "value":" In Java a Skeletal Implementation is when interfaces and abstract classes are combined to create an enhanced blueprint for subclasses.  Interfaces are powerful in that they do not break encapsulation (unless you use Java 8's default methods) while defining the rules for a type.  Abstract classes are powerful because they make development quicker and are DRY by defining shared code for subclasses.  A problem with abstract classes is that     they break encapsulation, making subclasses dependent on the abstract class for implementation details",
                 "children":null
             },
             {
@@ -1269,7 +1271,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Skeletal implementations are abstract classes that also implement the interface.  Now the user has two options - either implement the interface or extend the skeletal implementation - the second of which could save them time since they would write less code. ",
+                "value":".  Skeletal implementations are abstract classes that also implement an interface.  The user has two options - either implement the interface or extend the skeletal implementation - the second of which could save them time since they would write less code. ",
                 "children":null
             }
         ]
@@ -1296,7 +1298,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This pattern works well for the blockchain API because in many cases checking whether two blockchains are equal does not depend on how the blockchain is implemented under the hood, just if it holds the same data.  The same can’t be said for the exercise API.  While ",
+                "value":".  This pattern works well for the blockchain API because in many cases checking whether two blockchains are equal does not depend on how the blockchain is implemented under the hood, just if it holds the same data.  The same can't be said for the exercise API.  While ",
                 "children":null
             },
             {
@@ -1337,7 +1339,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" As a side note, if a blockchain implementation didn’t want to follow the rules enforced in the skeletal implementation, it could simply implement ",
+                "value":" As a side note, if a blockchain implementation didn't want to follow the rules enforced in the skeletal implementation, it could simply implement ",
                 "children":null
             },
             {
@@ -1351,7 +1353,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  No problem! ",
+                "value":"! ",
                 "children":null
             }
         ]
@@ -1441,7 +1443,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" instances.  This list is our primitive \"block chain.\"  Each block holds a list of transactions which occurred as well as a reference to the previous block.  An important point is ",
+                "value":" instances.  This list is a primitive \"block chain.\"  Each block holds a list of transactions which occurred as well as a reference to the previous block.  ",
                 "children":null
             },
             {
@@ -1455,7 +1457,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is immutable - if we want to add a new transaction to a block we actually have to create a whole new block instance.  Remember immutable classes are reliable and easy to test! ",
+                "value":" is immutable - to add a new transaction to a block a whole new block instance must be created.  The reason ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"Block",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" is immutable is to make it reliable and easy to test! ",
                 "children":null
             }
         ]
@@ -1533,7 +1549,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" First lets start with the ",
+                "value":" Let's start with the ",
                 "children":null
             },
             {
@@ -1568,7 +1584,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You will notice that the number of transactions set per block is five and the ",
+                "value":" Notice that the number of transactions per block is five and the ",
                 "children":null
             },
             {
@@ -1582,7 +1598,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" method is package private, meaning that implementing code cant access it. ",
+                "value":" method is package private, meaning that implementing code can't access it. ",
                 "children":null
             }
         ]
@@ -1595,7 +1611,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now let’s look at the ",
+                "value":" Now let's look at the ",
                 "children":null
             },
             {
@@ -1658,7 +1674,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" instance. I decided to go with this approach so that I wouldn’t have to throw a ",
+                "value":" instance. I decided to go with this approach so I wouldn't have to throw a ",
                 "children":null
             },
             {
@@ -1686,7 +1702,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" if the insert or search failed.  With optionals it is explicitly clear to the API user that inserting can fail or a transaction may not exist when searching.  I dedicated an entire discovery post to ",
+                "value":" if the insert or search failed.  With optionals its explicitly clear to API users that inserting can fail or a transaction may not exist when searching.  I dedicated an entire discovery post to ",
                 "children":null
             },
             {
@@ -1748,7 +1764,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" may look a bit unfamiliar.  Let’s break it down. ",
+                "value":" may look a bit unfamiliar.  Let's break it down. ",
                 "children":null
             }
         ]
@@ -1936,7 +1952,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This also gives the API even user more flexibility, since they can pass an ",
+                "value":".  This gives the API user even more flexibility, since they can pass an ",
                 "children":null
             },
             {
@@ -2082,7 +2098,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" instances!  Make the API users lives as easy as possible. ",
+                "value":" instances! ",
                 "children":null
             }
         ]
@@ -2109,7 +2125,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" class.  This class doesn’t implement an interface, but adding one would be a good exercise!  The class also has one package-private constructor and one private constructor.  Based off this you may think that it is possible to extend this class if you are in its package.  Although it does have a package-private constructor, the class is declared as ",
+                "value":" class.  This class doesn't implement an interface, but adding one would be a good exercise!  The class has one package-private constructor and one private constructor.  You may initially think its possible to extend this class if you are in its package.  Although it does have a package-private constructor, the class is declared ",
                 "children":null
             },
             {
@@ -2150,7 +2166,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I am not going to deep dive into the code for the ",
+                "value":" I'm not going to show the code for the ",
                 "children":null
             },
             {
@@ -2164,7 +2180,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" class but you can look at the ",
+                "value":" class in this post but you can look at it on ",
                 "children":null
             },
             {
@@ -2177,7 +2193,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"source code",
+                        "value":"GitHub",
                         "children":null
                     }
                 ]
@@ -2185,7 +2201,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" on GitHub.  It even has a nice static member class for transactions! ",
+                "value":".  It even has a nice static member class for transactions! ",
                 "children":null
             }
         ]
@@ -2200,7 +2216,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In Java a static member class is a static class defined inside a class.  Another option in Java is to have a non-static member class inside a class.  The big difference is non-static member classes are part of the outer classes instance - therefore they hold a reference to the contents of the outer class.  Unless the member class needs access to items in its outer class, it should be defined as static.  This will save both the time and space required to save a reference of the outer class instance",
+                "value":" In Java a static member class is a static class defined inside a class.  Another option in Java is to have a non-static member class inside a class.  The big difference is non-static member classes are part of the outer classes instance - therefore they hold a reference to the contents of the outer class.  Unless the member class needs access to items in its outer class, it should be defined as static.  This saves both the time and space required to keep a reference of the outer class instance",
                 "children":null
             },
             {
@@ -2240,7 +2256,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I have been working in Java four years now.  While the first two years were just for simple school assignments, the past two years I have been making production level code in the language.  I am still looking to sharpen my knowledge on the language all the time.  This API pulled together a lot of concepts that I have been working on lately, and I hope reading about my journey with the language has been helpful!  As always the ",
+                "value":" I've been working in Java four years now.  While the first two years were just for simple school assignments, the past two years I've made production level code in the language.  I am still looking to sharpen my knowledge on the language all the time.  This API pulled together a lot of concepts I've been working on lately, and I hope reading about my journey with the language has been helpful!  As always the ",
                 "children":null
             },
             {

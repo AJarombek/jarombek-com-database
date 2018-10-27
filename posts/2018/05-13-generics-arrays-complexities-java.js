@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Usually when I work in Java generics are easy to reason about.  They are there to enforce type on a collection or a class that I created.  When declaring a class with a generic, it means that an instance of the class can be parameterized with one (or more) of many different element types.  A simple example would be an ",
+                "value":" Usually when I work in Java generics are easy to reason about.  They enforce types on a collection or a class I created.  When declaring a class with a generic, an instance of that class can be parameterized with one (or more) element types.  A simple example is an ",
                 "children":null
             },
             {
@@ -43,7 +43,21 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Note that the class extends ",
+                "value":" Note that ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"ArrayList",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" extends ",
                 "children":null
             },
             {
@@ -113,7 +127,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is not needed in this case.  It is only there for clarity and readability. ",
+                "value":" is not needed.  It is only there for clarity and readability. ",
                 "children":null
             }
         ]
@@ -129,7 +143,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Usually when I work in Java generics are easy to reason about.  They are there to enforce type on a collection or a class that I created.  When declaring a class with a generic, it means that an instance of the class can be parameterized with one (or more) of many different element types.  A simple example would be an ",
+                "value":" Usually when I work in Java generics are easy to reason about.  They enforce types on a collection or a class I created.  When declaring a class with a generic, an instance of that class can be parameterized with one (or more) element types.  A simple example is an ",
                 "children":null
             },
             {
@@ -164,7 +178,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Note that the class extends ",
+                "value":" Note that ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"ArrayList",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" extends ",
                 "children":null
             },
             {
@@ -234,7 +262,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is not needed in this case.  It is only there for clarity and readability. ",
+                "value":" is not needed.  It is only there for clarity and readability. ",
                 "children":null
             }
         ]
@@ -282,7 +310,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Easy right?  But what would happen if I changed the generic assignment to ",
+                "value":" Easy right?  But what happens if I change the generic assignment to ",
                 "children":null
             },
             {
@@ -414,7 +442,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" It is important to note that the class assignment still enables polymorphism when using generics.  In the example shown an ",
+                "value":" It is important to note that object assignments still enable polymorphism when using generics.  In the example above an ",
                 "children":null
             },
             {
@@ -457,7 +485,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When a programming language type system follows a rule that a variable can be assigned any type less than (subtype) or equal to the variables declared type",
+                "value":" When a programming language type system allows variables to be assigned any type less than (subtype) or equal to the variables declared type",
                 "children":null
             },
             {
@@ -511,7 +539,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This follows the first part of the rule when the types are equal. You can also assign any subtype of ",
+                "value":".  This follows the second part of the rule when the types are equal. You can also assign any subtype of ",
                 "children":null
             },
             {
@@ -539,7 +567,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This follows the second part of the rule.  Arrays in Java are also covariant such that the following assignment is legal: ",
+                "value":".  This follows the first part of the rule.  Arrays in Java are also covariant such that the following assignment is legal: ",
                 "children":null
             },
             {
@@ -562,7 +590,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When a programming language type system follows a rule that a variable can be assigned any type greater than (supertype) or equal to the variables declared type.  Java is not contravariant and the compiler will throw an error if you try to assign a supertype to a declaration. ",
+                "value":" When a programming language type system allows variables to be assigned any type greater than (supertype) or equal to the variables declared type.  Java is not contravariant and the compiler throws an error when a supertype is assigned to a declaration. ",
                 "children":null
             }
         ]
@@ -591,7 +619,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The way around generics invariance is to use generic wildcards. ",
+                "value":".  The work around for generics invariance is generic wildcards. ",
                 "children":null
             }
         ]
@@ -604,7 +632,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Unlike generics, arrays are covariant.  This may sound nice but it can lead to some issues around type safety. Let’s look at one of the issues with covariant arrays in Java: ",
+                "value":" Unlike generics, arrays are covariant.  This sounds nice but can lead to issues around type safety. Let's look at one of the issues with covariant arrays in Java: ",
                 "children":null
             }
         ]
@@ -614,7 +642,7 @@ content = [
         "attributes":{
             "language":"Java"
         },
-        "value":"// Will Compile and Run, but will throw a java.lang.ArrayStoreException\nNumber[] array = new Integer[1];\narray[0] = 1.6;\n",
+        "value":"// Will Compile and Run, but throws a java.lang.ArrayStoreException\nNumber[] array = new Integer[1];\narray[0] = 1.6;\n",
         "children":null
     },
     {
@@ -653,7 +681,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is a valid number, it is not a valid integer.  Therefore we get an unfortunate exception at runtime.  Note that the above code will compile cleanly - you will only notice the error when running the program.  At that point it could be too late! ",
+                "value":" is a valid number, it is not a valid integer.  Therefore we get an unfortunate exception at runtime.  Note that the code above compiles cleanly - the error is only noticeable when running the program.  At that point its too late! ",
                 "children":null
             }
         ]
@@ -666,7 +694,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Generics were designed (unlike arrays) to spot errors at compile time instead of runtime.  Therefore type safety is ensured before even running a program.  The big difference between generics and arrays is that generics implement erasure and are non-reifiable while arrays are reified.  Because of these differences arrays and generics do not mix well, in fact if you try to mix them it will not work. ",
+                "value":" Generics were designed (unlike arrays) to spot errors at compile time.  Therefore type safety is ensured before running a program.  The big difference between generics and arrays is that generics implement erasure and are non-reifiable while arrays are reified.  Because of these differences arrays and generics do not mix well.  In fact, if you try to mix them it will not work. ",
                 "children":null
             }
         ]
@@ -689,7 +717,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The non computer science dictionary definition is something abstract that was made more concrete or real.  In terms of programming languages a reified variable is one that knows its type at runtime.  At runtime, the type is ‘real’.  In Java variables that are reified know their type and also enforce it at runtime.  This is why Arrays enforce their type at runtime and don’t complain at compile time - they are reified. ",
+                "value":" Something abstract that is made more concrete or real.  In terms of programming languages a reified variable is one that knows its type at runtime and doesn't lose any type information at runtime.  The type is 'real' while the program is executing.  In Java, variables that are reified know their type and also enforce it at runtime. Arrays are reified - they enforce their type at runtime and don't complain at compile time. ",
                 "children":null
             }
         ]
@@ -704,7 +732,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The opposite of reified - something that is abstract which is not made concrete.  In a programming language a non-reifiable variable is one that does not know or enforce its type at runtime (its type is abstract, not concrete)",
+                "value":" The opposite of reified - something abstract which is not made concrete.  In a programming language a non-reifiable variable is one that does not know or enforce its type at runtime (its type is abstract, not concrete)",
                 "children":null
             },
             {
@@ -716,7 +744,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  It only knows it’s type at compile time.  Therefore, it looses information about itself when it is compiled.  Although we don’t know a generics type at runtime, we know that it is type safe because it passed its compile time check. ",
+                "value":".  It only knows it's type at compile time.  Therefore, it looses information about itself when it is compiled.  Although we don't know a generics type at runtime, we know its type safe because it passed a compile time check. ",
                 "children":null
             }
         ]
@@ -756,7 +784,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The fact that generics are non-reifiable does have a nice side effect of only allowing type safe code to compile.  It would be impossible to check the type safety of generics at runtime!  The sooner a developer knows something is wrong with their code the better, so I am all for it. ",
+                "value":" The fact that generics are non-reifiable means only type safe code can compile.  It is impossible to check the type safety of generics at runtime!  The sooner a developer knows something is wrong with their code the better. Generics follow this philosophy elegantly. ",
                 "children":null
             }
         ]
@@ -784,7 +812,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When dealing with generic wildcards a lot of interesting behavior occurs.  There are two types of wildcards -  unbounded and bounded.  Unbounded wildcards can be of any type, while bounded wildcards can be of any type within the specified class hierarchy. ",
+                "value":" When dealing with generic wildcards a lot of interesting behavior occurs.  There are two types of wildcards -  unbounded and bounded.  Unbounded wildcards are of any type, while bounded wildcards are of any type within a specified class hierarchy. ",
                 "children":null
             }
         ]
@@ -797,7 +825,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The problem with assigning generic instances to an unbounded wildcard type is that there is no way to know what the type is at runtime (it could be an instance of any class!).  This uncertainty means a lot of operations are not allowed since they are not type safe.  Luckily these occur at compile time.  Take an example of unbounded wildcard lists: ",
+                "value":" The problem with assigning generic instances to an unbounded wildcard type is its impossible to know the type at runtime (it could be an instance of any class!).  This uncertainty means a lot of operations are not allowed since they are not type safe.  Luckily errors for these scenarios occur at compile time.  Take an example of unbounded wildcard lists: ",
                 "children":null
             }
         ]
@@ -818,7 +846,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In the previous code both adding to the lists and assigning a list element to a type variable are disallowed.  Adding to an unbounded typed list is illegal because there is no way of knowing if a value of the correct type is added.  Similarly there is no guarantee that a declared variable type is equal to the type of an unbounded generic list.  Therefore both these operations are disallowed. ",
+                "value":" In the previous code both adding to lists and assigning a list element to a type variable are disallowed.  Adding to an unbounded generic list is illegal because its impossible to know if a value of the correct type is added.  Similarly there is no guarantee that a declared variable type is equal to the type of an unbounded generic list.  Therefore both these operations are disallowed. ",
                 "children":null
             }
         ]
@@ -831,7 +859,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You could however assign a list element to a variable of type ",
+                "value":" However you can assign a list element to a variable of type ",
                 "children":null
             },
             {
@@ -845,7 +873,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" or use Java 10’s ",
+                "value":" or use Java 10's ",
                 "children":null
             },
             {
@@ -872,7 +900,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Interestingly unbounded wildcards are reified (unlike all other generics).  However this does not mean they know their type at runtime.  The truth is unbounded wildcards never know their type (even at compile time), so there is no type information to lose in the first place!",
+                "value":" Interestingly unbounded wildcards are reified (unlike all other generics) in the sense that they don't lose any type information at runtime.  However this does not mean they know their type at runtime.  The truth is unbounded wildcards never know their type (even at compile time), so there is no type information to lose in the first place!",
                 "children":null
             },
             {
@@ -891,7 +919,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The interesting behavior also spills over into bounded wildcards: ",
+                "value":" Interesting behavior spills over into bounded wildcards: ",
                 "children":null
             }
         ]
@@ -968,7 +996,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  You can see in the code above that using the subtype ",
+                "value":".  In the code above assigning the subtype ",
                 "children":null
             },
             {
@@ -982,7 +1010,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" for the assignment is valid but using the supertype ",
+                "value":" is valid but assigning the supertype ",
                 "children":null
             },
             {
@@ -1009,7 +1037,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The confusing part is what comes next.  When trying to add another integer to the array the operation will fail.  This is because it is impossible to guarantee that ",
+                "value":" The confusing part is what comes next.  Adding another integer to the list fails.  This is because its impossible to guarantee that ",
                 "children":null
             },
             {
@@ -1023,7 +1051,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is actually an array of ",
+                "value":" is actually a list of ",
                 "children":null
             },
             {
@@ -1065,7 +1093,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" or any subclass.  This means that is could be an integer, but it also could be a double, float, or some other complex number type.  There is simply no way of guaranteeing type safety, and once the code is compiled all type information will be lost. ",
+                "value":" or any subclass.  This means that is could be an integer, but it also could be a double, float, or some other complex number type.  There is simply no way of guaranteeing type safety, and once the code is compiled all type information is lost. ",
                 "children":null
             }
         ]
@@ -1078,7 +1106,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" However, you do know that the value returned from a list access call will be of type ",
+                "value":" However, it is known that the value of a list element is of type ",
                 "children":null
             },
             {
@@ -1119,7 +1147,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The other kind of unbounded wildcard can be any supertype: ",
+                "value":" Another kind of unbounded wildcard works with supertypes: ",
                 "children":null
             }
         ]
@@ -1140,7 +1168,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Here the opposite is true.  The syntax ",
+                "value":" The syntax ",
                 "children":null
             },
             {
@@ -1196,7 +1224,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". You can see in the code above that using the supertype ",
+                "value":". In the code above using the supertype ",
                 "children":null
             },
             {
@@ -1237,7 +1265,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When adding to the list the operation succeeds.  That is because it is guaranteed that adding an ",
+                "value":" Adding to the list works without error because an ",
                 "children":null
             },
             {
@@ -1251,7 +1279,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is a ",
+                "value":" is always a ",
                 "children":null
             },
             {
@@ -1279,7 +1307,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":").  This is thanks to polymorphism - an ",
+                "value":").  Thanks to polymorphism, an ",
                 "children":null
             },
             {
@@ -1307,7 +1335,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and it also is an ",
+                "value":" and an ",
                 "children":null
             },
             {
@@ -1334,7 +1362,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The reason why you cant read a value from the list and assign it to type ",
+                "value":" The type in the list still isn't guaranteed, and for that reason a list item can't be assigned to type ",
                 "children":null
             },
             {
@@ -1348,7 +1376,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is you cant guarantee what types are in the list.  For example, if the list contained ",
+                "value":".  For example, if the list contains ",
                 "children":null
             },
             {
@@ -1362,7 +1390,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" values the assignment statement would be invalid - an ",
+                "value":" values the assignment statement is invalid - an ",
                 "children":null
             },
             {
@@ -1424,7 +1452,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" As you can see their are a lot of different complexities with generics and how they differ from arrays. I never fully understood a lot of these quirks with generics, so I am happy I did a deep dive on the topic.  All the code from this discovery is on ",
+                "value":" There are a lot of different complexities with generics and how they differ from arrays. I never fully understood these quirks with generics, so I am happy I did a deep dive on the topic.  All the code from this discovery is on ",
                 "children":null
             },
             {
@@ -1437,7 +1465,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"Github",
+                        "value":"GitHub",
                         "children":null
                     }
                 ]
