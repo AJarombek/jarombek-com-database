@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When developers think of the JavaScript engines execution of code in the browser, thoughts of a single threaded event loop come to mind.  You often hear people say that JavaScript does not support multithreaded programming and that only one piece of code can run at a time.  What they are referring to is the event loop, which delegates browser events for execution one at a time. But is JavaScript really single threaded?  The answer to that question used to be \"it is hard to tell\" unless you had access to how exactly different browsers were executing the JavaScript code. Now with the Web Workers API the answer is without a doubt \"no\". ",
+                "value":" When developers think of the JavaScript engine executing code in the browser, thoughts of a single threaded event loop come to mind.  You often hear people say that JavaScript doesn't support multithreaded programming and that only one piece of code can run at a time.  What they are referring to is the event loop, which delegates browser events for execution one at a time. But is JavaScript really single threaded?  The answer used to be \"its hard to tell,\" unless you had access to how exactly different browsers executed JavaScript code. With the addition of Web Workers, the answer is \"no, JavaScript can run on multiple threads\". ",
                 "children":null
             }
         ]
@@ -29,7 +29,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Web Workers allow multithreaded JavaScript programming in the browser.  This discovery post will discuss the basics of what Web Workers are and give some sample code of their basic functionality. ",
+                "value":" Web Workers enable multithreaded JavaScript programming in the browser.  This discovery post discusses the basics of what Web Workers are and gives sample code of their basic functionality. ",
                 "children":null
             }
         ]
@@ -45,7 +45,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When developers think of the JavaScript engines execution of code in the browser, thoughts of a single threaded event loop come to mind.  You often hear people say that JavaScript does not support multithreaded programming and that only one piece of code can run at a time.  What they are referring to is the event loop, which delegates browser events for execution one at a time. But is JavaScript really single threaded?  The answer to that question used to be \"it is hard to tell\" unless you had access to how exactly different browsers were executing the JavaScript code. Now with the Web Workers API the answer is without a doubt \"no\". ",
+                "value":" When developers think of the JavaScript engine executing code in the browser, thoughts of a single threaded event loop come to mind.  You often hear people say that JavaScript doesn't support multithreaded programming and that only one piece of code can run at a time.  What they are referring to is the event loop, which delegates browser events for execution one at a time. But is JavaScript really single threaded?  The answer used to be \"its hard to tell,\" unless you had access to how exactly different browsers executed JavaScript code. With the addition of Web Workers, the answer is \"no, JavaScript can run on multiple threads\". ",
                 "children":null
             }
         ]
@@ -58,7 +58,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Web Workers allow multithreaded JavaScript programming in the browser.  This discovery post will discuss the basics of what Web Workers are and give some sample code of their basic functionality. ",
+                "value":" Web Workers enable multithreaded JavaScript programming in the browser.  This discovery post discusses the basics of what Web Workers are and gives sample code of their basic functionality. ",
                 "children":null
             }
         ]
@@ -86,7 +86,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" JavaScript code in the browser is executed in two different phases.  The first phase occurs when a webpage is first loaded.  At this phase the DOM is built from the HTML template and all the associated JavaScript code either inlined or in the ",
+                "value":" JavaScript browser code is executed in two different phases.  The first phase occurs when a webpage is first loaded.  At this phase the DOM is built from the HTML template and all the associated JavaScript code - either inlined or in ",
                 "children":null
             },
             {
@@ -100,7 +100,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" tags is executed",
+                "value":" tags - is executed",
                 "children":null
             },
             {
@@ -112,7 +112,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The ",
+                "value":".  ",
                 "children":null
             },
             {
@@ -166,7 +166,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  My guess is this JavaScript code is executed in a single thread since order must not be violated, although it is hard to say without seeing how the browsers work behind the scenes.  Either way, from the programmers view ",
+                "value":".  I'd guess this JavaScript code is executed in a single thread since order must not be violated, although its hard to say without seeing how the browsers work behind the scenes.  Either way, from the programmers view ",
                 "children":null
             },
             {
@@ -193,7 +193,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" At this stage all event handlers are set up.  These event handlers use the ",
+                "value":" During the first stage all event handlers are set up.  These event handlers use ",
                 "children":null
             },
             {
@@ -207,7 +207,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function from the DOM API to respond to DOM events",
+                "value":" from the DOM API to respond to DOM events",
                 "children":null
             },
             {
@@ -244,7 +244,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". Event handler functions are implemented with JavaScript and the DOM API.  Whenever an event occurs in the browser the event handler function is invoked.  The event is added to a FIFO event queue which JavaScript will handle one at a time. This is where the single threaded loop idea comes into play - JavaScript will only dispatch one event handler to be executed at a time. ",
+                "value":". Event handler functions are implemented with JavaScript and the DOM API.  Whenever an event occurs in the browser the event handler function is invoked.  The event is added to a FIFO event queue which JavaScript handles one at a time. This is where the single threaded loop idea comes into play - JavaScript only dispatches one event handler to be executed at a time. ",
                 "children":null
             }
         ]
@@ -257,7 +257,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I have read conflicting articles about whether or not JavaScript has multithreading when handling the event loop.  Some articles say that the JavaScript code that handles events is actually in multiple threads",
+                "value":" I've read conflicting articles about whether JavaScript has multithreading when handling the event loop.  Some articles say the JavaScript code that handles events is actually in multiple threads",
                 "children":null
             },
             {
@@ -269,7 +269,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Once again, even if there is some multithreaded JavaScript happening behind the scenes it is abstracted away from the developers view.  Everything must still pass through the single threaded event loop. ",
+                "value":".  Once again, even if there is multithreading happening behind the scenes it is abstracted away from the developers view.  Everything still passes through a single threaded event loop. ",
                 "children":null
             }
         ]
@@ -297,7 +297,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" So why are Web Workers a big deal?  Web Workers allow us to dispatch messages to a separate JavaScript thread for execution.  This means that the Web Worker isn't on the main thread and won't clog up the event queue.  Imagine you had a very long expensive computation occurring on the main thread. In this case most of the event queue would be filled with the resource intensive operation instead of focusing on responding to browser events.  This would make performance sluggish.  Imagine if it took a long time for the browser to respond to a button click or if animations on the webpage were lagging?  End users would not be happy. ",
+                "value":" So why are Web Workers a big deal?  Web Workers allow us to dispatch messages to a separate JavaScript thread for execution.  This means a Web Worker isn't on the main thread and doesn't clog up the event queue.  Imagine you had a very long expensive computation occurring on the main thread. In this case the event queue would be filled with the expensive computation instead of focusing on responding to browser events.  That would make performance sluggish.  Imagine if it took a long time for the browser to respond to a button click or if animations on the webpage were lagging?  End users would not be happy. ",
                 "children":null
             }
         ]
@@ -310,7 +310,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When using Web Workers you no longer have to worry about an operation using too much of the event queues capacity.  The Web Worker functions in an entirely separate thread.  The code for a web worker is in a separate file from the main threads JavaScript code.  In order to use the Web Worker, a new ",
+                "value":" When using Web Workers you no longer have to worry about an operation using too much of the event queues capacity.  Web Workers function in an entirely separate thread.  The code for a web worker exists in a separate file from the main threads JavaScript code.  In order to use a Web Worker, a new ",
                 "children":null
             },
             {
@@ -337,7 +337,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Web Workers wait for messages to come from the main thread and handle them once they arrive. The worker code performs some logic of its own and then passes a message back to the client. ",
+                "value":" Web Workers wait for a message to come from the main thread and handles it once it arrive. The worker code performs some logic and then passes the message back to the client. ",
                 "children":null
             }
         ]
@@ -399,7 +399,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The first thing I do in this code is access two DOM elements - the note input and the output. The input is where a user will enter a new note and the output will display the note with a timestamp. ",
+                "value":" The first thing I do in this code is access two DOM elements - the note input and the output. The input is where users enter a new note and the output displays the note with a timestamp. ",
                 "children":null
             }
         ]
@@ -488,7 +488,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" object check, I first created a web worker by invoking the ",
+                "value":" object check, I created a web worker by invoking the ",
                 "children":null
             },
             {
@@ -502,7 +502,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" constructor function. The path parameter is passed a URL argument with the location of the worker code",
+                "value":" constructor function. The path parameter contains the location of the worker code",
                 "children":null
             },
             {
@@ -514,7 +514,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". In this case I am just using the local ",
+                "value":". In this case I use a local ",
                 "children":null
             },
             {
@@ -624,7 +624,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", which corresponds to the enter key.  If the enter key is pressed, I get the input value (and clear its value from the DOM).  The input value is then sent as a message body to the Web Worker.  Messages are sent to the worker via the ",
+                "value":", which corresponds to the enter key.  If the enter key is pressed, I get the input value and clear the value from the DOM.  The input value is then sent as a message body to the Web Worker.  Messages are sent to the worker via the ",
                 "children":null
             },
             {
@@ -651,7 +651,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The second event listener waits for messages back from the Web Worker.  This listener can be implemented as a function on the Web Worker objects ",
+                "value":" The second event listener waits for messages back from the Web Worker.  This listener is implemented as a function on the Web Worker ",
                 "children":null
             },
             {
@@ -780,7 +780,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Just a quick reminder before moving forward, this would be an awful use case of a Web Worker! Workers are supposed to be used for extremely expensive tasks that clog the main threads event queue.  This implementation just demonstrates how they work in an educational sense. ",
+                "value":" Just a quick reminder before moving forward - this is an awful use case of a Web Worker! Workers are supposed to help relieve the event queue from extremely expensive tasks. This implementation just demonstrates how they work in an educational sense. ",
                 "children":null
             }
         ]
@@ -863,7 +863,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In order to get Web Workers to running a web server must be deployed.  An easy way to start a web server locally is to use the npm module \"serve.\"  Deploying a server with the serve module only takes one command",
+                "value":" For Web Workers to function a web server must be deployed.  An easy way to start a web server locally is to use the npm module \"serve.\"  Deploying a server with the serve module only takes one command",
                 "children":null
             },
             {

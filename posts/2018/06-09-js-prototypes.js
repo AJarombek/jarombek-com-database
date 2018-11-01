@@ -16,14 +16,16 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" For developers new to JavaScript understanding how prototypes work is quite confusing (myself included).  The construct itself is quite simple, however those of us used to class based object oriented programming have difficulty grasping JavaScripts object model.  This discovery post will attempt to clear up some of the confusing pieces of JavaScript prototypes and inheritance. ",
+                "value":" For developers new to JavaScript understanding how prototypes work is quite confusing (myself included).  The construct itself is quite simple, however those of us accustomed to class based object oriented programming have difficulty grasping JavaScripts object model.  This discovery post attempts to clear up some confusing pieces of JavaScript prototypes and inheritance. ",
                 "children":null
             }
         ]
     },
     {
-        "el":"h5",
-        "attributes":null,
+        "el":"sectiontitle",
+        "attributes":{
+            "title":"What is a Prototype"
+        },
         "value":null,
         "children":[
             {
@@ -45,7 +47,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" For developers new to JavaScript understanding how prototypes work is quite confusing (myself included).  The construct itself is quite simple, however those of us used to class based object oriented programming have difficulty grasping JavaScripts object model.  This discovery post will attempt to clear up some of the confusing pieces of JavaScript prototypes and inheritance. ",
+                "value":" For developers new to JavaScript understanding how prototypes work is quite confusing (myself included).  The construct itself is quite simple, however those of us accustomed to class based object oriented programming have difficulty grasping JavaScripts object model.  This discovery post attempts to clear up some confusing pieces of JavaScript prototypes and inheritance. ",
                 "children":null
             }
         ]
@@ -222,7 +224,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" So almost everything in JavaScript is an object with first class abilities.  Every object also has an internal property called ",
+                "value":" Almost everything in JavaScript is an object with first class abilities.  Every object in JavaScript has an internal property called ",
                 "children":null
             },
             {
@@ -884,7 +886,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" keyword does nothing, since it binds this to the function scope which no longer exists after the call is completed.  However, when ",
+                "value":" keyword does nothing, since it binds ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"this",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" to the function scope which no longer exists after the call is completed.  However, when ",
                 "children":null
             },
             {
@@ -1022,7 +1038,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The final line of the code accesses two of the properties on the prototype - ",
+                "value":" The final line of the code accesses two properties on the prototype - ",
                 "children":null
             },
             {
@@ -1050,7 +1066,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" - and prints them out.  You can see that the notation for accessing a prototype property is the same as accessing a base object property.  What is JavaScript doing behind the scenes to resolve variables on the prototype accessed through the base object instance? ",
+                "value":" - and prints them out.  The notation for accessing a prototype property is the same as accessing a base object property.  What is JavaScript doing behind the scenes to resolve variables on the prototype that are searched for on the base object instance? ",
                 "children":null
             }
         ]
@@ -1063,7 +1079,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When searching for a property or method in a JavaScript object, the first thing JavaScript does is search through the base object that the access is called upon.  If the method or property is not found on the base object, the search continues up the prototype chain.  The following diagram demonstrates a search JavaScript performs for the ",
+                "value":" When searching for a property or method in a JavaScript object, the first thing JavaScript does is search through the base object.  If the method or property is not found on the base object, the search continues up the prototype chain.  The following diagram demonstrates a search JavaScript performs for the ",
                 "children":null
             },
             {
@@ -1299,7 +1315,7 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"console.log()",
+                "value":"console.info()",
                 "children":null
             },
             {
@@ -1374,7 +1390,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" To fix the problem we can call the ",
+                "value":" To fix the problem I called ",
                 "children":null
             },
             {
@@ -1388,7 +1404,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function to add ",
+                "value":" to add ",
                 "children":null
             },
             {
@@ -1506,7 +1522,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In the examples so far every property was defined once in the prototype chain.  What would happen if a property or method was defined in multiple levels of the prototype chain?  Looking back at the diagram searching for the ",
+                "value":" In the examples so far every property was defined once in the prototype chain.  What would happen if a property or method was defined in multiple levels of the prototype chain?  Looking back at the diagram that searched for the ",
                 "children":null
             },
             {
@@ -1520,7 +1536,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" property, the search began at the base object and worked its way up the prototype chain.  If there are multiple instances of a property on a chain, the first time the search finds that property it will return its value, ignoring any property further up the chain.  This process is known as shadowing, since any properties further up the prototype chain are covered up by matching properties lower on the chain",
+                "value":" property, the search began at the base object and worked its way up the prototype chain.  If there are multiple instances of a property on a chain, the first time the search finds that property it returns its value, ignoring any properties further up the chain.  This process is known as shadowing, since any properties further up the prototype chain are covered up by matching properties lower on the chain",
                 "children":null
             },
             {
@@ -1607,7 +1623,7 @@ content = [
         "attributes":{
             "language":"Bash"
         },
-        "value":"Run {type: \"Run\", date: 1528548053295, surface: \"Grass\"}\nundefined:undefined on Grass\n",
+        "value":"Run 3.46 Miles in 20:33\n{print: ƒ}\nRun 4.11 Miles in 29:57\n",
         "children":null
     },
     {

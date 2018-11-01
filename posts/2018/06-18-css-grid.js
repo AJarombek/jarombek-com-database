@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I'll be honest - most of the time when I write CSS I just hack away at things until they work. Building layouts in CSS never seemed intuitive to me.  Other methods such as Androids XML layout system always seems more beginner friendly and powerful.  Luckily creating web layouts in CSS gets easier every year.  New features are added to CSS often, and in the past year a new layout method called CSS Grid was added to the language specification.  Now instead of using a library such as Bootstrap to manage page layouts, CSS has native support for easy grid layout management.  I used CSS Grid in my ",
+                "value":" I'll be honest - most of the time when I write CSS I just hack away at things until they work. Building layouts in CSS never seemed intuitive to me.  Other methods such as Androids XML layout system always seems more beginner friendly and powerful.  Luckily creating web layouts in CSS gets easier every year.  New features are added to CSS, and in the past year a new layout method called CSS Grid was added to the language specification.  Now instead of using a library such as Bootstrap to manage page layouts, CSS has native support for easy grid layout management.  I used CSS Grid in my ",
                 "children":null
             },
             {
@@ -58,13 +58,13 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" prototype back in March and applied it to every page on this website so far!  I think CSS Grid is a major enhancement to the CSS specification, providing an easier entry point to new developers.  This post will look into the basics of CSS Grid and act as a stepping stone for further CSS discoveries down the line. ",
+                "value":" prototype back in March and applied it to every page on this website so far!  I think CSS Grid is a major enhancement to the CSS specification, providing an easier entry point to new developers.  This post looks into the basics of CSS Grid and acts as a stepping stone for further CSS discoveries down the line. ",
                 "children":null
             }
         ]
     },
     {
-        "el":"sectiontitle",
+        "el":"h5",
         "attributes":{
             "title":"Before CSS Grid"
         },
@@ -89,7 +89,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I'll be honest - most of the time when I write CSS I just hack away at things until they work. Building layouts in CSS never seemed intuitive to me.  Other methods such as Androids XML layout system always seems more beginner friendly and powerful.  Luckily creating web layouts in CSS gets easier every year.  New features are added to CSS often, and in the past year a new layout method called CSS Grid was added to the language specification.  Now instead of using a library such as Bootstrap to manage page layouts, CSS has native support for easy grid layout management.  I used CSS Grid in my ",
+                "value":" I'll be honest - most of the time when I write CSS I just hack away at things until they work. Building layouts in CSS never seemed intuitive to me.  Other methods such as Androids XML layout system always seems more beginner friendly and powerful.  Luckily creating web layouts in CSS gets easier every year.  New features are added to CSS, and in the past year a new layout method called CSS Grid was added to the language specification.  Now instead of using a library such as Bootstrap to manage page layouts, CSS has native support for easy grid layout management.  I used CSS Grid in my ",
                 "children":null
             },
             {
@@ -131,7 +131,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" prototype back in March and applied it to every page on this website so far!  I think CSS Grid is a major enhancement to the CSS specification, providing an easier entry point to new developers.  This post will look into the basics of CSS Grid and act as a stepping stone for further CSS discoveries down the line. ",
+                "value":" prototype back in March and applied it to every page on this website so far!  I think CSS Grid is a major enhancement to the CSS specification, providing an easier entry point to new developers.  This post looks into the basics of CSS Grid and acts as a stepping stone for further CSS discoveries down the line. ",
                 "children":null
             }
         ]
@@ -159,7 +159,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" My software development journey began just two years ago in 2016 - so for the first 20 years of the CSS lifespan I was not around.  Recently however I had to write some HTML and CSS for an email template.  The HTML email I created is sent from this website when someone subscribes.   Going into development for the email I thought it would be an easy task - create a few ",
+                "value":" My software development journey began just two years ago in 2016 - so for the first 20 years of the CSS lifespan I was not around.  Recently however I had to write some HTML and CSS for an email template.  The HTML email I created is sent from this website when someone subscribes.   When I first began development on the email I thought it would be an easy task - create a few ",
                 "children":null
             },
             {
@@ -186,7 +186,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In order to get the email layout to work on all clients, the HTML had to be formatted only using ",
+                "value":" In order to get the email layout to work on all clients, the HTML had to be formatted using ",
                 "children":null
             },
             {
@@ -272,7 +272,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Luckily in recent years we didn't have to create our layouts as HTML tables or define element widths as HTML attributes.  We did it all in CSS!  Before CSS Grid (and after the 90's) creating layouts consisted of either playing around with the CSS ",
+                "value":" Luckily in recent years we didn't have to create layouts with HTML tables or define element widths as HTML attributes.  We did it all in CSS!  Before CSS Grid (and after the 90's) creating layouts consisted of either playing around with the CSS ",
                 "children":null
             },
             {
@@ -334,7 +334,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" in the fall of 2016, CSS Grid did not yet exist.  At that point I was a beginner to the extent that I didn't know bootstrap even existed.  If you look at most of the ",
+                "value":" in the fall of 2016, CSS Grid did not yet exist.  At that point I was a beginner and didn't know bootstrap existed.  If you look at most of the ",
                 "children":null
             },
             {
@@ -422,7 +422,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Luckily CSS has evolved and introduced two new ways to create layouts natively - flexbox and grid. This post is about CSS Grid and the power it gives us as developers and designers. ",
+                "value":" Luckily CSS has evolved and introduced two new ways to create layouts natively - flexbox and grid. This post is about CSS Grid and the power it gives developers and designers. ",
                 "children":null
             }
         ]
@@ -449,7 +449,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". CSS Grid replaces hacks such as CSS floats for creating layouts.  It also is more powerful when creating grid layouts than Flexbox, which is a one-dimensional layout system.  CSS Grid was first introduced in 2017 and is currently supported on ",
+                "value":". CSS Grid replaces hacks such as CSS floats for creating layouts.  It also is more powerful at creating grid layouts than Flexbox, which is a one-dimensional layout system.  CSS Grid was first introduced in 2017 and is currently supported on ",
                 "children":null
             },
             {
@@ -498,7 +498,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" To demonstrate how CSS grid works I designed a UI which will display different runs I went on this past week.  Before using CSS Grid, here is what the UI looks like: ",
+                "value":" To demonstrate how CSS grid works I designed a UI which displays different runs I went on this past week.  Before using CSS Grid, here is what the UI looked like: ",
                 "children":null
             }
         ]
@@ -557,7 +557,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and the rows are defined with ",
+                "value":" declarations and the rows are defined with ",
                 "children":null
             },
             {
@@ -655,7 +655,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" unit, which represents a fraction of the space in the CSS Grid container.  The ",
+                "value":" unit, which represents a fraction of the space in a CSS Grid container.  The ",
                 "children":null
             },
             {
@@ -731,7 +731,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In the initial CSS Grid layout I designed, the columns and rows are specified in each of the running logs CSS declaration blocks: ",
+                "value":" In the initial CSS Grid layout I designed, the columns and rows are specified in each running log: ",
                 "children":null
             }
         ]
@@ -916,7 +916,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" are really powerful in the sense that you can actually give unique identifiers to each line in between grid items.  These unique identifiers are then used within the grid items CSS declaration block for placement in the grid. Here are unique grid edge identifiers in action: ",
+                "value":" are powerful because you can give unique identifiers to each line in between grid items.  These unique identifiers are used within the grid items CSS declaration block for placement in the grid. Here are unique grid edge identifiers in action: ",
                 "children":null
             }
         ]

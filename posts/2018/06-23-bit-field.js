@@ -43,7 +43,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  It is common practice to use an unsigned integer data type of a specified length for a bit field.  For example, in C you could define a bit field as ",
+                "value":".  It is common practice to use an unsigned integer data type of a specified length for a bit field.  For example, in C you can define a bit field as ",
                 "children":null
             },
             {
@@ -100,7 +100,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  It is common practice to use an unsigned integer data type of a specified length for a bit field.  For example, in C you could define a bit field as ",
+                "value":".  It is common practice to use an unsigned integer data type of a specified length for a bit field.  For example, in C you can define a bit field as ",
                 "children":null
             },
             {
@@ -218,7 +218,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is used in the code, its occurance will be replaced with the definitions replacement text (ex. ",
+                "value":" is used in the code, its occurrence is replaced with the definitions replacement text (ex. ",
                 "children":null
             },
             {
@@ -232,7 +232,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" will be replaced by ",
+                "value":" is replaced with ",
                 "children":null
             },
             {
@@ -273,7 +273,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" A bit mask is a series of bits which can be used to perform operations on another series of bits. A mask can be used to check for the existence of certain bits or remove/add certain bits to a value",
+                "value":" A bit mask is a series of bits used to perform operations on another series of bits. A mask is commonly used to check for the existence of certain bits or remove/add certain bits to a value",
                 "children":null
             },
             {
@@ -380,7 +380,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  You can think of the bit field as a representation for a users privileges/status on an online website. ",
+                "value":".  The bit field represents a users privileges/status on an online website. ",
                 "children":null
             }
         ]
@@ -463,7 +463,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" will result in the middle bit being turned on - ",
+                "value":" results in the middle bit being turned on - ",
                 "children":null
             },
             {
@@ -504,7 +504,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" will turn off the middle bit, resulting in ",
+                "value":" turns off the middle bit, resulting in ",
                 "children":null
             },
             {
@@ -531,7 +531,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" To check if a bit is turned on in a bit field, a simple bitwise AND is used between the bit field and the mask.  If the value resulting from the bitwise AND is greater than 0, the bit was turned on in the field.  Otherwise, it was turned off.  For example, ",
+                "value":" To check if a bit is turned on in a bit field, a simple bitwise AND is used between the bit field and the mask.  If the value resulting from the bitwise AND is greater than 0, the bit is turned on in the field.  Otherwise, its turned off.  For example, ",
                 "children":null
             },
             {
@@ -545,7 +545,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" will check if the middle bit is turned on. Since the result is ",
+                "value":" checks if the middle bit is turned on. Since the result is ",
                 "children":null
             },
             {
@@ -573,7 +573,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", we know that the bit was turned on in the bit field. ",
+                "value":", we know that the bit is turned on in the bit field. ",
                 "children":null
             }
         ]
@@ -739,7 +739,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The next code performs operations on the user class, resulting in the same bit field changes as the C code. ",
+                "value":" The following code performs operations on the user class, similar to the C implementation. ",
                 "children":null
             }
         ]
@@ -875,7 +875,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" collection to store the fields.  The fields themselves are represented as enums.  This approach is not only type safe and more readable, but it also has the same performance as the non-safe integer approach. ",
+                "value":" collection to store the fields.  The fields themselves are represented as enums.  This approach is not only type safe and more readable, but  also has the same performance as the non-safe integer approach. ",
                 "children":null
             }
         ]
