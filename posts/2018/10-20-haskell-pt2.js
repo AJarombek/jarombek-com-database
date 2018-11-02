@@ -43,7 +43,7 @@ preview = [
         ]
     },
     {
-        "el":"sectiontitle",
+        "el":"h5",
         "attributes":{
             "title":"foldl and foldr"
         },
@@ -233,7 +233,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":") which the single returned value is reduced from.  The second argument is a base value (",
+                "value":") from which the single returned value is reduced.   The second argument is a base value (",
                 "children":null
             },
             {
@@ -275,7 +275,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" assists in building a reduced value.  How a reduced value is created depends on the third argument to fold, a function. ",
+                "value":" assists in building a reduced value.  How a reduced value is created depends on the third argument which is a function. ",
                 "children":null
             }
         ]
@@ -581,7 +581,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" has been recursively called enough times to exhaust the list, the base case is returned. This type of fold function is known as a ‘right fold’ since the computed result folds over from the right",
+                "value":" is recursively called enough times to exhaust the list, the base case is returned. This type of fold function is known as a 'right fold' since the computed result folds over from the right",
                 "children":null
             },
             {
@@ -593,7 +593,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Visually this is hard to picture, I’ll show you an example in a bit. ",
+                "value":".  Visually this is hard to picture so I'll show you an example in a bit. ",
                 "children":null
             }
         ]
@@ -606,7 +606,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The other type of fold is a ‘left fold’ which Haskell implements with the ",
+                "value":" The other type of fold is a ‘left fold' which Haskell implements with the ",
                 "children":null
             },
             {
@@ -1237,7 +1237,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In programming languages any expression that can be reduced or altered into a simpler or different value.  For example, a function invocation that requires work to be done is a reducible expression, while a constant value that doesn’t change is not",
+                "value":" In programming languages any expression that can be reduced or altered into a simpler or different value.  For example, a function invocation that requires work to be done is a reducible expression, while a constant value that doesn't change is not",
                 "children":null
             },
             {
@@ -1288,7 +1288,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" doesn’t encounter a reducible expression until ",
+                "value":" doesn't encounter a reducible expression until ",
                 "children":null
             },
             {
@@ -1302,7 +1302,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", and before the recursion reaches that point the stack was already out of memory on my machine. ",
+                "value":", and before the recursion reaches that point the stack is already out of memory on my machine. ",
                 "children":null
             }
         ]
@@ -1423,7 +1423,7 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"foldl’",
+                "value":"foldl'",
                 "children":null
             },
             {
@@ -1443,7 +1443,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" module.  It is implemented using a native ",
+                "value":" module.  Its implemented using a native ",
                 "children":null
             },
             {
@@ -1546,7 +1546,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In the example code so far I’ve used ",
+                "value":" In the example code so far I've used ",
                 "children":null
             },
             {
@@ -1574,10 +1574,18 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" to add up the contents of a list.  The following two use cases count the number of odd numbers in a list and divide the items in a list.  I wrote the examples using standard recursion first and then altered them to use the fold functions. ",
+                "value":" to add up the contents of a list.  The following two use cases count the odd numbers in a list and divide the items in a list.  I wrote these examples using standard recursion first and then altered them to use fold functions. ",
                 "children":null
             }
         ]
+    },
+    {
+        "el":"codesnippet",
+        "attributes":{
+            "language":"Haskell"
+        },
+        "value":"{-|\n  Count the number of odd numbers in a list using recursion\n-}\nodds :: Integral a => [a] -> a\nodds [] = 0\nodds (x:xs) = x `mod` 2 + odds xs\n\n{-|\n  Count the number of odd numbers using the foldr function\n-}\nodds' :: Integral a => [a] -> a\nodds' xs = foldr (+) 0 [x `mod` 2 | x <- xs]\n\n{-|\n  Count the number of odd numbers in a list using recursion that is associated to the left\n-}\nodds'' :: Integral a => [a] -> a\nodds'' list = calc_odds 0 list\n              where\n                calc_odds v [] = v\n                calc_odds v (x:xs) = calc_odds (v + (x `mod` 2)) xs\n\n{-|\n  Count the number of odd numbers using the foldl function\n-}\nodds''' :: Integral a => [a] -> a\nodds''' xs = foldl (+) 0 [x `mod` 2 | x <- xs]\n\n{-|\n  Divide the items in a list, basically creating a fraction out of the list\n-}\nfrac :: Integral a => [a] -> a\nfrac [] = 1\nfrac (x:xs) = x `div` frac(xs)\n\n{-|\n  Divide the items in a list using the foldr function\n-}\nfrac' :: Integral a => [a] -> a\nfrac' = foldr div 1\n\n{-|\n  Divide the items in a list using left associated recursion\n-}\nfrac'' :: Integral a => [a] -> a\nfrac'' (x:xs) = calc_frac x xs\n                where\n                  calc_frac v [] = v\n                  calc_frac v (x:xs) = calc_frac (v `div` x) xs\n\n{-|\n  Divide the items in a list using the foldl function\n-}\nfrac''' :: Integral a => [a] -> a\nfrac''' (x:xs) = foldl div x xs\n\nmain :: IO ()\nmain = do\n  print( odds [1,2,3] ) -- 2\n  print( odds [1,3,5,7,11,12] ) -- 5\n\n  print( odds'' [1,2,3] ) -- 2\n  print( odds'' [1,3,5,7,11,12] ) -- 5\n\n  print( frac [12, 3] ) -- 4\n  print( frac [20, 4, 2] ) -- 10 - first divide 4 by 2 = 2, then divide 20 by 2 = 10\n\n  print( frac'' [12, 3] ) -- 4\n  print( frac'' [20, 4, 2] ) -- 2\n",
+        "children":null
     },
     {
         "el":"sectiontitle",
@@ -1595,14 +1603,6 @@ content = [
         ]
     },
     {
-        "el":"codesnippet",
-        "attributes":{
-            "language":"Haskell"
-        },
-        "value":"{-|\n  Count the number of odd numbers in a list using recursion\n-}\nodds :: Integral a => [a] -> a\nodds [] = 0\nodds (x:xs) = x `mod` 2 + odds xs\n\n{-|\n  Count the number of odd numbers using the foldr function\n-}\nodds' :: Integral a => [a] -> a\nodds' xs = foldr (+) 0 [x `mod` 2 | x <- xs]\n\n{-|\n  Count the number of odd numbers in a list using recursion that is associated to the left\n-}\nodds'' :: Integral a => [a] -> a\nodds'' list = calc_odds 0 list\n              where\n                calc_odds v [] = v\n                calc_odds v (x:xs) = calc_odds (v + (x `mod` 2)) xs\n\n{-|\n  Count the number of odd numbers using the foldl function\n-}\nodds''' :: Integral a => [a] -> a\nodds''' xs = foldl (+) 0 [x `mod` 2 | x <- xs]\n\n{-|\n  Divide the items in a list, basically creating a fraction out of the list\n-}\nfrac :: Integral a => [a] -> a\nfrac [] = 1\nfrac (x:xs) = x `div` frac(xs)\n\n{-|\n  Divide the items in a list using the foldr function\n-}\nfrac' :: Integral a => [a] -> a\nfrac' = foldr div 1\n\n{-|\n  Divide the items in a list using left associated recursion\n-}\nfrac'' :: Integral a => [a] -> a\nfrac'' (x:xs) = calc_frac x xs\n                where\n                  calc_frac v [] = v\n                  calc_frac v (x:xs) = calc_frac (v `div` x) xs\n\n{-|\n  Divide the items in a list using the foldl function\n-}\nfrac''' :: Integral a => [a] -> a\nfrac''' (x:xs) = foldl div x xs\n\nmain :: IO ()\nmain = do\n  print( odds [1,2,3] ) -- 2\n  print( odds [1,3,5,7,11,12] ) -- 5\n\n  print( odds'' [1,2,3] ) -- 2\n  print( odds'' [1,3,5,7,11,12] ) -- 5\n\n  print( frac [12, 3] ) -- 4\n  print( frac [20, 4, 2] ) -- 10 - first divide 4 by 2 = 2, then divide 20 by 2 = 10\n\n  print( frac'' [12, 3] ) -- 4\n  print( frac'' [20, 4, 2] ) -- 2\n",
-        "children":null
-    },
-    {
         "el":"p",
         "attributes":null,
         "value":null,
@@ -1610,7 +1610,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Working with fold functions in Haskell helped show me the origin of the higher-order reduction functions found in many mainstream languages today.  The full code from this discovery post is on ",
+                "value":" Working with fold functions in Haskell showed me the origins of higher-order reduction functions found in many mainstream languages today.  The full code from this discovery post is on ",
                 "children":null
             },
             {
