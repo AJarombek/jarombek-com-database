@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Starting this summer I’ll be picking a programming language to look at in-depth every season.  The language may be one I’ve worked with before that I want more knowledge on or it may be a completely new language I have never explored.  For this summer, the language of choice is Groovy.  Groovy is a programming language run on the JVM that can be used alongside Java code",
+                "value":" Starting this summer I'll be picking a programming language to look at in-depth every season.  The language may be one I want more knowledge on or it may be a completely new language I've never explored.  For this summer, the language of choice is Groovy.  Groovy is a programming language run on the JVM that can be used alongside Java code",
                 "children":null
             },
             {
@@ -41,7 +41,28 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One of the main reasons I want to look at Groovy in more detail is because I am working on a project involving Jenkins at work.  I also always had an interest in the language as an alternative to Java.  This post will look at some of the basic syntax and features of Groovy that caught my eye after an hour or two of exploring.  It will serve as my first impressions of Groovy along with Part II.  After these two posts I will dig deeper into Groovy features and use it in Jenkins programs.  Now it is time to start exploring! ",
+                "value":" One of the main reasons I want to look at Groovy is my work on a project involving Jenkins at work.  I also always had an interest in the language as an alternative to Java.  This post looks at some basic features of Groovy that caught my eye after an hour or two of exploring.  This post and ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/jul-4-2018-groovy-basics-pt2"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"Part II",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" serve as my first impressions of Groovy.  After these two posts I'll dig deeper into Groovy features and use it in Jenkins programs.  Now its time to start exploring! ",
                 "children":null
             }
         ]
@@ -57,7 +78,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Starting this summer I’ll be picking a programming language to look at in-depth every season.  The language may be one I’ve worked with before that I want more knowledge on or it may be a completely new language I have never explored.  For this summer, the language of choice is Groovy.  Groovy is a programming language run on the JVM that can be used alongside Java code",
+                "value":" Starting this summer I'll be picking a programming language to look at in-depth every season.  The language may be one I want more knowledge on or it may be a completely new language I've never explored.  For this summer, the language of choice is Groovy.  Groovy is a programming language run on the JVM that can be used alongside Java code",
                 "children":null
             },
             {
@@ -82,7 +103,28 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One of the main reasons I want to look at Groovy in more detail is because I am working on a project involving Jenkins at work.  I also always had an interest in the language as an alternative to Java.  This post will look at some of the basic syntax and features of Groovy that caught my eye after an hour or two of exploring.  It will serve as my first impressions of Groovy along with Part II.  After these two posts I will dig deeper into Groovy features and use it in Jenkins programs.  Now it is time to start exploring! ",
+                "value":" One of the main reasons I want to look at Groovy is my work on a project involving Jenkins at work.  I also always had an interest in the language as an alternative to Java.  This post looks at some basic features of Groovy that caught my eye after an hour or two of exploring.  This post and ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/jul-4-2018-groovy-basics-pt2"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"Part II",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" serve as my first impressions of Groovy.  After these two posts I'll dig deeper into Groovy features and use it in Jenkins programs.  Now its time to start exploring! ",
                 "children":null
             }
         ]
@@ -110,7 +152,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The first thing you will notice about Groovy is its shortened syntax and allowance for dynamic typing.  No semicolons are needed after statements, and in some cases parenthesis around method invocations can be omitted.  The following code displays both dynamic typing and methods being called without parenthesis: ",
+                "value":" The first thing you will notice about Groovy is its shortened syntax and dynamic typing.  No semicolons are needed after statements, and in some cases parenthesis around method invocations can be omitted.  The following code displays both dynamic typing and methods being called without parenthesis: ",
                 "children":null
             }
         ]
@@ -137,7 +179,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Notice that no parenthesis are needed for the ",
+                "value":" No parenthesis are needed for the ",
                 "children":null
             },
             {
@@ -254,7 +296,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is redefined as a list.  Notice how concise the syntax is for creating a list in Groovy (although Java 9 did make list creation much quicker with the static factory method ",
+                "value":" is redefined as a list.  Notice how concise the syntax is for creating a list in Groovy (although Java 9 did make list creation much shorter with the static factory method ",
                 "children":null
             },
             {
@@ -309,7 +351,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", I will demonstrate some cool operations Groovy adds to the list manipulation arsenal.  One of the most interesting is the spread-dot operator ( ",
+                "value":", I'll demonstrate some cool operations Groovy adds for list manipulation.  One of the most interesting is the spread-dot operator (",
                 "children":null
             },
             {
@@ -444,7 +486,28 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is called a closure.  Closures in Groovy are not to be confused with ",
+                "value":" is called a closure.  ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/aug-16-2018-groovy-closures"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"Closures in Groovy",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" are not to be confused with ",
                 "children":null
             },
             {
@@ -465,7 +528,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" or similar languages.  Groovy’s closures are similar to those in ",
+                "value":" or similar languages.  Groovy's closures are similar to those in ",
                 "children":null
             },
             {
@@ -498,7 +561,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The syntax of Groovy closures may have you believe they are simply lambda functions from Java.  While the type of a Java lambda expression is an object that implements a functional interface, in Groovy closures are an object of type ",
+                "value":".  The syntax of Groovy closures may have you believe they are simply lambda functions from Java.  While the object type of a Java lambda expression is an object that implements a functional interface, in Groovy closures are an object of type ",
                 "children":null
             },
             {
@@ -599,7 +662,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Closures can also be bound to a variable.  In the following example, a closure is statically typed to a variable of type ",
+                "value":" Closures can also be bound to a variable.  In the following example, a closure is assigned  to a variable of type ",
                 "children":null
             },
             {
@@ -695,7 +758,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" method for collections which transforms each entry in the collection and produces a new list with the transformed values ",
+                "value":" method for collections which transforms each entry in the collection and produces a new list with the transformed values",
                 "children":null
             },
             {
@@ -707,7 +770,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The transformation is passed to ",
+                "value":". The transformation is passed to ",
                 "children":null
             },
             {
@@ -907,7 +970,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The following code shows off Groovy’s concise for loops.  Groovy also allows for number ranges both in loops and during data structure creation",
+                "value":" The following code shows off Groovy's concise ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"for",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" loops.  Groovy also allows for number ranges both in loops and during data structure creation",
                 "children":null
             },
             {
@@ -946,7 +1023,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Another really cool operator that Groovy has is the spaceship operator, declared with the ",
+                "value":" Groovy introduces the spaceship operator, declared with the ",
                 "children":null
             },
             {
@@ -960,7 +1037,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" syntax.  Spaceship operators are shorthand for Java’s ",
+                "value":" syntax.  Spaceship operators are shorthand for Java's ",
                 "children":null
             },
             {
@@ -1035,7 +1112,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". Basically we use comparison to define a logical ordering of objects, so the spaceship operator will compare objects based on an ordering written in the class definition.  Even better the spaceship operator performs these comparisons in a null-safe manner. ",
+                "value":". Basically comparison is used to define a logical ordering of objects, so the spaceship operator compares objects based on an ordering written in the class definition.  Even better the spaceship operator performs these comparisons in a null-safe manner. ",
                 "children":null
             }
         ]
@@ -1088,7 +1165,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  If it is truthy, that value is returned - otherwise a default value is returned. Basically you can use the elvis operator as a check if a variable is false and assign it a default value if that is the case. ",
+                "value":".  If its truthy, that value is returned - otherwise a default value is returned. Basically you can use the elvis operator as a check if a variable is false and assign it a default value if that is the case. ",
                 "children":null
             }
         ]

@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Reflection in Java was always a technique clouded in mystery for me.  There aren't many practical applications for reflection, so my personal code never really needed to use it.  It also didn't help that people often describe reflection as \"hard to learn\" and only for \"experienced developers.\"  It turns out reflection isn’t that complicated, although questions still remain of its usefulness in building applications. ",
+                "value":" Reflection in Java was always a technique clouded in mystery for me.  There aren't many practical applications for reflection, so my personal code never really needed to use it.  It also didn't help that people often describe reflection as \"hard to learn\" and only for \"experienced developers.\"  It turns out reflection isn't that complicated, although questions still remain of its usefulness in building applications. ",
                 "children":null
             }
         ]
@@ -57,7 +57,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Reflection in Java was always a technique clouded in mystery for me.  There aren't many practical applications for reflection, so my personal code never really needed to use it.  It also didn't help that people often describe reflection as \"hard to learn\" and only for \"experienced developers.\"  It turns out reflection isn’t that complicated, although questions still remain of its usefulness in building applications. ",
+                "value":" Reflection in Java was always a technique clouded in mystery for me.  There aren't many practical applications for reflection, so my personal code never really needed to use it.  It also didn't help that people often describe reflection as \"hard to learn\" and only for \"experienced developers.\"  It turns out reflection isn't that complicated, although questions still remain of its usefulness in building applications. ",
                 "children":null
             }
         ]
@@ -248,7 +248,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is used to inspect objects and classes that make up the ",
+                "value":" is used to inspect objects.  Classes that make up the ",
                 "children":null
             },
             {
@@ -275,7 +275,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now that type introspection and reflection are clearly defined, I will demonstrate some of the basic building blocks for using reflection in Java. ",
+                "value":" Now that type introspection and reflection are clearly defined, I will demonstrate the  basic building blocks of reflection in Java. ",
                 "children":null
             }
         ]
@@ -303,7 +303,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Let’s say we created an object in Java that is the string ",
+                "value":" Let's say we created the string ",
                 "children":null
             },
             {
@@ -317,7 +317,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  For starters we can perform type introspection on this object with the help of ",
+                "value":" as an object in Java. For starters we can perform type introspection on this object with the help of ",
                 "children":null
             },
             {
@@ -326,6 +326,12 @@ content = [
                     "class":"jarombek-inline-code"
                 },
                 "value":"Class",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
                 "children":null
             }
         ]
@@ -380,7 +386,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is called on our object. ",
+                "value":" is called on the object. ",
                 "children":null
             },
             {
@@ -408,7 +414,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", allowing access to the runtime class of any object.  This call is what gives us a ",
+                "value":", allowing access to the runtime class of any object.  It provides a ",
                 "children":null
             },
             {
@@ -435,7 +441,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Once we have an instance of ",
+                "value":" Once I have an instance of ",
                 "children":null
             },
             {
@@ -463,7 +469,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is called on the class instance.  Here we can see what modifiers are defined on the class.  ",
+                "value":" is called on the class instance.  ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"getModifiers()",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" provides the modifiers defined on the class.  ",
                 "children":null
             },
             {
@@ -505,7 +525,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" as shown here. ",
+                "value":" as shown in the output above. ",
                 "children":null
             }
         ]
@@ -518,7 +538,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" We also get the superclass of ",
+                "value":" I also get the superclass of ",
                 "children":null
             },
             {
@@ -587,7 +607,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" What if we wanted to do something a bit more involved.  For example, let’s say we want to perform type introspection on a method of ",
+                "value":" What if I wanted to do something a bit more involved.  For example, let's say I want to perform type introspection on a method of ",
                 "children":null
             },
             {
@@ -601,7 +621,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and then reflectively invoke it.  This can be done through Java’s reflective API.  The following code searches for the ",
+                "value":" and then reflectively invoke it.  This can be done through Java's reflective API.  The following code searches for the ",
                 "children":null
             },
             {
@@ -728,7 +748,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", a class in Java’s reflect API.  From the official Java documentation, ",
+                "value":", a class in Java's reflection API.  From the official Java documentation, ",
                 "children":null
             },
             {
@@ -782,7 +802,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" will call the method reflectively.  In the code above ",
+                "value":" calls the method reflectively.  In the code above ",
                 "children":null
             },
             {
@@ -823,7 +843,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Another thing you can do with type introspection is list all the methods in a class.  Then if you wanted, you could call these ",
+                "value":" Another thing you can do with type introspection is list all the methods in a class.  Then you could call these ",
                 "children":null
             },
             {
@@ -837,7 +857,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" instances reflectively.  The following code lists all the methods of the ",
+                "value":" instances reflectively.  The following code lists all the methods in the ",
                 "children":null
             },
             {
@@ -929,7 +949,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" if the construction failed or an ",
+                "value":" if construction failed or an ",
                 "children":null
             },
             {
@@ -943,7 +963,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" containing the instance if it succeeds. ",
+                "value":" containing the instance if construction succeeded. ",
                 "children":null
             }
         ]
@@ -964,7 +984,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Invoking the constructor will fail for primitives, since they are not objects and don’t have constructors.  The following code calls the ",
+                "value":" Invoking the constructor fails for primitives, since they are not objects and don't have constructors.  The following code calls the ",
                 "children":null
             },
             {
@@ -1046,7 +1066,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  While it is good to know reflection techniques are at your disposal, reflection in Java has many drawbacks that make it an unnecessary and poor practice in most cases. ",
+                "value":".  While its good to have reflection techniques at your disposal, reflection in Java has many drawbacks that make it an unnecessary and poor practice in most cases. ",
                 "children":null
             }
         ]
@@ -1059,7 +1079,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Method invocation through reflection is much slower than methods which are handled normally.  This is because the JVM can’t perform certain optimizations on types that are dynamically resolved like those from the reflection API",
+                "value":" Method invocation through reflection is much slower than methods handled normally.  This is because the JVM can't perform certain optimizations on types that are dynamically resolved like those from the reflection API",
                 "children":null
             },
             {
