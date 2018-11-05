@@ -86,3 +86,5 @@ load('./posts/2018/10-04-python-data-structures.js');
 load('./posts/2018/10-06-haskell-pt1.js');
 load('./posts/2018/10-09-unicode.js');
 load('./posts/2018/10-20-haskell-pt2.js');
+
+load('./posts/2018/11-06-haskell-pt3.js');

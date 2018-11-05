@@ -351,6 +351,42 @@ content = [
         ]
     },
     {
+        "el":"updateinfo",
+        "attributes":{
+            "date":"November 3rd, 2018"
+        },
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Curried functions and partial applications are also easy to make in JavaScript using  ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/blob/master/2018/08-Aug/8-27-groovy-currying/curry.js"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"ES6 arrow functions",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
+                "children":null
+            }
+        ]
+    },
+    {
         "el":"sectiontitle",
         "attributes":{
             "title":"Currying Groovy Closures"
