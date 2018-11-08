@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I often use function compositions which pass the result of one function to the argument of another function.  In many modern languages function compositions appear as chains of methods. In ",
+                "value":" I often use function compositions which pass the result of one function to the argument of another function.  In many modern languages function compositions appear as method chains. In ",
                 "children":null
             },
             {
@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function compositions are given their own language operator!  Using mathematical notation, the composition of two functions ",
+                "value":", function compositions are given their own language operator!  The composition of two functions ",
                 "children":null
             },
             {
@@ -75,7 +75,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is easily defined: ",
+                "value":" is easily defined using mathematical notation: ",
                 "children":null
             }
         ]
@@ -101,7 +101,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I often use function compositions which pass the result of one function to the argument of another function.  In many modern languages function compositions appear as chains of methods. In ",
+                "value":" I often use function compositions which pass the result of one function to the argument of another function.  In many modern languages function compositions appear as method chains. In ",
                 "children":null
             },
             {
@@ -122,7 +122,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function compositions are given their own language operator!  Using mathematical notation, the composition of two functions ",
+                "value":", function compositions are given their own language operator!  The composition of two functions ",
                 "children":null
             },
             {
@@ -160,7 +160,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is easily defined: ",
+                "value":" is easily defined using mathematical notation: ",
                 "children":null
             }
         ]
@@ -258,7 +258,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":") that are composed together to create a third function (",
+                "value":") and composes them together to create a third function (",
                 "children":null
             },
             {
@@ -300,7 +300,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Note that function ",
+                "value":".  Note that ",
                 "children":null
             },
             {
@@ -328,7 +328,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and function ",
+                "value":" and ",
                 "children":null
             },
             {
@@ -384,7 +384,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", and composed together they have the type ",
+                "value":", and composed together their type is ",
                 "children":null
             },
             {
@@ -446,7 +446,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" demonstrates how any number of functions can be composed together.  For more complex examples, you can look on my ",
+                "value":" demonstrates that any number of functions can be composed together.  For more complex examples, you can look on my ",
                 "children":null
             },
             {
@@ -495,7 +495,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In the beginning of this article I mentioned that function compositions are represented as method chains in most languages.  This is true for JavaScript, however its also possible to use a dot syntax similar to Haskell.  Dot syntax is possible since JavaScript is flexible about the amount of space around the member operator",
+                "value":" In the beginning of this article I mentioned that function compositions are represented as method chains in most languages.  While true for JavaScript, its also possible to use a dot syntax similar to Haskell.  Dot syntax is available since JavaScript is flexible about the amount of space around the member operator",
                 "children":null
             },
             {
@@ -598,7 +598,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" has two methods for creating function compositions: ",
+                "value":" contains two methods for creating function compositions: ",
                 "children":null
             },
             {
@@ -620,13 +620,13 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"andThen",
+                "value":"andThen()",
                 "children":null
             },
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". The only difference between the two methods is the ordering in which the composition operates. ",
+                "value":". The only difference between them is the ordering in which the composition operates. ",
                 "children":null
             }
         ]

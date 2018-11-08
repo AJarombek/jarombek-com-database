@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" D3 (Data Driven Documents) is a JavaScript library for creating data visualizations in the web.  One of the challenges with D3 is integrating it with the ",
+                "value":" D3 (Data Driven Documents) is a JavaScript library for creating data visualizations on the web.  One of the challenges with D3 is integrating it with ",
                 "children":null
             },
             {
@@ -29,7 +29,7 @@ preview = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":" React",
+                        "value":" React.js",
                         "children":null
                     }
                 ]
@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" front-end JavaScript library.  Complications occur because both React and D3 work by manipulating the DOM, and React manipulates the DOM through a layer of abstraction called the ",
+                "value":", a front-end JavaScript library written by Facebook.  Complications occur because both React and D3 work by manipulating the DOM, and React manipulates the DOM through a layer of abstraction called the ",
                 "children":null
             },
             {
@@ -83,7 +83,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Luckily I’m not the first person to encounter the issue of integrating React and D3.  There are many solutions, and I chose to use a library called ",
+                "value":" Luckily I'm not the first person to encounter the issue of integrating React and D3.  There are many solutions, and I chose to use a library called ",
                 "children":null
             },
             {
@@ -104,7 +104,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  React-faux-dom creates its own \"fake\" DOM implementation so that D3 thinks its working with the real DOM",
+                "value":".  React-faux-dom creates a \"fake\" DOM implementation, tricking D3 into thinking its working with the real DOM",
                 "children":null
             },
             {
@@ -132,7 +132,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" D3 (Data Driven Documents) is a JavaScript library for creating data visualizations in the web.  One of the challenges with D3 is integrating it with the ",
+                "value":" D3 (Data Driven Documents) is a JavaScript library for creating data visualizations on the web.  One of the challenges with D3 is integrating it with ",
                 "children":null
             },
             {
@@ -145,7 +145,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":" React",
+                        "value":" React.js",
                         "children":null
                     }
                 ]
@@ -153,7 +153,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" front-end JavaScript library.  Complications occur because both React and D3 work by manipulating the DOM, and React manipulates the DOM through a layer of abstraction called the ",
+                "value":", a front-end JavaScript library written by Facebook.  Complications occur because both React and D3 work by manipulating the DOM, and React manipulates the DOM through a layer of abstraction called the ",
                 "children":null
             },
             {
@@ -199,7 +199,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Luckily I’m not the first person to encounter the issue of integrating React and D3.  There are many solutions, and I chose to use a library called ",
+                "value":" Luckily I'm not the first person to encounter the issue of integrating React and D3.  There are many solutions, and I chose to use a library called ",
                 "children":null
             },
             {
@@ -220,7 +220,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  React-faux-dom creates its own \"fake\" DOM implementation so that D3 thinks its working with the real DOM",
+                "value":".  React-faux-dom creates a \"fake\" DOM implementation, tricking D3 into thinking its working with the real DOM",
                 "children":null
             },
             {
@@ -318,7 +318,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" to reduce the time spent starting up my React project.  I created a ",
+                "value":" to reduce the startup time for my React project.  I built a ",
                 "children":null
             },
             {
@@ -353,7 +353,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" which sets up buttons for navigating between weeks in the bar graph. ",
+                "value":" which creates buttons for navigating between weeks in the bar graph. ",
                 "children":null
             }
         ]
@@ -374,7 +374,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The module ",
+                "value":" The imported module ",
                 "children":null
             },
             {
@@ -388,7 +388,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" contains the miles run each day along with a rating of how the run felt from 0-9.  The daily statistics are grouped by week. ",
+                "value":" contains daily running mileage along with ratings of how each run felt from 0-9.  The daily statistics are grouped by week. ",
                 "children":null
             }
         ]
@@ -454,7 +454,7 @@ content = [
         "attributes":{
             "language":"JavaScript"
         },
-        "value":"class Graph extends React.Component {\n\n  constructor() {\n    super();\n\n    // Colors for the bars which are indexed based on the feel property\n    const colors = [\n      ...\n    ];\n\n    this.state = {\n      colors,\n      graphWidth: 800,\n      graphHeight: 300,\n      graphPaddingBottom: 30\n    }\n  }\n\n  static propTypes = {\n    data: PropTypes.array.isRequired\n  };\n\n  static defaultProps = {\n    data: [],\n    chart: 'loading'\n  };\n\n  /**\n   * Called when the component first mounts.  At this point the initial graph is created.\n   */\n  componentDidMount() {\n    console.info('Inside Graph componentDidMount');\n    this.generateGraph(this.props);\n  }\n\n  /**\n   * Called when new props are passed to the component.  Check to see if the new props contains\n   * new graph data.  If so, generate a new graph.  Otherwise ignore the new props.\n   * @param nextProps - the new props passed to the component.\n   */\n  componentWillReceiveProps(nextProps) {\n    console.info('Inside Graph componentWillReceiveProps');\n    if (this.props.data !== nextProps.data) {\n      console.info('Received New Props');\n      this.updateGraph(nextProps);\n    }\n  }\n\n  /**\n   * Use D3 to Generate a Graph\n   * @param props - the React component props containing data to populate the graph with\n   */\n  generateGraph(props) {\n    ...\n  }\n\n  /**\n   * Use D3 to update the graph\n   * @param props - the React component props containing data to populate the graph with\n   */\n  updateGraph(props) {\n    ...\n  }\n\n  /**\n   * Render the JSX\n   */\n  render() {\n    return (\n      <div className=\"graph\">\n        {this.props.chart}\n      </div>\n    );\n  }\n}\n\nexport default withFauxDOM(Graph);\n",
+        "value":"class Graph extends React.Component {\n\n  constructor() {\n    super();\n\n    // Colors for the bars which are indexed based on the feel property\n    const colors = [\n      ...\n    ];\n\n    this.state = {\n      colors,\n      graphWidth: 800,\n      graphHeight: 300,\n      graphPaddingBottom: 30\n    }\n  }\n\n  static propTypes = {\n    data: PropTypes.array.isRequired\n  };\n\n  static defaultProps = {\n    data: [],\n    chart: 'loading'\n  };\n\n  /**\n   * Called when the component first mounts.  At this point the initial graph is created.\n   */\n  componentDidMount() {\n    this.generateGraph(this.props);\n  }\n\n  /**\n   * Called when new props are passed to the component.  Check to see if the new props contains\n   * new graph data.  If so, generate a new graph.  Otherwise ignore the new props.\n   * @param nextProps - the new props passed to the component.\n   */\n  componentWillReceiveProps(nextProps) {\n    if (this.props.data !== nextProps.data) {\n      console.info('Received New Props');\n      this.updateGraph(nextProps);\n    }\n  }\n\n  /**\n   * Use D3 to Generate a Graph\n   * @param props - the React component props containing data to populate the graph with\n   */\n  generateGraph(props) {\n    ...\n  }\n\n  /**\n   * Use D3 to update the graph\n   * @param props - the React component props containing data to populate the graph with\n   */\n  updateGraph(props) {\n    ...\n  }\n\n  /**\n   * Render the JSX\n   */\n  render() {\n    return (\n      <div className=\"graph\">\n        {this.props.chart}\n      </div>\n    );\n  }\n}\n\nexport default withFauxDOM(Graph);\n",
         "children":null
     },
     {
@@ -462,12 +462,6 @@ content = [
         "attributes":null,
         "value":null,
         "children":[
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" Calling ",
-                "children":null
-            },
             {
                 "el":"code",
                 "attributes":{
@@ -554,7 +548,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://jarombek.com/\nblog/nov-8-2018-react-d3-pt2"
+                    "href":"https://jarombek.com/\nblog/nov-10-2018-react-d3-pt2"
                 },
                 "value":null,
                 "children":[
