@@ -62,7 +62,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". The D3 library provides methods that are easily chained to bind data to elements in the browser. ",
+                "value":". D3 provides methods that are easily chained to bind data to elements in the browser. ",
                 "children":null
             }
         ]
@@ -124,7 +124,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". The D3 library provides methods that are easily chained to bind data to elements in the browser. ",
+                "value":". D3 provides methods that are easily chained to bind data to elements in the browser. ",
                 "children":null
             }
         ]
@@ -137,7 +137,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Let’s take a look at the code used to produce the bar graph D3 data visualization.  I created a bar chart representing the number of miles I ran each day.  The colors of the bars represent how I felt on the run. ",
+                "value":" Let's take a look at the code used to produce the D3 data visualization.  I created a bar chart representing the number of miles I ran each day.  The colors of the bars represent how I felt on each run. ",
                 "children":null
             }
         ]
@@ -248,7 +248,7 @@ content = [
         "attributes":{
             "language":"JavaScript"
         },
-        "value":"class Graph extends React.Component {\n\n  constructor() {\n    ...\n  }\n\n  /**\n   * Called when the component first mounts.  At this point the initial graph is created.\n   */\n  componentDidMount() {\n    this.generateGraph(this.props);\n  }\n\n  /**\n   * Called when new props are passed to the component.\n   */\n  componentWillReceiveProps(nextProps) {\n    this.updateGraph(nextProps);\n  }\n\n  /**\n   * Use D3 to Generate a Graph\n   * @param props - the React component props containing data to populate the graph with\n   */\n  generateGraph(props) {\n    ...\n  }\n\n  /**\n   * Use D3 to update the graph\n   * @param props - the React component props containing data to populate the graph with\n   */\n  updateGraph(props) {\n    ...\n  }\n\n  /**\n   * Render the JSX\n   */\n  render() {\n    ...\n  }\n}\n",
+        "value":"class Graph extends React.Component {\n\n  constructor() {\n    ...\n  }\n\n  /**\n   * Called when the component first mounts.  At this point the initial graph is created.\n   */\n  componentDidMount() {\n    this.generateGraph(this.props);\n  }\n\n  /**\n   * Called when new props are passed to the component.\n   */\n  componentWillReceiveProps(nextProps) {\n    this.updateGraph(nextProps);\n  }\n\n  /**\n   * Use D3 to generate a Graph\n   * @param props - the React component props containing data to populate the graph with\n   */\n  generateGraph(props) {\n    ...\n  }\n\n  /**\n   * Use D3 to update the graph\n   * @param props - the React component props containing data to populate the graph with\n   */\n  updateGraph(props) {\n    ...\n  }\n\n  /**\n   * Render the JSX\n   */\n  render() {\n    ...\n  }\n}\n",
         "children":null
     },
     {
@@ -287,7 +287,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" use component state variables.  State variables are created in the component constructor, holding information such as the height and width of the graph along with colors for the bars. ",
+                "value":" use component state variables.  State variables are created in the component constructor, holding information such as the height and width of the graph along with bar colors. ",
                 "children":null
             }
         ]
@@ -297,7 +297,7 @@ content = [
         "attributes":{
             "language":"JavaScript"
         },
-        "value":"constructor() {\n  super();\n\n  // Colors for the bars which are indexed based on the feel property\n  const colors = [\n    'rgb(153, 0, 0)',\n    'rgba(204, 0, 0, .4)',\n    'rgba(255, 51, 0, .4)',\n    'rgba(204, 102, 0, .4)',\n    'rgba(255, 153, 0, .4)',\n    'rgba(255, 255, 51, .4)',\n    'rgba(187, 187, 187, .4)',\n    'rgba(115, 230, 0, .4)',\n    'rgba(0, 153, 0, .4)',\n    'rgba(0, 102, 0, .4)',\n    'rgba(26, 26, 255, .4)'\n  ];\n\n  this.state = {\n    colors,\n    graphWidth: 800,\n    graphHeight: 300,\n    graphPaddingBottom: 30\n  }\n}\n",
+        "value":"constructor() {\n  super();\n\n  // Colors for the bars which are indexed based on the property 'feel'\n  const colors = [\n    'rgb(153, 0, 0)',\n    'rgba(204, 0, 0, .4)',\n    'rgba(255, 51, 0, .4)',\n    'rgba(204, 102, 0, .4)',\n    'rgba(255, 153, 0, .4)',\n    'rgba(255, 255, 51, .4)',\n    'rgba(187, 187, 187, .4)',\n    'rgba(115, 230, 0, .4)',\n    'rgba(0, 153, 0, .4)',\n    'rgba(0, 102, 0, .4)',\n    'rgba(26, 26, 255, .4)'\n  ];\n\n  this.state = {\n    colors,\n    graphWidth: 800,\n    graphHeight: 300,\n    graphPaddingBottom: 30\n  }\n}\n",
         "children":null
     },
     {
@@ -332,7 +332,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is invoked once the React component is mounted. It binds an  initial D3 graph to an HTML element in the DOM.  The D3 graph is populated with data from the React component props.  Since React.js uses a virtual DOM, I’m using a npm module called ",
+                "value":" is invoked once the React component is mounted. It binds an  initial D3 graph to an HTML element in the DOM.  The D3 graph is populated with data from the React component props.  Since React.js uses a virtual DOM, I'm using a npm module called ",
                 "children":null
             },
             {
@@ -353,7 +353,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" that tricks D3 into thinking its bound to the actual DOM.  In reality, it’s bound to React’s Virtual DOM.  I spoke more about react-faux-dom in my first ",
+                "value":" that tricks D3 into thinking its bound to the actual DOM.  In reality, it's bound to React's Virtual DOM.  I spoke more about react-faux-dom in my first ",
                 "children":null
             },
             {
@@ -415,7 +415,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" object to create a container for D3 on react-faux-dom’s “fake” DOM.  This is accomplished with the ",
+                "value":" object to create a container for D3 on react-faux-dom's \"fake\" DOM.  This is accomplished with the ",
                 "children":null
             },
             {
@@ -450,7 +450,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Once D3 is connected to the “fake” DOM, all the standard D3 methods can be used.  After ",
+                "value":" Once D3 is connected to the \"fake\" DOM, all the standard D3 methods can be used.  After ",
                 "children":null
             },
             {
@@ -499,7 +499,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" creates a new SVG DOM element and appends it to the “fake” DOM",
+                "value":" creates a new SVG DOM element and appends it to the \"fake\" DOM",
                 "children":null
             },
             {
@@ -633,7 +633,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" SVG is a vector image format written in XML.  SVG’s are two dimensional graphics, and are often drawn in software such as Adobe Illustrator (although creating them with XML in a text editor is also possible). Vector images like SVG scale without loss of quality and are stored as 2D points, lines, and other shapes on an axis",
+                "value":" SVG is a vector image format written in XML.  SVG's are two dimensional graphics that are often drawn in software such as Adobe Illustrator (although creating them with XML in a text editor is also possible). Vector images like SVG scale without loss of quality and are stored as 2D points, lines, and other shapes on an axis",
                 "children":null
             },
             {
@@ -658,7 +658,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Inside the SVG canvas I added other shapes.  The first group of shapes represented the rectangle bars of the bar graph. ",
+                "value":" Inside the SVG canvas I added other shapes.  The first group of shapes represent rectangular bars used in the bar graph. ",
                 "children":null
             }
         ]
@@ -679,7 +679,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This method chain starts with the SVG canvas ",
+                "value":" This method chain starts with the variable ",
                 "children":null
             },
             {
@@ -693,7 +693,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Next I selected all the SVG ",
+                "value":" which contains the SVG canvas.  Next I selected all the SVG ",
                 "children":null
             },
             {
@@ -727,7 +727,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  These rectangles don’t exist yet, but they will soon.  ",
+                "value":".  These rectangles don't exist yet, but they will soon.  ",
                 "children":null
             },
             {
@@ -755,7 +755,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" declares that new elements will be created for each piece of data, and ",
+                "value":" declares that new elements are created for each piece of data, and ",
                 "children":null
             },
             {
@@ -817,7 +817,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The functions passed as arguments to the ",
+                "value":" The arrow functions passed as arguments to ",
                 "children":null
             },
             {
@@ -831,7 +831,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" methods utilize D3 scales to help determine the size of the bar graph rectangles.  If you want to observe the scales in more detail you can check out the full ",
+                "value":" utilize D3 scales to help determine the size of the bar graph rectangles.  If you want to observe the scales in more detail you can check out the full ",
                 "children":null
             },
             {
@@ -865,7 +865,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The next code chain adds an SVG text element above every bar.  Text elements form a label displaying the number of miles run on a given day. ",
+                "value":" The next code chain places a SVG text element above every bar.  Text elements form a label displaying the number of miles run on a given day. ",
                 "children":null
             }
         ]
@@ -969,7 +969,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The final method chain generate a group of SVG elements that create an x-axis for the bar graph. ",
+                "value":" The final method chain generates a group of SVG elements that create an x-axis for the bar graph. ",
                 "children":null
             }
         ]
@@ -1083,7 +1083,7 @@ content = [
         "attributes":{
             "language":"JavaScript"
         },
-        "value":"/**\n * Create a D3 X-Axis\n * @param data - all the data in the graph.  The length of the data is used in the x-axis\n * scale, and the dates in the data are displayed on the axis.\n * @param width - the width of the Graph\n * @return {*}\n */\nstatic createXAxis(data, width) {\n  // A D3 Scale for the width of the x-axis of the graph\n  const xAxisScale = d3.scaleTime()\n    .domain([\n      d3.min(data, (d) => d.date),\n      d3.max(data, (d) => d.date)\n    ])\n    .range([\n      (width / data.length) / 2,\n      width - (width / data.length) / 2\n    ]);\n\n  // A format for the date displayed on each x-axis tick mark\n  const dayOfWeek = d3.timeFormat(\"%a, %b. %d\");\n\n  return d3.axisBottom()\n    .scale(xAxisScale)\n    .ticks(7)\n    .tickFormat(dayOfWeek);\n}\n",
+        "value":"/**\n * Create a D3 X-Axis\n * @param data - all the data in the graph.  The length of the data is used in the x-axis\n * scale, and the dates in the data are displayed on the axis.\n * @param width - the width of the Graph\n * @return {*}\n */\nstatic createXAxis(data, width) {\n  // A D3 Scale for the width of the x-axis\n  const xAxisScale = d3.scaleTime()\n    .domain([\n      d3.min(data, (d) => d.date),\n      d3.max(data, (d) => d.date)\n    ])\n    .range([\n      (width / data.length) / 2,\n      width - (width / data.length) / 2\n    ]);\n\n  // A format for the date displayed on each x-axis tick mark\n  const dayOfWeek = d3.timeFormat(\"%a, %b. %d\");\n\n  return d3.axisBottom()\n    .scale(xAxisScale)\n    .ticks(7)\n    .tickFormat(dayOfWeek);\n}\n",
         "children":null
     },
     {
@@ -1108,7 +1108,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" builds a D3 scale.  In the previous method chains I referred you to the source code when encountering scales, but here I’ll give a bit more explanation.  A scale maps a range of possible input values to a range of possible output values",
+                "value":" builds a D3 scale.  In the previous method chains I referred you to the source code when encountering scales, but here I'll give more explanation.  A scale maps a range of possible input values to a range of possible output values",
                 "children":null
             },
             {
@@ -1147,7 +1147,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" appropriately fits into the domain.  We could scale this list to values between zero and one by creating a range of 0 to 1.  After the scale is executed over the data, ",
+                "value":"  fits into this domain.  This list is scaled to values between zero and one by creating a range of 0 to 1.  After the scale is executed over the data, ",
                 "children":null
             },
             {
@@ -1501,7 +1501,9 @@ content = [
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
                 "value":"updateGraph()",
                 "children":null
             },
@@ -1613,7 +1615,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"!  I can’t wait to use D3 on this website to showcase my ",
+                "value":"!  I can't wait to use D3 on this website to showcase my ",
                 "children":null
             },
             {
