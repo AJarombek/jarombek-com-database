@@ -31,7 +31,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" provides multiple ways to declare a type.  Some types are simply aliases for existing types, but some are completely new.  This post explains the difference between the three mechanisms for creating types in Haskell. ",
+                "value":" provides multiple ways to declare types.  Some types are simply aliases for existing types, while some are completely new.  This post explains the differences between the three mechanisms for creating types in Haskell. ",
                 "children":null
             }
         ]
@@ -48,6 +48,73 @@ preview = [
                 "el":"#text",
                 "attributes":null,
                 "value":"type",
+                "children":null
+            }
+        ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" The first keyword for declaring types in Haskell is ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"type",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"type",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" creates an alias for an existing type (also commonly called a type synonym)",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  For example, the following code creates a type ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"Song",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" which is an alias for a tuple containing a string and a list of strings. ",
                 "children":null
             }
         ]
@@ -78,7 +145,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" provides multiple ways to declare a type.  Some types are simply aliases for existing types, but some are completely new.  This post explains the difference between the three mechanisms for creating types in Haskell. ",
+                "value":" provides multiple ways to declare types.  Some types are simply aliases for existing types, while some are completely new.  This post explains the differences between the three mechanisms for creating types in Haskell. ",
                 "children":null
             }
         ]
@@ -188,7 +255,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Type aliases cas also include type variables.  Type variables are represented by a lowercase letter or word and declare a type to be polymorphic",
+                "value":" Type aliases can also include type variables.  Type variables are represented by a lowercase letter or word and declare a type to be polymorphic",
                 "children":null
             },
             {
@@ -249,7 +316,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" as long as all the elements are of the same type.  The next code sample contains three tuples.  The first two are valid ",
+                "value":" as long as all the elements are of the same type.  The next code sample's ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"main",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" function contains three tuples.  The first two are valid ",
                 "children":null
             },
             {
@@ -385,7 +466,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is read as “ExerciseType equals Run or Swim or Bike.”  ",
+                "value":" is read as \"ExerciseType equals Run or Swim or Bike.\"  ",
                 "children":null
             },
             {
@@ -427,7 +508,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" are called constructors.  Constructor names must be unique across all types, so the following code would be illegal",
+                "value":" are called constructors.  Constructor names must be unique across all types, so the following code is illegal",
                 "children":null
             },
             {
@@ -460,7 +541,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Constructors have no meaning when declared.  However, as developers we can give them meaning through the way they interact with existing types. ",
+                "value":" Constructors have no meaning when declared.  However, as developers we give them meaning through the way they interact with existing types. ",
                 "children":null
             }
         ]
@@ -473,7 +554,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Constructors can also have arguments.  The type of the arguments can be either concrete types or type aliases.  When creating a value that matches a type, the arguments are mandatory.  Constructors that take arguments are known as constructor functions, which are the same as regular functions except with no body",
+                "value":" Constructors can also have arguments.  The type of the arguments can be concrete types or type aliases.  When creating a value that matches a type, the arguments are mandatory.  Constructors that take arguments are known as constructor functions, which are the same as regular functions except with no body",
                 "children":null
             },
             {
@@ -485,7 +566,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Constructor functions simply collect data and define it as a type. ",
+                "value":".  Constructor functions simply collect data and enforce the data type. ",
                 "children":null
             }
         ]
@@ -528,7 +609,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" keyword can become an instance of multiple classes.  Each class contains operations that can be performed on a value of a type, such as checking for equality between two values or converting a value to a string",
+                "value":" keyword can become instances of multiple classes.  Each class contains operations for use on instances, such as checking for equality between two values or converting a value to a string",
                 "children":null
             },
             {
@@ -553,7 +634,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Haskell classes are beyond the scope of this post, but there is a shortcut for making types an instance of common classes in the ",
+                "value":" Haskell classes are beyond the scope of this post, but there is a shortcut for making instances of common classes in the ",
                 "children":null
             },
             {
@@ -712,7 +793,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" allows types to be converted into a string while ",
+                "value":" allows ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"ExerciseType",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" to be converted into a string while ",
                 "children":null
             },
             {
@@ -726,7 +821,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" allows strings to be converted into a type. ",
+                "value":" allows strings to be converted into an ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"ExerciseType",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
                 "children":null
             }
         ]
