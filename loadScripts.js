@@ -91,3 +91,4 @@ load('./posts/2018/11-06-haskell-pt3.js');
 load('./posts/2018/11-07-react-d3-pt1.js');
 load('./posts/2018/11-10-react-d3-pt2.js');
 load('./posts/2018/11-17-haskell-pt4.js');
+load('./posts/2018/11-24-angular-lifecycles.js');
