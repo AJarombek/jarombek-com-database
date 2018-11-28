@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When I first learned AngularJS on my ",
+                "value":" When I learned AngularJS on my ",
                 "children":null
             },
             {
@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" (June 2017), the biggest adjustment from JQuery was the libraries lifecycles. With modern front-end libraries and frameworks such as ",
+                "value":" (June 2017), the biggest adjustment from JQuery was the addition of lifecycles for webpages. With modern front-end libraries and frameworks such as ",
                 "children":null
             },
             {
@@ -110,7 +110,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When I first learned AngularJS on my ",
+                "value":" When I learned AngularJS on my ",
                 "children":null
             },
             {
@@ -131,7 +131,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" (June 2017), the biggest adjustment from JQuery was the libraries lifecycles. With modern front-end libraries and frameworks such as ",
+                "value":" (June 2017), the biggest adjustment from JQuery was the addition of lifecycles for webpages. With modern front-end libraries and frameworks such as ",
                 "children":null
             },
             {
@@ -201,7 +201,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" As I’ve discussed in ",
+                "value":" As I've discussed in ",
                 "children":null
             },
             {
@@ -298,7 +298,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Both Angular components and directives have lifecycles.  A common implementation of directives is a spy",
+                "value":" Both Angular components and directives have lifecycles.  A common implementation of directives with lifecycles are spies",
                 "children":null
             },
             {
@@ -331,7 +331,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" to determine when an ",
+                "value":" to determine when ",
                 "children":null
             },
             {
@@ -345,7 +345,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" element is created and destroyed.  It utilizes two lifecycle hook methods, ",
+                "value":" elements were created and destroyed.  Spies utilize two lifecycle hook methods, ",
                 "children":null
             },
             {
@@ -487,7 +487,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".    Each time a change occurs the UI is re-rendered, invoking the appropriate lifecycle.  Each lifecycle has a corresponding hook method, where custom logic is added. ",
+                "value":".  Whenever a change occurs the UI is re-rendered, invoking the appropriate lifecycle.  Each lifecycle has a corresponding hook method, where custom logic is added. ",
                 "children":null
             }
         ]
@@ -500,7 +500,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Let’s take a look at some of the most important lifecycle hook methods. ",
+                "value":" Let's take a look at some of the most important lifecycle hook methods. ",
                 "children":null
             }
         ]
@@ -529,7 +529,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" A component classes ",
+                "value":" A component class ",
                 "children":null
             },
             {
@@ -543,7 +543,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is not a lifecycle hook, but I included it here since its invoked before any lifecycle hooks and exists on every component. The constructor is limited in use because component properties aren’t initialized yet when its called",
+                "value":" is not a lifecycle hook method, but I included it here since its invoked before any lifecycle hook methods are invoked.  The constructor also exists on every component class. The constructor is limited in use because component properties aren't initialized yet when its called",
                 "children":null
             },
             {
@@ -592,7 +592,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is a change detection lifecycle hook.  It’s invoked right after the constructor finishes executing for child components where parent components pass ",
+                "value":" is a change detection lifecycle hook.  It's invoked right after the constructor finishes executing for child components that are passed  ",
                 "children":null
             },
             {
@@ -620,7 +620,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" property is bound to the component, this hook method isn’t called. ",
+                "value":" properties are bound to a component, this hook method isn't called. ",
                 "children":null
             }
         ]

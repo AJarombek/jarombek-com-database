@@ -1073,7 +1073,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Method overloading in Python is just like that in JavaScript",
+                "value":" Method overloading in Python is just like JavaScript",
                 "children":null
             },
             {
@@ -1087,6 +1087,252 @@ content = [
                 "attributes":null,
                 "value":".  All the logic to handle different method arguments is handled in one method definition. ",
                 "children":null
+            }
+        ]
+    },
+    {
+        "el":"updateinfo",
+        "attributes":{
+            "date":"November 27th, 2018"
+        },
+        "value":null,
+        "children":[
+            {
+                "el":"p",
+                "attributes":null,
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":" There are a few things incorrect about the above Python code and explanation.  Function overloading is possible in Python outside of a class with the ",
+                        "children":null
+                    },
+                    {
+                        "el":"code",
+                        "attributes":{
+                            "class":"jarombek-inline-code"
+                        },
+                        "value":"@singledispatch",
+                        "children":null
+                    },
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":" decorator.  ",
+                        "children":null
+                    },
+                    {
+                        "el":"code",
+                        "attributes":{
+                            "class":"jarombek-inline-code"
+                        },
+                        "value":"@singledispatch",
+                        "children":null
+                    },
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":" creates a generic function that has different bodies depending on the argument types",
+                        "children":null
+                    },
+                    {
+                        "el":"sup",
+                        "attributes":null,
+                        "value":"7",
+                        "children":null
+                    },
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":".  I refactored the garden example above to use ",
+                        "children":null
+                    },
+                    {
+                        "el":"code",
+                        "attributes":{
+                            "class":"jarombek-inline-code"
+                        },
+                        "value":"@singledispatch",
+                        "children":null
+                    },
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":".  That code exists in the ",
+                        "children":null
+                    },
+                    {
+                        "el":"a",
+                        "attributes":{
+                            "href":"https://bit.ly/2PaGVZK"
+                        },
+                        "value":null,
+                        "children":[
+                            {
+                                "el":"#text",
+                                "attributes":null,
+                                "value":"garden2.py",
+                                "children":null
+                            }
+                        ]
+                    },
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":" and ",
+                        "children":null
+                    },
+                    {
+                        "el":"a",
+                        "attributes":{
+                            "href":"https://bit.ly/2DNzPrP"
+                        },
+                        "value":null,
+                        "children":[
+                            {
+                                "el":"#text",
+                                "attributes":null,
+                                "value":"main2.py",
+                                "children":null
+                            }
+                        ]
+                    },
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":" files on GitHub. ",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"p",
+                "attributes":null,
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":" The second problem is in the ",
+                        "children":null
+                    },
+                    {
+                        "el":"code",
+                        "attributes":{
+                            "class":"jarombek-inline-code"
+                        },
+                        "value":"Garden",
+                        "children":null
+                    },
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":" constructor.  In Python default arguments for should never be mutable",
+                        "children":null
+                    },
+                    {
+                        "el":"sup",
+                        "attributes":null,
+                        "value":"8",
+                        "children":null
+                    },
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":".  The problem is default arguments are bound to the function object when the module is loaded",
+                        "children":null
+                    },
+                    {
+                        "el":"sup",
+                        "attributes":null,
+                        "value":"9",
+                        "children":null
+                    },
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":".  After that, if the value is mutated, it affects all further invocations of the function.  This exploit is shown in ",
+                        "children":null
+                    },
+                    {
+                        "el":"a",
+                        "attributes":{
+                            "href":"https://bit.ly/2KF93Ua"
+                        },
+                        "value":null,
+                        "children":[
+                            {
+                                "el":"#text",
+                                "attributes":null,
+                                "value":"mainI.py",
+                                "children":null
+                            }
+                        ]
+                    },
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":".  I fixed the ",
+                        "children":null
+                    },
+                    {
+                        "el":"code",
+                        "attributes":{
+                            "class":"jarombek-inline-code"
+                        },
+                        "value":"Garden",
+                        "children":null
+                    },
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":" class in ",
+                        "children":null
+                    },
+                    {
+                        "el":"a",
+                        "attributes":{
+                            "href":"https://bit.ly/2KDWS9T"
+                        },
+                        "value":null,
+                        "children":[
+                            {
+                                "el":"#text",
+                                "attributes":null,
+                                "value":"GardenII.py",
+                                "children":null
+                            }
+                        ]
+                    },
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":" and ",
+                        "children":null
+                    },
+                    {
+                        "el":"a",
+                        "attributes":{
+                            "href":"https://bit.ly/2SiQlV0"
+                        },
+                        "value":null,
+                        "children":[
+                            {
+                                "el":"#text",
+                                "attributes":null,
+                                "value":"mainII.py",
+                                "children":null
+                            }
+                        ]
+                    },
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":". ",
+                        "children":null
+                    }
+                ]
             }
         ]
     },
@@ -1161,7 +1407,7 @@ content = [
             {
                 "el":"sup",
                 "attributes":null,
-                "value":"7",
+                "value":"10",
                 "children":null
             },
             {
@@ -1449,6 +1695,24 @@ db.posts.insertOne({
             endName: "",
             linkName: "https://pythonspot.com/method-overloading/",
             link: "https://pythonspot.com/method-overloading/"
+        },
+        {
+            startName: "Luciano Ramalho, ",
+            endName: " (Beijing: O'Reilly, 2015), 210",
+            linkName: "Fluent Python",
+            link: "http://shop.oreilly.com/product/0636920032519.do"
+        },
+        {
+            startName: "",
+            endName: ", 236-237",
+            linkName: "Ramalho.",
+            link: "http://shop.oreilly.com/product/0636920032519.do"
+        },
+        {
+            startName: "",
+            endName: ", 238",
+            linkName: "Ramalho.",
+            link: "http://shop.oreilly.com/product/0636920032519.do"
         },
         {
             startName: "Matthew Mathias & John Gallagher, ",
