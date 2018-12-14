@@ -25,6 +25,11 @@ db.viewed.updateMany(
 // Observe a single post
 db.posts.findOne();
 
+// Find a post by name
+db.posts.find({name: "dec-12-2018-python-class-features"})
+
+// Delete a post by name
+
 // Get all the indexes and then drop one of them
 db.posts.getIndexes();
 db.posts.dropIndex('post-text-index');

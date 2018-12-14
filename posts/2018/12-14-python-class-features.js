@@ -1277,7 +1277,7 @@ content = [
     }
 ];
 
-postName = "dec-12-2018-python-class-features";
+postName = "dec-14-2018-python-class-features";
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;

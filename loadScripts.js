@@ -94,3 +94,4 @@ load('./posts/2018/11-17-haskell-pt4.js');
 load('./posts/2018/11-24-angular-lifecycles.js');
 
 load('./posts/2018/12-14-python-class-features.js');
+load('./posts/2018/12-15-python-protocols-abcs.js');
