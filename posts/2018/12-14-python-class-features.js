@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In this discovery post, I’m exploring some of the interesting features of Python classes.  Python fully supports the object oriented paradigm, and I explored certain features that assist writing object oriented code such as the ",
+                "value":" In this discovery post, I'm exploring some interesting features of Python classes.  Python fully supports the object oriented paradigm, and I wrote about object oriented features such as the ",
                 "children":null
             },
             {
@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" in past articles.  Learning all the different object oriented features of a language assists in creating effective APIs.  Hopefully this knowledge will help assist my Python object creation in the future. ",
+                "value":" in past articles.  Learning all the object oriented features of a language assists in creating APIs.  Hopefully this knowledge helps me create better Python objects. ",
                 "children":null
             }
         ]
@@ -68,7 +68,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In this discovery post, I’m exploring some of the interesting features of Python classes.  Python fully supports the object oriented paradigm, and I explored certain features that assist writing object oriented code such as the ",
+                "value":" In this discovery post, I'm exploring some interesting features of Python classes.  Python fully supports the object oriented paradigm, and I wrote about object oriented features such as the ",
                 "children":null
             },
             {
@@ -89,7 +89,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" in past articles.  Learning all the different object oriented features of a language assists in creating effective APIs.  Hopefully this knowledge will help assist my Python object creation in the future. ",
+                "value":" in past articles.  Learning all the object oriented features of a language assists in creating APIs.  Hopefully this knowledge helps me create better Python objects. ",
                 "children":null
             }
         ]
@@ -131,7 +131,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" to help explore different object oriented features.  It holds two pieces of information, the first and last name of whoever created an object instance.  Here is the class outline: ",
+                "value":" to help explore different object oriented features.  It holds two pieces of information - the first and last name of whoever created the object instance.  Here is the class outline: ",
                 "children":null
             }
         ]
@@ -152,7 +152,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One thing you may notice about this Python code is that I’m using type hints for the argument types and method return types.  Type hints in Python aren’t strictly enforced, but they help IDE’s identify code that doesn’t follow expected types",
+                "value":" One thing you may notice about this Python code is there are type hints for argument types and method return types.  Introduced in 2015 with Python 3.5, type hints aren't strictly enforced, but they do help IDE's identify code that doesn't follow expected types",
                 "children":null
             },
             {
@@ -164,7 +164,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  They were first introduced in Python 3.5 in 2015.  The type hints in the ",
+                "value":".  The type hints in ",
                 "children":null
             },
             {
@@ -178,7 +178,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" class tell us that ",
+                "value":" tell us that ",
                 "children":null
             },
             {
@@ -220,7 +220,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and that the special ",
+                "value":" and the special ",
                 "children":null
             },
             {
@@ -234,7 +234,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function returns ",
+                "value":" method returns ",
                 "children":null
             },
             {
@@ -248,7 +248,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Perhaps I’ll write a full article about type hints in the future! ",
+                "value":".  Perhaps I'll write a full article about type hints in the future! ",
                 "children":null
             }
         ]
@@ -261,7 +261,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When writing Python classes, one way to create specialized methods is decorators (annotations). Decorators wrap methods with additional functionality.  One of the basic decorators is ",
+                "value":" When writing Python classes, one way to create specialized methods is with decorators (annotations). Decorators wrap methods with additional functionality.  One of the basic decorators is ",
                 "children":null
             },
             {
@@ -327,7 +327,7 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"@property\ndef first_name(self) -> str:\n  \"\"\"\n  @property marks this function as a getter method.  This method gets the internal\n  first_name property of Meta.\n  :return: A string representing the owners first name\n  \"\"\"\n  return self.__first_name\n\n@property\ndef last_name(self) -> str:\n  \"\"\"\n  This method gets the internal last_name property of Meta.\n  :return: A string representing the owners last name\n  \"\"\"\n  return self.__last_name\n",
+        "value":"# Meta.py\n\n@property\ndef first_name(self) -> str:\n  \"\"\"\n  @property marks this function as a getter method.  This method gets the internal\n  first_name property of Meta.\n  :return: A string representing the owners first name\n  \"\"\"\n  return self.__first_name\n\n@property\ndef last_name(self) -> str:\n  \"\"\"\n  This method gets the internal last_name property of Meta.\n  :return: A string representing the owners last name\n  \"\"\"\n  return self.__last_name\n",
         "children":null
     },
     {
@@ -366,7 +366,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" properties are accessible through the ",
+                "value":" properties are accessible through ",
                 "children":null
             },
             {
@@ -422,7 +422,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" properties an ",
+                "value":" properties directly an ",
                 "children":null
             },
             {
@@ -446,7 +446,7 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"meta = Meta(\"Andy\", \"J\")\nassert meta.first_name == \"Andy\"\nassert meta.last_name == \"J\"\n\ntry:\n  assert meta.__first_name == \"Andy\"\nexcept AttributeError:\n  print('Unable to find property __first_name in class Meta')\n",
+        "value":"# Main.py\n\nmeta = Meta(\"Andy\", \"J\")\nassert meta.first_name == \"Andy\"\nassert meta.last_name == \"J\"\n\ntry:\n  assert meta.__first_name == \"Andy\"\nexcept AttributeError:\n  print('Unable to find property __first_name in class Meta')\n",
         "children":null
     },
     {
@@ -463,7 +463,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Classes also typically have special methods defined in Python’s data model.  The ",
+                "value":" Classes also typically contain special methods defined in Python's data model. ",
                 "children":null
             },
             {
@@ -477,7 +477,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" class contains the ",
+                "value":" contains the ",
                 "children":null
             },
             {
@@ -529,13 +529,15 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"def __format__(self, format_spec: str=''):\n  \"\"\"\n  Special method to format a string representation of the Meta object\n  :param format_spec: the formatting specifier\n  :return: a formatted string representing the instance\n  \"\"\"\n  components = (format(self.__dict__[prop], format_spec) for prop in self.__dict__)\n  return '({}, {})'.format(*components)\n",
+        "value":"# Meta.py\n\ndef __format__(self, format_spec: str=''):\n  \"\"\"\n  Special method to format a string representation of the Meta object\n  :param format_spec: the formatting specifier\n  :return: a formatted string representing the instance\n  \"\"\"\n  components = (format(self.__dict__[prop], format_spec) for prop in self.__dict__)\n  return '({}, {})'.format(*components)\n",
         "children":null
     },
     {
         "el":"codesnippet",
-        "attributes":null,
-        "value":"meta = Meta(\"Andrew\", \"Jarombek\")\nassert format(meta, '') == '(Andrew, Jarombek)'\n",
+        "attributes":{
+            "language":"Python"
+        },
+        "value":"# Main.py\n\nmeta = Meta(\"Andrew\", \"Jarombek\")\nassert format(meta, '') == '(Andrew, Jarombek)'\n",
         "children":null
     },
     {
@@ -543,6 +545,12 @@ content = [
         "attributes":null,
         "value":null,
         "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" My implementation of ",
+                "children":null
+            },
             {
                 "el":"code",
                 "attributes":{
@@ -638,7 +646,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and formats them.  Finally ",
+                "value":" and formats them.  Finally, ",
                 "children":null
             },
             {
@@ -771,7 +779,7 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"meta = Meta(\"Andrew\", \"Jarombek\")\n\nassert meta.__dict__ == {'_Meta__first_name': 'Andrew', '_Meta__last_name': 'Jarombek'}\nassert meta.__dict__['_Meta__first_name'] == 'Andrew'\nassert meta.__dict__['_Meta__last_name'] == 'Jarombek'\n",
+        "value":"# Main.py\n\nmeta = Meta(\"Andrew\", \"Jarombek\")\n\nassert meta.__dict__ == {'_Meta__first_name': 'Andrew', '_Meta__last_name': 'Jarombek'}\nassert meta.__dict__['_Meta__first_name'] == 'Andrew'\nassert meta.__dict__['_Meta__last_name'] == 'Jarombek'\n",
         "children":null
     },
     {
@@ -810,7 +818,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" property (and through default attribute access).  In a similar sense, private instance variables in Java are only about safety, since they can still be accessed through ",
+                "value":" property (and through default attribute access).  In a similar sense, private instance variables in Java are only about safety, since they are still accessible with ",
                 "children":null
             },
             {
@@ -918,7 +926,9 @@ content = [
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
                 "value":"@classmethod",
                 "children":null
             },
@@ -1003,7 +1013,7 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"@classmethod\ndef about(cls) -> None:\n  \"\"\"\n  @classmethod alters this method to belong to the class instead of an object instance.\n  Therefore the first argument to this method is the class itself instead of the object\n  instance.  This method prints out some important properties of the class.\n  :return: None\n  \"\"\"\n  print('Class Name: {}'.format(cls.__name__))\n  print('Class Dict: {}'.format(cls.__dict__))\n\n@classmethod\ndef create(cls):\n  \"\"\"\n  Alternative constructor using a class method.  In Java, this construct is known as a\n  'static factory method'\n  :return: An instance of Meta\n  \"\"\"\n  return cls(\"Andrew\", \"Jarombek\")\n",
+        "value":"# Meta.py\n\n@classmethod\ndef about(cls) -> None:\n  \"\"\"\n  @classmethod alters this method to belong to the class instead of an object instance.\n  Therefore the first argument to this method is the class itself instead of the object\n  instance.  This method prints out some important properties of the class.\n  :return: None\n  \"\"\"\n  print('Class Name: {}'.format(cls.__name__))\n  print('Class Dict: {}'.format(cls.__dict__))\n\n@classmethod\ndef create(cls):\n  \"\"\"\n  Alternative constructor using a class method.  In Java, this construct is known as a\n  'static factory method'\n  :return: An instance of Meta\n  \"\"\"\n  return cls(\"Andrew\", \"Jarombek\")\n",
         "children":null
     },
     {
@@ -1011,7 +1021,7 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"# Construct using the class method\nmeta = Meta.create()\n\nassert meta.first_name == \"Andrew\"\nassert meta.last_name == \"Jarombek\"\n",
+        "value":"# Main.py\n\n# Construct using the class method\nmeta = Meta.create()\n\nassert meta.first_name == \"Andrew\"\nassert meta.last_name == \"Jarombek\"\n",
         "children":null
     },
     {
@@ -1054,20 +1064,20 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"@staticmethod\ndef static_create():\n  \"\"\"\n  Alternative constructor using a static method.  Static methods receive no special\n  first method unlike class methods and plain methods.\n  :return: An instance of Meta\n  \"\"\"\n  return Meta.create()\n",
+        "value":"# Meta.py\n\n@staticmethod\ndef static_create():\n  \"\"\"\n  Alternative constructor using a static method.  Static methods receive no special\n  first method unlike class methods and plain methods.\n  :return: An instance of Meta\n  \"\"\"\n  return Meta.create()\n",
         "children":null
     },
     {
         "el":"sectiontitle",
         "attributes":{
-            "title":"Altering an Object’s Internal Storage Mechanism"
+            "title":"Altering an Object's Internal Storage Mechanism"
         },
         "value":null,
         "children":[
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"Altering an Object’s Internal Storage Mechanism",
+                "value":"Altering an Object's Internal Storage Mechanism",
                 "children":null
             }
         ]
@@ -1188,7 +1198,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is that no other instance attributes are allowed in an object other than the ones defined in ",
+                "value":" is that instance attributes aren't allowed in an object if they aren't defined in ",
                 "children":null
             },
             {
@@ -1270,7 +1280,28 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This post continues my journey through Python and its advanced features.  My next post will look at Python protocols and ABCs. ",
+                "value":" This post continues my journey through Python and its advanced features.  My ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/dec-15-2018-python-protocols-abcs"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"next post",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" will look at Python protocols and ABCs. ",
                 "children":null
             }
         ]
