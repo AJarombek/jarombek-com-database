@@ -105,7 +105,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In Python a protocol is an informal interface known as an accepted truth or defined only in documentation and not strictly in code",
+                "value":" In Python a protocol is an informal interface.  Protocols are either known as an accepted truth or defined in documentation and not strictly in code",
                 "children":null
             },
             {
@@ -131,7 +131,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" special method is said to follow the \"container protocol.\"  While this is an accepted truth, there is no syntax in the Python language that declares a class as following the container protocol.  Python classes can implement multiple protocols. ",
+                "value":" special method is said to follow the \"container protocol.\"  While this is an accepted truth, there is no syntax in the Python language that declares a class as following a protocol.  Python classes can also implement multiple protocols. ",
                 "children":null
             }
         ]
@@ -169,7 +169,7 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"class TrailMap:\n\n  def __init__(self, trails):\n    \"\"\"\n    Construct a new TrailMap object which contains a list of all the trails in a park\n    :param trails: a list of trails, which should be represented as a tuple formatted\n    as: (trail_name, distance)\n    \"\"\"\n    self.__trails = trails\n\n  @property\n  def trails(self):\n    return self.__trails\n\n  def __len__(self):\n    \"\"\"\n    Special method to get the length of the object\n    :return: the length of the internal __trails list\n    \"\"\"\n    return len(self.__trails)\n\n  def __getitem__(self, item):\n    \"\"\"\n    Special method to get an item at a position in the object.  Since TrailMap implements\n    both __len__ and __getitem__, it follows the Sequence protocol.\n    :param item: A position to search for an item\n    :return: A trail in the trail map\n    \"\"\"\n    cls = type(self)\n    if isinstance(item, slice):\n      return cls(self.__trails[item])\n    elif isinstance(item, numbers.Integral):\n      return self.__trails[item]\n    else:\n      error_message = '{.__name__} indices must be integers'\n      raise TypeError(error_message.format(cls))\n\n\nif __name__ == '__main__':\n  mrp_trails = [('Main Road', 1.3), ('Swamp Trail', 2.2), ('Laurel Trail', 1.8)]\n  mrp_trail_map = TrailMap(mrp_trails)\n\n  # Since TrailMap implements the Sequence protocol, slicing now works.\n  # As expected, len() and index accesses work as well\n  assert len(mrp_trail_map) is 3\n  assert mrp_trail_map[0] == ('Main Road', 1.3)\n\n  last_two_trails = mrp_trail_map[1:]\n  first_and_last_trails = mrp_trail_map[0::2]\n\n  assert last_two_trails.trails == [('Swamp Trail', 2.2), ('Laurel Trail', 1.8)]\n  assert first_and_last_trails.trails == [('Main Road', 1.3), ('Laurel Trail', 1.8)]\n\n  # If no __iter__() special method exists, Python falls back to __getitem__()\n  for trail in mrp_trail_map:\n    assert type(trail) is tuple\n",
+        "value":"# TrailMap.py\n\nclass TrailMap:\n\n  def __init__(self, trails):\n    \"\"\"\n    Construct a new TrailMap object which contains a list of all the trails in a park\n    :param trails: a list of trails, which should be represented as a tuple formatted\n    as: (trail_name, distance)\n    \"\"\"\n    self.__trails = trails\n\n  @property\n  def trails(self):\n    return self.__trails\n\n  def __len__(self):\n    \"\"\"\n    Special method to get the length of the object\n    :return: the length of the internal __trails list\n    \"\"\"\n    return len(self.__trails)\n\n  def __getitem__(self, item):\n    \"\"\"\n    Special method to get an item at a position in the object.  Since TrailMap implements\n    both __len__ and __getitem__, it follows the Sequence protocol.\n    :param item: A position to search for an item\n    :return: A trail in the trail map\n    \"\"\"\n    cls = type(self)\n    if isinstance(item, slice):\n      return cls(self.__trails[item])\n    elif isinstance(item, numbers.Integral):\n      return self.__trails[item]\n    else:\n      error_message = '{.__name__} indices must be integers'\n      raise TypeError(error_message.format(cls))\n\n\nif __name__ == '__main__':\n  mrp_trails = [('Main Road', 1.3), ('Swamp Trail', 2.2), ('Laurel Trail', 1.8)]\n  mrp_trail_map = TrailMap(mrp_trails)\n\n  # Since TrailMap implements the Sequence protocol, slicing now works.\n  # As expected, len() and index accesses work as well\n  assert len(mrp_trail_map) is 3\n  assert mrp_trail_map[0] == ('Main Road', 1.3)\n\n  last_two_trails = mrp_trail_map[1:]\n  first_and_last_trails = mrp_trail_map[0::2]\n\n  assert last_two_trails.trails == [('Swamp Trail', 2.2), ('Laurel Trail', 1.8)]\n  assert first_and_last_trails.trails == [('Main Road', 1.3), ('Laurel Trail', 1.8)]\n\n  # If no __iter__() special method exists, Python falls back to __getitem__()\n  for trail in mrp_trail_map:\n    assert type(trail) is tuple\n",
         "children":null
     },
     {
@@ -263,7 +263,7 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"class TrailMap:\n\n  # TrailMap constructor\n  def __init__(self, trails: list(tuple)) -> None:\n  self.__trails = trails\n\n  # Property getter method\n  def trails(self) -> tuple: ...\n\n  # Python special methods which implement the Sequence protocol\n  def __len__(self) -> int: ...\n  def __getitem__(self, item) -> TrailMap: ...\n",
+        "value":"# TrailMap.pyi\n\nclass TrailMap:\n\n  # TrailMap constructor\n  def __init__(self, trails: list(tuple)) -> None:\n  self.__trails = trails\n\n  # Property getter method\n  def trails(self) -> tuple: ...\n\n  # Python special methods which implement the Sequence protocol\n  def __len__(self) -> int: ...\n  def __getitem__(self, item) -> TrailMap: ...\n",
         "children":null
     },
     {
@@ -335,7 +335,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Abstract Base Classes (ABCs) are formal interfaces in Python.  ABCs can contain both abstract and concrete methods.  In general its recommended to inherit from an ABC instead of a concrete class",
+                "value":" Abstract Base Classes (ABCs) are formal interfaces in Python.  ABCs can contain abstract and concrete methods.  In general its recommended for a class to inherit from an ABC instead of a concrete class",
                 "children":null
             },
             {
@@ -360,7 +360,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" It’s recommended to only subclass ABCs defined in the Python standard library",
+                "value":" It's recommended to only subclass ABCs defined in the Python standard library",
                 "children":null
             },
             {
@@ -476,7 +476,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" ABC declares three abstract methods, ",
+                "value":" ABC declares three abstract methods: ",
                 "children":null
             },
             {
@@ -518,7 +518,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" for when the exercise occurs.  Abstract method bodies are implemented in classes that extend the ABC. ",
+                "value":" for when the exercise occurred.  Abstract method bodies are implemented in classes that extend the ABC. ",
                 "children":null
             }
         ]
@@ -528,7 +528,7 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"@property\n@abc.abstractmethod\ndef miles(self) -> numbers.Real:\n  \"\"\"\n  Get the distance of the exercise in miles\n  \"\"\"\n\n@property\n@abc.abstractmethod\ndef time(self) -> tuple:\n  \"\"\"\n  Get the length of the exercise in minutes and seconds\n  \"\"\"\n\n@property\n@abc.abstractmethod\ndef date(self) -> date:\n  \"\"\"\n  Get the date that the exercise occurred\n  \"\"\"\n",
+        "value":"# Exercise.py\n  \n@property\n@abc.abstractmethod\ndef miles(self) -> numbers.Real:\n  \"\"\"\n  Get the distance of the exercise in miles\n  \"\"\"\n\n@property\n@abc.abstractmethod\ndef time(self) -> tuple:\n  \"\"\"\n  Get the length of the exercise in minutes and seconds\n  \"\"\"\n\n@property\n@abc.abstractmethod\ndef date(self) -> date:\n  \"\"\"\n  Get the date that the exercise occurred\n  \"\"\"\n",
         "children":null
     },
     {
@@ -536,12 +536,6 @@ content = [
         "attributes":null,
         "value":null,
         "children":[
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" The ",
-                "children":null
-            },
             {
                 "el":"code",
                 "attributes":{
@@ -563,7 +557,7 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"def pace(self) -> tuple:\n  \"\"\"\n  Calculate the pace of the exercise in minutes and seconds\n  \"\"\"\n  minutes, seconds = self.time\n  total_seconds = (minutes * 60) + seconds\n  seconds_per_mile = total_seconds / self.miles\n  return seconds_per_mile / 60, seconds_per_mile % 60\n",
+        "value":"# Exercise.py\n  \ndef pace(self) -> tuple:\n  \"\"\"\n  Calculate the pace of the exercise in minutes and seconds\n  \"\"\"\n  minutes, seconds = self.time\n  total_seconds = (minutes * 60) + seconds\n  seconds_per_mile = total_seconds / self.miles\n  return seconds_per_mile / 60, seconds_per_mile % 60\n",
         "children":null
     },
     {
@@ -700,7 +694,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When looking at the metadata of ",
+                "value":" Looking at the metadata of ",
                 "children":null
             },
             {
@@ -714,7 +708,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" the class is a subclass of ",
+                "value":" confirms that it's a subclass of ",
                 "children":null
             },
             {
@@ -728,7 +722,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and object instances are also instances of ",
+                "value":" and its object instances are instances of ",
                 "children":null
             },
             {
@@ -789,7 +783,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Virtual subclasses don’t need to implement the methods of the parent class.  Instead, Python will trust that the subclass maintains an is-a relationship with the parent class.  The following ",
+                "value":".  Virtual subclasses don't need to implement the methods of the parent class.  Instead, Python trusts that the subclass maintains an is-a relationship with the parent class.  The following ",
                 "children":null
             },
             {
@@ -880,7 +874,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" annotation on the ",
+                "value":" decorator on the ",
                 "children":null
             },
             {
@@ -907,7 +901,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" It’s important to note that ",
+                "value":" It's important to note that ",
                 "children":null
             },
             {
@@ -1040,7 +1034,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Virtual subclasses give ABCs more flexibility.  This flexibility even further differentiates the strict abstract classes of Java from ABCs in Python. ",
+                "value":" Virtual subclasses give ABCs more flexibility.  This flexibility further differentiates the strict abstract classes of Java from ABCs in Python. ",
                 "children":null
             }
         ]
@@ -1053,7 +1047,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" While more flexible than abstract classes in Java, ABCs in Python are still much stricter than protocols which utilize duck typing.  However, Python does also allow for ABCs to use duck typing when determining subclasses.  ABCs implement duck typing with the special method ",
+                "value":" While more flexible than abstract classes in Java, ABCs in Python are still stricter than protocols  utilizing duck typing.  However, Python does allow for ABCs to use duck typing when determining subclasses as well.  ABCs implement duck typing with the special method ",
                 "children":null
             },
             {
@@ -1067,7 +1061,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This method helps a class determine if another class is a subclass.  Behind the scenes ",
+                "value":".  This method helps a class determine if another class is a subclass.  Behind the scenes, ",
                 "children":null
             },
             {
@@ -1081,7 +1075,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is invoked when ",
+                "value":" is called when ",
                 "children":null
             },
             {
@@ -1103,7 +1097,7 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"issubclass",
+                "value":"issubclass()",
                 "children":null
             },
             {
@@ -1192,7 +1186,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is found anywhere in a class or its parent hierarchy, it’s considered a subclass of ",
+                "value":" exists anywhere in a class or its parent hierarchy, it's considered a subclass of ",
                 "children":null
             },
             {
@@ -1216,7 +1210,7 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"@classmethod\ndef __subclasshook__(cls, c):\n  \"\"\"\n  Help determine if a class is a subclass.  Use duck typing to make any class with an\n  'is_exercise' method a subclass of Exercise\n  :param c: The class to check if it is a subclass\n  :return: True if the class is a subclass of Exercise, otherwise NotImplemented\n  \"\"\"\n  if cls is Exercise:\n    if any(\"is_exercise\" in b.__dict__ for b in c.__mro__):\n      return True\n  return NotImplemented\n",
+        "value":"# Exercise.py\n\n@classmethod\ndef __subclasshook__(cls, c):\n  \"\"\"\n  Help determine if a class is a subclass.  Use duck typing to make any class with an\n  'is_exercise' method a subclass of Exercise\n  :param c: The class to check if it is a subclass\n  :return: True if the class is a subclass of Exercise, otherwise NotImplemented\n  \"\"\"\n  if cls is Exercise:\n    if any(\"is_exercise\" in b.__dict__ for b in c.__mro__):\n      return True\n  return NotImplemented\n",
         "children":null
     },
     {
@@ -1333,7 +1327,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Python provides very flexible means of utilizing inheritance an object oriented design.  Outside of concrete classes, ABCs are the most strict use of inheritance.  However, developers can make them less strict with the use of virtual subclassing and duck typing with ",
+                "value":" Python provides very flexible ways to utilize inheritance in object oriented design.  Outside of concrete classes, ABCs are the most strict use of inheritance.  However, developers can make them less strict with the use of virtual subclassing and duck typing with ",
                 "children":null
             },
             {
@@ -1347,7 +1341,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  If you want an extremely informal inheritance design, protocols can be used to follow common patterns. ",
+                "value":".  If you want an extremely informal inheritance design, protocols can be used for classes following common patterns. ",
                 "children":null
             }
         ]
