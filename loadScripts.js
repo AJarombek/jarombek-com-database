@@ -98,3 +98,4 @@ load('./posts/2018/12-15-python-protocols-abcs.js');
 load('./posts/2018/12-22-multiple-inheritance.js');
 
 load('./posts/2019/01-01-haskell-pt5.js');
+load('./posts/2019/01-02-csharp-first-impressions.js');
