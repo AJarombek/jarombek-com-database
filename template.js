@@ -1,7 +1,7 @@
 /**
  * Script for the MongoDB Shell.
  * @author Andrew Jarombek
- * @since 4/29/2018
+ * @since 12/29/2018
  */
 
 connection = new Mongo();
@@ -11,7 +11,7 @@ preview = [];
 
 content = [];
 
-postName = "jul-29-2018-overloading";
+postName = "jan-1-2019-haskell-pt5";
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -21,10 +21,11 @@ db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
     name: postName,
-    title: "Angular 5 First Impressions",
-    description: `There are a lot of different complexities with generics and how 
-        they differ from arrays.  This is my journey to understand Java’s Generics in depth.`,
-    date: new Date('2018-07-10T12:00:00'),
+    title: "Haskell Part V - Classes",
+    description: `The closest comparison for Haskell classes I can think of in the object oriented 
+        world is Java interfaces with default methods.  This article clears more the confusion of 
+        Haskell classes.`,
+    date: new Date('2019-01-01T12:00:00'),
     type: "Discovery",
     views: postViews,
     tags: [
