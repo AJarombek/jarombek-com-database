@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I recently was reading a book discussing multiple inheritance in Python.  Python is one of the few object oriented languages that allows for multiple inheritance of classes.  Many languages include workarounds for implementing functionality in a class from multiple blueprints.  For example, Java allows for classes to implement multiple interfaces.  PHP on the other hand allows for classes to use multiple traits.  This article looks at how different languages I use enforce multiple inheritance and explores the available workarounds. ",
+                "value":" I recently read a book discussing multiple inheritance in Python.  Python is one of the few object oriented languages that permits multiple inheritance of classes.  Many other languages include workarounds for multiple inheritance.  For example, Java allows for classes to implement multiple interfaces.  On the other hand, PHP allows for classes to use multiple traits.  This article looks at programming languages I use and how they enforce multiple inheritance or available workarounds. ",
                 "children":null
             }
         ]
@@ -47,7 +47,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I recently was reading a book discussing multiple inheritance in Python.  Python is one of the few object oriented languages that allows for multiple inheritance of classes.  Many languages include workarounds for implementing functionality in a class from multiple blueprints.  For example, Java allows for classes to implement multiple interfaces.  PHP on the other hand allows for classes to use multiple traits.  This article looks at how different languages I use enforce multiple inheritance and explores the available workarounds. ",
+                "value":" I recently read a book discussing multiple inheritance in Python.  Python is one of the few object oriented languages that permits multiple inheritance of classes.  Many other languages include workarounds for multiple inheritance.  For example, Java allows for classes to implement multiple interfaces.  On the other hand, PHP allows for classes to use multiple traits.  This article looks at programming languages I use and how they enforce multiple inheritance or available workarounds. ",
                 "children":null
             }
         ]
@@ -89,7 +89,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" that inherits properties and methods from class ",
+                "value":" which inherits properties and methods from class ",
                 "children":null
             },
             {
@@ -103,7 +103,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" forms an is-a relationship such that ",
+                "value":" forms an is-a relationship, such that ",
                 "children":null
             },
             {
@@ -447,28 +447,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" called? This is an ambiguous situation, and determining which one is invoked often comes down to ",
-                "children":null
-            },
-            {
-                "el":"a",
-                "attributes":{
-                    "href":"https://jarombek.com/blog/may-15-2018-java-clone#extralinguistic"
-                },
-                "value":null,
-                "children":[
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":"extralinguistic",
-                        "children":null
-                    }
-                ]
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" or documented rules. ",
+                "value":" called? This is an ambiguous situation, and determining which one is invoked often comes down to documented rules. ",
                 "children":null
             }
         ]
@@ -481,7 +460,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Some object-oriented languages I use allow for multiple inheritance such as Python.  Many others prohibit multiple inheritance but provide safer workarounds.  The rest of this post looks at how different languages handle multiple inheritance, in particular the ",
+                "value":" Some object-oriented languages I use (such as Python) permit multiple inheritance.  Many others prohibit multiple inheritance but provide safer workarounds.  The rest of this post looks at how different languages handle multiple inheritance, in particular the ",
                 "children":null
             },
             {
@@ -530,7 +509,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Although I don't really use C++, it's the language I always think of when hearing about multiple inheritance.  C++ is one of the earliest languages I know of that implemented multiple inheritance. In fact, the troubles that multiple inheritance gave developers in C++ is what influenced James Gosling (the creator of Java) to omit multiple inheritance from Java",
+                "value":" Although I don't really use C++, it's the language I always think of when hearing about multiple inheritance.  C++ is one of the earliest languages I know of that implements multiple inheritance. In fact, the troubles that multiple inheritance gave developers in C++ is what influenced James Gosling (the creator of Java) to omit multiple inheritance from Java",
                 "children":null
             },
             {
@@ -555,7 +534,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I'm not very good at writing C++, but I wrote an example of the diamond problem.  The following class hierarchy relates to biological trees. ",
+                "value":" I'm not very good at C++, but I wrote an example of the diamond problem.  The following class hierarchy relates to biological trees. ",
                 "children":null
             }
         ]
@@ -920,7 +899,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If the virtual keyword is removed from these class definitions, the code doesn't even compile.  The next question I thought of was \"what impact does the ",
+                "value":" If the virtual keyword is removed from these class definitions, the code doesn't even compile.  What impact does the ",
                 "children":null
             },
             {
@@ -934,7 +913,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" keyword have?\" ",
+                "value":" keyword have? ",
                 "children":null
             }
         ]
@@ -959,7 +938,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The subclass also contains a copy of all the properties and methods from any inherited classes in the parent class.  Copying of properties and methods continues all the way up the class hierarchy. ",
+                "value":".  The subclass also contains a copy of all the properties and methods from inherited classes of the parent class.  This process of copying properties and methods continues all the way up the class hierarchy. ",
                 "children":null
             }
         ]
@@ -972,7 +951,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This introduces an interesting issue in the diamond problem.  Subclass ",
+                "value":" As a result of these copies, an interesting issue forms in the diamond problem.  Subclass ",
                 "children":null
             },
             {
@@ -1153,7 +1132,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" will only receive copies of ",
+                "value":" only receives one copy of ",
                 "children":null
             },
             {
@@ -1167,7 +1146,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" properties and methods once. ",
+                "value":". ",
                 "children":null
             }
         ]
@@ -1195,7 +1174,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When writing Java, James Gosling thought any benefits of multiple inheritance were not worth the risks and complexities.  Java does not support multiple inheritance of classes, and instead uses a construct called an interface to simulate multiple inheritance.  When Java was first released, all methods defined in interfaces had no bodies.  Instead, the construction of the methods was delegated to the implementing classes. ",
+                "value":" When writing Java, James Gosling thought the benefits of multiple inheritance were not worth the risks and complexities.  Java does not support multiple inheritance of classes, instead using an interface construct to simulate multiple inheritance.  When Java was first released, all methods defined in interfaces had no bodies.  Instead, construction of method bodies were delegated to implementing classes. ",
                 "children":null
             }
         ]
@@ -1208,7 +1187,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" As of Java 8, methods in interfaces can have method bodies.  These methods are called \"default methods,\" and are mostly used for API backwards compatibility.  I wrote an entire article on ",
+                "value":" As of Java 8, methods in interfaces can have bodies.  These methods are called \"default methods,\" and are mostly used for API backwards compatibility.  I wrote an article about ",
                 "children":null
             },
             {
@@ -1297,7 +1276,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In Groovy you can simulate multiple inheritance just like in Java.  However, Groovy also introduces an additional construct called a trait, which are designed to be used for composition",
+                "value":" In Groovy you can simulate multiple inheritance just like in Java.  However, Groovy introduces an additional construct called a trait, which is designed with composition in mind",
                 "children":null
             },
             {
@@ -1309,7 +1288,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". Classes implement traits, which gives the class their functionality.  Classes can implement multiple traits, which can be used just like Java default methods to simulate a multiple inheritance model. In the case of naming conflicts for methods in traits, the method from the last trait declared after the ",
+                "value":". Classes implement traits, which give them additional functionality.  Classes can implement multiple traits, simulating a multiple inheritance model just like Java interfaces with default methods. In the case of naming conflicts for methods in traits, the method from the last trait declared after the ",
                 "children":null
             },
             {
@@ -1417,7 +1396,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" PHP does not allow for multiple inheritance.  However, just like Groovy it has traits which can be used to simulate multiple inheritance.  The biggest difference between traits in Groovy and PHP is the way naming conflicts are resolved.  While Groovy picks the method from the last implemented trait in the case of a conflict, PHP throws in error.  When a class uses multiple traits in PHP, all the method names must be unique across all traits.  While this is much more strict than its Groovy counterpart, PHP classes that inherit multiple traits are very predictable because of this enforcement. ",
+                "value":" PHP does not allow for multiple inheritance.  However, just like Groovy it has traits which can be used to simulate multiple inheritance.  The biggest difference between traits in Groovy and PHP is the way naming conflicts are resolved.  While Groovy picks the method from the last implemented trait in the case of a conflict, PHP throws an error.  When a class uses multiple traits in PHP, method names must be unique across all traits.  While this is stricter than Groovy, PHP classes that inherit multiple traits are very predictable because of this enforcement. ",
                 "children":null
             }
         ]
@@ -1526,7 +1505,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The Swift implementation is quite unique.  Swift does not support multiple inheritance, but does support protocols (equivalent to interfaces in Java, Groovy, and PHP).  Swift also allows for extensions, which allow you to add functionality to an existing class or protocol.  One restriction is that names of variables and methods in extensions must be unique across all extensions for a class or protocol. Therefore I could not create two extensions for a protocol ",
+                "value":" The Swift implementation is quite unique.  Swift does not support multiple inheritance, but does support protocols (equivalent to interfaces in Java, Groovy, and PHP).  Swift also has extensions, which allow you to add functionality to an existing class or protocol.  One restriction enforced by extensions is that names of variables and methods must be unique across all extensions for a class or protocol. Therefore I couldn't create two extensions for the ",
                 "children":null
             },
             {
@@ -1540,7 +1519,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" called ",
+                "value":" protocol called ",
                 "children":null
             },
             {
@@ -1568,7 +1547,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" both containing a variable ",
+                "value":" that both contain a variable named ",
                 "children":null
             },
             {
@@ -1698,7 +1677,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", object compositions are when an object contains other objects as properties.  These other objects can then be used to give the enclosing object additional functionality.  For example, a method invoked on the enclosing object can delegate that call to an object it contains as a property. This is a way to inherit methods and properties from objects without dealing with the languages inheritance mechanism.  Here is the function composition approach: ",
+                "value":", object compositions are when an object contains other objects as properties.  These other objects are used to give the enclosing object additional functionality.  For example, a method invoked on the enclosing object can delegate that call to an object it contains as a property. This is a way to inherit methods and properties from objects without dealing with the languages inheritance mechanism.  Here is the function composition approach: ",
                 "children":null
             }
         ]
@@ -1719,7 +1698,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Another option is to use mixins.  Mixins pass off their contents to another object, giving that object their contents.  Here is the mixin approach (everything stays the same except for the ",
+                "value":" Another option is to use mixins.  Mixins pass their contents to another object.  Here is the mixin approach (everything stays the same except for the ",
                 "children":null
             },
             {
@@ -1769,7 +1748,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Python is the most similar to C++ in regards to multiple inheritance.  Python allows for multiple inheritance for classes like C++, but does not require virtual inheritance to work.  The method ",
+                "value":" Python shares the most similarities with C++ in regards to multiple inheritance.  Like C++, Python enables multiple inheritance for classes, although it does not require virtual inheritance to function.  Unlike C++, the method ",
                 "children":null
             },
             {
@@ -1783,7 +1762,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" which didn't work in C++ because it was defined in two different inherited classes also works fine in Python.  Python objects maintain a method resolution order that moves through the inherited classes in the order they are defined.  As soon as it encounters the first ",
+                "value":" works fine in Python.  ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"type()",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" didn't work in C++ because it was defined in two different inherited classes.  Python objects maintain a method resolution order that moves through the inherited classes in the order they are defined.  As soon as it encounters the first ",
                 "children":null
             },
             {
