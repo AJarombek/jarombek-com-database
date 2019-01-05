@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In this article, I’m exploring classes in Haskell.  Coming from object oriented languages, the concept of Haskell classes was a bit confusing for me.  Haskell is a ",
+                "value":" In this article, I'm exploring classes in Haskell.  Coming from object oriented languages, the concept of Haskell classes was a bit confusing for me.  Haskell is a ",
                 "children":null
             },
             {
@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", so its class functionality doesn’t match classes in object oriented languages such as Java or Python.  The closest comparison for Haskell classes I can think of in the object oriented world is Java interfaces with default methods ",
+                "value":", so its class functionality doesn't match classes in object oriented languages such as Java or Python.  The closest comparison for Haskell classes in the object oriented world is Java interfaces with default methods",
                 "children":null
             },
             {
@@ -49,7 +49,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This article clears more the confusion of Haskell classes. ",
+                "value":". This article clears the confusion of Haskell classes. ",
                 "children":null
             }
         ]
@@ -80,7 +80,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In this article, I’m exploring classes in Haskell.  Coming from object oriented languages, the concept of Haskell classes was a bit confusing for me.  Haskell is a ",
+                "value":" In this article, I'm exploring classes in Haskell.  Coming from object oriented languages, the concept of Haskell classes was a bit confusing for me.  Haskell is a ",
                 "children":null
             },
             {
@@ -101,7 +101,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", so its class functionality doesn’t match classes in object oriented languages such as Java or Python.  The closest comparison for Haskell classes I can think of in the object oriented world is Java interfaces with default methods ",
+                "value":", so its class functionality doesn't match classes in object oriented languages such as Java or Python.  The closest comparison for Haskell classes in the object oriented world is Java interfaces with default methods",
                 "children":null
             },
             {
@@ -113,7 +113,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This article clears more the confusion of Haskell classes. ",
+                "value":". This article helps clear the confusion of Haskell classes. ",
                 "children":null
             }
         ]
@@ -141,7 +141,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" My previous Haskell post looked at declaring custom types.  Custom types and existing types can be made instances of classes, which give functionality to a type.  Type classes are created with a ",
+                "value":" My previous Haskell post looked at declaring custom types.  Custom types and existing types can become instances of classes, giving them functionality.  Type classes are created with a ",
                 "children":null
             },
             {
@@ -182,7 +182,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" As I mentioned earlier, a class is similar to an interface.  Therefore it provides operator and function declarations without bodies.  For example, the following class matches the one in the ",
+                "value":" As I mentioned earlier, a class is similar to a Java interface.  Therefore it provides operator and function declarations without bodies.  For example, the following ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"Eq",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" class matches the one in the ",
                 "children":null
             },
             {
@@ -196,7 +210,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" module which checks for equality. ",
+                "value":" module that checks for equality. ",
                 "children":null
             }
         ]
@@ -315,7 +329,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" operator, it will fall back to the default definition",
+                "value":" operator, its functionality falls back to the default definition",
                 "children":null
             },
             {
@@ -340,7 +354,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" A type can be defined as an instance of a class using an ",
+                "value":" A type is defined as an instance of a class using an ",
                 "children":null
             },
             {
@@ -403,7 +417,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" While I didn’t have to implement ",
+                "value":" While I didn't have to implement ",
                 "children":null
             },
             {
@@ -472,7 +486,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" class and instance declaration, any two ",
+                "value":" class and corresponding instance declaration, any two ",
                 "children":null
             },
             {
@@ -535,7 +549,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Just like with built-in types, instances can be created with custom types.  The following code creates a custom ",
+                "value":" Just like built-in types, instances can be created with custom types.  The following code creates a custom ",
                 "children":null
             },
             {
@@ -573,7 +587,7 @@ content = [
         "attributes":{
             "language":"Haskell"
         },
-        "value":"-- Create a type for fir trees of different species.  A tree needs to be provided a height in feet and inches\ndata FirTree = FrasierFir Int Int | BalsamFir Int Int | DouglasFir Int Int\n\n{-|\n - Make FirTree an instance of Eq as well.  In order to be equal, the species of tree must be the same\n - and the trees must have the same height.\n -}\ninstance Eq FirTree where\n  (FrasierFir f1 i1) == (FrasierFir f2 i2) = (f1 == f2) && (i1 == i2)\n  (BalsamFir f1 i1) == (BalsamFir f2 i2) = (f1 == f2) && (i1 == i2)\n  (DouglasFir f1 i1) == (DouglasFir f2 i2) = (f1 == f2) && (i1 == i2)\n  _ == _ = False\n",
+        "value":"\n-- Create a type for fir trees of different species.  A tree needs to be provided a height in feet and inches\ndata FirTree = FrasierFir Int Int | BalsamFir Int Int | DouglasFir Int Int\n\n{-|\n - Make FirTree an instance of Eq.  In order to be equal, the species of tree must be the same\n - and the trees must have the same height.\n -}\ninstance Eq FirTree where\n  (FrasierFir f1 i1) == (FrasierFir f2 i2) = (f1 == f2) && (i1 == i2)\n  (BalsamFir f1 i1) == (BalsamFir f2 i2) = (f1 == f2) && (i1 == i2)\n  (DouglasFir f1 i1) == (DouglasFir f2 i2) = (f1 == f2) && (i1 == i2)\n  _ == _ = False\n",
         "children":null
     },
     {
@@ -584,7 +598,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I can now test out the ",
+                "value":" I tested the ",
                 "children":null
             },
             {
@@ -738,7 +752,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One of the major misconceptions I had about class extensions was a result of my object oriented background.  I figured types that are instances of ",
+                "value":" One of the major misconceptions I had about class extensions was a result of my object oriented background.  I figured that instances of ",
                 "children":null
             },
             {
@@ -766,7 +780,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", but that is not the case.  When a class extension actually means is that for a type to be an instance of ",
+                "value":", but that is not the case.  What a class extension actually means is that for a type to be an instance of ",
                 "children":null
             },
             {
@@ -834,7 +848,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" of class extensions which is similar to my object oriented ",
+                "value":" of Haskell class extensions, similar to my object oriented ",
                 "children":null
             },
             {
@@ -932,7 +946,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", they first must be made instances of ",
+                "value":", they first must be instances of ",
                 "children":null
             },
             {
@@ -995,7 +1009,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" These types can be tested with the functionality provided by the type classes. ",
+                "value":" Next I tested the functionality provided by the type classes. ",
                 "children":null
             }
         ]
@@ -1016,7 +1030,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" As this example demonstrates, you could say that Haskell provides multiple inheritance of classes. However they are more like interfaces, and instances of subclasses must also explicitly be instances of all parent classes in the inheritance hierarchy. ",
+                "value":" As this example demonstrates, Haskell provides multiple inheritance of classes. However, Haskell classes are more like interfaces, and instances of subclasses must explicitly be instances of all parent classes in the inheritance hierarchy. ",
                 "children":null
             }
         ]
@@ -1044,7 +1058,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Type classes in Haskell are much different than the ones found in object oriented languages.  I’m excited to learn how to use them in more complex Haskell programs. ",
+                "value":" Type classes in Haskell are much different than the ones found in object oriented languages.  I'm excited to learn how to use them in more complex Haskell programs. ",
                 "children":null
             }
         ]
@@ -1062,8 +1076,8 @@ db.posts_content.remove({name: postName});
 db.posts.insertOne({
     name: postName,
     title: "Haskell Part V - Classes",
-    description: `The closest comparison for Haskell classes I can think of in the object oriented 
-        world is Java interfaces with default methods.  This article clears more the confusion of 
+    description: `The closest comparison for Haskell classes in the object oriented world is Java 
+        interfaces with default methods.  This article helps clear the confusion of 
         Haskell classes.`,
     date: new Date('2019-01-01T12:00:00'),
     type: "Discovery",
