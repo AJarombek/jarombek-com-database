@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" C++ is a language I’ve always wanted to learn.  So many modern languages are influenced by C++ and their designs are often predicated upon the strengths and weaknesses of C++.  For example, I recently wrote about how interfaces and the lack of multiple inheritance in Java is ",
+                "value":" C++ is a language I've always wanted to learn.  So many modern languages are influenced by C++ and their designs are often predicated upon the strengths and weaknesses of C++.  For example, I recently wrote about how interfaces and the lack of multiple inheritance in Java is ",
                 "children":null
             },
             {
@@ -50,7 +50,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" C++ is a low level language which is closely related to the C programming language.  Originally called \"C with Classes,\" C++ added object oriented concepts on top of C",
+                "value":" C++ is a low level language closely related to the C programming language.  Originally called \"C with Classes,\" C++ added object oriented concepts on top of C",
                 "children":null
             },
             {
@@ -74,7 +74,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Because of this philosophy, C++ is commonly used for low-level tasks such as system programming.  However, being low-level causes C++ to contain increased complexity. ",
+                "value":".  Because of this philosophy, C++ is commonly used for low-level tasks such as system programming.  However, being low-level causes C++ to contain some complexities. ",
                 "children":null
             }
         ]
@@ -90,7 +90,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" C++ is a language I’ve always wanted to learn.  So many modern languages are influenced by C++ and their designs are often predicated upon the strengths and weaknesses of C++.  For example, I recently wrote about how interfaces and the lack of multiple inheritance in Java is ",
+                "value":" C++ is a language I've always wanted to learn.  So many modern languages are influenced by C++ and their designs are often predicated upon the strengths and weaknesses of C++.  For example, I recently wrote about how interfaces and the lack of multiple inheritance in Java is ",
                 "children":null
             },
             {
@@ -124,7 +124,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" C++ is a low level language which is closely related to the C programming language.  Originally called \"C with Classes,\" C++ added object oriented concepts on top of C",
+                "value":" C++ is a low level language closely related to the C programming language.  Originally called \"C with Classes,\" C++ added object oriented concepts on top of C",
                 "children":null
             },
             {
@@ -148,7 +148,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Because of this philosophy, C++ is commonly used for low-level tasks such as system programming.  However, being low-level causes C++ to contain increased complexity. ",
+                "value":".  Because of this philosophy, C++ is commonly used for low-level tasks such as system programming.  However, being low-level causes C++ to contain some complexities. ",
                 "children":null
             }
         ]
@@ -161,7 +161,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This post is my first impressions of C++.  I compare it to other languages such as C and Java, which influenced and is influenced by C++, respectively.  I also mention all the basic C++ features that I find interesting. ",
+                "value":" This post is my first impressions of C++.  I compare it to other languages such as C and Java, since C influenced C++ and Java was influenced by C++.  I also mention all the basic C++ features that I find interesting. ",
                 "children":null
             }
         ]
@@ -210,7 +210,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" C++ has more modern syntax as well.  For example, types don’t need to be explicitly declared using the ",
+                "value":" C++ has some modern syntax as well.  For example, types don't need to be explicitly declared with the help of the ",
                 "children":null
             },
             {
@@ -252,7 +252,28 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" in Java and C# (note: all these languages are still statically typed). ",
+                "value":" in Java and C# (note: all these languages are still ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/jul-15-2018-groovy-optional-typing#dynamic-&-static-typing"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":" statically typed",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":"). ",
                 "children":null
             }
         ]
@@ -417,7 +438,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Compile time functions are commonly used as a performance strategy.  We can prove that the ",
+                "value":" Compile time functions are commonly used as a performance strategy.  We can prove ",
                 "children":null
             },
             {
@@ -431,7 +452,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function executes at compile time by using a static assertions.  Static assertions are just like regular expressions except executed at compile time instead of runtime. ",
+                "value":" executes at compile time by using static assertions.  Static assertions are just like regular assertions except executed at compile time instead of runtime. ",
                 "children":null
             }
         ]
@@ -452,7 +473,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Static assertions are a really cool language feature that I’ve never seen before.  The greatest thing about them is an IDE will check if these assertions pass in the code itself. ",
+                "value":" Static assertions are a really cool language feature that I've never seen before.  The greatest thing about them is how IDEs check if they pass in the code itself. ",
                 "children":null
             }
         ]
@@ -465,7 +486,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" C++ also adds additional pointer functionality to the C model.  While you can still use pointers just like in C, there is an additional “references to” operator specified with the unary suffix ",
+                "value":" C++ also adds additional pointer functionality to the C model.  While you can still use pointers just like in C, there is an additional \"references to\" operator specified with the unary suffix ",
                 "children":null
             },
             {
@@ -489,7 +510,7 @@ content = [
         "attributes":{
             "language":"C++"
         },
-        "value":"// Basic pointers are the same as C\nint minutes[] = {95, 85, 15, 110, 160, 105, -1};\nint* minp = &minutes[5];\n\nassert(*minp == 105);\n\n// C++ also supplies a unary suffix '&'.  It is similar to a pointer as it 'references to' a memory location.\n// '&' differs from a pointer because it doesn't need to be prefixed with '*' to get its value.\nint& minr = minutes[6];\n\nassert(minr == -1);\n",
+        "value":"// Basic pointers are the same as C\nint minutes[] = {95, 85, 15, 110, 160, 105, -1};\nint* minp = &minutes[5];\n\nassert(*minp == 105);\n\n// C++ also supplies a unary suffix '&'.  It is similar to a pointer as it \"references to\" a memory location.\n// '&' differs from a pointer because it doesn't need to be prefixed with '*' to get its value.\nint& minr = minutes[6];\n\nassert(minr == -1);\n",
         "children":null
     },
     {
@@ -515,7 +536,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Anyone who has heard of C++ but never programmed with it usually think of it as an object oriented version of C.  This assumption is true, as C++ provides an enhanced custom type system with classes. I decided to create an API for a running exercise in both C++ and C.  This example demonstrates some differences between the two languages. ",
+                "value":" Anyone who's heard of C++ but never used it usually thinks its an object oriented version of C.  This assumption is true, as C++ provides an enhanced custom type system with classes. I decided to create an API for a running exercise in both C++ and C.  This example demonstrates some differences between the two languages. ",
                 "children":null
             }
         ]
@@ -569,7 +590,7 @@ content = [
         "attributes":{
             "language":"C++"
         },
-        "value":"  // main.cpp\n\n  #include \"Run.h\"\n  #include <iostream>\n\n  using namespace std;\n\n  int main()\n  {\n    Run run {2.0, 12, 31};\n    double pace = run.pace();\n    cout << pace << endl;\n\n    auto minute_pace = (int) pace / 60;\n    auto second_pace = (int) pace % 60;\n\n    assert(minute_pace == 6);\n    assert(second_pace == 15);\n\n    return 0;\n  }\n",
+        "value":"// main.cpp\n\n#include \"Run.h\"\n#include <iostream>\n\nusing namespace std;\n\nint main()\n{\n  Run run {2.0, 12, 31};\n  double pace = run.pace();\n  cout << pace << endl;\n\n  auto minute_pace = (int) pace / 60;\n  auto second_pace = (int) pace % 60;\n\n  assert(minute_pace == 6);\n  assert(second_pace == 15);\n\n  return 0;\n}\n",
         "children":null
     },
     {
@@ -675,7 +696,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I’m really excited to continue learning C++ and see how it influenced all the languages I use on a daily basis.  All the code from this article is available on ",
+                "value":" I'm really excited to continue learning C++ and see how it influenced all the languages I use on a daily basis.  All the code from this article is available on ",
                 "children":null
             },
             {

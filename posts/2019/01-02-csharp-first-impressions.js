@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I was recently told that my next project at work would be a .NET application using C# in the backend. C# has been a language on my radar for a while now, with wide ranging applications such as .NET apps and Xamarin.  While C# supports multiple programming paradigms, its mostly used for object oriented programming.  C# is commonly referred to as a descendant of Java and C++",
+                "value":" I was recently told that my next project at work would be a .NET application using C# in the backend. C# has been on my radar for a while now, since it supports wide ranging applications such as .NET apps and Xamarin.  While C# supports multiple programming paradigms, its mostly used for object oriented programming.  C# is commonly referred to as a descendant of Java and C++",
                 "children":null
             },
             {
@@ -28,7 +28,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", which is great for me since Java is my strongest language and I’m ",
+                "value":", which is great for me since Java is my strongest language and I'm ",
                 "children":null
             },
             {
@@ -149,7 +149,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I was recently told that my next project at work would be a .NET application using C# in the backend. C# has been a language on my radar for a while now, with wide ranging applications such as .NET apps and Xamarin.  While C# supports multiple programming paradigms, its mostly used for object oriented programming.  C# is commonly referred to as a descendant of Java and C++",
+                "value":" I was recently told that my next project at work would be a .NET application using C# in the backend. C# has been on my radar for a while now, since it supports wide ranging applications such as .NET apps and Xamarin.  While C# supports multiple programming paradigms, its mostly used for object oriented programming.  C# is commonly referred to as a descendant of Java and C++",
                 "children":null
             },
             {
@@ -161,7 +161,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", which is great for me since Java is my strongest language and I’m ",
+                "value":", which is great for me since Java is my strongest language and I'm ",
                 "children":null
             },
             {
@@ -369,7 +369,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The main method also looks just like Java. ",
+                "value":" The main method also looks like Java. ",
                 "children":null
             }
         ]
@@ -390,7 +390,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" While you can write C# code just like Java, there are a bunch of unique features to the language as well.  One of those differences I noticed early on was the shortened getter/setter syntax, which is much more elegant than Java. ",
+                "value":" While you can write C# code just like Java, there are a bunch of unique features to the language as well.  One of the differences I noticed early on was the shortened getter/setter syntax, which is much more elegant than Java. ",
                 "children":null
             }
         ]
@@ -460,7 +460,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One of the newer features in C# are tuples, which are a great way to represent an arbitrary amount of data.  Tuples are one of my favorite Python features, so I’m glad to see other languages using them. ",
+                "value":" One of the newer features in C# is tuples, which are a great way to represent an arbitrary amount of data.  Tuples are one of my favorite Python features, so I'm glad to see other languages using them. ",
                 "children":null
             }
         ]
@@ -481,7 +481,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can actually create variable identifiers with the same name as a reserved keyword.  I’m not aware of another language I use that has this feature. ",
+                "value":" In C# you can create variable identifiers with the same name as a reserved keyword.  I don't think any  other languages I use have this feature. ",
                 "children":null
             }
         ]
@@ -516,7 +516,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" keyword isn’t part of the identifier, and can be removed if the name isn’t a reserved keyword",
+                "value":" token isn't part of the identifier, and can be removed if the name isn't a reserved keyword",
                 "children":null
             },
             {
@@ -551,7 +551,7 @@ content = [
         "attributes":{
             "language":"C#"
         },
-        "value":"// My C# execution config throws an OverflowException by default for number overflows.  Use an 'unchecked'\n// block to change this behavior.\nAssert(unchecked(int.MaxValue + 1) == int.MinValue);\n\n// Wrap the value around if a number overflows its max or min value.\nunchecked\n{\n  var minValue = int.MaxValue + 1;\n  var maxValue = int.MinValue - 1;\n\n  Assert(maxValue == int.MaxValue && minValue == int.MinValue);\n\n  // If you want an OverflowException to be thrown when a number overflows (or a compile time error),\n  // use a 'checked' block\n  Assert(checked(5 + 5 == 10));\n\n  // This code won't compile\n  // checked(int.MaxValue + 1);\n}\n",
+        "value":"\n// My C# execution config throws an OverflowException by default for number overflows.  Use an 'unchecked'\n// block to change this behavior.\nAssert(unchecked(int.MaxValue + 1) == int.MinValue);\n\n// Wrap the value around if a number overflows its max or min value.\nunchecked\n{\n  var minValue = int.MaxValue + 1;\n  var maxValue = int.MinValue - 1;\n\n  Assert(maxValue == int.MaxValue && minValue == int.MinValue);\n\n  // If you want an OverflowException to be thrown when a number overflows (or a compile time error),\n  // use a 'checked' block\n  Assert(checked(5 + 5 == 10));\n\n  // This code won't compile\n  // checked(int.MaxValue + 1);\n}\n",
         "children":null
     },
     {
@@ -562,7 +562,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" C# provides string interpolation syntax and multi-line strings, both of which are common in modern languages such as JavaScript, Swift, and Groovy.  These features are notable absent in Java and C++. ",
+                "value":" C# provides string interpolation syntax and multi-line strings, both of which are common in modern languages such as JavaScript, Swift, and Groovy.  These features are notably absent in Java and C++. ",
                 "children":null
             }
         ]
@@ -583,7 +583,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" C# adds more features to arrays from C++ and Java.  For example, C# provides two types of multi-dimensional arrays: rectangular and jagged.  Rectangular arrays must be the same length in each direction, while jagged can be a variable length in the inner dimension.  While C# has explicit syntax to enforce rectangular arrays, ",
+                "value":" C# adds more features to arrays from C++ and Java.  For example, C# provides two types of multi-dimensional arrays: rectangular and jagged.  Rectangular arrays must be the same length in each dimension, while jagged arrays can be different lengths in the inner dimension.  While C# has explicit syntax to enforce rectangular arrays, ",
                 "children":null
             },
             {
@@ -625,7 +625,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" By default variables are passed to functions by value in C# such that value-types are passed as a copy of the value and reference-types are passed as a copy of the reference.  Pass by value behavior can be changed to pass by reference with the ",
+                "value":" By default, variables are passed to functions by value in C# such that value-types are passed as a copy of the value and reference-types are passed as a copy of the reference.  Pass by value behavior can be changed to pass by reference with the ",
                 "children":null
             },
             {
@@ -649,7 +649,7 @@ content = [
         "attributes":{
             "language":"C#"
         },
-        "value":"/// Increment an integer (pass by value).\nstatic int Inc(int num)\n{\n  return num++;\n}\n\n/// Increment an integer (pass by reference).\nstatic int IncRef(ref int num)\n{\n  return num++;\n}\n\npublic static void Main(params string[] args)\n{\n  var num = 26;\n\n  // Inc() doesn't mutate num, and returns the new value\n  var num2 = Inc(num);\n\n  Assert(num == 26);\n  Assert(num2 == 27);\n\n  // IncRef() mutates num\n  var num3 = IncRef(ref num);\n\n  Assert(num == 27);\n  Assert(num3 == 27);\n}\n",
+        "value":"// Increment an integer (pass by value).\nstatic int Inc(int num)\n{\n  return num++;\n}\n\n// Increment an integer (pass by reference).\nstatic int IncRef(ref int num)\n{\n  return num++;\n}\n\npublic static void Main(params string[] args)\n{\n  var num = 26;\n\n  // Inc() doesn't mutate num, and returns the new value\n  var num2 = Inc(num);\n\n  Assert(num == 26);\n  Assert(num2 == 27);\n\n  // IncRef() mutates num\n  var num3 = IncRef(ref num);\n\n  Assert(num == 27);\n  Assert(num3 == 27);\n}\n",
         "children":null
     },
     {
@@ -680,7 +680,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":""
+                    "href":"https://github.com/AJarombek/\njarombek-com-sources/blob/master/2019/01-Jan/01-02-csharp-first-impressions/basics/output-parameter.sql"
                 },
                 "value":null,
                 "children":[
@@ -705,7 +705,7 @@ content = [
         "attributes":{
             "language":"C#"
         },
-        "value":"/// Information about the class using output parameters\nstatic void Info(out string author, out DateTime date)\n{\n  author = \"Andrew Jarombek\";\n  date = DateTime.Parse(\"12/23/2018\");\n}\n\n// 'params' keyword allows for a variable number of arguments\npublic static void Main(params string[] args)\n{\n  // Call a method with output arguments.  Use a discard '_' to ignore certain output arguments.\n  Info(out string author, out _);\n\n  Assert(author == \"Andrew Jarombek\");\n}\n\n",
+        "value":"// Information about the class using output parameters\nstatic void Info(out string author, out DateTime date)\n{\n  author = \"Andrew Jarombek\";\n  date = DateTime.Parse(\"12/23/2018\");\n}\n\n// 'params' keyword allows for a variable number of arguments\npublic static void Main(params string[] args)\n{\n  // Call a method with output arguments.  Use a discard '_' to ignore certain output arguments.\n  Info(out string author, out _);\n\n  Assert(author == \"Andrew Jarombek\");\n}\n\n",
         "children":null
     },
     {
@@ -808,7 +808,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" While C# is influenced by Java and C++, it also includes many modern operations that I appreciate about languages such as Python, Swift, and Groovy.  I’m excited to learn more about about what C# has to offer in the future.  All the code from this post is available on ",
+                "value":" While C# is influenced by Java and C++, it also includes many modern operations that I appreciate about languages such as Python, Swift, and Groovy.  I'm excited to learn more of what C# has to offer in the future.  All the code from this post is available on ",
                 "children":null
             },
             {
