@@ -1,7 +1,7 @@
 /**
  * Script for the MongoDB Shell.
  * @author Andrew Jarombek
- * @since 12/29/2018
+ * @since 1/5/2019
  */
 
 connection = new Mongo();
