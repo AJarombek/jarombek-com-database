@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Ever since I first heard about WebAssembly, I’ve wanted to play around with it.  Lower-level and intermediate languages have always interested me.  However, the lack of use cases for languages such as C, C++, and Assembly in my personal projects resulted in them mostly flying under my radar.  I do believe proficiency in these languages leads developers to writing better high-level code, so I try work with them in my free time when I have a chance. ",
+                "value":" Low-level languages such as C, C++, and Assembly have always interested me.  However, the lack of use cases for these languages in my personal projects causes them to be left to the side.  I do believe proficiency in these languages helps developers write better high-level code, so I occasionally work with them in my free time.  This article introduces a new low-level language called WebAssembly. ",
                 "children":null
             }
         ]
@@ -29,7 +29,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This article looks at a low-level language called WebAssembly.  WebAssembly was released as a minimum viable product (MVP) in March 2017",
+                "value":" Ever since I first heard about WebAssembly, I've wanted to play around with it.  WebAssembly was released as a minimum viable product (MVP) in March 2017",
                 "children":null
             },
             {
@@ -41,7 +41,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  It’s designed to work in the web alongside JavaScript. WebAssembly allows programming languages other than JavaScript to run in the browser.  Despite its name, WebAssembly is not an Assembly language since its not hardware specific",
+                "value":".  It's designed to work in the web alongside JavaScript. WebAssembly allows programming languages other than JavaScript to run in the browser.  Despite its name, WebAssembly is not an assembly language since its not hardware specific",
                 "children":null
             },
             {
@@ -53,7 +53,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Instead WebAssembly runs on the same browser virtual machine that executes JavaScript",
+                "value":".  Instead, WebAssembly runs in the same browser virtual machine that executes JavaScript",
                 "children":null
             },
             {
@@ -65,7 +65,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In the past this VM was only able to run JavaScript, however as of November 2017 it can also execute WebAssembly",
+                "value":".  In the past this VM was only able to run JavaScript, however as of November 2017 it can also execute WebAssembly across all major browsers",
                 "children":null
             },
             {
@@ -93,7 +93,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Ever since I first heard about WebAssembly, I’ve wanted to play around with it.  Lower-level and intermediate languages have always interested me.  However, the lack of use cases for languages such as C, C++, and Assembly in my personal projects resulted in them mostly flying under my radar.  I do believe proficiency in these languages leads developers to writing better high-level code, so I try work with them in my free time when I have a chance. ",
+                "value":" Low-level languages such as C, C++, and Assembly have always interested me.  However, the lack of use cases for these languages in my personal projects causes them to be left to the side.  I do believe proficiency in these languages helps developers write better high-level code, so I occasionally work with them in my free time.  This article introduces a new low-level language called WebAssembly. ",
                 "children":null
             }
         ]
@@ -106,7 +106,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This article looks at a low-level language called WebAssembly.  WebAssembly was released as a minimum viable product (MVP) in March 2017",
+                "value":" Ever since I first heard about WebAssembly, I've wanted to play around with it.  WebAssembly was released as a minimum viable product (MVP) in March 2017",
                 "children":null
             },
             {
@@ -118,7 +118,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  It’s designed to work in the web alongside JavaScript. WebAssembly allows programming languages other than JavaScript to run in the browser.  Despite its name, WebAssembly is not an Assembly language since its not hardware specific",
+                "value":".  It's designed to work in the web alongside JavaScript. WebAssembly allows programming languages other than JavaScript to run in the browser.  Despite its name, WebAssembly is not an assembly language since its not hardware specific",
                 "children":null
             },
             {
@@ -130,7 +130,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Instead WebAssembly runs on the same browser virtual machine that executes JavaScript",
+                "value":".  Instead, WebAssembly runs in the same browser virtual machine that executes JavaScript",
                 "children":null
             },
             {
@@ -142,7 +142,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In the past this VM was only able to run JavaScript, however as of November 2017 it can also execute WebAssembly",
+                "value":".  In the past this VM was only able to run JavaScript, however as of November 2017 it can also execute WebAssembly across all major browsers",
                 "children":null
             },
             {
@@ -167,7 +167,112 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In its current state, WebAssembly enables C, C++, and Rust to run in a web browser.  One future goal of WebAssembly is to allow garbage collected languages to run in the browser as well (these include Java, Python, C#, etc.). ",
+                "value":" In its current state, WebAssembly enables ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog?query=C&page=1"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"C",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":", ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/jan-3-2019-cpp-first-impressions"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"C++",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":", and Rust to run in a web browser.  One future goal of WebAssembly is to allow garbage collected languages to run in the browser as well (these include ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog?query=java&page=1"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"Java",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":", ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog?query=python&page=1"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"Python",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":", ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/jan-2-2019-csharp-first-impressions"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"C#",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":", etc.). ",
                 "children":null
             }
         ]
@@ -233,7 +338,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In this article, I’m going to write code in WebAssembly and execute it in JavaScript.  I think it's a great educational opportunity to see how this new intermediate representation for the web works. For real applications, only compilers will need to understand WebAssembly.  Application developers will simply write code in higher-level languages such as C or C++ and compile them to WebAssembly to be run in the browser. ",
+                "value":" In this article, I'm going to write code in WebAssembly and execute it in JavaScript.  I think it's a great educational opportunity to see how this new intermediate representation for the web works. For real applications, only compilers will need to understand WebAssembly.  Application developers will simply write code in higher-level languages such as C or C++ and compile them to WebAssembly to be run in the browser. ",
                 "children":null
             }
         ]
@@ -333,7 +438,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". S-expressions are a tree-like structure which are nested in WebAssembly with parenthesis. ",
+                "value":". S-expressions are tree-like structures which are nested in WebAssembly with parenthesis. ",
                 "children":null
             }
         ]
@@ -402,7 +507,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":").  With these basic types any complex type can be created.  Each function has a set number of local variables which can be accessed with the ",
+                "value":").  With these basic types any complex type can be created.  Each function has a set number of local variables accessed with the ",
                 "children":null
             },
             {
@@ -436,7 +541,7 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"param ${param_name} {param-type}",
+                "value":"(param ${param_name} {param-type})",
                 "children":null
             },
             {
@@ -511,7 +616,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" pops both integers of the execution stack, adds them together, and then places the result back on the stack.  This integer result is returned from the function. ",
+                "value":" pops both integers off the execution stack, adds them together, and places the result back on the stack.  Finally, the result is returned from the function. ",
                 "children":null
             }
         ]
@@ -538,7 +643,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function for use outside of the module.  In my case, I use this function in my JavaScript code. ",
+                "value":" function for use outside the module.  In my case, I use this function in JavaScript code. ",
                 "children":null
             }
         ]
@@ -661,7 +766,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" global object, the text WAT files that I coded in need to be converted to binary WASM files.  This is accomplished with the WebAssembly Tool Kit (WABT).  Although WABT is implemented in C++, there is a JavaScript port that can be imported as an npm module",
+                "value":" global object, the WAT files I coded need to be converted to binary WASM files.  This is accomplished with the WebAssembly Tool Kit (WABT).  Although WABT is implemented in C++, there is a JavaScript port in the npm registry",
                 "children":null
             },
             {
@@ -701,7 +806,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function in the ",
+                "value":" function. ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"$add",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" exists in a file called ",
                 "children":null
             },
             {
@@ -720,7 +839,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" file. ",
+                "value":". ",
                 "children":null
             }
         ]
@@ -811,7 +930,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Here is an example of all these sections: ",
+                "value":".  Here's an example with all these sections: ",
                 "children":null
             }
         ]
@@ -853,7 +972,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This code reveals some of the 32-bit integer operators that WebAssembly provides.  Also, inline integer values can be created with the ",
+                "value":" This code reveals some of the 32-bit integer operators that WebAssembly provides.  Also, inline integer values are created with the ",
                 "children":null
             },
             {
@@ -867,7 +986,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" instruction. Changing the above functions to handle floating point distances requires type conversions and the ",
+                "value":" instruction. Changing these functions to handle floating point distances requires type conversions and the ",
                 "children":null
             },
             {
@@ -928,7 +1047,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Memory can be read and written to using operators.  For example, ",
+                "value":".  Memory is read and written to using operators.  For example, ",
                 "children":null
             },
             {
@@ -977,7 +1096,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Using memory you can create functions that persist data between invocations, such as a ",
+                "value":" Memory helps create functions that persist data between invocations, such as a ",
                 "children":null
             },
             {
@@ -1048,7 +1167,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I had a lot of fun experimenting with WebAssembly.  Since its still so early in WebAssembly’s life cycle, it’s hard to find a lot of material about it online.  I’m excited to follow its development progress and continue prototyping with it in the future.  The code for this article is available on ",
+                "value":" I had a lot of fun experimenting with WebAssembly.  Since its still so early in WebAssembly's life cycle, it's hard to find a lot of material about it online.  I'm excited to follow its development progress and continue prototyping with it in the future.  The code for this article is available on ",
                 "children":null
             },
             {
