@@ -101,3 +101,4 @@ load('./posts/2019/01-01-haskell-pt5.js');
 load('./posts/2019/01-02-csharp-first-impressions.js');
 load('./posts/2019/01-03-cpp-first-impressions.js');
 load('./posts/2019/01-07-webassembly.js');
+load('./posts/2019/01-19-react-lifecycles.js');
