@@ -1882,7 +1882,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This post explored how different languages use multiple inheritance or comparable workarounds.  Perhaps  I'll add more languages to this list as I continue to explore!  All the code from this post is available  on ",
+                "value":" This post explored how different languages use multiple inheritance or comparable workarounds. I'll add more languages to this list as I continue to explore!  All the code from this post is available  on ",
                 "children":null
             },
             {
@@ -1899,6 +1899,75 @@ content = [
                         "children":null
                     }
                 ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
+                "children":null
+            }
+        ]
+    },
+    {
+        "el":"updateinfo",
+        "attributes":{
+            "date":"January 31st, 2019"
+        },
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" C# does not support multiple inheritance in its current version (7.0).  The inheritance features provided by C# are comparable to those in Java prior to Java 8.  Therefore, object composition is needed to create a multiple inheritance model in C#.  I demonstrate composing multiple objects on ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2018/12-Dec/12-22-multiple-inheritance/\ncsharp"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"GitHub",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  There are proposals to implement default interface methods in C# for a future release (similar to Java's ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/jan-16-2018-java-default-method"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":" default methods",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":")",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"6",
+                "children":null
             },
             {
                 "el":"#text",
@@ -2001,6 +2070,12 @@ db.posts.insertOne({
             endName: "",
             linkName: "https://en.wikipedia.org/wiki/Composition_over_inheritance",
             link: "https://en.wikipedia.org/wiki/Composition_over_inheritance"
+        },
+        {
+            startName: "\"default interface methods\", ",
+            endName: "",
+            linkName: "https://bit.ly/2S4KmYh",
+            link: "https://bit.ly/2S4KmYh"
         }
     ]
 });

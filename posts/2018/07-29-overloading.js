@@ -776,6 +776,42 @@ content = [
         ]
     },
     {
+        "el":"updateinfo",
+        "attributes":{
+            "date":"January 31st, 2019"
+        },
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Overloaded methods work similarly in C#, which you can view on ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://github.com/AJarombek/\njarombek-com-sources/tree/master/2018/07-jul/7-29-overloading/csharp"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"GitHub",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
+                "children":null
+            }
+        ]
+    },
+    {
         "el":"sectiontitle",
         "attributes":{
             "title":"Groovy"

@@ -875,7 +875,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" collection to store the fields.  The fields themselves are represented as enums.  This approach is not only type safe and more readable, but  also has the same performance as the non-safe integer approach. ",
+                "value":" collection to store the fields.  The fields themselves are represented as enums.  This approach is not only type safe and more readable, but also has the same performance as the non-safe integer approach. ",
                 "children":null
             }
         ]
@@ -945,6 +945,42 @@ content = [
                 "el":"#text",
                 "attributes":null,
                 "value":" classes. ",
+                "children":null
+            }
+        ]
+    },
+    {
+        "el":"updateinfo",
+        "attributes":{
+            "date":"January 31st, 2019"
+        },
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" It's also easy to create bit fields with enums in C#.  You can check out the C# code on ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2018/06-Jun/6-23-Bit-Field/CSharp"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"GitHub",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
                 "children":null
             }
         ]
