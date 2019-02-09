@@ -1039,7 +1039,9 @@ content = [
 ];
 
 postName = "may-23-2018-javascript-immutable";
-postViews = db.posts.findOne({name: postName}).views;
+postViews = db.posts.findOne({name: postName});
+
+postViews = (existingPost) ? existingPost.views : 0;
 
 db.posts.remove({name: postName});
 db.posts_content.remove({name: postName});

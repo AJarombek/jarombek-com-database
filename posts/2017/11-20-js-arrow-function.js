@@ -718,7 +718,9 @@ content = [
 ];
 
 postName = "nov-20-2017-js-arrow-functions";
-postViews = db.posts.findOne({name: postName}).views;
+postViews = db.posts.findOne({name: postName});
+
+postViews = (existingPost) ? existingPost.views : 0;
 
 db.posts.remove({name: postName});
 db.posts_content.remove({name: postName});

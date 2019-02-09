@@ -801,7 +801,9 @@ content = [
 ];
 
 postName = "jan-6-2018-angular-5-first-impressions";
-postViews = db.posts.findOne({name: postName}).views;
+postViews = db.posts.findOne({name: postName});
+
+postViews = (existingPost) ? existingPost.views : 0;
 
 db.posts.remove({name: postName});
 db.posts_content.remove({name: postName});

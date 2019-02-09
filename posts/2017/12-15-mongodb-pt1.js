@@ -804,7 +804,9 @@ content = [
 ];
 
 postName = "dec-15-2017-mongodb-pt1";
-postViews = db.posts.findOne({name: postName}).views;
+postViews = db.posts.findOne({name: postName});
+
+postViews = (existingPost) ? existingPost.views : 0;
 
 db.posts.remove({name: postName});
 db.posts_content.remove({name: postName});

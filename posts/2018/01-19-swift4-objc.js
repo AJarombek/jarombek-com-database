@@ -314,7 +314,9 @@ content = [
 ];
 
 postName = "jan-19-2018-swift4-objc";
-postViews = db.posts.findOne({name: postName}).views;
+postViews = db.posts.findOne({name: postName});
+
+postViews = (existingPost) ? existingPost.views : 0;
 
 db.posts.remove({name: postName});
 db.posts_content.remove({name: postName});
