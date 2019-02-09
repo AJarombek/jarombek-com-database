@@ -443,7 +443,7 @@ content = [
 ];
 
 postName = "nov-8-2017-js-scope-hoisting";
-postViews = db.posts.findOne({name: postName});
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 

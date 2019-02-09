@@ -650,7 +650,7 @@ content = [
 ];
 
 postName = "nov-26-2017-js-async-function";
-postViews = db.posts.findOne({name: postName});
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 

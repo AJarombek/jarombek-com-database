@@ -553,7 +553,7 @@ content = [
 ];
 
 postName = "dec-27-2017-mongodb-pt4";
-postViews = db.posts.findOne({name: postName});
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 

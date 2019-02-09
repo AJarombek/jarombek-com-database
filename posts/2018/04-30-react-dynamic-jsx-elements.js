@@ -813,7 +813,7 @@ content = [
 ];
 
 postName = "apr-30-2018-react-dynamic-jsx-elements";
-postViews = db.posts.findOne({name: postName});
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 

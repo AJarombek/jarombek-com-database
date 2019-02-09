@@ -1413,7 +1413,7 @@ content = [
 ];
 
 postName = "dec-30-2017-nodejs-mongodb-api-prototype";
-postViews = db.posts.findOne({name: postName});
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 

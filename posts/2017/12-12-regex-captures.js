@@ -257,7 +257,7 @@ content = [
 ];
 
 postName = "dec-12-2017-regex-captures";
-postViews = db.posts.findOne({name: postName});
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 

@@ -646,7 +646,7 @@ content = [
 ];
 
 postName = "nov-10-2017-es6-modules-babel";
-postViews = db.posts.findOne({name: postName});
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 

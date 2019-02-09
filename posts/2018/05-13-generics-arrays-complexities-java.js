@@ -1481,7 +1481,7 @@ content = [
 ];
 
 postName = "may-13-2018-generics-arrays-complexities-java";
-postViews = db.posts.findOne({name: postName});
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 

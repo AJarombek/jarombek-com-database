@@ -911,7 +911,7 @@ content = [
 ];
 
 postName = "nov-13-2017-js-global-object";
-postViews = db.posts.findOne({name: postName});
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 

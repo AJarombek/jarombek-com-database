@@ -637,7 +637,7 @@ content = [
 ];
 
 postName = "jan-27-2018-angular-5-routing";
-postViews = db.posts.findOne({name: postName});
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 

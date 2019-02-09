@@ -879,7 +879,7 @@ content = [
 ];
 
 postName = "jan-3-2018-string-swift";
-postViews = db.posts.findOne({name: postName});
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 

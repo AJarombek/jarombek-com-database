@@ -826,7 +826,7 @@ content = [
 ];
 
 postName = "nov-12-2017-neo4j-challenges";
-postViews = db.posts.findOne({name: postName});
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 

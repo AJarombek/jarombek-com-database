@@ -473,7 +473,7 @@ content = [
 ];
 
 postName = "nov-25-2017-generators";
-postViews = db.posts.findOne({name: postName});
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 

@@ -1100,7 +1100,7 @@ content = [
 ];
 
 postName = "mar-2-2018-oracle-queries";
-postViews = db.posts.findOne({name: postName});
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 

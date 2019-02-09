@@ -327,7 +327,7 @@ content = [
 ];
 
 postName = "nov-15-2017-js-strict-mode";
-postViews = db.posts.findOne({name: postName});
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 

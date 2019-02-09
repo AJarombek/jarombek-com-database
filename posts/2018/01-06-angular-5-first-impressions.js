@@ -801,7 +801,7 @@ content = [
 ];
 
 postName = "jan-6-2018-angular-5-first-impressions";
-postViews = db.posts.findOne({name: postName});
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 

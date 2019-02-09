@@ -1435,7 +1435,7 @@ content = [
 ];
 
 postName = "may-15-2018-java-clone";
-postViews = db.posts.findOne({name: postName});
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 

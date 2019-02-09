@@ -595,7 +595,7 @@ content = [
 ];
 
 postName = "jan-16-2018-java-default-method";
-postViews = db.posts.findOne({name: postName});
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 

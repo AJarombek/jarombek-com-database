@@ -204,7 +204,7 @@ content = [
 ];
 
 postName = "dec-7-2017-native-getter-setter";
-postViews = db.posts.findOne({name: postName});
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 

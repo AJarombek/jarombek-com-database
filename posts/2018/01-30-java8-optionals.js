@@ -1304,7 +1304,7 @@ content = [
 ];
 
 postName = "jan-30-2018-java8-optionals";
-postViews = db.posts.findOne({name: postName});
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 

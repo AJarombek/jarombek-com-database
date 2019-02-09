@@ -1080,7 +1080,7 @@ content = [
 ];
 
 postName = "nov-11-2017-js-this";
-postViews = db.posts.findOne({name: postName});
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 

@@ -480,7 +480,7 @@ content = [
 ];
 
 postName = "jan-24-2018-rabbitmq";
-postViews = db.posts.findOne({name: postName});
+existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
 
