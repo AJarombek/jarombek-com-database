@@ -79,7 +79,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"). If you want to learn more about React, I’ve written multiple posts about it in the past (including an ",
+                "value":"). If you want to learn more about React, I've written multiple posts about it in the past (including an ",
                 "children":null
             },
             {
@@ -113,7 +113,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In general I enjoy working in React more than Angular nowadays.  React feels simpler to me for developing website components.  As this post reveals, the lifecycles of React components are equally simple. ",
+                "value":" I enjoy working in React more than Angular nowadays.  React feels simpler for developing website components.  As this post reveals, the lifecycles of React components are equally simple. ",
                 "children":null
             }
         ]
@@ -192,7 +192,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"). If you want to learn more about React, I’ve written multiple posts about it in the past (including an ",
+                "value":"). If you want to learn more about React, I've written multiple posts about it in the past (including an ",
                 "children":null
             },
             {
@@ -226,7 +226,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In general I enjoy working in React more than Angular nowadays.  React feels simpler to me for developing website components.  As this post reveals, the lifecycles of React components are equally simple. ",
+                "value":" I enjoy working in React more than Angular nowadays.  React feels simpler for developing website components.  As this post reveals, the lifecycles of React components are equally simple. ",
                 "children":null
             }
         ]
@@ -317,7 +317,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Therefore you don’t have to worry about directive lifecycles in React. ",
+                "value":".  Therefore you don't have to worry about directive lifecycles in React. ",
                 "children":null
             }
         ]
@@ -330,7 +330,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" React and Angular handle state differently.  The state of a React application is usually held in a single root component.  The state lives in a property called ",
+                "value":" React and Angular handle state differently.  The state of a React application is usually held in a single root component.  State lives in a property called ",
                 "children":null
             },
             {
@@ -379,7 +379,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" because they don’t hold state.  If functional components need to change application state, they delegate the task to the root component.  Functional components don’t have lifecycles, so lifecycle methods are only used in root components holding application state. ",
+                "value":" because they don't hold state.  If functional components need to change application state, they delegate the task to the root component.  Functional components don't have lifecycles, so lifecycle methods are only used in root components holding application state. ",
                 "children":null
             }
         ]
@@ -392,7 +392,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The state in an Angular application is often distributed amongst many components.  This is due to differences in change management and data binding compared to React.  While React uses one-way data binding, Angular uses two-way data binding. ",
+                "value":" The state in an Angular application is often distributed amongst many components.  This is due to different mechanisms of change management and data binding in Angular.  While React uses one-way data binding, Angular uses two-way data binding. ",
                 "children":null
             }
         ]
@@ -405,7 +405,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One-way data binding is when changes to application state can only occur in the components code.  Application state does not change when DOM events occur, however DOM events can trigger code that changes application state.  In React, functional components are passed callback functions to change state in the root component. These functions often respond to DOM events such as ",
+                "value":" One-way data binding is when changes to application state only occur in a components code.  Application state does not change when DOM events occur, however DOM events can trigger code that changes application state.  In React, functional components can be provided callback functions to change state in the root component. These functions often respond to DOM events such as ",
                 "children":null
             },
             {
@@ -446,7 +446,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Two-way data binding is when both component code and DOM events cause application state to change. In Angular, DOM events often change state in the component, causing more than one component to hold application state.  Despite differences with two-way data binding, its possible to write stateless components similar to React in Angular",
+                "value":" Two-way data binding is when both component code and DOM events cause application state to change. In Angular, DOM events often change state in the component, causing more than one component to hold application state.  Despite differences with two-way data binding, its possible to write stateless components in Angular as well",
                 "children":null
             },
             {
@@ -458,7 +458,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". Writing stateless Angular components sounds like a fun thing to try out in the future.  I’ll also cover the full differences between one and two way data binding in a future article. ",
+                "value":". Writing stateless Angular components sounds like a fun thing to try out in the future.  I'll also cover more differences between one and two way data binding in a future article. ",
                 "children":null
             }
         ]
@@ -486,7 +486,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" React lifecycles are grouped into two distinct categories.  Some lifecycles are invoked during the component mounting process, while others are invoked as the component updates.  These groupings of lifecycles are also present in Angular, although the change detection mechanism is different in Angular for the updating lifecycles (as previously discussed). ",
+                "value":" React lifecycles are grouped into two distinct categories.  Some lifecycles are invoked during the component mounting process, while others are invoked as the component updates.  These groupings of lifecycles are also present in Angular, although the change detection mechanism is different for Angular updating lifecycles. ",
                 "children":null
             }
         ]
@@ -514,7 +514,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The mounting process is when a React component is added to the DOM.  As we make changes to the virtual DOM held in memory, React makes sure that the real DOM reflects those changes.  The mounting lifecycle provides hook methods that occur during the process of React altering the DOM. ",
+                "value":" The mounting process is when a React component is added to the DOM.  As we make changes to the virtual DOM held in memory, React makes sure that the real DOM reflects those changes.  The mounting lifecycles provide hook methods that occur while React alters the DOM. ",
                 "children":null
             }
         ]
@@ -543,7 +543,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The ES6 class constructor for a React component isn’t a lifecycle hook method.  However, I included it in this discussion because it’s the first method invoked while a component is mounted",
+                "value":" The ES6 class constructor for a React component isn't a lifecycle hook method.  However, I included it in this discussion because it's the first method invoked while a component is mounted",
                 "children":null
             },
             {
@@ -555,7 +555,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". The main uses of the constructor are to interact with the props provided by the parent and most importantly set the initial component state.  The constructor is the only time a components ",
+                "value":". The main uses of the constructor are to interact with props provided by the parent component and set the initial component state.  The constructor is the only time a components ",
                 "children":null
             },
             {
@@ -638,7 +638,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" initializer in a conditional.  This makes sure any state populated during server-side rendering isn’t wiped out by the client. ",
+                "value":" initializer in a conditional.  This makes sure any state populated during server-side rendering isn't wiped out by the client. ",
                 "children":null
             }
         ]
@@ -648,7 +648,7 @@ content = [
         "attributes":{
             "language":"JavaScript"
         },
-        "value":"class Blog extends React.Component {\n\n  constructor(props) {\n    super(props);\n\n    // Only set an empty state if it does not already exist -\n    // it may have been set on the server side render\n    if (!this.state) {\n      this.state = {};\n    }\n  }\n\n  ...\n}\n",
+        "value":"class Blog extends React.Component {\n\n  constructor(props) {\n    super(props);\n\n    // Only set the state to an empty object if the state doesn't already exist -\n    // it may have been set on the server side render\n    if (!this.state) {\n      this.state = {};\n    }\n  }\n\n  ...\n}\n",
         "children":null
     },
     {
@@ -690,7 +690,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" While React components using an ES6 class have a constructor, pre-ES6 code must make due without the syntactic sugar that comes with classes.  The alternative to an ES6 class is the ",
+                "value":" While React components using ES6 classes have constructors, pre-ES6 code can't utilize this syntax feature. The alternative to an ES6 class is the ",
                 "children":null
             },
             {
@@ -718,7 +718,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" npm module.  Prior to React 15.5.0, the ",
+                "value":" npm module.  Prior to React 15.5.0, ",
                 "children":null
             },
             {
@@ -732,7 +732,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" method served this purpose.  Nowadays ",
+                "value":" served the same purpose as ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"createReactClass()",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  Nowadays ",
                 "children":null
             },
             {
@@ -773,7 +787,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" can’t contain a constructor, the methods ",
+                "value":" can't contain a constructor, the methods ",
                 "children":null
             },
             {
@@ -815,7 +829,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" defines the default property values for the component (if properties aren’t passed in). ",
+                "value":" defines the default property values for the component (if properties aren't passed in). ",
                 "children":null
             },
             {
@@ -890,7 +904,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":""
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/\nblob/master/2019/01-Jan/01-19-react-lifecycles/react/lifecycle-demo/src/Lifecycle2.js"
                 },
                 "value":null,
                 "children":[
@@ -950,7 +964,7 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"componentWillMount",
+                "value":"componentWillMount()",
                 "children":null
             },
             {
@@ -970,7 +984,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is a good place to perform additional setup for the component (such as background tasks).  This lifecycle hook is also invoked on the server when using server-side rendering. This means that any component state initialized in ",
+                "value":" is a good place to perform additional setup for the component (such as background tasks).  ",
                 "children":null
             },
             {
@@ -984,7 +998,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" on the server will be passed to the client when the webpage loads. ",
+                "value":" is also invoked on the server when using server-side rendering. Therefore any component state initialized in ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"componentWillMount()",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" on the server is passed to the client when the webpage loads. ",
                 "children":null
             }
         ]
@@ -1049,7 +1077,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is to render React elements that make up the component onto the DOM.  In most cases React elements are represented with JSX. ",
+                "value":" is to render React elements that make up a component onto the DOM.  In most cases React elements are represented with JSX. ",
                 "children":null
             }
         ]
@@ -1086,7 +1114,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is invoked right after the component is rendered on the DOM.  This is a good place to make API calls or interact with JavaScript global objects specific to the webpage, such as ",
+                "value":" is invoked right after the component is rendered on the DOM.  This is a good place to make API calls or interact with JavaScript global objects specific to the webpage (such as ",
                 "children":null
             },
             {
@@ -1100,7 +1128,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  It’s also an ideal location to use third-party libraries that need access to the DOM, such as ",
+                "value":").  It's also an ideal location to use third-party libraries that need access to the DOM, such as ",
                 "children":null
             },
             {
@@ -1135,7 +1163,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" occurs after the component lives in the DOM, it can’t be invoked on the server when using server-side rendering.  ",
+                "value":" occurs after the component exists in the DOM, it can't be invoked on the server with server-side rendering.  ",
                 "children":null
             },
             {
@@ -1289,7 +1317,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" from this lifecycle hook method.  This makes ",
+                "value":" from ",
                 "children":null
             },
             {
@@ -1303,7 +1331,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" unique amongst updating lifecycle methods.  The others can’t invoke ",
+                "value":", making it unique amongst updating lifecycle methods.  Invoking ",
                 "children":null
             },
             {
@@ -1317,7 +1345,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" because it will result in an infinite loop. ",
+                "value":" in the other updating lifecycles results in an infinite loop. ",
                 "children":null
             }
         ]
@@ -1354,7 +1382,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" determines whether a component update should occur.  If it returns ",
+                "value":" determines whether a component update should occur.  When it returns ",
                 "children":null
             },
             {
@@ -1368,7 +1396,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" the component will update in the DOM.  If it returns ",
+                "value":" the component updates in the DOM.  When it returns ",
                 "children":null
             },
             {
@@ -1382,7 +1410,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" the update will be called off, avoiding an expensive DOM alteration.  This makes ",
+                "value":" the update is called off, avoiding an expensive DOM alteration.  This makes ",
                 "children":null
             },
             {
@@ -1396,7 +1424,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" a good optimization technique which avoids unnecessary component updates. ",
+                "value":" a good optimization technique to avoid unnecessary component updates. ",
                 "children":null
             }
         ]
@@ -1423,7 +1451,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", you can change its change detection mechanism.  By default Angular checks if any DOM events occur or values used in the component template are mutated",
+                "value":", you can change its change detection mechanism.  By default, Angular checks if any DOM events occur or values used in the component template are mutated",
                 "children":null
             },
             {
@@ -1463,7 +1491,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" checks if object references to template values are changed, resulting in simple mutations to not trigger the change detection mechanism",
+                "value":" checks if object references to template values are changed (among other differences), resulting in simple mutations not triggering the change detection mechanism",
                 "children":null
             },
             {
@@ -1475,20 +1503,20 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". You can check out the differences between Angulars two change detection mechanisms on ",
+                "value":". You can learn more about the differences between Angulars two change detection mechanisms in my ",
                 "children":null
             },
             {
                 "el":"a",
                 "attributes":{
-                    "href":""
+                    "href":"https://jarombek.com/blog/mar-12-2019-angular-onpush"
                 },
                 "value":null,
                 "children":[
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"GitHub",
+                        "value":"discovery post",
                         "children":null
                     }
                 ]
@@ -1582,7 +1610,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I created a project which React which displays on the screen each time an App lifecycle is invoked. It also demonstrates how ",
+                "value":" I created a project in React which displays a new component each time an App lifecycle is invoked. It also demonstrates how ",
                 "children":null
             },
             {
@@ -1602,7 +1630,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":""
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/\ntree/master/2019/01-Jan/01-19-react-lifecycles/react"
                 },
                 "value":null,
                 "children":[
@@ -1663,7 +1691,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I really enjoy comparing the frontend React library and Angular framework.  While most of my development these days is in React, it's still a good practice to compare it to other major techniques used in front-end development!  Understanding how lifecycle events work in Angular and React is important for developing good applications. ",
+                "value":" I really enjoy comparing React and Angular.  While most of my development these days is in React, comparing it to other major front-end libraries/frameworks is a good practice!   Understanding how lifecycle events work in Angular and React is important for developing good applications. ",
                 "children":null
             }
         ]
