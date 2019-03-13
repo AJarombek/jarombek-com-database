@@ -823,6 +823,11 @@ db.posts.insertOne({
             color: "bash"
         },
         {
+            name: "Batch",
+            picture: "https://asset.jarombek.com/logos/batch.png",
+            color: "batch"
+        },
+        {
             name: "Command Line Scripting"
         }
     ],

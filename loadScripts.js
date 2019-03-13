@@ -108,3 +108,4 @@ load('./posts/2019/01-19-react-lifecycles.js');
 //load('./posts/2019/02-22-bash-scripting.js');
 
 //load('./posts/2019/03-12-angular-onpush.js');
+//load('./posts/2019/03-15-powershell-scripting.js');
