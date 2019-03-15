@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When I created my personal website, I wanted to use all the latest technologies.  I created a modern front-end with React.js, Webpack, Sass, and the latest JavaScript.  When it came to stylesheets, I used the latest features that ease website layout creation.  One of those features is CSS Grid.  I wrote an article about ",
+                "value":" When I created my personal website, I wanted to use all the latest technologies.  I created a modern front-end with React.js, Webpack, Sass, and the latest JavaScript.  When it came to stylesheets, I used the latest features that ease website layout creation.  One of these features is CSS Grid.  I wrote an article about ",
                 "children":null
             },
             {
@@ -92,7 +92,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When I created my personal website, I wanted to use all the latest technologies.  I created a modern front-end with React.js, Webpack, Sass, and the latest JavaScript.  When it came to stylesheets, I used the latest features that ease website layout creation.  One of those features is CSS Grid.  I wrote an article about ",
+                "value":" When I created my personal website, I wanted to use all the latest technologies.  I created a modern front-end with React.js, Webpack, Sass, and the latest JavaScript.  When it came to stylesheets, I used the latest features that ease website layout creation.  One of these features is CSS Grid.  I wrote an article about ",
                 "children":null
             },
             {
@@ -165,7 +165,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One of the big issues with my website was it didn't work properly in Microsoft Edge.  This was due to Edge implementing an older spec of CSS Grid.  I used feature queries in my stylesheets to provide an equal viewing experience between Edge and the rest of the modern browsers. ",
+                "value":" One of the big issues with my website was CSS Grid didn't work properly in Microsoft Edge.  This was due to Edge implementing an older spec of CSS Grid.  I used feature queries in my stylesheets to provide an equal viewing experience between Edge and the rest of the modern browsers. ",
                 "children":null
             }
         ]
@@ -199,16 +199,10 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The rest of this article uses three examples to explain feature queries and creating backwards compatible CSS Grid stylesheets. ",
+                "value":".  The rest of this article uses my three components to explain feature queries and creating backwards compatible CSS Grid stylesheets. ",
                 "children":null
             }
         ]
-    },
-    {
-        "el":"#text",
-        "attributes":null,
-        "value":"   ",
-        "children":null
     },
     {
         "el":"sectiontitle",
@@ -293,7 +287,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In this layout, browsers supporting the ",
+                "value":" In this layout, browsers supporting ",
                 "children":null
             },
             {
@@ -307,7 +301,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" definition use styles within the ",
+                "value":" use styles within the ",
                 "children":null
             },
             {
@@ -321,7 +315,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" rule block.  Browsers unsupportive of the ",
+                "value":" rule block.  Browsers unsupportive of ",
                 "children":null
             },
             {
@@ -335,7 +329,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" definition use styles within the ",
+                "value":" use styles within the ",
                 "children":null
             },
             {
@@ -649,7 +643,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" positions the contents of the table cell in the middle of the cell",
+                "value":" positions the contents of a table cell in the middle of the cell",
                 "children":null
             },
             {
@@ -1024,7 +1018,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" in the middle of the webpage document.  The only issue with these two definitions is that it places the top left corner of ",
+                "value":" in the middle of the webpage document.  The only issue with these two definitions is they place the top left corner of ",
                 "children":null
             },
             {
@@ -1038,7 +1032,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" in the middle of the webpage.  To fix this I used the ",
+                "value":" in the middle of the webpage.  Therefore the tag component appears misaligned from the center.  To fix this I use the ",
                 "children":null
             },
             {
@@ -1120,7 +1114,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" 50% of its height upwards along the y-axis and 50% of its width to the left along the x-axis.  Now the ",
+                "value":" 50% of its height upwards along the y-axis and 50% of its width leftwards along the x-axis.  Now the ",
                 "children":null
             },
             {
@@ -1271,7 +1265,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" While it's fun to work with the latest browser technologies, we still need to support users that aren't as up to date.  Feature queries with the ",
+                "value":" While it's fun to work with the latest browser technologies, we still need to support users that aren't as bleeding edge.  Feature queries with the ",
                 "children":null
             },
             {
