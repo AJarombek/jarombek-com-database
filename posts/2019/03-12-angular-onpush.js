@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In other articles the past couple months I’ve explored lifecyles in ",
+                "value":" In the last few months I've written articles about lifecyles in ",
                 "children":null
             },
             {
@@ -71,7 +71,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Angular also allows us to change the change detection strategy on a per-component basis.  This post explores the two change detection strategies - ",
+                "value":" Angular also allows developers to change the change detection strategy on a per-component basis.  This post explores the two change detection strategies - ",
                 "children":null
             },
             {
@@ -115,7 +115,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In other articles the past couple months I’ve explored lifecyles in ",
+                "value":" In the last few months I've written articles about lifecyles in ",
                 "children":null
             },
             {
@@ -170,7 +170,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Angular also allows us to change the change detection strategy on a per-component basis.  This post explores the two change detection strategies - ",
+                "value":" Angular also allows developers to change the change detection strategy on a per-component basis.  This post explores the two change detection strategies - ",
                 "children":null
             },
             {
@@ -268,7 +268,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" tracks alterations with Angular’s two-way data binding system.  One thing this strategy checks for is changes to variables in the component templates",
+                "value":" tracks alterations to Angular's two-way data binding system.  One thing this strategy checks for is changes to variables in the component templates",
                 "children":null
             },
             {
@@ -342,7 +342,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Alterations to a function or other component of a program at runtime.  The patch is only visible to the current programs execution context.  Monkey patching occurs in ",
+                "value":" Alterations to a function or other program components at runtime.  The patch is only visible to the current programs execution context.  Monkey patching occurs in ",
                 "children":null
             },
             {
@@ -376,7 +376,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" A few other things ",
+                "value":" Other things ",
                 "children":null
             },
             {
@@ -410,7 +410,7 @@ content = [
     {
         "el":"sectiontitle",
         "attributes":{
-            "title":"Hoe OnPush change detection works"
+            "title":"How OnPush change detection works"
         },
         "value":null,
         "children":[
@@ -442,12 +442,6 @@ content = [
         "value":null,
         "children":[
             {
-                "el":"#text",
-                "attributes":null,
-                "value":"   ",
-                "children":null
-            },
-            {
                 "el":"code",
                 "attributes":{
                     "class":"jarombek-inline-code"
@@ -458,7 +452,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" change detection is used as an   optimization technique.  When it comes to DOM events ",
+                "value":" change detection is used as an optimization technique.  For DOM events ",
                 "children":null
             },
             {
@@ -472,7 +466,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" works   similarly to ",
+                "value":" works similarly to ",
                 "children":null
             },
             {
@@ -486,7 +480,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The DOM API is monkey patched and change   detection runs when a DOM event occurs. ",
+                "value":".  The DOM API is monkey patched and change detection runs when a DOM event occurs. ",
                 "children":null
             }
         ]
@@ -499,7 +493,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Differences arise when handling alterations to variables in component templates.  By using ",
+                "value":" Differences arise when handling variable changes in component templates.  By using ",
                 "children":null
             },
             {
@@ -539,7 +533,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" will only trigger change detection when a variable reference changes.  Change detection will ",
+                "value":" will only trigger change detection when a template variable reference changes.  Change detection will ",
                 "children":null
             },
             {
@@ -642,7 +636,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" change detection.  I log every time a change detection cycle occurs to make things more clear. ",
+                "value":" change detection.  I log every time a change detection cycle occurs to make things clearer. ",
                 "children":null
             }
         ]
@@ -656,7 +650,7 @@ content = [
                 "el":"img",
                 "attributes":{
                     "class":"jarombek-blog-image",
-                    "src":"https://asset.jarombek.com/posts/3-12-19-angular-cd.gif"
+                    "src":"https://asset.jarombek.com/posts/3-12-19-cd-project.gif"
                 },
                 "value":null,
                 "children":[
@@ -687,7 +681,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" results in much fewer change detection cycles.  However, be careful and make sure all objects are immutable. If variables mutate, unexpected UI changes (or lack thereof) are likely to occur. ",
+                "value":" results in fewer change detection cycles.  However, be careful and make sure all objects are immutable. If variables mutate, unexpected UI changes (or lack thereof) are likely to occur. ",
                 "children":null
             }
         ]
@@ -715,13 +709,13 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I find it very interesting how Angular handles its change detection mechanism.  I look forward to learning more about the topic in the future.  You can check out the code for my change detection project on ",
+                "value":" I find it very interesting how Angular handles its change detection mechanism.  I look forward to learn more about the topic in the future.  You can check out the code for my change detection project on ",
                 "children":null
             },
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2019/03-Mar/angular-cd"
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2019/03-Mar/03-12-angular-onpush"
                 },
                 "value":null,
                 "children":[
