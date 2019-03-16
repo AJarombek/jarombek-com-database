@@ -43,7 +43,7 @@ preview = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://jarombek.com/blog/\nfeb-20-2019-bash-scripting"
+                    "href":"https://jarombek.com/blog/\nfeb-22-2019-bash-scripting"
                 },
                 "value":null,
                 "children":[
@@ -58,7 +58,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Today I’m exploring PowerShell scripting on Windows. I’ve used PowerShell at work recently for automating the deployment of .NET applications.  The rest of this article looks at basic features of PowerShell and how it compares to Bash and Batch. ",
+                "value":".  Today I'm exploring PowerShell scripting on Windows. I've used PowerShell at work recently for automating the deployment of .NET applications.  The rest of this article looks at basic features of PowerShell and how it compares to Bash and Batch. ",
                 "children":null
             }
         ]
@@ -116,7 +116,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://jarombek.com/blog/\nfeb-20-2019-bash-scripting"
+                    "href":"https://jarombek.com/blog/\nfeb-22-2019-bash-scripting"
                 },
                 "value":null,
                 "children":[
@@ -131,7 +131,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Today I’m exploring PowerShell scripting on Windows. I’ve used PowerShell at work recently for automating the deployment of .NET applications.  The rest of this article looks at basic features of PowerShell and how it compares to Bash and Batch. ",
+                "value":".  Today I'm exploring PowerShell scripting on Windows. I've used PowerShell at work recently for automating the deployment of .NET applications.  The rest of this article looks at basic features of PowerShell and how it compares to Bash and Batch. ",
                 "children":null
             }
         ]
@@ -265,7 +265,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". Powershell types are objects, which can be explicitly or implicitly declared on variables",
+                "value":". Powershell types are objects, and type definitions can be explicitly or implicitly declared on variables",
                 "children":null
             },
             {
@@ -277,7 +277,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This is much different than Bash, which doesn’t have types.  In Bash everything is plain text, which is interpreted differently depending on its context in a script. ",
+                "value":".  This is much different than Bash, which doesn't have types.  In Bash everything is plain text which is interpreted differently depending on the context. ",
                 "children":null
             }
         ]
@@ -290,7 +290,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Let’s look at a basic example.  PowerShell has very clean syntax for handling script arguments (similar to ",
+                "value":" Let's look at a basic example.  PowerShell has very clean syntax for handling script arguments (similar to ",
                 "children":null
             },
             {
@@ -321,7 +321,7 @@ content = [
         "attributes":{
             "language":"PowerShell"
         },
-        "value":"# basics.ps1\n\n# Handle script arguments\nparam (\n[string]$author = \"Andrew Jarombek\"\n)\n",
+        "value":"# basics.ps1\n\n# Handle script arguments\nparam (\n  [string]$author = \"Andrew Jarombek\"\n)\n",
         "children":null
     },
     {
@@ -379,7 +379,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":").  If not argument is supplied to ",
+                "value":").  If no argument is supplied to ",
                 "children":null
             },
             {
@@ -460,7 +460,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" command, which admittedly is a bit more verbose than its ",
+                "value":" command, which is admittedly a bit more verbose than its ",
                 "children":null
             },
             {
@@ -474,7 +474,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" bash counterpart.  This is a common gripe from those used to writing scripts in Bash.  The following command prints out the ",
+                "value":" bash counterpart.  The verbosity of commands is a common PowerShell gripe from developers accustomed to using Bash.  The following command prints out the ",
                 "children":null
             },
             {
@@ -626,7 +626,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". You can explore all the different execution policy options on ",
+                "value":". All the different execution policies are explained on ",
                 "children":null
             },
             {
@@ -639,7 +639,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"Microsoft’s website",
+                        "value":"Microsoft's website",
                         "children":null
                     }
                 ]
@@ -727,7 +727,7 @@ content = [
         "attributes":{
             "language":"PowerShell"
         },
-        "value":"[string]$author = \"Andrew Jarombek\"\n\n# Select just the lastname portion of the author string\n$lastname = $author.Substring(7)\nWrite-Host $lastname\n\n# ...this -match operator checks if author contains \"Jarombek\"\n$lastname2 = $author -match \"Jarombek\"\nWrite-Host $lastname2\n\n# Replace Jarombek with Jarbek\n$altauthor = $author.Replace(\"Jarombek\", \"Jarbek\")\nWrite-Host $altauthor\n",
+        "value":"[string]$author = \"Andrew Jarombek\"\n\n# Select just the lastname portion of the author string\n$lastname = $author.Substring(7)\nWrite-Host $lastname\n\n# the -match operator checks if author contains \"Jarombek\"\n$lastname2 = $author -match \"Jarombek\"\nWrite-Host $lastname2\n\n# Replace Jarombek with Jarbek\n$altauthor = $author.Replace(\"Jarombek\", \"Jarbek\")\nWrite-Host $altauthor\n",
         "children":null
     },
     {
@@ -785,7 +785,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If you are coming from Batch or Bash, the fact that PowerShell has objects similar to an enterprise application programming language is surprising.  However PowerShell objects are very helpful in creating concise scripts and integrate well with IDEs. ",
+                "value":" If you are coming from Batch or Bash, the fact that PowerShell has objects similar to an Object-oriented programming language is surprising.  PowerShell objects are very helpful in creating concise scripts and integrate well with IDEs. ",
                 "children":null
             }
         ]
@@ -798,7 +798,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Because PowerShell has object types, performing arithmetic is simpler than Bash (and much simpler than Batch).  PowerShell doesn’t need an integer context to perform operations like simple addition. ",
+                "value":" Because PowerShell has object types, performing arithmetic is simpler than Bash (and much simpler than Batch).  PowerShell doesn't need an integer context to perform operations like simple addition. ",
                 "children":null
             }
         ]
@@ -833,7 +833,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is implicitly typed in this example.  I can explicitly type its definition as ",
+                "value":" is implicitly typed in this example.  It can be explicitly typed as ",
                 "children":null
             },
             {
@@ -956,7 +956,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" PowerShell has pretty clean syntax for writing functions.  By default variables defined in functions are scoped locally to the function and don’t leak into the global scope.  This is the opposite of Bash which leaks variables globally by default. ",
+                "value":" PowerShell has pretty clean syntax for writing functions.  By default variables defined in functions are scoped locally to the function and don't leak into the global scope.  This is the opposite of Bash which leaks variables globally by default. ",
                 "children":null
             }
         ]
@@ -966,7 +966,7 @@ content = [
         "attributes":{
             "language":"PowerShell"
         },
-        "value":"$age = 23\n\nfunction Test-Scoping() {\n  # $age is scoped locally to the function\n  $age = 24\n  Write-Host $age\n}\n\nTest-Scoping\nWrite-Host $age\n\n",
+        "value":"$age = 23\n\nfunction Test-Scoping() {\n  # $age is scoped locally to the function\n  $age = 24\n  Write-Host $age\n}\n\nTest-Scoping\nWrite-Host $age\n",
         "children":null
     },
     {
@@ -1080,7 +1080,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" keyword isn’t needed for functions to return a value!  They simply declare a function exit point",
+                "value":" keyword isn't needed for functions to return a value!  They simply declare a function exit point",
                 "children":null
             },
             {
@@ -1105,7 +1105,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I think the easiest way to demonstrate this behavior is with an example.  The following three functions all multiply a string a number of times and returns a new string.  They all behave the same way despite the ",
+                "value":" I think the easiest way to demonstrate this behavior is with an example.  The following three functions multiply a string a number of times and return a new string.  They all behave the same way despite the ",
                 "children":null
             },
             {
@@ -1129,7 +1129,7 @@ content = [
         "attributes":{
             "language":"PowerShell"
         },
-        "value":"# Output of functions is captured and returned.  There is a return keyword, but it just specifies an exit point.\nfunction Mult() {\n  param([string]$str, [int]$count)\n  $str * $count\n}\n\n# Therefore, Mult2 is equivalent to Mult...\nfunction Mult2() {\n  param([string]$str, [int]$count)\n  return $str * $count\n}\n\n# ...and Mult3 is equivalent to Mult2 and Mult\nfunction Mult3() {\n  param([string]$str, [int]$count)\n  $str * $count\n  return\n}\n\n# The result is the same when invoking the three functions\n$meows = Mult -str \"meow\" -count 3\nWrite-Host $meows\n\n$meows2 = Mult2 -str \"meow\" -count 3\nWrite-Host $meows2\n\n$meows3 = Mult3 -str \"meow\" -count 3\nWrite-Host $meows3\n",
+        "value":"# Output of functions are captured and returned.\n# There is a return keyword, but it just specifies an exit point.\nfunction Mult() {\n  param([string]$str, [int]$count)\n  $str * $count\n}\n\n# Therefore, Mult2 is equivalent to Mult...\nfunction Mult2() {\n  param([string]$str, [int]$count)\n  return $str * $count\n}\n\n# ...and Mult3 is equivalent to Mult2 and Mult\nfunction Mult3() {\n  param([string]$str, [int]$count)\n  $str * $count\n  return\n}\n\n# The result is the same when invoking the three functions\n$meows = Mult -str \"meow\" -count 3\nWrite-Host $meows\n\n$meows2 = Mult2 -str \"meow\" -count 3\nWrite-Host $meows2\n\n$meows3 = Mult3 -str \"meow\" -count 3\nWrite-Host $meows3\n",
         "children":null
     },
     {
@@ -1174,7 +1174,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One of the things that fascinates me is the different design decisions across programming languages. I really enjoyed comparing the biggest three scripting languages - Bash, PowerShell, and Batch.  I plan to use all three throughout the rest of my career, and will write more discovery posts about them as I learn more.  All the code from this article is available on ",
+                "value":" One thing that fascinates me is the different design decisions across programming languages. I really enjoyed comparing the biggest three scripting languages - Bash, PowerShell, and Batch.  I plan to use all three throughout the rest of my career, and will write more discovery posts about them as I learn more.  All the code from this article is available on ",
                 "children":null
             },
             {
