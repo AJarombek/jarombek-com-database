@@ -58,7 +58,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", however C# isn’t as restrictive which makes it fun to explore.  Since variance is an advanced topic, this article starts with the basic concepts to understand variance.  Once the basics are understood, I demonstrate variance in C# generics. ",
+                "value":", however C# isn't as restrictive, making it fun to explore.  Since variance is an advanced topic, this article starts with the basic concepts of variance.  Once the basics are understood, I'll explain variance in C# generics. ",
                 "children":null
             }
         ]
@@ -131,7 +131,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", however C# isn’t as restrictive which makes it fun to explore.  Since variance is an advanced topic, this article starts with the basic concepts to understand variance.  Once the basics are understood, I demonstrate variance in C# generics. ",
+                "value":", however C# isn't as restrictive, making it fun to explore.  Since variance is an advanced topic, this article starts with the basic concepts of variance.  Once the basics are understood, I'll explain variance in C# generics. ",
                 "children":null
             }
         ]
@@ -223,7 +223,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Nowadays its said that the two main forms of polymorphism are ad-hoc and universal, with parametric falling under universal",
+                "value":".  Nowadays its agreed upon that the two main forms of polymorphism are ad-hoc and universal, with parametric falling under universal",
                 "children":null
             },
             {
@@ -282,7 +282,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" Ad-hoc Polymorphism is when a function or method works with multiple different types as arguments. Therefore it can be said that the function arguments are polymorphic.  Depending on the argument types, the behavior of the function can be completely different",
+                                        "value":" Ad-hoc Polymorphism is when a function or method works with arguments of multiple different types. Therefore it can be said that the function arguments are polymorphic.  Depending on the argument types, the behavior of the function can be completely different",
                                         "children":null
                                     },
                                     {
@@ -378,7 +378,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" Universal polymorphism consists of symbols that can accept an infinite number of different types",
+                                        "value":" Universal polymorphism consists of symbols that accept an infinite number of different types",
                                         "children":null
                                     },
                                     {
@@ -990,7 +990,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" modifier can only be passed in to a method and can’t be returned by a method.  Covariant types with the ",
+                "value":" modifier can only be passed in to a method and can't be returned by a method.  Covariant types with the ",
                 "children":null
             },
             {
@@ -1004,7 +1004,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" modifier can only be returned by a method and can’t be used as a method argument. ",
+                "value":" modifier can only be returned by a method and can't be used as a method argument. ",
                 "children":null
             }
         ]
@@ -1017,7 +1017,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" With the ",
+                "value":" With ",
                 "children":null
             },
             {
@@ -1080,7 +1080,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Finally we can prove that ",
+                "value":" Finally I proved that ",
                 "children":null
             },
             {
@@ -1192,7 +1192,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". In my repository there is also a ",
+                "value":". In my repository there is also an ",
                 "children":null
             },
             {
@@ -1234,7 +1234,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Variance may seem like a complex topic, but it’s a fundamental piece of the programming languages we interact with every day.  For more information on variance make sure to check out my article about ",
+                "value":" Variance may seem like a complex topic, but it's a fundamental piece of the programming languages we interact with every day.  For more information on variance make sure to check out my article about ",
                 "children":null
             },
             {
