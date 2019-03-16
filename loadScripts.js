@@ -102,10 +102,10 @@ load('./posts/2019/01-02-csharp-first-impressions.js');
 load('./posts/2019/01-03-cpp-first-impressions.js');
 load('./posts/2019/01-07-webassembly.js');
 load('./posts/2019/01-19-react-lifecycles.js');
-//load('./posts/2019/01-24-css-grid-backwards-compatibility.js');
+load('./posts/2019/01-24-css-grid-backwards-compatibility.js');
 
-//load('./posts/2019/02-03-variance-csharp-generics.js');
-//load('./posts/2019/02-22-bash-scripting.js');
+load('./posts/2019/02-03-variance-csharp-generics.js');
+load('./posts/2019/02-22-bash-scripting.js');
 
-//load('./posts/2019/03-12-angular-onpush.js');
-//load('./posts/2019/03-15-powershell-scripting.js');
+load('./posts/2019/03-12-angular-onpush.js');
+load('./posts/2019/03-15-powershell-scripting.js');

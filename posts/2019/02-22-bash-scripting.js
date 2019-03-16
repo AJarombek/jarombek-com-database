@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" on Windows.  In today's article, I’m looking at Bash scripting.  I’ve been using Bash quite a bit recently.  At work I’ve used Bash to automate the conversion of Subversion repositories to Git. In my personal work I’ve used Bash scripts to assist setting up AWS infrastructure.  The rest of the article looks at basic features of Bash and how it compares to Batch. ",
+                "value":" on Windows.  In today's article, I'm looking at Bash scripting.  I've used Bash quite a bit recently.  At work I've used Bash scripts to automate the conversion of Subversion repositories to Git. In my personal work I've used Bash scripts to assist setting up AWS infrastructure.  The rest of this article explores basic Bash features and how they compare to Batch. ",
                 "children":null
             }
         ]
@@ -89,7 +89,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" on Windows.  In today's article, I’m looking at Bash scripting.  I’ve been using Bash quite a bit recently.  At work I’ve used Bash to automate the conversion of Subversion repositories to Git. In my personal work I’ve used Bash scripts to assist setting up AWS infrastructure.  The rest of the article looks at basic features of Bash and how it compares to Batch. ",
+                "value":" on Windows.  In today's article, I'm looking at Bash scripting.  I've used Bash quite a bit recently.  At work I've used Bash scripts to automate the conversion of Subversion repositories to Git. In my personal work I've used Bash scripts to assist setting up AWS infrastructure.  The rest of this article explores basic Bash features and how they compare to Batch. ",
                 "children":null
             }
         ]
@@ -117,7 +117,64 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Bash stands for Bourne-Again SHell, derived from the original Bourne shell",
+                "value":" Bash stands for ",
+                "children":null
+            },
+            {
+                "el":"strong",
+                "attributes":null,
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"B",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":"ourne-",
+                "children":null
+            },
+            {
+                "el":"strong",
+                "attributes":null,
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"A",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":"gain ",
+                "children":null
+            },
+            {
+                "el":"strong",
+                "attributes":null,
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"SH",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":"ell, and is derived from the original Bourne shell",
                 "children":null
             },
             {
@@ -166,7 +223,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Bash is a command line scripting language originally used on Unix-like operating systems.  Nowadays, Bash is nowadays found on most major operating systems, including Linux distributions, MacOS, and Windows 10. Bash commands can be written from a terminal or collected into a script.  This article explores using Bash scripts. ",
+                "value":" Bash is a command line scripting language originally used on Unix-like operating systems.  Nowadays, Bash is found on most major operating systems, including Linux distributions, MacOS, and Windows 10. Bash commands are written from a terminal or collected into a script.  Today I'm exploring the creation of Bash scripts. ",
                 "children":null
             }
         ]
@@ -234,7 +291,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" pointing to the bash interpreter.  You can also handle any input arguments to the script with the ",
+                "value":" pointing to the bash interpreter.  Script input arguments are handled with the ",
                 "children":null
             },
             {
@@ -269,7 +326,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Assigning variables to values is very simple in Bash.  It’s equally simple to use these variables in future commands. ",
+                "value":" Assigning values to variables is very simple in Bash.  It's equally simple to use these variables in future commands. ",
                 "children":null
             }
         ]
@@ -345,7 +402,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Interestingly Bash variables are untyped (unlike most programming languages I use).  This has interesting consequences which I will likely explore in a future post.  Bash variables contain character strings which are used in different ways depending on the context",
+                "value":" Interestingly Bash variables are untyped (unlike most programming languages I use).  This has interesting consequences which I'll explore in a future post.  Bash variables contain character strings which are used in different ways depending on the context",
                 "children":null
             },
             {
@@ -408,7 +465,7 @@ content = [
         "attributes":{
             "language":"Bash"
         },
-        "value":"# Extract the characters after index 7\nLastName=${Name:7}\necho ${LastName}\n\n# Extract the characters from index 0 to index 6\nFirstName=${Name:0:6}\necho ${FirstName}\n\n# Replace Jarombek with Jarbek\nAltName=${Name/Jarombek/Jarbek}\necho ${AltName}\n",
+        "value":"Name=\"Andrew Jarombek\"\n\n# Extract the characters after index 7\nLastName=${Name:7}\necho ${LastName}  # \"Jarombek\"\n\n# Extract the characters from index 0 to index 6\nFirstName=${Name:0:6}\necho ${FirstName}  # \"Andrew\"\n\n# Replace Jarombek with Jarbek\nAltName=${Name/Jarombek/Jarbek}\necho ${AltName}  # \"Andrew Jarbek\"\n",
         "children":null
     },
     {
@@ -429,7 +486,7 @@ content = [
         "attributes":{
             "language":"Bash"
         },
-        "value":"Age=23\nAgeInTenYears=$(($Age + 10))\necho ${AgeInTenYears}\n",
+        "value":"Age=23\nAgeInTenYears=$(($Age + 10))\necho ${AgeInTenYears}  # 33\n",
         "children":null
     },
     {
@@ -466,7 +523,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". There are other ways to create a context where character strings are converted to integers for performing arithmetic.  These include using backticks and the ",
+                "value":". There are other ways to create integer contexts for performing arithmetic, including backticks and the ",
                 "children":null
             },
             {
@@ -540,7 +597,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One interesting aspect of Bash functions is that variables defined in the function leak into the global scope.  Luckily if this is not what you intend, there are keywords which alter this default behavior. The ",
+                "value":" One interesting aspect of Bash functions is that variables defined in functions leak into the global scope.  Luckily if this is not what you intend, there are keywords for altering this behavior. The ",
                 "children":null
             },
             {
@@ -608,7 +665,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Arrays are also available in Bash.  They are simpler than their Batch equivalents, as complicated delayed expansion logic isn’t needed.  Bash also provides associative arrays in newer versions. ",
+                "value":" Arrays are also available in Bash.  They are simpler than their Batch equivalents because complicated delayed expansion logic isn't needed.  Bash also provides associative arrays in newer versions. ",
                 "children":null
             }
         ]
@@ -673,7 +730,7 @@ content = [
         "attributes":{
             "language":"Bash"
         },
-        "value":"for i in ${NumberList[*]}\ndo\n  AllTowns=\"${AllTowns} ${Towns[$((i - 1))]}\"\ndone\n\necho ${AllTowns}\n\n# Accumulate some of the strings in the town list\nfor i in 2 4\ndo\n  SomeTowns=\"${SomeTowns} ${Towns[$((i - 1))]}\"\ndone\n\necho ${SomeTowns}\n\n# Create a unix timestamp of a date on MacOS\nDateWritten=$(date -j -f \"%F\" 2019-01-28 +\"%s\")\nMonthsEnd=$(date -j -f \"%F\" 2019-01-31 +\"%s\")\n\nif [ ${DateWritten} -lt ${MonthsEnd} ]\nthen\n  echo \"Date is before Jan. 31st, 2019\"\nelse\n  echo \"Date is equal to or after Jan. 31st, 2019\"\nfi\n",
+        "value":"# Accumulate all of the strings in the town list\nfor i in ${NumberList[*]}\ndo\n  AllTowns=\"${AllTowns} ${Towns[$((i - 1))]}\"\ndone\n\necho ${AllTowns}\n\n# Accumulate some of the strings in the town list\nfor i in 2 4\ndo\n  SomeTowns=\"${SomeTowns} ${Towns[$((i - 1))]}\"\ndone\n\necho ${SomeTowns}\n\n# Create a unix timestamp of a date on MacOS\nDateWritten=$(date -j -f \"%F\" 2019-01-28 +\"%s\")\nMonthsEnd=$(date -j -f \"%F\" 2019-01-31 +\"%s\")\n\nif [ ${DateWritten} -lt ${MonthsEnd} ]\nthen\n  echo \"Date is before Jan. 31st, 2019\"\nelse\n  echo \"Date is equal to or after Jan. 31st, 2019\"\nfi\n",
         "children":null
     },
     {
@@ -705,7 +762,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I really enjoy working with Bash due to its simplicity.  It’s commands are short and easy to use, with common utilities such as ",
+                "value":" I really enjoy working with Bash due to its simplicity.  It's commands are short and easy to use, with common utilities such as ",
                 "children":null
             },
             {
@@ -779,7 +836,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":""
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/\ntree/master/2019/02-Feb/02-22-bash-scripting"
                 },
                 "value":null,
                 "children":[
