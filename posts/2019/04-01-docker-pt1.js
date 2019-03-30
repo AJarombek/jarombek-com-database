@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When I was working on my first website ",
+                "value":" When I worked on my first website ",
                 "children":null
             },
             {
@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" my senior year of college, it was a huge revelation that I could pay a company to host my website on their servers.  The most surprising part for me was how they were hosting it.  The web server was a virtual private server, which is a virtual machine (VM) sold as a service",
+                "value":" during my senior year of college, it was a huge revelation that I could pay a company to host my website on their servers.  The most surprising part for me was how they were hosting it.  The web server was a virtual private server, which is a virtual machine (VM) sold as a service",
                 "children":null
             },
             {
@@ -49,7 +49,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The VM ran the Debian Linux distribution.  This means I wasn’t paying for an entire bare metal server, instead provided a software program which acts like a physical server.  In fact, there were likely many other virtual private servers running on the same hardware as mine. ",
+                "value":".  The VM ran a Debian Linux distribution.  This means I wasn't paying for an entire bare metal server, instead provided a software program which acts like a physical server.  In fact, there were likely many other virtual private servers running on the same hardware as mine. ",
                 "children":null
             }
         ]
@@ -62,7 +62,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The adaptation of virtual machines was a major milestone in software development history.  Instead of needing a single physical server for each application, a single server could run a program called a hypervisor which would create one or many virtual machines.  Virtual machines could scale as needed to match business needs.  Eventually companies wouldn’t even need to invest in physical servers as cloud providers started offering VM IaaS (Infrastructure as a Service).  An example of a VM IaaS is EC2 (Elastic Compute Cloud) on AWS. ",
+                "value":" The adaptation of virtual machines was a major milestone in software development history.  Instead of needing a single physical server for each application, a single server could run a program called a hypervisor which would create one or many virtual machines.  Virtual machines scaled as needed to match business needs.  Eventually companies didn't need to invest in physical servers as cloud providers started offering VM IaaS (Infrastructure as a Service).  An example of a VM IaaS is EC2 (Elastic Compute Cloud) on AWS. ",
                 "children":null
             }
         ]
@@ -78,7 +78,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When I was working on my first website ",
+                "value":" When I worked on my first website ",
                 "children":null
             },
             {
@@ -99,7 +99,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" my senior year of college, it was a huge revelation that I could pay a company to host my website on their servers.  The most surprising part for me was how they were hosting it.  The web server was a virtual private server, which is a virtual machine (VM) sold as a service",
+                "value":" during my senior year of college, it was a huge revelation that I could pay a company to host my website on their servers.  The most surprising part for me was how they were hosting it.  The web server was a virtual private server, which is a virtual machine (VM) sold as a service",
                 "children":null
             },
             {
@@ -111,7 +111,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The VM ran the Debian Linux distribution.  This means I wasn’t paying for an entire bare metal server, instead provided a software program which acts like a physical server.  In fact, there were likely many other virtual private servers running on the same hardware as mine. ",
+                "value":".  The VM ran a Debian Linux distribution.  This means I wasn't paying for an entire bare metal server, instead provided a software program which acts like a physical server.  In fact, there were likely many other virtual private servers running on the same hardware as mine. ",
                 "children":null
             }
         ]
@@ -124,7 +124,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The adaptation of virtual machines was a major milestone in software development history.  Instead of needing a single physical server for each application, a single server could run a program called a hypervisor which would create one or many virtual machines.  Virtual machines could scale as needed to match business needs.  Eventually companies wouldn’t even need to invest in physical servers as cloud providers started offering VM IaaS (Infrastructure as a Service).  An example of a VM IaaS is EC2 (Elastic Compute Cloud) on AWS. ",
+                "value":" The adaptation of virtual machines was a major milestone in software development history.  Instead of needing a single physical server for each application, a single server could run a program called a hypervisor which would create one or many virtual machines.  Virtual machines scaled as needed to match business needs.  Eventually companies didn't need to invest in physical servers as cloud providers started offering VM IaaS (Infrastructure as a Service).  An example of a VM IaaS is EC2 (Elastic Compute Cloud) on AWS. ",
                 "children":null
             }
         ]
@@ -151,7 +151,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". Virtual machines are given a subsection of a physical machines resources to run on.  Often VMs are used as a replacement for a real machine, as they can easily be built, destroyed, and rebuilt.  Virtual machines are created by software or firmware called a hypervisor.  The hypervisor controls the lifecycle of the virtual machine and makes sure its fully isolated from other virtual machines on the same hardware",
+                "value":". Virtual machines are given a subsection of a physical machines resources to run on.  Often VMs are used as a replacement for real machines, as they are easily built, destroyed, and rebuilt.  Virtual machines are created by a piece of software or firmware called a hypervisor.  Hypervisors control the lifecycle of virtual machines and isolate them from other virtual machines on the same hardware",
                 "children":null
             },
             {
@@ -188,7 +188,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  It also runs its own operating system, which requires updating and maintenance to fix exploits and bugs.  VMs also take quite a bit of time to start up, which is obvious if you’ve ever started an EC2 instance on AWS.  With both my websites currently running on EC2 VMs, I’m well aware of these challenges. ",
+                "value":".  They also run their own operating system, which requires updating and maintenance to fix exploits and bugs.  VMs also take quite a bit of time to start up, which is obvious if you've ever started an EC2 instance on AWS.  With both my websites currently running on EC2 VMs, I'm well aware of these challenges.  Still, the creation of a virtual machine is magnitudes faster than building a physical server. ",
                 "children":null
             }
         ]
@@ -201,7 +201,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" For a long time there was no better option than VMs for hosting enterprise applications.  Nowadays there is another level of abstraction away from a physical machine - a container.  The best description I read about containers described them as virtualized operating systems, compared to VMs which are virtualized computers.  While containers are comparable to traditional operating systems, they can be much more lightweight.  This is because containers utilize their host operating system, freeing them from running certain tasks.  Containers use less CPU cycles and don’t need as much RAM and storage. ",
+                "value":" For a long time there was no better option than VMs for hosting enterprise applications.  Nowadays there exists another layer of abstraction away from physical machines - containers.  The best description I read about containers described them as virtualized operating systems, compared to VMs which are virtualized computers.  While containers are comparable to traditional operating systems, they can be much more lightweight.  This is due to containers utilizing their host operating system, freeing them from running certain tasks.  Containers use less CPU cycles and don't need as much RAM and storage. ",
                 "children":null
             }
         ]
@@ -366,7 +366,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In order to work with Docker, you must also start it on your machine.  For example, on Amazon Linux the command ",
+                "value":".  To work with Docker, you also must start it on your machine.  For example, on Amazon Linux the command ",
                 "children":null
             },
             {
@@ -408,7 +408,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The two most important Docker concepts are images and containers.  An image is a blueprint for a container in the same way that a class is a blueprint for an object.  A container is a running image. ",
+                "value":" The two most important Docker concepts are images and containers.  An image is a blueprint for a container in the same way a class is a blueprint for an object.  A container is a running image. ",
                 "children":null
             }
         ]
@@ -435,7 +435,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" command.  For example, the following command downloads the official ubuntu image onto your computer. ",
+                "value":" command.  For example, the following command downloads the official ubuntu image onto your computer.  It pulls the default repository tag (similar to tags in a git repository), which is ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"latest",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
                 "children":null
             }
         ]
@@ -539,7 +553,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" command will start a container based on the ",
+                "value":" command starts a container based on the ",
                 "children":null
             },
             {
@@ -553,21 +567,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" image.  It will pull the default repository tag (similar to tags in a git repository), which is ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "class":"jarombek-inline-code"
-                },
-                "value":"latest",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":". ",
+                "value":" image. ",
                 "children":null
             }
         ]
@@ -636,13 +636,13 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"dockercontainer run",
+                "value":"docker container run",
                 "children":null
             },
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" command, the Bash terminal runs inside the container.  For example, you can run ",
+                "value":" command, your Bash terminal runs inside the container.  For example, you can run ",
                 "children":null
             },
             {
@@ -656,7 +656,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" to see all the processes running inside the container. To return the Bash shell to the host machine, click ",
+                "value":" to see all the processes running inside the container. To return the Bash shell from the container to the host machine, click ",
                 "children":null
             },
             {
@@ -723,7 +723,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" reveals that each container is given a name, in the case of my ubuntu container ",
+                "value":" reveals that each container is given a name; in my case the ubuntu container is given the name ",
                 "children":null
             },
             {
@@ -737,7 +737,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". Using the container name, you can reconnect to, stop, or delete the container. ",
+                "value":". Using a container name, you can reconnect to, stop, or delete a container. ",
                 "children":null
             }
         ]
