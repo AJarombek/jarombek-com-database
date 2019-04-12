@@ -807,7 +807,28 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The basic Docker concepts covered in this article can be incorporated into our projects to create containerized applications.  Once an application is containerized, it can easily be orchestrated in a scalable and updatable manner.  The next article in my Docker series creates a playground environment on AWS for Docker.  The third and final article containerizes an application. ",
+                "value":" The basic Docker concepts covered in this article can be incorporated into our projects to create containerized applications.  Once an application is containerized, it can easily be orchestrated in a scalable and updatable manner.  The ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/apr-8-2019-docker-pt2"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"next article",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" in my Docker series creates a playground environment on AWS for Docker.  The third and final article containerizes an application. ",
                 "children":null
             }
         ]

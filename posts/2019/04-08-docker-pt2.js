@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", I explored the basic concepts of Docker containers.  In this post, I’m creating a Docker playground environment on AWS with Terraform and CloudFormation.  The playground consists of an EC2 instance with Docker installed. It’s accessible from the internet to facilitate containerized web applications.  First I’ll discuss how I used Terraform and CloudFormation to build the playground followed by a deep dive into the code. ",
+                "value":", I explored the basic concepts of Docker containers.  In this post, I'm creating a Docker playground environment on AWS with Terraform and CloudFormation.  The playground consists of an EC2 instance with Docker installed. It's accessible from the internet to facilitate containerized web applications.  To start I'll discuss why I used Terraform and CloudFormation to build the playground.  Then I'll take a deep dive into the infrastructure code. ",
                 "children":null
             }
         ]
@@ -89,7 +89,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", I explored the basic concepts of Docker containers.  In this post, I’m creating a Docker playground environment on AWS with Terraform and CloudFormation.  The playground consists of an EC2 instance with Docker installed. It’s accessible from the internet to facilitate containerized web applications.  First I’ll discuss how I used Terraform and CloudFormation to build the playground followed by a deep dive into the code. ",
+                "value":", I explored the basic concepts of Docker containers.  In this post, I'm creating a Docker playground environment on AWS with Terraform and CloudFormation.  The playground consists of an EC2 instance with Docker installed. It's accessible from the internet to facilitate containerized web applications.  To start I'll discuss why I used Terraform and CloudFormation to build the playground.  Then I'll take a deep dive into the infrastructure code. ",
                 "children":null
             }
         ]
@@ -214,7 +214,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" CloudFormation is another IaC tool designed by Amazon exclusively for AWS.  This is different than Terraform which is cloud agnostic.  Similar to Terraform, CloudFormation allows developers to create infrastructure declaratively",
+                "value":" CloudFormation is another IaC tool designed by Amazon exclusively for AWS.  CloudFormation's AWS exclusivity is different than Terraform, which is cloud agnostic.  Similar to Terraform, CloudFormation allows developers to create infrastructure declaratively",
                 "children":null
             },
             {
@@ -226,7 +226,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  CloudFormation is written in JSON or YAML files called templates (always use YAML if you can, it’s easier on the eyes).  When a template file is built (the infrastructure is instantiated), the resulting infrastructure is called a stack",
+                "value":".  CloudFormation is written in JSON or YAML files called templates (always use YAML if you can, it's easier on the eyes).  When a template file is built (the infrastructure is instantiated), the resulting infrastructure is called a stack",
                 "children":null
             },
             {
@@ -251,7 +251,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When people discuss Terraform and CloudFormation for AWS infrastructure, they make it seem like you must pick one over the other.  This is a difficult choice, since both Terraform and CloudFormation have different strengths and weaknesses.  For example, Terraform has the ability to retrieve existing infrastructure while CloudFormation does not (you have to use the AWS CLI or SDKs).  CloudFormation has certain features that Terraform lacks, such as ",
+                "value":" When people discuss Terraform and CloudFormation for AWS infrastructure, they make it seem like one must be picked over the other.  This is a difficult choice, since Terraform and CloudFormation have different strengths and weaknesses.  For example, Terraform has the ability to retrieve existing infrastructure while CloudFormation does not (you have to use the AWS CLI or SDKs).  CloudFormation has certain features that Terraform lacks, such as ",
                 "children":null
             },
             {
@@ -272,7 +272,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" for EC2 instances.  There is also the personal preference of CloudFormation’s YAML syntax or Terraform’s HCL syntax. ",
+                "value":" for EC2 instances.  There is also the personal preference of CloudFormation's YAML syntax or Terraform's HCL syntax. ",
                 "children":null
             }
         ]
@@ -298,7 +298,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now let’s look at the code. ",
+                "value":" Now let's look at the code. ",
                 "children":null
             }
         ]
@@ -326,7 +326,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" As I previously mentioned, the IaC codebase begins with Terraform to get existing AWS infrastructure. In particular, I’m interested in an existing VPC and Subnet.  A VPC (Virtual Private Cloud) is a private cloud with its own IP address ranges, creating a network for cloud resources",
+                "value":" As I previously mentioned, the IaC codebase begins with Terraform to get existing AWS infrastructure. In particular, I'm interested in an existing VPC and Subnet.  A VPC (Virtual Private Cloud) is a private cloud with its own IP address range, providing a network for cloud resources",
                 "children":null
             },
             {
@@ -338,7 +338,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Within a VPC, IP addresses can be further partitioned into subnetworks (subnets).  Subnets can either be publicly accessible to the internet or private to the VPC.  The Docker playground is an EC2 instance located inside a VPC and public subnet.  The VPC and subnet are used for all my experimental applications, so they already exist in my AWS account.  The following Terraform code retrieves both the VPC and subnet. ",
+                "value":".  Within a VPC, IP addresses are further partitioned into subnetworks (subnets).  Subnets can either be publicly accessible to the internet or private to the VPC.  The Docker playground is an EC2 instance located inside a VPC and public subnet.  The VPC and subnet are used for all my experimental applications, so they already exist in my AWS account.  The following Terraform code retrieves both the VPC and subnet. ",
                 "children":null
             }
         ]
@@ -408,7 +408,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" With access to the VPC, public subnet, and SSH key, I’m ready to invoke the CloudFormation template. The following resource passes variables from Terraform to the ",
+                "value":" With access to the VPC, public subnet, and SSH key, I'm ready to invoke the CloudFormation template. The following resource passes variables from Terraform to the ",
                 "children":null
             },
             {
@@ -601,7 +601,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now let’s switch over to the CloudFormation template.  The first section of the template collects inputs and assigns them to variables.  I specified an optional ",
+                "value":" Now let's switch over to the CloudFormation template.  The first section of the template collects inputs and assigns them to variables.  I specified an optional ",
                 "children":null
             },
             {
@@ -669,7 +669,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When CloudFormation creates a ",
+                "value":" When CloudFormation creates an ",
                 "children":null
             },
             {
@@ -780,7 +780,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Let’s break down how ",
+                "value":" Let's break down how ",
                 "children":null
             },
             {
@@ -997,7 +997,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" consists of configurations and configuration sets.  Configuration sets create groups of configurations and gives them an execution order.  The following code helps show the ",
+                "value":" consists of configurations and configuration sets.  Configuration sets create groups of configurations and gives them an execution order.  The following code helps show the structure of ",
                 "children":null
             },
             {
@@ -1011,7 +1011,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" structure. ",
+                "value":". ",
                 "children":null
             }
         ]
@@ -1246,7 +1246,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" extremely powerful, and is a key reason why I’ve started using CloudFormation for configuring EC2 virtual machines. ",
+                "value":" extremely powerful, and is a key reason why I've started using CloudFormation for configuring EC2 virtual machines. ",
                 "children":null
             }
         ]
@@ -1259,7 +1259,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The remainder of the CloudFormation template configures a security group to open the appropriate ports and gives the EC2 instance access to Elastic Container Registry (ECR), which is a private repository for Docker images.  You can find all the CloudFormation code on ",
+                "value":" The remainder of the CloudFormation template configures a security group to open appropriate ports on the EC2 instance and gives the EC2 instance access to Elastic Container Registry (ECR), which is a private repository for Docker images.  You can find all the CloudFormation code on ",
                 "children":null
             },
             {
@@ -1371,7 +1371,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Once the infrastructure is built, the following command is used to connect to the EC2 instance.  This command must be run from the computers home directory (which contains the SSH key). ",
+                "value":" Once the infrastructure is built, the following command is used to connect to the EC2 instance.  This command must be run from the directory that contains the SSH key. ",
                 "children":null
             }
         ]
@@ -1455,14 +1455,13 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In my next post, I’ll write about containerizing an application on the Docker playground and accessing it from the browser.  If you haven’t seen it already, check out my ",
+                "value":" In my next post, I'll write about containerizing an application on the Docker playground and accessing it from the browser.  If you haven't seen it already, check out my ",
                 "children":null
             },
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://jarombek.com/blog/",
-                    "apr-1-2019-docker-pt1":""
+                    "href":"https://jarombek.com/blog/apr-1-2019-docker-pt1"
                 },
                 "value":null,
                 "children":[
@@ -1525,6 +1524,14 @@ db.posts.insertOne({
             name: "Amazon EC2",
             picture: "https://asset.jarombek.com/logos/ec2.png",
             color: "ec2"
+        },
+        {
+            name: "YAML",
+            picture: "https://asset.jarombek.com/logos/yaml.png",
+            color: "yaml"
+        },
+        {
+            name: "HCL"
         }
     ],
     preview,
