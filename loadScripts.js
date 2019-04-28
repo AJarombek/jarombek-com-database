@@ -112,3 +112,4 @@ load('./posts/2019/03-15-powershell-scripting.js');
 
 load('./posts/2019/04-01-docker-pt1.js');
 load('./posts/2019/04-08-docker-pt2.js');
+load('./posts/2019/04-28-docker-pt3.js');
