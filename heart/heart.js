@@ -2,6 +2,25 @@ connection = new Mongo();
 db = connection.getDB("andy");
 
 db.posts.insertOne({
+    date: new Date('2019-05-05T12:00:00'),
+    content: [
+        ["I spent the last hour writing a letter about why it would help me to hear from the woman " +
+        "I love.  However I quickly realized I'd written the same things so many times and for the " +
+        "past 29 months it never did any good.  No matter how much love and kindness I " +
+        "put in, the situation never changed.  The silence remained."],
+        ["I know its selfish of me to pray and ask to hear her voice again.  If I look at it " +
+        "positively its because I care and love.  Maybe she doesn't look at it that way."],
+        ["I spoke with Garvey about things for only the second time since graduating.  I realize I " +
+        "deserve someone who speaks to me just because they want to.  No love letters required."],
+        ["I never wanted her to feel like she missed out on someone in life because of the " +
+        "difficult situation she was placed in.  I still don't.  Nor do I want her to lose someone " +
+        "who cares for her because of her struggles."],
+        ["I'm just tired.  My heart deserves a vacation.  I pray someday soon it will get it."],
+        ["Love, Andy"]
+    ]
+});
+
+db.posts.insertOne({
     date: new Date('2019-04-25T12:00:00'),
     content: [
         ["The other day I tried calling and leaving a message, but got no response.  I'm not sure if " +
