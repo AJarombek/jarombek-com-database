@@ -58,7 +58,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Docker articles, I explored the container environment basics and created a playground to run Docker on AWS.  In this article, I’m creating a containerized application that is publicly accessible from the internet. ",
+                "value":" Docker articles, I explored container environment basics and created a playground to run Docker on AWS.  In this article, I'm creating a containerized application that is publicly accessible from the internet. ",
                 "children":null
             }
         ]
@@ -131,7 +131,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Docker articles, I explored the container environment basics and created a playground to run Docker on AWS.  In this article, I’m creating a containerized application that is publicly accessible from the internet. ",
+                "value":" Docker articles, I explored container environment basics and created a playground to run Docker on AWS.  In this article, I'm creating a containerized application that is publicly accessible from the internet. ",
                 "children":null
             }
         ]
@@ -389,7 +389,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now it’s time to containerize the application in the ",
+                "value":" Now it's time to containerize the application in the ",
                 "children":null
             },
             {
@@ -431,7 +431,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" With the Node.js application on the EC2 instance, it’s time to containerize the application using Docker. The following command does the trick: ",
+                "value":" With the Node.js application on the EC2 instance, it's time to containerize the application using Docker. The following command does the trick: ",
                 "children":null
             }
         ]
@@ -585,7 +585,7 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"dockercontainer ls",
+                "value":"docker container ls",
                 "children":null
             },
             {
@@ -622,7 +622,28 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" While this is a very basic application, the same containerizing process can be used for complex pieces of software.  In a production system, you won’t just run a single container.  Replicas will be created through a container orchestrator such as Kubernetes or Docker Swarm.  Kubernetes will be the topic of future articles since I’ve been using it extensively lately.  All the code from this article is available on ",
+                "value":" While this is a very basic application, the same containerizing process can be used for complex pieces of software.  In a production system, you won't just run a single container.  Replicas will be created through a container orchestrator such as Kubernetes or Docker Swarm.  Kubernetes will be the topic of  ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/may-13-2019-kubernetes-pt1"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"future articles",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" since I've been using it  extensively lately.  All the code from this article is available on ",
                 "children":null
             },
             {
