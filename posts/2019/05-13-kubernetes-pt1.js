@@ -1307,7 +1307,7 @@ db.posts.insertOne({
         {
             startName: "Nigel Poulton, ",
             endName: " (Nigel Poulton, 2018), 5",
-            linkName: "Docker Deep Dive",
+            linkName: "The Kubernetes Book",
             link: "http://blog.nigelpoulton.com/my-books/"
         },
         {
