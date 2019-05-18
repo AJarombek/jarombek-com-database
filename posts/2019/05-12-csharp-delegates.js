@@ -339,7 +339,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" So far, nothing I’ve shown you about delegates differentiates them from Java lambda functions and functional interfaces.  Delegates and functional interfaces only know how to call a single function with a certain return value and parameter types.  For example, the following Java code maps values in a list with a ",
+                "value":" So far, nothing I've shown you about delegates differentiates them from Java lambda functions and functional interfaces.  Both delegates and functional interfaces know how to call a function with a certain return value and parameter types.  For example, the following Java code maps values in a list with a ",
                 "children":null
             },
             {
@@ -374,7 +374,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If you weren’t already aware, functional interfaces in Java are just interfaces with a single method. Java functional interfaces expose what the C# delegate pattern truly is - interfaces that know how to call a method.  Delegates are a shortened single method interface syntax.  You can easily write an interface in C# to perform the same logic as a delegate",
+                "value":" If you weren't already aware, functional interfaces in Java are just interfaces with a single method. Java functional interfaces expose what the C# delegate pattern truly is - an interface that knows how to call a method.  Delegates are a shortened syntax for a single method interface.  You can easily write an interface in C# to perform the same logic as a delegate",
                 "children":null
             },
             {
@@ -448,7 +448,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" where the delegate invokes multiple functions with the delegate arguments.  Think of multicasting as a way of combining delegate instances together.  This pattern makes more sense with an example. ",
+                "value":" where the delegate invokes multiple functions.  Think of multicasting as a way of combining delegate instances together.  This pattern makes more sense with an example. ",
                 "children":null
             }
         ]
@@ -538,7 +538,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" return types and arguments so that the integer value is modified in place (at a single location in memory) instead of creating new integers.  Both can be made instances of the delegate ",
+                "value":" return types and arguments so that the integer value is modified in place (at a single location in memory) instead of creating a new integer.  Both can be made instances of the ",
                 "children":null
             },
             {
@@ -552,7 +552,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". ",
+                "value":"   delegate type. ",
                 "children":null
             }
         ]
@@ -565,7 +565,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now let’s make a delegate instance with multicasting.  The following delegate instance combines ",
+                "value":" Now let's make a delegate instance with multicasting.  The following delegate instance combines ",
                 "children":null
             },
             {
@@ -646,7 +646,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Delegate instances with multicasting can easily be modified after they are created.  Let’s say I want the ",
+                "value":" Delegate instances with multicasting are easily modified after creation.  Let's say I want the ",
                 "children":null
             },
             {
@@ -695,7 +695,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Multicasting is a very powerful aspect of delegates in C#.  It helps separate them from other patterns found in comparable languages like Java. ",
+                "value":" Multicasting is a very powerful aspect of delegates in C#.  It helps separate them from patterns found in comparable languages like Java. ",
                 "children":null
             }
         ]
@@ -723,7 +723,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Similarly to how the Java standard library exposes multiple functional interfaces for use, C# provides delegate types in the ",
+                "value":" Similar to how the Java standard library exposes multiple functional interfaces for use, C# provides delegate types in the ",
                 "children":null
             },
             {
@@ -842,7 +842,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One confusing thing about the C# language is the two arrow functions at a developers disposal. Without background knowledge, it’s hard to decide which pattern to use in which context, and at worst it feels like feature bloat. Along with delegates, C# also offers lambda functions and local methods. It’s important to understand the differences between these three options. ",
+                "value":" One confusing thing about the C# language is the two arrow functions at a developers disposal. Without background knowledge, it's hard to decide which pattern to use in which context, and at worst it feels like feature bloat. Along with delegates, C# also offers lambda functions and local methods. It's important to understand the differences between these three options. ",
                 "children":null
             }
         ]
@@ -855,7 +855,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" As we’ve discussed, a delegate knows how to call one or many method(s).  It doesn’t matter if this method is a standard function, lambda function, or local method.  They all work with delegates! ",
+                "value":" As we've discussed, a delegate knows how to call one or many method(s).  It doesn't matter if this method is a standard function, lambda function, or local method.  They all work with delegates! ",
                 "children":null
             }
         ]
@@ -907,7 +907,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" With C# 7.0 (released in 2017) local methods were added.  Local methods are only visible in their ",
+                "value":" With C# 7.0 (released in 2017), local methods were added.  Local methods are only visible in their ",
                 "children":null
             },
             {
@@ -928,7 +928,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Unlike lambda functions, local methods do not need to be assigned to a delegate type.  This gives them greater flexibility.  Otherwise, they use the same fat arrow syntax as lambda functions. ",
+                "value":".  Unlike lambda functions, local methods don't need to be assigned to a delegate type.  This gives them greater flexibility.  Otherwise, they use the same fat arrow syntax as lambda functions. ",
                 "children":null
             }
         ]
@@ -941,7 +941,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In many cases local methods are the easiest approach since you don’t have to define a delegate type.  However, in some cases delegate types are needed.  For example, only lambda functions can be passed as arguments to functions. ",
+                "value":" In many cases local methods are the easiest approach since you don't have to define a delegate type.  However, in some cases delegate types are needed.  For example, only lambda functions can be passed as arguments to other functions. ",
                 "children":null
             }
         ]
@@ -969,7 +969,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Delegates are a very interesting design pattern in C#.  I think they are a very elegant simplification for the single method interface pattern.  I look forward to learning more about C# in the coming months.  All the code from this article is available on ",
+                "value":" Delegates are a very interesting design pattern in C#.  I think they're an elegant simplification for the single method interface pattern.  I look forward to learning more about C# in the coming months.  All the code from this article is available on ",
                 "children":null
             },
             {
