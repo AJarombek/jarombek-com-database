@@ -35,6 +35,12 @@ preview = [
                 ]
             },
             {
+                "el":"#text",
+                "attributes":null,
+                "value":"  ",
+                "children":null
+            },
+            {
                 "el":"a",
                 "attributes":{
                     "href":"https://jarombek.com/blog/apr-8-2019-docker-pt2"
@@ -73,7 +79,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" on Docker and containerized applications.  In those articles I worked with a single Docker container at a time.  Each container was mapped to a post on the host machines IP, making it accessible from the browser.  In my case, the host machine was an EC2 instance. ",
+                "value":" on Docker and containerized applications.  In those articles I worked with a single Docker container at a time.  Each container was mapped to a port on its host machines IP, making it accessible from the browser.  In my case, the host machine was an EC2 instance. ",
                 "children":null
             }
         ]
@@ -86,7 +92,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" While the single container approach works, it has a number of limitations and drawbacks.  First off, a single container isn’t scalable.  As web traffic to an application increases, the load becomes too much for a single container to handle.  There is also no zero-downtime approach to release a new version of an application.  The container running the old version has to stop and a container with the new version has to start in its place.  While both these limitations are deal breakers in themselves, the worst part about the single container approach is that its a single point of failure. If the container stops or the application running on it crashes, the entire application goes down. This makes deploying a production application on a single container inadequate. ",
+                "value":" While the single container approach works, it has a number of limitations and drawbacks.  First off, a single container isn't scalable.  As web traffic to an application increases, the load becomes too much for a single container to handle.  Secondly, there isn't a zero-downtime approach to release a new version of an application.  The container running the old version has to stop and a container with the new version has to start in its place.  While both these limitations are deal breakers in themselves, the worst part about the single container approach is that its a single point of failure. If the container stops or the application crashes, the entire website goes down. This makes deploying a production application on a single container inadequate. ",
                 "children":null
             }
         ]
@@ -121,6 +127,12 @@ content = [
                 ]
             },
             {
+                "el":"#text",
+                "attributes":null,
+                "value":"  ",
+                "children":null
+            },
+            {
                 "el":"a",
                 "attributes":{
                     "href":"https://jarombek.com/blog/apr-8-2019-docker-pt2"
@@ -159,7 +171,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" on Docker and containerized applications.  In those articles I worked with a single Docker container at a time.  Each container was mapped to a post on the host machines IP, making it accessible from the browser.  In my case, the host machine was an EC2 instance. ",
+                "value":" on Docker and containerized applications.  In those articles I worked with a single Docker container at a time.  Each container was mapped to a port on its host machines IP, making it accessible from the browser.  In my case, the host machine was an EC2 instance. ",
                 "children":null
             }
         ]
@@ -172,7 +184,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" While the single container approach works, it has a number of limitations and drawbacks.  First off, a single container isn’t scalable.  As web traffic to an application increases, the load becomes too much for a single container to handle.  There is also no zero-downtime approach to release a new version of an application.  The container running the old version has to stop and a container with the new version has to start in its place.  While both these limitations are deal breakers in themselves, the worst part about the single container approach is that its a single point of failure. If the container stops or the application running on it crashes, the entire application goes down. This makes deploying a production application on a single container inadequate. ",
+                "value":" While the single container approach works, it has a number of limitations and drawbacks.  First off, a single container isn't scalable.  As web traffic to an application increases, the load becomes too much for a single container to handle.  Secondly, there isn't a zero-downtime approach to release a new version of an application.  The container running the old version has to stop and a container with the new version has to start in its place.  While both these limitations are deal breakers in themselves, the worst part about the single container approach is that its a single point of failure. If the container stops or the application crashes, the entire website goes down. This makes deploying a production application on a single container inadequate. ",
                 "children":null
             }
         ]
@@ -185,7 +197,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The tool to solve these issues is a container orchestrator.  The most popular container orchestrator right now is Kubernetes. ",
+                "value":" The tool to solve these issues is a container orchestrator. ",
                 "children":null
             }
         ]
@@ -212,7 +224,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Orchestrators are portable from bare-metal machines to the cloud, effectively abstracting away the underlying infrastructure",
+                "value":".  Orchestrators  operate the same in all environments, no matter if they are running on bare-metal machines or cloud   VMs.  They effectively abstract away the underlying infrastructure",
                 "children":null
             },
             {
@@ -237,7 +249,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The second most popular container orchestrator is Docker Swarm, which I will likely explore in a future post.  The rest of this post explains the basic concepts on Kubernetes and deploys an application on a single node Kubernetes cluster. ",
+                "value":" The most popular container orchestrator right now is Kubernetes.  The second most popular container orchestrator is Docker Swarm, which I will likely explore in a future post.  The rest of this post explains the basic concepts of Kubernetes. ",
                 "children":null
             }
         ]
@@ -265,7 +277,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" As previously mentioned, Kubernetes is a container orchestrator.  To work with Kubernetes, a cluster is created consisting of a master node and worker nodes.  A node can be a bare-metal server or virtual machine.  Nodes are often virtual machines hosted in the cloud, such as an Amazon EC2 VM. ",
+                "value":" To work with Kubernetes, a cluster is created consisting of a master node and worker nodes.  A node can be a bare-metal server or virtual machine.  Nodes are often virtual machines hosted in the cloud, such as Amazon EC2 instances. ",
                 "children":null
             }
         ]
@@ -278,7 +290,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" There are two types of nodes - masters and workers.  Master nodes run the Kubernetes Control Plane, which you can think of as the brain of the cluster.  Worker nodes run application pods and services. Let’s explore the master node first. ",
+                "value":" Master nodes run the Kubernetes Control Plane, which you can think of as the brain of the cluster.   Worker nodes run application pods and services. Let's explore the master node first. ",
                 "children":null
             }
         ]
@@ -389,7 +401,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Objects in a Kubernetes cluster are represented as YAML documents.  YAML is a superset of JSON, so you can write documents with JSON as well.  Objects represent the desired state of the Kubernetes cluster.  An example of an object is a pod, which contains one or more containers.  Another example is a replica set, which self-heals and horizontally scales a pod (allows you to have many pods with the same configuration).  The YAML file declares the desired state of the pod or replica set in the cluster. ",
+                "value":" Objects in a Kubernetes cluster are represented as YAML documents.  YAML is a superset of JSON, so you can write documents with JSON as well.  Objects represent the desired state of the Kubernetes cluster.  An example of an object is a pod, which contains one or more containers.  Another example is a replica set, which self-heals and horizontally scales a pod (allowing you to have many pods with the same configuration).  The YAML file declares the desired state of the pod or replica set in the cluster. ",
                 "children":null
             }
         ]
@@ -424,7 +436,7 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"kubectl create file.yml",
+                "value":"kubectl create -f <filename>.yml",
                 "children":null
             },
             {
@@ -438,7 +450,7 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"kubectl apply file.yml",
+                "value":"kubectl apply -f <filename>.yml",
                 "children":null
             },
             {
@@ -571,7 +583,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" runs an algorithm to determine which cluster node a pod should run on",
+                "value":" runs an algorithm to determine which node a pod should run on",
                 "children":null
             },
             {
@@ -628,7 +640,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" objects.  When changes occur, controllers perform operations on the cluster.  Their objective is to keep the cluster matching the desired state declared in the Kubernetes objects.  The only Kubernetes object that Controller’s don’t handle are Pods, which are configured by a component called the Kubelet.  I will provide details about the Kubelet when discussing worker nodes. ",
+                "value":" objects.  When changes occur, controllers perform operations on the cluster.  Their objective is to keep the cluster matching the desired state declared in the Kubernetes objects.  The only Kubernetes object that Controller's don't handle are Pods, which are configured by a component called the Kubelet.  I will provide details about the Kubelet when discussing worker nodes. ",
                 "children":null
             }
         ]
@@ -706,7 +718,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" The central component of the master node.  It is a REST API which stores JSON documents in persistent storage.  JSON documents are Kubernetes objects which represent the desired state of the cluster. ",
+                                        "value":" The central component of the master node.  It's a REST API that stores JSON documents in persistent storage.  JSON documents are Kubernetes objects which represent the desired state of the cluster. ",
                                         "children":null
                                     }
                                 ]
@@ -750,7 +762,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" An etcd key-value store which holds JSON documents.  The structure of etcd is compared to a filesystem containing JSON files.  Each JSON file represents a Kubernetes object.  The etcd database is highly available, making it resistant to failures. ",
+                                        "value":" An etcd key-value store which holds JSON documents.  The structure of etcd is similar to a filesystem containing JSON files.  Each JSON file represents a Kubernetes object.  The etcd database is highly available, making it resistant to failures. ",
                                         "children":null
                                     }
                                 ]
@@ -838,7 +850,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" While the API Server is the central component of the master node, it doesn’t do anything besides accept API requests and write JSON to etcd.  The controller manager performs the actual work in the cluster based on the desired state exposed by the API Server.  This work keeps the cluster in its desired state. ",
+                                        "value":" While the API Server is the central component of the master node, it doesn't do anything besides accept API requests and write JSON to etcd.  The controller manager performs the actual work in the cluster based on the desired state exposed by the API Server.  It tries to keep the cluster in the desired state. ",
                                         "children":null
                                     }
                                 ]
@@ -904,7 +916,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" has two main jobs.  The first is to register the machine its running on as a worker node for the cluster.  The second is to watch the API Server for Pods that are scheduled to run on the worker node it initialized",
+                "value":" has two main jobs.  The first is to register the machine its running on as a worker node for the cluster.  The second is to watch the API Server for scheduled Pods",
                 "children":null
             },
             {
@@ -916,7 +928,26 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The role of starting the Pods is left to the Container Runtime.  Kubernetes can be configured with many different Container Runtimes, the most common of which is Docker. ",
+                "value":". The role of starting Pods is left to the ",
+                "children":null
+            },
+            {
+                "el":"strong",
+                "attributes":null,
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"Container Runtime",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  Kubernetes can be configured with many different Container Runtimes, the most common being Docker. ",
                 "children":null
             }
         ]
@@ -929,7 +960,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The last major piece of the worker node is the ",
+                "value":" The last major piece of a worker node is the ",
                 "children":null
             },
             {
@@ -973,7 +1004,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Here is a diagram of the worker node and its four main components: ",
+                "value":" Here is a diagram of the worker node and its main components: ",
                 "children":null
             }
         ]
@@ -1038,7 +1069,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" A component that watches the API Server for Pod objects scheduled to run on its node.  The Kubelet notifies the Container Runtime to start Pods after they are scheduled.  It also destroys Pods after they are removed from the API Server and tells the Container Runtime to restart a container when they fail health checks. ",
+                                        "value":" A component that watches the API Server for Pod objects scheduled to run on its node.  The Kubelet notifies the Container Runtime to start Pods after they are scheduled.  It also destroys Pods after they are removed from the API Server and tells the Container Runtime to restart containers when they fail health checks. ",
                                         "children":null
                                     }
                                 ]
@@ -1138,7 +1169,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":".  Other container runtimes can be used in the place of Docker. ",
+                                        "value":".  Other container runtimes can be used instead of Docker. ",
                                         "children":null
                                     }
                                 ]
@@ -1203,7 +1234,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This article provides us with a high level view of a Kubernetes cluster.  In my next Kubernetes article, I’ll walk through creating a simple one node cluster on AWS.  I’ll also discuss all the basic Kubernetes objects used in an application.  I’m also building a full Kubernetes prototype application, which is available on ",
+                "value":" This article provides a high level view of a Kubernetes cluster.  In my next Kubernetes article, I'll walk through creating a simple one node cluster on AWS.  I'll also discuss all the basic Kubernetes objects used in an application.  I'm also building a full Kubernetes prototype application, which is available on ",
                 "children":null
             },
             {
