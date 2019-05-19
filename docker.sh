@@ -18,6 +18,9 @@ docker push ajarombek/jarombek-com-database:1.0.0
 # Run the container
 docker container run -d --name jarombek-com-database -p 27018:27017 jarombek-com-database:latest
 
+# Execute commands on the running container
+docker exec -it jarombek-com-database /bin/bash
+
 # Remove existing containers
 docker container stop jarombek-com-database
 docker container rm jarombek-com-database
