@@ -37,13 +37,13 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", I went over the concepts of container orchestration and the architecture of a Kubernetes cluster.  In this article, I'm building a single node Kubernetes cluster running a Node.js application. ",
+                "value":", I went over the concepts of container orchestration and the architecture of a Kubernetes cluster.  In this article, I'm building a single node Kubernetes cluster that runs a Node.js application. ",
                 "children":null
             }
         ]
     },
     {
-        "el":"h5",
+        "el":"sectiontitle",
         "attributes":{
             "title":"Overview"
         },
@@ -78,7 +78,7 @@ preview = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":" Dockerized application",
+                        "value":" article on Containerization",
                         "children":null
                     }
                 ]
@@ -107,7 +107,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" as well.  The single node Kubernetes cluster is created by a CloudFormation template wrapped in Terraform.  It installs Docker, kubeadm, kubectl, kubelet, and kubernetes-cni. You can check out the code on ",
+                "value":".  The single node Kubernetes cluster is created with a CloudFormation template wrapped in Terraform.  It installs Docker, kubeadm, kubectl, kubelet, and kubernetes-cni. You can check out the infrastructure code on ",
                 "children":null
             },
             {
@@ -165,7 +165,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", I went over the concepts of container orchestration and the architecture of a Kubernetes cluster.  In this article, I'm building a single node Kubernetes cluster running a Node.js application. ",
+                "value":", I went over the concepts of container orchestration and the architecture of a Kubernetes cluster.  In this article, I'm building a single node Kubernetes cluster that runs a Node.js application. ",
                 "children":null
             }
         ]
@@ -206,7 +206,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":" Dockerized application",
+                        "value":" article on Containerization",
                         "children":null
                     }
                 ]
@@ -235,7 +235,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" as well.  The single node Kubernetes cluster is created by a CloudFormation template wrapped in Terraform.  It installs Docker, kubeadm, kubectl, kubelet, and kubernetes-cni. You can check out the code on ",
+                "value":".  The single node Kubernetes cluster is created with a CloudFormation template wrapped in Terraform.  It installs Docker, kubeadm, kubectl, kubelet, and kubernetes-cni. You can check out the infrastructure code on ",
                 "children":null
             },
             {
@@ -288,7 +288,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is the ",
+                "value":" is a ",
                 "children":null
             },
             {
@@ -360,7 +360,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Every worker node runs an instance of the ",
+                "value":" Every worker node runs a ",
                 "children":null
             },
             {
@@ -379,7 +379,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".   The kubelet watches the Kubernetes API and waits for Pods to be scheduled to its node.  Pods are the simplest object in Kubernetes - they run one or more containers.  Once a Pod is scheduled, the kubelet tells the container runtime (Docker) to start a container in the Pod.  Since my cluster has no worker nodes, the kubelet will run on the master node. All Pods will be scheduled to run on the master node. ",
+                "value":" instance.   The kubelet watches the Kubernetes API and waits for Pods to be scheduled to its node.  Pods are the simplest object in Kubernetes - they run one or more containers.  Once a Pod is scheduled, the kubelet tells the container runtime (Docker) to start a container in the Pod.  Since my cluster has no worker nodes, the kubelet runs on the master node. All my Pods are scheduled to run on the master node. ",
                 "children":null
             }
         ]
@@ -460,7 +460,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" With the cluster initialized, we can try running kubectl commands.  One simple test is to check the status of all the nodes in the cluster.  Only one node should be returned. ",
+                "value":" With the cluster initialized, we can try running kubectl commands.  One simple test is to check the status of all the nodes in the cluster.  Only one master node should be returned. ",
                 "children":null
             }
         ]
@@ -534,7 +534,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" After waiting a few seconds, the node will be in a ",
+                "value":" After waiting a few seconds, the master node will be in a ",
                 "children":null
             },
             {
@@ -796,7 +796,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" on the container for the application.  However, the Pod doesn't provide a way to access the container from outside the Kubernetes cluster.  Networking configuration for Pods is performed by another object called a Service. ",
+                "value":" on the container as an entry point to the application.  However, the Pod doesn't provide a way to access the container from outside the Kubernetes cluster.  Networking configuration for Pods is performed by another object called a Service. ",
                 "children":null
             }
         ]
@@ -822,7 +822,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" provide networking capabilities and a stable IP address for Pods.  The following service object provides an entrypoint to the Pod from the internet. ",
+                "value":" provide networking capabilities and a stable IP address for Pods.  The following service object provides an entry point to the Pod from the internet. ",
                 "children":null
             }
         ]
@@ -1013,7 +1013,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and then attempt to create the Kubernetes objects. ",
+                "value":" and attempt to create the Kubernetes objects. ",
                 "children":null
             }
         ]
@@ -1040,7 +1040,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The Pod and Service objects were successfully sent to the Kubernetes API.  Now let's confirm that the Service and Pod are running successfully. ",
+                "value":" The Pod and Service objects were successfully sent to the Kubernetes API.  Now let's confirm that the  Pod and Service are running successfully. ",
                 "children":null
             }
         ]
@@ -1164,7 +1164,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", meaning it has not yet been scheduled to run on a node.  To debug this issue, we can execute the ",
+                "value":", meaning it hasn't been scheduled to run on a node.  To debug this issue, we can execute the ",
                 "children":null
             },
             {
@@ -1197,7 +1197,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This error message says that the Scheduler failed because it didn't find any nodes for the Pod to run on.  This issue occurs because the Kubernetes cluster I configured only contains a single master node. By default, user Pods are only scheduled to worker nodes.  However, my cluster doesn't have any worker nodes.  In a production environment its good to keep all the application Pods on worker nodes, however in my demo application we want the Pod to run on the master node.  This default behavior can be changed with a configuration object called a ",
+                "value":" This error message says the Scheduler failed because it didn't find any nodes for the Pod to run on.  This issue occurred because my Kubernetes cluster only contains a single master node. By default, user Pods are only scheduled to worker nodes.  However, my cluster doesn't have any worker nodes.  In a production environment its good to keep all the application Pods on worker nodes, however in my demo application we want the Pod to run on the master node.  This default behavior can be changed with a configuration object called a ",
                 "children":null
             },
             {
@@ -1255,7 +1255,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Unless you specify in the Pod YAML configuration that it tolerates the ",
+                "value":".  Unless you specify in the YAML configuration that a Pod tolerates the ",
                 "children":null
             },
             {
@@ -1269,7 +1269,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" taint, the Pod will not be scheduled to the master node.  Since I did not specify this toleration, the Pod failed to be scheduled. ",
+                "value":" taint, Pods are not be scheduled to the master node.  Since I did not specify this toleration, the Pod failed to be scheduled. ",
                 "children":null
             }
         ]
@@ -1282,7 +1282,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" A workaround to this issue is to remove the ",
+                "value":" A workaround for this issue is to remove the ",
                 "children":null
             },
             {
@@ -1345,7 +1345,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"!  The Pod was successfully scheduled to the master node.  The application setup is complete and the application is accessible on the master nodes public IP. ",
+                "value":"!  The Pod was successfully scheduled to the master node.  The application setup is complete and the application is accessible on the master nodes public IP address. ",
                 "children":null
             }
         ]
@@ -1409,7 +1409,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" While a single node cluster is nice for playing around and learning Kubernetes, it has a number of limitations and should never be used in a production environment.  Most importantly, a single node is a single point of failure.  If the master node goes down, so does the entire cluster.  In a production environment you would want a cluster with multiple worker nodes and a highly available master node. With this setup, the cluster will not go down if nodes fail.  Most cloud providers offer highly available clusters.  For example, AWS provides EKS (Elastic Container Service for Kubernetes) and Google Cloud offers GKS (Google Kubernetes Engine).  I'm currently creating a Kubernetes prototype which uses EKS. Look forward to articles on that soon! ",
+                "value":" While a single node cluster is nice for playing around and learning Kubernetes, it has a number of limitations and should never be used in a production environment.  Most importantly, a single node is a single point of failure.  If the master node goes down, so does the entire cluster.  In a production environment you want a cluster with multiple worker nodes and a highly available master node. With this setup, the cluster will not go down if nodes fail.  Most cloud providers offer highly available clusters.  For example, AWS provides EKS (Elastic Container Service for Kubernetes) and Google Cloud offers GKE (Google Kubernetes Engine).  I'm currently creating a Kubernetes prototype which uses EKS. Look forward to articles on that soon! ",
                 "children":null
             }
         ]
@@ -1507,7 +1507,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" -",
+                "value":"-",
                 "children":null
             },
             {
@@ -1526,7 +1526,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In a production application, either a LoadBalancer service or an Ingress object will be used for networking.  I will also cover these objects in the future. ",
+                "value":".   In a production application, either a LoadBalancer service or an Ingress object will be used for networking.  I will also cover these objects in the future. ",
                 "children":null
             }
         ]
@@ -1554,7 +1554,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In this article I created a barebones application in a single node Kubernetes cluster.  Although the application is far from production ready with the current configuration, it is a good step forward in learning Kubernetes!  All the code from this article is available on ",
+                "value":" In this article I created a barebones application in a single node Kubernetes cluster.  Although the application is far from production ready with the current configuration, its a good step forward in learning Kubernetes!  All the code from this article is available on ",
                 "children":null
             },
             {
