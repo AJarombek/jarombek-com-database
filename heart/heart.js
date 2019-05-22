@@ -2,6 +2,18 @@ connection = new Mongo();
 db = connection.getDB("andy");
 
 db.posts.insertOne({
+    date: new Date('2019-05-21T12:00:00'),
+    content: [
+        ["I don't know why but I felt like I had to write today.  I'm writing because I care.  And " +
+        "because I truly love.  I keep doing it in case my love is hurting or struggling.  Or if she " +
+        "needs a reminder that I'm here."],
+        ["Everything will be okay.  Hold on to your little stuffed friend like I do to Dotty.  Love " +
+        "is all around you if you look.  I love you."],
+        ["-Andy"]
+    ]
+});
+
+db.posts.insertOne({
     date: new Date('2019-05-05T12:00:00'),
     content: [
         ["I spent the last hour writing a letter about why it would help me to hear from the woman " +
