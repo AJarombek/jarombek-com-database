@@ -721,7 +721,7 @@ db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
     name: postName,
-    title: "Haskell Part III - Function Compositions",
+    title: "Haskell Part III: Function Compositions",
     description: `I often use function compositions which pass the result of one function to the
         argument of another function.  In Haskell function compositions are given their own 
         language operator!`,

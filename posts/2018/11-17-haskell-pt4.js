@@ -1177,7 +1177,7 @@ db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
     name: postName,
-    title: "Haskell Part IV - Types",
+    title: "Haskell Part IV: Types",
     description: `This post explains the difference between the three mechanisms for creating types 
         in Haskell.`,
     date: new Date('2018-11-17T12:00:00'),

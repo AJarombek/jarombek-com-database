@@ -1648,7 +1648,7 @@ db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
     name: postName,
-    title: "Haskell Part II - Folds",
+    title: "Haskell Part II: Folds",
     description: `This article clears up the differences between each fold function and introduces 
         some simple use cases.`,
     date: new Date('2018-10-20T12:00:00'),

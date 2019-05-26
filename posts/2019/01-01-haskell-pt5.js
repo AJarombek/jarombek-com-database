@@ -1075,7 +1075,7 @@ db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
     name: postName,
-    title: "Haskell Part V - Classes",
+    title: "Haskell Part V: Classes",
     description: `The closest comparison for Haskell classes in the object oriented world is Java 
         interfaces with default methods.  This article helps clear the confusion of 
         Haskell classes.`,

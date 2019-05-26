@@ -117,3 +117,4 @@ load('./posts/2019/04-28-docker-pt3.js');
 load('./posts/2019/05-12-csharp-delegates.js');
 load('./posts/2019/05-13-kubernetes-pt1.js');
 load('./posts/2019/05-20-kubernetes-pt2.js');
+load('./posts/2019/05-28-haskell-pt6.js');
