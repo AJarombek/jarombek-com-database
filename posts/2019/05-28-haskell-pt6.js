@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This year I’ve been learning ",
+                "value":" Right now I'm learning ",
                 "children":null
             },
             {
@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", a functional programming language.  In my last few Haskell articles I’ve discussed basic aspects of the language.  Now I’ve begun digging into advanced functional programming concepts.  This article discusses functors, a generic way to map functions over objects. ",
+                "value":", a functional programming language.  In my last few Haskell articles I've discussed basic aspects of the language.  Now I've begun digging into advanced functional programming concepts.  This article discusses functors, a generic way to map functions over objects. ",
                 "children":null
             }
         ]
@@ -65,7 +65,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" A common pattern in programming is looping through a collection of values and applying a transformation to each.  For example, a programmer might loop through a list of integers and increment each value.  The imperative approach to perform this transformation is to set up a for loop and iterate over each list index.  The functional approach is to use the ",
+                "value":" A common pattern in programming is looping through a collection of values and applying a transformation to each.  For example, a programmer might loop through a list of integers and increment each value.  The imperative approach to this transformation sets up a for loop and iterates over each list index.  The functional approach uses the ",
                 "children":null
             },
             {
@@ -93,7 +93,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" accepts two arguments - a collection to iterate over and a function.  The function is invoked for each item in the collection. ",
+                "value":" accepts two arguments - a collection to iterate over and a function.  The function is applied to each item in the collection. ",
                 "children":null
             }
         ]
@@ -109,7 +109,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This year I’ve been learning ",
+                "value":" Right now I'm learning ",
                 "children":null
             },
             {
@@ -130,7 +130,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", a functional programming language.  In my last few Haskell articles I’ve discussed basic aspects of the language.  Now I’ve begun digging into advanced functional programming concepts.  This article discusses functors, a generic way to map functions over objects. ",
+                "value":", a functional programming language.  In my last few Haskell articles I've discussed basic aspects of the language.  Now I've begun digging into advanced functional programming concepts.  This article discusses functors, a generic way to map functions over objects. ",
                 "children":null
             }
         ]
@@ -158,7 +158,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" A common pattern in programming is looping through a collection of values and applying a transformation to each.  For example, a programmer might loop through a list of integers and increment each value.  The imperative approach to perform this transformation is to set up a for loop and iterate over each list index.  The functional approach is to use the ",
+                "value":" A common pattern in programming is looping through a collection of values and applying a transformation to each.  For example, a programmer might loop through a list of integers and increment each value.  The imperative approach to this transformation sets up a for loop and iterates over each list index.  The functional approach uses the ",
                 "children":null
             },
             {
@@ -186,7 +186,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" accepts two arguments - a collection to iterate over and a function.  The function is invoked for each item in the collection. ",
+                "value":" accepts two arguments - a collection to iterate over and a function.  The function is applied to each item in the collection. ",
                 "children":null
             }
         ]
@@ -225,7 +225,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Its defined to accept a list and a function as arguments. ",
+                "value":".  It accepts a list and a function as arguments. ",
                 "children":null
             }
         ]
@@ -281,7 +281,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Haskell’s ",
+                "value":" Haskell's ",
                 "children":null
             },
             {
@@ -797,7 +797,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" type have similar structures.  Types without a parameterized data definition are not valid functors because they don’t contain another type",
+                "value":" type have similar structures.  Types without a parameterized data definition are not valid functors because they don't contain another type",
                 "children":null
             },
             {
@@ -837,7 +837,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Functors are useful for mapping functions across all items contained in a type.  They become even more useful in regards to Applicatives and Monads, which I will discuss in upcoming articles. ",
+                "value":" Functors are useful for mapping functions across all items contained in an object.  They become even more useful in regards to Applicatives and Monads, which I will discuss in upcoming articles. ",
                 "children":null
             }
         ]
@@ -850,7 +850,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" For now, one last useful implementation of Functors is creating a generic function for all instances of ",
+                "value":" For now, one last useful functor implementation is a generic function for all instances of ",
                 "children":null
             },
             {
@@ -864,7 +864,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" to utilize.  Using a ",
+                "value":" to utilize.  With the help of a ",
                 "children":null
             },
             {
@@ -925,7 +925,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Any type which is made into an instance of ",
+                "value":" Any type that is an instance of ",
                 "children":null
             },
             {
@@ -981,7 +981,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The concept of functors isn’t limited to Haskell or functional programming.  In Java, the ",
+                "value":" The concept of functors isn't limited to Haskell or functional programming.  In Java, the ",
                 "children":null
             },
             {
@@ -1028,7 +1028,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" You can then create classes that implement the ",
+                "value":" Classes can implement the ",
                 "children":null
             },
             {
@@ -1210,7 +1210,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The same functor patterns work in many different languages! ",
+                "value":" The same functor pattern works in many different languages! ",
                 "children":null
             }
         ]
@@ -1238,7 +1238,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Working with functional programming languages forces the brain to think about common problems differently. While initially difficult to reason about, functors simply provide a mechanism for mapping a function across different items.  Functors also promote generic code which works for many different types.  In my next article I’ll build on this knowledge and explore applicatives.  All the code from this article is available on ",
+                "value":" Working with a functional programming language forces the brain to think about common problems differently. While initially difficult to reason about, functors simply provide a mechanism for mapping a function across different items.  Functors also promote the creation of generic code which works for many different types.  In my next article I'll build on this knowledge and explore applicatives.  All the code from this article is available on ",
                 "children":null
             },
             {
