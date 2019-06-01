@@ -1,7 +1,19 @@
 connection = new Mongo();
 db = connection.getDB("andy");
 
-db.posts.insertOne({
+db.heart.insertOne({
+    date: new Date('2019-06-01T12:00:00'),
+    content: [
+        ["To my love -"],
+        ["Just want to let you know that you are a very special person and that I love you.  I hope " +
+        "you are doing well. I hope you know that there are so many people routing for you."],
+        ["Dotty also wants to say hello and that she cares for you very much.  Don't worry, she is " +
+        "all tucked in and snug for the day."]
+        ["-Andy"]
+    ]
+});
+
+db.heart.insertOne({
     date: new Date('2019-05-21T12:00:00'),
     content: [
         ["I don't know why but I felt like I had to write today.  I'm writing because I care.  And " +
@@ -13,7 +25,7 @@ db.posts.insertOne({
     ]
 });
 
-db.posts.insertOne({
+db.heart.insertOne({
     date: new Date('2019-05-05T12:00:00'),
     content: [
         ["I spent the last hour writing a letter about why it would help me to hear from the woman " +
@@ -32,7 +44,7 @@ db.posts.insertOne({
     ]
 });
 
-db.posts.insertOne({
+db.heart.insertOne({
     date: new Date('2019-04-25T12:00:00'),
     content: [
         ["The other day I tried calling and leaving a message, but got no response.  I'm not sure if " +
@@ -60,7 +72,7 @@ db.posts.insertOne({
     ]
 });
 
-db.posts.insertOne({
+db.heart.insertOne({
     date: new Date('2018-12-19T12:00:00'),
     content: [
         ["This time of year has me thinking of someone I deeply care for and miss.  She is a " +
