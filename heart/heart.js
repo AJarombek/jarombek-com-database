@@ -2,11 +2,42 @@ connection = new Mongo();
 db = connection.getDB("andy");
 
 db.heart.insertOne({
+    date: new Date('2019-06-10T12:00:00'),
+    content: [
+        ["Today was a challenging day.  I have them quite often, but I learn a lot each time which " +
+        "is good.  I had time to reflect upon my love.  On my good days my love is very selfless.  I " +
+        "love without asking for anything.  It's unconditional.  On my bad days the selfish thoughts " +
+        "enter into my mind and I break down a bit from the struggles of missing her.  Like today " +
+        "when I curled up with Dotty and listened to sad Taylor Swift songs."],
+        ["I know its natural to miss someone you love.  And to be selfish by missing the way they " +
+        "made you feel.  I try not to be too hard on myself about the selfish piece, instead " +
+        "striving to be less selfish as time goes on."],
+        ["My love will be with me for all my life.  Above all I want my love to be happy.  I try not " +
+        "to assume what she is thinking or going through, but I know she would be here now if she " +
+        "wanted to be.  She would be here if her selfish thoughts that pop up now and again matched " +
+        "my own."],
+        ["I have a lot still to learn.  I know that I want the energy of my love spent more on her " +
+        "happiness than my selfish yearning.  Because of that I'm removing Still Beautiful from my " +
+        "page, since a big piece of the song is hoping for the return of love.  As I said, if she " +
+        "wanted to be here she would."],
+        ["I'm not sure if I should keep writing these and leaving them open to read.  I have no idea " +
+        "if she wants me writing.  I know my intentions are to help her towards happiness, but maybe my good " +
+        "intentions aren't enough.  Or maybe my real intentions are to assist her so that she returns " +
+        "to me.  Probably both.  I pray that I can get some guidance on that."],
+        ["I don't expect to stop missing my love.  I just want my feelings of love to have as positive an impact " +
+        "as possible.  So with that in mind, I hope she is having a wonderful day.  I know she will " +
+        "bring sunshine to so many peoples lives.  I will always love her and always be on her side."],
+        ["Love, Andy"],
+        ["https://bit.ly/2I5MFU2"]
+    ]
+});
+
+db.heart.insertOne({
     date: new Date('2019-06-01T12:00:00'),
     content: [
         ["To my love -"],
         ["Just want to let you know that you are a very special person and that I love you.  I hope " +
-        "you are doing well. I hope you know that there are so many people routing for you."],
+        "you are doing well. I hope you know that there are so many people rooting for you."],
         ["Dotty also wants to say hello and that she cares for you very much.  Don't worry, she is " +
         "all tucked in and snug for the day."]
         ["-Andy"]
