@@ -2,6 +2,11 @@ connection = new Mongo();
 db = connection.getDB("andy");
 
 db.heart.insertOne({
+    date: new Date('2019-06-16T12:00:00'),
+    content: [],
+});
+
+db.heart.insertOne({
     date: new Date('2019-06-10T12:00:00'),
     content: [
         ["Today was a challenging day.  I have them quite often, but I learn a lot each time which " +
