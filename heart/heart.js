@@ -3,7 +3,24 @@ db = connection.getDB("andy");
 
 db.heart.insertOne({
     date: new Date('2019-06-16T12:00:00'),
-    content: [],
+    content: [
+        ["I understand that freedom now doesn't mean the impact of everything that happened goes " +
+        "away.  Just because I heard she's free doesn't mean she's without internal battles.  I'm " +
+        "always here for her and praying for her."],
+        ["I know that I failed her the last time she looked up to me for support.  Even though I " +
+        "wanted to help, I ended up just breaking down and being extremely emotional.  So I completely " +
+        "understand why she hasn't reached out.  Maybe speaking to me would interrupt her quest for " +
+        "inner stability as well.  I don't want to hold her back."],
+        ["All I can say is I'll always love you.  You make me smile like no other.  I know you " +
+        "do the same for so many others, it really is such a beautiful gift you have."],
+        ["Hopefully I haven't assumed too much in this letter.  I just want to help my love."],
+        ["Love Always, Andy"],
+        ["P.S. I keep seeing deer when I'm really in need of emotional support.  Like last weekend " +
+        "when I saw a doe and she followed me through the woods.  Or Tuesday morning when I was sad " +
+        "and two bucks crossed the parking lot and came up to my window at work.  Not sure if there " +
+        "is a reason for that or not, she would know better than me.  Either way they always make " +
+        "me happy."]
+    ],
 });
 
 db.heart.insertOne({
