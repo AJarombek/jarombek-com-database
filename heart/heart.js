@@ -2,6 +2,16 @@ connection = new Mongo();
 db = connection.getDB("andy");
 
 db.heart.insertOne({
+    date: new Date('2019-06-27T12:00:00'),
+    content: [
+        ["I wish you the best in your continued quest to open your heart to yourself and to someone " +
+        "else.  You are a good person.  You might not know it yet, but your ability to love " +
+        "is amazing and beautiful.  I've seen it myself."],
+        ["Love, Andy"]
+    ]
+});
+
+db.heart.insertOne({
     date: new Date('2019-06-16T12:00:00'),
     content: [
         ["I understand that freedom now doesn't mean the impact of everything that happened goes " +
@@ -20,7 +30,7 @@ db.heart.insertOne({
         "and two bucks crossed the parking lot and came up to my window at work.  Not sure if there " +
         "is a reason for that or not, she would know better than me.  Either way they always make " +
         "me happy."]
-    ],
+    ]
 });
 
 db.heart.insertOne({
