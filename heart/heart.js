@@ -2,6 +2,26 @@ connection = new Mongo();
 db = connection.getDB("andy");
 
 db.heart.insertOne({
+    date: new Date('2019-07-01T12:00:00'),
+    content: [
+        ["Today was one of those days controlled by my fears.  I'm afraid because I don't know " +
+        "where I need to go from here.  I don't really know where my home is.  I know my present " +
+        "one won't last.  The place where I'm with my love only exists inside my head."],
+        ["The difficulty of today will pass and I'll be able to go back to being productive soon.  " +
+        "However even on good days these questions will linger.  And I don't have the answers."],
+        ["Hopefully she is doing better and has a clearer picture of things.  If she reads this, I " +
+        "hope she knows that I love her so much.  That her most beautiful qualities and greatest " +
+        "weaknesses all mold together into someone so deserving of love and respect.  Into the " +
+        "person I love and hold close to my heart, always."],
+        ["Towards the beginning of last month I questioned whether writing these are the good " +
+        "thing I wish them to be.  I still don't know.  Sometimes she feels close to me, sending " +
+        "her love my direction.  Other times she feels 2 1/2 years away.  There has been no " +
+        "way for me to know.  I hope she knows I'm just trying my best.  Maybe that isn't any good."],
+        ["Andy"]
+    ]
+});
+
+db.heart.insertOne({
     date: new Date('2019-06-27T12:00:00'),
     content: [
         ["I wish you the best in your continued quest to open your heart to yourself and to someone " +
