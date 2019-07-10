@@ -2,6 +2,17 @@ connection = new Mongo();
 db = connection.getDB("andy");
 
 db.heart.insertOne({
+    date: new Date('2019-07-09T12:00:00'),
+    content: [
+        ["I wish I could give her a big hug so that she can feel how deep my love is.  " +
+        "Maybe I'm wrong, but I think we would both love that.  Whatever the appropriate means, " +
+        "I wish we could both know the depth of our love for each other.  To be free of fearing " +
+        "our loves end.  Again maybe I'm wrong, but that sounds beautiful to me."],
+        ["Love Always, Andy"]
+    ]
+});
+
+db.heart.insertOne({
     date: new Date('2019-07-01T12:00:00'),
     content: [
         ["Today was one of those days controlled by my fears.  I'm afraid because I don't know " +
