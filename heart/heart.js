@@ -8,6 +8,11 @@ db.heart.insertOne({
         "Maybe I'm wrong, but I think we would both love that.  Whatever the appropriate means, " +
         "I wish we could both know the depth of our love for each other.  To be free of fearing " +
         "our loves end.  Again maybe I'm wrong, but that sounds beautiful to me."],
+        ["If you just want to talk or reach out for help, I will love you.  If you decide you " +
+        "never want to speak to me again, I will love you.  If you are too afraid of causing me " +
+        "pain, I will love you.  If you changed your mind about your feelings for me, I will love " +
+        "you.  If you reach out to give me a hug, I will love you.  If you decide its time for you " +
+        "to move on and see someone else, I will love you.  I will love you."]
         ["Love Always, Andy"]
     ]
 });

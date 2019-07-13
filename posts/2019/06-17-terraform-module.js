@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When writing ",
+                "value":" When programming with ",
                 "children":null
             },
             {
@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" configuration, I often find myself writing the same code again and again.  In order to maintain the DRY principal with Terraform configuration, modules are used to encapsulate and design a layer of abstraction for infrastructure code.  This article explains how I created Terraform modules that are reused throughout my AWS Infrastructure as Code. ",
+                "value":",   I often find myself writing the same code again and again.  In order to maintain the DRY principal in Terraform configuration, modules are used to encapsulate logic and design a layer of abstraction for infrastructure code.  This article explains how I created Terraform modules that are reused throughout my AWS Infrastructure as Code. ",
                 "children":null
             }
         ]
@@ -52,7 +52,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" DRY stands for \"Do not Repeat Yourself.\"  It's the design philosophy that the same code shouldn't exist in multiple locations.  Instead, repeated code segments should be combined into a single component or function. ",
+                "value":" DRY stands for \"Do not Repeat Yourself.\"  It's the design philosophy that similar code shouldn't exist in multiple locations.  Instead, repeated code segments should be combined into a single component or function. ",
                 "children":null
             }
         ]
@@ -68,7 +68,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When writing ",
+                "value":" When programming with ",
                 "children":null
             },
             {
@@ -89,7 +89,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" configuration, I often find myself writing the same code again and again.  In order to maintain the DRY principal with Terraform configuration, modules are used to encapsulate and design a layer of abstraction for infrastructure code.  This article explains how I created Terraform modules that are reused throughout my AWS Infrastructure as Code. ",
+                "value":",   I often find myself writing the same code again and again.  In order to maintain the DRY principal in Terraform configuration, modules are used to encapsulate logic and design a layer of abstraction for infrastructure code.  This article explains how I created Terraform modules that are reused throughout my AWS Infrastructure as Code. ",
                 "children":null
             }
         ]
@@ -104,7 +104,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" DRY stands for \"Do not Repeat Yourself.\"  It's the design philosophy that the same code shouldn't exist in multiple locations.  Instead, repeated code segments should be combined into a single component or function. ",
+                "value":" DRY stands for \"Do not Repeat Yourself.\"  It's the design philosophy that similar code shouldn't exist in multiple locations.  Instead, repeated code segments should be combined into a single component or function. ",
                 "children":null
             }
         ]
@@ -132,7 +132,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" As I write Terraform code, I notice there are certain AWS resource configurations repeated across my repositories.  For example, my AWS infrastructure has multiple VPCs which are all configured in a similar manner.  Eventually I got unhappy with all this duplicate code.  I started creating reusable modules that can be used across all my Terraform repositories. ",
+                "value":" As I write Terraform code, I notice there are certain AWS resource configurations repeated across my repositories.  For example, my AWS infrastructure has multiple VPCs which are all configured in a similar manner.  Eventually I got unhappy with all this duplicate code.  I started creating reusable modules that are used across all my Terraform repositories. ",
                 "children":null
             }
         ]
@@ -145,7 +145,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" My current AWS architecture is split across multiple git repositories.  I have a repository with global infrastructure such as VPCs and multiple other repositories with application specific infrastructure such as EC2 instances.  Then I have one final repository containing reusable modules. ",
+                "value":" My current AWS architecture is split across multiple git repositories.  I have a single repository with global infrastructure such as VPCs and multiple other repositories with application specific infrastructure such as EC2 instances.  Additionally, I have one final repository containing reusable modules. ",
                 "children":null
             }
         ]
@@ -176,7 +176,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" All my repositories have the ability to use the Terraform modules defined in ",
+                "value":" All my repositories are able to use Terraform modules defined in ",
                 "children":null
             },
             {
@@ -195,7 +195,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". In fact, anyone can use these modules since the repository is public. ",
+                "value":". In fact, anyone can use these modules because the repository is public. ",
                 "children":null
             }
         ]
@@ -208,7 +208,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now that I've explained my Terraform modules from the repository standpoint, what does the code look like? ",
+                "value":" Now that I've explained my Terraform modules from the repository standpoint, let's look at the code. ",
                 "children":null
             }
         ]
@@ -262,7 +262,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Therefore, anytime you write Terraform code you are creating one or more modules. A common approach is to have three Terraform files in a module.  The first file contains resource and data blocks, the second file contains input variables, and the final file contains output variables",
+                "value":".  Therefore, anytime you write Terraform code you are creating one or more modules. A common approach is to have three Terraform files in a module.  The first file contains resources and data blocks, the second file contains input variables, and the final file contains output variables",
                 "children":null
             },
             {
@@ -811,7 +811,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" subdirectory.  I tag my repository whenever I alter the modules.  In the example above, I'm pulling the module from the v0.1.7 tag.  This is helpful because I don't want a potentially breaking change to affect existing codebases.  You can also not specify a tag, in which case the latest commit is pulled. ",
+                "value":" subdirectory.  I tag my repository whenever I alter the modules.  In the example above, I'm pulling the module from the v0.1.7 tag.  This is helpful because I don't want a potentially breaking change to impact existing codebases.  You can also omit  the tag reference, in which case the latest commit is pulled. ",
                 "children":null
             }
         ]
@@ -909,7 +909,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Creating generic Terraform modules promotes code reuse and cuts down on bugs that commonly plague developers  who copy and paste their code.  I've also found that I have a much better understanding of Terraform  and HCL syntax because I designed reusable modules.  All the code from this article is available on  ",
+                "value":" Creating generic Terraform modules promotes code reuse and cuts down on bugs that commonly plague developers  who copy and paste their code.  I have a much better understanding of Terraform and HCL syntax because I spent time designing reusable modules.  All the code from this article is available on ",
                 "children":null
             },
             {
