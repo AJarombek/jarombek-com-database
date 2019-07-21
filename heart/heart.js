@@ -13,7 +13,14 @@ db.heart.insertOne({
         "pain, I will love you.  If you changed your mind about your feelings for me, I will love " +
         "you.  If you reach out to give me a hug, I will love you.  If you decide its time for you " +
         "to move on and see someone else, I will love you.  I will love you."]
-        ["Love Always, Andy"]
+        ["Love Always, Andy"],
+        ["... and it's okay that I'm not the one you address your love to.  One day you will find " +
+        "the loving man that you seek.  I love you so much and dream of spending time with you, " +
+        "but that doesn't make much difference if you don't love me too.  It's okay, I won't " +
+        "bother your life.  I'll keep my feelings of love within me.  It will be hard, but I'll try " +
+        "to stop writing these secret letters.  Maybe you never saw them anyway.  Maybe I need to " +
+        "hide them away."],
+        ["I told you that no matter what I will love you.  And I will love you always."]
     ]
 });
 
