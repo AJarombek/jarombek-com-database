@@ -1,6 +1,17 @@
 connection = new Mongo();
 db = connection.getDB("andy");
 
+const prayer = `My love seems to be moving away from me today.  I just want to pray that it's beause she 
+                doesn't care for me and doesn't love me and not because of something else.  I don't want her to 
+                leave because she feels like a burden.  I don't want her to leave because she thinks she 
+                may never be ready for a relationship or commitment.  Please give her the strength to 
+                reach out if she cares for me but is afraid.  I've screwed up so many times in the past.  
+                Telling her I didn't want to hear from her unless she was ready for me.  I wish those words 
+                never came out of my mouth.  Being emotional when I should have been supportive.  It breaks 
+                my heart that my emotions scared her.  If I could pray for just one thing it would be that 
+                she is moving away from me because she wants to.  Nothing else.  Otherwise I would love to 
+                hear from her, even if its just a simple hello.`;
+
 db.heart.insertOne({
     date: new Date('2019-07-09T12:00:00'),
     content: [
