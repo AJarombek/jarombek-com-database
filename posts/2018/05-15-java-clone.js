@@ -1435,6 +1435,7 @@ content = [
 ];
 
 postName = "may-15-2018-java-clone";
+postDate = new Date('2018-05-15T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1447,7 +1448,7 @@ db.posts.insertOne({
     title: "The Curious Case of Java's Clone Method",
     description: `The original language implementation for copying in Java was the Cloneable interface.  
                     This is my journey to understand Java’s Cloneable interface in all its complexity.`,
-    date: new Date('2018-05-15T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1510,6 +1511,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

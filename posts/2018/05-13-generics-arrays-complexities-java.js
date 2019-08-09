@@ -1481,6 +1481,7 @@ content = [
 ];
 
 postName = "may-13-2018-generics-arrays-complexities-java";
+postDate = new Date('2018-05-13T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1493,7 +1494,7 @@ db.posts.insertOne({
     title: "Complexities of Generics and Arrays in Java",
     description: `There are a lot of different complexities with generics and how they differ from arrays.  
                     This is my journey to understand Java’s Generics in depth.`,
-    date: new Date('2018-05-13T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1550,6 +1551,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

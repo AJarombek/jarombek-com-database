@@ -1133,6 +1133,7 @@ content = [
 ];
 
 postName = "jul-1-2018-java-reflection";
+postDate = new Date('2018-07-01T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1146,7 +1147,7 @@ db.posts.insertOne({
     description: `People often describe reflection as "hard to learn" and only for "experienced
             developers."  It turns out reflection isn’t that complicated, although questions still 
             remain of its usefulness in building applications.`,
-    date: new Date('2018-07-01T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1202,6 +1203,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

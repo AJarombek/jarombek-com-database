@@ -1903,6 +1903,7 @@ content = [
 ];
 
 postName = "jun-9-2018-js-prototype";
+postDate = new Date('2018-06-09T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1913,7 +1914,7 @@ db.posts_content.remove({name: postName});
 db.posts.insertOne({
     name: postName,
     title: "JavaScript Prototypes & Inheritance",
-    date: new Date('2018-06-09T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1960,6 +1961,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content, 
     contentString: JSON.stringify(content) 
 });

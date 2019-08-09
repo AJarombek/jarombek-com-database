@@ -1190,6 +1190,7 @@ content = [
 ];
 
 postName = "may-31-2018-react-seed";
+postDate = new Date('2018-05-31T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1200,7 +1201,7 @@ db.posts_content.remove({name: postName});
 db.posts.insertOne({
     name: postName,
     title: "React & Webpack Seed Project Part I: Building With React",
-    date: new Date('2018-05-31T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1266,6 +1267,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

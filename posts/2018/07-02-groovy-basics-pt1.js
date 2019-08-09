@@ -1221,6 +1221,7 @@ content = [
 ];
 
 postName = "jul-2-2018-groovy-basics-pt1";
+postDate = new Date('2018-07-02T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1233,7 +1234,7 @@ db.posts.insertOne({
     title: "Groovy Basics Part I: Concise Syntax",
     description: `This post will look at some of the basic syntax and features of Groovy that
       really caught my eye after an hour or two of exploring.`,
-    date: new Date('2018-07-02T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1327,6 +1328,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

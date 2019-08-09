@@ -596,6 +596,7 @@ content = [
 ];
 
 postName = "feb-7-2018-java8-completable-future";
+postDate = new Date('2018-02-07T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -606,7 +607,7 @@ db.posts_content.remove({name: postName});
 db.posts.insertOne({
     name: postName,
     title: "Java 8 Completable Future",
-    date: new Date('2018-02-07T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -641,6 +642,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content, 
     contentString: JSON.stringify(content) 
 });

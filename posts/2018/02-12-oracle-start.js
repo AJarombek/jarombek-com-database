@@ -870,6 +870,7 @@ content = [
 ];
 
 postName = "feb-12-2018-oracle-start";
+postDate = new Date('2018-02-12T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -880,7 +881,7 @@ db.posts_content.remove({name: postName});
 db.posts.insertOne({
     name: postName,
     title: "Oracle 12c Database Up & Running",
-    date: new Date('2018-02-12T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -942,6 +943,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content, 
     contentString: JSON.stringify(content) 
 });

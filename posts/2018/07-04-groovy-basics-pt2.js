@@ -1235,7 +1235,7 @@ content = [
 ];
 
 postName = "jul-4-2018-groovy-basics-pt2";
-postDate = null;
+postDate = new Date('2018-07-04T12:00:00'); 
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1248,7 +1248,7 @@ db.posts.insertOne({
     title: "Groovy Basics Part II: Object Oriented Features",
     description: `This discovery post will explore more of the object oriented features 
         Groovy has to offer`,
-    date: new Date('2018-07-04T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [

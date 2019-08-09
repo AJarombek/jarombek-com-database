@@ -1022,6 +1022,7 @@ content = [
 ];
 
 postName = "may-26-2018-nodejs-command-line";
+postDate = new Date('2018-05-26T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1032,7 +1033,7 @@ db.posts_content.remove({name: postName});
 db.posts.insertOne({
     name: postName,
     title: "A Simple Node.js Command Line Application",
-    date: new Date('2018-05-26T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1088,6 +1089,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content, 
     contentString: JSON.stringify(content) 
 });

@@ -204,6 +204,7 @@ content = [
 ];
 
 postName = "dec-7-2017-native-getter-setter";
+postDate = new Date('2017-12-07T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -214,7 +215,7 @@ db.posts_content.remove({name: postName});
 db.posts.insertOne({
     name: postName,
     title: "Native Getters & Setters",
-    date: new Date('2017-12-07T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -257,6 +258,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content, 
     contentString: JSON.stringify(content) 
 });

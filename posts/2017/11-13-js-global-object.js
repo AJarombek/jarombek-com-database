@@ -911,6 +911,7 @@ content = [
 ];
 
 postName = "nov-13-2017-js-global-object";
+postDate = new Date('2017-11-13T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -921,7 +922,7 @@ db.posts_content.remove({name: postName});
 db.posts.insertOne({
     name: postName,
     title: "Global Objects in JavaScript",
-    date: new Date('2017-11-13T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -965,6 +966,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });
