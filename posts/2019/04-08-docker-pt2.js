@@ -1484,6 +1484,7 @@ content = [
 ];
 
 postName = "apr-8-2019-docker-pt2";
+postDate = new Date('2019-04-08T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1496,7 +1497,7 @@ db.posts.insertOne({
     title: "Docker Part II - Building a Playground Environment",
     description: `In this post, I’m creating a Docker playground environment on AWS with Terraform 
         and CloudFormation`,
-    date: new Date('2019-04-08T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1572,6 +1573,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

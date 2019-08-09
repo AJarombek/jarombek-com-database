@@ -1073,6 +1073,7 @@ content = [
 ];
 
 postName = "jul-31-2018-batch-scripting";
+postDate = new Date('2018-07-31T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1086,7 +1087,7 @@ db.posts.insertOne({
     description: `I figured this was the perfect opportunity to take a look at the basics of Batch 
         scripting.  With some knowledge of how to write a Batch script, I can compare these scripts 
         to those in PowerShell and Bash.`,
-    date: new Date('2018-07-31T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1155,6 +1156,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

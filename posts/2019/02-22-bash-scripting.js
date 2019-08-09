@@ -859,6 +859,7 @@ content = [
 ];
 
 postName = "feb-22-2019-bash-scripting";
+postDate = new Date('2019-02-22T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -870,7 +871,7 @@ db.posts.insertOne({
     name: postName,
     title: "Exploring Bash Scripting",
     description: `This article looks at the basic features of Bash and how it compares to Batch.`,
-    date: new Date('2019-02-22T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -932,6 +933,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

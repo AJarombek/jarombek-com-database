@@ -784,6 +784,7 @@ content = [
 ];
 
 postName = "oct-4-2018-python-data-structures";
+postDate = new Date('2018-10-04T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -796,7 +797,7 @@ db.posts.insertOne({
     title: "Cool Python Data Structures",
     description: `I love Pythons use of built-in functions, literal syntax, and the MOP to simplify 
         the use of commonly used data structures.`,
-    date: new Date('2018-10-04T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -841,6 +842,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

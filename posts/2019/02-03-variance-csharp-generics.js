@@ -1263,6 +1263,7 @@ content = [
 ];
 
 postName = "feb-3-2019-variance-csharp-generics";
+postDate = new Date('2019-02-03T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1276,7 +1277,7 @@ db.posts.insertOne({
     description: `Since variance is an advanced topic, this article starts with the basic concepts 
         to understand variance.  Once the basics are understood, I demonstrate variance in C# 
         generics.`,
-    date: new Date('2019-02-03T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1351,6 +1352,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

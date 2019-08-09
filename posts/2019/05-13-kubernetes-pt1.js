@@ -1263,6 +1263,7 @@ content = [
 ];
 
 postName = "may-13-2019-kubernetes-pt1";
+postDate = new Date('2019-05-13T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1275,7 +1276,7 @@ db.posts.insertOne({
     title: "Orchestrating Containers with Kubernetes Part I: Concepts",
     description: `Kubernetes is a container orchestrator.  To work with Kubernetes, a cluster is 
         created consisting of a master node and worker nodes.`,
-    date: new Date('2019-05-13T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1375,6 +1376,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

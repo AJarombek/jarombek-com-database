@@ -944,6 +944,7 @@ content = [
 ];
 
 postName = "jul-15-2018-groovy-optional-typing";
+postDate = new Date('2018-07-15T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -956,7 +957,7 @@ db.posts.insertOne({
     title: "Optional Typing in Groovy",
     description: `How can Groovy both have dynamic typing and optionally allow for types 
         to be declared like Java?`,
-    date: new Date('2018-07-15T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1030,6 +1031,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

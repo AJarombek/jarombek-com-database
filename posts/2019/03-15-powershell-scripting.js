@@ -1203,6 +1203,7 @@ content = [
 ];
 
 postName = "mar-15-2019-powershell-scripting";
+postDate = new Date('2019-03-15T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1216,7 +1217,7 @@ db.posts.insertOne({
     description: `I’ve used PowerShell at work recently for automating the deployment of .NET 
         applications.  The rest of this article looks at basic features of PowerShell and how it 
         compares to Bash and Batch.`,
-    date: new Date('2019-03-15T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1277,6 +1278,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

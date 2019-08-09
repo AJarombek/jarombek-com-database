@@ -1016,6 +1016,7 @@ content = [
 ];
 
 postName = "sep-21-2018-jenkins";
+postDate = new Date('2018-09-21T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1028,7 +1029,7 @@ db.posts.insertOne({
     title: "Exploring Jenkins and the Job DSL Plugin",
     description: `In this post I explore Jenkins, which is a Continuous Integration and Continuous 
         Delivery (CI/CD) tool used for automating tasks.`,
-    date: new Date('2018-09-21T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1103,6 +1104,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

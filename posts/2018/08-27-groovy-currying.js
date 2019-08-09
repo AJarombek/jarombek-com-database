@@ -624,6 +624,7 @@ content = [
 ];
 
 postName = "aug-27-2018-groovy-currying";
+postDate = new Date('2018-08-27T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -637,7 +638,7 @@ db.posts.insertOne({
     description: `Currying in Groovy takes an existing function and creates a new specialized
         function based on the existing one.  This post explains how to use currying to enhance 
         Groovy closures.`,
-    date: new Date('2018-08-27T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -699,6 +700,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

@@ -712,6 +712,7 @@ content = [
 ];
 
 postName = "nov-6-2018-haskell-pt3";
+postDate = new Date('2018-11-06T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -725,7 +726,7 @@ db.posts.insertOne({
     description: `I often use function compositions which pass the result of one function to the
         argument of another function.  In Haskell function compositions are given their own 
         language operator!`,
-    date: new Date('2018-11-06T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -776,6 +777,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

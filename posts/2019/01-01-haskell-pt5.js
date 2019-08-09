@@ -1066,6 +1066,7 @@ content = [
 ];
 
 postName = "jan-1-2019-haskell-pt5";
+postDate = new Date('2019-01-01T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1079,7 +1080,7 @@ db.posts.insertOne({
     description: `The closest comparison for Haskell classes in the object oriented world is Java 
         interfaces with default methods.  This article helps clear the confusion of 
         Haskell classes.`,
-    date: new Date('2019-01-01T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1121,6 +1122,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

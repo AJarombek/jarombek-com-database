@@ -998,6 +998,7 @@ content = [
 ];
 
 postName = "may-12-2019-csharp-delegates";
+postDate = new Date('2019-05-12T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1010,7 +1011,7 @@ db.posts.insertOne({
     title: "Delegate Objects in C#",
     description: `A delegate object has a single role - calling a method.  This article explores 
     delegates and compares them to similar language constructs in C# and Java.`,
-    date: new Date('2019-05-12T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1056,6 +1057,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

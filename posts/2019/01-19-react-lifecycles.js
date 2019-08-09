@@ -1699,6 +1699,7 @@ content = [
 ];
 
 postName = "jan-19-2019-react-lifecycles";
+postDate = new Date('2019-01-19T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1712,7 +1713,7 @@ db.posts.insertOne({
     description: `In general I enjoy working in React more than Angular nowadays.  React feels 
         simpler to me for developing website components.  As this post reveals, the lifecycles of 
         React components are equally simple.`,
-    date: new Date('2019-01-19T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1778,6 +1779,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

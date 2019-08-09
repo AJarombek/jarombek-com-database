@@ -1583,6 +1583,7 @@ content = [
 ];
 
 postName = "may-20-2019-kubernetes-pt2";
+postDate = new Date('2019-05-20T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1595,7 +1596,7 @@ db.posts.insertOne({
     title: "Orchestrating Containers with Kubernetes Part II: Single Node Cluster",
     description: `In this article, I'm building a single node Kubernetes cluster running a Node.js 
         application.`,
-    date: new Date('2019-05-20T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1671,6 +1672,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

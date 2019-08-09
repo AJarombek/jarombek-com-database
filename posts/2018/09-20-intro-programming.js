@@ -399,6 +399,7 @@ content = [
 ];
 
 postName = "sep-20-2018-intro-programming";
+postDate = new Date('2018-09-20T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -411,7 +412,7 @@ db.posts.insertOne({
     title: "Introduction to Programming",
     description: `This article uses the knowledge I've gained and attempts to give a five minute 
         introduction to programming (before writing any code)`,
-    date: new Date('2018-09-20T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -452,6 +453,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

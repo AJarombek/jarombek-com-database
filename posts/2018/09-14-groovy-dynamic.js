@@ -1085,6 +1085,7 @@ content = [
 ];
 
 postName = "sep-14-2018-groovy-dynamic";
+postDate = new Date('2018-09-14T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1097,7 +1098,7 @@ db.posts.insertOne({
     title: "Groovy's Dynamic Language Features",
     description: `This post is my introduction to the features of a dynamic
         programming language and their use cases in Groovy applications.`,
-    date: new Date('2018-09-14T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1153,6 +1154,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

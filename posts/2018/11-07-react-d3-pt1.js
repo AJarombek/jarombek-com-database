@@ -571,6 +571,7 @@ content = [
 ];
 
 postName = "nov-7-2018-react-d3-pt1";
+postDate = new Date('2018-11-07T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -584,7 +585,7 @@ db.posts.insertOne({
     description: `D3 (Data Driven Documents) is a JavaScript library for creating data 
         visualizations in the web.  One of the challenges with D3 is integrating it with the React 
         front-end JavaScript library.`,
-    date: new Date('2018-11-07T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -627,6 +628,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

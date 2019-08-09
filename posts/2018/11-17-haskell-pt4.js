@@ -1168,6 +1168,7 @@ content = [
 ];
 
 postName = "nov-17-2018-haskell-pt4";
+postDate = new Date('2018-11-17T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1180,7 +1181,7 @@ db.posts.insertOne({
     title: "Haskell Part IV: Types",
     description: `This post explains the difference between the three mechanisms for creating types 
         in Haskell.`,
-    date: new Date('2018-11-17T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1246,6 +1247,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

@@ -847,6 +847,7 @@ content = [
 ];
 
 postName = "sep-24-2018-python-data-model";
+postDate = new Date('2018-09-24T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -859,7 +860,7 @@ db.posts.insertOne({
     title: "Python's Data Model",
     description: `The goal of dissecting Python this fall is to truly understand everything the 
         core language has to offer.  To begin, I will explore Python’s data model.`,
-    date: new Date('2018-09-24T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -904,6 +905,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

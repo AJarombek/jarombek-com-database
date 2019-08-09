@@ -1467,6 +1467,7 @@ content = [
 ];
 
 postName = "oct-9-2018-unicode";
+postDate = new Date('2018-10-09T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1479,7 +1480,7 @@ db.posts.insertOne({
     title: "How Languages Handle Unicode",
     description: `This post explores the complexities of Unicode and how programming languages 
         support its edge cases.`,
-    date: new Date('2018-10-09T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1620,6 +1621,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

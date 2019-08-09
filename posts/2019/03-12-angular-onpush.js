@@ -738,6 +738,7 @@ content = [
 ];
 
 postName = "mar-12-2019-angular-onpush";
+postDate = new Date('2019-03-12T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -750,7 +751,7 @@ db.posts.insertOne({
     title: "Angular: Default vs. OnPush Change Detection",
     description: `Angular allows us to change the change detection strategy on a per-component 
       basis.  This post explores the two change detection strategies - Default and OnPush.`,
-    date: new Date('2019-03-12T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -805,6 +806,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

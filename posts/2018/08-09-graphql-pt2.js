@@ -1863,6 +1863,7 @@ content = [
 ];
 
 postName = "aug-9-2018-graphql-pt2";
+postDate = new Date('2018-08-09T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1875,7 +1876,7 @@ db.posts.insertOne({
     title: "GraphQL Part II - A JavaScript Implementation",
     description: `It is time to discuss the language features of GraphQL and how it can be used 
         to create an API in JavaScript.`,
-    date: new Date('2018-08-09T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1922,6 +1923,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

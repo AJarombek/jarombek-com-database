@@ -1267,6 +1267,7 @@ content = [
 ];
 
 postName = "may-28-2019-haskell-pt6";
+postDate = new Date('2019-05-28T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1278,7 +1279,7 @@ db.posts.insertOne({
     name: postName,
     title: "Haskell Part VI: Functors",
     description: `This article discusses functors, a generic way to map functions over objects.`,
-    date: new Date('2019-05-28T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1340,6 +1341,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

@@ -1639,6 +1639,7 @@ content = [
 ];
 
 postName = "oct-20-2018-haskell-pt2";
+postDate = new Date('2018-10-20T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1651,7 +1652,7 @@ db.posts.insertOne({
     title: "Haskell Part II: Folds",
     description: `This article clears up the differences between each fold function and introduces 
         some simple use cases.`,
-    date: new Date('2018-10-20T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1717,6 +1718,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

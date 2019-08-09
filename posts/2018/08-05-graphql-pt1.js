@@ -702,6 +702,7 @@ content = [
 ];
 
 postName = "aug-5-2018-graphql-pt1";
+postDate = new Date('2018-08-05T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -714,7 +715,7 @@ db.posts.insertOne({
     title: "GraphQL Part I - A High Level View",
     description: `I decided that I'd heard enough about GraphQL and it was time to try it out 
         and form my own opinions.`,
-    date: new Date('2018-08-05T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -762,6 +763,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

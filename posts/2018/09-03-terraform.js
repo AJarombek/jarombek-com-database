@@ -1202,6 +1202,7 @@ content = [
 ];
 
 postName = "sep-3-2018-terraform";
+postDate = new Date('2018-09-03T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1215,7 +1216,7 @@ db.posts.insertOne({
     description: `With Terraform writing code for cloud infrastructure is a reality.  I never 
         thought I could have fun doing operations work, but finally I’ve found a product that allows 
         me to do just that.`,
-    date: new Date('2018-09-03T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1312,6 +1313,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

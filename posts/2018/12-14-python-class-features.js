@@ -1309,6 +1309,7 @@ content = [
 ];
 
 postName = "dec-14-2018-python-class-features";
+postDate = new Date('2018-12-14T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1321,7 +1322,7 @@ db.posts.insertOne({
     title: "Features of Python Classes",
     description: `In this discovery post, I’m exploring some of the interesting features of 
         Python classes`,
-    date: new Date('2018-12-14T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1372,6 +1373,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

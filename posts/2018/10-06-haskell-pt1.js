@@ -808,6 +808,7 @@ content = [
 ];
 
 postName = "oct-6-2018-haskell-pt1";
+postDate = new Date('2018-10-06T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -820,7 +821,7 @@ db.posts.insertOne({
     title: "Functional Programming in Haskell: Part I",
     description: `This post covers some of the functional concepts I explored in my first 200 lines 
         of Haskell code.`,
-    date: new Date('2018-10-06T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -868,6 +869,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

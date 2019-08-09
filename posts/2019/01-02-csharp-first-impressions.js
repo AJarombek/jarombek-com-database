@@ -837,6 +837,7 @@ content = [
 ];
 
 postName = "jan-2-2019-csharp-first-impressions";
+postDate = new Date('2019-01-02T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -850,7 +851,7 @@ db.posts.insertOne({
     description: `This article explores my initial reactions to the C# language after writing about 
         300 lines of code.  Much of the article consists of language features I find cool and unique.  I 
         also compare C# to other languages I use such as Java.`,
-    date: new Date('2019-01-02T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -889,6 +890,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

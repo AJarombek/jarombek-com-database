@@ -1587,6 +1587,7 @@ content = [
 ];
 
 postName = "jul-11-2018-groovy-regex";
+postDate = new Date('2018-07-11T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1600,7 +1601,7 @@ db.posts.insertOne({
     description: `In my recent ventures into Groovy, I saw a very unique approach to handling 
         regular expressions.  I decided to compare the approach in Groovy to approaches in other 
         languages I often use.`,
-    date: new Date('2018-07-11T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1688,6 +1689,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

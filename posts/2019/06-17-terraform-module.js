@@ -938,6 +938,7 @@ content = [
 ];
 
 postName = "jun-17-2019-terraform-module";
+postDate = new Date('2019-06-17T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -950,7 +951,7 @@ db.posts.insertOne({
     title: "Creating a Reusable Terraform Module",
     description: `This article explains how I created Terraform modules that are reused throughout 
         my AWS Infrastructure as Code.`,
-    date: new Date('2019-06-17T12:00:00'),
+    date: postDate,
     type: "Retrospective",
     views: postViews,
     tags: [
@@ -1009,6 +1010,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

@@ -833,6 +833,7 @@ content = [
 ];
 
 postName = "nov-24-2018-angular-lifecycles";
+postDate = new Date('2018-11-24T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -844,7 +845,7 @@ db.posts.insertOne({
     name: postName,
     title: "Angular Lifecycles",
     description: `This post looks at the lifecycles introduced in the Angular framework.`,
-    date: new Date('2018-11-24T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -894,6 +895,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

@@ -1089,6 +1089,7 @@ content = [
 ];
 
 postName = "sep-7-2018-aws-lambda-api-gateway";
+postDate = new Date('2018-09-07T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1102,7 +1103,7 @@ db.posts.insertOne({
     description: `With AWS Lambda, we now have a new technique for handling 
         code and infrastructure in our backend.  AWS Lambda brings containerized
         functions and serverless computing to the backend.`,
-    date: new Date('2018-09-07T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1164,6 +1165,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

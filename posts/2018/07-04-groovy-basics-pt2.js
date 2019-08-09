@@ -1235,6 +1235,7 @@ content = [
 ];
 
 postName = "jul-4-2018-groovy-basics-pt2";
+postDate = null;
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1318,6 +1319,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

@@ -1646,6 +1646,7 @@ content = [
 ];
 
 postName = "jul-29-2018-overloading";
+postDate = new Date('2018-07-29T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1658,7 +1659,7 @@ db.posts.insertOne({
     title: "Method Overloading Across Languages",
     description: `When working with the object oriented paradigm methods often need to be 
         overridden or overloaded.  These similar concepts are often confused by new developers`,
-    date: new Date('2018-07-29T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1761,6 +1762,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

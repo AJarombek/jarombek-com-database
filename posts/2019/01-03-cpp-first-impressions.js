@@ -725,6 +725,7 @@ content = [
 ];
 
 postName = "jan-3-2019-cpp-first-impressions";
+postDate = new Date('2019-01-03T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -738,7 +739,7 @@ db.posts.insertOne({
     description: `This post is my first impressions of C++.  I compare it to other languages such as 
         C and Java, which influenced and is influenced by C++, respectively.  I also mention all the 
         basic C++ features that I find interesting.`,
-    date: new Date('2019-01-03T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -791,6 +792,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

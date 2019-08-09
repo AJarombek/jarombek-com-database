@@ -1980,6 +1980,7 @@ content = [
 ];
 
 postName = "dec-22-2018-multiple-inheritance";
+postDate = new Date('2018-12-22T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1992,7 +1993,7 @@ db.posts.insertOne({
     title: "How Languages Enforce Multiple Inheritance",
     description: `This article looks at how different languages I use enforce multiple inheritance 
         and explores the available workarounds.`,
-    date: new Date('2018-12-22T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -2082,6 +2083,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });

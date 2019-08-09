@@ -1196,6 +1196,7 @@ content = [
 ];
 
 postName = "jan-7-2019-web-assembly";
+postDate = new Date('2019-01-07T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1208,7 +1209,7 @@ db.posts.insertOne({
     title: "Decoding WebAssembly",
     description: `This article looks at a low-level language called WebAssembly.  WebAssembly allows 
         programming languages other than JavaScript to run in the browser.`,
-    date: new Date('2019-01-07T12:00:00'),
+    date: postDate,
     type: "Discovery",
     views: postViews,
     tags: [
@@ -1303,6 +1304,7 @@ db.posts.insertOne({
 
 db.posts_content.insertOne({
     name: postName,
+    date: postDate,
     content,
     contentString: JSON.stringify(content)
 });
