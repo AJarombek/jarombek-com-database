@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I discussed functors, which provide a generic way to map functions over values.  In this article I’m exploring applicatives, which build on top of functors.  After discussing applicatives in Haskell, I’ll try implementing them in Java. ",
+                "value":" I discussed functors, which provide a generic way to map functions over values.  In this article I'm exploring applicatives, which build on top of functors.  After discussing applicatives in Haskell, I'll try implementing them in Java. ",
                 "children":null
             }
         ]
@@ -89,7 +89,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I discussed functors, which provide a generic way to map functions over values.  In this article I’m exploring applicatives, which build on top of functors.  After discussing applicatives in Haskell, I’ll try implementing them in Java. ",
+                "value":" I discussed functors, which provide a generic way to map functions over values.  In this article I'm exploring applicatives, which build on top of functors.  After discussing applicatives in Haskell, I'll try implementing them in Java. ",
                 "children":null
             }
         ]
@@ -613,7 +613,7 @@ content = [
         "attributes":{
             "language":"Haskell"
         },
-        "value":"instance Applicative Maybe where\n-- pure :: a -> Maybe a\npure x = Just x\n\n-- (<*>) :: Maybe (a -> b) -> Maybe a -> Maybe b\nNothing <*> _ = Nothing\n(Just g) <*> mx = fmap g mx\n",
+        "value":"instance Applicative Maybe where\n  -- pure :: a -> Maybe a\n  pure x = Just x\n\n  -- (<*>) :: Maybe (a -> b) -> Maybe a -> Maybe b\n  Nothing <*> _ = Nothing\n  (Just g) <*> mx = fmap g mx\n",
         "children":null
     },
     {
@@ -901,7 +901,7 @@ content = [
         "attributes":{
             "language":"Haskell"
         },
-        "value":"-- Testing the pure function defined in the Applicative type class\nprint $ (pure :: a -> Maybe a) 1 -- Just 1\nprint $ (pure :: a -> Maybe a) (Just 1 :: Maybe Int) -- Just (Just 1)\n\nlet pure_maybe = pure :: a -> Maybe a\nprint $ pure_maybe 1 -- Just 1\nprint $ pure_maybe 12.31 -- Just 12.31\nprint $ pure_maybe (Just 2) -- Just (Just 2)\n\n-- Testing pure combined with <*> for a Functor with a single argument\nprint $ pure (+1) <*> Just 1 -- Just 2\nprint $ pure (*3) <*> Just 2 -- Just 6\nprint $ pure (+1) <*> Nothing -- Nothing\n\n-- Testing pure combined with <*> for a Functor with two arguments\nprint $ pure (+) <*> Just 1 <*> Just 3 -- Just 4\nprint $ pure (+) <*> Nothing <*> Just 3 -- Nothing\nprint $ pure (+) <*> Just 3 <*> Nothing -- Nothing\n",
+        "value":"\n-- Testing the pure function defined in the Applicative type class\nprint $ (pure :: a -> Maybe a) 1 -- Just 1\nprint $ (pure :: a -> Maybe a) (Just 1 :: Maybe Int) -- Just (Just 1)\n\nlet pure_maybe = pure :: a -> Maybe a\nprint $ pure_maybe 1 -- Just 1\nprint $ pure_maybe 12.31 -- Just 12.31\nprint $ pure_maybe (Just 2) -- Just (Just 2)\n\n-- Testing pure combined with <*> for a Functor with a single argument\nprint $ pure (+1) <*> Just 1 -- Just 2\nprint $ pure (*3) <*> Just 2 -- Just 6\nprint $ pure (+1) <*> Nothing -- Nothing\n\n-- Testing pure combined with <*> for a Functor with two arguments\nprint $ pure (+) <*> Just 1 <*> Just 3 -- Just 4\nprint $ pure (+) <*> Nothing <*> Just 3 -- Nothing\nprint $ pure (+) <*> Just 3 <*> Nothing -- Nothing\n",
         "children":null
     },
     {
@@ -926,7 +926,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" type class is with lists. ",
+                "value":" type class involves lists. ",
                 "children":null
             }
         ]
@@ -936,7 +936,7 @@ content = [
         "attributes":{
             "language":"Haskell"
         },
-        "value":"instance Applicative [] where\n-- pure :: a -> [a]\npure x = [x]\n\n-- (<*>) :: Maybe [a -> b] -> [a] -> [b]\nfs <*> xs = [f x | f <- fs, x <- xs]\n\nmain :: IO ()\nmain = do\n-- Testing Applicative List []\nlet pure_list = pure :: a -> [a]\nprint $ pure_list 1 -- [1]\nprint $ pure_list \"Andy\" -- [\"Andy\"]\nprint $ pure_list (Just 1) -- [Just 1]\nprint $ pure_list (+1) <*> [1,2,3] -- [2,3,4]\nprint $ [(+1), (*10)] <*> [1,2,3] -- [2,3,4,10,20,30]\n",
+        "value":"instance Applicative [] where\n  -- pure :: a -> [a]\n  pure x = [x]\n\n  -- (<*>) :: Maybe [a -> b] -> [a] -> [b]\n  fs <*> xs = [f x | f <- fs, x <- xs]\n\nmain :: IO ()\nmain = do\n  -- Testing Applicative List []\n  let pure_list = pure :: a -> [a]\n  print $ pure_list 1 -- [1]\n  print $ pure_list \"Andy\" -- [\"Andy\"]\n  print $ pure_list (Just 1) -- [Just 1]\n  print $ pure_list (+1) <*> [1,2,3] -- [2,3,4]\n  print $ [(+1), (*10)] <*> [1,2,3] -- [2,3,4,10,20,30]\n",
         "children":null
     },
     {
@@ -976,7 +976,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" functions can perform the same tasks as applicatives, their implementation is cumbersome and doesn’t scale",
+                "value":" functions can perform the same tasks as applicatives, their implementation is cumbersome and doesn't scale",
                 "children":null
             },
             {
@@ -1053,7 +1053,7 @@ content = [
         "attributes":{
             "language":"Haskell"
         },
-        "value":"-- Type class for a functor with zero arguments.  Simply wraps a value in a type that is an instance of Functor.\nclass Functor0 f where\nfmap0 :: a -> f a\n\n-- Type class for a functor with a single argument.  This is equivalent to the normal fmap function and Functor type.\nclass Functor1 f where\nfmap1 :: (a -> b) -> f a -> f b\n\n-- Type class for a functor with two arguments.\nclass Functor2 f where\nfmap2 :: (a -> b -> c) -> f a -> f b -> f c\n",
+        "value":"\n-- Type class for a functor with zero arguments.  Simply wraps a value in a type that is an instance of Functor.\nclass Functor0 f where\n  fmap0 :: a -> f a\n\n-- Type class for a functor with a single argument.  This is equivalent to the normal fmap function and Functor type.\nclass Functor1 f where\n  fmap1 :: (a -> b) -> f a -> f b\n\n-- Type class for a functor with two arguments.\nclass Functor2 f where\n  fmap2 :: (a -> b -> c) -> f a -> f b -> f c\n",
         "children":null
     },
     {
@@ -1158,7 +1158,7 @@ content = [
         "attributes":{
             "language":"Haskell"
         },
-        "value":"-- Make Maybe an instance of a functor that maps a function with zero arguments.\ninstance Functor0 Maybe where\n-- fmap0 :: a -> f a\n-- fmap0 x = Just x\nfmap0 x = pure x\n\n-- Make Maybe an instance of a functor that maps a function with one argument.\ninstance Functor1 Maybe where\n-- fmap1 :: (a -> b) -> f a -> f b\n-- fmap1 f x = fmap f x\nfmap1 f x = pure f <*> x\n\n-- Make Maybe an instance of a functor that maps a function with two arguments.\ninstance Functor2 Maybe where\n-- fmap2 :: (a -> b -> c) -> f a -> f b -> f c\nfmap2 f x y = pure f <*> x <*> y\n",
+        "value":"\n-- Make Maybe an instance of a functor that maps a function with zero arguments.\ninstance Functor0 Maybe where\n  -- fmap0 :: a -> f a\n  -- fmap0 x = Just x\n  fmap0 x = pure x\n\n-- Make Maybe an instance of a functor that maps a function with one argument.\ninstance Functor1 Maybe where\n  -- fmap1 :: (a -> b) -> f a -> f b\n  -- fmap1 f x = fmap f x\n  fmap1 f x = pure f <*> x\n\n-- Make Maybe an instance of a functor that maps a function with two arguments.\ninstance Functor2 Maybe where\n  -- fmap2 :: (a -> b -> c) -> f a -> f b -> f c\n  fmap2 f x y = pure f <*> x <*> y\n",
         "children":null
     },
     {
@@ -1352,7 +1352,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Unlike Functors, Applicatives can’t be expressed in Java",
+                "value":" Unlike Functors, Applicatives can't be expressed in Java",
                 "children":null
             },
             {
@@ -1364,7 +1364,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This is because Java types lack Higher-Kinded polymorphism while Haskell types do.  In Haskell terms, Higher-Kinded types apply to type constructors",
+                "value":".  This is because Java types lack Higher-Kinded polymorphism while Haskell types have Higher-Kinded polymorphism.  In Haskell terms, Higher-Kinded types apply to type constructors",
                 "children":null
             },
             {
@@ -1484,7 +1484,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". In the same way a higher-order function can take functions as arguments and return a function, higher-kinded types can take type constructors as arguments and return a new type",
+                "value":". In the same way a higher-order function takes functions as arguments and returns a function, higher-kinded types take type constructors as arguments and return a new type",
                 "children":null
             },
             {
@@ -1543,7 +1543,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If you want to check out the kinds of type constructors in Haskell, you can use the ",
+                "value":" If you want to check out the kinds of type constructors in Haskell you can use the ",
                 "children":null
             },
             {
@@ -1578,7 +1578,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In my research I’ve seen evidence that Applicatives can be expressed in C#.  Perhaps that will be the topic of a future article. ",
+                "value":" In my research I've seen evidence that Applicatives can be expressed in C#.  Perhaps that will be the topic of a future article. ",
                 "children":null
             }
         ]
@@ -1606,13 +1606,13 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Applicatives are a complex topic in functional programming, and I’m still trying to wrap my brain around all their intricacies.  If you are reading this article to assist your own understanding of applicatives, I recommend reading many different articles on the topic along with writing code samples yourself.  Each article will add a piece to the puzzle in understanding applicatives.  In my next Haskell article I’ll discuss monads!  All the code from this article is available on ",
+                "value":" Applicatives are a complex topic in functional programming and I'm still trying to wrap my brain around all their intricacies.  If you are reading this article to assist your own understanding of applicatives, I recommend reading many different articles on the topic along with writing code samples yourself.  Each article will add a piece to the puzzle in understanding applicatives.  In my next Haskell article I'll discuss monads!  All the code from this article is available on ",
                 "children":null
             },
             {
                 "el":"a",
                 "attributes":{
-                    "href":""
+                    "href":"https://github.com/AJarombek/\njarombek-com-sources/tree/master/2019/08-Aug/08-03-haskell-pt7"
                 },
                 "value":null,
                 "children":[

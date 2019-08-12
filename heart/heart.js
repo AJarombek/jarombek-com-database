@@ -1,6 +1,14 @@
 connection = new Mongo();
 db = connection.getDB("andy");
 
+const sorry = `I'm sorry, I hope I didn't ruin your night.  I was really scared and didn't know what 
+                to do.  I didn't want to risk talking to you in case you didn't want me to.  I also 
+                didn't want you to think I don't care for you.  So I ended up just kinda freezing.  
+                If your hello was in response to my last message that is very sweet of you, 
+                thank you.  If not that's okay too.  I hope you know that I didn't leave because I 
+                didn't want to see you.  I did and do.  I was terrified that I was hurting you.  You 
+                deserve all the happiness in the world.  I'm sorry again.  Love, Andy`;
+
 const prayer = `My love seems to be moving away from me today.  I just want to pray that it's beause she 
                 doesn't care for me and doesn't love me and not because of something else.  I don't want her to 
                 leave because she feels like a burden.  I don't want her to leave because she thinks she 
