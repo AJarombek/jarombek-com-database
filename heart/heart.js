@@ -1,6 +1,33 @@
 connection = new Mongo();
 db = connection.getDB("andy");
 
+db.heart.insertOne({
+    date: new Date('2019-08-18T12:00:00'),
+    content: [
+        ["Hello my love.  I'm writing this note in case your hello was in response to my prayer.  " +
+        "If it wasn't you can just disregard the rest of what I write.  I guess you won't be reading " +
+        "these if that's the case."],
+        ["I'm so proud of you for taking a big step and risk by saying hello.  I hope you are " +
+        "feeling proud of yourself for that as well.  The big question is what will be your next " +
+        "move.  That can be a very stressful thing to think about, I understand.  Hopefully the rest " +
+        "of what I write can help support you, empower you to do whats best for you, and relieve any " +
+        "worry or stress you have."],
+        ["Whatever you do next, I will give whatever you give me back to you.  Just like I did " +
+        "when I replied to your hello.  If you aren't feeling up for anything, I will leave you " +
+        "alone and in peace.  If you want to sit next to me and say hello again, I will say hello " +
+        "back to you.  If you want to talk on the phone, see me, or anything else, I will do the " +
+        "same for you.  Do what makes you comfortable, feeling safe, and happy.  You being happy " +
+        "makes me happy.  I understand if to find your happiness that means not speaking to me."],
+        ["There are so many people that love and support you.  Keep getting love and support from " +
+        "your amazing friends who have been by your side every step of the way.  Reach out to my " +
+        "friends if that would help you as well."],
+        ["As I've said before, I will love you no matter what.  If you ever want to cross paths " +
+        "with me again, I will be happy to see you.  If not I understand.  You are in my thoughts " +
+        "and prayers.  I love you."],
+        ["Love Always, Andy"]
+    ]
+});
+
 const sorry = `I'm sorry, I hope I didn't ruin your night.  I was really scared and didn't know what 
                 to do.  I didn't want to risk talking to you in case you didn't want me to.  I also 
                 didn't want you to think I don't care for you.  So I ended up just kinda freezing.  
@@ -9,7 +36,7 @@ const sorry = `I'm sorry, I hope I didn't ruin your night.  I was really scared 
                 didn't want to see you.  I did and do.  I was terrified that I was hurting you.  You 
                 deserve all the happiness in the world.  I'm sorry again.  Love, Andy`;
 
-const prayer = `My love seems to be moving away from me today.  I just want to pray that it's beause she 
+const prayer = `My love seems to be moving away from me today.  I just want to pray that it's because she 
                 doesn't care for me and doesn't love me and not because of something else.  I don't want her to 
                 leave because she feels like a burden.  I don't want her to leave because she thinks she 
                 may never be ready for a relationship or commitment.  Please give her the strength to 
