@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In this article I’m revisiting the concept of type equality.  Type equality is a topic that we all learn early on in our programming careers.  Similar to any other profession, it’s beneficial to go back to the basics for practice.  Professional basketball players practice layups before each game. Professional programmers should re-study the basics as well.  In my time spent re-learning type equality in 13 different languages I’ve reaffirmed my knowledge and gained new insights.  The rest of the article discusses my findings. ",
+                "value":" In this article I'm revisiting the concept of type equality.  Type equality is a topic that software engineers  learn early on in their careers.  Similar to any other profession, it's beneficial to go back to the basics for practice.  Professional basketball players practice layups before each game. Professional programmers should work at the basics as well.  I spent this past week re-learning type equality in 13 different languages.  In the process I've reaffirmed my knowledge and gained new insights.  The rest of this article discusses my findings. ",
                 "children":null
             }
         ]
@@ -47,7 +47,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In this article I’m revisiting the concept of type equality.  Type equality is a topic that we all learn early on in our programming careers.  Similar to any other profession, it’s beneficial to go back to the basics for practice.  Professional basketball players practice layups before each game. Professional programmers should re-study the basics as well.  In my time spent re-learning type equality in 13 different languages I’ve reaffirmed my knowledge and gained new insights.  The rest of the article discusses my findings. ",
+                "value":" In this article I'm revisiting the concept of type equality.  Type equality is a topic that software engineers  learn early on in their careers.  Similar to any other profession, it's beneficial to go back to the basics for practice.  Professional basketball players practice layups before each game. Professional programmers should work at the basics as well.  I spent this past week re-learning type equality in 13 different languages.  In the process I've reaffirmed my knowledge and gained new insights.  The rest of this article discusses my findings. ",
                 "children":null
             }
         ]
@@ -75,7 +75,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Each programming language has its own intricacies when analysing types for equality. ",
+                "value":" Each programming language has its own intricacies in regards to analysing types for equality. ",
                 "children":null
             },
             {
@@ -155,7 +155,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" Tests for reference equality check to see if two variables, primitives, or objects refer to the same space in memory.  In many cases, altering the value of one such item would impact the other item since they refer to the same location.  For example, ",
+                                        "value":" Tests for reference equality check to see if two variables, primitives, or objects refer to the same space in memory.  When two variables are referentially equal, altering the value of one impacts the other since they refer to the same bytes in memory.  For example, ",
                                         "children":null
                                     },
                                     {
@@ -163,7 +163,7 @@ content = [
                                         "attributes":{
                                             "class":"jarombek-inline-code"
                                         },
-                                        "value":"var a =  \"value\"",
+                                        "value":"var a = \"value\"",
                                         "children":null
                                     },
                                     {
@@ -183,7 +183,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" in many languages results in two variables that point to the same item in memory. ",
+                                        "value":" results in two variables   that point to the same memory location in many languages. ",
                                         "children":null
                                     }
                                 ]
@@ -241,7 +241,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" are deemed of equal value, since ",
+                                        "value":" are deemed  equal in value, since ",
                                         "children":null
                                     },
                                     {
@@ -255,7 +255,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":".  Another example would be two objects ",
+                                        "value":".  Another example is two objects ",
                                         "children":null
                                     },
                                     {
@@ -343,7 +343,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Languages that allow values of different types to be equal are generally considered loosely typed.  Languages where it’s impossible or very rare for values of different types to be equal are generally considered strongly typed.  Loosely typed and strongly typed languages should not be confused for ",
+                "value":" Languages that allow values of different types to be equal are generally considered loosely typed.  Languages where it's impossible or very rare for values of different types to be equal are generally considered strongly typed.  Loosely typed and strongly typed languages should not be confused for ",
                 "children":null
             },
             {
@@ -356,7 +356,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"dynamically and strictly typed languages",
+                        "value":"dynamically and statically typed languages",
                         "children":null
                     }
                 ]
@@ -453,7 +453,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" is implicitly converted to a number before the type equality check is made.  Languages such as JavaScript, PHP, and PowerShell are generally considered loosely typed languages.  However, there is no clear boundary between a loosely typed language and a strongly typed language.  It’s mostly up to personal interpretation which category the language belongs in. ",
+                                        "value":" is implicitly converted to a number before the type equality check is made.  Languages such as JavaScript, PHP, and PowerShell are generally considered loosely typed languages.  However, there is no clear boundary between a loosely typed language and a strongly typed language.  It's mostly up to personal interpretation which category the language belongs in. ",
                                         "children":null
                                     }
                                 ]
@@ -497,7 +497,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" A language that is strongly typed has very strict type rules.  In order for a type to be converted to another type, is explicit conversion mechanism must be visible in the code.  For example, Java is a strongly typed language where explicit casts are used to convert from one type to another, such as ",
+                                        "value":" A language that is strongly typed has very strict type rules.  In order for a type to be converted to another type, an explicit conversion mechanism must be visible in the code.  For example, Java is a strongly typed language where explicit casts are used to convert from one type to another, such as ",
                                         "children":null
                                     },
                                     {
@@ -553,7 +553,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" or boxing and un-boxing primitives.  Languages such as C, Java, and Python are generally considered strongly typed.  Just like loosely typed languages, there is no explicit rule for whether or not a language is strongly typed.  It’s mostly up to personal interpretation of the language. ",
+                                        "value":" or boxing and un-boxing primitives.  Languages such as C, Java, and Python are generally considered strongly typed.  Just like loosely typed languages, there is no explicit rule for whether or not a language is strongly typed.  It's mostly up to personal interpretation of the language. ",
                                         "children":null
                                     }
                                 ]
@@ -572,7 +572,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now let’s explore equality in the programming languages I use.  Look out for the different ways each language handles reference and value equality.  In terms of value equality, watch out for loosely typed languages that allow type coercion to occur. I’ll start out with my main three languages - Java, JavaScript, and Python.  Then I’ll run through the remaining ten languages in alphabetical order. ",
+                "value":" Now let's explore equality in the programming languages I use.  Look out for the different ways each language handles reference and value equality.  In terms of value equality, watch out for loosely typed languages that enable type coercion.  I'll start with my main three languages - Java, JavaScript, and Python.  Then I'll run through the remaining ten languages in alphabetical order. ",
                 "children":null
             }
         ]
@@ -665,7 +665,7 @@ content = [
                 "attributes":{
                     "class":"jarombek-inline-code"
                 },
-                "value":"object",
+                "value":"Object",
                 "children":null
             },
             {
@@ -733,7 +733,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" There is no way to test reference equality with primitives.  Primitives also can’t use the ",
+                "value":" There is no way to test reference equality with primitives.  Primitives also can't use the ",
                 "children":null
             },
             {
@@ -747,7 +747,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" method since they aren’t objects and can’t have methods. ",
+                "value":" method since they aren't objects and can't have methods. ",
                 "children":null
             }
         ]
@@ -760,7 +760,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The following code demonstrates how string objects can be tested for equality.  Strings are unique because they are cached in the same memory location if they have equal values.  As you will soon see, many other languages use this optimization for strings as well. ",
+                "value":" The following code demonstrates how ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "class":"jarombek-inline-code"
+                },
+                "value":"String",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" objects are tested for equality.  String literals are unique because  Java caches them in the same memory location if they have equal values.  As you will soon see, many other languages use this optimization for strings as well. ",
                 "children":null
             }
         ]
@@ -851,7 +865,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" method from class ",
+                "value":" method from ",
                 "children":null
             },
             {
@@ -875,7 +889,7 @@ content = [
         "attributes":{
             "language":"Java"
         },
-        "value":"public class Yarn {\n\n  private String fiber;\n  private String color;\n  private int yards;\n\n  /**\n   * Private constructor for a new ball of yarn.  Can only be invoked by the static factory method.\n   * @param fiber The fiber that the yarn is made of.\n   * @param color The visual color of the yarn.\n   * @param yards The length of the yarn in yards\n   */\n  private Yarn(String fiber, String color, int yards) {\n    this.fiber = fiber;\n    this.color = color;\n    this.yards = yards;\n  }\n\n  /**\n   * Static factory method for constructing a new ball of yarn.  Requires that a value be assigned for each\n   * instance variable, although it does accept null values.\n   * @return A new Yarn object.\n   */\n  static Yarn create(String fiber, String color, int yards) {\n    return new Yarn(fiber, color, yards);\n  }\n\n  /**\n   * @inheritDoc\n   */\n  @Override\n  public boolean equals(Object obj) {\n    if (obj == this)\n      return true;\n    if (!(obj instanceof Yarn))\n      return false;\n    var otherYarn = (Yarn) obj;\n    return Objects.equals(fiber, otherYarn.fiber)\n      && Objects.equals(color, otherYarn.color)\n      && yards == otherYarn.yards;\n  }\n}\n",
+        "value":"public class Yarn {\n\n  private String fiber;\n  private String color;\n  private int yards;\n\n  /**\n   * Private constructor for a new ball of yarn.  Can only be invoked by the static factory method.\n   * @param fiber The fiber that the yarn is made of.\n   * @param color The visual color of the yarn.\n   * @param yards The length of the yarn in yards.\n   */\n  private Yarn(String fiber, String color, int yards) {\n    this.fiber = fiber;\n    this.color = color;\n    this.yards = yards;\n  }\n\n  /**\n   * Static factory method for constructing a new ball of yarn.  Requires that a value be assigned for each\n   * instance variable, although it does accept null values.\n   * @return A new Yarn object.\n   */\n  static Yarn create(String fiber, String color, int yards) {\n    return new Yarn(fiber, color, yards);\n  }\n\n  /**\n   * @inheritDoc\n   */\n  @Override\n  public boolean equals(Object obj) {\n    if (obj == this)\n      return true;\n    if (!(obj instanceof Yarn))\n      return false;\n    var otherYarn = (Yarn) obj;\n    return Objects.equals(fiber, otherYarn.fiber)\n      && Objects.equals(color, otherYarn.color)\n      && yards == otherYarn.yards;\n  }\n}\n",
         "children":null
     },
     {
@@ -1067,7 +1081,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" There isn’t much debate that JavaScript is a loosely typed programming language.  When working with primitives, ",
+                "value":" There isn't much debate that JavaScript is a loosely typed programming language.  When working with primitives, ",
                 "children":null
             },
             {
@@ -1109,7 +1123,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", the string is converted to a number type before making a comparison. ",
+                "value":", the string is converted to a numeric type before the comparison occurs. ",
                 "children":null
             }
         ]
@@ -1130,7 +1144,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Because JavaScript allows for so much type coercion, many developers argue that you shouldn’t use ",
+                "value":" Because JavaScript contains a lot of implicit type coercion, many developers argue that you shouldn't use ",
                 "children":null
             },
             {
@@ -1425,7 +1439,7 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"# Both these strings pass value and reference equality tests.\nfirst = \"Andy\"\nfirstAgain = \"Andy\"\n\n# Both these strings pass value and reference equality tests.\nforever = \"rock Forever 21 but just turned thirty\"\nforeverAgain = str(\"rock Forever 21 but just turned thirty\")\n\n# These strings pass value equality tests but not reference equality tests.\ndesc = \"Andrew Jarombek is a big fan of cats 🐱\"\ndescAgain = \"Andrew Jarombek is a big fan of cats \" + \"🐱\"\n\nassert first == firstAgain\nassert forever == foreverAgain\nassert desc == descAgain\n\n# Reference is tested with the 'is' keyword.\n# Similar to Java, Python caches strings in certain implementations.  Be careful, two strings that past the value\n# equality test may not pass the reference equality test.\nassert first is firstAgain\nassert forever is foreverAgain\nassert desc is not descAgain\n\n# Every Python type is an object. Each object in Python is assigned a unique identifier.  You can think this unique\n# identifier as the memory location of the object.\nassert id(first) == id(firstAgain)\nassert id(forever) == id(foreverAgain)\nassert id(desc) != id(descAgain)\n",
+        "value":"# Both these strings pass value and reference equality tests.\nfirst = \"Andy\"\nfirstAgain = \"Andy\"\n\n# Both these strings pass value and reference equality tests.\nforever = \"rock Forever 21 but just turned thirty\"\nforeverAgain = str(\"rock Forever 21 but just turned thirty\")\n\n# These strings pass value equality tests but not reference equality tests.\ndesc = \"Andrew Jarombek is a big fan of cats 🐱\"\ndescAgain = \"Andrew Jarombek is a big fan of cats \" + \"🐱\"\n\nassert first == firstAgain\nassert forever == foreverAgain\nassert desc == descAgain\n\n# Reference equality is tested with the 'is' keyword.\n# Similar to Java, Python caches strings in certain implementations.  Be careful, two strings that pass the value\n# equality test may not pass the reference equality test.\nassert first is firstAgain\nassert forever is foreverAgain\nassert desc is not descAgain\n\n# Every Python type is an object. Each object in Python is assigned a unique identifier.  You can think this unique\n# identifier as the memory location of the object.\nassert id(first) == id(firstAgain)\nassert id(forever) == id(foreverAgain)\nassert id(desc) != id(descAgain)\n",
         "children":null
     },
     {
@@ -1557,7 +1571,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is an outlier in the sense that it’s an ",
+                "value":" is an outlier in the sense that it's an ",
                 "children":null
             },
             {
@@ -1643,7 +1657,7 @@ content = [
         "attributes":{
             "language":"Bash"
         },
-        "value":"# In Bash everything is plain text except in certain contexts.  Both == and = test for text equality.\n# = is defined in the POSIX spec while == is Bash specific.\n[ \"andy\" = \"andy\" ] # true\n\n# = and == are synonyms\n[ \"jarombek\" == \"jarombek\" ] # true\n\n# -eq tests for equality between numbers\n[ 2 -eq 2 ] # true\n\n# This would throw an exception - integer expression expected.\n# [ \"andy\" -eq \"andy\" ] # true\n\n# Both == and = work for integers, but -eq doesn't work for strings\n[ 2 != 3 ] # true\n\n# The double parentheses construct $(( )) is used to perform arithmetic.\n# These four comparisons throw errors.\n# ((24 -eq 24))\n# ((24 = 24))\n# ((\"andy\" -eq \"andy\"))\n# ((\"andy\" = \"andy\"))\n\n((24 == 24)) # true\n\n# Using strings with double parentheses compile but aren't evaluated properly.\n# This is determined to be true, although it should be false.\n((\"Greenwich,CT\" != \"greenwich,connecticut\")) # true\n\n# ... Unless if the strings are convertible to integers.\n((\"10\" == \"10\" && \"5\" != \"6\")) # true\n",
+        "value":"\n# In Bash everything is plain text except in certain contexts.  Both == and = test for text equality.\n# = is defined in the POSIX spec while == is Bash specific.\n[ \"andy\" = \"andy\" ] # true\n\n# = and == are synonyms\n[ \"jarombek\" == \"jarombek\" ] # true\n\n# -eq tests for equality between numbers\n[ 2 -eq 2 ] # true\n\n# This would throw an exception - integer expression expected.\n# [ \"andy\" -eq \"andy\" ] # true\n\n# Both == and = work for integers, but -eq doesn't work for strings\n[ 2 != 3 ] # true\n\n# The double parentheses construct $(( )) is used to perform arithmetic.\n# These four comparisons throw errors.\n# ((24 -eq 24))\n# ((24 = 24))\n# ((\"andy\" -eq \"andy\"))\n# ((\"andy\" = \"andy\"))\n\n((24 == 24)) # true\n\n# Using strings with double parentheses compile but aren't evaluated properly.\n# This is determined to be true, although it should be false.\n((\"Greenwich,CT\" != \"greenwich,connecticut\")) # true\n\n# ... Unless if the strings are convertible to integers.\n((\"10\" == \"10\" && \"5\" != \"6\")) # true\n",
         "children":null
     },
     {
@@ -1802,7 +1816,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" when they aren’t. ",
+                "value":" when they aren't. ",
                 "children":null
             }
         ]
@@ -1837,7 +1851,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" operator tests for reference equality.  Similar to other languages, C caches string literals so that they point to the same memory location.  This is proven in the following code: ",
+                "value":" operator tests for reference equality.  Similar to other languages, C caches string literals so they point to the same memory location.  This is proven in the following code: ",
                 "children":null
             }
         ]
@@ -1893,7 +1907,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" C is an imperative programming language and doesn’t support classes or objects.  The basic construct it does support is structs.  Unfortunately the ",
+                "value":" C is an imperative programming language and doesn't support classes or objects.  The basic construct it does support is structs.  Unfortunately the ",
                 "children":null
             },
             {
@@ -1907,7 +1921,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" operator doesn’t work with structs.  If you try using it a compile time error will occur.  To test struts for value equality, each item in the struct must be checked for equality individually.  There is also a ",
+                "value":" operator doesn't work with structs.  If you try using it a compile time error will occur.  To test struts for value equality, each item in the struct must be checked for equality individually.  There is also a ",
                 "children":null
             },
             {
@@ -1921,7 +1935,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function available to test structs for value equality, however it isn’t always reliable",
+                "value":" function available to test structs for value equality, however it isn't always reliable",
                 "children":null
             },
             {
@@ -1943,7 +1957,7 @@ content = [
         "attributes":{
             "language":"C"
         },
-        "value":"typedef struct Yarn {\n  char* fiber;\n  char* color;\n  int yards;\n} Yarn;\n\n/**\n * Determine if two Yarn structs have equal values.\n * @param y1 The first Yarn struct to compare.\n * @param y2 The second Yarn struct to compare.\n * @return 1 if the two Yarn structs are equal, 0 otherwise.\n */\nint yarnEqual(Yarn* y1, Yarn* y2) {\n  return y1->fiber == y2->fiber\n    && y1->color == y2->color\n    && y1->yards == y2->yards;\n}\n\nint main() {\n  Yarn yarn1 = {\"Polyester\", \"Pitter Patter\", 210};\n  Yarn* yarn2 = &yarn1;\n  Yarn yarn3 = {\"Polyester\", \"Pitter Patter\", 210};\n  Yarn yarn4 = {\"Polyester\", \"Vanilla\", 70};\n\n  // The == and != operators can't be used on structs.\n  // assert(yarn1 == yarn2);\n\n  // To compare them for value equality, each field in the struct must be compared explicitly.\n  assert(yarnEqual(&yarn1, yarn2));\n  assert(yarnEqual(yarn2, &yarn3));\n  assert(!yarnEqual(&yarn3, &yarn4));\n\n  // To compare them for reference equality, convert the structs to pointers and then use ==.\n  // NOTE: yarn2 is already a pointer type.\n  assert(&yarn1 == yarn2);\n  assert(yarn2 != &yarn3);\n  assert(&yarn3 != &yarn4);\n\n  // It's also said that while memcmp() often works when comparing structs for value equality,\n  // it should not be trusted.  memcmp() returns 0 if all the bytes of memory\n  // for the struct are equal, another number otherwise.\n  int yarn1EqualsYarn2 = memcmp(&yarn1, yarn2, sizeof(Yarn)) == 0;\n  int yarn2EqualsYarn3 = memcmp(yarn2, &yarn3, sizeof(Yarn)) == 0;\n  int yarn3EqualsYarn4 = memcmp(&yarn3, &yarn4, sizeof(Yarn)) == 0;\n\n  assert(yarn1EqualsYarn2);\n  assert(yarn2EqualsYarn3);\n  assert(!yarn3EqualsYarn4);\n}\n",
+        "value":"typedef struct Yarn {\n  char* fiber;\n  char* color;\n  int yards;\n} Yarn;\n\n/**\n * Determine if two Yarn structs have equal values.\n * @param y1 The first Yarn struct to compare.\n * @param y2 The second Yarn struct to compare.\n * @return 1 if the two Yarn structs are equal, 0 otherwise.\n */\nint yarnEqual(Yarn* y1, Yarn* y2) {\n  return y1->fiber == y2->fiber\n    && y1->color == y2->color\n    && y1->yards == y2->yards;\n}\n\nint main() {\n  Yarn yarn1 = {\"Polyester\", \"Pitter Patter\", 210};\n  Yarn* yarn2 = &yarn1;\n  Yarn yarn3 = {\"Polyester\", \"Pitter Patter\", 210};\n  Yarn yarn4 = {\"Polyester\", \"Vanilla\", 70};\n\n  // The == and != operators can't be used on structs.\n  // assert(yarn1 == yarn2);\n\n  // To compare them for value equality, each field in the struct must be compared explicitly.\n  assert(yarnEqual(&yarn1, yarn2));\n  assert(yarnEqual(yarn2, &yarn3));\n  assert(!yarnEqual(&yarn3, &yarn4));\n\n  // To compare them for reference equality, convert the structs to pointers and then use ==.\n  // NOTE: yarn2 is already a pointer type.\n  assert(&yarn1 == yarn2);\n  assert(yarn2 != &yarn3);\n  assert(&yarn3 != &yarn4);\n\n  // It's also said that while memcmp() often works when comparing structs for value equality,\n  // it should not be trusted.  memcmp() returns 0 if all the bytes of memory\n  // for the structs are equal, another number otherwise.\n  int yarn1EqualsYarn2 = memcmp(&yarn1, yarn2, sizeof(Yarn)) == 0;\n  int yarn2EqualsYarn3 = memcmp(yarn2, &yarn3, sizeof(Yarn)) == 0;\n  int yarn3EqualsYarn4 = memcmp(&yarn3, &yarn4, sizeof(Yarn)) == 0;\n\n  assert(yarn1EqualsYarn2);\n  assert(yarn2EqualsYarn3);\n  assert(!yarn3EqualsYarn4);\n}\n",
         "children":null
     },
     {
@@ -1967,6 +1981,12 @@ content = [
         "value":null,
         "children":[
             {
+                "el":"#text",
+                "attributes":null,
+                "value":" Similar to C, ",
+                "children":null
+            },
+            {
                 "el":"a",
                 "attributes":{
                     "href":"https://jarombek.com/blog?query=c++&page=1"
@@ -1984,7 +2004,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" similar to C has a single ",
+                "value":" has a single ",
                 "children":null
             },
             {
@@ -1998,7 +2018,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" operator for testing type equality.  However, C++ is an object-oriented language and allows for operator overloading.  Because of this, all structs and classes can use the ",
+                "value":" operator for testing type equality.  However, C++ is an object-oriented language that allows for operator overloading.  Because of this, all structs and classes can use the ",
                 "children":null
             },
             {
@@ -2215,7 +2235,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" C# is often compared to language due to similarities in their structure.  However, there are some differences when it comes to equality.  While Java primitives can’t use the ",
+                "value":" C# is often compared to Java due to similarities in their structure.  However, there are some differences when it comes to equality.  While Java primitives can't use the ",
                 "children":null
             },
             {
@@ -2264,7 +2284,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" tests for value equality, ",
+                "value":" tests for value equality and ",
                 "children":null
             },
             {
@@ -2375,7 +2395,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" class which doesn’t overload ",
+                "value":" class which doesn't overload ",
                 "children":null
             },
             {
@@ -2502,7 +2522,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" takes Java’s type equality system and makes some major changes to it.  Groovy uses ",
+                "value":" takes Java's type equality system and makes some major changes to it.  Groovy uses ",
                 "children":null
             },
             {
@@ -2642,7 +2662,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If you want to see how to alter Groovy’s value equality mechanism, check out the full code on ",
+                "value":" If you want to see how to alter Groovy's value equality mechanism, check out the full code on ",
                 "children":null
             },
             {
@@ -2706,7 +2726,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is a functional programming language that behaves much differently than the other languages I’m looking at today.  It doesn’t have reference equality by default, mostly for performance reasons",
+                "value":" is a functional programming language that behaves much differently than the other languages I'm looking at today.  It doesn't have reference equality by default, mostly for performance reasons",
                 "children":null
             },
             {
@@ -2718,7 +2738,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  You can however implement value equality by making a type an instance of the ",
+                "value":".  However, you can implement value equality by making a type an instance of the ",
                 "children":null
             },
             {
@@ -3335,7 +3355,7 @@ content = [
         "attributes":{
             "language":"TypeScript"
         },
-        "value":"// This code is valid in JavaScript but won't compile in TypeScript.  TypeScript doesn't allow for\n// values of guaranteed different types to be compared with == or ===.\n// TS2365: Operator == cant be applied to types '2' and \"2\".\nassert(2 == \"2\");\nassert(2 !== \"2\");\n",
+        "value":"\n// This code is valid in JavaScript but won't compile in TypeScript.  TypeScript doesn't allow for\n// values of guaranteed different types to be compared with == or ===.\n// TS2365: Operator == cant be applied to types '2' and \"2\".\nassert(2 == \"2\");\nassert(2 !== \"2\");\n",
         "children":null
     },
     {
@@ -3384,7 +3404,7 @@ content = [
         "attributes":{
             "language":"TypeScript"
         },
-        "value":"// Since TypeScript compiles to JavaScript, we can trick TypeScript about the compile-time types of\n// mismatching types.  This allows for == and === to compile for unequal types.\n\n// == works the same in TypeScript as in JavaScript if the compile time type of a string or number\n// being compared is 'any' or 'Object'.\nconst age: number = 24;\nconst ageStr: any = \"24\";\nconst ageObj: Object = \"24\";\n\n// This assertion compiles and succeeds thanks to JavaScript type coercion.\nassert(age == ageStr);\n\nassert(age !== ageStr);\nassert(age == ageObj);\n",
+        "value":"\n// Since TypeScript compiles to JavaScript, we can trick TypeScript about the compile-time types of\n// mismatching types.  This allows for == and === to compile for unequal types.\n\n// == works the same in TypeScript as in JavaScript if the compile time type of a string or number\n// being compared is 'any' or 'Object'.\nconst age: number = 24;\nconst ageStr: any = \"24\";\nconst ageObj: Object = \"24\";\n\n// This assertion compiles and succeeds thanks to JavaScript type coercion.\nassert(age == ageStr);\n\nassert(age !== ageStr);\nassert(age == ageObj);\n",
         "children":null
     },
     {

@@ -1,6 +1,14 @@
 connection = new Mongo();
 db = connection.getDB("andy");
 
+const message = "I don't know what I said wrong, but it looks like I hurt you again.  I suppose my own " +
+    "words betrayed me again.  I'm so sorry.  I was guessing that you were scared I would be gone and " +
+    "not loving you anymore before you found your answers.  I shouldn't have guessed.  And yet here I am " +
+    "guessing again that leaving you in peace is the path you desire.  " +
+    "Sending you all my love and support for your life's journey.  I'm sorry again for all the pain and " +
+    "suffering I've caused you." +
+    "Love, Andy";
+
 db.heart.insertOne({
     date: new Date('2019-08-18T12:00:00'),
     content: [
