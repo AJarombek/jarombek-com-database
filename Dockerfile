@@ -6,7 +6,7 @@
 FROM mongo:4.0
 
 LABEL maintainer="andrew@jarombek.com" \
-      version="1.0.1" \
+      version="1.0.2" \
       description="Dockerfile for Andrew Jarombek's Personal Website MongoDB Database"
 
 # Make a new directory that MongoDB uses to save data
