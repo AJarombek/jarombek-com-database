@@ -224,7 +224,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"React.createElement()",
                 "children":null
@@ -253,7 +253,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"props",
                 "children":null
@@ -267,7 +267,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"state",
                 "children":null
@@ -281,7 +281,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"props",
                 "children":null
@@ -295,7 +295,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"state",
                 "children":null
@@ -324,7 +324,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"React.createElement(\"p\", null, \"Hi There!\")",
                 "children":null
@@ -338,7 +338,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"<p>Hi There!</p>",
                 "children":null
@@ -366,7 +366,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "class":"jarombek-blog-image",
+                    "className":"jarombek-blog-image",
                     "src":"https://asset.jarombek.com/posts/5-31-18-seed.png"
                 },
                 "value":null,
@@ -426,7 +426,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"div",
                 "children":null
@@ -453,7 +453,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"<script>",
                 "children":null
@@ -461,7 +461,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" tag is for the JavaScript.  Webpack  actually handles bundling the JavaScript and including it in the HTML document, so we don't have to worry about it!  I will discuss the Webpack aspects of this project in my next discovery post. ",
+                "value":" tag is for the JavaScript.  Webpack actually handles bundling the JavaScript and including it in the HTML document, so we don't have to worry about it!  I will discuss the Webpack aspects of this project in my next discovery post. ",
                 "children":null
             }
         ]
@@ -480,7 +480,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"render()",
                 "children":null
@@ -515,7 +515,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"render()",
                 "children":null
@@ -529,7 +529,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"App",
                 "children":null
@@ -543,7 +543,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"App",
                 "children":null
@@ -570,7 +570,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"document.getElementById('react-container')",
                 "children":null
@@ -597,7 +597,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"render()",
                 "children":null
@@ -611,7 +611,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"App",
                 "children":null
@@ -634,7 +634,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-header-code"
+                    "className":"jarombek-header-code"
                 },
                 "value":"App",
                 "children":null
@@ -661,7 +661,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"App",
                 "children":null
@@ -701,7 +701,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"App",
                 "children":null
@@ -715,7 +715,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"React.Component",
                 "children":null
@@ -750,7 +750,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"this.state",
                 "children":null
@@ -777,7 +777,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"render()",
                 "children":null
@@ -791,7 +791,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"technologies",
                 "children":null
@@ -805,7 +805,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"TechnologyList",
                 "children":null
@@ -819,7 +819,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"TechnologyList",
                 "children":null
@@ -842,7 +842,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-header-code"
+                    "className":"jarombek-header-code"
                 },
                 "value":"TechnologyList",
                 "children":null
@@ -885,7 +885,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"TechnologyList",
                 "children":null
@@ -912,7 +912,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"render()",
                 "children":null
@@ -939,7 +939,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"techList=[]",
                 "children":null
@@ -953,7 +953,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"techList",
                 "children":null
@@ -980,7 +980,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"Technology",
                 "children":null
@@ -1007,7 +1007,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"propTypes",
                 "children":null
@@ -1021,7 +1021,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"TechnologyList",
                 "children":null
@@ -1035,7 +1035,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"propTypes",
                 "children":null
@@ -1070,7 +1070,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-header-code"
+                    "className":"jarombek-header-code"
                 },
                 "value":"Technology",
                 "children":null
@@ -1161,7 +1161,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Next time I will go over the  ",
+                "value":".  Next time I will go over the ",
                 "children":null
             },
             {

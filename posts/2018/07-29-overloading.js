@@ -36,7 +36,7 @@ preview = [
                     {
                         "el":"h5",
                         "attributes":{
-                            "classname":"jarombek-cte-title"
+                            "className":"jarombek-cte-title"
                         },
                         "value":null,
                         "children":[
@@ -51,7 +51,7 @@ preview = [
                     {
                         "el":"div",
                         "attributes":{
-                            "classname":"jarombek-cte-body"
+                            "className":"jarombek-cte-body"
                         },
                         "value":null,
                         "children":[
@@ -80,7 +80,7 @@ preview = [
                     {
                         "el":"h5",
                         "attributes":{
-                            "classname":"jarombek-cte-title"
+                            "className":"jarombek-cte-title"
                         },
                         "value":null,
                         "children":[
@@ -95,7 +95,7 @@ preview = [
                     {
                         "el":"div",
                         "attributes":{
-                            "classname":"jarombek-cte-body"
+                            "className":"jarombek-cte-body"
                         },
                         "value":null,
                         "children":[
@@ -162,7 +162,7 @@ content = [
                     {
                         "el":"h5",
                         "attributes":{
-                            "classname":"jarombek-cte-title"
+                            "className":"jarombek-cte-title"
                         },
                         "value":null,
                         "children":[
@@ -177,7 +177,7 @@ content = [
                     {
                         "el":"div",
                         "attributes":{
-                            "classname":"jarombek-cte-body"
+                            "className":"jarombek-cte-body"
                         },
                         "value":null,
                         "children":[
@@ -206,7 +206,7 @@ content = [
                     {
                         "el":"h5",
                         "attributes":{
-                            "classname":"jarombek-cte-title"
+                            "className":"jarombek-cte-title"
                         },
                         "value":null,
                         "children":[
@@ -221,7 +221,7 @@ content = [
                     {
                         "el":"div",
                         "attributes":{
-                            "classname":"jarombek-cte-body"
+                            "className":"jarombek-cte-body"
                         },
                         "value":null,
                         "children":[
@@ -299,7 +299,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"Animal",
                 "children":null
@@ -313,7 +313,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"Plant",
                 "children":null
@@ -327,7 +327,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"Garden",
                 "children":null
@@ -378,7 +378,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"animals",
                 "children":null
@@ -392,7 +392,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"plants",
                 "children":null
@@ -406,7 +406,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"randomObjects",
                 "children":null
@@ -420,7 +420,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"Garden",
                 "children":null
@@ -434,7 +434,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"inGarden()",
                 "children":null
@@ -448,7 +448,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"Garden",
                 "children":null
@@ -557,7 +557,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"Animal doe = Animal.ofName(\"doe\", Animal.Species.DEER);",
                 "children":null
@@ -571,7 +571,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"Animal",
                 "children":null
@@ -585,7 +585,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"inGarden(Animal animal)",
                 "children":null
@@ -612,7 +612,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"Object objectDoe = doe;",
                 "children":null
@@ -626,7 +626,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"objectDoe",
                 "children":null
@@ -640,7 +640,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"Object",
                 "children":null
@@ -654,7 +654,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"doe",
                 "children":null
@@ -668,7 +668,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"Animal",
                 "children":null
@@ -695,7 +695,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"garden.inGarden(objectDoe)",
                 "children":null
@@ -709,7 +709,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"inGarden(Animal animal)",
                 "children":null
@@ -723,7 +723,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"inGarden(Object object)",
                 "children":null
@@ -737,7 +737,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"inGarden(Object object)",
                 "children":null
@@ -882,7 +882,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"garden.inGarden(objectDoe)",
                 "children":null
@@ -896,7 +896,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"inGarden(Animal animal)",
                 "children":null
@@ -910,7 +910,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"inGarden(Object object)",
                 "children":null
@@ -1147,7 +1147,7 @@ content = [
                     {
                         "el":"code",
                         "attributes":{
-                            "class":"jarombek-inline-code"
+                            "className":"jarombek-inline-code"
                         },
                         "value":"@singledispatch",
                         "children":null
@@ -1161,7 +1161,7 @@ content = [
                     {
                         "el":"code",
                         "attributes":{
-                            "class":"jarombek-inline-code"
+                            "className":"jarombek-inline-code"
                         },
                         "value":"@singledispatch",
                         "children":null
@@ -1187,7 +1187,7 @@ content = [
                     {
                         "el":"code",
                         "attributes":{
-                            "class":"jarombek-inline-code"
+                            "className":"jarombek-inline-code"
                         },
                         "value":"@singledispatch",
                         "children":null
@@ -1256,7 +1256,7 @@ content = [
                     {
                         "el":"code",
                         "attributes":{
-                            "class":"jarombek-inline-code"
+                            "className":"jarombek-inline-code"
                         },
                         "value":"Garden",
                         "children":null
@@ -1315,7 +1315,7 @@ content = [
                     {
                         "el":"code",
                         "attributes":{
-                            "class":"jarombek-inline-code"
+                            "className":"jarombek-inline-code"
                         },
                         "value":"Garden",
                         "children":null
@@ -1455,7 +1455,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"Any",
                 "children":null
@@ -1469,7 +1469,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"Any",
                 "children":null
@@ -1483,7 +1483,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"let otherDoe: Any = doe",
                 "children":null
@@ -1497,7 +1497,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"inGarden(_ object: Any)",
                 "children":null
@@ -1511,7 +1511,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"inGarden(_ animal: Animal)",
                 "children":null

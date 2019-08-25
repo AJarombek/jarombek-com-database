@@ -134,7 +134,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"WHERE",
                 "children":null
@@ -148,7 +148,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"AND",
                 "children":null
@@ -162,7 +162,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"BETWEEN",
                 "children":null
@@ -176,7 +176,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"AND",
                 "children":null
@@ -205,7 +205,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"WHERE",
                 "children":null
@@ -219,7 +219,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"LIKE",
                 "children":null
@@ -233,7 +233,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"%",
                 "children":null
@@ -257,7 +257,7 @@ content = [
     {
         "el":"span",
         "attributes":{
-            "class":"code-span"
+            "className":"code-span"
         },
         "value":"ISBN TITLE            RELEASED  STARTED   FINISHED  TIME_READING\n---- ---------------- --------- --------- --------- ------------\n.... Java 8 in Action 01-AUG-14 10-OCT-17 08-FEB-18 121\n",
         "children":null
@@ -291,7 +291,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "class":"jarombek-blog-image",
+                    "className":"jarombek-blog-image",
                     "src":"https://asset.jarombek.com/Database-ER.png"
                 },
                 "value":null,
@@ -315,7 +315,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"JOIN ... ON ...",
                 "children":null
@@ -351,7 +351,7 @@ content = [
     {
         "el":"span",
         "attributes":{
-            "class":"code-span"
+            "className":"code-span"
         },
         "value":"           ISBN TITLE                      NAME       CREATED\n--------------- -------------------------- ---------- ----------\n  9781491901946 AngularJS: Up and Running  JavaScript 04-DEC-95\n  9781617291999 Java 8 in Action           Java       23-MAY-95\n  9780071799355 Oracle Database 12c SQL    SQL        01-JAN-74\n  9780071799355 Oracle Database 12c SQL    PL/SQL     01-JAN-92\n  9781617291203 Spring In Action           Java       23-MAY-95\n",
         "children":null
@@ -370,7 +370,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"time_reading",
                 "children":null
@@ -384,7 +384,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"time_reading",
                 "children":null
@@ -398,7 +398,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"finished",
                 "children":null
@@ -412,7 +412,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"started",
                 "children":null
@@ -426,7 +426,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"nvl2()",
                 "children":null
@@ -461,7 +461,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"CASE",
                 "children":null
@@ -489,7 +489,7 @@ content = [
     {
         "el":"span",
         "attributes":{
-            "class":"code-span"
+            "className":"code-span"
         },
         "value":"TITLE                       STILL_READING     DURATION\n--------------------------- ----------------- -------------\nJava 8 in Action            Finished Reading  Long Read\nOracle Database 12c SQL     Finished Reading  Moderate Read\nAngularJS: Up and Running   Not Completed     Short Read\nJump Start: Bootstrap       Finished Reading  Short Read\nSpring In Action            Finished Reading  Short Read\n",
         "children":null
@@ -508,7 +508,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"language_hierarchy",
                 "children":null
@@ -532,7 +532,7 @@ content = [
     {
         "el":"span",
         "attributes":{
-            "class":"code-span"
+            "className":"code-span"
         },
         "value":"NAME          INFLUNCED_BY\n------------- --------------\nJava          C\nC\nJavaScript    Java\nJavaScript    C\nJavaScript    Python\nSQL\nPL/SQL        SQL\nHTML\nXML\nCSS\nSass          CSS\nSwift         Python\nPHP           C\nPHP           Java\nPython        C\nPython        Java\nTypeScript    Java\nTypeScript    JavaScript\nJSON          JavaScript\n",
         "children":null
@@ -551,7 +551,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"CONNECT BY PRIOR",
                 "children":null
@@ -565,7 +565,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"START WITH",
                 "children":null
@@ -579,7 +579,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"START WITH",
                 "children":null
@@ -593,7 +593,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"CONNECT BY PRIOR",
                 "children":null
@@ -607,7 +607,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"name",
                 "children":null
@@ -621,7 +621,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"influenced_by",
                 "children":null
@@ -635,7 +635,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"CONNECT BY PRIOR name = influnced_by",
                 "children":null
@@ -672,7 +672,7 @@ content = [
     {
         "el":"span",
         "attributes":{
-            "class":"code-span"
+            "className":"code-span"
         },
         "value":"    LEVEL LANGUAGE\n--------- -----------------------\n        1 C\n        2   Java\n        3     JavaScript\n        4       JSON\n        4       TypeScript\n        3     PHP\n        3     Python\n        4       JavaScript\n        5         JSON\n        5         TypeScript\n        4       Swift\n        3     TypeScript\n        2   JavaScript\n        3     JSON\n        3     TypeScript\n        2   PHP\n        2   Python\n        3     JavaScript\n        4       JSON\n        4       TypeScript\n        3     Swift\n",
         "children":null
@@ -697,7 +697,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"LEVEL",
                 "children":null
@@ -723,7 +723,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"LEVEL",
                 "children":null
@@ -737,7 +737,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"lpad()",
                 "children":null
@@ -751,7 +751,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"CONNECT BY",
                 "children":null
@@ -787,7 +787,7 @@ content = [
     {
         "el":"span",
         "attributes":{
-            "class":"code-span"
+            "className":"code-span"
         },
         "value":"    LEVEL LANGUAGE\n--------- -----------------------\n        1 Java\n        2   C\n",
         "children":null
@@ -806,7 +806,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"books",
                 "children":null
@@ -820,7 +820,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"book_languages",
                 "children":null
@@ -834,7 +834,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"sum()",
                 "children":null
@@ -848,7 +848,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"time_reading",
                 "children":null
@@ -862,7 +862,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"ROLLUP",
                 "children":null
@@ -876,7 +876,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"ROLLUP",
                 "children":null
@@ -890,7 +890,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"GROUP BY",
                 "children":null
@@ -926,7 +926,7 @@ content = [
     {
         "el":"span",
         "attributes":{
-            "class":"code-span"
+            "className":"code-span"
         },
         "value":"NAME          SUM(B.TIME_READING)\n------------- -------------------\nJava          134\nJavaScript\nPL/SQL        26\nSQL           26\n              186\n",
         "children":null
@@ -945,7 +945,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"grouping()",
                 "children":null
@@ -959,7 +959,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"grouping()",
                 "children":null
@@ -985,7 +985,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"grouping()",
                 "children":null
@@ -999,7 +999,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"CASE",
                 "children":null
@@ -1013,7 +1013,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"name",
                 "children":null
@@ -1037,7 +1037,7 @@ content = [
     {
         "el":"span",
         "attributes":{
-            "class":"code-span"
+            "className":"code-span"
         },
         "value":"NAME          TOTAL_TIME_READING\n------------- -------------------\nJava          134\nJavaScript\nPL/SQL        26\nSQL           26\n*Total Days   186\n",
         "children":null

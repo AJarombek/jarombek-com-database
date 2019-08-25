@@ -134,7 +134,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"any",
                 "children":null
@@ -148,7 +148,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"any",
                 "children":null
@@ -162,7 +162,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"any",
                 "children":null
@@ -216,7 +216,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"this",
                 "children":null
@@ -347,7 +347,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"interface",
                 "children":null
@@ -407,7 +407,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"patch()",
                 "children":null
@@ -421,7 +421,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"?",
                 "children":null
@@ -457,7 +457,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" These were a few TypeScript features that really stood out to me.  I really missed  static typing amongst other features when switching back to JavaScript.  While I don't think TypeScript will replace my use of JavaScript, I do hope JavaScript implements some of these features in the future (in fact, there is a ",
+                "value":" These were a few TypeScript features that really stood out to me.  I really missed static typing amongst other features when switching back to JavaScript.  While I don't think TypeScript will replace my use of JavaScript, I do hope JavaScript implements some of these features in the future (in fact, there is a ",
                 "children":null
             },
             {

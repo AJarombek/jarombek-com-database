@@ -236,7 +236,7 @@ content = [
                     {
                         "el":"code",
                         "attributes":{
-                            "class":"jarombek-inline-code"
+                            "className":"jarombek-inline-code"
                         },
                         "value":"GET",
                         "children":null
@@ -250,7 +250,7 @@ content = [
                     {
                         "el":"code",
                         "attributes":{
-                            "class":"jarombek-inline-code"
+                            "className":"jarombek-inline-code"
                         },
                         "value":"POST",
                         "children":null
@@ -264,7 +264,7 @@ content = [
                     {
                         "el":"code",
                         "attributes":{
-                            "class":"jarombek-inline-code"
+                            "className":"jarombek-inline-code"
                         },
                         "value":"PUT",
                         "children":null
@@ -278,7 +278,7 @@ content = [
                     {
                         "el":"code",
                         "attributes":{
-                            "class":"jarombek-inline-code"
+                            "className":"jarombek-inline-code"
                         },
                         "value":"DELETE",
                         "children":null
@@ -292,7 +292,7 @@ content = [
                     {
                         "el":"code",
                         "attributes":{
-                            "class":"jarombek-inline-code"
+                            "className":"jarombek-inline-code"
                         },
                         "value":"GET",
                         "children":null
@@ -361,7 +361,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"GET",
                 "children":null
@@ -416,7 +416,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"GET",
                 "children":null
@@ -430,7 +430,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"GET",
                 "children":null
@@ -444,7 +444,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"POST",
                 "children":null
@@ -458,7 +458,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"GET",
                 "children":null
@@ -577,7 +577,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "class":"jarombek-blog-image",
+                    "className":"jarombek-blog-image",
                     "src":"https://asset.jarombek.com/posts/8-5-18-restapi.png"
                 },
                 "value":null,
@@ -627,7 +627,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "class":"jarombek-blog-image",
+                    "className":"jarombek-blog-image",
                     "src":"https://asset.jarombek.com/posts/8-5-18-graphql.png"
                 },
                 "value":null,

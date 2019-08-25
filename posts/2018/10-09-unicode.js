@@ -318,7 +318,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"U+0394",
                 "children":null
@@ -345,7 +345,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":" '\\u0394'",
                 "children":null
@@ -353,7 +353,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" uses.  A reasonable guess is that it uses  the Unicode character encoding.  Unfortunately it's not that simple.  Unicode is a standard for how to create character encodings, and there are many different encoding formats that match the Unicode spec. ",
+                "value":" uses.  A reasonable guess is that it uses the Unicode character encoding.  Unfortunately it's not that simple.  Unicode is a standard for how to create character encodings, and there are many different encoding formats that match the Unicode spec. ",
                 "children":null
             }
         ]
@@ -398,7 +398,7 @@ content = [
                     {
                         "el":"h5",
                         "attributes":{
-                            "classname":"jarombek-cte-title"
+                            "className":"jarombek-cte-title"
                         },
                         "value":null,
                         "children":[
@@ -413,7 +413,7 @@ content = [
                     {
                         "el":"div",
                         "attributes":{
-                            "classname":"jarombek-cte-body"
+                            "className":"jarombek-cte-body"
                         },
                         "value":null,
                         "children":[
@@ -431,7 +431,7 @@ content = [
                                     {
                                         "el":"code",
                                         "attributes":{
-                                            "class":"jarombek-inline-code"
+                                            "className":"jarombek-inline-code"
                                         },
                                         "value":"U+0074",
                                         "children":null
@@ -480,7 +480,7 @@ content = [
                     {
                         "el":"h5",
                         "attributes":{
-                            "classname":"jarombek-cte-title"
+                            "className":"jarombek-cte-title"
                         },
                         "value":null,
                         "children":[
@@ -495,7 +495,7 @@ content = [
                     {
                         "el":"div",
                         "attributes":{
-                            "classname":"jarombek-cte-body"
+                            "className":"jarombek-cte-body"
                         },
                         "value":null,
                         "children":[
@@ -537,7 +537,7 @@ content = [
                                     {
                                         "el":"code",
                                         "attributes":{
-                                            "class":"jarombek-inline-code"
+                                            "className":"jarombek-inline-code"
                                         },
                                         "value":"0xFF 0xFE",
                                         "children":null
@@ -551,7 +551,7 @@ content = [
                                     {
                                         "el":"code",
                                         "attributes":{
-                                            "class":"jarombek-inline-code"
+                                            "className":"jarombek-inline-code"
                                         },
                                         "value":"0xFE 0xFF",
                                         "children":null
@@ -612,7 +612,7 @@ content = [
                     {
                         "el":"h5",
                         "attributes":{
-                            "classname":"jarombek-cte-title"
+                            "className":"jarombek-cte-title"
                         },
                         "value":null,
                         "children":[
@@ -627,7 +627,7 @@ content = [
                     {
                         "el":"div",
                         "attributes":{
-                            "classname":"jarombek-cte-body"
+                            "className":"jarombek-cte-body"
                         },
                         "value":null,
                         "children":[
@@ -657,7 +657,7 @@ content = [
                                     {
                                         "el":"code",
                                         "attributes":{
-                                            "class":"jarombek-inline-code"
+                                            "className":"jarombek-inline-code"
                                         },
                                         "value":"0xFF 0xFE 0x00 0x00",
                                         "children":null
@@ -671,7 +671,7 @@ content = [
                                     {
                                         "el":"code",
                                         "attributes":{
-                                            "class":"jarombek-inline-code"
+                                            "className":"jarombek-inline-code"
                                         },
                                         "value":"0x00 0x00 0xFE 0xFF",
                                         "children":null
@@ -697,7 +697,7 @@ content = [
                                     {
                                         "el":"code",
                                         "attributes":{
-                                            "class":"jarombek-inline-code"
+                                            "className":"jarombek-inline-code"
                                         },
                                         "value":"0x00",
                                         "children":null
@@ -734,7 +734,7 @@ content = [
                     {
                         "el":"h5",
                         "attributes":{
-                            "classname":"jarombek-cte-title"
+                            "className":"jarombek-cte-title"
                         },
                         "value":null,
                         "children":[
@@ -749,7 +749,7 @@ content = [
                     {
                         "el":"div",
                         "attributes":{
-                            "classname":"jarombek-cte-body"
+                            "className":"jarombek-cte-body"
                         },
                         "value":null,
                         "children":[
@@ -812,7 +812,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"0x61 0x00",
                 "children":null
@@ -826,7 +826,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"0x61",
                 "children":null
@@ -840,7 +840,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"U+0061",
                 "children":null
@@ -869,7 +869,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"0x00 0x61",
                 "children":null
@@ -883,7 +883,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"0x00",
                 "children":null
@@ -897,7 +897,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"U+0061",
                 "children":null
@@ -924,7 +924,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"'beyoncé'",
                 "children":null
@@ -938,7 +938,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"\\u0301",
                 "children":null
@@ -986,7 +986,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"b",
                 "children":null
@@ -1000,7 +1000,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"b2",
                 "children":null
@@ -1035,7 +1035,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"b",
                 "children":null
@@ -1049,7 +1049,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"\\u0065\\u0301",
                 "children":null
@@ -1063,7 +1063,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"\\u0065",
                 "children":null
@@ -1077,7 +1077,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"\\u0301",
                 "children":null
@@ -1145,7 +1145,7 @@ content = [
                     {
                         "el":"h5",
                         "attributes":{
-                            "classname":"jarombek-cte-title"
+                            "className":"jarombek-cte-title"
                         },
                         "value":null,
                         "children":[
@@ -1160,7 +1160,7 @@ content = [
                     {
                         "el":"div",
                         "attributes":{
-                            "classname":"jarombek-cte-body"
+                            "className":"jarombek-cte-body"
                         },
                         "value":null,
                         "children":[
@@ -1234,7 +1234,7 @@ content = [
                     {
                         "el":"h5",
                         "attributes":{
-                            "classname":"jarombek-cte-title"
+                            "className":"jarombek-cte-title"
                         },
                         "value":null,
                         "children":[
@@ -1249,7 +1249,7 @@ content = [
                     {
                         "el":"div",
                         "attributes":{
-                            "classname":"jarombek-cte-body"
+                            "className":"jarombek-cte-body"
                         },
                         "value":null,
                         "children":[
@@ -1278,7 +1278,7 @@ content = [
                     {
                         "el":"h5",
                         "attributes":{
-                            "classname":"jarombek-cte-title"
+                            "className":"jarombek-cte-title"
                         },
                         "value":null,
                         "children":[
@@ -1293,7 +1293,7 @@ content = [
                     {
                         "el":"div",
                         "attributes":{
-                            "classname":"jarombek-cte-body"
+                            "className":"jarombek-cte-body"
                         },
                         "value":null,
                         "children":[
@@ -1322,7 +1322,7 @@ content = [
                     {
                         "el":"h5",
                         "attributes":{
-                            "classname":"jarombek-cte-title"
+                            "className":"jarombek-cte-title"
                         },
                         "value":null,
                         "children":[
@@ -1337,7 +1337,7 @@ content = [
                     {
                         "el":"div",
                         "attributes":{
-                            "classname":"jarombek-cte-body"
+                            "className":"jarombek-cte-body"
                         },
                         "value":null,
                         "children":[

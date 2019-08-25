@@ -43,7 +43,7 @@ preview = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"MODEL",
                 "children":null
@@ -57,7 +57,7 @@ preview = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"PIVOT",
                 "children":null
@@ -71,7 +71,7 @@ preview = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"code_written",
                 "children":null
@@ -98,7 +98,7 @@ preview = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"MODEL",
                 "children":null
@@ -124,7 +124,7 @@ preview = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"MODEL",
                 "children":null
@@ -138,7 +138,7 @@ preview = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"MODEL",
                 "children":null
@@ -189,7 +189,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"MODEL",
                 "children":null
@@ -203,7 +203,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"PIVOT",
                 "children":null
@@ -217,7 +217,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"code_written",
                 "children":null
@@ -244,7 +244,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"MODEL",
                 "children":null
@@ -270,7 +270,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"MODEL",
                 "children":null
@@ -284,7 +284,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"MODEL",
                 "children":null
@@ -311,7 +311,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"MODEL",
                 "children":null
@@ -325,7 +325,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"MODEL",
                 "children":null
@@ -349,7 +349,7 @@ content = [
     {
         "el":"span",
         "attributes":{
-            "class":"code-span"
+            "className":"code-span"
         },
         "value":"YEAR  LANGUAGE      LINES_WRITTEN\n----- ------------- ---------------\n2017  Swift         10726\n2016  Java          10370\n2017  Java          9690\n2017  JavaScript    6663\n2017  XML           5815\n2016  PHP           5433\n2017  PHP           3670\n....  ...           ....\n",
         "children":null
@@ -381,7 +381,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"MODEL",
                 "children":null
@@ -395,7 +395,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"PARTITION BY",
                 "children":null
@@ -409,7 +409,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"DIMENSION BY",
                 "children":null
@@ -423,7 +423,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"MEASURES",
                 "children":null
@@ -437,7 +437,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"PARTITION BY",
                 "children":null
@@ -451,7 +451,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"MODEL",
                 "children":null
@@ -484,7 +484,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"DIMENSION BY",
                 "children":null
@@ -498,7 +498,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"'Java'",
                 "children":null
@@ -512,7 +512,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"'Python'",
                 "children":null
@@ -533,7 +533,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"MEASURES",
                 "children":null
@@ -559,7 +559,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"lines",
                 "children":null
@@ -573,7 +573,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"lines_written",
                 "children":null
@@ -600,7 +600,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"MODEL",
                 "children":null
@@ -614,7 +614,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"FOR",
                 "children":null
@@ -640,7 +640,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"FOR",
                 "children":null
@@ -654,7 +654,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"CURRENTV()",
                 "children":null
@@ -678,7 +678,7 @@ content = [
     {
         "el":"span",
         "attributes":{
-            "class":"code-span"
+            "className":"code-span"
         },
         "value":"YEAR  LANGUAGE      TOTAL_LINES\n----- ------------- --------------\n2016  Java          1080\n2017  Java          1009\n2017  Swift         894\n2017  JavaScript    555\n2017  XML           485\n2016  PHP           453\n....  ...           ...\n",
         "children":null
@@ -697,7 +697,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"PIVOT",
                 "children":null
@@ -711,7 +711,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"PIVOT",
                 "children":null
@@ -725,7 +725,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"PIVOT",
                 "children":null
@@ -739,7 +739,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"year",
                 "children":null
@@ -763,7 +763,7 @@ content = [
     {
         "el":"span",
         "attributes":{
-            "class":"code-span"
+            "className":"code-span"
         },
         "value":"LANGUAGE       2014   2015   2016   2017   2018\n-------------- ------ ------ ------ ------ ------\nJavaScript                   2008   6663   1120\nXML                   42     2646   5815   0\nPHP                          5433   3670   0\nSass                                163    443\nTypeScript                          133    1850\nPL/SQL                       203    844    121\nSQL                          942    812    585\nC                     630    379    271    0\nJava           4282   1585   12962  12113  979\nPython                931    1122   1288   242\nHTML                         1413   1969   397\nCSS                          1233   1654   34\nJSON                  32     820    1019   112\nSwift                               10726  103\n",
         "children":null
@@ -782,7 +782,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"GROUP BY ROLLUP",
                 "children":null
@@ -796,7 +796,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"GROUPING()",
                 "children":null
@@ -820,7 +820,7 @@ content = [
     {
         "el":"span",
         "attributes":{
-            "class":"code-span"
+            "className":"code-span"
         },
         "value":"LANGUAGE       2014   2015   2016   2017   2018   TOTAL\n-------------- ------ ------ ------ ------ ------ ------\nTypeScript                          133    1850   1983\nJavaScript                   2008   6663   1120   9791\nJava           4282   1585   12962  12113  979    31921\nSQL                          942    812    585    2339\nSass                                163    443    606\nHTML                         1413   1969   397    3779\nPython                931    1122   1288   242    3583\nPL/SQL                       203    844    121    1168\nJSON                  32     820    1019   112    1983\nSwift                               10726  103    10829\nCSS                          1233   1654   34     2921\nC                     630    379    271    0      1280\nXML                   42     2646   5815   0      8503\nPHP                          5433   3670   0      9103\n                                                  89789\n",
         "children":null
@@ -839,7 +839,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"UNPIVOT",
                 "children":null
@@ -853,7 +853,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"PIVOT",
                 "children":null
@@ -877,7 +877,7 @@ content = [
     {
         "el":"span",
         "attributes":{
-            "class":"code-span"
+            "className":"code-span"
         },
         "value":"LANGUAGE       YEAR            LINES\n-------------- ----- ---------------\nTypeScript     TOTAL            1983\nTypeScript     2018             1850\nTypeScript     2017              133\nJavaScript     TOTAL            9791\nJavaScript     2018             1120\nJavaScript     2017             6663\nJavaScript     2016             2008\nJava           TOTAL           31921\nJava           2018              979\nJava           2017            12113\nJava           2016            12962\nJava           2015             1585\nJava           2014             4282\n",
         "children":null

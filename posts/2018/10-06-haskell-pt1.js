@@ -207,7 +207,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"if...else",
                 "children":null
@@ -242,7 +242,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"older 24",
                 "children":null
@@ -256,7 +256,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"1",
                 "children":null
@@ -270,7 +270,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"older 22",
                 "children":null
@@ -284,7 +284,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"-1",
                 "children":null
@@ -319,7 +319,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"| condition = outcome",
                 "children":null
@@ -357,7 +357,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"older'",
                 "children":null
@@ -373,7 +373,7 @@ content = [
     {
         "el":"mathnotation",
         "attributes":{
-            "tex":`older'(x) = \\begin{cases} 1 & x > 23 \\\\ 0 & x = 23 \\\\ -1 & otherwise \\end{cases}`
+            "tex":`﻿older'(x) = \\begin{cases} 1 & x > 23 \\\\ 0 & x = 23 \\\\ -1 & otherwise \\end{cases}`
         },
         "value":null,
         "children":[
@@ -394,7 +394,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":":",
                 "children":null
@@ -572,7 +572,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"[x^2 | x <- xs]",
                 "children":null
@@ -586,7 +586,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"x",
                 "children":null
@@ -600,7 +600,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"xs",
                 "children":null
@@ -614,7 +614,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"x^2",
                 "children":null
@@ -628,7 +628,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"sumListSq [2,3,4]",
                 "children":null
@@ -642,7 +642,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"[4,9,16]",
                 "children":null
@@ -656,7 +656,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"29",
                 "children":null
@@ -722,7 +722,7 @@ content = [
     {
         "el":"mathnotation",
         "attributes":{
-            "tex":`\\{(x', y') \\: | \\: x' \\in \\{0..x\\}, \\: y' \\in \\{0..y\\}\\}`
+            "tex":`﻿﻿\\{(x', y') \\: | \\: x' \\in \\{0..x\\}, \\: y' \\in \\{0..y\\}\\}`
         },
         "value":null,
         "children":[

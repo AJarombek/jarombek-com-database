@@ -157,7 +157,7 @@ content = [
     {
         "el":"span",
         "attributes":{
-            "class":"code-span"
+            "className":"code-span"
         },
         "value":"eyJhbGciOiJSUzI1NiJ9.\neyJpYXQiOjE1MjAzOTI5NDIsImV4cCI6MTUyMDM5NjU0Miwic3ViIjoiNWE5NjE2IyZThiZDBiZDVlIn0.\ndGQU3FsuuOy9-IEEMHGTPB1bCOOk_28d_vofg56h9\n",
         "children":null
@@ -197,7 +197,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"sub",
                 "children":null
@@ -211,7 +211,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"iat",
                 "children":null
@@ -225,7 +225,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"exp",
                 "children":null
@@ -481,7 +481,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"HttpInterceptor",
                 "children":null

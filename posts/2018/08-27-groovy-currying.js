@@ -170,7 +170,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"mult :: Int -> (Int -> Int)",
                 "children":null
@@ -184,7 +184,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"mult 2 3",
                 "children":null
@@ -198,7 +198,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"6",
                 "children":null
@@ -212,7 +212,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"mult",
                 "children":null
@@ -220,7 +220,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" takes a single integer argument and  returns a function that also takes a single integer argument.  Curried functions are commonly used  to create partial applications. ",
+                "value":" takes a single integer argument and returns a function that also takes a single integer argument.  Curried functions are commonly used  to create partial applications. ",
                 "children":null
             }
         ]
@@ -296,7 +296,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"dub",
                 "children":null
@@ -310,7 +310,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"2",
                 "children":null
@@ -360,7 +360,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Curried functions and partial applications are also easy to make in JavaScript using  ",
+                "value":" Curried functions and partial applications are also easy to make in JavaScript using ",
                 "children":null
             },
             {
@@ -415,7 +415,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"curry()",
                 "children":null
@@ -429,7 +429,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"curry()",
                 "children":null
@@ -443,7 +443,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"curry()",
                 "children":null
@@ -491,7 +491,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"curry()",
                 "children":null
@@ -518,7 +518,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"workout",
                 "children":null

@@ -161,7 +161,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"RANK()",
                 "children":null
@@ -175,7 +175,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"DENSE_RANK()",
                 "children":null
@@ -211,7 +211,7 @@ content = [
     {
         "el":"span",
         "attributes":{
-            "class":"code-span"
+            "className":"code-span"
         },
         "value":"NAME         SUM(B.TIME_READING) RANK      DENSE_RANK\n------------ ------------------- --------- ---------------\nJava         134                 1         1\nPL/SQL       26                  2         2\nSQL          26                  2         2\nJavaScript                       4         3\n",
         "children":null
@@ -230,7 +230,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"NULLS LAST",
                 "children":null
@@ -244,7 +244,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"null",
                 "children":null
@@ -258,7 +258,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"null",
                 "children":null
@@ -272,7 +272,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"NULLS LAST",
                 "children":null
@@ -299,7 +299,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"PARTITION BY",
                 "children":null
@@ -313,7 +313,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"book_languages",
                 "children":null
@@ -327,7 +327,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"code_written",
                 "children":null
@@ -372,7 +372,7 @@ content = [
     {
         "el":"span",
         "attributes":{
-            "class":"code-span"
+            "className":"code-span"
         },
         "value":"YEAR    LANGUAGE       LINES           YEARLY_RANK     ALL_TIME_RANK\n------- -------------- --------------- --------------- ---------------\n2014\tJava           4282            1               7\n2015\tJava           1585            1               14\n2015\tPython         931             2               23\n2015\tC              630             3               27\n2015\tXML            42              4               40\n2015\tJSON           32              5               42\n2016\tJava           12962           1               1\n2016\tPHP            5433            2               6\n2016\tXML            2646            3               9\n2016\tJavaScript     2008            4               10\n2016\tHTML           1413            5               15\n....    ....           ....            .               ..\n",
         "children":null
@@ -401,7 +401,7 @@ content = [
     {
         "el":"span",
         "attributes":{
-            "class":"code-span"
+            "className":"code-span"
         },
         "value":"YEAR     LANGUAGE     LINES           YEARLY_DISTRIBUTION ALL_TIME_DISTRIBUTION\n-------- ------------ --------------- ------------------- ---------------------\n2014\t Java         4282            0                   0.14\n2015\t Java         1585            0                   0.3\n2015     Python       931             0.25                0.5\n2015     C            630             0.5                 0.59\n2015     XML          42              0.75                0.89\n2015     JSON         32              1                   0.93\n2016     Java         12962           0                   0\n2016     PHP          5433            0.1                 0.11\n2016     XML          2646            0.2                 0.18\n2016     JavaScript   2008            0.3                 0.2\n2016     HTML         1413            0.4                 0.32\n....     ....         ....            ...                 ....\n",
         "children":null
@@ -442,7 +442,7 @@ content = [
     {
         "el":"span",
         "attributes":{
-            "class":"code-span"
+            "className":"code-span"
         },
         "value":"LANGUAGE              MEDIAN\n--------------------- ----------\nC                     325\nCSS                   1233\nHTML                  1413\nJSON                  466\nJava                  4282\nJavaScript            2008\nPHP                   3670\nPL/SQL                203\nPython                1026.5\nSQL                   812\nSass                  303\nSwift                 5414.5\nTypeScript            991.5\nXML                   1344\n",
         "children":null
@@ -461,7 +461,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"AVG()",
                 "children":null
@@ -475,7 +475,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"SUM()",
                 "children":null
@@ -511,7 +511,7 @@ content = [
     {
         "el":"span",
         "attributes":{
-            "class":"code-span"
+            "className":"code-span"
         },
         "value":"YEAR     TOTAL_LINES CUMULATIVE_LINES\n----- -------------- ----------------\n2014            4282             4282\n2015            3220             7502\n2016           29161            36663\n2017           47140            83803\n2018            5986            89789\n",
         "children":null
@@ -530,7 +530,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"cumulative_lines",
                 "children":null
@@ -544,7 +544,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"SUM(SUM(lines))",
                 "children":null
@@ -558,7 +558,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"ORDER BY year",
                 "children":null
@@ -572,7 +572,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW",
                 "children":null
@@ -620,7 +620,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"FIRST_VALUE()",
                 "children":null
@@ -634,7 +634,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"LAST_VALUE()",
                 "children":null
@@ -648,7 +648,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"NTH_VALUE()",
                 "children":null
@@ -662,7 +662,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"FIRST_VALUE()",
                 "children":null
@@ -686,7 +686,7 @@ content = [
     {
         "el":"span",
         "attributes":{
-            "class":"code-span"
+            "className":"code-span"
         },
         "value":"YEAR       TOTAL_LINES LAST_YEAR_TOTAL PERCENT_CHANGE\n------ --------------- --------------- ---------------\n  2014            4282            4282 100%\n  2015            3220            4282 75.2%\n  2016           29161            3220 905.62%\n  2017           47140           29161 161.65%\n  2018            5986           47140 12.7%\n",
         "children":null
@@ -705,7 +705,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"LISTAGG()",
                 "children":null
@@ -719,7 +719,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"WITHIN GROUP",
                 "children":null
@@ -743,7 +743,7 @@ content = [
     {
         "el":"span",
         "attributes":{
-            "class":"code-span"
+            "className":"code-span"
         },
         "value":"YEAR  LANGUAGES_USED                                TOTAL_LINES\n----- --------------------------------------------- ------------\n2014  Java                                          4282\n2015  Java, Python, C, XML, JSON                    3220\n2016  Java, PHP, XML, JavaScript, HTML, ...         29161\n2017  Java, Swift, JavaScript, XML, PHP, ...        47140\n2018  TypeScript, JavaScript, Java, SQL, ...        5986\n",
         "children":null
@@ -783,7 +783,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"MODEL",
                 "children":null
@@ -797,7 +797,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"PIVOT",
                 "children":null
