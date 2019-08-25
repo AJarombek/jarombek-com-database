@@ -255,7 +255,7 @@ content = [
                     {
                         "el":"h5",
                         "attributes":{
-                            "classname":"jarombek-cte-title"
+                            "className":"jarombek-cte-title"
                         },
                         "value":null,
                         "children":[
@@ -270,7 +270,7 @@ content = [
                     {
                         "el":"div",
                         "attributes":{
-                            "classname":"jarombek-cte-body"
+                            "className":"jarombek-cte-body"
                         },
                         "value":null,
                         "children":[
@@ -351,7 +351,7 @@ content = [
                     {
                         "el":"h5",
                         "attributes":{
-                            "classname":"jarombek-cte-title"
+                            "className":"jarombek-cte-title"
                         },
                         "value":null,
                         "children":[
@@ -366,7 +366,7 @@ content = [
                     {
                         "el":"div",
                         "attributes":{
-                            "classname":"jarombek-cte-body"
+                            "className":"jarombek-cte-body"
                         },
                         "value":null,
                         "children":[
@@ -505,7 +505,7 @@ content = [
                     {
                         "el":"h5",
                         "attributes":{
-                            "classname":"jarombek-cte-title"
+                            "className":"jarombek-cte-title"
                         },
                         "value":null,
                         "children":[
@@ -520,7 +520,7 @@ content = [
                     {
                         "el":"div",
                         "attributes":{
-                            "classname":"jarombek-cte-body"
+                            "className":"jarombek-cte-body"
                         },
                         "value":null,
                         "children":[
@@ -538,7 +538,7 @@ content = [
                                     {
                                         "el":"code",
                                         "attributes":{
-                                            "class":"jarombek-inline-code"
+                                            "className":"jarombek-inline-code"
                                         },
                                         "value":"<...>",
                                         "children":null
@@ -552,7 +552,7 @@ content = [
                                     {
                                         "el":"code",
                                         "attributes":{
-                                            "class":"jarombek-inline-code"
+                                            "className":"jarombek-inline-code"
                                         },
                                         "value":"List",
                                         "children":null
@@ -566,7 +566,7 @@ content = [
                                     {
                                         "el":"code",
                                         "attributes":{
-                                            "class":"jarombek-inline-code"
+                                            "className":"jarombek-inline-code"
                                         },
                                         "value":"List<T>",
                                         "children":null
@@ -580,7 +580,7 @@ content = [
                                     {
                                         "el":"code",
                                         "attributes":{
-                                            "class":"jarombek-inline-code"
+                                            "className":"jarombek-inline-code"
                                         },
                                         "value":"T",
                                         "children":null
@@ -594,7 +594,7 @@ content = [
                                     {
                                         "el":"code",
                                         "attributes":{
-                                            "class":"jarombek-inline-code"
+                                            "className":"jarombek-inline-code"
                                         },
                                         "value":"new List<int>();",
                                         "children":null
@@ -608,7 +608,7 @@ content = [
                                     {
                                         "el":"code",
                                         "attributes":{
-                                            "class":"jarombek-inline-code"
+                                            "className":"jarombek-inline-code"
                                         },
                                         "value":"new List<string>();",
                                         "children":null
@@ -633,7 +633,7 @@ content = [
                     {
                         "el":"h5",
                         "attributes":{
-                            "classname":"jarombek-cte-title"
+                            "className":"jarombek-cte-title"
                         },
                         "value":null,
                         "children":[
@@ -648,7 +648,7 @@ content = [
                     {
                         "el":"div",
                         "attributes":{
-                            "classname":"jarombek-cte-body"
+                            "className":"jarombek-cte-body"
                         },
                         "value":null,
                         "children":[
@@ -748,7 +748,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"object myObj;",
                 "children":null
@@ -762,7 +762,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"object()",
                 "children":null
@@ -776,7 +776,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"\"a string literal\"",
                 "children":null
@@ -893,7 +893,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"out",
                 "children":null
@@ -907,7 +907,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"in",
                 "children":null
@@ -954,7 +954,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"TK",
                 "children":null
@@ -968,7 +968,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"TV",
                 "children":null
@@ -982,7 +982,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"in",
                 "children":null
@@ -996,7 +996,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"out",
                 "children":null
@@ -1023,7 +1023,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"ICovariant",
                 "children":null
@@ -1037,7 +1037,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"VariantMap",
                 "children":null
@@ -1051,7 +1051,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"ICovariant",
                 "children":null
@@ -1086,7 +1086,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"TK",
                 "children":null
@@ -1100,7 +1100,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"TV",
                 "children":null
@@ -1135,7 +1135,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"VariantMap",
                 "children":null
@@ -1149,7 +1149,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"ICovariant",
                 "children":null
@@ -1163,7 +1163,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"Program",
                 "children":null
@@ -1198,7 +1198,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"InvariantMap",
                 "children":null
