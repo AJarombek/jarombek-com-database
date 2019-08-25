@@ -151,7 +151,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"mongo",
                 "children":null
@@ -190,7 +190,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"use <database>",
                 "children":null
@@ -225,7 +225,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"tree",
                 "children":null
@@ -260,7 +260,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"insert()",
                 "children":null
@@ -274,7 +274,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"tree",
                 "children":null
@@ -288,7 +288,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"find()",
                 "children":null
@@ -323,7 +323,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"pretty()",
                 "children":null
@@ -371,7 +371,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"update()",
                 "children":null
@@ -385,7 +385,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"$set",
                 "children":null
@@ -424,7 +424,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"EDITOR",
                 "children":null
@@ -438,7 +438,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"vim",
                 "children":null
@@ -494,7 +494,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"edit",
                 "children":null
@@ -529,7 +529,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"createTree",
                 "children":null
@@ -572,7 +572,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"createTree",
                 "children":null
@@ -586,7 +586,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"createTree()",
                 "children":null
@@ -613,7 +613,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"sold",
                 "children":null
@@ -627,7 +627,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"buyer_id",
                 "children":null
@@ -641,7 +641,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"update()",
                 "children":null
@@ -655,7 +655,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"updateMany()",
                 "children":null
@@ -711,7 +711,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"1000",
                 "children":null
@@ -746,7 +746,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"find()",
                 "children":null
@@ -775,7 +775,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" With knowledge of JavaScript and query languages, MongoDB can be an extremely powerful database.  I  only scratched the surface here, but there will be many more discoveries to come!  You can find all the code from this discovery on ",
+                "value":" With knowledge of JavaScript and query languages, MongoDB can be an extremely powerful database.  I only scratched the surface here, but there will be many more discoveries to come!  You can find all the code from this discovery on ",
                 "children":null
             },
             {

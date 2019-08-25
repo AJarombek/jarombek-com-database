@@ -22,7 +22,7 @@ preview = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"get",
                 "children":null
@@ -36,7 +36,7 @@ preview = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"set",
                 "children":null
@@ -50,12 +50,29 @@ preview = [
         ]
     },
     {
-        "el":"codesnippet",
-        "attributes":{
-            "language":"JavaScript"
-        },
-        "value":"var person = {\n    _first: 'Andy',\n    _last: 'Jarombek',\n    get full() {\n        console.info('Accessing Full Name');\n        // Use ES6 template literals\n        return `${this._first} ${this._last}`;\n    }\n};\n",
-        "children":null
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Setters can also perform validation on incoming data, such as type checking",
+                "children":null
+            },
+            {
+                "el":"sup",
+                "attributes":null,
+                "value":"1",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":": ",
+                "children":null
+            }
+        ]
     }
 ];
 
@@ -74,7 +91,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"get",
                 "children":null
@@ -88,7 +105,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"set",
                 "children":null

@@ -35,7 +35,7 @@ preview = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"JOIN",
                 "children":null
@@ -90,7 +90,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"JOIN",
                 "children":null
@@ -171,7 +171,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"CREATE",
                 "children":null
@@ -185,7 +185,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":":State",
                 "children":null
@@ -199,7 +199,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"name",
                 "children":null
@@ -213,7 +213,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":":State",
                 "children":null
@@ -240,7 +240,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"CREATE",
                 "children":null
@@ -296,7 +296,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"MATCH",
                 "children":null
@@ -310,7 +310,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"(s)",
                 "children":null
@@ -324,7 +324,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"s",
                 "children":null
@@ -338,7 +338,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"SET",
                 "children":null
@@ -386,7 +386,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"<-[:IN]-",
                 "children":null
@@ -400,7 +400,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":":IN",
                 "children":null
@@ -427,7 +427,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":":IN",
                 "children":null
@@ -508,7 +508,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"MATCH",
                 "children":null
@@ -529,7 +529,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "class":"jarombek-blog-image",
+                    "className":"jarombek-blog-image",
                     "src":"https://asset.jarombek.com/posts/11-6-17-FairfieldGraphImage.png"
                 },
                 "value":null,
@@ -547,7 +547,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I will look further at Neo4j and build off this graph in future discoveries. I hope this post  helps show how simple it is to build a graph database! ",
+                "value":" I will look further at Neo4j and build off this graph in future discoveries. I hope this post helps show how simple it is to build a graph database! ",
                 "children":null
             }
         ]

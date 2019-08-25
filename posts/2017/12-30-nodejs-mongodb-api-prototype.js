@@ -307,7 +307,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"music_api",
                 "children":null
@@ -349,7 +349,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "class":"jarombek-blog-image",
+                    "className":"jarombek-blog-image",
                     "src":"https://asset.jarombek.com/posts/12-30-17-mongodb.png"
                 },
                 "value":null,
@@ -388,7 +388,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "class":"jarombek-blog-image",
+                    "className":"jarombek-blog-image",
                     "src":"https://asset.jarombek.com/posts/12-30-17-restapi.png"
                 },
                 "value":null,
@@ -495,7 +495,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"Schema()",
                 "children":null
@@ -509,7 +509,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"required: true",
                 "children":null
@@ -523,7 +523,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"default: Date.now()",
                 "children":null
@@ -562,7 +562,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"CommentSchema",
                 "children":null
@@ -576,7 +576,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"CommentSchema",
                 "children":null
@@ -590,7 +590,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"SongSchema",
                 "children":null
@@ -625,7 +625,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"Schema",
                 "children":null
@@ -639,7 +639,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"name",
                 "children":null
@@ -722,7 +722,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"find",
                 "children":null
@@ -736,7 +736,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"Song",
                 "children":null
@@ -786,7 +786,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"res.format()",
                 "children":null
@@ -800,7 +800,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"Accept",
                 "children":null
@@ -979,7 +979,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"'text'",
                 "children":null
@@ -1042,7 +1042,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"SongSchema",
                 "children":null
@@ -1098,7 +1098,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"title",
                 "children":null
@@ -1112,7 +1112,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"artist",
                 "children":null
@@ -1126,7 +1126,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"album",
                 "children":null
@@ -1140,7 +1140,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"best_lyric",
                 "children":null
@@ -1169,7 +1169,7 @@ content = [
             {
                 "el":"img",
                 "attributes":{
-                    "class":"jarombek-blog-image",
+                    "className":"jarombek-blog-image",
                     "src":"https://asset.jarombek.com/posts/12-30-17-xmlresponsetext.png"
                 },
                 "value":null,
@@ -1208,7 +1208,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"Authorization",
                 "children":null
