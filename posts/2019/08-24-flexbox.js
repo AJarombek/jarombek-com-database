@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". CSS Grid is a new web page layout module introduced in 2017.  Today I’m writing about Flexbox, another new web page layout module released to new browsers in 2017",
+                "value":". CSS Grid is a new web page layout module introduced in 2017.  Today I'm writing about Flexbox, another new web page layout module released to new browsers in 2017",
                 "children":null
             },
             {
@@ -49,7 +49,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  While CSS Grid is a two-dimensional system used to create rigid layouts, Flexbox is a one-dimensional system used to create flexible layouts with dynamic resizing of elements.  Let’s go over the basics! ",
+                "value":".  While CSS Grid is a two-dimensional system used to create rigid layouts, Flexbox is a one-dimensional system used to create flexible layouts with dynamic resizing of elements.  Let's go over the basics! ",
                 "children":null
             }
         ]
@@ -101,7 +101,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". CSS Grid is a new web page layout module introduced in 2017.  Today I’m writing about Flexbox, another new web page layout module released to new browsers in 2017",
+                "value":". CSS Grid is a new web page layout module introduced in 2017.  Today I'm writing about Flexbox, another new web page layout module released to new browsers in 2017",
                 "children":null
             },
             {
@@ -113,7 +113,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  While CSS Grid is a two-dimensional system used to create rigid layouts, Flexbox is a one-dimensional system used to create flexible layouts with dynamic resizing of elements.  Let’s go over the basics! ",
+                "value":".  While CSS Grid is a two-dimensional system used to create rigid layouts, Flexbox is a one-dimensional system used to create flexible layouts with dynamic resizing of elements.  Let's go over the basics! ",
                 "children":null
             }
         ]
@@ -143,7 +143,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Flexbox is a one-dimensional layout system that allows a container element’s children to dynamically resize and order themselves based on their parents size",
+                "value":" Flexbox is a one-dimensional layout system that allows a container element's children to dynamically resize and order themselves based on their parents size",
                 "children":null
             },
             {
@@ -180,7 +180,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  It’s browser integration is further along than CSS Grid, which covers 93.2% of online traffic. ",
+                "value":".  It's browser integration is further along than CSS Grid, which covers 93.2% of online traffic. ",
                 "children":null
             }
         ]
@@ -193,7 +193,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Flexbox layouts consist of a flex container and one or more flex items.  The parent element in a Flexbox layout is the flex container.  Flex containers contain the ",
+                "value":" Flexbox layouts consist of a flex container and one or more flex items.  The parent element in a Flexbox layout is called a flex container.  Flex containers contain the ",
                 "children":null
             },
             {
@@ -207,7 +207,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" CSS declaration.  Direct children of the flex container are called flex items.  The next section walks through some simple Flexbox layouts. ",
+                "value":" CSS declaration.  Direct children of flex containers are called flex items.  The next section walks through some simple Flexbox layouts. ",
                 "children":null
             }
         ]
@@ -256,7 +256,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" to help demonstrate Flexbox layouts.  It displays a list of the top ten programming languages based on the number of lines I’ve coded in 2019.  Here is the first Flexbox layout: ",
+                "value":" to help demonstrate Flexbox layouts.  It displays a list of the top ten programming languages based on the number of lines I've coded in 2019.  Here is the first Flexbox layout: ",
                 "children":null
             }
         ]
@@ -308,7 +308,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I’m using Sass for my stylesheets to better represent the hierarchy of flex containers and flex items, along with the help of mixins and ",
+                "value":" I'm using Sass for my stylesheets to better represent the hierarchy of flex containers and flex items, along with the help of mixins and ",
                 "children":null
             },
             {
@@ -330,7 +330,7 @@ content = [
                 "attributes":{
                     "className":"jarombek-inline-code"
                 },
-                "value":"-ms-*",
+                "value":"-ms-",
                 "children":null
             },
             {
@@ -348,7 +348,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  IE versions 10 and 11 supports an older spec of Flexbox which is specified with these declaration prefixes. ",
+                "value":".  IE versions 10 and 11 support an older spec of Flexbox which is specified with these prefixes. ",
                 "children":null
             }
         ]
@@ -463,7 +463,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" in order to use the x-axis.  I made sure that the flex items went off the screen instead of moving onto the next line with the ",
+                "value":" in order to display the items horizontally.  I made sure that the flex items went off the screen instead of moving onto the next line with the ",
                 "children":null
             },
             {
@@ -516,7 +516,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If you change the screen size with these styles applied, you will notice how the flex items move around and resize to find room.  The following layout changes the way spacing is distributed around flex items and don’t allow them to grow in size above their natural width: ",
+                "value":" If you change the screen size with these styles applied, you will notice how the flex items move around and resize to find room.  The following layout changes the way spacing is distributed around flex items and prohibits flex items from growing in size above their natural width: ",
                 "children":null
             }
         ]
@@ -544,7 +544,7 @@ content = [
         "attributes":{
             "language":"Sass"
         },
-        "value":".flex-container {\n  display: flex;\n  align-items: center;\n  overflow-x: hidden;\n\n  // The attribute 'flex-flow' is shorthand for flex-direction and flex-wrap.  Define the main axis\n  // as the x-axis and allow flex item to wrap onto multiple lines.\n  flex-flow: row wrap;\n  // Define the flex items alignment along the main axis, in this case x-axis.  space-around\n  // specifies that items are evenly distributed in the line they appear on.\n  justify-content: space-around;\n\n  // IE 10-11 flexbox prefixes\n  display: -ms-flexbox;\n  -ms-flex-direction: row;\n  -ms-flex-wrap: wrap;\n\n  .flex-item {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n\n    height: auto;\n    width: auto;\n\n    // Since I assigned a flex-grow of 0 to each flex item, they can't grow.\n    flex-grow: 0;\n    // Since I assigned a flex-shrink of 1 to each flex item, they will shink in size evenly\n    // (if necessary).\n    flex-shrink: 1;\n    flex-basis: auto;\n\n\n    // IE 10-11 flexbox prefixes\n    display: -ms-flexbox;\n    -ms-flex-direction: row;\n    -ms-flex: 0 1 auto;\n  }\n}\n",
+        "value":".flex-container {\n  display: flex;\n  align-items: center;\n  overflow-x: hidden;\n\n  // The attribute 'flex-flow' is shorthand for flex-direction and flex-wrap.  Define the main axis\n  // as the x-axis and allow flex items to wrap onto multiple lines.\n  flex-flow: row wrap;\n  // Define the flex items alignment along the main axis, in this case the x-axis.  space-around\n  // specifies that items are evenly distributed in the line they appear on.\n  justify-content: space-around;\n\n  // IE 10-11 flexbox prefixes\n  display: -ms-flexbox;\n  -ms-flex-direction: row;\n  -ms-flex-wrap: wrap;\n\n  .flex-item {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n\n    height: auto;\n    width: auto;\n\n    // Since I assigned a flex-grow of 0 to each flex item, they can't grow.\n    flex-grow: 0;\n    // Since I assigned a flex-shrink of 1 to each flex item, they will shink in size evenly\n    // (if necessary).\n    flex-shrink: 1;\n    flex-basis: auto;\n\n\n    // IE 10-11 flexbox prefixes\n    display: -ms-flexbox;\n    -ms-flex-direction: row;\n    -ms-flex: 0 1 auto;\n  }\n}\n",
         "children":null
     },
     {
