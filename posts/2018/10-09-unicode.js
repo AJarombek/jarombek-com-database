@@ -1437,6 +1437,42 @@ content = [
         "children":null
     },
     {
+        "el":"updateinfo",
+        "attributes":{
+            "date":"September 1st, 2019"
+        },
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" I've also written Unicode code samples in ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://github.com/AJarombek/misc-code-samples/blob/master/C%23/\nbase/basic-framework-types/BasicFrameworkTypes/Unicode.cs"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"C#",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":". ",
+                "children":null
+            }
+        ]
+    },
+    {
         "el":"sectiontitle",
         "attributes":{
             "title":"Conclusions"

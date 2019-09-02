@@ -124,3 +124,6 @@ load('./posts/2019/06-17-terraform-module.js');
 load('./posts/2019/08-03-haskell-pt7.js');
 load('./posts/2019/08-18-type-equality.js');
 load('./posts/2019/08-24-flexbox.js');
+
+load('./posts/2019/09-03-rds-backups-pt1.js');
+// load('./posts/2019/09-05-rds-backups-pt2.js');
