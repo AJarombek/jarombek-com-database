@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I discussed my existing AWS infrastructure and the additional resources needed to automate RDS instance backups using a lambda function.  In this article I create those additional resources and further explain my design decisions. Finally, I test the lambda function and show the backup file in my S3 bucket. ",
+                "value":" I discussed my existing AWS infrastructure and the additional resources needed to automate backups for a RDS MySQL instance using a lambda function.  In this article I'll create those additional resources and further explain my design decisions. Finally, I'll test the lambda function and show the backup file in my S3 bucket. ",
                 "children":null
             }
         ]
@@ -89,7 +89,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I discussed my existing AWS infrastructure and the additional resources needed to automate RDS instance backups using a lambda function.  In this article I create those additional resources and further explain my design decisions. Finally, I test the lambda function and show the backup file in my S3 bucket. ",
+                "value":" I discussed my existing AWS infrastructure and the additional resources needed to automate backups for a RDS MySQL instance using a lambda function.  In this article I'll create those additional resources and further explain my design decisions. Finally, I'll test the lambda function and show the backup file in my S3 bucket. ",
                 "children":null
             }
         ]
@@ -123,7 +123,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/\nsaints-xctf-infrastructure"
+                    "href":"https://www.saintsxctf.com"
                 },
                 "value":null,
                 "children":[
@@ -138,7 +138,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" application.  Before creating the lambda function, all my application infrastructure was in place.  This includes a VPC with four subnets - two public and two private.  It also includes web servers behind a load balancer and a highly available RDS MySQL database.  Here is a diagram of my existing infrastructure: ",
+                "value":"   application.  Before creating the lambda function, all my application infrastructure was in place.  This includes a VPC with four subnets - two public and two private.  It also includes web servers behind a load balancer and a highly available RDS MySQL database.  Here is a diagram of my existing infrastructure: ",
                 "children":null
             }
         ]
@@ -190,7 +190,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", there are four additional resources needed to implement the lambda function.  The first is the lambda function itself, which is placed in the private subnets alongside the RDS instances.  The second is an S3 bucket to store the database backup files.  The third is credentials for the database stored in Secrets Manager.  The fourth and final resource is a VPC endpoint allowing the lambda function to access S3 and Secrets Manager.  We actually need two separate VPC endpoints to complete this task.  Here is the infrastructure diagram with the new resources: ",
+                "value":", there are four additional resources needed to implement the lambda function.  The first is the lambda function itself, which is placed in the VPC alongside the RDS instances.  The second is an S3 bucket to store the database backup files.  The third is credentials for the database which are stored in Secrets Manager.  The fourth and final resource is a VPC endpoint allowing the lambda function to access S3 and Secrets Manager.  We actually need two separate VPC endpoints to complete this task.  Here is the infrastructure diagram with the new resources: ",
                 "children":null
             }
         ]
@@ -396,7 +396,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"var.prod",
                 "children":null
@@ -404,13 +404,13 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" variable.  Both production and development databases live in the same VPC and subnets, so I grab the VPC and subnet information with the ",
+                "value":" variable.  Production and development databases live in the same VPC and subnets, so I grab the VPC and subnet information with the ",
                 "children":null
             },
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"data",
                 "children":null
@@ -458,7 +458,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"archive_file",
                 "children":null
@@ -472,7 +472,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"archive_file",
                 "children":null
@@ -575,7 +575,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"resource",
                 "children":null
@@ -589,7 +589,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"SaintsXCTFMySQLBackupPROD",
                 "children":null
@@ -597,7 +597,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and it uses the Python 3 runtime.  I pass the RDS instance domain name as an environment variable to the functions runtime environment.  This is used to connect to the database.  The domain name can also be obtained programmatically in the lambda function, however a ",
+                "value":" and uses the Python 3 runtime.  I pass the RDS instance domain name as an environment variable to the functions runtime environment.  This is used to connect to the database.  The domain name can also be obtained programmatically in the lambda function, however a ",
                 "children":null
             },
             {
@@ -682,7 +682,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"rds-backup-lambda-policy",
                 "children":null
@@ -696,7 +696,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"saints-xctf-rds-backup-lambda-role",
                 "children":null
@@ -704,7 +704,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" IAM role, which in turn is bound to the lambda function.  The IAM policy grants the lambda function access to Secrets Manager, S3, RDS, and Network Interfaces in the VPC.  The Network Interface access is required for the lambda function to connect to my VPC",
+                "value":" IAM role, which in turn is bound to the lambda function.  The IAM policy grants the lambda function access to Secrets Manager, S3, RDS, and the Network Interfaces in the VPC.  Network Interface access is required for the lambda function to connect to my VPC",
                 "children":null
             },
             {
@@ -737,7 +737,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Further improvement can be done to this policy by restricting RDS and S3 access to certain operations. ",
+                "value":" Further improvement can be made to this policy by restricting RDS and S3 access to certain operations. ",
                 "children":null
             }
         ]
@@ -750,7 +750,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The final piece of my lambda function infrastructure is a CloudWatch trigger",
+                "value":" The final piece of lambda function infrastructure is a CloudWatch trigger",
                 "children":null
             },
             {
@@ -811,7 +811,26 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The lambda function is written in Python and utilizes the boto3 AWS SDK.  It grabs the database credentials from Secrets Manager, runs a Bash script which calls the ",
+                "value":" The lambda function is written in Python and utilizes the ",
+                "children":null
+            },
+            {
+                "el":"strong",
+                "attributes":null,
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"boto3",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" AWS SDK.  It grabs the database credentials from Secrets Manager, runs a Bash script which calls the ",
                 "children":null
             },
             {
@@ -851,7 +870,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"subprocess.check_call()",
                 "children":null
@@ -865,7 +884,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"saintsxctf",
                 "children":null
@@ -943,7 +962,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" creates the buckets and gives other AWS resources read and write access to bucket objects (files). ",
+                "value":" create the buckets and give other AWS resources read and write access to bucket objects (files). ",
                 "children":null
             }
         ]
@@ -987,13 +1006,13 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Protecting sensitive data is paramount when developing software.  To avoid hard coding credentials anywhere in my source code, I utilized AWS Secrets Manager to store my database credentials.  As I previously showed, the Python lambda function grabs the RDS database credentials from Secrets Manager via the AWS SDK.  The following IaC stores RDS credentials in Secrets Manager through a command line variable ",
+                "value":" Protecting sensitive data is paramount when developing software.  To avoid hard coding credentials anywhere in my source code, I utilized AWS Secrets Manager to store database credentials.  As I previously showed, the Python lambda function grabs the RDS database credentials from Secrets Manager via the AWS SDK.  The following IaC stores RDS credentials in Secrets Manager through a command line variable ",
                 "children":null
             },
             {
                 "el":"code",
                 "attributes":{
-                    "class":"jarombek-inline-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"rds_secrets",
                 "children":null
@@ -1100,7 +1119,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" A consequence of my AWS Lambda function living in my application VPC (so it can connect to my RDS instance) is that it has no access to the internet.  This is a problem when using the AWS SDK, which requires an internet connection to access other AWS resources.  Fortunately, Amazon created a solution to this problem called VPC endpoints.  VPC endpoints enable access to other AWS services without the need for an internet connection. I use them to connect to Secrets Manager and S3 from my lambda function. ",
+                "value":" A consequence of my AWS Lambda function living in my application VPC (so it can connect to my RDS instance) is that it has no access to the internet.  This is a problem when using the AWS SDK, which requires an internet connection to access other AWS resources.  Fortunately, Amazon created a solution to this problem called VPC endpoints.  VPC endpoints provide access to other AWS services without the need for an internet connection. I use them to connect to Secrets Manager and S3 from my lambda function. ",
                 "children":null
             }
         ]
@@ -1235,7 +1254,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" There are multiple options for invoking the AWS Lambda function.  One option is to test the function directly in the AWS Console.  It can also be invoked programmatically using the AWS CLI or SDKs.  I could enhance the lambda function by placing it behind API Gateway.  Or I can just wait until 7:00am UTC for the function to be invoked via the CloudWatch event. ",
+                "value":" There are multiple options for invoking the AWS Lambda function.  One option is to test the function directly in the AWS Console.  Another is to invoke it programmatically using the AWS CLI or SDKs.  I could enhance the lambda function by placing it behind API Gateway.  Or I can just wait until 7:00am UTC for the function to be invoked via the CloudWatch event. ",
                 "children":null
             }
         ]
@@ -1248,7 +1267,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" After testing the functions a few times manually, I checked my S3 bucket and saw my ",
+                "value":" After testing the function a few times manually, I checked my S3 bucket and saw the ",
                 "children":null
             },
             {
@@ -1376,7 +1395,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Creating an AWS Lambda function that handles RDS MySQL backups involved a lot of moving parts and was more complex than I initially anticipated.  The biggest hurdle was getting the function to connect to an RDS instance living in a private subnet while simultaneously granting it access to S3 and SecretsManager.  You can view the code from this discovery post along with the rest of my application infrastructure on ",
+                "value":" Creating an AWS Lambda function that handles RDS MySQL backups involved a lot of moving parts and was more complex than I initially anticipated.  The biggest hurdle was getting the function to connect to an RDS instance living in a private subnet while simultaneously granting it access to S3 and Secrets Manager.  You can view the code from this discovery post along with the rest of my application infrastructure on ",
                 "children":null
             },
             {
