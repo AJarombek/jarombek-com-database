@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When working with Amazon RDS (Relational Database Service) or any other database, creating backups of your data is an important safety precaution.  The data of an application is often its most important asset, and if its lost the app is rendered useless.  With RDS, Amazon provides a backup mechanism called snapshots.  Snapshots backup the database instance and allow users to restore their RDS instance from a snapshot",
+                "value":" When working with Amazon RDS (Relational Database Service) or any other database, creating backups of your data is an important safety precaution.  The data of an application is often its most important asset, and if its lost or damaged the app is rendered useless.  With RDS, Amazon provides a backup mechanism called snapshots.  Snapshots backup the database instance and allow users to restore their RDS instance from a snapshot",
                 "children":null
             },
             {
@@ -41,7 +41,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Internally snapshots are stored in an Amazon S3 (Simple Storage Service) bucket.  However, these backups aren’t accessible through S3, since the bucket is hidden from the users AWS account",
+                "value":" Internally snapshots are stored in an Amazon S3 (Simple Storage Service) bucket.  However, these backups aren't accessible through S3, since the bucket is hidden from the users AWS account",
                 "children":null
             },
             {
@@ -53,7 +53,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The only way to see snapshots is through the RDS service.  Also, snapshots can’t be downloaded and their contents can’t be viewed.  This poses some serious limitations when trying to test a database backup. ",
+                "value":".  The only way to see snapshots is through the RDS service.  Also, snapshots aren't downloadable and their contents can't be viewed.  This poses some serious limitations when trying to test a database backup. ",
                 "children":null
             }
         ]
@@ -69,7 +69,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When working with Amazon RDS (Relational Database Service) or any other database, creating backups of your data is an important safety precaution.  The data of an application is often its most important asset, and if its lost the app is rendered useless.  With RDS, Amazon provides a backup mechanism called snapshots.  Snapshots backup the database instance and allow users to restore their RDS instance from a snapshot",
+                "value":" When working with Amazon RDS (Relational Database Service) or any other database, creating backups of your data is an important safety precaution.  The data of an application is often its most important asset, and if its lost or damaged the app is rendered useless.  With RDS, Amazon provides a backup mechanism called snapshots.  Snapshots backup the database instance and allow users to restore their RDS instance from a snapshot",
                 "children":null
             },
             {
@@ -94,7 +94,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Internally snapshots are stored in an Amazon S3 (Simple Storage Service) bucket.  However, these backups aren’t accessible through S3, since the bucket is hidden from the users AWS account",
+                "value":" Internally snapshots are stored in an Amazon S3 (Simple Storage Service) bucket.  However, these backups aren't accessible through S3, since the bucket is hidden from the users AWS account",
                 "children":null
             },
             {
@@ -106,7 +106,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The only way to see snapshots is through the RDS service.  Also, snapshots can’t be downloaded and their contents can’t be viewed.  This poses some serious limitations when trying to test a database backup. ",
+                "value":".  The only way to see snapshots is through the RDS service.  Also, snapshots aren't downloadable and their contents can't be viewed.  This poses some serious limitations when trying to test a database backup. ",
                 "children":null
             }
         ]
@@ -137,7 +137,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Due to the limitations of snapshots, custom solutions for RDS backups are often required.  In this series of articles, I’m going to create an automated mechanism for backing up RDS instances.  My approach uses an AWS Lambda function and the mysqldump command line utility to store MySQL database backup files on Amazon S3. ",
+                "value":" Due to the limitations of snapshots, custom solutions for RDS backups are often required.  In this series of articles, I'm going to create an automated mechanism for backing up RDS instances.  My approach uses an AWS Lambda function and the mysqldump command line utility to store MySQL database backup files on Amazon S3. ",
                 "children":null
             }
         ]
@@ -171,7 +171,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" website. In this article I’m discussing the AWS infrastructure around my SaintsXCTF RDS database, which helps give context for the design choices I’ve made.  In the ",
+                "value":" website. In this article I'll discuss the AWS infrastructure around my SaintsXCTF RDS database, which helps give context for the design choices I made.  In my ",
                 "children":null
             },
             {
@@ -184,7 +184,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"following article",
+                        "value":"next  article",
                         "children":null
                     }
                 ]
@@ -192,7 +192,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I’ll discuss the code required to create the lambda function. ",
+                "value":" I'll discuss the code required to create the lambda function. ",
                 "children":null
             }
         ]
@@ -220,7 +220,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" At a high level, the SaintsXCTF application lives in a single VPC inside my AWS account.  This VPC has four subnets, two that are private and two that are public. ",
+                "value":" At a high level, the SaintsXCTF application lives in a single VPC inside my AWS account.  My VPC has four subnets, two which are private and which that are public. ",
                 "children":null
             }
         ]
@@ -275,7 +275,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Here’s an infrastructure diagram for the VPC and subnets: ",
+                "value":" Here's an infrastructure diagram for my VPC and subnets: ",
                 "children":null
             }
         ]
@@ -306,7 +306,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The web application for SaintsXCTF lives on an EC2 instance behind a load balancer in the public subnets.  The RDS MySQL database is highly available and lives in the private subnets.  Since the database exists in the private subnet, only resources in the VPC are able to access it.  Any IP addresses elsewhere in the internet are blocked from reaching it.  This is great for security, since only the web application in the public subnet should access the database.  However, it makes the process of automating database backups a bit trickier (as we will soon see). ",
+                "value":" The web application for SaintsXCTF lives on an EC2 instance behind a load balancer in the public subnets.  The RDS MySQL database is highly available and lives in the private subnets.  Since the database exists in a private subnet, only resources within the VPC are able to access it.  Any IP addresses located elsewhere on the internet are blocked from reaching it.  This is great for security, since only the web application in the public subnet should access the database.  However, it makes the process of automating database backups a bit trickier (as we will soon see). ",
                 "children":null
             }
         ]
@@ -420,7 +420,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The first piece of infrastructure needed to automate database backups is the lambda function.  Since the lambda function needs access to a database in a private subnet, it must be located within the applications VPC. ",
+                "value":" The first piece of infrastructure needed to automate database backups is a lambda function.  Since the lambda function needs access to a database in a private subnet, it must be located within the applications VPC. ",
                 "children":null
             }
         ]
@@ -433,7 +433,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The second piece of infrastructure needed is an S3 bucket to store the SQL files containing database backups. While S3 buckets are assigned regions, they can’t be placed within a VPC.  S3 buckets can be described as a global resource within the cloud infrastructure. ",
+                "value":" The second piece of infrastructure needed is a S3 bucket to store the SQL files containing database backups. While S3 buckets are assigned regions, they can't be placed within a VPC.  S3 buckets can be described as a global resource within the cloud infrastructure. ",
                 "children":null
             }
         ]
@@ -446,7 +446,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The third and final piece of infrastructure needed is Amazon Secrets Manager.  Within Secrets Manager I store the database username and password.  This way the credentials aren’t hard-coded anywhere within the lambda function.  Just like S3, Secrets Manager is assigned a region but not a VPC. ",
+                "value":" The third piece of infrastructure needed is Amazon Secrets Manager.  With Secrets Manager I'm able to securely store  the database username and password.  Thanks to Secrets Manager my database credentials aren't hard-coded within the lambda function.  Just like S3, Secrets Manager is assigned a region but not a VPC. ",
                 "children":null
             }
         ]
@@ -490,7 +490,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Unfortunately, this diagram still has some missing pieces.  I quickly learned that placing an AWS Lambda function within a VPC results in some complications.  Since I placed the lambda function within a private subnet to connect to the database, it no longer had internet access.  This is the default behavior of lambda functions within a VPC",
+                "value":" Unfortunately, this diagram still has some missing pieces.  I quickly learned that placing an AWS Lambda function within a VPC causes some complications.  Since I placed the lambda function within the VPC to connect to the database, it no longer had internet access.  This is the default behavior of lambda functions within a VPC",
                 "children":null
             },
             {
@@ -515,7 +515,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" While my lambda function was still able to connect to the RDS instance, it lost connection to Secrets Manager and the S3 bucket.  RDS connections still worked because the lambda function and database existed in the same private subnet.  Because of this the databases private IP address was used instead of its public one.  However, S3 and Secrets Manager don’t exist in my applications VPC.  Therefore the only way to connect to them is over the internet. ",
+                "value":" While my lambda function was still able to connect to the RDS instance, it lost connection to Secrets Manager and the S3 bucket.  RDS connections still worked because the lambda function and database existed in the same  VPC.  Because of this I could utilize the database's private IP address instead of its public one.  However, S3 and Secrets Manager didn't exist in my applications VPC.  Therefore the only way to connect to them was over the internet. ",
                 "children":null
             }
         ]
@@ -599,7 +599,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This article helped give a high-level overview of my AWS infrastructure and the new parts needed to automate database backups.  In my ",
+                "value":" This article gave a high-level overview of my AWS infrastructure and the new parts needed to automate database backups.  In my ",
                 "children":null
             },
             {
@@ -620,7 +620,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", I’ll implement these new pieces of infrastructure and go over the AWS Lambda function which lives at the heart of the backup process. ",
+                "value":", I'll implement these new pieces of infrastructure and go over the AWS Lambda function which lives at the heart of the backup process. ",
                 "children":null
             }
         ]
@@ -638,7 +638,7 @@ db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
     name: postName,
-    title: "AWS Lambda Function to Backup a MySQL RDS Instance Part I: VPC Infrastructure",
+    title: "AWS Lambda Function for MySQL RDS Backups Part I: VPC Infrastructure",
     description: `In this series of articles, I’m going to create an automated mechanism for backing 
         up RDS instances.  My approach uses an AWS Lambda function and the mysqldump command line 
         utility to store MySQL database backup files on Amazon S3.`,

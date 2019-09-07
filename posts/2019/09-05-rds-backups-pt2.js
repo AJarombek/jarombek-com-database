@@ -1415,7 +1415,7 @@ db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
     name: postName,
-    title: "AWS Lambda Function to Backup a MySQL RDS Instance Part II: Building the Function",
+    title: "AWS Lambda Function for MySQL RDS Backups Part II: Building the Function",
     description: `In this article I create additional AWS resources and further explain my design 
         decisions.  Finally, I test the lambda function and show the backup file in my S3 bucket.`,
     date: postDate,
