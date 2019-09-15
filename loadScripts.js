@@ -128,3 +128,4 @@ load('./posts/2019/08-24-flexbox.js');
 load('./posts/2019/09-03-rds-backups-pt1.js');
 load('./posts/2019/09-05-rds-backups-pt2.js');
 load('./posts/2019/09-15-elasticsearch.js');
+load('./posts/2019/09-17-linq.js');
