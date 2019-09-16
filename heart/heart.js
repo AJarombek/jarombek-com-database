@@ -14,9 +14,11 @@ const my_heart = `
 Object.seal(my_heart);
 
 const current_feeling = `
-    Hi my love, I hope life is treating you kindly.  I don't really know what you are feeling or thinking or who you love, 
-    so I won't risk trying to guess.  I just want you to know that I'm always here for you.  If you called today I would 
-    answer.  If you showed up on my front door in a month I would let you in.  If you texted me a year from now I would 
-    reply back.  With all the kindness, understanding, and love I could muster.  At any time.  For whatever your reason.  
-    I miss you and love you.  Try to be easy on yourself, your heart is golden (like daylight).  Love Always, Andy.
+    I want to write this in case someone is still being mean to her.  She is a wonderful person.  
+    I pray for her to continue having strength despite all the adversity.  I feel so reassured that 
+    she has great friends looking out for her after seeing a friend supporting her just over a month ago.  
+    She is so loved, I hope she knows that.  I hope I am doing enough for her.  If there is anything 
+    else I can do to support and help, just let me know or have someone tell me.  No matter what you 
+    decide to do, you will always have my full love and support.  I hope you have a more peaceful 
+    road ahead, my love.
 `;

@@ -16,11 +16,11 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Over the past few months I’ve read a book about the ELK stack.  ",
+                "value":" Over the past few months I've read a book about the ELK stack.  ",
                 "children":null
             },
             {
-                "el":"b",
+                "el":"strong",
                 "attributes":null,
                 "value":null,
                 "children":[
@@ -39,7 +39,7 @@ preview = [
                 "children":null
             },
             {
-                "el":"b",
+                "el":"strong",
                 "attributes":null,
                 "value":null,
                 "children":[
@@ -58,7 +58,7 @@ preview = [
                 "children":null
             },
             {
-                "el":"b",
+                "el":"strong",
                 "attributes":null,
                 "value":null,
                 "children":[
@@ -77,7 +77,7 @@ preview = [
                 "children":null
             },
             {
-                "el":"b",
+                "el":"strong",
                 "attributes":null,
                 "value":null,
                 "children":[
@@ -92,7 +92,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"ibana.  Together these three technologies provide the ability to search, stream, and visualize data.  In this article I discuss Elasticsearch, which is the core technology of ELK Stack.  First I’ll define Elasticsearch and provide details about what its used for.  Second I’ll create AWS infrastructure for Elasticsearch using the Amazon Elasticsearch Service.  Third and finally I’ll populate Elasticsearch with some data and show some basic queries of that data. ",
+                "value":"ibana.  Together these three technologies provide the ability to search, stream, and visualize data.  In this article I discuss Elasticsearch, which is the core technology of ELK Stack.  First I'll define Elasticsearch and provide details about what its used for.  Second I'll create AWS infrastructure for Elasticsearch using Amazon Elasticsearch Service.  Third and finally I'll populate Elasticsearch with data and show some basic queries. ",
                 "children":null
             }
         ]
@@ -123,11 +123,11 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Over the past few months I’ve read a book about the ELK stack.  ",
+                "value":" Over the past few months I've read a book about the ELK stack.  ",
                 "children":null
             },
             {
-                "el":"b",
+                "el":"strong",
                 "attributes":null,
                 "value":null,
                 "children":[
@@ -146,7 +146,7 @@ content = [
                 "children":null
             },
             {
-                "el":"b",
+                "el":"strong",
                 "attributes":null,
                 "value":null,
                 "children":[
@@ -165,7 +165,7 @@ content = [
                 "children":null
             },
             {
-                "el":"b",
+                "el":"strong",
                 "attributes":null,
                 "value":null,
                 "children":[
@@ -184,7 +184,7 @@ content = [
                 "children":null
             },
             {
-                "el":"b",
+                "el":"strong",
                 "attributes":null,
                 "value":null,
                 "children":[
@@ -199,7 +199,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"ibana.  Together these three technologies provide the ability to search, stream, and visualize data.  In this article I discuss Elasticsearch, which is the core technology of ELK Stack.  First I’ll define Elasticsearch and provide details about what its used for.  Second I’ll create AWS infrastructure for Elasticsearch using the Amazon Elasticsearch Service.  Third and finally I’ll populate Elasticsearch with some data and show some basic queries of that data. ",
+                "value":"ibana.  Together these three technologies provide the ability to search, stream, and visualize data.  In this article I discuss Elasticsearch, which is the core technology of ELK Stack.  First I'll define Elasticsearch and provide details about what its used for.  Second I'll create AWS infrastructure for Elasticsearch using Amazon Elasticsearch Service.  Third and finally I'll populate Elasticsearch with data and show some basic queries. ",
                 "children":null
             }
         ]
@@ -241,7 +241,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  It’s also a document-oriented NoSQL database that holds data in schemaless JSON documents and provides the ability to query data using JSON syntax",
+                "value":".  It's also a document-oriented NoSQL database that holds data in schemaless JSON documents and provides the ability to query data using JSON syntax",
                 "children":null
             },
             {
@@ -265,7 +265,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  It’s the core technology of ELK stack, with Logstash utilized as a pipeline for data into Elasticsearch and Kibana used as a way to visualize the data in Elasticsearch. ",
+                "value":".  It's the core technology of ELK stack, along with Logstash and Kibana.  Logstash is utilized as a pipeline for data into Elasticsearch and Kibana is used as a way to visualize the data in Elasticsearch. ",
                 "children":null
             }
         ]
@@ -278,7 +278,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Elasticsearch is commonly used to perform quick text searches.  I’ve explored ",
+                "value":" Elasticsearch is commonly used to perform quick text searches.  I've explored ",
                 "children":null
             },
             {
@@ -299,7 +299,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" briefly in the past with MongoDB and Node.js.  However, text search isn’t the main reason to use a document store like MongoDB.  If you want a data store built around text search, Elasticsearch is a great option. ",
+                "value":" briefly in the past with MongoDB and Node.js.  However, text search isn't the main reason to use a document store like MongoDB.  If you want a data store built around text search, Elasticsearch is a great option. ",
                 "children":null
             }
         ]
@@ -312,7 +312,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Elasticsearch is also used for analytics, which is the process of discovering patterns in a large set of data. ",
+                "value":" Elasticsearch is also used for analytics, which is the process of discovering patterns in a large data set. ",
                 "children":null
             }
         ]
@@ -340,7 +340,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" An Elasticsearch server can be run locally, on a virtual machine, on a container, and by other means.  AWS provides a service for Elasticsearch called Amazon Elasticsearch Service.  Behind the scenes Amazon Elasticsearch Service runs an Elasticsearch cluster on EC2 virtual machines.  Amazon takes care of these EC2 instances, allowing developers to focus on populating and querying data instead of infrastructure maintenance. ",
+                "value":" An Elasticsearch server can be run locally, on a virtual machine, on a container, or by other means.  AWS provides a service for Elasticsearch called Amazon Elasticsearch Service.  Behind the scenes Amazon Elasticsearch Service runs an Elasticsearch cluster on EC2 virtual machines.  Amazon takes care of these EC2 instances, allowing developers to focus on populating and querying data instead of infrastructure maintenance. ",
                 "children":null
             }
         ]
@@ -461,7 +461,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Using the Kibana URL in a browser should navigate to the Elasticsearch server’s Kibana UI.  If you get a DNS error instead, make sure you used the proper IP address in the Terraform module. ",
+                "value":" Using the Kibana URL in a browser should navigate to the Elasticsearch server's Kibana UI.  If you get a DNS error instead, make sure you used the proper IP address in the Terraform module. ",
                 "children":null
             }
         ]
@@ -492,7 +492,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now it’s time to start working with Elasticsearch! ",
+                "value":" Now it's time to start working with Elasticsearch! ",
                 "children":null
             }
         ]
@@ -611,7 +611,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" A type is a logical grouping of documents in Elasticsearch.  By default types in  Elasticsearch are schemaless. This means documents within a type can contain different fields.  However, the data type used by a field in a type must be consistent across all documents.  Schemas for types can be created through mappings.  In RDBMS terms, a type is similar to a table (However in RDBMS a table has a strict schema).  In MongoDB terms, a type is the same construct as a collection. ",
+                                        "value":" A type is a logical grouping of documents in Elasticsearch.  By default, types in  Elasticsearch are schemaless. This means documents within a type can contain different fields.  However, the data type used by a field in a type must be consistent across all documents.  Schemas for types can be created through mappings.  In RDBMS terms, a type is similar to a table (However in RDBMS a table has a strict schema).  In MongoDB terms, a type is the same construct as a collection. ",
                                         "children":null
                                     }
                                 ]
@@ -655,7 +655,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" A document holds data in fields and conforms to a certain type in Elasticsearch.  Documents are represented as JSON.  In RDBMS terms, a document is similar to a row in a table (although a row in a relational database can’t hold nested data while a JSON document in Elasticsearch can).  A document in MongoDB is the same construct as a document in Elasticsearch. ",
+                                        "value":" A document holds data in fields and conforms to a certain type in Elasticsearch.  Documents are represented as JSON.  In RDBMS terms, a document is similar to a row in a table (although a row in a relational database can't hold nested data while a JSON document in Elasticsearch can).  A document in MongoDB is the same construct as a document in Elasticsearch. ",
                                         "children":null
                                     }
                                 ]
@@ -674,7 +674,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" There are two simple ways to manipulate indexes, types, and documents.  The first is to use the Dev Tools Console in the Kibana UI and the second is to use cURL.  In the upcoming examples I’ll utilize both. ",
+                "value":" There are two simple ways to manipulate indexes, types, and documents.  The first is to use the Dev Tools Console in the Kibana UI and the second is to use cURL.  In the upcoming examples I'll utilize both. ",
                 "children":null
             }
         ]
@@ -687,7 +687,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I’m going to create some initial data in Elasticsearch representing license plates in my collection.  The first step is to create an index and a mapping for the type in the index.  The index defines the number of shards and replicas it uses.  The mapping declares the types of the fields in the document. ",
+                "value":" It's time to create some initial data in Elasticsearch representing license plates in my collection.  The first step is to create an index and a mapping for the type in the index.  The index defines the number of shards and replicas it uses.  The type mapping declares the data types of the fields in the document. ",
                 "children":null
             }
         ]
@@ -739,7 +739,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Let’s first go over shards and replicas.  An Elasticsearch cluster is highly available across multiple machines. In the case of Amazon Elasticsearch Service, these machines are EC2 VMs.  The machines in an Elasticsearch cluster are called nodes.  Shards divide documents in an index across the nodes in a cluster",
+                "value":" Let's first go over shards and replicas.  An Elasticsearch cluster is highly available across multiple machines. In the case of Amazon Elasticsearch Service, these machines are EC2 VMs.  The machines in an Elasticsearch cluster are called nodes.  Shards divide documents in an index across the nodes in a cluster",
                 "children":null
             },
             {
@@ -790,7 +790,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Now let’s go over the type mapping.  The ",
+                "value":" Now let's go over the type mapping.  The ",
                 "children":null
             },
             {
@@ -1012,7 +1012,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Full-text searches are how search engines work.  When querying documents with a string, full-text searches don’t just check for exact matches against a field, but also partial matches and close matches.  On the other hand, keyword searches always check for exact matches against a field",
+                "value":" Full-text searches are how search engines work.  When querying documents with a string, full-text searches don't just check for exact matches against a field, but also partial matches and close matches.  On the other hand, keyword searches always check for exact matches against a field",
                 "children":null
             },
             {
@@ -1037,7 +1037,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Let’s populate the ",
+                "value":" Let's populate the ",
                 "children":null
             },
             {
@@ -1125,7 +1125,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I created seven license plate documents in total, all which can be viewed on ",
+                "value":" I created seven license plate documents in total, all of which can be viewed on ",
                 "children":null
             },
             {
@@ -1198,7 +1198,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I’ll explore text-search querying in depth in my next Elasticsearch article. ",
+                "value":" I'll explore text-search querying in depth in my next Elasticsearch article. ",
                 "children":null
             }
         ]
@@ -1226,7 +1226,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Elasticsearch is a very interesting technology that I’m excited to continue learning about.  Now that I have an Elasticsearch cluster up and running, I’m ready to explore some of the advanced Elasticsearch features.  You can view all the code from this article on ",
+                "value":" Elasticsearch is a very interesting technology that I'm excited to continue learning about.  Now that I have an Elasticsearch cluster up and running, I'm ready to explore some of the advanced Elasticsearch features.  You can view all the code from this article on ",
                 "children":null
             },
             {
