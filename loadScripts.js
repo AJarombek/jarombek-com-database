@@ -2,6 +2,22 @@
 // Author: Andrew Jarombek
 // Date: 4/19/2018
 
+// Language Statistics
+load('./stats/Bash.js');
+load('./stats/C#.js');
+load('./stats/Groovy.js');
+load('./stats/HCL.js');
+load('./stats/HTML.js');
+load('./stats/Java.js');
+load('./stats/JavaScript.js');
+load('./stats/JSON.js');
+load('./stats/Markdown.js');
+load('./stats/Python.js');
+load('./stats/Sass.js');
+load('./stats/Swift.js');
+load('./stats/YAML.js');
+
+// 2017 Articles
 load('./posts/2017/11-06-neo4j-create.js');
 load('./posts/2017/11-08-js-scope-hoisting.js');
 load('./posts/2017/11-09-js-closure-modules.js');
@@ -24,6 +40,8 @@ load('./posts/2017/12-23-mongodb-pt3.js');
 load('./posts/2017/12-27-mongodb-pt4.js');
 load('./posts/2017/12-30-nodejs-mongodb-api-prototype.js');
 
+
+// 2018 Articles
 load('./posts/2018/01-03-string-swift.js');
 load('./posts/2018/01-06-angular-5-first-impressions.js');
 load('./posts/2018/01-14-shadow-dom.js');
@@ -97,6 +115,7 @@ load('./posts/2018/12-14-python-class-features.js');
 load('./posts/2018/12-15-python-protocols-abcs.js');
 load('./posts/2018/12-22-multiple-inheritance.js');
 
+// 2019 Articles
 load('./posts/2019/01-01-haskell-pt5.js');
 load('./posts/2019/01-02-csharp-first-impressions.js');
 load('./posts/2019/01-03-cpp-first-impressions.js');
