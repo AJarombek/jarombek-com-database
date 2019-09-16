@@ -5,16 +5,24 @@
 // Language Statistics
 load('./stats/Bash.js');
 load('./stats/C#.js');
+load('./stats/C.js');
+load('./stats/CSS.js');
 load('./stats/Groovy.js');
+load('./stats/Haskell.js');
 load('./stats/HCL.js');
 load('./stats/HTML.js');
 load('./stats/Java.js');
 load('./stats/JavaScript.js');
 load('./stats/JSON.js');
 load('./stats/Markdown.js');
+load('./stats/PHP.js');
+load('./stats/PLSQL.js');
 load('./stats/Python.js');
 load('./stats/Sass.js');
+load('./stats/SQL.js');
 load('./stats/Swift.js');
+load('./stats/TypeScript.js');
+load('./stats/XML.js');
 load('./stats/YAML.js');
 
 // 2017 Articles
