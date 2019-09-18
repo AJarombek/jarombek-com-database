@@ -4,9 +4,12 @@
  * @since 9/15/2019
  */
 
-db.stats.remove({name: "CSS"});
+connection = new Mongo();
+db = connection.getDB("jarombekcom");
 
-db.stats.insertOne({
+db.statistics.remove({name: "CSS"});
+
+db.statistics.insertOne({
     name: "CSS",
     first_year: 2016,
     lines: [

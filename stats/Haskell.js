@@ -4,9 +4,12 @@
  * @since 9/15/2019
  */
 
-db.stats.remove({name: "Haskell"});
+connection = new Mongo();
+db = connection.getDB("jarombekcom");
 
-db.stats.insertOne({
+db.statistics.remove({name: "Haskell"});
+
+db.statistics.insertOne({
     name: "Haskell",
     first_year: 2018,
     lines: [

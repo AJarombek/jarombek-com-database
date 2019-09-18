@@ -4,9 +4,12 @@
  * @since 9/15/2019
  */
 
-db.stats.remove({name: "Swift"});
+connection = new Mongo();
+db = connection.getDB("jarombekcom");
 
-db.stats.insertOne({
+db.statistics.remove({name: "Swift"});
+
+db.statistics.insertOne({
     name: "Swift",
     first_year: 2017,
     lines: [

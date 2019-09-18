@@ -4,9 +4,12 @@
  * @since 9/15/2019
  */
 
-db.stats.remove({name: "PL/SQL"});
+connection = new Mongo();
+db = connection.getDB("jarombekcom");
 
-db.stats.insertOne({
+db.statistics.remove({name: "PL/SQL"});
+
+db.statistics.insertOne({
     name: "PL/SQL",
     first_year: 2016,
     lines: [

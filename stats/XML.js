@@ -4,9 +4,12 @@
  * @since 9/15/2019
  */
 
-db.stats.remove({name: "XML"});
+connection = new Mongo();
+db = connection.getDB("jarombekcom");
 
-db.stats.insertOne({
+db.statistics.remove({name: "XML"});
+
+db.statistics.insertOne({
     name: "XML",
     first_year: 2015,
     lines: [

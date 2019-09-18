@@ -4,9 +4,12 @@
  * @since 9/15/2019
  */
 
-db.stats.remove({name: "PHP"});
+connection = new Mongo();
+db = connection.getDB("jarombekcom");
 
-db.stats.insertOne({
+db.statistics.remove({name: "PHP"});
+
+db.statistics.insertOne({
     name: "PHP",
     first_year: 2016,
     lines: [

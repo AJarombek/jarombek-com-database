@@ -17,7 +17,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" During free time at work, I’ve been reading a book called ",
+                "value":" During free time at work, I've been reading a book called ",
                 "children":null
             },
             {
@@ -55,6 +55,12 @@ preview = [
                         "children":null
                     }
                 ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":"  ",
+                "children":null
             },
             {
                 "el":"a",
@@ -99,7 +105,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" LINQ reminds me of writing PL/SQL, which is a procedural language provided for the Oracle database. PL/SQL is a superset of SQL, allowing for looping, variable declarations, conditional logic, error handling, and more.  The best feature of PL/SQL is the integration of SQL queries directly into an imperative programming language.  Unfortunately, PL/SQL is strictly tied to the Oracle database and in my opinion has clunky syntax.  LINQ on the other hand can be used on multiple different databases along with local data structures.  C# also has much nicer syntax in my opinion. ",
+                "value":" LINQ reminds me of writing PL/SQL, which is a procedural language provided for the Oracle database. PL/SQL is a superset of SQL, allowing for looping, variable declarations, conditional logic, error handling, and more.  The best feature of PL/SQL is the integration of SQL queries directly into an imperative programming language.  Unfortunately, PL/SQL is strictly tied to the Oracle database and  has clunky syntax in my opinion.  LINQ on the other hand can be used with multiple different databases along with local data structures.  Also, in my opinion, C# has much nicer syntax. ",
                 "children":null
             }
         ]
@@ -115,7 +121,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" During free time at work, I’ve been reading a book called ",
+                "value":" During free time at work, I've been reading a book called ",
                 "children":null
             },
             {
@@ -153,6 +159,12 @@ content = [
                         "children":null
                     }
                 ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":"  ",
+                "children":null
             },
             {
                 "el":"a",
@@ -197,7 +209,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" LINQ reminds me of writing PL/SQL, which is a procedural language provided for the Oracle database. PL/SQL is a superset of SQL, allowing for looping, variable declarations, conditional logic, error handling, and more.  The best feature of PL/SQL is the integration of SQL queries directly into an imperative programming language.  Unfortunately, PL/SQL is strictly tied to the Oracle database and in my opinion has clunky syntax.  LINQ on the other hand can be used on multiple different databases along with local data structures.  C# also has much nicer syntax in my opinion. ",
+                "value":" LINQ reminds me of writing PL/SQL, which is a procedural language provided for the Oracle database. PL/SQL is a superset of SQL, allowing for looping, variable declarations, conditional logic, error handling, and more.  The best feature of PL/SQL is the integration of SQL queries directly into an imperative programming language.  Unfortunately, PL/SQL is strictly tied to the Oracle database and  has clunky syntax in my opinion.  LINQ on the other hand can be used with multiple different databases along with local data structures.  Also, in my opinion, C# has much nicer syntax. ",
                 "children":null
             }
         ]
@@ -210,7 +222,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I’ll save my exploration of integrating LINQ with a remote database for a future article.  Today, I’m focusing on LINQ basics with local data structures. ",
+                "value":" I'll save my exploration of integrating LINQ with a remote database for a future article.  Today, I'm focusing on LINQ basics with local data structures. ",
                 "children":null
             }
         ]
@@ -238,7 +250,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Linq is found in the ",
+                "value":" LINQ is found in the ",
                 "children":null
             },
             {
@@ -252,7 +264,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" namespace in C#.  It provides the ability to query enumerable data in local data structures or remote data sources.  LINQ queries take in an input sequence and produce an output sequence.  For example, LINQ is available for a locally defined dictionary. ",
+                "value":" namespace in C#.  LINQ  queries consume an input sequence and produce an output sequence.  They provide the ability to query  enumerable data in local data structures or remote data sources.  For example, LINQ is available for a locally defined dictionary. ",
                 "children":null
             }
         ]
@@ -273,7 +285,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This dictionary represents the number of deer I saw walking and driving.  There are two approaches for using LINQ with this dictionary.  The first is called fluent syntax, which utilizes chainable static extension methods defined on the ",
+                "value":" This dictionary represents the number of deer I saw walking and driving.  There are two approaches for using LINQ with this dictionary.  The first approach is called fluent syntax, which utilizes chainable static extension methods defined on the ",
                 "children":null
             },
             {
@@ -299,7 +311,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  An extension method is a method added to an existing type without modifying the type definition.  The second is called query syntax, which uses native keywords to build queries. ",
+                "value":".  An extension method is a method added to an existing type without modifying the type definition.  The second approach is called query syntax, which uses native keywords to build queries. ",
                 "children":null
             }
         ]
@@ -312,7 +324,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Here is a filtering query performed on the ",
+                "value":" Below is a filtering query performed on the ",
                 "children":null
             },
             {
@@ -397,7 +409,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" matches the predicate because it’s the only dictionary element with a value greater than 1. ",
+                "value":" matches the predicate because it's the only dictionary element with a value greater than 1. ",
                 "children":null
             }
         ]
@@ -438,7 +450,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" class.  However, it can also be invoked directly on the dictionary instance.  This is because ",
+                "value":" class.  However, it's also invokable directly on the dictionary instance.  This is because ",
                 "children":null
             },
             {
@@ -501,7 +513,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Query syntax uses C# keywords instead of method calls.  This is my favorite aspect of LINQ.  Rewriting the fluent syntax method chain above into query syntax results in the following statement: ",
+                "value":" Query syntax uses C# keywords instead of method calls.  This is my favorite aspect of LINQ.  Rewriting the fluent syntax method chain in query syntax results in the following statement: ",
                 "children":null
             }
         ]
@@ -522,7 +534,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Query syntax is more reminiscent of SQL, although LINQ and SQL have some major differences (as I’ll explore in my next article).  Let’s quickly run through the different pieces of this query. ",
+                "value":" Query syntax is more reminiscent of SQL, although LINQ and SQL have some major differences (as I'll explore in my next article).  Let's quickly run through the different pieces of this query. ",
                 "children":null
             },
             {
@@ -578,7 +590,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" defines a filter for the data, in my case a dictionary item with a value greater than 1.  Finally, ",
+                "value":" defines a filter for the data, in my case a dictionary item must have a value greater than 1.  Finally, ",
                 "children":null
             },
             {
@@ -592,7 +604,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" defines a variable (",
+                "value":" defines which items  (",
                 "children":null
             },
             {
@@ -606,7 +618,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":") to hold the output sequence of the query. ",
+                "value":") to will be present in the output sequence of the query. ",
                 "children":null
             }
         ]
@@ -619,7 +631,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Let’s look at some other operators offered in LINQ.  ",
+                "value":" Let's look at some other operators offered by LINQ.  ",
                 "children":null
             },
             {
@@ -643,7 +655,7 @@ content = [
         "attributes":{
             "language":"C#"
         },
-        "value":"double[] walksPastWeek = { 3.5, 2.48, 3.6, 3.98, 3.59, 1.74, 1.54 };\n\n// Linq query with additional OrderBy() and Select() query operator methods.\n// Select() is basically a map() function.\nvar greaterThanTwoMiles = walksPastWeek.Where(miles => miles > 2)\n  .OrderBy(miles => miles)\n  .Select(miles => Math.Round(miles));\n\nAssert(greaterThanTwoMiles.Count() == 5);\nAssert(greaterThanTwoMiles.First() == 2);\n\n// The same fluent syntax query above can be rewritten in query syntax:\nvar greaterThanTwoMilesAgain =\n  from distance in walksPastWeek\n  where distance > 2\n  orderby distance\n  select Math.Round(distance);\n\nAssert(greaterThanTwoMilesAgain.Count() == 5);\nAssert(greaterThanTwoMilesAgain.First() == 2);\n",
+        "value":"\ndouble[] walksPastWeek = { 3.5, 2.48, 3.6, 3.98, 3.59, 1.74, 1.54 };\n\n// Linq query with additional OrderBy() and Select() query operator methods.\n// Select() is basically a map() function.\nvar greaterThanTwoMiles = walksPastWeek.Where(miles => miles > 2)\n  .OrderBy(miles => miles)\n  .Select(miles => Math.Round(miles));\n\nAssert(greaterThanTwoMiles.Count() == 5);\nAssert(greaterThanTwoMiles.First() == 2);\n\n// The fluent syntax query above can be rewritten in query syntax:\nvar greaterThanTwoMilesAgain =\n  from distance in walksPastWeek\n  where distance > 2\n  orderby distance\n  select Math.Round(distance);\n\nAssert(greaterThanTwoMilesAgain.Count() == 5);\nAssert(greaterThanTwoMilesAgain.First() == 2);\n",
         "children":null
     },
     {
@@ -672,7 +684,7 @@ content = [
         "attributes":{
             "language":"C#"
         },
-        "value":"var greaterThanTwoMilesDesc = greaterThanTwoMiles.OrderByDescending(miles => miles);\n\nAssert(greaterThanTwoMilesDesc.First() == 4);\n\nvar greaterThanTwoMilesDescAgain =\n  from miles in greaterThanTwoMiles\n  orderby miles descending\n  select miles;\n\nAssert(greaterThanTwoMilesDescAgain.First() == 4);\n",
+        "value":"\nvar greaterThanTwoMilesDesc = greaterThanTwoMiles.OrderByDescending(miles => miles);\n\nAssert(greaterThanTwoMilesDesc.First() == 4);\n\nvar greaterThanTwoMilesDescAgain =\n  from miles in greaterThanTwoMiles\n  orderby miles descending\n  select miles;\n\nAssert(greaterThanTwoMilesDescAgain.First() == 4);\n",
         "children":null
     },
     {
@@ -683,7 +695,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One interesting aspect of LINQ queries is that they don’t produce output sequences when defined. They exhibit deferred execution",
+                "value":" One interesting aspect of LINQ queries is that they don't produce output sequences when defined. They exhibit deferred execution",
                 "children":null
             },
             {
@@ -718,7 +730,7 @@ content = [
         "attributes":{
             "language":"C#"
         },
-        "value":"var deerSpottedThisWeek = deerSpottedToday;\n\nvar deerQuery =\n  from deerSpotted in deerSpottedThisWeek\n  where deerSpotted.Value > 1\n  select deerSpotted;\n\n// Right now, there is only one location where more than one deer was spotted.\nAssert(deerQuery.Count() == 1);\n\n// I saw another deer on Cognewaugh Road today.\ndeerSpottedThisWeek[\"Cognewaugh Road\"] = 2;\n\n// Due to delayed execution, now there are two locations where more than one deer was spotted.\nAssert(deerQuery.Count() == 2);\n",
+        "value":"var deerSpottedThisWeek = deerSpottedToday;\n\nvar deerQuery =\n  from deerSpotted in deerSpottedThisWeek\n  where deerSpotted.Value > 1\n  select deerSpotted;\n\n// Right now, there is only one location where more than one deer was spotted.\nAssert(deerQuery.Count() == 1);\n\n// I saw another deer on Cognewaugh Road today.\ndeerSpottedThisWeek[\"Cognewaugh Road\"] = 2;\n\n// Due to deferred execution, now there are two locations where more than one deer was spotted.\nAssert(deerQuery.Count() == 2);\n",
         "children":null
     },
     {
@@ -729,7 +741,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Deferred execution makes LINQ queries reusable on a mutating data structure.  Deferred execution also allows LINQ queries to contain local variables that can change between executions.  For example, the following query has a configurable ",
+                "value":" Deferred execution makes LINQ queries reusable for a mutating data structure.  Deferred execution also allows LINQ queries to contain local variables that can change between executions.  For example, the following query has a configurable ",
                 "children":null
             },
             {
@@ -753,7 +765,7 @@ content = [
         "attributes":{
             "language":"C#"
         },
-        "value":"// If the values of lexical scope variables referenced in a query change before execution,\n// the query will honor that change.\nint numOfDeer = 2;\nvar sameDeerQuery =\n  from deerSpotting in deerSpottedThisWeek\n  where deerSpotting.Value >= numOfDeer\n  select deerSpotting;\n\n// When numOfDeer is 2, there are two locations that match the query.\nAssert(sameDeerQuery.Count() == 2);\n\nnumOfDeer = 3;\n\n// When numOfDeer is 3, there are no locations that match the query.\nAssert(sameDeerQuery.Count() == 0);\n",
+        "value":"\n// If the values of lexical scope variables referenced in a query change before execution,\n// the query will honor that change.\nint numOfDeer = 2;\nvar sameDeerQuery =\n  from deerSpotting in deerSpottedThisWeek\n  where deerSpotting.Value >= numOfDeer\n  select deerSpotting;\n\n// When numOfDeer is 2, there are two locations that match the query.\nAssert(sameDeerQuery.Count() == 2);\n\nnumOfDeer = 3;\n\n// When numOfDeer is 3, there are no locations that match the query.\nAssert(sameDeerQuery.Count() == 0);\n",
         "children":null
     },
     {
@@ -764,7 +776,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If you are curious about learning more about LINQ queries, check out my code on ",
+                "value":" If you are curious to learn more about LINQ queries, check out the full code on ",
                 "children":null
             },
             {
@@ -785,7 +797,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  There I explore grouping, nested queries, combined queries, anonymous types in queries, and more. ",
+                "value":".  I explore grouping, nested queries, combined queries, anonymous types in queries, and more. ",
                 "children":null
             }
         ]
@@ -813,7 +825,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This article introduced LINQ, a framework that integrates queries into C#.  I decided to write about LINQ because it's a feature I believe more programming languages should consider adopting.  So much code is based around filtering, mapping, and reducing data.  The more options developers have to accomplish that task the better.  Check out my next LINQ article where I discuss integrated queries with LINQ and SQL Server. ",
+                "value":" This article introduced LINQ, a framework that integrates queries into C#.  I decided to write about LINQ because it's a feature I believe more programming languages should consider adopting.  So much code is based around filtering, mapping, and reducing data.  The more options developers have to accomplish these task the better.  Check out my next LINQ article where I discuss integrated queries with LINQ and SQL Server. ",
                 "children":null
             }
         ]

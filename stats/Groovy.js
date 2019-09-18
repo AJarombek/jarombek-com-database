@@ -4,9 +4,12 @@
  * @since 9/15/2019
  */
 
-db.stats.remove({name: "Groovy"});
+connection = new Mongo();
+db = connection.getDB("jarombekcom");
 
-db.stats.insertOne({
+db.statistics.remove({name: "Groovy"});
+
+db.statistics.insertOne({
     name: "Groovy",
     first_year: 2016,
     lines: [
