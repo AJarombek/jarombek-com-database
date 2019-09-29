@@ -832,8 +832,8 @@ content = [
     }
 ];
 
-postName = "sep-15-2019-linq";
-postDate = new Date('2019-09-15T12:00:00');
+postName = "sep-17-2019-linq";
+postDate = new Date('2019-09-17T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;

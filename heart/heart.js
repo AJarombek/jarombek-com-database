@@ -14,11 +14,7 @@ const my_heart = `
 Object.seal(my_heart);
 
 const current_feeling = `
-    I want to write this in case someone is still being mean to her.  She is a wonderful person.  
-    I pray for her to continue having strength despite all the adversity.  I feel so reassured that 
-    she has great friends looking out for her after seeing a friend supporting her just over a month ago.  
-    She is so loved, I hope she knows that.  I hope I am doing enough for her.  If there is anything 
-    else I can do to support and help, just let me know or have someone tell me.  No matter what you 
-    decide to do, you will always have my full love and support.  I hope you have a more peaceful 
-    road ahead, my love.
+    I hope she knows how unconditionally loved she is.  Forever and always.  I also hope she 
+    realizes that she deserves every last bit of that love.  You inspire me, thank you for being 
+    your wonderful self.
 `;
