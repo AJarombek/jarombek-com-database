@@ -16,5 +16,5 @@ Object.seal(my_heart);
 const current_feeling = `
     I hope she knows how unconditionally loved she is.  Forever and always.  I also hope she 
     realizes that she deserves every last bit of that love.  You inspire me, thank you for being 
-    your wonderful self.
+    your wonderful self.  I miss you, which I suppose is evidence of that love.
 `;
