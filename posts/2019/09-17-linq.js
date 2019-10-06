@@ -534,7 +534,28 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Query syntax is more reminiscent of SQL, although LINQ and SQL have some major differences (as I'll explore in my next article).  Let's quickly run through the different pieces of this query. ",
+                "value":" Query syntax is more reminiscent of SQL, although LINQ and SQL have some major differences (as I'll  explore in my ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/sep-29-2019-linq-sqlserver"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"next article",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":").  Let's quickly run through the different pieces of this query. ",
                 "children":null
             },
             {
@@ -825,7 +846,28 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This article introduced LINQ, a framework that integrates queries into C#.  I decided to write about LINQ because it's a feature I believe more programming languages should consider adopting.  So much code is based around filtering, mapping, and reducing data.  The more options developers have to accomplish these task the better.  Check out my next LINQ article where I discuss integrated queries with LINQ and SQL Server. ",
+                "value":" This article introduced LINQ, a framework that integrates queries into C#.  I decided to write about LINQ because it's a feature I believe more programming languages should consider adopting.  So much code is based around filtering, mapping, and reducing data.  The more options developers have to accomplish  these task the better.  Check out my ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/sep-29-2019-linq-sqlserver"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"next LINQ article",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" where I discuss integrated queries with LINQ and SQL Server. ",
                 "children":null
             }
         ]

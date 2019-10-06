@@ -26,9 +26,10 @@ db.viewed.updateMany(
 db.posts.findOne();
 
 // Find a post by name
-db.posts.find({name: "dec-12-2018-python-class-features"})
+db.posts.find({name: "dec-12-2018-python-class-features"});
 
 // Delete a post by name
+db.posts.remove({name: "sep-29-2019-linq-sqlserver"});
 
 // Get all the indexes and then drop one of them
 db.posts.getIndexes();

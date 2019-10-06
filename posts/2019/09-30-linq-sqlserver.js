@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" explored LINQ, which is a module that brings query syntax to C#.  All the LINQ examples in that article queried local data structures.  While using LINQ on local data is valuable in itself, LINQ can do much more.  LINQ really shines when querying remote data sources.  Queries using remote data sources such as a relational database are known as integrated queries.  In this article, I'm exploring integrated queries with a SQL Server database.  First I'll create the SQL Server database instance with Docker and then query it with LINQ. ",
+                "value":" explored LINQ,  a module that brings query syntax to C#.  All the examples in that article queried local data structures.  While using LINQ on local data is valuable in itself, LINQ can do much more.  LINQ really shines when used to query remote data sources.  Queries on remote data sources such as relational databases are known as integrated queries.  In this article, I explore integrated queries with a SQL Server database.  First I create the SQL Server database instance with Docker and then query it using LINQ. ",
                 "children":null
             }
         ]
@@ -89,7 +89,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" explored LINQ, which is a module that brings query syntax to C#.  All the LINQ examples in that article queried local data structures.  While using LINQ on local data is valuable in itself, LINQ can do much more.  LINQ really shines when querying remote data sources.  Queries using remote data sources such as a relational database are known as integrated queries.  In this article, I'm exploring integrated queries with a SQL Server database.  First I'll create the SQL Server database instance with Docker and then query it with LINQ. ",
+                "value":" explored LINQ,  a module that brings query syntax to C#.  All the examples in that article queried local data structures.  While using LINQ on local data is valuable in itself, LINQ can do much more.  LINQ really shines when used to query remote data sources.  Queries on remote data sources such as relational databases are known as integrated queries.  In this article, I explore integrated queries with a SQL Server database.  First I create the SQL Server database instance with Docker and then query it using LINQ. ",
                 "children":null
             }
         ]
@@ -117,7 +117,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" SQL Server is a relational database created and maintained by Microsoft.  It's an enterprise centric database comparable to the Oracle database.  In order to work with integrated queries, I set up a SQL Server database instance on a Docker container.  This Docker container is run on my local machine and queried from my C# code. ",
+                "value":" SQL Server is a relational database created and maintained by Microsoft.  It's an enterprise centric database comparable to the Oracle database.  In order to work with integrated queries, I set up a SQL Server database instance on a Docker container.  This Docker container runs on my local machine and is  queried from my C# code. ",
                 "children":null
             }
         ]
@@ -169,7 +169,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" While this Docker image provides most of the functionality I need, I also want the database to be pre-populated with some data.  I found a repository on GitHub created by a Microsoft employee who built a similar Docker image with pre-populated SQL Server data",
+                "value":" While this Docker image provides most of the functionality I need, I also want to pre-populate SQL Server  with some data.  I found a Microsoft employee's GitHub repository that  builds a similar Docker image with pre-populated data",
                 "children":null
             },
             {
@@ -228,7 +228,9 @@ content = [
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "className":"jarombek-inline-code"
+                },
                 "value":"mcr.microsoft.com/mssql/server:2017-latest-ubuntu",
                 "children":null
             },
@@ -298,7 +300,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" which creates database tables and populates them with data.  For this demo, I'm using programming language statistics for my data.  There are two tables in the database - one describing a programming language and another containing the number of lines coded in a language over the course of a year.  Here is an abbreviated version of the SQL script: ",
+                "value":" which creates database tables and populates them with data.  For this demo, I'm using programming language statistics for my data.  There are two tables in the database - one describing programming languages and another containing the number of lines coded in a language over the course of a year.  Here is an abbreviated version of the SQL script: ",
                 "children":null
             }
         ]
@@ -368,7 +370,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"   To work with SQL Server in C#, we first need to open a connection to the database.  For .NET Core,   the package used to establish this connection is ",
+                "value":" To work with SQL Server in C#, we first need to open a connection to the database.  For .NET Core, the package used to establish this connection is ",
                 "children":null
             },
             {
@@ -382,7 +384,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".   You can easily install this package with nuget.  The class in this package used to create a database   session and query the tables is ",
+                "value":". You can easily install this package with nuget.  The class in this package used to create a database session and query the tables is ",
                 "children":null
             },
             {
@@ -396,7 +398,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  I created a   custom ",
+                "value":".  I created a custom ",
                 "children":null
             },
             {
@@ -410,7 +412,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" class which extends   ",
+                "value":" class which extends ",
                 "children":null
             },
             {
@@ -544,7 +546,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Model objects are relatively simple, holding the columns in their respective tables.  However, they also hold their tables relationships such as its foreign keys.  This allows for table join operations to be performed in C#. ",
+                "value":" Model objects are relatively simple, holding the columns in their respective tables.  However, they also hold their tables relationships such as foreign keys.  This allows for table join operations to be performed in C#. ",
                 "children":null
             }
         ]
@@ -571,7 +573,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" caches a tables contents after performing a query.  This means that it may not reflect changes made to the database during the lifetime of a ",
+                "value":" caches a tables contents after performing a query.  This means that querying ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "className":"jarombek-inline-code"
+                },
+                "value":"DbSet",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" may not reflect changes made to the database during the lifetime of a ",
                 "children":null
             },
             {
@@ -695,21 +711,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" will properly instantiate and tear down the database context.  From ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "className":"jarombek-inline-code"
-                },
-                "value":"context",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" the ",
+                "value":" will properly instantiate and tear down the database context.  ",
                 "children":null
             },
             {
@@ -723,7 +725,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and ",
+                "value":"  and ",
                 "children":null
             },
             {
@@ -737,7 +739,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" properties are accessible.  The following code confirms that both contain the expected data counts (each language has lines written statistics for six years). ",
+                "value":" are accessible from ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "className":"jarombek-inline-code"
+                },
+                "value":"context",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":".  The following code confirms that both contain the expected data counts (each language has lines written statistics for six years). ",
                 "children":null
             }
         ]
@@ -747,7 +763,42 @@ content = [
         "attributes":{
             "language":"C#"
         },
-        "value":"var oldestLanguage = context.LanguageSet.OrderBy(language => language.ReleaseYear).First();\nAssert(oldestLanguage.Name == \"SQL\");\n\nvar newestLanguage = context.LanguageSet.OrderByDescending(language => language.ReleaseYear).First();\nAssert(newestLanguage.Name == \"HCL\");\n",
+        "value":"var languages = context.LanguageSet.ToList();\nvar codeWritten = context.CodeWrittenSet.ToList();\n\nAssert(languages.Count == 18);\nAssert(codeWritten.Count == 18 * 6);\n",
+        "children":null
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Now let's begin using LINQ.  The following queries get the newest and oldest languages in the  ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "className":"jarombek-inline-code"
+                },
+                "value":"Language",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" table. ",
+                "children":null
+            }
+        ]
+    },
+    {
+        "el":"codesnippet",
+        "attributes":{
+            "language":"C#"
+        },
+        "value":"\nvar oldestLanguage = context.LanguageSet.OrderBy(language => language.ReleaseYear).First();\nAssert(oldestLanguage.Name == \"SQL\");\n\nvar newestLanguage = context.LanguageSet.OrderByDescending(language => language.ReleaseYear).First();\nAssert(newestLanguage.Name == \"HCL\");\n",
         "children":null
     },
     {
@@ -818,7 +869,7 @@ content = [
         "attributes":{
             "language":"SQL"
         },
-        "value":"-- Retrieve the code written statistics for this year, ordered by the most coded languages.\nSELECT * FROM CodeWritten\nWHERE Year = 2019\nORDER BY LinesWritten DESC;\n\n-- The same as the previous query except it only returns the most used language.\nSELECT TOP 1 * FROM CodeWritten\nWHERE Year = 2019\nORDER BY LinesWritten DESC;\n\n-- Get the release year of the most used language of 2019 by inner joining the CodeWritten and Language tables.\nSELECT TOP 1 ReleaseYear FROM CodeWritten\nINNER JOIN Language\nON CodeWritten.Language = Language.Name\nWHERE Year = 2019\nORDER BY LinesWritten DESC;\n",
+        "value":"\n-- Retrieve the code written statistics for this year, ordered by the most coded languages.\nSELECT * FROM CodeWritten\nWHERE Year = 2019\nORDER BY LinesWritten DESC;\n\n-- The same as the previous query except it only returns the most used language.\nSELECT TOP 1 * FROM CodeWritten\nWHERE Year = 2019\nORDER BY LinesWritten DESC;\n\n-- Get the release year of the most used language of 2019 by inner joining the CodeWritten and Language tables.\nSELECT TOP 1 ReleaseYear FROM CodeWritten\nINNER JOIN Language\nON CodeWritten.Language = Language.Name\nWHERE Year = 2019\nORDER BY LinesWritten DESC;\n",
         "children":null
     },
     {
@@ -958,7 +1009,7 @@ content = [
         "attributes":{
             "language":"SQL"
         },
-        "value":"-- Get all the code written statistics for languages that start with the letter J.\nSELECT * FROM CodeWritten WHERE Language LIKE 'J%';\n\n-- Get the code written statistics for a group of languages.\nSELECT * FROM CodeWritten WHERE Language IN ('Java', 'JavaScript');\n",
+        "value":"\n-- Get all the code written statistics for languages that start with the letter J.\nSELECT * FROM CodeWritten WHERE Language LIKE 'J%';\n\n-- Get the code written statistics for a group of languages.\nSELECT * FROM CodeWritten WHERE Language IN ('Java', 'JavaScript');\n",
         "children":null
     },
     {
@@ -993,7 +1044,7 @@ content = [
         "attributes":{
             "language":"C#"
         },
-        "value":"// Query the code written statistics and group by the language name.  Retrieve the sum of the\n// lines of code written for each language.\nvar languageTotalStats =\n  from codeWritten in context.CodeWrittenSet\n  orderby codeWritten.Language\n  group codeWritten.LinesWritten by codeWritten.Language\n  into totals\n  select totals.Sum();\n",
+        "value":"  \n// Query the code written statistics and group by the language name.  Retrieve the sum of the\n// lines of code written for each language.\nvar languageTotalStats =\n  from codeWritten in context.CodeWrittenSet\n  orderby codeWritten.Language\n  group codeWritten.LinesWritten by codeWritten.Language\n  into totals\n  select totals.Sum();\n",
         "children":null
     },
     {
@@ -1182,8 +1233,8 @@ content = [
     }
 ];
 
-postName = "sep-29-2019-linq-sqlserver";
-postDate = new Date('2019-09-29T12:00:00');
+postName = "sep-30-2019-linq-sqlserver";
+postDate = new Date('2019-09-30T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1208,7 +1259,7 @@ db.posts.insertOne({
         },
         {
             name: "SQL Server",
-            picture: "https://asset.jarombek.com/logos/sqlserver.png",
+            picture: "https://asset.jarombek.com/logos/sql-server.svg",
             color: "sqlserver"
         },
         {
