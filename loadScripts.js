@@ -157,3 +157,5 @@ load('./posts/2019/09-05-rds-backups-pt2.js');
 load('./posts/2019/09-15-elasticsearch.js');
 load('./posts/2019/09-17-linq.js');
 load('./posts/2019/09-30-linq-sqlserver.js');
+
+load('./posts/2019/10-18-elasticsearch-analyzer.js');

@@ -14,7 +14,8 @@ const my_heart = `
 Object.seal(my_heart);
 
 const current_feeling = `
-    I hope she knows how unconditionally loved she is.  Forever and always.  I also hope she 
-    realizes that she deserves every last bit of that love.  You inspire me, thank you for being 
-    your wonderful self.  I miss you, which I suppose is evidence of that love.
+    Hi my love.  Dotty wants to say hello and thank you for bringing me back to her.  She is all 
+    tucked in under Grandma's blanket with Lily as we speak.  Lily says hi too.  We hope you are 
+    well and that you are finding your joy.  Be easy on yourself and remember how loved you are.  
+    We are always here for you and with you, even if it is just in spirit.  -Andy
 `;
