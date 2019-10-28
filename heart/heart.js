@@ -14,8 +14,17 @@ const my_heart = `
 Object.seal(my_heart);
 
 const current_feeling = `
-    Hi my love.  Dotty wants to say hello and thank you for bringing me back to her.  She is all 
-    tucked in under Grandma's blanket with Lily as we speak.  Lily says hi too.  We hope you are 
-    well and that you are finding your joy.  Be easy on yourself and remember how loved you are.  
-    We are always here for you and with you, even if it is just in spirit.  -Andy
+    What I know is that I care for you.  And that the universe seems to be telling me to try my best 
+    to be here for you.  For a long time I've been working on myself, partially so that if you ever 
+    return for whatever your reason I will be ready to be the strong, supportive person I failed to 
+    be in the past.
+    
+    I'm sorry that things have been this way between us.  I hope you are finding all the things you 
+    desire.  If I'm still on that list, hopefully you know there is nothing to fear.  I am here for 
+    you.  If you want a break from your quest and the silence between us, I am here.  Even if it's 
+    just for a day or an hour.  I don't want you to feel sad because you don't think you can speak 
+    to me.  I'll be on your side if you ever decide to.
+    
+    Thank you for the happiness you bring to my world.  I know that things are very delicate, I'm
+    trying my best to say the right things.  With Love, Andy
 `;

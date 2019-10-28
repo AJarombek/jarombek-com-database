@@ -279,7 +279,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":" For example, let’s take a field in a document with an ID of 1.  If the field contains the text \"Hello World\" and an analyzer creates a term for each word, the inverted index of the field would contain two terms - \"Hello\" and \"World\".  Both these terms would be mapped to the ID of 1. ",
+                        "value":" For example, let's take a field in a document with an ID of 1.  If the field contains the text \"Hello World\" and an analyzer creates a term for each word, the corresponding inverted index would contain two terms - \"Hello\" and \"World\".  Both these terms would be mapped to ID #1. ",
                         "children":null
                     }
                 ]
@@ -292,7 +292,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":" When this field is queried in a text search, document matches are determined by the terms in the inverted index.  For example, if the text search is \"Hello\", the document with an ID of 1 will be returned.  Importantly, text search matches aren't determined by the contents of a documents JSON, but by the terms in the inverted index. ",
+                        "value":" When fields are queried in a text search, document matches are determined by the terms in the inverted index.  For example, if the text search is \"Hello\", the document with ID #1 will be returned.  Importantly, text search matches aren't determined by the contents of a documents JSON, only by the terms in the inverted index. ",
                         "children":null
                     }
                 ]
@@ -307,7 +307,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Analyzers are critical in determining whether a text search results in a given document or not.  The remainder of this article explores the components of analyzers and the impact they have on the inverted index. ",
+                "value":" Analyzers are critical in determining whether a text search returns a document.  The remainder of this article explores the components of analyzers and the impact they have on the inverted index. ",
                 "children":null
             }
         ]
@@ -349,7 +349,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is processed by an analyzer.  There are three main components of an analyzer - character filters, tokenizers, and token filters. ",
+                "value":" is processed by an analyzer.  There are three main components of analyzers - character filters, tokenizers, and token filters. ",
                 "children":null
             }
         ]
@@ -396,7 +396,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" The first component of an analyzer is the character filter.  Character filters operate on the text passed into the analyzer.  An analyzer can have zero or more character filters.  The purpose of character filters are to transform text",
+                                        "value":" The first component of an analyzer is the character filter.  Character filters operate on text passed into the analyzer.  Analyzers have zero or more character filters.  The purpose of a character filter  is to transform text",
                                         "children":null
                                     },
                                     {
@@ -452,7 +452,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" The second component of an analyzer is the tokenizer.  Tokenizers take the input text of the analyzer (or the transformed text from the character filters) and creates tokens",
+                                        "value":" The second component of an analyzer is the tokenizer.  Tokenizers take the input text of the analyzer (or the transformed text from character filters) and creates tokens",
                                         "children":null
                                     },
                                     {
@@ -520,7 +520,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":".  An analyzer can have zero or more token filters. ",
+                                        "value":".  Analyzers have zero or more token filters. ",
                                         "children":null
                                     }
                                 ]
@@ -552,7 +552,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" If you don’t want to spend time customizing an analyzer, Elasticsearch provides multiple built-in analyzers that work for most requirements. ",
+                "value":" If you don't want to spend time customizing an analyzer, Elasticsearch provides multiple built-in analyzers that work for most requirements. ",
                 "children":null
             }
         ]
@@ -594,7 +594,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" endpoint to work directly with an analyzer.  This is great for testing the behavior of analyzers and exploring the ways they tokenize text.  ",
+                "value":" endpoint to work directly with an analyzer.  This is great for testing the behavior of analyzers and exploring how they tokenize text.  ",
                 "children":null
             },
             {
@@ -635,7 +635,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is to run an analyzer on a string of text.  The following API call executes the build-in ",
+                "value":" is to run an analyzer on a string of text.  The following API call executes the build-it ",
                 "children":null
             },
             {
@@ -683,9 +683,7 @@ content = [
     },
     {
         "el":"codesnippet",
-        "attributes":{
-            "language":"Bash"
-        },
+        "attributes":null,
         "value":"{ \"tokens\": [\"hello\", \"my\", \"name\", \"is\", \"andy\"] }\n",
         "children":null
     },
@@ -711,7 +709,7 @@ content = [
                 "el":"img",
                 "attributes":{
                     "className":"jarombek-blog-image",
-                    "src":"https://asset.jarombek.com/posts/10-16-19-kibana-analyzer.png"
+                    "src":"https://asset.jarombek.com/posts/10-18-19-kibana-analyzer.png"
                 },
                 "value":null,
                 "children":[
@@ -759,9 +757,7 @@ content = [
     },
     {
         "el":"codesnippet",
-        "attributes":{
-            "language":"Bash"
-        },
+        "attributes":null,
         "value":"{ \"tokens\": [\"Hello\", \"my\", \"name\", \"is\", \"Andy\"] }\n",
         "children":null
     },
@@ -773,7 +769,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Notice that the tokens above are different than the end result of the standard analyzer (the uppercase characters still exist).  This is where the standard analyzer’s token filter comes into play.  As its name suggests, the lowercase token filter modifies tokens by converting uppercase characters to lowercase. After the lowercase token filter runs, the tokens become ",
+                "value":" Notice that the tokens above are different than the end result of the standard analyzer (the uppercase characters still exist).  This is where the standard analyzer's token filter comes into play.  As its name suggests, the lowercase token filter modifies tokens by converting uppercase characters to lowercase. After the lowercase token filter runs, the tokens become ",
                 "children":null
             },
             {
@@ -829,9 +825,7 @@ content = [
     },
     {
         "el":"codesnippet",
-        "attributes":{
-            "language":"Bash"
-        },
+        "attributes":null,
         "value":"{ \"tokens\": [\"Hello\", \"my\", \"name\", \"is\", \"Andy.\"] }\n",
         "children":null
     },
@@ -872,9 +866,7 @@ content = [
     },
     {
         "el":"codesnippet",
-        "attributes":{
-            "language":"Bash"
-        },
+        "attributes":null,
         "value":"{ \"tokens\": [\"Title\"] }\n",
         "children":null
     },
@@ -915,7 +907,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" endpoint on the entire cluster.  While this is beneficial for testing, its less useful in practice.  Custom analysers become especially advantageous once we start attaching them to indexes and the fields on types within an index. ",
+                "value":" endpoint on the entire cluster.  While this is beneficial for testing, its less useful in practice.  Custom analysers become especially advantageous once we start attaching them to indexes and fields on types within an index. ",
                 "children":null
             }
         ]
@@ -963,7 +955,26 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The following API call creates the ",
+                "value":" If this JSON configuration is saved in ",
+                "children":null
+            },
+            {
+                "el":"strong",
+                "attributes":null,
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"index.json",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":", the following API call creates the   index and names it ",
                 "children":null
             },
             {
@@ -977,7 +988,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" index: ",
+                "value":": ",
                 "children":null
             }
         ]
@@ -987,7 +998,7 @@ content = [
         "attributes":{
             "language":"Bash"
         },
-        "value":"curl -XPUT ${ES_ENDPOINT}/tech -H 'Content-Type: application/json' -d @data/test/index.json\n",
+        "value":"curl -XPUT ${ES_ENDPOINT}/test -H 'Content-Type: application/json' -d @data/test/index.json\n",
         "children":null
     },
     {
@@ -1008,14 +1019,12 @@ content = [
         "attributes":{
             "language":"Bash"
         },
-        "value":"curl -XPOST ${ES_ENDPOINT}/test/_analyze -H 'Content-Type: application/json' -d '{\n\"analyzer\": \"emoji_analyzer\",\n\"text\": \"😀\"\n}'\n",
+        "value":"curl -XPOST ${ES_ENDPOINT}/test/_analyze -H 'Content-Type: application/json' -d '{\n  \"analyzer\": \"emoji_analyzer\",\n  \"text\": \"😀\"\n}'\n",
         "children":null
     },
     {
         "el":"codesnippet",
-        "attributes":{
-            "language":"Bash"
-        },
+        "attributes":null,
         "value":"{ \"tokens\": [\":D\"] }\n",
         "children":null
     },
@@ -1063,9 +1072,7 @@ content = [
     },
     {
         "el":"codesnippet",
-        "attributes":{
-            "language":"Bash"
-        },
+        "attributes":null,
         "value":"{ \"tokens\": [\"andrew@jarombek.com\", \"ajarombek95@gmail.com\"] }\n{ \"tokens\": [\"Hi\", \"my\", \"is\"] }\n{ \"tokens\": [\"Dotty\", \"good\", \"horse\"] }\n",
         "children":null
     },
@@ -1092,7 +1099,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" It’s time to demonstrate how analyzers work end-to-end.  Analyzers are executed on two occasions - when a document is created with a field of type ",
+                "value":" It's time to demonstrate how analyzers work end-to-end.  Analyzers are executed on two occasions - when a document is created with a field of type ",
                 "children":null
             },
             {
@@ -1119,7 +1126,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" First, an index is needed with a custom analyzer and a type mapping.  Notice that the type mapping contains a single field of type ",
+                "value":" Before creating a document, an index is needed with a custom analyzer and a type mapping.  Notice that the type mapping contains a single field of type ",
                 "children":null
             },
             {
@@ -1218,7 +1225,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" declares the analyzer used when text searches are run.  The ",
+                "value":" declares the analyzer used when text searches  execute.  The ",
                 "children":null
             },
             {
@@ -1245,7 +1252,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" With the index definition created, it’s time to populate it with some documents: ",
+                "value":" With the index definition created, it's time to populate it with some documents: ",
                 "children":null
             }
         ]
@@ -1395,7 +1402,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Learning how analyzers and inverted indexes work helps reveal some of the “magic” of Elasticsearch. In my next Elasticsearch adventure, I will explore querying documents in depth.  All the code from this article is available on ",
+                "value":" Learning how analyzers and inverted indexes work helps explain some of the \"magic\" in Elasticsearch. In my next Elasticsearch adventure, I will explore querying documents.  All the code from this article is available on ",
                 "children":null
             },
             {
