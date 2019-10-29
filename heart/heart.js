@@ -23,7 +23,7 @@ const current_feeling = `
     desire.  If I'm still on that list, hopefully you know there is nothing to fear.  I am here for 
     you.  If you want a break from your quest and the silence between us, I am here.  Even if it's 
     just for a day or an hour.  I don't want you to feel sad because you don't think you can speak 
-    to me.  I'll be on your side if you ever decide to.
+    to me.  I'll be on your side if you ever decide to.  I will make time for you.
     
     Thank you for the happiness you bring to my world.  I know that things are very delicate, I'm
     trying my best to say the right things.  With Love, Andy

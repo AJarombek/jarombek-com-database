@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" From October 2018 to May 2019, I converted moved the infrastructure for both my websites to ",
+                "value":" From October 2018 to May 2019, I moved the infrastructure for both my websites to ",
                 "children":null
             },
             {
@@ -58,7 +58,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  I’ve had a lot of fun working with Terraform and learning the different design patterns for infrastructure in the cloud. ",
+                "value":".  I've had a lot of fun working with Terraform and learning the different design patterns for infrastructure in the cloud. ",
                 "children":null
             }
         ]
@@ -71,7 +71,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" After my infrastructure was built, I realized I needed a way to test that my IaC was behaving as expected.  The obvious solution to this requirement was to build a unit test suite.  I implemented this unit test suite in ",
+                "value":" After my infrastructure was built, I realized I needed a way to test that my IaC was behaving as expected.  The obvious solution to this requirement was a unit test suite.  I implemented this unit test suite in ",
                 "children":null
             },
             {
@@ -92,7 +92,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" with the help of the AWS SDK.  This article first explains why I took the time to write unit tests, followed by a walkthrough the basics of testing AWS infrastructure in Python. ",
+                "value":" with the help of the AWS SDK.  This article explains why I took the time to write unit tests and  walks through of the basics of testing AWS infrastructure in Python. ",
                 "children":null
             }
         ]
@@ -108,7 +108,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" From October 2018 to May 2019, I converted moved the infrastructure for both my websites to ",
+                "value":" From October 2018 to May 2019, I moved the infrastructure for both my websites to ",
                 "children":null
             },
             {
@@ -150,7 +150,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  I’ve had a lot of fun working with Terraform and learning the different design patterns for infrastructure in the cloud. ",
+                "value":".  I've had a lot of fun working with Terraform and learning the different design patterns for infrastructure in the cloud. ",
                 "children":null
             }
         ]
@@ -163,7 +163,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" After my infrastructure was built, I realized I needed a way to test that my IaC was behaving as expected.  The obvious solution to this requirement was to build a unit test suite.  I implemented this unit test suite in ",
+                "value":" After my infrastructure was built, I realized I needed a way to test that my IaC was behaving as expected.  The obvious solution to this requirement was a unit test suite.  I implemented this unit test suite in ",
                 "children":null
             },
             {
@@ -184,7 +184,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" with the help of the AWS SDK.  This article first explains why I took the time to write unit tests, followed by a walkthrough the basics of testing AWS infrastructure in Python. ",
+                "value":" with the help of the AWS SDK.  This article explains why I took the time to write unit tests and  walks through of the basics of testing AWS infrastructure in Python. ",
                 "children":null
             }
         ]
@@ -212,7 +212,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Over the three and a half years I’ve been a software engineer, I’ve slowly realized how valuable unit tests are.  In my early applications, unit tests were noticeably absent.  Unit tests finally started appearing in my repositories this spring.  I made it mandatory for new applications to have full unit test coverage and began adding tests to older applications still being maintained. ",
+                "value":" Over the three and a half years I've been a software engineer, I've slowly realized how valuable unit tests are.  In my early applications, unit tests were noticeably absent.  Unit tests finally started appearing in my repositories this spring.  Now it is mandatory for new applications to have full unit test coverage and I've begun adding tests to older applications. ",
                 "children":null
             }
         ]
@@ -252,7 +252,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" There are three main reasons why I hopped on the unit test bandwagon.  The first reason is that writing unit tests helps catch poorly written or useless code.  When I write code, my brain tends to wander and get sidetracked.  Often I write a section of code over the course of days or weeks.  I usually don’t have the time to go back through every line of code and make sure its well written or still being used. However, when I write unit tests and have to formulate test scenarios for every line of a program, smelly code becomes easy to identify. ",
+                "value":" There are three main reasons why I hopped on the unit test bandwagon.  The first reason is that writing unit tests helps catch poorly written or useless code.  When I write code, my brain tends to wander and get sidetracked.  Often I write a section of code over the course of days or weeks.  I usually don't have the time to go back through every line of code and make sure its well written or still being used. However, when I write unit tests and have to formulate test scenarios for every line of a program, smelly code becomes easy to identify. ",
                 "children":null
             }
         ]
@@ -338,7 +338,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" AWS SDK. I took two separate approaches to setting up these unit tests.  For my ",
+                "value":" AWS SDK. I took two different approaches for setting up these unit tests.  For my ",
                 "children":null
             },
             {
@@ -401,7 +401,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" infrastructure, I figured there must be a better approach.  I decided to scrap the custom test suite and used Python’s built-in ",
+                "value":" infrastructure, I figured there must be a better approach.  I decided to scrap the custom test suite and used Python's built-in ",
                 "children":null
             },
             {
@@ -420,7 +420,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" library instead.  I’ll demonstrate both approaches next, followed by some unit test function examples. ",
+                "value":" library instead.  I'll demonstrate both approaches next, followed by some unit test function examples. ",
                 "children":null
             }
         ]
@@ -479,7 +479,7 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"import masterTestFuncs as Test\nfrom bastion import bastionTestSuite as Bastion\nfrom acm import acmTestSuite as ACM\nfrom databases import databaseTestSuite as Database\nfrom iam import iamTestSuite as IAM\nfrom route53 import route53TestSuite as Route53\nfrom webserver import webserverTestSuite as WebServer\n\n# List of all the test suites\ntests = [\n  Bastion.bastion_test_suite,\n  ACM.acm_test_suite,\n  Database.database_test_suite,\n  IAM.iam_test_suite,\n  Route53.route53_test_suite,\n  WebServer.webserver_test_suite\n]\n\n# Create and execute a master test suite\nTest.testsuite(tests, \"Master Test Suite\")\n",
+        "value":"# masterTestSuite.py\n\nimport masterTestFuncs as Test\nfrom bastion import bastionTestSuite as Bastion\nfrom acm import acmTestSuite as ACM\nfrom databases import databaseTestSuite as Database\nfrom iam import iamTestSuite as IAM\nfrom route53 import route53TestSuite as Route53\nfrom webserver import webserverTestSuite as WebServer\n\n# List of all the test suites\ntests = [\n  Bastion.bastion_test_suite,\n  ACM.acm_test_suite,\n  Database.database_test_suite,\n  IAM.iam_test_suite,\n  Route53.route53_test_suite,\n  WebServer.webserver_test_suite\n]\n\n# Create and execute a master test suite\nTest.testsuite(tests, \"Master Test Suite\")\n",
         "children":null
     },
     {
@@ -490,7 +490,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This entrypoint file is referred to as the “master test suite.”  The master test suite invokes child test suites which are grouped by AWS resource type.  For example, all my ",
+                "value":" This entrypoint file is referred to as the \"master test suite.\"  The master test suite invokes child test suites which are grouped by AWS resource type.  For example, all my ",
                 "children":null
             },
             {
@@ -549,7 +549,7 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"import masterTestFuncs as Test\nfrom acm import acmTestFuncs as Func\n\ntests = [\n  lambda: Test.test(Func.acm_dev_wildcard_cert_issued, \"ACM SaintsXCTF Dev Wildcard Certificate Issued\"),\n  lambda: Test.test(Func.acm_wildcard_cert_issued, \"ACM SaintsXCTF Wildcard Certificate Issued\"),\n  lambda: Test.test(Func.acm_cert_issued, \"ACM SaintsXCTF Certificate Issued\")\n]\n\n\ndef acm_test_suite() -> bool:\n  \"\"\"\n  Execute all the tests related to the ACM HTTPS certificates\n  :return: True if the tests succeed, False otherwise\n  \"\"\"\n  return Test.testsuite(tests, \"ACM Test Suite\")\n",
+        "value":"# acmTestSuite.py\n\nimport masterTestFuncs as Test\nfrom acm import acmTestFuncs as Func\n\ntests = [\n  lambda: Test.test(Func.acm_dev_wildcard_cert_issued, \"ACM SaintsXCTF Dev Wildcard Certificate Issued\"),\n  lambda: Test.test(Func.acm_wildcard_cert_issued, \"ACM SaintsXCTF Wildcard Certificate Issued\"),\n  lambda: Test.test(Func.acm_cert_issued, \"ACM SaintsXCTF Certificate Issued\")\n]\n\n\ndef acm_test_suite() -> bool:\n  \"\"\"\n  Execute all the tests related to the ACM HTTPS certificates\n  :return: True if the tests succeed, False otherwise\n  \"\"\"\n  return Test.testsuite(tests, \"ACM Test Suite\")\n",
         "children":null
     },
     {
@@ -560,7 +560,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Notice that the master test suite and ACM test suite have the same structure.  Both test suites contain a list of unit tests and a function which executes the tests.  The main difference is that the master test suite executes a list of ",
+                "value":" Notice that the master test suite and ACM test suite have the same structure.  Both test suites contain a list of tests and a function which executes the tests.  The main difference is that the master test suite executes a list of ",
                 "children":null
             },
             {
@@ -681,7 +681,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" However, reinventing the unit test wheel didn’t add much value to my tests.  Therefore, I decided to try a different approach for my ",
+                "value":" However, reinventing the unit test wheel didn't add much value to my tests.  Therefore, I decided to try a different approach for my ",
                 "children":null
             },
             {
@@ -1151,7 +1151,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" framework.  I believe that developers should only reinvent the wheel under two scenarios - as a learning experience or if they think they can improve the existing technology.  While it was a good learning experience creating a unit test suite from scratch, it was very barebones functionality wise.  Because of this, it didn’t assist me in learning the underworkings of test frameworks such as ",
+                "value":" framework.  I believe that developers should only reinvent the wheel under two scenarios - as a learning experience or if they think they can improve the existing technology.  While it was a good learning experience creating a unit test suite from scratch, it was very barebones functionality wise.  Because of this, it didn't assist me in learning the underworkings of test frameworks such as ",
                 "children":null
             },
             {
@@ -1183,7 +1183,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I should’ve spent more time exploring the different approaches to Python unit tests before jumping into a custom solution.  There a many different unit testing frameworks for each programming language, and I will make sure to explore all my options before choosing one in future projects. ",
+                "value":" I should've spent more time exploring the different approaches to Python unit tests before jumping into a custom solution.  There a many different unit testing frameworks for each programming language, and I will make sure to explore all my options before choosing one in future projects. ",
                 "children":null
             }
         ]
