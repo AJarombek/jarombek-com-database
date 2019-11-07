@@ -1206,7 +1206,7 @@ db.posts.insertOne({
         was behaving as expected.  The obvious solution to this requirement was to build a unit test 
         suite.`,
     date: postDate,
-    type: "Discovery",
+    type: "Retrospective",
     views: postViews,
     tags: [
         {
