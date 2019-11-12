@@ -17,6 +17,6 @@ const current_feeling = `
     I hope you are happy and are being treated with love and respect.  I hope there are people in 
     your life that you feel safe talking to when things are difficult.  If I can't be one of them
     I understand.  Hopefully these notes help you.  That is the reason I write them after all.  
-    Please help me know if there is anything else I can do.
+    Please help me know if there is anything else I can do for you.
     Love Always, Andy
 `;
