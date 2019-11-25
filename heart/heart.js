@@ -13,4 +13,4 @@ const my_heart = `
 
 Object.seal(my_heart);
 
-const current_feeling = `I am always with you.`;
+const current_feeling = `My love and spirit is always with you, no matter which road you travel.`;
