@@ -160,3 +160,5 @@ load('./posts/2019/09-30-linq-sqlserver.js');
 
 load('./posts/2019/10-18-elasticsearch-analyzer.js');
 load('./posts/2019/10-28-unit-testing-aws-infrastructure.js');
+
+load('./posts/2019/11-12-garbage-collection.js');

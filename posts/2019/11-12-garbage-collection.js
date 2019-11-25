@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", I came across a  section about garbage collection.  I always knew that programming languages such as Java have a garbage  collector, but never did any research into how garbage collectors (GCs) work.  The book mentioned that  C# uses a tracing GC with generations and marking.  These were foreign concepts to me, so I decided  to conduct additional research on the topic.  This article gives a high-level overview of garbage  collectors and the APIs available to interact with them in ",
+                "value":", I came across a section about garbage collection.  I always knew that programming languages such as Java performed garbage  collection, but I never researched how garbage collectors (GCs) worked.  The book mentioned that C# uses a tracing GC with generations and marking.  These were foreign concepts to me, so I decided to conduct additional research on the topic.  This article gives a high-level overview of garbage collectors and the APIs available to interact with them in ",
                 "children":null
             },
             {
@@ -58,13 +58,13 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"  and C#. ",
+                "value":" and C#. ",
                 "children":null
             }
         ]
     },
     {
-        "el":"h5",
+        "el":"sectiontitle",
         "attributes":{
             "title":"Overview"
         },
@@ -110,7 +110,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", I came across a  section about garbage collection.  I always knew that programming languages such as Java have a garbage  collector, but never did any research into how garbage collectors (GCs) work.  The book mentioned that  C# uses a tracing GC with generations and marking.  These were foreign concepts to me, so I decided  to conduct additional research on the topic.  This article gives a high-level overview of garbage  collectors and the APIs available to interact with them in ",
+                "value":", I came across a section about garbage collection.  I always knew that programming languages such as Java performed garbage  collection, but I never researched how garbage collectors (GCs) worked.  The book mentioned that C# uses a tracing GC with generations and marking.  These were foreign concepts to me, so I decided to conduct additional research on the topic.  This article gives a high-level overview of garbage collectors and the APIs available to interact with them in ",
                 "children":null
             },
             {
@@ -131,7 +131,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":"  and C#. ",
+                "value":" and C#. ",
                 "children":null
             }
         ]
@@ -178,7 +178,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":".  GCs  look for memory that is no longer referenced anywhere in the program.  When found, data occupying this  memory space is deleted and the region is reclaimed for future use. ",
+                        "value":".  GCs look for memory that is no longer referenced anywhere in the program.  When found, data occupying this memory space is deleted and the region is reclaimed for future use. ",
                         "children":null
                     }
                 ]
@@ -191,7 +191,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":" Since the GC is run implicitly as a program executes, garbage collection is a form of automatic memory  management.  The opposite of automatic memory management is manual memory management, where memory is  allocated and deallocated by the programmer.  Many modern programming languages use garbage collection,  including Java, ",
+                        "value":" Since GCs are run implicitly as a program executes, garbage collection is a form of automatic memory management.  The opposite of automatic memory management is manual memory management, where memory is allocated and deallocated by the programmer.  Many modern programming languages use garbage collection, including Java, ",
                         "children":null
                     },
                     {
@@ -212,7 +212,28 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":", and C#.  Some older  programming languages use manual memory management instead, with C as a notable example. ",
+                        "value":", and C#.  Some older  programming languages use manual memory management instead, with ",
+                        "children":null
+                    },
+                    {
+                        "el":"a",
+                        "attributes":{
+                            "href":"https://jarombek.com/blog?query=c&page=1"
+                        },
+                        "value":null,
+                        "children":[
+                            {
+                                "el":"#text",
+                                "attributes":null,
+                                "value":"C",
+                                "children":null
+                            }
+                        ]
+                    },
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":" as a notable example. ",
                         "children":null
                     }
                 ]
@@ -227,7 +248,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" While GCs are commonly associated with object oriented programming languages, the first GC actually appeared  in Lisp, a functional programming language.  Other functional programming languages such as  ",
+                "value":" While GCs are commonly associated with object oriented programming languages, the first GC appeared in Lisp, a functional programming language.  Other functional programming languages such as ",
                 "children":null
             },
             {
@@ -308,7 +329,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" Reference counting in the context of garbage collection is when each object or data maintains a counter.   This counter represents the number of other objects or pieces of data that maintain a reference to it.   For example, for objects ",
+                                        "value":" Reference counting in the context of garbage collection is when each object or data maintains a counter. This counter represents the number of other objects or pieces of data that maintain a reference to it. For example, for objects ",
                                         "children":null
                                     },
                                     {
@@ -378,7 +399,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" and object  ",
+                                        "value":" and object ",
                                         "children":null
                                     },
                                     {
@@ -406,7 +427,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":", then the reference count of ",
+                                        "value":", the reference count of ",
                                         "children":null
                                     },
                                     {
@@ -445,7 +466,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":".   Since these objects are no longer accessible anywhere in the code, they can be safely deleted.  In  practice, reference counting has a number of drawbacks which make it a naive approach to garbage  collection",
+                                        "value":". Since these objects are no longer accessible anywhere in the code, they are safely deleted.  In practice, reference counting has a number of drawbacks which make it a naive approach to garbage collection",
                                         "children":null
                                     },
                                     {
@@ -457,7 +478,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":".  There is a significant speed and memory overhead to maintaining a reference  counter for each object on the heap.  Also, reference counters run into issues when dealing with cycles.   If an object exists that references itself, it will never be deleted by the garbage collector.  Because  of these shortcomings, tracing is usually used in modern GCs. ",
+                                        "value":".  There is a significant speed and memory overhead to maintaining a reference counter for each object on the heap.  Also, reference counters run into issues when dealing with cycles. If an object exists that references itself, it will never be deleted by the garbage collector.  Because of these shortcomings, tracing is usually used in modern GCs. ",
                                         "children":null
                                     }
                                 ]
@@ -501,7 +522,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" When a GC uses tracing, it maintains root objects or data and checks their reference chains.  If an  object is referrable directly or indirectly from a root object, the GC keeps it alive",
+                                        "value":" When a GC uses tracing, it defines root objects or data and checks their reference chains.  If an object is referrable directly or indirectly from a root object, the GC keeps it alive",
                                         "children":null
                                     },
                                     {
@@ -513,7 +534,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":".  If  an object doesn't appear anywhere on the reference chain, it is deleted.  This process is referred to  as 'tracing the reference chain",
+                                        "value":".  If an object doesn't appear anywhere on the reference chain, it is deleted.  This process is referred to as 'tracing the reference chain",
                                         "children":null
                                     },
                                     {
@@ -580,7 +601,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" if root object  ",
+                                        "value":" if root object ",
                                         "children":null
                                     },
                                     {
@@ -622,7 +643,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" contains a reference to  ",
+                                        "value":" contains a reference to ",
                                         "children":null
                                     },
                                     {
@@ -636,7 +657,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":", then the reference chain is traced as  ",
+                                        "value":", then the reference chain is traced as ",
                                         "children":null
                                     },
                                     {
@@ -650,7 +671,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":".  In this scenario, all three objects are kept  alive.  Languages such as C# and Java use tracing garbage collectors. ",
+                                        "value":".  In this scenario, all three objects are kept alive.  Languages such as C# and Java use tracing garbage collectors. ",
                                         "children":null
                                     }
                                 ]
@@ -696,7 +717,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Marking is when each object  or piece of data that will be removed by the GC is marked for deletion.  This occurs right before the  GC deletes objects.  Compacting occurs after objects marked for deletion are removed from memory.   Compacting moves all remaining objects to the first open memory addresses of objects (the heap).  This  helps prevent memory fragmentation, which is when small pockets of unused memory exist in-between used  memory segments.  This memory can often go to waste if newly created objects can't fit in the space. ",
+                "value":".  Marking is when each object or piece of data that will be removed by the GC is marked for deletion.  This occurs right before the GC deletes objects.  Compacting occurs after objects marked for deletion are removed from memory. Compacting moves all remaining objects to the first open memory addresses reserved for objects (the heap).  This helps prevent memory fragmentation, which is when small pockets of unused memory exist in-between used memory segments.  This memory often goes to waste if newly created objects can't fit in the space. ",
                 "children":null
             }
         ]
@@ -709,7 +730,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The GCs used by Java and C# are also generational.  Generational garbage collectors stem from the observation  that most objects are either short lived or persistently maintained",
+                "value":" The GCs used by Java and C# are also generational.  Generational garbage collectors stem from the observation that most objects are either short lived or persistently maintained",
                 "children":null
             },
             {
@@ -721,7 +742,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Implementations of  generational garbage collection vary, however the basic concepts are constant.  Newer objects are members  of newer generations, while older objects are members of older generations.  Newer generations are marked  and compacted on every garbage collection run, while older generations only go through that process  occasionally.  This is an optimization technique, since the garbage collection algorithm has a time and  space complexity that is detrimental towards application performance.  This is especially true for garbage  collection cycles which are “Stop the World” events, meaning the normal program execution is halted to  run the garbage collector",
+                "value":".  Implementations of generational garbage collection vary, however the basic concepts are constant.  Newer objects are members of newer generations, while older objects are members of older generations.  Newer generations are marked and compacted on every garbage collection run, while older generations are only marked and compacted  occasionally.  This is an optimization technique, since garbage collection algorithms have a time and space complexity that is detrimental towards application performance.  This is especially true for garbage collection cycles that are \"Stop the World\" events, where the normal program execution is halted to run the garbage collector",
                 "children":null
             },
             {
@@ -733,7 +754,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Some GCs also have special generations or memory space for large  objects which are expensive to garbage collect",
+                "value":".  Some GCs also have special generations or memory space for large objects which are expensive to garbage collect",
                 "children":null
             },
             {
@@ -758,7 +779,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" To summarize, when a garbage collection cycle begins the GC marks objects for deletion using reference  counting or tracing.  Marking occurs for newer generations on every garbage collection cycle and for  older generations on a less regular basis.  After marking is completed, the marked objects are deleted  from memory.  Finally, the memory allocated for objects (the heap) is compressed. ",
+                "value":" To summarize, when a garbage collection cycle begins the GC marks objects for deletion using reference counting or tracing.  Marking occurs for newer generations on every garbage collection cycle and for older generations on a less regular basis.  After marking is completed, the marked objects are deleted from memory.  Finally, the memory allocated for objects (the heap) is compressed. ",
                 "children":null
             }
         ]
@@ -786,7 +807,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Programming languages often provide APIs to configure and interact with the garbage collector.  These can  be either CLI arguments or modules developers can import into their code.  Java provides multiple CLI  options for configuring the GC, including which garbage collection approach to use",
+                "value":" Programming languages often provide APIs to configure and interact with the garbage collector.  These can be either CLI arguments or modules developers can import into their code.  Java provides multiple CLI options for configuring the GC, including which garbage collection approach to use",
                 "children":null
             },
             {
@@ -798,7 +819,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  For  example, developers can choose between the older CMS garbage collector and newer ",
+                "value":".  For example, developers can choose between the older CMS garbage collector and newer ",
                 "children":null
             },
             {
@@ -861,7 +882,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" sends a recommendation to the JVM to run a garbage  collection cycle",
+                "value":" sends a recommendation to the JVM to run a garbage collection cycle",
                 "children":null
             },
             {
@@ -873,7 +894,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  It's important to note that this is just a recommendation, there is a  chance that the GC will not run after invoking ",
+                "value":".  It's important to note that this is just a recommendation, there is a chance that the GC will not run after invoking ",
                 "children":null
             },
             {
@@ -900,7 +921,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" C# exposes a much more robust API for the garbage collector.  Some of the available methods and properties  are shown below. ",
+                "value":" C# exposes a much more robust API for the garbage collector.  Some of the available methods and properties are shown below. ",
                 "children":null
             }
         ]
@@ -936,7 +957,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" This article only scratches the surface of garbage collectors and the APIs they expose in programming  languages.  I now know a bit more about what happens when garbage collection cycles occur in my programs.   I'm excited to continue learning more and maybe one day implement a garbage collector of my own! ",
+                "value":" This article only scratches the surface of garbage collectors and the APIs they expose in programming languages.  I now understand a bit more about what happens when garbage collection cycles occur in my programs. I'm excited to continue learning more and maybe one day implement a garbage collector of my own! ",
                 "children":null
             }
         ]
