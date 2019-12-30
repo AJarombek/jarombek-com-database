@@ -13,4 +13,14 @@ const my_heart = `
 
 Object.seal(my_heart);
 
-const current_feeling = `My love and spirit is always with you, no matter which road you travel.`;
+const current_feeling = `
+    I hope you have a wonderful time on your special day.  Hopefully you get to 
+    spend it with those you love.  I also hope that my support and love was able to reach you and help
+    you this past year, and that it can help you again this coming year if you want it to.
+    
+    I am also working on some code for your day, but I don't think it will be done in time.  So I'm
+    sorry about that.  It will get done when it's mean't to be.
+    
+    Sending you all my love and best wishes,
+    Andy
+`;

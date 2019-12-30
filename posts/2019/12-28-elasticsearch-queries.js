@@ -52,7 +52,7 @@ preview = [
             {
                 "el": "#text",
                 "attributes": null,
-                "value": " and can be queried with JSON syntax.  In my ",
+                "value": " and are queried with JSON syntax.  In my ",
                 "children": null
             },
             {
@@ -73,7 +73,7 @@ preview = [
             {
                 "el": "#text",
                 "attributes": null,
-                "value": " I explored analyzers and the process of storing documents in an inverted index.  This article focuses on querying these documents. ",
+                "value": " I explored analyzers and the process of storing documents in an inverted index.  This article focuses on querying documents with JSON. ",
                 "children": null
             }
         ]
@@ -140,7 +140,7 @@ content = [
             {
                 "el": "#text",
                 "attributes": null,
-                "value": " and can be queried with JSON syntax.  In my ",
+                "value": " and are queried with JSON syntax.  In my ",
                 "children": null
             },
             {
@@ -161,7 +161,7 @@ content = [
             {
                 "el": "#text",
                 "attributes": null,
-                "value": " I explored analyzers and the process of storing documents in an inverted index.  This article focuses on querying these documents. ",
+                "value": " I explored analyzers and the process of storing documents in an inverted index.  This article focuses on querying documents with JSON. ",
                 "children": null
             }
         ]
@@ -210,7 +210,7 @@ content = [
             {
                 "el": "#text",
                 "attributes": null,
-                "value": " by Pranav Shukla.  All twenty query an index called ",
+                "value": " by Pranav Shukla.  All twenty queries search an index called ",
                 "children": null
             },
             {
@@ -224,7 +224,7 @@ content = [
             {
                 "el": "#text",
                 "attributes": null,
-                "value": " which contains races I ran along with upcoming races I'm planning to run.  The documents in this index are listed below: ",
+                "value": ", which contains races I ran along with upcoming races I'm planning to run.  The documents in this index are listed below: ",
                 "children": null
             }
         ]
@@ -419,7 +419,7 @@ content = [
             {
                 "el": "#text",
                 "attributes": null,
-                "value": " that can be used in range queries. ",
+                "value": " that is used in range queries. ",
                 "children": null
             },
             {
@@ -613,7 +613,7 @@ content = [
             {
                 "el": "#text",
                 "attributes": null,
-                "value": " You may have noticed that the prior query result gave the resulting document a score.  This is helpful for text searches, however for term searches there isn't much benefit.  The following query is the same as the last one, except it gives the documents returned a constant score. ",
+                "value": " You may have noticed that the prior query result gave the resulting document a score.  This is helpful for text searches, since it determines which results are most relevant.  However, for term searches there  isn't much benefit, because every document contains the exact same term.  The following query is the same  as the last one, except it gives the documents returned a constant score. ",
                 "children": null
             }
         ]
@@ -811,7 +811,7 @@ content = [
             {
                 "el": "#text",
                 "attributes": null,
-                "value": " When a full text search is performed with multiple words in the query, resulting documents will contain at least one of the words.  You can imagine the query containing ",
+                "value": " When a full text search is performed with multiple words in the query, resulting documents must contain at least one of the words.  You can imagine the query containing ",
                 "children": null
             },
             {
@@ -1052,7 +1052,7 @@ content = [
                     {
                         "el": "#text",
                         "attributes": null,
-                        "value": "NYRR #1 #2 #3",
+                        "value": "[\"NYRR\", \"#1\", \"#2\", \"#3\"]",
                         "children": null
                     }
                 ]
@@ -1196,7 +1196,7 @@ content = [
             {
                 "el": "#text",
                 "attributes": null,
-                "value": " Match phrase queries require that an entire phrase must exist in a document.  The following query will match all documents that have ",
+                "value": " Match phrase queries require that an entire phrase exists in a document.  The following query  matches all documents with a ",
                 "children": null
             },
             {
@@ -1210,7 +1210,7 @@ content = [
             {
                 "el": "#text",
                 "attributes": null,
-                "value": " fields whose values end with ",
+                "value": " field whose value ends with ",
                 "children": null
             },
             {
@@ -1229,7 +1229,7 @@ content = [
             {
                 "el": "#text",
                 "attributes": null,
-                "value": ".  It matches all races run in New York, NY. ",
+                "value": ".  It matches all races in New York, NY. ",
                 "children": null
             }
         ]
@@ -1265,7 +1265,7 @@ content = [
             {
                 "el": "#text",
                 "attributes": null,
-                "value": " When using match phrase queries, you can be lenient about missing words with the ",
+                "value": " When using match phrase queries, leniency towards missing words is possible with the ",
                 "children": null
             },
             {
@@ -1293,7 +1293,45 @@ content = [
             {
                 "el": "#text",
                 "attributes": null,
-                "value": " field contains two terms missing in the phrase query. ",
+                "value": " field contains two terms missing in the phrase query.  The missing terms are ",
+                "children": null
+            },
+            {
+                "el": "strong",
+                "attributes": null,
+                "value": null,
+                "children": [
+                    {
+                        "el": "#text",
+                        "attributes": null,
+                        "value": "\"at\"",
+                        "children": null
+                    }
+                ]
+            },
+            {
+                "el": "#text",
+                "attributes": null,
+                "value": " and ",
+                "children": null
+            },
+            {
+                "el": "strong",
+                "attributes": null,
+                "value": null,
+                "children": [
+                    {
+                        "el": "#text",
+                        "attributes": null,
+                        "value": "\"the\"",
+                        "children": null
+                    }
+                ]
+            },
+            {
+                "el": "#text",
+                "attributes": null,
+                "value": ". ",
                 "children": null
             }
         ]
@@ -1483,7 +1521,7 @@ content = [
             {
                 "el": "#text",
                 "attributes": null,
-                "value": " Bool queries allow for complex document querying.  They are the SQL equivalents are the ",
+                "value": " Bool queries allow for complex document querying.  They are the SQL equivalents of the ",
                 "children": null
             },
             {
@@ -1620,7 +1658,7 @@ content = [
             {
                 "el": "#text",
                 "attributes": null,
-                "value": " clause is the same as the ",
+                "value": " clause is equivalent to  the ",
                 "children": null
             },
             {
@@ -1634,7 +1672,7 @@ content = [
             {
                 "el": "#text",
                 "attributes": null,
-                "value": " clause except that it doesn't score the returned documents.  All documents will have a score of zero. ",
+                "value": " clause except that it doesn't score the returned documents.  All documents are given a score of zero. ",
                 "children": null
             }
         ]
@@ -1689,7 +1727,7 @@ content = [
             {
                 "el": "#text",
                 "attributes": null,
-                "value": " While the ",
+                "value": " While ",
                 "children": null
             },
             {
@@ -1703,7 +1741,7 @@ content = [
             {
                 "el": "#text",
                 "attributes": null,
-                "value": " clause is equivalent to a SQL ",
+                "value": " is equivalent to a SQL ",
                 "children": null
             },
             {
@@ -1717,7 +1755,7 @@ content = [
             {
                 "el": "#text",
                 "attributes": null,
-                "value": ", the ",
+                "value": ", ",
                 "children": null
             },
             {
@@ -1731,7 +1769,7 @@ content = [
             {
                 "el": "#text",
                 "attributes": null,
-                "value": " clause is equivalent to a SQL ",
+                "value": "  is equivalent to a SQL ",
                 "children": null
             },
             {
@@ -1831,7 +1869,7 @@ content = [
             {
                 "el": "#text",
                 "attributes": null,
-                "value": " This article discusses some of the building blocks for querying Elasticsearch.  In my next Elasticsearch article I'll wrap up my exploration of the Elasticsearch portion of the ELK stack by discussing data aggregations.  All the code from this article is available on ",
+                "value": " This article discussed some of the building blocks for querying Elasticsearch.  In my next Elasticsearch article, I'll wrap up the Elasticsearch portion of the ELK stack by discussing data aggregations.  All the code from this article is available on ",
                 "children": null
             },
             {
