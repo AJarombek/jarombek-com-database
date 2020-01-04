@@ -14,13 +14,25 @@ const my_heart = `
 Object.seal(my_heart);
 
 const current_feeling = `
-    I hope you have a wonderful time on your special day.  Hopefully you get to 
-    spend it with those you love.  I also hope that my support and love was able to reach you and help
-    you this past year, and that it can help you again this coming year if you want it to.
+    I know I've said this before, but I hope your decision not to speak to me is because you don't want to
+    and not because of something else.  I hope you don't think I would get mad or upset or think 
+    differently of you if you told me about your life.  When I saw you this summer it seemed like you
+    had a hard time seeing me.  I'm not sure if that was because you didn't want to see me or 
+    because it was hard for you to see someone you cared for but felt you couldn't really speak 
+    to.  For me having you say hi was an answered prayer.  If you've been reading these you 
+    already know that.
     
-    I am also working on some code for your day, but I don't think it will be done in time.  So I'm
-    sorry about that.  It will get done when it's mean't to be.
+    I wrote a bunch of file drafts this afternoon that would have explained to you how happy it 
+    would make me just getting to hear about your life, your happy moments, sad moments, fears, 
+    and even experiences with other people.  In the end I deleted them, because they all ended with
+    me being emotional and asking to see you.  You don't have to see me, and I know you will if you 
+    ever want to.
     
-    Sending you all my love and best wishes,
+    I just hope you know that I love you.  That my love is unconditional.  It will always be here for 
+    you.  At any moment and at any stage of your life.  Whether you never use it, use to as a 
+    shoulder to lean on in tough times, use it all the time, or use it some other way is what is 
+    left up to you.
+    
+    Love Always,
     Andy
 `;

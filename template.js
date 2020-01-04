@@ -1,7 +1,7 @@
 /**
  * Script for the MongoDB Shell.
  * @author Andrew Jarombek
- * @since 1/5/2019
+ * @since 1/5/2020
  */
 
 connection = new Mongo();
@@ -11,8 +11,8 @@ preview = [];
 
 content = [];
 
-postName = "jan-1-2019-haskell-pt5";
-postDate = new Date('2019-01-01T12:00:00');
+postName = "jan-1-2020-haskell-pt5";
+postDate = new Date('2020-01-01T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
