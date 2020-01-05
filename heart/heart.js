@@ -14,25 +14,9 @@ const my_heart = `
 Object.seal(my_heart);
 
 const current_feeling = `
-    I know I've said this before, but I hope your decision not to speak to me is because you don't want to
-    and not because of something else.  I hope you don't think I would get mad or upset or think 
-    differently of you if you told me about your life.  When I saw you this summer it seemed like you
-    had a hard time seeing me.  I'm not sure if that was because you didn't want to see me or 
-    because it was hard for you to see someone you cared for but felt you couldn't really speak 
-    to.  For me having you say hi was an answered prayer.  If you've been reading these you 
-    already know that.
+    I'm so sorry, I didn't want to make you sad.  I just wanted to show my support for you and let 
+    you know that I care about you no matter what.  I never want to hurt you.
     
-    I wrote a bunch of file drafts this afternoon that would have explained to you how happy it 
-    would make me just getting to hear about your life, your happy moments, sad moments, fears, 
-    and even experiences with other people.  In the end I deleted them, because they all ended with
-    me being emotional and asking to see you.  You don't have to see me, and I know you will if you 
-    ever want to.
-    
-    I just hope you know that I love you.  That my love is unconditional.  It will always be here for 
-    you.  At any moment and at any stage of your life.  Whether you never use it, use to as a 
-    shoulder to lean on in tough times, use it all the time, or use it some other way is what is 
-    left up to you.
-    
-    Love Always,
-    Andy
+    If you want me to stop writing these and expressing my love, just tell me.  I'll be okay. 
+    I'll understand.  I don't want to show love that just brings sorrow.
 `;
