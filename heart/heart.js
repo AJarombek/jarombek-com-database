@@ -12,11 +12,3 @@ const my_heart = `
 `;
 
 Object.seal(my_heart);
-
-const current_feeling = `
-    I'm so sorry, I didn't want to make you sad.  I just wanted to show my support for you and let 
-    you know that I care about you no matter what.  I never want to hurt you.
-    
-    If you want me to stop writing these and expressing my love, just tell me.  I'll be okay. 
-    I'll understand.  I don't want to show love that just brings sorrow.
-`;
