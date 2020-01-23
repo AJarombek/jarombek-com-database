@@ -44,4 +44,8 @@ grown as a person even more than me.  Hopefully this letter put a smile on your 
 
 Peace, Love, & Happiness,
 Andy
+
+P.S.
+
+I am so proud of you!!  You always have all my support.  It is such a relief that you are doing well, yay J!
 `;
