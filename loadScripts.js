@@ -164,4 +164,6 @@ load('./posts/2019/10-28-unit-testing-aws-infrastructure.js');
 load('./posts/2019/11-12-garbage-collection.js');
 
 load('./posts/2019/12-28-elasticsearch-queries.js');
-load('./posts/2019/12-31-react-16-3.js');
+
+// 2020 Articles
+load('./posts/2020/01-31-react-16-3.js');
