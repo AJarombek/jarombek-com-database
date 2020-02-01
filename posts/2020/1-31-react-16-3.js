@@ -13,8 +13,8 @@ preview = [];
 
 content = [];
 
-postName = "dec-31-2019-react-16-3";
-postDate = new Date('2019-12-31T12:00:00');
+postName = "jan-31-2020-react-16-3";
+postDate = new Date('2020-01-31T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
