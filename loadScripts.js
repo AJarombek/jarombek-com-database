@@ -168,4 +168,4 @@ load('./posts/2019/12-28-elasticsearch-queries.js');
 // 2020 Articles
 load('./posts/2020/01-31-react-16-3.js');
 
-load('./posts/2020/02-03-react-jest-enzyme.js');
+load('./posts/2020/02-05-react-jest-enzyme.js');
