@@ -37,7 +37,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In my early programming days I thought unit tests slowed down development to a fault.  Nowadays they are mandatory in all my applications.  Unit tests are assertions that a unit of code is working as expected in isolation of other components in the codebase.  They help promote code review, catch recurring bugs, and ease the burden of upgrading and switching technologies. ",
+                "value":".  In my early programming days I thought unit tests slowed down development to a fault.  Nowadays they are mandatory in all my applications.  Unit tests are assertions that a unit of code is working as expected in isolation of other components in the codebase.  They promote code review, help catch recurring bugs, and ease the burden of upgrading and switching technologies. ",
                 "children":null
             }
         ]
@@ -129,7 +129,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  In my early programming days I thought unit tests slowed down development to a fault.  Nowadays they are mandatory in all my applications.  Unit tests are assertions that a unit of code is working as expected in isolation of other components in the codebase.  They help promote code review, catch recurring bugs, and ease the burden of upgrading and switching technologies. ",
+                "value":".  In my early programming days I thought unit tests slowed down development to a fault.  Nowadays they are mandatory in all my applications.  Unit tests are assertions that a unit of code is working as expected in isolation of other components in the codebase.  They promote code review, help catch recurring bugs, and ease the burden of upgrading and switching technologies. ",
                 "children":null
             }
         ]
@@ -197,7 +197,49 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" My previous article consisted of a demo application which showcasing the new features in React 16.3 with detailed descriptions and sample components.  The demo is a React application, so naturally I created a ",
+                "value":" My ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://jarombek.com/blog/jan-31-2020-react-16-3"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"previous article",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" consisted of a ",
+                "children":null
+            },
+            {
+                "el":"a",
+                "attributes":{
+                    "href":"https://react16-3.demo.jarombek.com/"
+                },
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":" demo application",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" which showcasing the new features in React 16.3 with detailed descriptions and sample components.  The demo is a React application, so naturally I created a ",
                 "children":null
             },
             {
@@ -259,7 +301,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Any npm project begins with the ",
+                "value":" Any npm project begins with a ",
                 "children":null
             },
             {
@@ -280,7 +322,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" file and the application dependencies.  For the sake of brevity I only listed the dependencies needed for unit testing. ",
+                "value":" file and application dependencies.  For the sake of brevity I only listed the dependencies needed for unit testing. ",
                 "children":null
             }
         ]
@@ -329,7 +371,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" are invoked, both standard and dev dependencies are installed.  However, when a module is installed with ",
+                "value":" is invoked, both standard and dev dependencies are installed.  However, when a module is installed with ",
                 "children":null
             },
             {
@@ -357,7 +399,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", only standard dependencies are installed.  We don’t want unit testing frameworks to be installed for module end-users, so their dependency definitions always exist in ",
+                "value":", only standard dependencies are installed.  We don't want unit testing frameworks to be installed for module end-users, so their dependency definitions always exist in ",
                 "children":null
             },
             {
@@ -471,7 +513,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  It’s used for component snapshot testing. ",
+                "value":".  It's used for component snapshot testing. ",
                 "children":null
             }
         ]
@@ -503,7 +545,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" initialized, it’s time to create the applications Jest configuration. The Jest configuration is located alongside ",
+                "value":" initialized, it's time to create the applications Jest configuration. The Jest configuration is located alongside ",
                 "children":null
             },
             {
@@ -577,7 +619,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" configures the testing suite for the application.  Let’s highlight some important aspects of the configuration.  Tests are executed in the ",
+                "value":" configures the testing suite for the application.  Let's highlight some important aspects of the configuration.  Tests are executed in the ",
                 "children":null
             },
             {
@@ -734,7 +776,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" which consists of React and React Router bootstrapping.  In order for the test suite to pass, code coverage must be 100%. ",
+                "value":" which consists of React and React Router bootstrapping).  In order for the test suite to pass, code coverage must be 100%. ",
                 "children":null
             }
         ]
@@ -749,7 +791,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Code coverage is the percentage of a program that executes in a test suite.  Code coverage is usually run alongside tests, and generates a text or html report.  While 100% code coverage is ideal, it isn’t always practical or necessary.  Likewise, 100% code coverage doesn’t mean that code is properly tested.  Poorly written tests count towards code coverage the same as properly written ones! ",
+                "value":" Code coverage is the percentage of a program that executes in a test suite.  Code coverage is usually run alongside tests, and generates a text or html report.  While 100% code coverage is ideal, it isn't always practical or necessary.  Likewise, 100% code coverage doesn't mean that code is properly tested.  Poorly written tests count towards code coverage the same as properly written ones! ",
                 "children":null
             }
         ]
@@ -972,7 +1014,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" A snapshot test takes a snapshot of the UI and saves it.  On subsequent snapshot tests, the saved snapshot is compared to the current UI.  If the UI changed since the snapshot was taken, the test fails.  Snapshot tests are very helpful in preventing unwanted UI changes",
+                                        "value":" A snapshot test takes a snapshot of the UI and saves it.  On subsequent snapshot tests, the saved snapshot is compared to the current UI.  If the UI changed since the snapshot was taken, the test fails.  Snapshot tests are very helpful for preventing unwanted UI changes",
                                         "children":null
                                     },
                                     {
@@ -1060,7 +1102,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". These functions aren’t explicitly imported into test code, Jest injects them implicitly when the tests execute. ",
+                "value":". These functions aren't explicitly imported into test code, Jest injects them implicitly when the tests execute. ",
                 "children":null
             }
         ]
@@ -1212,7 +1254,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":"test application",
+                        "value":"\"Hello World\" test application",
                         "children":null
                     }
                 ]
@@ -1354,7 +1396,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The next piece needed for React unit tests is Enzyme.  I previously mentioned that React component unit tests are implemented with shallow rendering.  Shallow rendering only renders the React elements in a components render method (or return value for functional components), not any child components.  Enzyme provides shallow rendering with the ",
+                "value":" The next piece needed for React unit tests is Enzyme.  I previously mentioned that React component unit tests are implemented with shallow rendering.  Shallow rendering only renders the React elements in a components render method (or return value for functional components), excluding any child components.  Enzyme provides shallow rendering with the ",
                 "children":null
             },
             {
@@ -1443,7 +1485,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" if the wrapper’s rendered component contains one or more elements (nodes)",
+                "value":" if the wrapper's rendered component contains one or more elements (nodes)",
                 "children":null
             },
             {
@@ -1545,7 +1587,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" doesn’t simulate rendering on the DOM, so none of its APIs are accessible from the wrapper object.  To test components interactions with the DOM they must be fully rendered with Enzyme’s ",
+                "value":" doesn't simulate rendering on the DOM, so none of its APIs are accessible from the wrapper object.  Components must be fully rendered with Enzyme's  ",
                 "children":null
             },
             {
@@ -1559,7 +1601,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function. Full DOM rendering falls under integration tests, which I will cover in the next section. ",
+                "value":" function in order to be tested with the DOM. Full DOM rendering falls under integration tests, which I will cover in the next section. ",
                 "children":null
             }
         ]
@@ -1642,7 +1684,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Integration tests occur when units of code are combined and tested together as a group.  Integration tests build upon the Jest and Enzyme fundamentals used for unit testing.  In this section I’ll show some interesting tests from my React 16.3 application.  I encourage you to check out and adjust my tests on ",
+                "value":" Integration tests occur when units of code are combined and tested together as a group.  Integration tests build upon the Jest and Enzyme fundamentals used for unit testing.  In this section, I'll show some interesting tests from my React 16.3 application.  I encourage you to check out and adjust my tests on ",
                 "children":null
             },
             {
@@ -1663,7 +1705,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" to your specific needs. ",
+                "value":" to meet your specific needs. ",
                 "children":null
             }
         ]
@@ -1676,7 +1718,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Integration tests are performed on React components using Enzyme’s ",
+                "value":" Integration tests are performed on React components using Enzyme's ",
                 "children":null
             },
             {
@@ -1714,7 +1756,7 @@ content = [
         "attributes":{
             "language":"JavaScript"
         },
-        "value":"import React from 'react';\nimport { shallow, mount } from 'enzyme';\nimport RefSamples from '../../src/createref/RefSamples';\n\nit('lights up a light bulb on focus', () => {\n  const wrapper = mount(<RefSamples />);\n\n  const button = wrapper.find('.aj-outlined-button');\n  const lightBulb = wrapper.find('.ref-sample');\n\n  // The initial filter value will be empty instead of 'brightness(4)' as defined in my CSS file\n  // because Jest/Enzyme don't load CSS stylesheets.\n  expect(lightBulb.getDOMNode().style.filter).toEqual('');\n\n  button.simulate('click');\n\n  // Alternative way to get the style value through the DOM API.\n  expect(lightBulb.getDOMNode().style.getPropertyValue('filter'))\n    .toEqual('brightness(5)');\n});\n",
+        "value":"import React from 'react';\nimport { shallow, mount } from 'enzyme';\nimport RefSamples from '../../src/createref/RefSamples';\n\nit('lights up a light bulb on focus', () => {\n  const wrapper = mount(<RefSamples />);\n\n  const button = wrapper.find('.aj-outlined-button');\n  const lightBulb = wrapper.find('.ref-sample');\n\n  // The initial filter value will be empty instead of 'brightness(4)' as defined in my CSS file\n  // because Jest/Enzyme don't load CSS stylesheets.\n  expect(lightBulb.getDOMNode().style.filter).toEqual('');\n\n  button.simulate('click');\n\n  expect(lightBulb.getDOMNode().style.filter).toEqual('brightness(5)');\n\n  // Alternative way to get the style value through the DOM API.\n  expect(lightBulb.getDOMNode().style.getPropertyValue('filter'))\n    .toEqual('brightness(5)');\n});\n",
         "children":null
     },
     {
@@ -1725,7 +1767,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Enzyme provides access into the DOM node of a React element with the ",
+                "value":" Enzyme provides access into a DOM node of a React element with the ",
                 "children":null
             },
             {
@@ -1733,7 +1775,7 @@ content = [
                 "attributes":{
                     "className":"jarombek-inline-code"
                 },
-                "value":"getDomNone()",
+                "value":"getDOMNode()",
                 "children":null
             },
             {
@@ -1759,7 +1801,7 @@ content = [
                 "attributes":{
                     "className":"jarombek-inline-code"
                 },
-                "value":"style.filer",
+                "value":"style.filter",
                 "children":null
             },
             {
@@ -1806,7 +1848,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", integration tests are needed to hook into the DOM API.  I used Enzyme’s ",
+                "value":", integration tests are needed.  I used Enzyme's ",
                 "children":null
             },
             {
@@ -1839,7 +1881,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/react-16-3-demo/tree/master/app/src"
+                    "href":"https://github.com/AJarombek/react-16-3-demo/blob/master/app/src/createref/RefSamples.js"
                 },
                 "value":null,
                 "children":[
@@ -1860,7 +1902,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/react-16-3-demo/tree/master/app/test"
+                    "href":"https://github.com/AJarombek/react-16-3-demo/blob/master/app/test/createref/RefSamples.test.js"
                 },
                 "value":null,
                 "children":[
@@ -1909,7 +1951,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" A common practice in unit tests is mocking.  Mocking is when a function or external dependency is replaced with something that imitates its behavior.  Mocking helps isolate unit tests from the side effects of code dependencies.  For example, a function that makes a REST API call can be mocked to simply return an object. ",
+                "value":" A common practice in unit tests is mocking.  Mocking is when a function or external dependency is replaced with something that imitates its behavior.  Mocking helps isolate unit tests from the side effects of code dependencies.  For example, a function that makes an external REST API call can be mocked to simply return an object. ",
                 "children":null
             }
         ]
@@ -1922,7 +1964,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In my React 16.3 application, I needed to mock the behavior or React Router navigation.  React Router navigates users to different web pages by placing a new value in the browser history.  For example, from a home page (",
+                "value":" In my React 16.3 application, I needed to mock the behavior of React Router navigation.  React Router navigates users to different web pages by placing a new value in the browser history.  For example, from a home page (",
                 "children":null
             },
             {
@@ -1960,7 +2002,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":") to the browser history, navigating the user to a page displaying my resume in the process.  My application uses React Router’s ",
+                "value":") to the browser history, navigating the user to a page displaying my resume in the process.  My application uses React Router's ",
                 "children":null
             },
             {
@@ -1974,7 +2016,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" hook method to provide navigation.  The code to test its behavior mocks ",
+                "value":" hook method to provide navigation.  The code which tests its behavior mocks ",
                 "children":null
             },
             {
@@ -2079,7 +2121,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function, which provides information such as the number of times its been called and with which arguments",
+                "value":" function, providing information such as the number of times its been called and with which arguments",
                 "children":null
             },
             {
@@ -2123,7 +2165,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I’m still learning how to use mocks and spies in Jest, so the code above can likely be improved further! ",
+                "value":" I'm still learning how to use mocks and spies in Jest, so the code above can likely be improved upon! ",
                 "children":null
             }
         ]
@@ -2151,7 +2193,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In my experience, snapshot tests are much simpler than unit tests and integration tests.  The job of a snapshot test is to pass if the rendered component matches the existing snapshot, or fail if the rendered component changed since the existing snapshot was taken. ",
+                "value":" In my experience, snapshot tests are much simpler than unit tests and integration tests.  A  snapshot test passes if a rendered component matches an existing snapshot, and fails if a rendered component changed since an existing snapshot was taken. ",
                 "children":null
             }
         ]
@@ -2164,7 +2206,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The first step in implementing snapshot tests is to create the test case.  The following snapshot test is for a ",
+                "value":" The first step when implementing snapshot tests is to create a test case.  The following is a snapshot test  for a ",
                 "children":null
             },
             {
@@ -2185,21 +2227,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" used in my React 16.3 demo, ",
-                "children":null
-            },
-            {
-                "el":"code",
-                "attributes":{
-                    "className":"jarombek-inline-code"
-                },
-                "value":"ButtonWrapper",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":". ",
+                "value":" used in my React 16.3 demo. ",
                 "children":null
             }
         ]
@@ -2320,7 +2348,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" All future tests don’t overwrite the snapshot file, instead comparing the result of the snapshot test to it.  If the snapshots mismatch, the test fails. ",
+                "value":" All future tests don't overwrite the snapshot file, instead comparing the result of the snapshot test to it.  If the snapshots mismatch, the test fails. ",
                 "children":null
             }
         ]
@@ -2360,7 +2388,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I’ve only found snapshots helpful when the developer or team makes it a point of emphasis to validate snapshots before releasing new code.  Otherwise, snapshot files will always be out of date and worthless for testing purposes. ",
+                "value":" I've only found snapshots helpful when the developer or team makes it a point of emphasis to validate snapshots before releasing new code.  Otherwise, snapshot files will always be out of date and worthless for testing purposes. ",
                 "children":null
             }
         ]
@@ -2436,7 +2464,7 @@ db.posts.insertOne({
     tags: [
         {
             name: "Jest",
-            picture: "https://asset.jarombek.com/logos/jest.png",
+            picture: "https://asset.jarombek.com/logos/jest.svg",
             color: "jest"
         },
         {
