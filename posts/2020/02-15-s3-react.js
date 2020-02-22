@@ -31,7 +31,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" (Simple Storage Service) is an AWS service for storing objects.  Since objects are files, S3 can be viewed as a filesystem accessible over HTTP. I often use S3 for storing images, fonts, and other assets for my applications.  Some examples include my ",
+                "value":" (Simple Storage Service) is an AWS service for storing objects.  Since objects are files, S3 can be viewed as a filesystem accessible over HTTP.  I often  use S3 for storing images, fonts, and other assets for my applications.  Some examples include my ",
                 "children":null
             },
             {
@@ -86,7 +86,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Since Amazon S3 stores files and acts as a filesystem, it can also be used to host a static website. ",
+                "value":" Since Amazon S3 stores files and acts as a filesystem, it can also be used to host static websites. ",
                 "children":null
             }
         ]
@@ -117,7 +117,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" (Simple Storage Service) is an AWS service for storing objects.  Since objects are files, S3 can be viewed as a filesystem accessible over HTTP. I often use S3 for storing images, fonts, and other assets for my applications.  Some examples include my ",
+                "value":" (Simple Storage Service) is an AWS service for storing objects.  Since objects are files, S3 can be viewed as a filesystem accessible over HTTP.  I often  use S3 for storing images, fonts, and other assets for my applications.  Some examples include my ",
                 "children":null
             },
             {
@@ -172,7 +172,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Since Amazon S3 stores files and acts as a filesystem, it can also be used to host a static website. ",
+                "value":" Since Amazon S3 stores files and acts as a filesystem, it can also be used to host static websites. ",
                 "children":null
             }
         ]
@@ -232,7 +232,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" Thanks to cloud storage systems like Amazon S3, static websites can be an easy and inexpensive option for hosting a website.  One downside of static websites is that any logic to make the site dynamic must be performed on the client-side, not the server-side",
+                                        "value":" Thanks to cloud storage systems like Amazon S3, static websites can be an easy and inexpensive option for hosting a website.  One downside of static websites is that any logic which makes a site dynamic must be performed on the client-side, not the server-side",
                                         "children":null
                                     },
                                     {
@@ -244,7 +244,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":".  Database and API requests can still be made, but they must be performed by the front-end and not delegated to a back-end server.  This can help reduce complexity at the cost of less flexibility.  Static websites that provide dynamic logic with front-end JavaScript code are sometimes called client-side dynamic websites",
+                                        "value":".  Database and API requests can still be made, but they must be performed by the front-end and not delegated to a back-end server.  This can help reduce complexity at the cost of less flexibility.  Static websites providing dynamic logic with front-end JavaScript code are sometimes called client-side dynamic websites",
                                         "children":null
                                     },
                                     {
@@ -313,7 +313,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" Dynamic websites are hosted on a web server, which nowadays are often hosted on the cloud in a VM or container architecture.  This can often be more costly and takes more effort to maintain (especially in the case of a VM) than a static website cloud storage system counterpart like S3.  However, this increased complexity also provides applications more flexibility. ",
+                                        "value":" Dynamic websites are hosted on a web server, which nowadays often live on the cloud in a VM or container architecture.  This is often more costly and takes more effort to maintain (especially in the case of a VM) than a static website's cloud storage system.  However, this increased complexity also provides applications more flexibility. ",
                                         "children":null
                                     }
                                 ]
@@ -374,7 +374,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Since the demo only contained client-side code (React.js flavor of JavaScript, CSS, HTML, PNGs) I decided it was a perfect candidate to be hosted on Amazon S3.  For the remainder of this article I'll discuss the process of hosting my demo application on Amazon S3 along with the challenges I faced. ",
+                "value":".  Since the demo only contained client-side code (JavaScript, CSS, HTML, PNGs) I decided it was a perfect candidate to be hosted on Amazon S3.  For the remainder of this article I'll discuss the process of hosting my demo application on Amazon S3 along with the challenges I faced. ",
                 "children":null
             }
         ]
@@ -779,7 +779,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  CloudFront speeds up access times to static assets for clients with the premise of data locality.  With assets stored on edge nodes closer to your geographical location than the S3 bucket (in my case hosted in an AWS data center in North Carolina, USA), assets can be accessed quicker. ",
+                "value":".  CloudFront speeds up access times to static assets for clients under the premise of data locality.  With assets stored on edge nodes closer to your geographical location than the S3 bucket (in my case hosted in an AWS data center in North Carolina, USA), assets can be accessed quicker. ",
                 "children":null
             }
         ]
@@ -994,7 +994,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://github.com/AJarombek/terraform-modules"
+                    "href":"https://github.com/AJarombek/terraform-modules/tree/master/acm-certificate"
                 },
                 "value":null,
                 "children":[
@@ -1098,7 +1098,45 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" prefixed HTTPS requests to my S3 bucket.  I read tutorials mentioning that two S3 buckets should be created, one with the main domain (react16-3.demo.jarombek.com) and another with the www prefixed subdomain (www.react16-3.demo.jarombek.com)",
+                "value":" prefixed HTTPS requests to my S3 bucket.  I read tutorials mentioning that two S3 buckets should be created, one with the main domain (",
+                "children":null
+            },
+            {
+                "el":"strong",
+                "attributes":null,
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"react16-3.demo.jarombek.com",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":") and another with the www prefixed subdomain (",
+                "children":null
+            },
+            {
+                "el":"strong",
+                "attributes":null,
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"www.react16-3.demo.jarombek.com",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":")",
                 "children":null
             },
             {
@@ -1123,7 +1161,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Since CloudFront creates proxy servers which retrieve and cache assets from S3, a different approach is needed to route www prefixed traffic to the same assets as main domain traffic.  The solution is actually quite simple.  Two CloudFront distributions are created instead of two S3 buckets.  Both CloudFront distributions retrieve assets from the same underlying S3 bucket. ",
+                "value":" Since CloudFront creates proxy servers which retrieve and cache assets from S3, a different approach is needed to route www prefixed traffic to the same assets as base domain traffic.  The solution is actually quite simple.  Two CloudFront distributions are created instead of two S3 buckets.  Both CloudFront distributions retrieve assets from the same underlying S3 bucket. ",
                 "children":null
             }
         ]
@@ -1157,7 +1195,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", CloudFront access the ",
+                "value":", CloudFront accesses the ",
                 "children":null
             },
             {
