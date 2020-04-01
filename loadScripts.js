@@ -170,3 +170,5 @@ load('./posts/2020/01-31-react-16-3.js');
 
 load('./posts/2020/02-05-react-jest-enzyme.js');
 load('./posts/2020/02-15-s3-react.js');
+
+load('./posts/2020/03-31-numpy.js');
