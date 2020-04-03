@@ -16,7 +16,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In my new role at work, a good chunk of my programming is Python based and revolves around data analysis.  I already knew Python, however I wanted a refresher on libraries such as numpy and wanted to learn libraries such as pandas and matplotlib.  This article discusses numpy, short for \"Numerical Python\".  This article isn't meant to teach numpy to beginners, instead discussing aspects of the library I found most interesting. ",
+                "value":" In my new role at work, a good chunk of my programming is Python based and revolves around data analysis.  I already knew Python, however I wanted a review libraries such as numpy and  learn libraries such as pandas and matplotlib.  This article discusses numpy, short for \"Numerical Python\".  The goal of this article isn't to teach numpy to beginners, instead focusing on  library aspects I found most interesting. ",
                 "children":null
             }
         ]
@@ -47,7 +47,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In my new role at work, a good chunk of my programming is Python based and revolves around data analysis.  I already knew Python, however I wanted a refresher on libraries such as numpy and wanted to learn libraries such as pandas and matplotlib.  This article discusses numpy, short for \"Numerical Python\".  This article isn't meant to teach numpy to beginners, instead discussing aspects of the library I found most interesting. ",
+                "value":" In my new role at work, a good chunk of my programming is Python based and revolves around data analysis.  I already knew Python, however I wanted a review libraries such as numpy and  learn libraries such as pandas and matplotlib.  This article discusses numpy, short for \"Numerical Python\".  The goal of this article isn't to teach numpy to beginners, instead focusing on  library aspects I found most interesting. ",
                 "children":null
             }
         ]
@@ -75,7 +75,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Numpy is a library used for data analysis and scientific computing.  At its most basic level, numpy exposes an API for working with arrays of one or more dimensions.  Numpy is often used in conjunction with higher-level languages such as pandas, which builds upon numpy arrays. ",
+                "value":" Numpy is a library used for data analysis and scientific computing.  At its most basic level, numpy exposes an API for working with arrays of one or more dimensions.  Numpy is often used in conjunction with higher-level libraries such as pandas, which builds upon numpy arrays. ",
                 "children":null
             }
         ]
@@ -98,7 +98,7 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"arr = np.array([1, 2, 3])\n",
+        "value":"import numpy as np\n\narr = np.array([1, 2, 3])\n",
         "children":null
     },
     {
@@ -121,7 +121,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Its lower level C implementation helps create extremely fast array manipulation and analysis. ",
+                "value":".  Its lower level C implementation helps facilitate extremely fast array manipulation and analysis. ",
                 "children":null
             }
         ]
@@ -134,7 +134,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In my opinion, numpy's API is also superior to the native Python list implementation.  Simple array operations can be performed in a more concise manner, and advanced commands exist that would be very challenging to execute on normal lists.  One of the simple features that shows the power of numpy is vectorization. ",
+                "value":" In my opinion, numpy's API is superior to the native Python list implementation.  Simple array operations are performed in a more concise manner, and advanced commands exist that are challenging to implement in the Python list API.  One of the simple features that shows the power of numpy is vectorization. ",
                 "children":null
             }
         ]
@@ -181,7 +181,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" abilities.  Vectorization in numpy is when operations are applied to an entire array instead of individual items within a ",
+                "value":" abilities.  Vectorization in numpy is when operations are applied to entire arrays instead of individual items within a ",
                 "children":null
             },
             {
@@ -207,7 +207,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The ",
+                "value":".  Instead of writing a  ",
                 "children":null
             },
             {
@@ -221,7 +221,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" loop occurs in numpys C implementation, which is much faster than a native Python ",
+                "value":" loop for numpy arrays in Python code, the underlying numpy API uses a ",
                 "children":null
             },
             {
@@ -235,19 +235,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" loop",
-                "children":null
-            },
-            {
-                "el":"sup",
-                "attributes":null,
-                "value":"3",
-                "children":null
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":".  As a simple vectorization example, let's take a numpy array and multiply each element by two. ",
+                "value":" loop in its C implementation, which is much faster than native Python.  As a simple vectorization example, let's take a numpy array and multiply each element by two. ",
                 "children":null
             }
         ]
@@ -257,7 +245,7 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"import numpy as np\n\narr = np.arange(10)\narr\n\n# Out[1]: array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])\n\narr * 2\n\n# Out[2]: array([ 0,  2,  4,  6,  8, 10, 12, 14, 16, 18])\n",
+        "value":"arr = np.arange(10)\narr\n\n# Out[1]: array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])\n\narr * 2\n\n# Out[2]: array([ 0,  2,  4,  6,  8, 10, 12, 14, 16, 18])\n",
         "children":null
     },
     {
@@ -303,7 +291,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function creates an array of length 10 from 0 to 9.  Then a vectorization operation is performed.  Each item in the array is multiplied by two.  An equivalent Python list operation would use a ",
+                "value":" function creates an array of length 10 from 0 to 9.  Next, a vectorization operation is performed.  Each item in the array is multiplied by two.  An equivalent Python list operation would use a ",
                 "children":null
             },
             {
@@ -327,7 +315,7 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"native_arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n\ndef mult_by_2(arr: list, val: int) -> list:\nnew_arr = arr.copy()\n\nfor i in range(len(new_arr)):\nnew_arr[i] *= val\n\nreturn new_arr\n\nmult_by_2(native_arr, 2)\n\n# Out[3]: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]\n",
+        "value":"native_arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n\ndef mult_by_2(arr: list, val: int) -> list:\n  new_arr = arr.copy()\n\n  for i in range(len(new_arr)):\n    new_arr[i] *= val\n\n  return new_arr\n\nmult_by_2(native_arr, 2)\n\n# Out[3]: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]\n",
         "children":null
     },
     {
@@ -338,7 +326,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Vectorization operations on numpy arrays don't mutate the original array, instead creating a new array instance.  Therefore in my native Python implementation first makes a copy of the existing list before making changes. ",
+                "value":" Vectorization operations on numpy arrays don't mutate the original array, instead creating a new array instance.  Therefore, my native Python implementation first makes a copy of the existing list before making changes. ",
                 "children":null
             }
         ]
@@ -412,7 +400,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Once again, this would be more difficult to do with native Python lists. ",
+                "value":" Once again, this would be more difficult to write with native Python lists. ",
                 "children":null
             }
         ]
@@ -422,7 +410,7 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"def mult_together(arr1: list, arr2: list) -> list:\nreturn [arr1[i] * arr2[i] for i in range(len(arr1))]\n\nmult_together(native_arr, native_arr)\n\n# Out[5]: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]\n",
+        "value":"def mult_together(arr1: list, arr2: list) -> list:\n  return [arr1[i] * arr2[i] for i in range(len(arr1))]\n\nmult_together(native_arr, native_arr)\n\n# Out[5]: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]\n",
         "children":null
     },
     {
@@ -742,7 +730,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Here are the broadcasting results from the five scenarios I mentioned in my comparison table above: ",
+                "value":" Here are broadcasting results from the five scenarios I mentioned in my comparison table above: ",
                 "children":null
             }
         ]
@@ -752,7 +740,7 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"# Broadcasting [2 x 3] and [2 x 3].\narr1 = np.arange(6).reshape((2, 3))\narr2 = np.ones(6).reshape((2, 3))\n\nassert arr1.shape == (2, 3)\nassert arr2.shape == (2, 3)\n\narr1 + arr2\n\n# Out[6]: array([[1., 2., 3.],\n                 [4., 5., 6.]])\n\n# Broadcasting [2 x 3 x 4] and [3 x 4].\narr1 = np.arange(24).reshape((2, 3, 4))\narr2 = np.arange(12).reshape((3, 4))\n\nassert arr1.shape == (2, 3, 4)\nassert arr2.shape == (3, 4)\n\narr1 - arr2\n\n# Out[7]: array([[[ 0,  0,  0,  0],\n                  [ 0,  0,  0,  0],\n                  [ 0,  0,  0,  0]],\n\n                 [[12, 12, 12, 12],\n                  [12, 12, 12, 12],\n                  [12, 12, 12, 12]]])\n\n# Broadcasting [2 x 3] and [3 x 2].\narr1 = np.arange(6).reshape((2, 3))\narr2 = np.arange(6).reshape((3, 2))\n\nassert arr1.shape == (2, 3)\nassert arr2.shape == (3, 2)\n\ntry:\narr1 + arr2\n\n# This point will never be reached.\nassert False\n\nexcept ValueError as e:\nassert str(e).strip() == 'operands could not be broadcast together with shapes (2,3) (3,2)'\n\n# Broadcasting [2 x 3] and [2 x 1].\narr1 = np.arange(6).reshape((2, 3))\narr2 = np.arange(1, 3).reshape((2, 1))\n\nassert arr1.shape == (2, 3)\nassert arr2.shape == (2, 1)\n\narr1 + arr2\n\n# Out[8]: array([[1, 2, 3],\n                 [5, 6, 7]])\n\n# Broadcasting [2 x 3 x 4] and [1 x 4].\narr1 = np.arange(24).reshape((2, 3, 4))\narr2 = np.arange(1, 5).reshape((1, 4))\n\nassert arr1.shape == (2, 3, 4)\nassert arr2.shape == (1, 4)\n\nresult = arr1 * arr2\n\n# Out[9]: array([[[ 0,  2,  6, 12],\n                  [ 4, 10, 18, 28],\n                  [ 8, 18, 30, 44]],\n\n                 [[12, 26, 42, 60],\n                  [16, 34, 54, 76],\n                  [20, 42, 66, 92]]])\n",
+        "value":"# Broadcasting [2 x 3] and [2 x 3].\narr1 = np.arange(6).reshape((2, 3))\narr2 = np.ones(6).reshape((2, 3))\n\nassert arr1.shape == (2, 3)\nassert arr2.shape == (2, 3)\n\narr1 + arr2\n\n# Out[6]: array([[1., 2., 3.],\n#                [4., 5., 6.]])\n\n# Broadcasting [2 x 3 x 4] and [3 x 4].\narr1 = np.arange(24).reshape((2, 3, 4))\narr2 = np.arange(12).reshape((3, 4))\n\nassert arr1.shape == (2, 3, 4)\nassert arr2.shape == (3, 4)\n\narr1 - arr2\n\n# Out[7]: array([[[ 0,  0,  0,  0],\n#                 [ 0,  0,  0,  0],\n#                 [ 0,  0,  0,  0]],\n#\n#                [[12, 12, 12, 12],\n#                 [12, 12, 12, 12],\n#                 [12, 12, 12, 12]]])\n\n# Broadcasting [2 x 3] and [3 x 2].\narr1 = np.arange(6).reshape((2, 3))\narr2 = np.arange(6).reshape((3, 2))\n\nassert arr1.shape == (2, 3)\nassert arr2.shape == (3, 2)\n\ntry:\n  arr1 + arr2\n\n  # This point will never be reached.\n  assert False\n\nexcept ValueError as e:\n  assert str(e).strip() == 'operands could not be broadcast together with shapes (2,3) (3,2)'\n\n# Broadcasting [2 x 3] and [2 x 1].\narr1 = np.arange(6).reshape((2, 3))\narr2 = np.arange(1, 3).reshape((2, 1))\n\nassert arr1.shape == (2, 3)\nassert arr2.shape == (2, 1)\n\narr1 + arr2\n\n# Out[8]: array([[1, 2, 3],\n#                [5, 6, 7]])\n\n# Broadcasting [2 x 3 x 4] and [1 x 4].\narr1 = np.arange(24).reshape((2, 3, 4))\narr2 = np.arange(1, 5).reshape((1, 4))\n\nassert arr1.shape == (2, 3, 4)\nassert arr2.shape == (1, 4)\n\nresult = arr1 * arr2\n\n# Out[9]: array([[[ 0,  2,  6, 12],\n#                 [ 4, 10, 18, 28],\n#                 [ 8, 18, 30, 44]],\n#\n#                [[12, 26, 42, 60],\n#                 [16, 34, 54, 76],\n#                 [20, 42, 66, 92]]])\n",
         "children":null
     },
     {
@@ -778,7 +766,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Creation of lists in Python is straightforward yet limited in options.  More complex list creation can be accomplished with list comprehensions, as shown in the section on vectorization.  Still, even list comprehensions aren’t as powerful as the API numpy exposes for array creation. ",
+                "value":" Creation of lists in Python is straightforward yet limited in options.  More complex list creation can be accomplished with list comprehensions, as shown in the section on vectorization.  Still, even list comprehensions aren't as powerful as the API numpy exposes for array creation. ",
                 "children":null
             }
         ]
@@ -791,7 +779,21 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" A good example is a reshaped numpy array compared to a Python list created with a list comprehension. In my option the numpy solution is more explicit in describing what it accomplishes. ",
+                "value":" A good example is a reshaped numpy array.  In comparison to a Python list created with a list comprehension,  the numpy ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "className":"jarombek-inline-code"
+                },
+                "value":"reshape()",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" method is more explicit in describing what it accomplishes. ",
                 "children":null
             }
         ]
@@ -801,7 +803,7 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"np.arange(0, 23, 2).reshape(3, 4)\n\n# Out[10]: array([[ 0,  2,  4,  6],\n                  [ 8, 10, 12, 14],\n                  [16, 18, 20, 22]])\n\n[[i, i+2, i+4, i+6] for i in range(0, 23, 8)]\n\n# Out[11]: [[0, 2, 4, 6], [8, 10, 12, 14], [16, 18, 20, 22]]\n",
+        "value":"np.arange(0, 23, 2).reshape(3, 4)\n\n# Out[10]: array([[ 0,  2,  4,  6], [ 8, 10, 12, 14], [16, 18, 20, 22]])\n\n[[i, i+2, i+4, i+6] for i in range(0, 23, 8)]\n\n# Out[11]: [[0, 2, 4, 6], [8, 10, 12, 14], [16, 18, 20, 22]]\n",
         "children":null
     },
     {
@@ -837,7 +839,7 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"# Unlike Python lists, numpy array indexes accept comma separated values.\n# Each value is a slice for a dimension of the array.\narr = np.array([[0, 1, 2], [3, 4, 5], [6, 7, 8]])\narr[1, 1]\n\n# Out[12]: 4\n\narr[:, :]\n\n# Out[13]: array([[0, 1, 2],\n                  [3, 4, 5],\n                  [6, 7, 8]])\n\narr[1:, :1]\n\n# Out[14]: array([[3],\n                  [6]])\n\narr[:, 2]\n\n# Out[15]: array([2, 5, 8])\n\narr[:, 2] = 10\narr\n\n# Out[16]: array([[ 0,  1, 10],\n                  [ 3,  4, 10],\n                  [ 6,  7, 10]])\n",
+        "value":"# Unlike Python lists, numpy array indexes accept comma separated values.\n# Each value is a slice for a dimension of the array.\narr = np.array([[0, 1, 2], [3, 4, 5], [6, 7, 8]])\narr[1, 1]\n\n# Out[12]: 4\n\narr[:, :]\n\n# Out[13]: array([[0, 1, 2],\n#                 [3, 4, 5],\n#                 [6, 7, 8]])\n\narr[1:, :1]\n\n# Out[14]: array([[3],\n#                 [6]])\n\narr[:, 2]\n\n# Out[15]: array([2, 5, 8])\n\narr[:, 2] = 10\narr\n\n# Out[16]: array([[ 0,  1, 10],\n#                 [ 3,  4, 10],\n#                 [ 6,  7, 10]])\n",
         "children":null
     },
     {
@@ -858,7 +860,7 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"arr\n\n# Out[17]: array([[ 0,  1, 10],\n                  [ 3,  4, 10],\n                  [ 6,  7, 10]])\n\narr[2, arr[2] == 6]\n\n# Out[18]: array([6])\n\narr[1, arr[1] > 3]\n\n# Out[19]: array([ 4, 10])\n\narr[arr > 3]\n\n# Out[20]: array([10,  4, 10,  6,  7, 10])\n\narr[~(arr > 5)]\n\n# Out[21]: array([0, 1, 3, 4])\n\narr[(arr < 2) | (arr > 8)]\n\n# Out[22]: array([ 0,  1, 10, 10, 10])\n\narr[(arr > 2) & (arr < 8)]\n\n# Out[23]: array([3, 4, 6, 7])\n\narr[(arr > 3) & (arr < 7)] = 20\narr\n\n# Out[24]: array([[ 0,  1, 10],\n                  [ 3, 20, 10],\n                  [20,  7, 10]])\n",
+        "value":"arr\n\n# Out[17]: array([[ 0,  1, 10],\n#                 [ 3,  4, 10],\n#                 [ 6,  7, 10]])\n\narr[2, arr[2] == 6]\n\n# Out[18]: array([6])\n\narr[1, arr[1] > 3]\n\n# Out[19]: array([ 4, 10])\n\narr[arr > 3]\n\n# Out[20]: array([10,  4, 10,  6,  7, 10])\n\narr[~(arr > 5)]\n\n# Out[21]: array([0, 1, 3, 4])\n\narr[(arr < 2) | (arr > 8)]\n\n# Out[22]: array([ 0,  1, 10, 10, 10])\n\narr[(arr > 2) & (arr < 8)]\n\n# Out[23]: array([3, 4, 6, 7])\n\narr[(arr > 3) & (arr < 7)] = 20\narr\n\n# Out[24]: array([[ 0,  1, 10],\n#                 [ 3, 20, 10],\n#                 [20,  7, 10]])\n",
         "children":null
     },
     {
@@ -884,7 +886,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Reshaping and numpy arrays is easy with a variety of functions for altering data arrangements.  Some of the basic ones include ",
+                "value":" Reshaping numpy arrays is easy with a variety of functions for altering data arrangements.  Some of the basic ones include ",
                 "children":null
             },
             {
@@ -936,7 +938,7 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"arr = np.arange(12, 36, 2)\narr\n\n# Out[25]: array([12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34])\n\narr = np.arange(12, 36, 2).reshape(3, 4)\narr\n\n# Out[26]: array([[12, 14, 16, 18],\n                  [20, 22, 24, 26],\n                  [28, 30, 32, 34]])\n\narr.flatten()\n\n# Out[27]: array([12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34])\n\narr.T\n\n# Out[28]: array([[12, 20, 28],\n                  [14, 22, 30],\n                  [16, 24, 32],\n                  [18, 26, 34]])\n",
+        "value":"arr = np.arange(12, 36, 2)\narr\n\n# Out[25]: array([12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34])\n\narr = np.arange(12, 36, 2).reshape(3, 4)\narr\n\n# Out[26]: array([[12, 14, 16, 18],\n#                 [20, 22, 24, 26],\n#                 [28, 30, 32, 34]])\n\narr.flatten()\n\n# Out[27]: array([12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34])\n\narr.T\n\n# Out[28]: array([[12, 20, 28],\n#                 [14, 22, 30],\n#                 [16, 24, 32],\n#                 [18, 26, 34]])\n",
         "children":null
     },
     {
@@ -962,7 +964,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" While vectorization and built-in numpy functions are extremely helpful when transforming numpy arrays, sometimes they aren’t flexible enough for our needs.  In this case, custom functions can be created. For example, I created the following function which converts miles to kilometers: ",
+                "value":" While vectorization and built-in numpy functions are extremely helpful when transforming numpy arrays, sometimes they aren't flexible enough for our needs.  In this case, custom functions can be created. For example, I created the following function which converts miles to kilometers: ",
                 "children":null
             }
         ]
@@ -1004,7 +1006,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Unfortunately, this custom function method is very slow.  The following test shows the time taken by the custom function versus vectorization. ",
+                "value":" Unfortunately, this custom function is very slow.  The following test shows the time taken by the custom function versus vectorization. ",
                 "children":null
             }
         ]
@@ -1025,7 +1027,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The problem is these custom function implementations live in Python instead of C, which is much faster. Luckily it is possible to write fast custom numpy functions using a library called ",
+                "value":" The performance problem is that custom functions live in Python instead of C, with the latter being much faster. Luckily it is possible to write fast custom numpy functions using a library called ",
                 "children":null
             },
             {
@@ -1077,7 +1079,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Best of all, the numba function is extremely fast.  In fact, numba functions are often faster than their numpy vectorization counterparts. ",
+                "value":" The numba function is extremely fast!  In fact, numba functions are often faster than their numpy vectorization counterparts. ",
                 "children":null
             }
         ]
@@ -1113,7 +1115,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Numpy is an array object library that exposes an elegant API which is fun to use.  I’ve used it often at work and will likely find usages for it in my personal Python code.  If you would like to see more numpy code samples, check out my data analytics repository on ",
+                "value":" Numpy is an array object library that exposes an elegant API which is fun to use.  I've used it often at work and will likely find usages for it in my personal Python code.  If you want to see more numpy code samples, check out my data analytics repository on ",
                 "children":null
             },
             {
