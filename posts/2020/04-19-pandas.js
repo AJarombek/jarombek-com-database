@@ -195,7 +195,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Just like numpy, I wanted to write an article about the interesting aspects of pandas.  I’ve read thoroughly about pandas and coded with it at my job, and want to share some of my favorite features. This article isn’t meant to teach pandas basics, instead highlighting what makes pandas unique and special compared to other libraries and languages. ",
+                "value":" Just like numpy, I wanted to write an article about the interesting aspects of pandas.  I read thoroughly about pandas and coded with it at my job, so I wanted to share some of my favorite features. This article isn't meant to teach pandas basics, instead highlighting what makes pandas unique and special compared to other libraries and languages. ",
                 "children":null
             }
         ]
@@ -265,19 +265,23 @@ content = [
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "className":"jarombek-inline-code"
+                },
                 "value":"Series",
                 "children":null
             },
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" and ",
+                "value":" and  ",
                 "children":null
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "className":"jarombek-inline-code"
+                },
                 "value":"DataFrame",
                 "children":null
             },
@@ -296,24 +300,28 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Each label is associated with an element in the data array.  This array of labels is called the index, and is of type ",
+                "value":".  Each label is associated with an element in the data array.  The array of labels is called the index, and is of type ",
                 "children":null
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "className":"jarombek-inline-code"
+                },
                 "value":"Index",
                 "children":null
             },
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Listed below are two examples of the ",
+                "value":".  Listed below are two examples of  the ",
                 "children":null
             },
             {
                 "el":"code",
-                "attributes":null,
+                "attributes":{
+                    "className":"jarombek-inline-code"
+                },
                 "value":"Series",
                 "children":null
             },
@@ -330,7 +338,7 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"import pandas as pd\n\nseries = pd.Series([1, 2, 3, 4, 5])\nseries\n\n# Out[1]:\n#    0    1\n#\t   1    2\n#    2    3\n#\t   3    4\n#\t   4    5\n#\t   dtype: int64\n\nseries.index\n\n# Out[2]: RangeIndex(start=0, stop=5, step=1)\n\nseries = pd.Series([1, 2, 3], index=['c', 'b', 'a'])\nseries\n\n# Out[3]:\n#    c    1\n#    b    2\n#    a    3\n#    dtype: int64\n\nseries.index\n\n# Out[4]: Index(['c', 'b', 'a'], dtype='object')\n",
+        "value":"import pandas as pd\n\nseries = pd.Series([1, 2, 3, 4, 5])\nseries\n\n# Out[1]:\n#    0    1\n#    1    2\n#    2    3\n#    3    4\n#    4    5\n#\t   dtype: int64\n\nseries.index\n\n# Out[2]: RangeIndex(start=0, stop=5, step=1)\n\nseries = pd.Series([1, 2, 3], index=['c', 'b', 'a'])\nseries\n\n# Out[3]:\n#    c    1\n#    b    2\n#    a    3\n#    dtype: int64\n\nseries.index\n\n# Out[4]: Index(['c', 'b', 'a'], dtype='object')\n",
         "children":null
     },
     {
@@ -341,7 +349,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The first series implicitly defines the index while the second series explicitly passes the ",
+                "value":" The first series implicitly defines an index while the second series explicitly passes an ",
                 "children":null
             },
             {
@@ -369,7 +377,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" constructor.  The first series’ ",
+                "value":" constructor.  The first series' ",
                 "children":null
             },
             {
@@ -422,7 +430,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Data frames also have an index for the rows and column names for the columns.  There are many ways to create ",
+                "value":".  Data frames have indexes for rows and names for columns.  There are many ways to create ",
                 "children":null
             },
             {
@@ -436,7 +444,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" objects, with the most basic method being to pass its constructor a dictionary.  The following ",
+                "value":" objects, the most basic of which passes its constructor a dictionary.  The following ",
                 "children":null
             },
             {
@@ -450,7 +458,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" represents some workouts I did back in February. ",
+                "value":" represents some of my workouts in February. ",
                 "children":null
             }
         ]
@@ -471,7 +479,35 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The remainder of this article discusses aspects of pandas that I found most interesting. ",
+                "value":" The full pandas library builds upon the ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "className":"jarombek-inline-code"
+                },
+                "value":"Series",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" and ",
+                "children":null
+            },
+            {
+                "el":"code",
+                "attributes":{
+                    "className":"jarombek-inline-code"
+                },
+                "value":"DataFrame",
+                "children":null
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" objects. The remainder of this article  discusses aspects of pandas that I found most interesting. ",
                 "children":null
             }
         ]
@@ -527,7 +563,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" is a fundamental built-in object with similar functionality to pandas’ ",
+                "value":" is a fundamental built-in object with similar functionality to pandas' ",
                 "children":null
             },
             {
@@ -547,7 +583,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The following data frame in R is nearly identical to the one in Python with pandas. ",
+                "value":".  The following data frame in R is nearly identical to the one in pandas. ",
                 "children":null
             }
         ]
@@ -769,7 +805,7 @@ content = [
                 "attributes":{
                     "className":"jarombek-inline-code"
                 },
-                "value":"read_sql_table",
+                "value":"read_sql_table()",
                 "children":null
             },
             {
@@ -859,7 +895,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I discussed its advanced slicing and indexing mechanics.  Pandas has similar functionality for its ",
+                "value":", I discussed its advanced slicing and indexing mechanics.  Pandas has similar functionality for its ",
                 "children":null
             },
             {
@@ -946,7 +982,7 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"data_xctf = {\n  '8K': ['24:20.80', '24:33.50', '24:58.80', None, '26:24.20'],\n  '6K': ['18:58.80', '19:10.20', '19:25.80', '20:54.00', '20:20.50'],\n  '5K': ['15:32.00', '15:39.00', '15:59.00', '17:31.60', '16:38.40'],\n  '10000m': [None, None, '31:51.73', '35:50.22', None],\n  '5000m': ['14:23.21', None, '15:27.01', '16:44.14', '15:27.64'],\n  '3000m': ['8:32.83', '8:52.60', '8:51.80', '9:47.70', '9:03.60'],\n  '1 Mile': ['4:20.59', '4:20.39', '4:40.34', '4:57.53', '4:40.76'],\n  '1500m': ['3:54.67', '3:57.78', None, '4:32.14', '4:08.17']\n}\nrun_dataframe = pd.DataFrame(data_xctf, index=['Thomas Caulfield', 'Joseph Smith', 'Ben Fishbein', 'Lisa Grohn', 'Andy Jarombek'])\nrun_dataframe\n\nOut[13]:\n# |                  | 8K       | 6K       | 5K       | 10000m   | 5000m    | 3000m   | 1 Mile  | 1500m   |\n# +------------------+----------+----------+----------+----------+----------+---------+---------+---------+\n# | Thomas Caulfield | 24:20.80 | 18:58.80 | 15:32.00 | None     | 14:23.21 | 8:32.83 | 4:20.59 | 3:54.67 |\n# | Joseph Smith     | 24:33.50 | 19:10.20 | 15:39.00 | None     | None     | 8:52.60 | 4:20.39 | 3:57.78 |\n# | Ben Fishbein     | 24:58.80 | 19:25.80 | 15:59.00 | 31:51.73 | 15:27.01 | 8:51.80 | 4:40.34 | None    |\n# | Lisa Grohn       | None     | 20:54.00 | 17:31.60 | 35:50.22 | 16:44.14 | 9:47.70 | 4:57.53 | 4:32.14 |\n# | Andy Jarombek    | 26:24.20 | 20:20.50 | 16:38.40 | None     | 15:27.64 | 9:03.60 | 4:40.76 | 4:08.17 |\n",
+        "value":"data_xctf = {\n  '8K': ['24:20.80', '24:33.50', '24:58.80', None, '26:24.20'],\n  '6K': ['18:58.80', '19:10.20', '19:25.80', '20:54.00', '20:20.50'],\n  '5K': ['15:32.00', '15:39.00', '15:59.00', '17:31.60', '16:38.40'],\n  '10000m': [None, None, '31:51.73', '35:50.22', None],\n  '5000m': ['14:23.21', None, '15:27.01', '16:44.14', '15:27.64'],\n  '3000m': ['8:32.83', '8:52.60', '8:51.80', '9:47.70', '9:03.60'],\n  '1 Mile': ['4:20.59', '4:20.39', '4:40.34', '4:57.53', '4:40.76'],\n  '1500m': ['3:54.67', '3:57.78', None, '4:32.14', '4:08.17']\n}\nrun_dataframe = pd.DataFrame(data_xctf, index=['Thomas Caulfield', 'Joseph Smith', 'Ben Fishbein', 'Lisa Grohn', 'Andy Jarombek'])\nrun_dataframe\n\n# Out[13]:\n# |                  | 8K       | 6K       | 5K       | 10000m   | 5000m    | 3000m   | 1 Mile  | 1500m   |\n# +------------------+----------+----------+----------+----------+----------+---------+---------+---------+\n# | Thomas Caulfield | 24:20.80 | 18:58.80 | 15:32.00 | None     | 14:23.21 | 8:32.83 | 4:20.59 | 3:54.67 |\n# | Joseph Smith     | 24:33.50 | 19:10.20 | 15:39.00 | None     | None     | 8:52.60 | 4:20.39 | 3:57.78 |\n# | Ben Fishbein     | 24:58.80 | 19:25.80 | 15:59.00 | 31:51.73 | 15:27.01 | 8:51.80 | 4:40.34 | None    |\n# | Lisa Grohn       | None     | 20:54.00 | 17:31.60 | 35:50.22 | 16:44.14 | 9:47.70 | 4:57.53 | 4:32.14 |\n# | Andy Jarombek    | 26:24.20 | 20:20.50 | 16:38.40 | None     | 15:27.64 | 9:03.60 | 4:40.76 | 4:08.17 |\n",
         "children":null
     },
     {
@@ -1027,7 +1063,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" manipulation operations, but these are some of the most basic ones.  I’m trying to demonstrate that ",
+                "value":" manipulation operations, but these are some basic ones.  By showing these code samples, I'm trying to demonstrate that ",
                 "children":null
             },
             {
@@ -1041,7 +1077,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" objects aren't simply for holding data, but also transforming it and analyzing it in whatever way suits an application's needs.  Pandas provides plenty of statistical operations as well, such as finding the sum or standard deviation of data.  Math isn’t my strong suit so I won’t go over any statistical functions, but they are readily available and easy to use. ",
+                "value":" objects aren't simply for holding data, but also transforming and analyzing data to suit an application's needs.  Pandas provides plenty of statistical operations as well, such as finding the sum or standard deviation of data.  Math isn't my strong suit so I won't go over any statistical functions, but they are readily available and easy to use. ",
                 "children":null
             }
         ]
@@ -1069,7 +1105,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Along with tabular data, another common use case for pandas is holding time series data.  Pandas has the strongest time-series functionality I’ve ever seen in a language or library, which is quite exciting! ",
+                "value":" Along with tabular data, another common use case for pandas is holding time series data.  Pandas has the strongest time-series functionality I've ever seen in a language or library, which is quite exciting! ",
                 "children":null
             }
         ]
@@ -1082,7 +1118,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Dealing with dates and times in programming languages is often a frustrating experience.  When creating a library that handles dates and times, it's crucial that the basic API is easy to use and intuitive. Otherwise, date and time complexities such as timezones and daylight savings time become a nightmare to deal with.  For an example of a poorly made date library, see the original Java ",
+                "value":" Dealing with dates and times in programming languages is often a frustrating experience.  When creating a library that handles dates and times, it's crucial that the basic API is easy to use and intuitive. Otherwise, date and time complexities such as timezones and daylight savings time become a nightmare to deal with.  An example of a poorly made date API is the original Java ",
                 "children":null
             },
             {
@@ -1219,7 +1255,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" As you can see, indexing and slicing is very flexible amongst many common date formats.  One of my biggest annoyances of most data libraries is they expect dates to be in certain formats and fail otherwise.  Pandas is much more lenient. ",
+                "value":" As you can see, indexing and slicing is very flexible and is achievable with many common date formats.  One of the  annoyances of most date libraries is their expectation of dates to be in certain formats.  These libraries  often fail and throw errors if formats don't meet expectations.  Pandas is much more lenient. ",
                 "children":null
             }
         ]
@@ -1244,7 +1280,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  For example, daily time series data can be converted to weekly. ",
+                "value":".  For example, daily time series data can be converted to weekly time series data. ",
                 "children":null
             }
         ]
@@ -1257,7 +1293,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" There are two forms of resampling - downsampling and upsampling.  Downsampling is when a higher frequency is converted to a lower frequency.  An example of downsampling is converting weekly time series data to monthly.  Downsampling can be thought of as data compression",
+                "value":" There are two forms of resampling - downsampling and upsampling.  Downsampling is when a higher frequency is converted to a lower frequency.  An example of downsampling is converting weekly time series data to monthly time series data.  Downsampling can be thought of as data compression",
                 "children":null
             },
             {
@@ -1269,7 +1305,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  Upsampling is when a lower frequency is converted to a higher frequency.  An example of upsampling is converting monthly time series data to weekly.  Upsampling can be thought of as data expansion",
+                "value":".  Upsampling is when a lower frequency is converted to a higher frequency.  An example of upsampling is converting monthly time series data to weekly time series data.  Upsampling can be thought of as data expansion",
                 "children":null
             },
             {
@@ -1400,7 +1436,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" function is analogous to SQL’s ",
+                "value":" function is analogous to SQL's ",
                 "children":null
             },
             {
@@ -1428,7 +1464,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" groups rows by given column(s) and performs aggregations on remaining columns.  I’ll walk you through one example to give an idea of how it works, but to fully understand ",
+                "value":" groups rows by given column(s) and performs aggregations on remaining columns.  I'll walk you through one example to give an idea of how it works, but to fully understand ",
                 "children":null
             },
             {
@@ -1465,7 +1501,7 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"lines_coded = pd.DataFrame({\n    '2014': [0, 4282, 0, 0, 0, 0, 0, 0, 0, 0],\n    '2015': [0, 1585, 931, 0, 0, 0, 0, 0, 325, 0],\n    '2016': [2008, 12962, 1122, 1413, 0, 5433, 0, 0, 942, 179],\n    '2017': [6663, 12113, 1288, 2289, 10726, 3670, 163, 0, 812, 113],\n    '2018': [16414, 4769, 1975, 10833, 698, 356, 4198, 3801, 1392, 2164],\n    '2019': [13354, 4439, 20192, 4855, 2208, 357, 4468, 4089, 2622, 2324],\n    '2020': [5022, 1664, 3666, 36, 0, 0, 727, 1332, 156, 652]\n  },\n  index=['JavaScript', 'Java', 'Python', 'HTML', 'Swift', 'PHP', 'Sass', 'HCL', 'SQL', 'Groovy']\n)\nlines_coded\n\n# Out[39]:\n# |            | 2014   | 2015   | 2016   | 2017   | 2018   | 2019   | 2020   |\n# +------------+--------+--------+--------+--------+--------+--------+--------+\n# | JavaScript | 0      | 0      | 2008   | 6663   | 16414  | 13354  | 5022   |\n# | Java       | 4282   | 1585   | 12962  | 12113  | 4769   | 4439   | 1664   |\n# | Python     | 0      | 931    | 1122   | 1288   | 1975   | 20192  | 3666   |\n# | HTML       | 0      | 0      | 1413   | 2289   | 10833  | 4855   | 36     |\n# | Swift      | 0      | 0      | 0      | 10726  | 698    | 2208   | 0      |\n# | PHP        | 0      | 0      | 5433   | 3670   | 356    | 357    | 0      |\n# | Sass       | 0      | 0      | 0      | 163    | 4198   | 4468   | 727    |\n# | HCL        | 0      | 0      | 0      | 0      | 3801   | 4089   | 1332   |\n# | SQL        | 0      | 325    | 942    | 812    | 1392   | 2622   | 156    |\n# | Groovy     | 79.21  | 0      | 179    | 113    | 2164   | 2324   | 652    |\n",
+        "value":"lines_coded = pd.DataFrame({\n    '2014': [0, 4282, 0, 0, 0, 0, 0, 0, 0, 0],\n    '2015': [0, 1585, 931, 0, 0, 0, 0, 0, 325, 0],\n    '2016': [2008, 12962, 1122, 1413, 0, 5433, 0, 0, 942, 179],\n    '2017': [6663, 12113, 1288, 2289, 10726, 3670, 163, 0, 812, 113],\n    '2018': [16414, 4769, 1975, 10833, 698, 356, 4198, 3801, 1392, 2164],\n    '2019': [13354, 4439, 20192, 4855, 2208, 357, 4468, 4089, 2622, 2324],\n    '2020': [5022, 1664, 3666, 36, 0, 0, 727, 1332, 156, 652]\n  },\n  index=['JavaScript', 'Java', 'Python', 'HTML', 'Swift', 'PHP', 'Sass', 'HCL', 'SQL', 'Groovy']\n)\nlines_coded\n\n# Out[39]:\n# |            | 2014   | 2015   | 2016   | 2017   | 2018   | 2019   | 2020   |\n# +------------+--------+--------+--------+--------+--------+--------+--------+\n# | JavaScript | 0      | 0      | 2008   | 6663   | 16414  | 13354  | 5022   |\n# | Java       | 4282   | 1585   | 12962  | 12113  | 4769   | 4439   | 1664   |\n# | Python     | 0      | 931    | 1122   | 1288   | 1975   | 20192  | 3666   |\n# | HTML       | 0      | 0      | 1413   | 2289   | 10833  | 4855   | 36     |\n# | Swift      | 0      | 0      | 0      | 10726  | 698    | 2208   | 0      |\n# | PHP        | 0      | 0      | 5433   | 3670   | 356    | 357    | 0      |\n# | Sass       | 0      | 0      | 0      | 163    | 4198   | 4468   | 727    |\n# | HCL        | 0      | 0      | 0      | 0      | 3801   | 4089   | 1332   |\n# | SQL        | 0      | 325    | 942    | 812    | 1392   | 2622   | 156    |\n# | Groovy     | 0      | 0      | 179    | 113    | 2164   | 2324   | 652    |\n",
         "children":null
     },
     {
@@ -1476,7 +1512,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Next, I reset the data frame’s index.  This makes the programming language names their own column. In the final data transformation before using ",
+                "value":" Next, I reset the data frame's index.  This makes the programming language names their own column. In the final data transformation before using ",
                 "children":null
             },
             {
@@ -1617,7 +1653,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Pandas is a really great library for tabular data, and fits into the Python ecosystem nicely.  I use pandas all the time at work, especially when interacting with data coming from a relational database. I plan on incorporating into my personal projects as well, which is a sign that pandas is both fun for personal use and powerful enough for use at the enterprise level.  You can find all my pandas code samples on ",
+                "value":" Pandas is a really great library for tabular data, and fits into the Python ecosystem nicely.  I use pandas all the time at work, especially when interacting with data coming from a relational database. I plan on incorporating pandas into my personal projects as well, which is a sign that pandas is both fun for personal use and powerful enough for use at the enterprise level.  You can find all my pandas code samples on ",
                 "children":null
             },
             {
@@ -1676,6 +1712,11 @@ db.posts.insertOne({
             name: "Python",
             picture: "https://asset.jarombek.com/logos/python.png",
             color: "python"
+        },
+        {
+            name: "R",
+            picture: "https://asset.jarombek.com/logos/r.png",
+            color: "r"
         },
         {
             name: "Data Analysis"
