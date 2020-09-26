@@ -174,3 +174,9 @@ load('./posts/2020/02-15-s3-react.js');
 load('./posts/2020/03-31-numpy.js');
 
 load('./posts/2020/04-19-pandas.js');
+
+load('./posts/2020/09-27-jenkins-ec2.js');
+load('./posts/2020/09-28-eks.js');
+load('./posts/2020/09-29-jenkins-kubernetes.js');
+
+load('./posts/2020/10-01-aws-jenkins-jobs.js');

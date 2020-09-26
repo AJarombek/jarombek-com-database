@@ -980,7 +980,7 @@ content = [
         "attributes":{
             "language":"JSON"
         },
-        "value":"{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [\n    {\n      \"Sid\": \"Permissions\",\n      \"Effect\": \"Allow\",\n      \"Principal\": \"*\",\n      \"Action\": [\"s3:PutObject\", \"s3:GetObject\"],\n      \"Resource\": [\"arn:aws:s3:::saints-xctf-db-backups-prod/*\"]\n    }\n  ]\n}\n",
+        "value":"{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [\n    {\n      \"Sid\": \"Permissions\",\n      \"Effect\": \"Allow\",\n      \"Principal\": { \"AWS\": \"xxxx\" },\n      \"Action\": [\"s3:PutObject\", \"s3:GetObject\"],\n      \"Resource\": [\"arn:aws:s3:::saints-xctf-db-backups-prod/*\"]\n    }\n  ]\n}\n",
         "children":null
     },
     {
