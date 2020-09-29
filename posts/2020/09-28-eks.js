@@ -1288,7 +1288,7 @@ db.posts.insertOne({
     name: postName,
     title: "Building an AWS EKS cluster with Terraform",
     description: `In this article, I’ll discuss the process for setting up my EKS cluster with 
-        Terraform.  I’ll also detail my experience deploying ALB Ingress Controller and External DNS 
+        Terraform.  I'll also detail my experience deploying ALB Ingress Controller and External DNS 
         pods on the cluster.`,
     date: postDate,
     type: "Retrospective",
@@ -1313,6 +1313,15 @@ db.posts.insertOne({
             name: "AWS",
             picture: "https://asset.jarombek.com/logos/aws.png",
             color: "aws"
+        },
+        {
+            name: "Container Orchestrator"
+        },
+        {
+            name: "HCL"
+        },
+        {
+            name: "DevOps"
         }
     ],
     preview,
