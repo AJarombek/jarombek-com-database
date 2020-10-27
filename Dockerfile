@@ -33,4 +33,4 @@ RUN mongod --fork --logpath /var/log/mongodb.log \
 
 # Expose the database port and start MongoDB in the container
 EXPOSE 27017
-ENTRYPOINT ["mongod", "--config", "/etc/mongodb.conf", "--smallfiles"]
+ENTRYPOINT ["mongod", "--config", "/etc/mongodb.conf", "--smallfiles", "--bind_ip_all"]

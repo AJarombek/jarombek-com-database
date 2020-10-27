@@ -4,6 +4,49 @@
 
 Scripts for populating the Jarombek.com MongoDB database.
 
+### Commands
+
+**Run the database locally with Docker**
+
+```bash
+# Create the database
+docker image build -t jarombek-com-database:latest .
+docker container run -d --name jarombek-com-database -p 27017:27017 jarombek-com-database:latest
+
+# Destroy the database
+docker container stop jarombek-com-database
+docker container rm jarombek-com-database
+```
+
+**Query the database running locally with Docker**
+
+```bash
+# Host machine
+docker exec -it jarombek-com-database /bin/bash 
+
+# Container
+mongo
+
+# MongoDB Shell
+use jarombekcom
+db.posts.count()
+```
+
+**Update the database running locally with Docker**
+
+```bash
+# Host machine
+docker cp . jarombek-com-database:/src/
+docker exec -it jarombek-com-database /bin/bash
+
+# Container
+mongo
+
+# MongoDB Shell
+use jarombekcom
+load('./loadScripts.js')
+```
+
 ### Files
 
 | Filename             | Description                                                                                              |

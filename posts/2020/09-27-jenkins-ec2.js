@@ -79,7 +79,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" (CI/CD) tool which I've written about in the past.  When I first created the Jenkins server I had a few jobs which ran unit tests, but I never took full advantage of them.  Over the past two years I've gained a greater appreciation for CI/CD tools and their ability to save time deploying code and building confidence in codebases by automating tests.  Nowadays all my applications have automated test and deployment jobs on Jenkins. ",
+                "value":" (CI/CD) tool which I've written about in the past.  When I first created the Jenkins server, I had a few jobs which ran unit tests, but I never took full advantage of them.  Over the past two years, I've gained a greater appreciation for CI/CD tools and their ability to save time deploying code and building confidence in codebases by automating tests.  Nowadays all my applications have automated test and deployment jobs on Jenkins. ",
                 "children":null
             }
         ]
@@ -92,7 +92,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Over this time the Jenkins ecosystem has evolved along with my understanding of cloud concepts.  My original Jenkins server was hosted on an AWS EC2 instance which utilized AWS EFS for persistent storage. In the spring of 2020, I decided to rewrite the infrastructure of the Jenkins server.  With my added knowledge of containerization with ",
+                "value":" Since 2018 the Jenkins ecosystem has evolved along with my understanding of cloud concepts.  My original Jenkins server was hosted on an AWS EC2 instance which utilized AWS EFS for persistent storage. In the spring of 2020, I decided to rewrite the Jenkins server infrastructure.  With my added knowledge of containerization with ",
                 "children":null
             },
             {
@@ -134,7 +134,7 @@ preview = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", I decided to host the Jenkins server on AWS EKS as part of the Kubernetes deployment.  In this article, I discuss the original EC2 Jenkins server and its creation process with Terraform.  In an ",
+                "value":", I hosted the Jenkins server on AWS EKS as part of a Kubernetes deployment.  In this article, I discuss the original EC2 Jenkins server and its creation process with Terraform.  In an ",
                 "children":null
             },
             {
@@ -234,7 +234,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" (CI/CD) tool which I've written about in the past.  When I first created the Jenkins server I had a few jobs which ran unit tests, but I never took full advantage of them.  Over the past two years I've gained a greater appreciation for CI/CD tools and their ability to save time deploying code and building confidence in codebases by automating tests.  Nowadays all my applications have automated test and deployment jobs on Jenkins. ",
+                "value":" (CI/CD) tool which I've written about in the past.  When I first created the Jenkins server, I had a few jobs which ran unit tests, but I never took full advantage of them.  Over the past two years, I've gained a greater appreciation for CI/CD tools and their ability to save time deploying code and building confidence in codebases by automating tests.  Nowadays all my applications have automated test and deployment jobs on Jenkins. ",
                 "children":null
             }
         ]
@@ -247,7 +247,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Over this time the Jenkins ecosystem has evolved along with my understanding of cloud concepts.  My original Jenkins server was hosted on an AWS EC2 instance which utilized AWS EFS for persistent storage. In the spring of 2020, I decided to rewrite the infrastructure of the Jenkins server.  With my added knowledge of containerization with ",
+                "value":" Since 2018 the Jenkins ecosystem has evolved along with my understanding of cloud concepts.  My original Jenkins server was hosted on an AWS EC2 instance which utilized AWS EFS for persistent storage. In the spring of 2020, I decided to rewrite the Jenkins server infrastructure.  With my added knowledge of containerization with ",
                 "children":null
             },
             {
@@ -289,7 +289,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", I decided to host the Jenkins server on AWS EKS as part of the Kubernetes deployment.  In this article, I discuss the original EC2 Jenkins server and its creation process with Terraform.  In an ",
+                "value":", I hosted the Jenkins server on AWS EKS as part of a Kubernetes deployment.  In this article, I discuss the original EC2 Jenkins server and its creation process with Terraform.  In an ",
                 "children":null
             },
             {
@@ -338,7 +338,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" While designing the AWS architecture for a Jenkins server, I wanted the server configuration to persist between virtual machine restarts.  This way I could schedule my EC2 instance to only run during the day (which optimizes energy consumption and cost) and not lose any data.  The solution to persisting data between EC2 instances is to store the Jenkins server configuration files on AWS EFS and mount it onto the instances.  When the EC2 instance is shut down at night, the filesystem in EFS is not destroyed, allowing it to be remounted onto another instance in the morning. ",
+                "value":" While designing AWS architecture for the Jenkins server, I wanted the server configuration to persist between virtual machine restarts.  This way I could schedule my EC2 instance to only run during the day (which optimizes energy consumption and cost) and not lose any data when offline at night.  The solution to persisting data between EC2 instances is to store the Jenkins server configuration files on AWS EFS and mount it onto the instances.  When the EC2 instance is shut down at night, the filesystem in EFS is not destroyed, allowing it to be remounted onto another instance in the morning. ",
                 "children":null
             }
         ]
@@ -412,7 +412,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":".  From a users perspective EFS behaves like any non-distributed filesystem, making it easy to work with. ",
+                        "value":".  From a user perspective EFS behaves like any non-distributed filesystem, making it easy to work with. ",
                         "children":null
                     }
                 ]
@@ -448,7 +448,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", except for the custom AMI which is created with ",
+                "value":"  (except for the custom AMI, which is created with ",
                 "children":null
             },
             {
@@ -469,7 +469,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". ",
+                "value":"). ",
                 "children":null
             }
         ]
@@ -497,7 +497,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The Terraform configuration for the Jenkins server is separated into three modules.  The first module creates EC2 related resources, the second creates the EFS filesystem and mount target, and the third creates Route53 records.  I will discuss some important pieces of the configuration, but the full code is available on ",
+                "value":" The Jenkins server's Terraform configuration is separated into three modules.  The first module creates EC2 related resources, the second creates the EFS filesystem and mount target, and the third creates Route53 records.  I will discuss some important pieces of the configuration, but the full code is available on ",
                 "children":null
             },
             {
@@ -664,7 +664,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The image id specifies a custom Amazon Machine Image (AMI) for the Jenkins server.  An AMI is a template for creating a virtual machine in AWS. I'm creating (baking) the AMI with Packer, which I will discuss later.  In Terraform its important to note that I use a data object to find the custom AMI that I created. ",
+                "value":".  The image id specifies a custom Amazon Machine Image (AMI) for the Jenkins server.  An AMI is a template for creating a virtual machine in AWS. I create (bake) the AMI with Packer, which I'll discuss later.  Its important to note that in the Terraform configuration I use a data object to find the custom AMI that I create (as shown below). ",
                 "children":null
             }
         ]
@@ -713,7 +713,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Another important piece of the EC2 setup is the autoscaling group and autoscaling schedules.  The first piece of Terraform configuration creates the autoscaling group. ",
+                "value":" Another important piece of the EC2 setup is the autoscaling group and autoscaling schedules.  The Terraform configuration   below creates the autoscaling group. ",
                 "children":null
             }
         ]
@@ -784,7 +784,20 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". In the ",
+                "value":". ",
+                "children":null
+            }
+        ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" In the ",
                 "children":null
             },
             {
@@ -1043,7 +1056,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The provisioners section configure software that runs on top of the base image.  There are multiple different provisioner types, such as Shell scripts or Ansible playbooks.  Multiple provisioners can be used for a single image.  In my case, the first ",
+                "value":" The provisioners section configures software that runs on top of the base image.  There are multiple different provisioner types, such as Shell scripts or Ansible playbooks.  Multiple provisioners can be used for a single image.  In my case, the first ",
                 "children":null
             },
             {
@@ -1155,7 +1168,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" To build an AMI with the Packer template, the ",
+                "value":" To build an AMI with the Packer template, a ",
                 "children":null
             },
             {
@@ -1169,7 +1182,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" command is run from the terminal.  Optionally, the template can be verified prior to the build with the ",
+                "value":" command is run from the terminal.  Optionally, the template can be verified prior to the build with  a ",
                 "children":null
             },
             {
@@ -1266,7 +1279,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" However, with time I realized there were better approaches to building a Jenkins server on the cloud. One of the biggest reasons I needed to use EFS was to avoid manually reconfiguring the Jenkins server and reinstalling Jenkins plugins every time I wanted to make an infrastructure change.  Luckily Jenkins provides a plugin called Jenkins Configuration as Code (JCasC), which automates all the Jenkins configuration",
+                "value":" However, with time I realized there were better approaches to building a Jenkins server on the cloud. One of the biggest reasons I needed to use EFS was to avoid manually reconfiguring the Jenkins server and reinstalling Jenkins plugins every time I wanted to make an infrastructure change.  Luckily, Jenkins provides a plugin called Jenkins Configuration as Code (JCasC), which automates the configuration of a Jenkins server",
                 "children":null
             },
             {
@@ -1318,7 +1331,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", but the end result of both these approaches is that I no longer need to use EFS. ",
+                "value":", but in summary, the end result of using both these approaches is that I no longer need EFS. ",
                 "children":null
             }
         ]
@@ -1352,7 +1365,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" are well documented, but in short containers are more lightweight, energy efficient, and require less maintenance (since you are virtualizing the operating system only, not an entire server).  I also find Dockerfiles easier to work with and read than Packer templates, but that is more of a personal preference. ",
+                "value":" are well documented, but in short, containers are more lightweight, energy efficient, and require less maintenance (since you are virtualizing the operating system only, not an entire server).  I also find Dockerfiles easier to work with and read than Packer templates, but that is more of a personal preference. ",
                 "children":null
             }
         ]
@@ -1422,7 +1435,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I will discuss the Kubernetes Jenkins server infrastructure that I'm using in my cloud today. ",
+                "value":",  I will discuss the Kubernetes Jenkins server infrastructure that I'm using in my cloud today. ",
                 "children":null
             }
         ]
@@ -1430,7 +1443,7 @@ content = [
 ];
 
 postName = "sep-27-2020-jenkins-ec2";
-postDate = new Date('2020-09-26T12:00:00');
+postDate = new Date('2020-09-27T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -1475,7 +1488,7 @@ db.posts.insertOne({
         },
         {
             name: "Packer",
-            picture: "https://asset.jarombek.com/logos/packer.png",
+            picture: "https://asset.jarombek.com/logos/packer.svg",
             color: "packer"
         },
         {
