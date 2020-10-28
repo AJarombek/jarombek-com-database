@@ -22,7 +22,7 @@ content = [
             {
                 "el":"a",
                 "attributes":{
-                    "href":"https://jarombek.com/blog/sep-27-2020-jenkins-e2"
+                    "href":"https://jarombek.com/blog/sep-27-2020-jenkins-ec2"
                 },
                 "value":null,
                 "children":[
@@ -229,7 +229,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":". The first part of the infrastructure to point out is the Amazon Elastic Container Registry (ECR) repository. ECR provides the ability to create private repositories for Docker containers.  I created a single repository for the Jenkins server Docker image. ",
+                "value":". The first important part of the infrastructure is the Amazon Elastic Container Registry (ECR) repository. ECR provides the ability to create private repositories for Docker containers.  I created a single repository for the Jenkins server Docker image. ",
                 "children":null
             }
         ]
@@ -271,7 +271,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One thing you may have noticed in this deployment is the Docker socket mounted as a volume on the Pod container.  The reason for this is I have Jenkins jobs which build Docker images (and often push them to ECR repositories).  Since the Jenkins server is already a Docker container, there are two ways to use Docker commands within it - to install and run Docker-in-Docker, or expose the Docker socket. Running Docker-in-Docker is documented as a bad, bug-ridden approach by Docker developers, making the Docker socket approach the obvious choice",
+                "value":" One thing you may have noticed in this deployment is the Docker socket mounted as a volume on the Pod container.  The reason behind mounting it is that I have Jenkins jobs which build Docker images (and often push them to ECR repositories).  Since the Jenkins server is already a Docker container, there are two ways to use Docker commands within it - to install and run Docker-in-Docker, or expose the Docker socket. Running Docker-in-Docker is documented as a bad, bug-ridden approach by Docker developers, making the Docker socket approach the obvious choice",
                 "children":null
             },
             {
@@ -296,7 +296,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The last two Kubernetes objects for the Jenkins server are the Ingress and the Service.  The Ingress utilizes the ALB Ingress Controller to create a load balancer AWS for the Jenkins server.  It also used ExternalDNS to create a Route53 DNS record for ",
+                "value":" The last two Kubernetes objects for the Jenkins server are the Ingress and the Service.  The Ingress utilizes an ALB Ingress Controller to create a load balancer on AWS for the Jenkins server.  It also uses  ExternalDNS to create a Route53 DNS record for ",
                 "children":null
             },
             {
@@ -722,7 +722,7 @@ content = [
         "attributes":{
             "language":"YAML"
         },
-        "value":"jenkins:\n  authorizationStrategy:\n    globalMatrix:\n      permissions:\n        - \"Overall/Administer:andy\"\n        - \"Credentials/View:guest\"\n        - \"Agent/Build:guest\"\n        - \"Job/Cancel:guest\"\n        - \"Job/Discover:guest\"\n        - \"Job/Read:guest\"\n        - \"Job/Workspace:guest\"\n        - \"Run/Replay:guest\"\n        - \"View/Read:guest\"\n  clouds:\n    - kubernetes:\n        name: kubernetes\n        serverUrl: ${KUBERNETES_URL}\n        namespace: jenkins\n        jenkinsUrl: \"http://jenkins-jnlp-service/\"\n        connectTimeout: 5\n        containerCapStr: 10\n        readTimeout: 15\n  numExecutors: 4\n  securityRealm:\n    local:\n      allowsSignup: false\n      users:\n        - id: andy\n          name: andy\n          password: ${JENKINS_PASSWORD}\n        - id: guest\n          name: guest\n          password: guest\n  systemMessage: \"Andrew Jarombek's Jenkins Server\"\n",
+        "value":"jenkins:\n  authorizationStrategy:\n    globalMatrix:\n      permissions:\n        - \"Overall/Administer:andy\"\n        - \"Job/Discover:guest\"\n        - \"Job/Read:guest\"\n        - \"Job/Workspace:guest\"\n        - \"View/Read:guest\"\n  clouds:\n    - kubernetes:\n        name: kubernetes\n        serverUrl: ${KUBERNETES_URL}\n        namespace: jenkins\n        jenkinsUrl: \"http://jenkins-jnlp-service/\"\n        connectTimeout: 5\n        containerCapStr: 10\n        readTimeout: 15\n  numExecutors: 4\n  securityRealm:\n    local:\n      allowsSignup: false\n      users:\n        - id: andy\n          name: andy\n          password: ${JENKINS_PASSWORD}\n        - id: guest\n          name: guest\n          password: guest\n  systemMessage: \"Andrew Jarombek's Jenkins Server\"\n",
         "children":null
     },
     {
@@ -960,7 +960,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The final section creates some seed jobs, taking advantage of the ",
+                "value":" The final section of the JCasC configuration creates seed jobs, taking advantage of the ",
                 "children":null
             },
             {
@@ -1044,7 +1044,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" takes advantage of the Job DSL Plugins ability to create folders as well.  ",
+                "value":" takes advantage of the Job DSL Plugins ability to create folders.  ",
                 "children":null
             },
             {
@@ -1142,7 +1142,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The initialization job consists of three steps.  The first step installs additional libraries (which aren’t installed in the Dockerfile) onto the Jenkins server.  The second step runs the Jenkins job named ",
+                "value":" The initialization job consists of three steps.  The first step installs additional libraries (which aren’t installed in the Dockerfile) onto the Jenkins server.  The second step runs a Jenkins job named ",
                 "children":null
             },
             {
@@ -1191,7 +1191,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" job pauses while I approve the scripts.  The final step triggers all the jobs which run on a cron schedule to execute.  This ensures they properly run as their schedule dictates. ",
+                "value":" job pauses while I approve the scripts.  The final step triggers builds for all the jobs which run on a cron schedule.  This  ensures they properly run as their schedule dictates. ",
                 "children":null
             }
         ]
@@ -1233,7 +1233,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" job and to find a way to safely automatically approve the Job DSL scripts.  Another thing would be to streamline the installation of dependencies on the Jenkins server.  Currently I’m using both the Dockerfile and ",
+                "value":" job and to find a way to safely and automatically approve the Job DSL scripts.  Another thing would be to streamline the installation of dependencies on the Jenkins server.  Currently I’m using both the Dockerfile and the ",
                 "children":null
             },
             {
@@ -1260,7 +1260,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Finally, the perfect solution would be a one click method to build the entire Jenkins server.  This would be an improvement over the current method where I run the Python script (which pushes the Jenkins server’s Docker image to ECR), apply the Terraform configuration, and run the ",
+                "value":" Alas, the perfect solution would be a one click method to build the entire Jenkins server.  This would be an improvement over the current method where I run the Python script (which pushes the Jenkins server’s Docker image to ECR), apply the Terraform configuration, and run the ",
                 "children":null
             },
             {

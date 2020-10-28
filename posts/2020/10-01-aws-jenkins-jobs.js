@@ -136,7 +136,7 @@ content = [
         "attributes":{
             "language":"Groovy"
         },
-        "value":"@Library(['global-jenkins-library@master']) _\n\npipeline {\n  agent {\n    label 'master'\n  }\n  triggers {\n    cron('H 7 * * *')\n  }\n  options {\n    ansiColor('xterm')\n    timeout(time: 1, unit: 'HOURS')\n    buildDiscarder(\n      logRotator(daysToKeepStr: '10', numToKeepStr: '5')\n    )\n  }\n  stages {\n    stage(\"Clean Workspace\") {\n      steps {\n        script {\n          cleanWs()\n        }\n      }\n    }\n    stage(\"Checkout Repository\") {\n      steps {\n        script {\n          checkoutRepo()\n        }\n      }\n    }\n    stage(\"Setup Environment\") {\n      steps {\n        script {\n          setupEnvironment()\n        }\n      }\n    }\n    stage(\"Detect AWS Costs\") {\n      steps {\n        script {\n          detectAWSCosts()\n        }\n      }\n    }\n  }\n  post {\n    always {\n      script {\n        postScript()\n      }\n    }\n  }\n}\n\ndef checkoutRepo() {\n  dir('repos/global-aws-infrastructure') {\n    git.basicClone('global-aws-infrastructure', 'master')\n  }\n}\n\ndef setupEnvironment() {\n  infrastructuresteps.setupEnvironment('repos/global-aws-infrastructure/scripts')\n}\n\ndef detectAWSCosts() {\n  dir('repos/global-aws-infrastructure/scripts') {\n    String cost_string = sh (\n      script: \"pipenv run python costDetection.py\",\n      returnStdout: true\n    )\n\n    println cost_string\n    float cost = cost_string as float\n\n    if (cost <= 8.5) {\n      currentBuild.result = \"SUCCESS\"\n    } else if (cost > 8.5 && cost <= 9.5) {\n      currentBuild.result = \"UNSTABLE\"\n    } else {\n      currentBuild.result = \"FAILURE\"\n    }\n\n    env.AVG_COST = cost_string\n  }\n}\n\ndef postScript() {\n  def bodyTitle = \"Detect AWS Costs\"\n  def bodyContent = \"3-Day Moving Cost Average: $env.AVG_COST\"\n  def jobName = env.JOB_NAME\n  def buildStatus = currentBuild.result\n  def buildNumber = env.BUILD_NUMBER\n  def buildUrl = env.BUILD_URL\n\n  genericsteps.postScript(bodyTitle, bodyContent, jobName, buildStatus, buildNumber, buildUrl)\n}\n",
+        "value":"@Library(['global-jenkins-library@master']) _\n\npipeline {\n  agent {\n    label 'master'\n  }\n  triggers {\n    cron('H 7 * * *')\n  }\n  options {\n    ansiColor('xterm')\n    timeout(time: 1, unit: 'HOURS')\n    buildDiscarder(\n      logRotator(daysToKeepStr: '10', numToKeepStr: '5')\n    )\n  }\n  stages {\n    stage(\"Clean Workspace\") {\n      steps {\n        script {\n          cleanWs()\n        }\n      }\n    }\n    stage(\"Checkout Repository\") {\n      steps {\n        script {\n          checkoutRepo()\n        }\n      }\n    }\n    stage(\"Setup Environment\") {\n      steps {\n        script {\n          setupEnvironment()\n        }\n      }\n    }\n    stage(\"Detect AWS Costs\") {\n      steps {\n        script {\n          detectAWSCosts()\n        }\n      }\n    }\n  }\n  post {\n    always {\n      script {\n        postScript()\n      }\n    }\n  }\n}\n\ndef checkoutRepo() {\n  dir('repos/global-aws-infrastructure') {\n    git.basicClone('global-aws-infrastructure', 'master')\n  }\n}\n\ndef setupEnvironment() {\n  infrastructuresteps.setupEnvironment('repos/global-aws-infrastructure/scripts')\n}\n\ndef detectAWSCosts() {\n  dir('repos/global-aws-infrastructure/scripts') {\n    String cost_string = sh (\n      script: \"pipenv run python costDetection.py\",\n      returnStdout: true\n    )\n\n    println cost_string\n    float cost = cost_string as float\n\n    if (cost <= 8.5) {\n      currentBuild.result = \"SUCCESS\"\n    } else if (cost > 8.5 && cost <= 9.5) {\n      currentBuild.result = \"UNSTABLE\"\n    } else {\n      currentBuild.result = \"FAILURE\"\n    }\n\n    env.AVG_COST = cost_string\n  }\n}\n\ndef postScript() {\n  def bodyTitle = \"Detect AWS Costs\"\n  def bodyContent = \"3-Day Cost Average: $env.AVG_COST\"\n  def jobName = env.JOB_NAME\n  def buildStatus = currentBuild.result\n  def buildNumber = env.BUILD_NUMBER\n  def buildUrl = env.BUILD_URL\n\n  genericsteps.postScript(bodyTitle, bodyContent, jobName, buildStatus, buildNumber, buildUrl)\n}\n",
         "children":null
     },
     {
@@ -242,7 +242,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The job runs on my master Jenkins agent (the Jenkins server’s container) and is triggered every morning sometime between 7 and 8 AM UTC.  The job has three stages - ",
+                "value":" The job runs on my master Jenkins agent (the Jenkins server's container) and is triggered every morning sometime between 7 and 8 AM UTC.  The job has three stages - ",
                 "children":null
             },
             {
@@ -435,7 +435,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" database, running MySQL, to hold application data.  The application has a production environment and a development environment.  Each environment has its own RDS database instance.  When my development environment is running, I try to cut costs by shutting down its RDS database at night.  I created a Jenkins job called ",
+                "value":" database, running MySQL, to hold application data.  The application has a production environment and a development environment.  Both environments have their own RDS database instance.  When my development environment is running, I try to cut costs by shutting down its RDS database at night.  I created a Jenkins job called ",
                 "children":null
             },
             {
@@ -517,7 +517,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This plugin allows the database to be stopped every night and started back up every morning. ",
+                "value":".  This plugin allows the database to be stopped every night and started  up again every morning. ",
                 "children":null
             }
         ]
@@ -558,7 +558,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Most of my AWS Infrastructure is written as code using Terraform.  I decided to write Jenkins jobs for all my Terraform modules which create and destroy infrastructure.  This has two benefits.  The first benefit is that the creation and deletion of infrastructure is automated, so I don’t need to manually type out Terraform CLI commands.  The second benefit is that the Jenkins job code is a form of documentation for how to build certain infrastructure modules, similarly to how a Dockerfile is documentation for how to host an application on a server.  With the Jenkins jobs in place, I can refer to their Jenkinsfiles in case I forget the steps for building infrastructure in the future. ",
+                "value":" Most of my AWS Infrastructure is written as code using Terraform.  I decided to write Jenkins jobs for all my Terraform modules which create and destroy infrastructure.  This has two benefits.  The first benefit is that the creation and deletion of infrastructure is automated, so I don't need to manually type out Terraform CLI commands.  The second benefit is that the Jenkins job code is a form of documentation for how to build certain infrastructure modules, similarly to how a Dockerfile is documentation for how to host an application on a server.  With the Jenkins jobs in place, I can refer to their Jenkinsfiles in case I forget the steps for building infrastructure in the future. ",
                 "children":null
             }
         ]
@@ -571,7 +571,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Let’s go over an example.   I created a Jenkins job called ",
+                "value":" Let's go over an example.   I created a Jenkins job called ",
                 "children":null
             },
             {
@@ -711,7 +711,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" provides a choice of environments to create the RDS database in.  I then have a series of stages which first checkout the repository containing the RDS Terraform scripts and then attempt to apply them.  The module that is checked out comes from my ",
+                "value":" provides a choice of environments to create the RDS database in.  I then have a series of stages which checkout the repository containing the RDS Terraform scripts and attempt to apply them.  The Terraform module that is checked out comes from my ",
                 "children":null
             },
             {
@@ -745,7 +745,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The Terraform stages utilize some reusable functions I’ve created.  These functions, which initialize a Terraform module, validate it, generate a plan for the changes, and apply the changes, are listed below. ",
+                "value":" The Terraform stages utilize some reusable functions I've created.  These functions, which initialize a Terraform module, validate it, generate a plan for the changes, and apply the changes, are listed below. ",
                 "children":null
             }
         ]
@@ -766,7 +766,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Once some infrastructure is created with Terraform, the ",
+                "value":" Once the database infrastructure is created with Terraform, the ",
                 "children":null
             },
             {
@@ -975,7 +975,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  The stages of the pipeline checkout the repository containing the Dockerfile, build the image, and push it to an ECR repository. I also perform some cleanup work, deleting the Docker image after it’s pushed.  Finally, just like my other Jenkins jobs, I send myself an email with the results. ",
+                "value":".  The stages of the pipeline checkout the repository containing the Dockerfile, build the image, and push it to an ECR repository. It also performs some cleanup work, such as deleting the Docker image after it's pushed.  Finally, just like my other Jenkins jobs, it sends me an email with the results. ",
                 "children":null
             }
         ]
@@ -1024,7 +1024,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" repository and my reusable Groovy function library in the ",
+                "value":" repository and my reusable Jenkins function library in the ",
                 "children":null
             },
             {
