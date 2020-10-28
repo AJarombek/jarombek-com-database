@@ -7,220 +7,6 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
-preview = [
-    {
-        "el":"p",
-        "attributes":null,
-        "value":null,
-        "children":[
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" Recently I made the decision to move my applications to ",
-                "children":null
-            },
-            {
-                "el":"a",
-                "attributes":{
-                    "href":"https://jarombek.com/blog?query=Kubernetes&page=1"
-                },
-                "value":null,
-                "children":[
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":"Kubernetes",
-                        "children":null
-                    }
-                ]
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":", specifically hosted in an EKS cluster on AWS.  Before making this decision, my applications (",
-                "children":null
-            },
-            {
-                "el":"a",
-                "attributes":{
-                    "href":"https://www.saintsxctf.com/"
-                },
-                "value":null,
-                "children":[
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":"saintsxctf.com",
-                        "children":null
-                    }
-                ]
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" and ",
-                "children":null
-            },
-            {
-                "el":"a",
-                "attributes":{
-                    "href":"https://jarombek.com/"
-                },
-                "value":null,
-                "children":[
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":"jarombek.com",
-                        "children":null
-                    }
-                ]
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":") were hosted using different methods.  ",
-                "children":null
-            },
-            {
-                "el":"strong",
-                "attributes":null,
-                "value":null,
-                "children":[
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":"saintsxctf.com",
-                        "children":null
-                    }
-                ]
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" was hosted on autoscaled ",
-                "children":null
-            },
-            {
-                "el":"a",
-                "attributes":{
-                    "href":"https://jarombek.com/blog?query=AWS%20EC2&page=1"
-                },
-                "value":null,
-                "children":[
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":"AWS EC2",
-                        "children":null
-                    }
-                ]
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" instances and ",
-                "children":null
-            },
-            {
-                "el":"strong",
-                "attributes":null,
-                "value":null,
-                "children":[
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":"jarombek.com",
-                        "children":null
-                    }
-                ]
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" was hosted on AWS ECS.  I also had prototypes using different hosting methods and a ",
-                "children":null
-            },
-            {
-                "el":"a",
-                "attributes":{
-                    "href":"https://jarombek.com/blog?query=Jenkins&page=1"
-                },
-                "value":null,
-                "children":[
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":"Jenkins",
-                        "children":null
-                    }
-                ]
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" server which was hosted on EC2 instances.  Moving all applications to Kubernetes unifies the deployment process and allows me to take advantage of ",
-                "children":null
-            },
-            {
-                "el":"a",
-                "attributes":{
-                    "href":"https://jarombek.com/blog/apr-1-2019-docker-pt1"
-                },
-                "value":null,
-                "children":[
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":"containerization",
-                        "children":null
-                    }
-                ]
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" and ",
-                "children":null
-            },
-            {
-                "el":"a",
-                "attributes":{
-                    "href":"https://jarombek.com/blog/may-13-2019-kubernetes-pt1"
-                },
-                "value":null,
-                "children":[
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":"container orchestration",
-                        "children":null
-                    }
-                ]
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":". ",
-                "children":null
-            }
-        ]
-    },
-    {
-        "el":"p",
-        "attributes":null,
-        "value":null,
-        "children":[
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" In this article, I’ll discuss the process for setting up my EKS cluster with Terraform.  I’ll also detail my experience deploying ALB Ingress Controller and External DNS pods on the cluster. ",
-                "children":null
-            }
-        ]
-    }
-];
-
 content = [
     {
         "el":"p",
@@ -373,7 +159,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" server which was hosted on EC2 instances.  Moving all applications to Kubernetes unifies the deployment process and allows me to take advantage of ",
+                "value":" server which was hosted on EC2 instances.  Moving all these applications to Kubernetes unifies the deployment process and allows me to take advantage of ",
                 "children":null
             },
             {
@@ -428,7 +214,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" In this article, I’ll discuss the process for setting up my EKS cluster with Terraform.  I’ll also detail my experience deploying ALB Ingress Controller and External DNS pods on the cluster. ",
+                "value":" In this article, I'll discuss the process for setting up my EKS cluster with Terraform.  I'll also detail my experience deploying ALB Ingress Controller and External DNS pods on the cluster. ",
                 "children":null
             }
         ]
@@ -456,7 +242,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One thing I’ve noticed with EKS is that it's very difficult to create Terraform infrastructure for a cluster from scratch.  This difficulty is also true for CloudFormation, so it seems to be an EKS specific weakness.  Because of this, I decided to use a community made ",
+                "value":" One thing I've noticed with EKS is that it's very difficult to create Terraform infrastructure for a cluster from scratch.  This difficulty is also true for CloudFormation, so it seems to be an EKS specific weakness.  Because of this, I decided to use a community made ",
                 "children":null
             },
             {
@@ -477,7 +263,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" from the Terraform registry.  I’ve found this module to be very reliable and considering EKS seems to get updated rather frequently, it helps me avoid spending time on breaking changes to the Terraform configuration. ",
+                "value":" from the Terraform registry.  I've found this module to be very reliable, and because EKS is updated rather frequently, it helps me avoid spending time fixing my Terraform configuration. ",
                 "children":null
             }
         ]
@@ -490,7 +276,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" With the community Terraform module, the configuration for the cluster is very simple.  Besides calling the module, the only resource needed to get the cluster set up for my pods is an IAM policy for worker nodes in the cluster. ",
+                "value":" With the community Terraform module, configuration for a cluster is very simple.  Besides calling the module, the only resource needed to get the cluster set up is an IAM policy for worker nodes in the cluster (depending on your use case, this can be omitted as well).  The following code snippet configures  the cluster. ",
                 "children":null
             }
         ]
@@ -526,7 +312,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Once the cluster is running, there are Kubernetes objects and resources created that can be utilized by all applications.  The first resources I create are namespaces, which provide logical separation of the cluster for different applications and environments.  Namespaces act as virtual clusters with object and resource name scoping",
+                "value":" Once the cluster is running, I create Kubernetes objects and resources that can be utilized by all applications.  The first resources I create are namespaces, which provide a logical separation of the cluster for different applications and environments.  Namespaces act as virtual clusters with object and resource name scoping",
                 "children":null
             },
             {
@@ -538,7 +324,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":".  This means there can be two objects (for example, a pod) with the same name in different namespaces. ",
+                "value":".  This means there can be two objects (for example, two pods) with the same name in different namespaces. ",
                 "children":null
             }
         ]
@@ -625,7 +411,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" CLI or using a high-level programming language API such as the Go client",
+                "value":" CLI or using a high-level programming language API such as the Kubernetes Go client",
                 "children":null
             },
             {
@@ -650,7 +436,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The biggest benefit of using Terraform is that I get to use the same language and CLI commands to build the cluster and the Kubernetes objects.  The ",
+                "value":" The biggest benefit of using Terraform is that the same language and CLI commands are used to build the cluster and the Kubernetes objects.  The ",
                 "children":null
             },
             {
@@ -671,7 +457,39 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" lists out some other reasons to use Terraform for Kubernetes object management as well.  For example, the following Terraform snippet defines a namespace in my cluster. ",
+                "value":" lists out some other reasons to use Terraform for Kubernetes object management. ",
+                "children":null
+            }
+        ]
+    },
+    {
+        "el":"p",
+        "attributes":null,
+        "value":null,
+        "children":[
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" Below is an example of a Kubernetes object defined in Terraform.  It defines a namespace for my ",
+                "children":null
+            },
+            {
+                "el":"strong",
+                "attributes":null,
+                "value":null,
+                "children":[
+                    {
+                        "el":"#text",
+                        "attributes":null,
+                        "value":"jarombek.com",
+                        "children":null
+                    }
+                ]
+            },
+            {
+                "el":"#text",
+                "attributes":null,
+                "value":" application. ",
                 "children":null
             }
         ]
@@ -692,7 +510,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The Kubernetes provider needs to be configured once before building any Kubernetes resources with Terraform. As you can see in the code snippet, I simply pass parameters to the ",
+                "value":" The Kubernetes provider needs to be configured once before building any Kubernetes resources with Terraform. As you can see in the code snippet, I pass parameters to the ",
                 "children":null
             },
             {
@@ -748,7 +566,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" resource.  For reference, the corresponding YAML file for this resource looks like this: ",
+                "value":" resource.  For reference, an  equivalent YAML file for this resource looks like this: ",
                 "children":null
             }
         ]
@@ -1154,7 +972,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" One of the things I’ve noticed is that sometimes the ALB Ingress Controller and External DNS don’t work as I expect them to.  Luckily this is pretty easy to debug.  When The Terraform EKS module creates the cluster, it also creates a ",
+                "value":" One of the things I've noticed is that sometimes the ALB Ingress Controller and External DNS don't work as I expect them to.  Luckily this is pretty easy to debug.  When The Terraform EKS module creates the cluster, it also creates a ",
                 "children":null
             },
             {
@@ -1247,7 +1065,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I’ve always enjoyed using Kubernetes to orchestrate application infrastructure, so I’m happy to have my own cluster in AWS.  All the code I use to build the EKS cluster is available on ",
+                "value":" I've always enjoyed using Kubernetes to orchestrate application infrastructure, so I'm happy to have my own cluster in AWS.  All the code I use to build the EKS cluster is available on ",
                 "children":null
             },
             {
@@ -1274,6 +1092,8 @@ content = [
         ]
     }
 ];
+
+preview = content.slice(0, 2);
 
 postName = "sep-28-2020-eks";
 postDate = new Date('2020-09-28T12:00:00');

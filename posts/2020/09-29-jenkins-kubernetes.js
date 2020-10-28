@@ -7,142 +7,6 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
-preview = [
-    {
-        "el":"p",
-        "attributes":null,
-        "value":null,
-        "children":[
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" In a ",
-                "children":null
-            },
-            {
-                "el":"a",
-                "attributes":{
-                    "href":"https://jarombek.com/blog/sep-27-2020-jenkins-e2"
-                },
-                "value":null,
-                "children":[
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":"prior article",
-                        "children":null
-                    }
-                ]
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":", I discussed a ",
-                "children":null
-            },
-            {
-                "el":"a",
-                "attributes":{
-                    "href":"https://jarombek.com/blog?query=Jenkins&page=1"
-                },
-                "value":null,
-                "children":[
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":"Jenkins",
-                        "children":null
-                    }
-                ]
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" server I created on AWS EC2 and EFS.  In this article I’ll discuss the second generation of that infrastructure, which uses ",
-                "children":null
-            },
-            {
-                "el":"a",
-                "attributes":{
-                    "href":"https://jarombek.com/blog?query=Docker&page=1"
-                },
-                "value":null,
-                "children":[
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":"Docker",
-                        "children":null
-                    }
-                ]
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" containers orchestrated by ",
-                "children":null
-            },
-            {
-                "el":"a",
-                "attributes":{
-                    "href":"https://jarombek.com/blog?query=Kubernetes&page=1"
-                },
-                "value":null,
-                "children":[
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":"Kubernetes",
-                        "children":null
-                    }
-                ]
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" on an ",
-                "children":null
-            },
-            {
-                "el":"a",
-                "attributes":{
-                    "href":"https://jarombek.com/blog/sep-28-2020-eks"
-                },
-                "value":null,
-                "children":[
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":"EKS cluster",
-                        "children":null
-                    }
-                ]
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":". ",
-                "children":null
-            }
-        ]
-    },
-    {
-        "el":"h5",
-        "attributes":{
-            "title":"Kubernetes Infrastructure with Terraform"
-        },
-        "value":null,
-        "children":[
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":"Kubernetes Infrastructure with Terraform",
-                "children":null
-            }
-        ]
-    }
-];
-
 content = [
     {
         "el":"p",
@@ -1471,6 +1335,8 @@ content = [
         ]
     }
 ];
+
+preview = content.slice(0, 2);
 
 postName = "sep-29-2020-jenkins-kubernetes";
 postDate = new Date('2020-09-29T12:00:00');

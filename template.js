@@ -7,9 +7,9 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
-preview = [];
-
 content = [];
+
+preview = content.slice(0, 2);
 
 postName = "jan-1-2020-haskell-pt5";
 postDate = new Date('2020-01-01T12:00:00');

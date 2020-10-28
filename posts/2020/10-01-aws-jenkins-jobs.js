@@ -7,56 +7,6 @@
 connection = new Mongo();
 db = connection.getDB("jarombekcom");
 
-preview = [
-    {
-        "el":"p",
-        "attributes":null,
-        "value":null,
-        "children":[
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" I recently built a new ",
-                "children":null
-            },
-            {
-                "el":"a",
-                "attributes":{
-                    "href":"https://jarombek.com/blog/sep-28-2020-eks"
-                },
-                "value":null,
-                "children":[
-                    {
-                        "el":"#text",
-                        "attributes":null,
-                        "value":"Jenkins server hosted using Kubernetes on EKS",
-                        "children":null
-                    }
-                ]
-            },
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":". My main use of the Jenkins server is to automate application and infrastructure tests, deployments, and miscellaneous tasks.  I get email notifications if these jobs fail, so I know when there is an issue with my software. ",
-                "children":null
-            }
-        ]
-    },
-    {
-        "el":"p",
-        "attributes":null,
-        "value":null,
-        "children":[
-            {
-                "el":"#text",
-                "attributes":null,
-                "value":" Many of my Jenkins jobs work with the AWS CLI and Terraform to interact with and manipulate my cloud infrastructure.  I believe these jobs may be useful as templates for others wishing to achieve similar results. ",
-                "children":null
-            }
-        ]
-    }
-];
-
 content = [
     {
         "el":"p",
@@ -1101,6 +1051,8 @@ content = [
         ]
     }
 ];
+
+preview = content.slice(0, 2);
 
 postName = "oct-1-2020-aws-jenkins-jobs";
 postDate = new Date('2020-10-01T12:00:00');
