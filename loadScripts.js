@@ -180,3 +180,6 @@ load('./posts/2020/09-28-eks.js');
 load('./posts/2020/09-29-jenkins-kubernetes.js');
 
 load('./posts/2020/10-01-aws-jenkins-jobs.js');
+
+load('./posts/2020/11-01-python-concurrency.js');
+load('./posts/2020/11-05-react-component-library.js');

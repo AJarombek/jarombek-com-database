@@ -1,5 +1,5 @@
 const letter = `
-October 31th, 2020
+October 31st, 2020
 
 Dear SmFjcXVp,
 

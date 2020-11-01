@@ -1070,7 +1070,7 @@ db.posts.insertOne({
         manipulate my cloud infrastructure.  I believe these jobs may be useful as templates for others 
         wishing to achieve similar results.`,
     date: postDate,
-    type: "Discovery",
+    type: "Retrospective",
     views: postViews,
     tags: [
         {

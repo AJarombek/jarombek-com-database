@@ -47,6 +47,21 @@ use jarombekcom
 load('./loadScripts.js')
 ```
 
+**Push images to DockerHub**
+
+```bash
+docker login --username=ajarombek
+docker image build -t jarombek-com-database:latest .
+
+# Push image to Docker Hub with tag 'latest'
+docker image tag jarombek-com-database:latest ajarombek/jarombek-com-database:latest
+docker push ajarombek/jarombek-com-database:latest
+
+# Push image to Docker Hub with version tag
+docker image tag jarombek-com-database:latest ajarombek/jarombek-com-database:1.1.8
+docker push ajarombek/jarombek-com-database:1.1.8
+```
+
 ### Files
 
 | Filename             | Description                                                                                              |
