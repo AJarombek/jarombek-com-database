@@ -72,7 +72,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" When working on multiple React applications or being part of an organization, it's beneficial to create a reusable component library.  This library is shared amongst applications and contains generic components such as buttons, accordions, and form elements.  Besides the obvious benefit of code reuse, component libraries help to enforce organizational style guides and allow developers to easily iterate on components used in all their applications.  Setup of a component library is easy and can save a lot of front-end development time in the long run. ",
+                "value":" For developers working on multiple React applications or working for an organization that uses React, there are benefits to using reusable component libraries.  Component libraries are shared amongst applications and contain generic components such as buttons, accordions, and form elements.  Besides the obvious benefit of code reuse, component libraries help enforce organizational style guides and allow developers to easily iterate on components used in all their applications.  Component library setup is easy and can save a lot of front-end development time in the long run. ",
                 "children":null
             }
         ]
@@ -108,7 +108,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" The directory structure shown above matches the one for my ",
+                "value":" The directory structure shown above matches my ",
                 "children":null
             },
             {
@@ -188,7 +188,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" holds the React component source code, tests, and storybook stories.  Storybook stories display and document a component.  ",
+                "value":" holds React component source code, tests, and storybook stories.  Storybook stories display and serve as documentation for a component.  ",
                 "children":null
             },
             {
@@ -897,7 +897,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" I use Storybook for a couple of reasons.  First, Storybook is helpful during a components development process for debugging and testing out styles.  Second, it is useful for trying all the different props that a component can take in.  Third, it is a helpful reference when returning to the component library and searching for components to use in other applications. ",
+                "value":" I use Storybook for a couple of reasons.  First, Storybook is helpful during a components development process for debugging and testing out styles.  Second, it is useful for trying all the different props that a component can take in.  Third, it serves as helpful documentation and allows users to search for components  they want to use in their applications. ",
                 "children":null
             }
         ]
@@ -1167,7 +1167,7 @@ content = [
     {
         "el":"codesnippet",
         "attributes":{
-            "language":"JavaScript"
+            "language":"TypeScript"
         },
         "value":"import {FunctionComponent} from \"react\";\n\n// AJSwitch component\n\nexport interface AJSwitchProps {\n    onChange: Function;\n    initialState?: boolean;\n    disabled?: boolean;\n    className?: string;\n}\n\nexport const AJSwitch: FunctionComponent<AJSwitchProps>;\n",
         "children":null
@@ -1442,7 +1442,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" Creating reusable component libraries reduces a developers workload when they are programming multiple UI applications. I’ve found my reusable React components to be very helpful in my frontend applications and prototypes that I wish to spin up quickly.  You can find the full code of my component library on ",
+                "value":" Reusable component libraries reduce a developers workload when they are programming multiple UI applications. My reusable React components have allowed me to quickly create both full production frontend applications and small  prototypes.  You can find my component library code on ",
                 "children":null
             },
             {

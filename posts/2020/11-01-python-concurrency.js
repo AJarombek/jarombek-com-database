@@ -35,7 +35,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":", a 350 page book on writing proper concurrency code in Java).  Python is no different, with multiple evolving libraries and, for added confusion, a global interpreter lock (GIL) which restricts Python code to a single thread when running on its default CPython interpreter.  In this article I will attempt to demystify concurrent programming in Python and work with libraries such as ",
+                "value":", a 350 page book on writing proper concurrency code in Java).  Python is no different, with multiple evolving libraries, and, for added confusion, a global interpreter lock (GIL) which restricts Python code to a single thread when running on its default CPython interpreter.  In this article, I attempt to demystify concurrent programming in Python and work with libraries such as ",
                 "children":null
             },
             {
@@ -151,7 +151,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" There are a few issues with this approach.  The most glaring problem is that time is wasted while the program awaits a response from the API.  Since the API call is a network I/O task to a remote server (potentially located thousands of miles away), the response could take anywhere from milliseconds to minutes.  Either way, that is a lot of time that could be spent executing other tasks, such as another API call. ",
+                "value":" There are a few issues with this approach.  The most glaring problem being that time is wasted while the program awaits a response from the API.  Since the API call is a network I/O task to a remote server (potentially located thousands of miles away), the response could take anywhere from milliseconds to minutes.  Either way, that is a lot of time that could be spent executing other tasks, such as another API call. ",
                 "children":null
             }
         ]
@@ -251,7 +251,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" In programming, concurrency is when two or more programs are executing during the same time period.  In a single CPU architecture these programs share the CPU, so that their executions are interleaved.  For example, program A runs for one second, then gives up the CPU to program B, which runs for two seconds.  In a multiprocessor or multi-core architecture, these processes can run in parallel. ",
+                                        "value":" In programming, concurrency is when two or more programs are executing during the same time period.  In a single CPU architecture these programs share the CPU, so their executions are interleaved.  For example, program A runs for one second, then gives up the CPU to program B, which runs for two seconds.  In a multiprocessor or multi-core architecture, these processes can run in parallel. ",
                                         "children":null
                                     }
                                 ]
@@ -264,7 +264,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" It’s important to note that concurrency does not imply parallelism.  Computers are able to give the illusion that multiple programs are running simultaneously (in parallel) on the CPU without actually doing so.  This is achieved with time sharing and context switching.  On some architectures with a single CPU and single core it is simply impossible to perform tasks in parallel. ",
+                                        "value":" It’s important to note that concurrency does not imply parallelism.  Computers are able to give the illusion that multiple programs are running simultaneously (in parallel) on the CPU without actually doing so.  This is achieved with time sharing and context switching.  On architectures with a single CPU and single core it is simply impossible to perform tasks in parallel. ",
                                         "children":null
                                     }
                                 ]
@@ -321,7 +321,7 @@ content = [
                                     {
                                         "el":"#text",
                                         "attributes":null,
-                                        "value":" By definition, computations which run in parallel are also run concurrently.  Parallel processing is hardware dependent. Therefore, just because software creates separate threads or processes designed to run on separate processors, does not mean that it actually does so.  If a computer's hardware is limited to a single CPU or core, these threads and processes will simply run concurrently on the same processor. ",
+                                        "value":" By definition, computations which run in parallel are also run concurrently.  Parallel processing is hardware dependent. Therefore, software with separate threads or processes designed to run on separate processors don't necessarily do so.  If a computer's hardware is limited to a single CPU or core, these threads and processes will simply run concurrently on the same processor. ",
                                         "children":null
                                     }
                                 ]
@@ -411,7 +411,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" class which can run asynchronous tasks in separate threads (although not actually - because of CPython’s Global Interpreter Lock [GIL] - which I will explain in a second).  Using ",
+                "value":" class which can run asynchronous tasks in separate threads (although with limitations - because of CPython’s Global Interpreter Lock [GIL] - which I will explain in a second).  Using ",
                 "children":null
             },
             {
@@ -435,7 +435,7 @@ content = [
         "attributes":{
             "language":"Python"
         },
-        "value":"import time\nimport os\nfrom concurrent import futures\n\nimport requests\n\ndomain = 'https://jsonplaceholder.typicode.com/'\nendpoints = ['posts', 'comments', 'albums', 'photos', 'todos', 'users']\n\ndef make_request(endpoint: str) -> requests.Response:\n    \"\"\"\n    Make an API request to and endpoint on the globally defined domain name.  Throws an exception if the response has an\n    error status code.\n    :param endpoint: The endpoint on the API to make a GET request to.\n    :return: The response object of the API call.\n    \"\"\"\n    url = f'{domain}{endpoint}'\n    response: requests.Response = requests.get(url)\n    print(response)\n\n    # Raise an error if the HTTP code is 4XX or 500.\n    response.raise_for_status()\n    return response\n\n\ndef make_requests() -> int:\n    \"\"\"\n    Make requests to the API from a pool of threads running concurrently (although not actually, because of Python's\n    Global Interpreter Lock [GIL] only allows Python code to run in a single thread at a time.  However, I/O bound tasks\n    release the GIL while they wait, allowing ThreadPoolExecutor to be faster than making the API calls synchronously).\n    On my machine, this is approximately 2.5x faster than using requests to make API calls sequentially.\n    \"\"\"\n    workers = 5\n    with futures.ThreadPoolExecutor(workers) as executor:\n        # make_request() calls will be made concurrently.\n        res = executor.map(make_request, endpoints)\n\n    return len(list(res))\n\ndef main() -> None:\n    start = time.time()\n    make_requests()\n    end = time.time()\n    print(f'API calls from worker threads made in: {end - start}')\n\n\nif __name__ == '__main__':\n    main()\n",
+        "value":"import time\nimport os\nfrom concurrent import futures\n\nimport requests\n\ndomain = 'https://jsonplaceholder.typicode.com/'\nendpoints = ['posts', 'comments', 'albums', 'photos', 'todos', 'users']\n\ndef make_request(endpoint: str) -> requests.Response:\n    \"\"\"\n    Make an API request to and endpoint on the globally defined domain name.  Throws an exception if the response has an\n    error status code.\n    :param endpoint: The endpoint on the API to make a GET request to.\n    :return: The response object of the API call.\n    \"\"\"\n    url = f'{domain}{endpoint}'\n    response: requests.Response = requests.get(url)\n    print(response)\n\n    # Raise an error if the HTTP code is 4XX or 500.\n    response.raise_for_status()\n    return response\n\n\ndef make_requests() -> int:\n    \"\"\"\n    Make requests to the API from a pool of threads running concurrently (although with limitations, because Python's\n    Global Interpreter Lock [GIL] only allows Python code to run in a single thread at a time.  However, I/O bound tasks\n    release the GIL while they wait, allowing ThreadPoolExecutor to be faster than making the API calls synchronously).\n    On my machine, this is approximately 2.5x faster than using requests to make API calls sequentially.\n    \"\"\"\n    workers = 5\n    with futures.ThreadPoolExecutor(workers) as executor:\n        # make_request() calls will be made concurrently.\n        res = executor.map(make_request, endpoints)\n\n    return len(list(res))\n\ndef main() -> None:\n    start = time.time()\n    make_requests()\n    end = time.time()\n    print(f'API calls from worker threads made in: {end - start}')\n\n\nif __name__ == '__main__':\n    main()\n",
         "children":null
     },
     {
@@ -531,7 +531,7 @@ content = [
                     {
                         "el":"#text",
                         "attributes":null,
-                        "value":".  A computer process is initially created with a single thread of execution, known as the main thread.  The main thread has the ability to split and create one or more other threads.  Threads can be thought of as subsets of a process",
+                        "value":".  A computer process is initially created with a single thread of execution, known as the main thread.  Main threads have the ability to split and create one or more additional threads.  A thread can be thought of as a subset of a process",
                         "children":null
                     },
                     {
@@ -724,7 +724,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" With the ",
+                "value":" With ",
                 "children":null
             },
             {
@@ -743,7 +743,7 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":" library, the keywords ",
+                "value":", the keywords ",
                 "children":null
             },
             {
@@ -1121,7 +1121,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "className":"jarombek-header-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"Thread",
                 "children":null
@@ -1135,7 +1135,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "className":"jarombek-header-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"Task",
                 "children":null
@@ -1149,7 +1149,7 @@ content = [
             {
                 "el":"code",
                 "attributes":{
-                    "className":"jarombek-header-code"
+                    "className":"jarombek-inline-code"
                 },
                 "value":"Semaphore",
                 "children":null
@@ -1157,13 +1157,13 @@ content = [
             {
                 "el":"#text",
                 "attributes":null,
-                "value":") were omitted from this article in favor of higher-level libraries.  While going over everything concurrency related in Python would require a multi-hundred page book, in this article I explored how certain concurrent programming terminologies can translate into Python code.  The full code for this article is available on ",
+                "value":") were omitted from this article in favor of higher-level libraries.  While going over everything related to concurrency in Python  requires a multi-hundred page book, in this article I explored how certain concurrent programming terminologies can translate into Python code.  The full code for this article is available on  ",
                 "children":null
             },
             {
                 "el":"a",
                 "attributes":{
-                    "href":""
+                    "href":"https://github.com/AJarombek/jarombek-com-sources/tree/master/2020/11-Nov/11-01-python-concurrency"
                 },
                 "value":null,
                 "children":[
