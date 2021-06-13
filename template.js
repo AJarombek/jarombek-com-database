@@ -11,8 +11,8 @@ content = [];
 
 preview = content.slice(0, 2);
 
-postName = "jan-1-2020-haskell-pt5";
-postDate = new Date('2020-01-01T12:00:00');
+postName = "jan-1-2021-name";
+postDate = new Date('2021-01-01T12:00:00');
 existingPost = db.posts.findOne({name: postName});
 
 postViews = (existingPost) ? existingPost.views : 0;
@@ -22,12 +22,10 @@ db.posts_content.remove({name: postName});
 
 db.posts.insertOne({
     name: postName,
-    title: "Haskell Part V - Classes",
-    description: `The closest comparison for Haskell classes I can think of in the object oriented 
-        world is Java interfaces with default methods.  This article clears more the confusion of 
-        Haskell classes.`,
+    title: "Title",
+    description: ``,
     date: postDate,
-    type: "Discovery",
+    type: "Discovery/Retrospective",
     views: postViews,
     tags: [
         {
