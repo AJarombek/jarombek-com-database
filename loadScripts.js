@@ -183,3 +183,7 @@ load('./posts/2020/10-01-aws-jenkins-jobs.js');
 
 load('./posts/2020/11-01-python-concurrency.js');
 load('./posts/2020/11-05-react-component-library.js');
+
+load('./posts/2021/06-14-saints-xctf-v2-overview.js');
+load('./posts/2021/06-18-saints-xctf-v2-aws-infrastructure.js');
+load('./posts/2021/06-29-jss.js');
