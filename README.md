@@ -1,5 +1,7 @@
 # jarombek-com-database
 
+![Maintained Label](https://img.shields.io/badge/Maintained-Yes-brightgreen?style=for-the-badge)
+
 ### Overview
 
 Scripts for populating the Jarombek.com MongoDB database.

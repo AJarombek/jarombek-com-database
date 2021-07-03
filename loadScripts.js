@@ -188,3 +188,5 @@ load('./posts/2021/06-14-saints-xctf-v2-overview.js');
 load('./posts/2021/06-18-saints-xctf-v2-aws-infrastructure.js');
 load('./posts/2021/06-29-jss.js');
 load('./posts/2021/06-30-react-jss.js');
+
+load('./posts/2021/07-03-dynamodb.js');
